@@ -4,7 +4,7 @@
 
 * [GitHub Help](https://help.github.com/categories/github-pages-basics/)
 * [GitHub Pages](https://pages.github.com/)
-* [GitHub Pages Documentation)[https://docs.github.com/en/pages]
+* [GitHub Pages Documentation](https://docs.github.com/en/pages)
 
 * [Lien du site](https://machou.github.io/)
 
