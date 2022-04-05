@@ -1,21 +1,21 @@
-[Le Lien](https://machou.github.io/My-Website-/)
+# Bienvenue sur GitHub Pages
 
-
-## Welcome to GitHub Pages
-
+## Liens
 
 * [GitHub Help](https://help.github.com/categories/github-pages-basics/)
 * [GitHub Pages](https://pages.github.com/)
-* [Link of website](https://machou.github.io/My-Website-/)
+* [GitHub Pages Documentation)[https://docs.github.com/en/pages]
+
+* [Lien du site](https://machou.github.io/)
 
 
-You can use the [editor on GitHub](https://github.com/Machou/Mon-Site/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
+Vous pouvez utiliser [editor on GitHub](https://github.com/Machou/machou.github.io/edit/main/index.md) pour maintenir et édtier le contenu du site, en Markdown.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+Chaque fois que vous poussererai une modification dans ce dépôt, GitHub Pages lancera [Jekyll](https://jekyllrb.com/) pour reconstruire les pages de votre site, à partir du contenu de vos fichiers Markdown.
 
-### Markdown
+## Markdown
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+Markdown est une syntaxe légère et facile à utiliser pour styliser vos écrits. Elle comprend des conventions pour :
 
 ```markdown
 Syntax highlighted code block
@@ -27,21 +27,27 @@ Syntax highlighted code block
 
 - Bulleted
 - List
+- -
 
 1. Numbered
 2. List
+3. -
 
-**Bold** and _Italic_ and `Code` text
+**Gras** et *Italique* et les différents langage :
 
-[Link](url) and ![Image](src)
+```php
+<?php
+echo 'Hello World';
+?>
 ```
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+Bout de code : `git push`
 
-### Jekyll Themes
+[Lien](url) and ![Image](src)
+```
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/Machou/Mon-Site/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+Pour plus de détails, voir [GitHub Flavored Markdown](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
 
-### Support or Contact
+## Jekyll Themes
 
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+Votre `Pages` utilise une mise en page et des styles des thèmes Jekyll que vous avez selectionnés dans les [options de votre dépôt](https://github.com/Machou/machou.github.io/settings). Le nom de ce thème est sauvegarder dans le fichier `_config.yml`.
