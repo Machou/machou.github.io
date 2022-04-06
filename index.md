@@ -39,8 +39,6 @@ Gras : **double astérisques** ou __double underscore__
 Italique : *astérisque* ou _underscore_
 ```
 
-Langage :
-
 ```php
 <?php
 echo 'Hello World';
