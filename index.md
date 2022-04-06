@@ -66,7 +66,7 @@ Image : `![Alt de l’image](https://lipsum.app/random/100x50 "Title de l’imag
 
 Lien + image : `[![Alt de l’image](https://lipsum.app/random/250x100)](https://www.google.fr/ "Title de l’image")`
 
-| Tables        | 1             | 3             |
+| Tables        | 1             | 2             |
 | ------------- |:-------------:|:-------------:|
 | col 1         | x             | x             |
 | col 2         | x             | x             |
