@@ -68,27 +68,32 @@ $(function () {
 
 Bout de code : `git push`
 
-Emoji : :smile: `:smile:`
+Lien : `[Nom du lien](https://www.google.fr/)`
 
-Image : `[Lien](url)`
+Rendu du lien : [Nom du lien](https://www.google.fr/)
 
-Image : `![Image](https://lipsum.app/random/100x50 "Alt de l’image")`
+Image : `![Alt de l’image](https://lipsum.app/random/100x50 "Title de l’image")`
 
-Rendu :
+Rendu de l’image :
 
-![Image](https://lipsum.app/random/100x50 "Alt de l’image")
+![Alt de l’image](https://lipsum.app/random/250x100 "Title de l’image")
+
+Lien + image : `[(https://lipsum.app/random/250x1000)](https://lipsum.app/random/250x100 "Title de l’image")`
+
+Rendu du ien + image :
+
+[![Alt de l’image](https://lipsum.app/random/250x100)](https://www.google.fr/ "Title de l’image")
 
 Tableau :
 
-| Tables        | Are           |
-| ------------- |:-------------:|
-| col 1         | x             |
-| col 2         | x             |
-| col 3         | x             |
-```
+| Tables        | 1             | 3             |
+| ------------- |:-------------:|:-------------:|
+| col 1         | x             | x             |
+| col 2         | x             | x             |
+| col 3         | x             | x             |
 
-(Plus d’exemple)[https://github.com/showdownjs/showdown/wiki/Showdown's-Markdown-syntax]
+> [Plus d’exemple](https://github.com/showdownjs/showdown/wiki/Showdown's-Markdown-syntax)
 
 ## Jekyll Themes
 
-Votre `Pages` utilise une mise en page et des styles des thèmes Jekyll que vous avez sélectionnés dans les [options de votre dépôt](https://github.com/Machou/machou.github.io/settings). Le nom de ce thème est sauvegarder dans le fichier `_config.yml`.
+Votre `Pages` utilise une mise en page et des styles / thèmes Jekyll que vous avez sélectionnés dans les [options de votre dépôt](https://github.com/Machou/machou.github.io/settings). Le nom de ce thème est sauvegarder dans le fichier `_config.yml`.
