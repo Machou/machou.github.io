@@ -3,11 +3,9 @@
 ## Liens
 
 * [Lien du site](https://machou.github.io/)
-
 * [GitHub Help](https://help.github.com/categories/github-pages-basics/)
 * [GitHub Pages](https://pages.github.com/)
 * [GitHub Pages Documentation](https://docs.github.com/en/pages)
-
 
 Modifier le fichier [index.md](https://github.com/Machou/machou.github.io/edit/main/index.md) sur GitHub pour maintenir et éditer le contenu du site.
 
@@ -25,8 +23,6 @@ Markdown est une syntaxe légère et facile à utiliser pour styliser vos écrit
 ##### Header 5
 ###### Header 6
 
-Listes :
-
 - Liste à puces
 - #
 - #
@@ -38,8 +34,6 @@ Listes :
 + Autre liste
 + #
 + #
-
-Mise en forme :
 
 Gras : **double astérisques** ou __double underscore__
 Italique : *astérisque* ou _underscore_
@@ -70,21 +64,9 @@ Bout de code : `git push`
 
 Lien : `[Nom du lien](https://www.google.fr/)`
 
-Rendu du lien : [Nom du lien](https://www.google.fr/)
-
 Image : `![Alt de l’image](https://lipsum.app/random/100x50 "Title de l’image")`
 
-Rendu de l’image :
-
-![Alt de l’image](https://lipsum.app/random/250x100 "Title de l’image")
-
-Lien + image : `[(https://lipsum.app/random/250x1000)](https://lipsum.app/random/250x100 "Title de l’image")`
-
-Rendu du ien + image :
-
-[![Alt de l’image](https://lipsum.app/random/250x100)](https://www.google.fr/ "Title de l’image")
-
-Tableau :
+Lien + image : `[![Alt de l’image](https://lipsum.app/random/250x100)](https://www.google.fr/ "Title de l’image")`
 
 | Tables        | 1             | 3             |
 | ------------- |:-------------:|:-------------:|
@@ -96,4 +78,4 @@ Tableau :
 
 ## Jekyll Themes
 
-Votre `Pages` utilise une mise en page et des styles / thèmes Jekyll que vous avez sélectionnés dans les [options de votre dépôt](https://github.com/Machou/machou.github.io/settings). Le nom de ce thème est sauvegarder dans le fichier `_config.yml`.
+Votre `Pages` utilise une mise en page et des styles / thèmes Jekyll que vous avez sélectionnés dans les [options de votre dépôt](https://github.com/Machou/machou.github.io/settings). Le nom de ce thème est sauvegarder dans le fichier [_config.yml](https://jekyllrb.com/docs/configuration/).
