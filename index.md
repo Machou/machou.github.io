@@ -2,38 +2,50 @@
 
 ## Liens
 
+* [Lien du site](https://machou.github.io/)
+
 * [GitHub Help](https://help.github.com/categories/github-pages-basics/)
 * [GitHub Pages](https://pages.github.com/)
 * [GitHub Pages Documentation](https://docs.github.com/en/pages)
 
-* [Lien du site](https://machou.github.io/)
 
+Modifier le fichier [index.md](https://github.com/Machou/machou.github.io/edit/main/index.md) sur GitHub pour maintenir et éditer le contenu du site.
 
-Vous pouvez utiliser [editor on GitHub](https://github.com/Machou/machou.github.io/edit/main/index.md) pour maintenir et édtier le contenu du site, en Markdown.
-
-Chaque fois que vous poussererai une modification dans ce dépôt, GitHub Pages lancera [Jekyll](https://jekyllrb.com/) pour reconstruire les pages de votre site, à partir du contenu de vos fichiers Markdown.
+Chaque fois que vous pousserez une modification dans ce dépôt, GitHub Pages lancera [Jekyll](https://jekyllrb.com/) pour reconstruire les pages du site, à partir du contenu de vos fichiers `Markdown`.
 
 ## Markdown
 
-Markdown est une syntaxe légère et facile à utiliser pour styliser vos écrits. Elle comprend des conventions pour :
+Markdown est une syntaxe légère et facile à utiliser pour styliser vos écrits. Quelques exemples :
 
 ```markdown
-Syntax highlighted code block
-
 # Header 1
 ## Header 2
 ### Header 3
 #### Header 4
+##### Header 5
+###### Header 6
 
-- Bulleted
-- List
-- -
+Listes :
 
-1. Numbered
-2. List
-3. -
+- Liste à puces
+- #
+- #
 
-**Gras** et *Italique* et les différents langage :
+1. Liste numérotée
+2. #
+3. #
+
++ Autre liste
++ #
++ #
+
+Mise en forme :
+
+Gras : **double astérisques** ou __double underscore__
+Italique : *astérisque* ou _underscore_
+```
+
+Langage :
 
 ```php
 <?php
@@ -41,13 +53,42 @@ echo 'Hello World';
 ?>
 ```
 
-Bout de code : `git push`
+```js
+$(function () {
+    Math.easeInOutQuad = function (t, b, c, d) {
+        t /= d / 2;
+        if (t < 1)
+            return c / 2 * t * t + b;
 
-[Lien](url) and ![Image](src)
+        t--;
+        return -c / 2 * (t * (t - 2) - 1) + b;
+    };
+});
 ```
 
-Pour plus de détails, voir [GitHub Flavored Markdown](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
+Bout de code : `git push`
+
+Emoji : :smile: `:smile:`
+
+Image : `[Lien](url)`
+
+Image : `![Image](https://lipsum.app/random/100x50 "Alt de l’image")`
+
+Rendu :
+
+![Image](https://lipsum.app/random/100x50 "Alt de l’image")
+
+Tableau :
+
+| Tables        | Are           |
+| ------------- |:-------------:|
+| col 1         | x             |
+| col 2         | x             |
+| col 3         | x             |
+```
+
+(Plus d’exemple)[https://github.com/showdownjs/showdown/wiki/Showdown's-Markdown-syntax]
 
 ## Jekyll Themes
 
-Votre `Pages` utilise une mise en page et des styles des thèmes Jekyll que vous avez selectionnés dans les [options de votre dépôt](https://github.com/Machou/machou.github.io/settings). Le nom de ce thème est sauvegarder dans le fichier `_config.yml`.
+Votre `Pages` utilise une mise en page et des styles des thèmes Jekyll que vous avez sélectionnés dans les [options de votre dépôt](https://github.com/Machou/machou.github.io/settings). Le nom de ce thème est sauvegarder dans le fichier `_config.yml`.
