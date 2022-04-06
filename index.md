@@ -1,3 +1,7 @@
+---
+author: "Machou"
+---
+
 # Bienvenue sur GitHub Pages
 
 ## Liens
