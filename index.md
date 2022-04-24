@@ -4,6 +4,16 @@ author: "Machou"
 
 # Bienvenue sur GitHub Pages
 
+## Statistiques
+
+<a href="https://github.com/Machou/machou.github.io">
+
+![](generated/overview.svg)
+![](generated/languages.svg)
+
+</a>
+
+
 ## Liens
 
 * [Lien du site](https://machou.github.io/)
