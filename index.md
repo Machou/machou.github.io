@@ -2,17 +2,10 @@
 author: "Machou"
 ---
 
-# Bienvenue sur GitHub Pages
-
 ## Statistiques
-
-<a href="https://github.com/Machou/machou.github.io">
 
 ![](generated/overview.svg)
 ![](generated/languages.svg)
-
-</a>
-
 
 ## Liens
 
@@ -20,6 +13,7 @@ author: "Machou"
 * [GitHub Help](https://help.github.com/categories/github-pages-basics/)
 * [GitHub Pages](https://pages.github.com/)
 * [GitHub Pages Documentation](https://docs.github.com/en/pages)
+* [GitHub Actions Examples](https://github.com/actions/cache/blob/master/examples.md)
 
 Modifier le fichier [index.md](https://github.com/Machou/machou.github.io/edit/main/index.md) sur GitHub pour maintenir et éditer le contenu du site.
 
@@ -72,13 +66,17 @@ $(function () {
 });
 ```
 
-Bout de code : `git push`
+Bout de code
+`git push`
 
-Lien : `[Nom du lien](https://www.google.fr/)`
+Lien
+`[Nom du lien](https://www.google.fr/)`
 
-Image : `![Alt de l’image](https://lipsum.app/random/100x50 "Title de l’image")`
+Image
+`![Alt de l’image](https://lipsum.app/random/100x50 "Title de l’image")`
 
-Lien + image : `[![Alt de l’image](https://lipsum.app/random/250x100)](https://www.google.fr/ "Title de l’image")`
+Lien + image
+`[![Alt de l’image](https://lipsum.app/random/250x100)](https://www.google.fr/ "Title de l’image")`
 
 | Tables        | 1             | 2             |
 | ------------- |:-------------:|:-------------:|
@@ -90,4 +88,4 @@ Lien + image : `[![Alt de l’image](https://lipsum.app/random/250x100)](https:/
 
 ## Jekyll Themes
 
-Votre `Pages` utilise une mise en page et des styles / thèmes Jekyll que vous avez sélectionnés dans les [options de votre dépôt](https://github.com/Machou/machou.github.io/settings). Le nom de ce thème est sauvegarder dans le fichier [_config.yml](https://jekyllrb.com/docs/configuration/).
+Votre `Pages` utilise une mise en page et des styles / thèmes Jekyll que vous avez sélectionnés dans les [options de votre dépôt](https://github.com/Machou/machou.github.io/settings). Le nom de ce thème est sauvegarder dans le fichier [_config.yml](https://jekyllrb.com/docs/configuration/).e ce thème est sauvegarder dans le fichier [_config.yml](https://jekyllrb.com/docs/configuration/).
