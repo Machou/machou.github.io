@@ -10,6 +10,7 @@ author: "Machou"
 ## Liens
 
 * [Lien du site](https://machou.github.io/)
+* [forty-jekyll-theme](https://github.com/andrewbanchich/forty-jekyll-theme)
 * [GitHub Help](https://help.github.com/categories/github-pages-basics/)
 * [GitHub Pages](https://pages.github.com/)
 * [GitHub Pages Documentation](https://docs.github.com/en/pages)

@@ -83,7 +83,7 @@ Les Directives d'application ont été inspirées par le [Code of conduct enforc
 Pour obtenir des réponses aux questions courantes sur ce code de conduite, consultez la FAQ à [https://www.contributor-covenant.org/faq][FAQ]. Les traductions sont disponibles sur [https://www.contributor-covenant.org/translations][translations].
 
 [homepage]: https://www.contributor-covenant.org
-[v2.0]: https://www.contributor-covenant.org/version/2/0/code_of_conduct.html
+[v2.0]: https://www.contributor-covenant.org/fr/version/2/0/code_of_conduct/
 [Mozilla CoC]: https://github.com/mozilla/diversity
 [FAQ]: https://www.contributor-covenant.org/faq
 [translations]: https://www.contributor-covenant.org/translations
