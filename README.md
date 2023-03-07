@@ -7,7 +7,7 @@
 
 </a>
 
-[Site Web](https://machou.github.io/)
+-----
 
 | Liens	 	   | Stats      |
 | ---------- | ---------- |

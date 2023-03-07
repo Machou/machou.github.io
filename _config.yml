@@ -6,3 +6,40 @@ description: Site “ GitHub Pages ”
 show_downloads: false
 google_analytics:
 url: https://machou.github.io/
+email:
+
+
+# Options du site
+title: Pages GitHub de Machou
+subtitle: by HTML5 UP
+email: lorem@github.com
+description: Un site web static en HTML5 généré via les Pages GitHub
+#baseurl: "/forty-jekyll-theme"
+#url: https://www.site.io/
+author: Machou
+street_address: 1337 rue du Geek
+city: Random Ville
+state: N/A
+zip_code: 12345
+country: France
+phone: (+33) 3 25 85 41 52
+
+socials:
+  GitHub: https://github.com/Machou
+  GitLab:
+  Google-Plus:
+  Instagram:
+  LinkedIn:
+  Twitter:
+  Facebook:
+  Slack:
+
+markdown: kramdown
+
+sass:
+  style: compressed
+
+exclude:
+- "*.gemspec"
+- LICENSE.md
+- CONTRIBUTING.md
