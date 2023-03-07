@@ -51,13 +51,17 @@ Markdown est une syntaxe légère et facile à utiliser pour styliser vos écrit
 Gras : **double astérisques** ou __double underscore__
 Italique : *astérisque* ou _underscore_
 ```
+
 ----
+
 ```php
 <?php
 echo 'Hello World';
 ?>
 ```
+
 ----
+
 ```js
 $(function () {
     Math.easeInOutQuad = function (t, b, c, d) {
@@ -70,7 +74,9 @@ $(function () {
     };
 });
 ```
+
 ----
+
 Bout de code
 `git push`
 
@@ -82,22 +88,32 @@ Image
 
 Lien + image
 `[![Alt de l’image](https://lipsum.app/random/250x100)](https://www.google.fr/ "Title de l’image")`
+
+[![Alt de l’image](https://lipsum.app/random/250x100)](https://www.google.fr/ "Title de l’image")
+
 ----
-| Droite         | Centrer       | Gauche        |
+
+| Droite         | Centre       | Gauche        |
 | :----------    | :----------:  | ----------:   |
 | lorem          | lorem         | lorem         |
 | lorem          | lorem         | lorem         |
 | lorem          | lorem         | lorem         |
+
 ----
+
 Lorem ipsum dolor sit amet[^1].
 Maecenas mollis bibendum nulla vel sagittis[^2].
 Morbi suscipit urna et nibh aliquam facilisis[^note].
 
 [^1]: ref 1
 [^2]: ref 2
+
 ----
+
 > [Plus d’exemple](https://github.com/showdownjs/showdown/wiki/Showdown's-Markdown-syntax)
+
 ----
+
 ## Jekyll Themes
 
 Les `Pages` utilisent une mise en page et des styles / thèmes **Jekyll** que vous avez sélectionnés dans les [options de votre dépôt](https://github.com/Machou/machou.github.io/settings). Le nom de ce thème est sauvegarder dans le fichier [_config.yml](https://jekyllrb.com/docs/configuration/).e ce thème est sauvegarder dans le fichier [_config.yml](https://jekyllrb.com/docs/configuration/).
