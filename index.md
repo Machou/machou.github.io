@@ -88,31 +88,16 @@ Lien + image
 | lorem          | lorem         | lorem         |
 | lorem          | lorem         | lorem         |
 | lorem          | lorem         | lorem         |
+----
+Lorem ipsum dolor sit amet[^1].
+Maecenas mollis bibendum nulla vel sagittis[^2].
+Morbi suscipit urna et nibh aliquam facilisis[^note].
 
-```markdown
-| Droite         | Centrer       | Gauche        |
-| :----------    | :----------:  | ----------:   |
-| lorem          | lorem         | lorem         |
-| lorem          | lorem         | lorem         |
-| lorem          | lorem         | lorem         |
-```
-
-Here is a simple footnote[^1].
-
-A footnote can also have multiple lines[^2].
-
-You can also use words, to fit your writing style more closely[^note].
-
-[^1]: My reference.
-[^2]: Every new line should be prefixed with 2 spaces.
-  This allows you to have a footnote with multiple lines.
-[^note]:
-    Named footnotes will still render with numbers instead of the text but allow easier identification and linking.
-    This footnote also has been made with a different syntax using 4 spaces for new lines.
-
-
+[^1]: ref 1
+[^2]: ref 2
+----
 > [Plus d’exemple](https://github.com/showdownjs/showdown/wiki/Showdown's-Markdown-syntax)
-
+----
 ## Jekyll Themes
 
 Les `Pages` utilisent une mise en page et des styles / thèmes **Jekyll** que vous avez sélectionnés dans les [options de votre dépôt](https://github.com/Machou/machou.github.io/settings). Le nom de ce thème est sauvegarder dans le fichier [_config.yml](https://jekyllrb.com/docs/configuration/).e ce thème est sauvegarder dans le fichier [_config.yml](https://jekyllrb.com/docs/configuration/).
