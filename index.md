@@ -16,6 +16,7 @@ author: "Machou"
 * [GitHub Pages Documentation](https://docs.github.com/fr/pages)
 * [GitHub Actions Examples](https://github.com/actions/cache/blob/master/examples.md)
 * [Documentation Markdown](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)
+* [Syntaxe Showdown pour Markdown](https://github.com/showdownjs/showdown/wiki/Showdown's-Markdown-syntax)
 
 ## Markdown
 
@@ -102,15 +103,11 @@ Lien + image
 ----
 
 Lorem ipsum dolor sit amet[^1].
+
 Maecenas mollis bibendum nulla vel sagittis[^2].
-Morbi suscipit urna et nibh aliquam facilisis[^note].
 
 [^1]: ref 1
 [^2]: ref 2
-
-----
-
-> [Plus d’exemple](https://github.com/showdownjs/showdown/wiki/Showdown's-Markdown-syntax)
 
 ----
 
