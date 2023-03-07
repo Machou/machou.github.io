@@ -70,7 +70,7 @@ $(function () {
     };
 });
 ```
-
+----
 Bout de code
 `git push`
 
@@ -82,12 +82,20 @@ Image
 
 Lien + image
 `[![Alt de l’image](https://lipsum.app/random/250x100)](https://www.google.fr/ "Title de l’image")`
-
+----
 | Droite         | Centrer       | Gauche        |
 | :----------    | :----------:  | ----------:   |
 | lorem          | lorem         | lorem         |
 | lorem          | lorem         | lorem         |
 | lorem          | lorem         | lorem         |
+
+```markdown
+| Droite         | Centrer       | Gauche        |
+| :----------    | :----------:  | ----------:   |
+| lorem          | lorem         | lorem         |
+| lorem          | lorem         | lorem         |
+| lorem          | lorem         | lorem         |
+```
 
 Here is a simple footnote[^1].
 
