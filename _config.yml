@@ -1,21 +1,15 @@
-permalink: /404.html
-theme: jekyll-theme-cayman
-#theme: minima
-title: ~ Ma “ GitHub Pages ” ~
-description: Site “ GitHub Pages ”
-show_downloads: false
-google_analytics:
-url: https://machou.github.io/
-email:
-
-
 # Options du site
-title: Pages GitHub de Machou
+title: ~ Pages GitHub de Machou ~
 subtitle: by HTML5 UP
 email: lorem@github.com
 description: Un site web static en HTML5 généré via les Pages GitHub
 #baseurl: "/forty-jekyll-theme"
-#url: https://www.site.io/
+#url: https://www.site.io/permalink: /404.html
+theme: jekyll-theme-cayman
+#theme: minima
+show_downloads: false
+google_analytics:
+url: https://machou.github.io/
 author: Machou
 street_address: 1337 rue du Geek
 city: Random Ville
