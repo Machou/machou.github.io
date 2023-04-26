@@ -9,6 +9,10 @@
 
 -----
 
+[![Trophy](https://github-profile-trophy.vercel.app/?username=Machou&theme=onedark)](https://github.com/ryo-ma/github-profile-trophy)
+
+-----
+
 | Liens	 	   | Stats      |
 | ---------- | ---------- |
 | [Dépôts de Machou](https://github.com/Machou)                                                        | [![](https://github-readme-stats.vercel.app/api?username=Machou&locale=fr&show_icons=true&theme=onedark)](https://github.com/anuraghazra/github-readme-stats) |
