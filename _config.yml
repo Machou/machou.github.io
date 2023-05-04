@@ -1,16 +1,39 @@
 # Options du site
+lang: fr_FR
 title: ~ Pages GitHub de Machou ~
 subtitle: by HTML5 UP
-email: lorem@github.com
-description: Un site web static en HTML5 généré via les Pages GitHub
-#baseurl: "/forty-jekyll-theme"
-#url: https://www.site.io/permalink: /404.html
-theme: jekyll-theme-cayman
-#theme: minima
+description: Un site web static généré via GitHub Pages
+theme: jekyll-theme-basically-basic
+markdown: kramdown
+#baseurl: le sous-chemin facultatif du site, par exemple "/blog".
+url: https//machou.github.io/
+#logo: logo du site, exemple : "/assets/images/logo.png"
+#search: # true, false (default)
+#search_full_content: false # true, false (default)
+#search_provider: # lunr (default), algolia
+
+plugins: # previsously gems
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-paginate
+feed:
+  path: atom.xml
+# Pagination - https://jekyllrb.com/docs/pagination/
+paginate: 10
+paginate_path: /page:num/
+
 show_downloads: false
-google_analytics:
-url: https://machou.github.io/
-author: Machou
+#google_analytics:
+
+# auteur
+author:
+  name: Machou
+#  twitter:
+#  picture:
+#twitter_username:
+github_username: Machou
+email: lorem@github.com
 street_address: 1337 rue du Geek
 city: Random Ville
 state: N/A
@@ -27,8 +50,6 @@ socials:
   Twitter:
   Facebook:
   Slack:
-
-markdown: kramdown
 
 sass:
   style: compressed
