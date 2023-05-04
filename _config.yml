@@ -2,8 +2,7 @@ title: ~ Pages GitHub de Machou ~
 lang: fr_FR
 subtitle: by HTML5 UP
 description: Un site web static généré via GitHub Pages
-remote_theme: "mmistakes/jekyll-theme-basically-basic@1.4.5"
-theme: jekyll-theme-basically-basic
+theme: jekyll-theme-cayman
 markdown: kramdown
 #baseurl: le sous-chemin facultatif du site, par exemple "/blog".
 url: https//machou.github.io/
