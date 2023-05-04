@@ -11,17 +11,11 @@ url: https//machou.github.io/
 #search: # true, false (default)
 #search_full_content: false # true, false (default)
 #search_provider: # lunr (default), algolia
-
-plugins: # previsously gems
-  - jekyll-feed
-  - jekyll-seo-tag
-  - jekyll-sitemap
-  - jekyll-paginate
-feed:
-  path: atom.xml
+#feed:
+#  path: atom.xml
 # Pagination - https://jekyllrb.com/docs/pagination/
-paginate: 10
-paginate_path: /page:num/
+#paginate: 10
+#paginate_path: /page:num/
 
 show_downloads: false
 #google_analytics:
@@ -43,13 +37,12 @@ phone: (+33) 3 25 85 41 52
 
 socials:
   GitHub: https://github.com/Machou
-  GitLab:
-  Google-Plus:
-  Instagram:
-  LinkedIn:
-  Twitter:
-  Facebook:
-  Slack:
+  GitLab: https://gitlab.com/Machou
+  #Instagram:
+  #LinkedIn:
+  #Twitter:
+  #Facebook:
+  #Slack:
 
 sass:
   style: compressed
