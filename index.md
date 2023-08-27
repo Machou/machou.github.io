@@ -15,7 +15,7 @@ author: "Machou"
 * [GitHub Pages](https://pages.github.com/)
 * [GitHub Pages Documentation](https://docs.github.com/fr/pages)
 * [GitHub Actions Examples](https://github.com/actions/cache/blob/master/examples.md)
-* [Documentation Markdown](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)
+* [Documentation Markdown](https://docs.github.com/fr/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)
 * [Syntaxe Showdown pour Markdown](https://github.com/showdownjs/showdown/wiki/Showdown's-Markdown-syntax)
 
 ## Markdown
@@ -116,7 +116,7 @@ Lien + image
 
 ----
 
-| Droite         | Centre       | Gauche        |
+| Droite         | Centre        | Gauche        |
 | :----------    | :----------:  | ----------:   |
 | lorem          | lorem         | lorem         |
 | lorem          | lorem         | lorem         |
@@ -135,4 +135,4 @@ Maecenas mollis bibendum nulla vel sagittis[^2].
 
 ## Jekyll Themes
 
-Les `Pages` utilisent une mise en page et des styles / thèmes **Jekyll** que vous avez sélectionnés dans les [options de votre dépôt](https://github.com/Machou/machou.github.io/settings). Le nom de ce thème est sauvegarder dans le fichier [_config.yml](https://jekyllrb.com/docs/configuration/).e ce thème est sauvegarder dans le fichier [_config.yml](https://jekyllrb.com/docs/configuration/).
+Les `Pages` utilisent une mise en page et des styles / thèmes **Jekyll** que vous avez sélectionnés dans les [options de votre dépôt](https://github.com/Machou/machou.github.io/settings). Les options de ce thème sont sauvegardées dans le fichier [_config.yml](https://jekyllrb.com/docs/configuration/).
