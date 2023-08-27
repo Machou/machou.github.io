@@ -58,6 +58,11 @@ Italique : *astérisque* ou _underscore_
 ```php
 <?php
 echo 'Hello World';
+
+$options = [
+    'cost' => 12,
+];
+echo password_hash("rasmuslerdorf", PASSWORD_BCRYPT, $options);
 ?>
 ```
 
@@ -74,6 +79,23 @@ $(function () {
         return -c / 2 * (t * (t - 2) - 1) + b;
     };
 });
+```
+
+----
+
+```python
+import requests
+
+url = "https://api.themoviedb.org/3/account/8960520/lists?page=1"
+
+headers = {
+    "accept": "application/json",
+    "Authorization": "Bearer ID"
+}
+
+response = requests.get(url, headers=headers)
+
+print(response.text)
 ```
 
 ----
