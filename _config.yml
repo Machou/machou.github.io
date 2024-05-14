@@ -48,5 +48,6 @@ sass:
 
 exclude:
 - "*.gemspec"
-- LICENSE.md
+- CODE_OF_CONDUCT.md
 - CONTRIBUTING.md
+- LICENSE
