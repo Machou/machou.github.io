@@ -18,7 +18,7 @@
 
 # Installation
 
-1. Comment créer un **[Personal Access Token](https://docs.github.com/fr/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens))**
+1. Comment créer un **[Personal Access Token](https://docs.github.com/fr/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens)**
 2. Permissions : `read:user` et `repo`
 3. Aller sur la page [secrets/action/](../../settings/secrets/actions)
 4. Créer un nouveau *secret*, nommez le `ACCESS_TOKEN` et coller le *token* ci-dessus
