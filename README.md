@@ -1,11 +1,9 @@
 # [GitHub Stats Visualization](https://github.com/jstrieb/github-stats)
 
-<a href="https://github.com/Machou/machou.github.io">
+## [Machou.github.io](https://machou.github.io/)
 
 ![](generated/overview.svg)
 ![](generated/languages.svg)
-
-</a>
 
 -----
 
