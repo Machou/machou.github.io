@@ -1,6 +1,41 @@
-# [GitHub Stats Visualization](https://github.com/jstrieb/github-stats)
+---
+lang: "fr"
+title: "Créer un Hidden Service sur Tor"
+description: "Comment créer un Hidden Service sécurisé de zéro avec Tor sur Debian"
+tags: ["linux", "debian", "tor", "apache2", "mysql"]
+categories: ["Web"]
+published: true
+permalink: "/"
+draft: false
+toc: false
+robots: "index, follow"
+canonical_url: "https://machou.github.io/"
+comments: true
+author: "Machou"
+---
 
-## [Machou.github.io](https://machou.github.io/)
+# Sommaire
+
+- [Liens divers](#liens-divers)
+- [Statistiques](#statistiques)
+- [Configuration et installation](#configuration-et-installation)
+- [Comment créer un Hidden Service sécurisé de zéro avec Tor sur Debian](https://machou.github.io/comment-creer-hidden-service)
+  - [Tutoriel PortSentry](https://machou.github.io/comment-utiliser-portsentry)
+  - [Tutoriel Fail2ban](https://machou.github.io/comment-utiliser-fail2ban)
+- [World of Warcraft : Liste des PNJ pour les raids LFR](https://machou.github.io/wow-pnj-lfr)
+
+## Liens divers
+
+* [forty-jekyll-theme](https://github.com/andrewbanchich/forty-jekyll-theme)
+* [GitHub Support](https://support.github.com/)
+* [GitHub Pages](https://pages.github.com/)
+* [GitHub Pages Documentation](https://docs.github.com/fr/pages)
+* [GitHub Actions Examples](https://github.com/actions/cache/blob/master/examples.md)
+* [Documentation Markdown](https://docs.github.com/fr/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)
+* [Syntaxe Showdown pour Markdown](https://github.com/showdownjs/showdown/wiki/Showdown's-Markdown-syntax)
+* [GitHub Stats Visualization](https://github.com/jstrieb/github-stats)
+
+## Statistiques
 
 ![](generated/overview.svg)
 ![](generated/languages.svg)
@@ -15,7 +50,9 @@
 
 [![Trophy](https://github-profile-trophy.vercel.app/?username=ryo-ma&theme=dracula)](https://github.com/ryo-ma/github-profile-trophy)
 
-# Installation
+## Configuration et installation
+
+Les `Pages` utilisent une mise en page et des styles / thèmes **Jekyll** que vous avez sélectionnés dans les [options de votre dépôt](https://github.com/Machou/machou.github.io/settings). Les options de ce thème sont sauvegardées dans le fichier [_config.yml](https://jekyllrb.com/docs/configuration/).
 
 1. Comment créer un **[Personal Access Token](https://docs.github.com/fr/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens)**
 2. Permissions : `read:user` et `repo`
