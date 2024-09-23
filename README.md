@@ -1,16 +1,11 @@
 ---
 lang: "fr"
-title: "Créer un Hidden Service sur Tor"
-description: "Comment créer un Hidden Service sécurisé de zéro avec Tor sur Debian"
-tags: ["linux", "debian", "tor", "apache2", "mysql"]
-categories: ["Web"]
 published: true
 permalink: "/"
 draft: false
 toc: false
 robots: "index, follow"
 canonical_url: "https://machou.github.io/"
-comments: true
 author: "Machou"
 ---
 
