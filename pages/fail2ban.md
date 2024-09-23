@@ -6,14 +6,12 @@ tags: ["linux", "debian", "fail2ban"]
 categories: ["Web"]
 published: true
 permalink: "/comment-utiliser-fail2ban"
-draft: false # indique si c'est un brouillon
-toc: false # activer ou désactiver la table des matières
-#cover_image: "/path/to/image.jpg" # Image de couverture
-#featured_image: "/path/to/featured-image.jpg" # Image en avant
+draft: false
+toc: false
 slug: "comment-utiliser-fail2ban"
 robots: "index, follow"
-canonical_url: "https://exemple.com/canonical-url/" # URL canonique
-comments: true # ou false, activer ou désactiver les commentaires
+canonical_url: "https://machou.github.io/comment-utiliser-fail2ban"
+comments: true
 author: "Machou"
 ---
 

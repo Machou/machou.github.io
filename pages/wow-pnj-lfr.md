@@ -6,14 +6,12 @@ tags: ["wow", "lfr", "raid"]
 categories: ["Jeu vidéo"]
 published: true
 permalink: "/wow-pnj-lfr"
-draft: false # indique si c'est un brouillon
-toc: false # activer ou désactiver la table des matières
-#cover_image: "/path/to/image.jpg" # Image de couverture
-#featured_image: "/path/to/featured-image.jpg" # Image en avant
+draft: false
+toc: false
 slug: "wow-pnj-lfr"
 robots: "index, follow"
-canonical_url: "https://exemple.com/canonical-url/" # URL canonique
-comments: true # ou false, activer ou désactiver les commentaires
+canonical_url: "https://machou.github.io/wow-pnj-lfr"
+comments: true
 author: "Machou"
 ---
 

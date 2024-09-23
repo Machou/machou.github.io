@@ -12,7 +12,7 @@ toc: false # activer ou désactiver la table des matières
 #featured_image: "/path/to/featured-image.jpg" # Image en avant
 slug: "comment-creer-hidden-service"
 robots: "index, follow"
-canonical_url: "https://exemple.com/canonical-url/" # URL canonique
+canonical_url: "https://machou.github.io/comment-creer-hidden-service"
 comments: true # ou false, activer ou désactiver les commentaires
 author: "Machou"
 ---

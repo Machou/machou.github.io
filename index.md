@@ -2,12 +2,16 @@
 author: "Machou"
 ---
 
-## Statistiques
+# Sommaire
 
-![](generated/overview.svg)
-![](generated/languages.svg)
+- [Liens divers](#liens-divers)
+- [Statistiques](#statistiques)
+- [Comment créer un Hidden Service sécurisé de zéro avec Tor sur Debian](https://machou.github.io/comment-creer-hidden-service)
+  - [Tutoriel PortSentry](https://machou.github.io/comment-utiliser-portsentry)
+  - [Tutoriel Fail2ban](https://machou.github.io/comment-utiliser-fail2ban)
+- [World of Warcraft : Liste des PNJ pour les raids LFR](https://machou.github.io/wow-pnj-lfr)
 
-## Liens
+## Liens divers
 
 * [Lien du site](https://machou.github.io/)
 * [forty-jekyll-theme](https://github.com/andrewbanchich/forty-jekyll-theme)
@@ -18,120 +22,10 @@ author: "Machou"
 * [Documentation Markdown](https://docs.github.com/fr/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)
 * [Syntaxe Showdown pour Markdown](https://github.com/showdownjs/showdown/wiki/Showdown's-Markdown-syntax)
 
-## Markdown
+## Statistiques
 
-Markdown est une syntaxe légère et facile à utiliser pour styliser vos écrits. Quelques exemples :
-
-```markdown
-# Header 1
-## Header 2
-### Header 3
-#### Header 4
-##### Header 5
-###### Header 6
-
-- Liste à puces
-- Lorem
-- Lorem
-
-1. Liste numérotée
-2. Lorem
-3. Lorem
-
-+ Autre liste
-+ Lorem
-+ Lorem
-
-1. Lorem 1
-   - Lorem 1.1
-     - Lorem 1.2
-2. Lorem 2
-   - Lorem 2.2
-     - Lorem 2.3
-
-Gras : **double astérisques** ou __double underscore__
-Italique : *astérisque* ou _underscore_
-```
-
-----
-
-```php
-<?php
-echo 'Hello World';
-
-$options = [
-    'cost' => 12,
-];
-echo password_hash("rasmuslerdorf", PASSWORD_BCRYPT, $options);
-?>
-```
-
-----
-
-```js
-$(function () {
-    Math.easeInOutQuad = function (t, b, c, d) {
-        t /= d / 2;
-        if (t < 1)
-            return c / 2 * t * t + b;
-
-        t--;
-        return -c / 2 * (t * (t - 2) - 1) + b;
-    };
-});
-```
-
-----
-
-```python
-import requests
-
-url = "https://api.themoviedb.org/3/account/8960520/lists?page=1"
-
-headers = {
-    "accept": "application/json",
-    "Authorization": "Bearer ID"
-}
-
-response = requests.get(url, headers=headers)
-
-print(response.text)
-```
-
-----
-
-Bout de code
-`git push`
-
-Lien
-`[Nom du lien](https://www.google.fr/)`
-
-Image
-`![Alt de l’image](https://lipsum.app/random/100x50 "Title de l’image")`
-
-Lien + image
-`[![Alt de l’image](https://lipsum.app/random/250x100)](https://www.google.fr/ "Title de l’image")`
-
-[![Alt de l’image](https://lipsum.app/random/250x100)](https://www.google.fr/ "Title de l’image")
-
-----
-
-| Droite         | Centre        | Gauche        |
-| :----------    | :----------:  | ----------:   |
-| lorem          | lorem         | lorem         |
-| lorem          | lorem         | lorem         |
-| lorem          | lorem         | lorem         |
-
-----
-
-Lorem ipsum dolor sit amet[^1].
-
-Maecenas mollis bibendum nulla vel sagittis[^2].
-
-[^1]: ref 1
-[^2]: ref 2
-
-----
+![](generated/overview.svg)
+![](generated/languages.svg)
 
 ## Jekyll Themes
 
