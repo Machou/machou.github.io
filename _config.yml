@@ -6,7 +6,7 @@ language: fr
 baseurl: "" # Utilisé si le site est hébergé dans un sous-répertoire, sinon laisser vide
 url: "https://machou.github.io"
 markdown: kramdown # Activer le markdown
-theme: jekyll-theme-architect
+theme: jekyll-theme-cayman
 #paginate: 5 # Nombre d'articles par page
 #paginate_path: "/page:num/"
 # google_analytics: UA-XXXXXXXX-X
