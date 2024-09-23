@@ -1,3 +1,22 @@
+---
+lang: "fr"
+title: "Localisation des différents PNJ pour le LFR sur World of Warcraft"
+description: "World of Warcraft PNJ LFR"
+tags: ["wow", "lfr", "raid"]
+categories: ["Jeu vidéo"]
+published: true
+permalink: "/wow-pnj-lfr"
+draft: false # indique si c'est un brouillon
+toc: false # activer ou désactiver la table des matières
+#cover_image: "/path/to/image.jpg" # Image de couverture
+#featured_image: "/path/to/featured-image.jpg" # Image en avant
+slug: "wow-pnj-lfr"
+robots: "index, follow"
+canonical_url: "https://exemple.com/canonical-url/" # URL canonique
+comments: true # ou false, activer ou désactiver les commentaires
+author: "Machou"
+---
+
 [![World of Warcraft](https://www.zupimages.net/up/23/42/86wl.png "Logo World of Warcraft")](https://www.mamytwink.com/)
 
 # Word of Warcraft — Les PnJs de l’Outil Recherche de Raid
