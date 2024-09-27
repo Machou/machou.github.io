@@ -7,11 +7,7 @@ from typing import Dict, List, Optional, Set, Tuple, Any, cast
 import aiohttp
 import requests
 
-
-###############################################################################
 # Main Classes
-###############################################################################
-
 
 class Queries(object):
     """
@@ -244,7 +240,6 @@ query {{
 }}
 """
 
-
 class Stats(object):
     """
     Retrieve and store statistics about GitHub usage.
@@ -374,8 +369,6 @@ Languages:
             else:
                 break
 
-        # TODO: Improve languages to scale by number of contributions to
-        #       specific filetypes
         langs_total = sum([v.get("size", 0) for v in self._languages.values()])
         for k, v in self._languages.items():
             v["prop"] = 100 * (v.get("size", 0) / langs_total)
@@ -520,11 +513,7 @@ Languages:
         self._views = total
         return total
 
-
-###############################################################################
 # Main Function
-###############################################################################
-
 
 async def main() -> None:
     """

@@ -3,16 +3,11 @@
 import asyncio
 import os
 import re
-
 import aiohttp
 
 from github_stats import Stats
 
-
-################################################################################
 # Helper Functions
-################################################################################
-
 
 def generate_output_folder() -> None:
     """
@@ -21,11 +16,7 @@ def generate_output_folder() -> None:
     if not os.path.isdir("generated"):
         os.mkdir("generated")
 
-
-################################################################################
 # Individual Image Generation Functions
-################################################################################
-
 
 async def generate_overview(s: Stats) -> None:
     """
@@ -89,11 +80,7 @@ fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8z"></path></svg>
     with open("generated/languages.svg", "w") as f:
         f.write(output)
 
-
-################################################################################
 # Main Function
-################################################################################
-
 
 async def main() -> None:
     """
@@ -130,7 +117,6 @@ async def main() -> None:
             ignore_forked_repos=ignore_forked_repos,
         )
         await asyncio.gather(generate_languages(s), generate_overview(s))
-
 
 if __name__ == "__main__":
     asyncio.run(main())
