@@ -11,7 +11,6 @@ toc: false
 slug: "wow-pnj-lfr"
 robots: "index, follow"
 canonical_url: "https://machou.github.io/wow-pnj-lfr"
-comments: true
 author: "Machou"
 favicon: "/assets/images/favicon-wow.png"
 ---
