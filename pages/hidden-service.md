@@ -6,10 +6,8 @@ tags: ["linux", "debian", "tor", "apache2", "mysql"]
 categories: ["Web"]
 published: true
 permalink: "/comment-creer-hidden-service"
-draft: false # indique si c'est un brouillon
-toc: false # activer ou désactiver la table des matières
-#cover_image: "/path/to/image.jpg" # Image de couverture
-#featured_image: "/path/to/featured-image.jpg" # Image en avant
+draft: false
+toc: false
 slug: "comment-creer-hidden-service"
 robots: "index, follow"
 canonical_url: "https://machou.github.io/comment-creer-hidden-service"

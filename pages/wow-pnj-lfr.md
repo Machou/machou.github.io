@@ -1,7 +1,7 @@
 ---
 lang: "fr"
-title: "Localisation des différents PNJ pour le LFR sur World of Warcraft"
-description: "World of Warcraft PNJ LFR"
+title: "World of Warcraft PNJ LFR"
+description: "Liste et localisation des différents PNJ pour l’outil Recherche de Raid sur World of Warcraft"
 tags: ["wow", "lfr", "raid"]
 categories: ["Jeu vidéo"]
 published: true
@@ -9,17 +9,28 @@ permalink: "/wow-pnj-lfr"
 draft: false
 toc: false
 slug: "wow-pnj-lfr"
+#cover_image: "/path/to/image.jpg" # Image de couverture
+#featured_image: "/path/to/featured-image.jpg" # Image en avant
 robots: "index, follow"
 canonical_url: "https://machou.github.io/wow-pnj-lfr"
 comments: true
 author: "Machou"
 ---
 
-[![World of Warcraft](https://www.zupimages.net/up/23/42/86wl.png "Logo World of Warcraft")](https://www.mamytwink.com/)
+[![World of Warcraft](assets/img/WoW.png "Logo World of Warcraft")](https://www.mamytwink.com/)
 
-# Word of Warcraft — Les PnJs de l’Outil Recherche de Raid
+# Word of Warcraft : les PNJ pour l’Outil Recherche de Raid
 
-[![World of Warcraft : Mists of Pandaria](https://i.ibb.co/bddV6rn/WoW-MoP.png "Logo World of Warcraft : Mists of Pandaria")](https://www.mamytwink.com/mists-of-pandaria/world-of-warcraft-mists-of-pandaria)
+## Sommaire
+
+- World of Warcraft : Mist of Pandaria
+- World of Warcraft : Warlords of Draenor
+- World of Warcraft : Legion
+- World of Warcraft : Battle of Azeroth
+- World of Warcraft : Shadowlands
+- World of Warcraft : Dragonflight
+
+[![World of Warcraft : Mists of Pandaria](assets/img/WoW_MoP.png "Logo World of Warcraft : Mists of Pandaria")](https://www.mamytwink.com/mists-of-pandaria/world-of-warcraft-mists-of-pandaria)
 
 **Val de l’Éternel printemps** > **[Chroniqueur Han <Conteur de l’outil Raids>](https://www.wowhead.com/fr/npc=80633])** > `/way #390 83.0 30.6 Chroniqueur Han`
 
@@ -53,12 +64,12 @@ author: "Machou"
 
 ****
 
-[![World of Warcraft : Warlords of Draenor](https://i.ibb.co/r2G1WLH/WoW-WoD.png "Logo World of Warcraft : Warlords of Draenor")](https://www.mamytwink.com/warlords-draenor)
+[![World of Warcraft : Warlords of Draenor](assets/img/WoW "Logo World of Warcraft : Warlords of Draenor")](https://www.mamytwink.com/warlords-draenor)
 
-| Faction      | Zone         | PnJ          | Point de passage |
-| :----------: | :----------: | :----------: | :----------: |
-| Horde        | **Mur-de-Givre** | **[Voyant Kazal <Exilé ombrelune>](https://www.wowhead.com/fr/npc=94870)** | `/way 41.8 46.8` |
-| Alliance     | **Chutelune** | **[Voyant Kazal <Exilé ombrelune>](https://www.wowhead.com/fr/npc=94870)** | `/way 33.6 37.6` |
+| Faction      | Zone                 | PnJ                                                                        | Point de passage       |
+| :----------: | :------------------: | :------------------------------------------------------------------------: | :--------------------: |
+| Horde        | **Mur-de-Givre**     | [**Voyant Kazal <Exilé ombrelune>**](https://www.wowhead.com/fr/npc=94870) | `/way 41.8 46.8`       |
+| Alliance     | **Chutelune**        | [**Voyant Kazal <Exilé ombrelune>**](https://www.wowhead.com/fr/npc=94870) | `/way 33.6 37.6`       |
 
 ### [Cognefort](https://www.wowhead.com/fr/zone=6996)
 
