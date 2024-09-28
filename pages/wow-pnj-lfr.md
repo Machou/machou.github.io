@@ -25,7 +25,7 @@ author: "Machou"
 - [World of Warcraft : Mist of Pandaria](#world-of-warcraft--mists-of-pandaria)
 - [World of Warcraft : Warlords of Draenor](#world-of-warcraft--warlords-of-draenor)
 - [World of Warcraft : Legion](#world-of-warcraft--legion)
-- [World of Warcraft : Battle of Azeroth](#world-of-warcraft--battle-of-azeroth)
+- [World of Warcraft : Battle for Azeroth](#world-of-warcraft--battle-for-azeroth)
 - [World of Warcraft : Shadowlands](#world-of-warcraft--shadowlands)
 - [World of Warcraft : Dragonflight](#world-of-warcraft--dragonflight)
 
