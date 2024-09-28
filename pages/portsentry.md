@@ -11,8 +11,8 @@ toc: false
 slug: "comment-utiliser-portsentry"
 robots: "index, follow"
 canonical_url: "https://machou.github.io/comment-utiliser-portsentry"
-comments: true
 author: "Machou"
+favicon: "/assets/images/favicon.png"
 ---
 
 # PortSentry

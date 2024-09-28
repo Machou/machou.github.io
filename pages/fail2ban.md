@@ -11,8 +11,8 @@ toc: false
 slug: "comment-utiliser-fail2ban"
 robots: "index, follow"
 canonical_url: "https://machou.github.io/comment-utiliser-fail2ban"
-comments: true
 author: "Machou"
+favicon: "/assets/images/favicon.png"
 ---
 
 # Fail2ban

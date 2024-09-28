@@ -11,8 +11,8 @@ toc: false
 slug: "comment-creer-hidden-service"
 robots: "index, follow"
 canonical_url: "https://machou.github.io/comment-creer-hidden-service"
-comments: true # ou false, activer ou désactiver les commentaires
 author: "Machou"
+favicon: "/assets/images/favicon.png"
 ---
 
 ## **Sommaire**
