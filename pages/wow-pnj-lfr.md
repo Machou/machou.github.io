@@ -30,7 +30,9 @@ author: "Machou"
 - World of Warcraft : Shadowlands
 - World of Warcraft : Dragonflight
 
-[![World of Warcraft : Mists of Pandaria](assets/img/WoW_MoP.png "Logo World of Warcraft : Mists of Pandaria")](https://www.mamytwink.com/mists-of-pandaria/world-of-warcraft-mists-of-pandaria)
+[![World of Warcraft : Mists of Pandaria](assets/img/WoW_MoP.png "Logo World of Warcraft : Mists of Pandaria")](#WoW-MoP)
+
+## [Guide de Mists of Pandaria sur Mamytwink](https://www.mamytwink.com/mists-of-pandaria/world-of-warcraft-mists-of-pandaria)
 
 **Val de l’Éternel printemps** > **[Chroniqueur Han <Conteur de l’outil Raids>](https://www.wowhead.com/fr/npc=80633])** > `/way #390 83.0 30.6 Chroniqueur Han`
 
@@ -64,7 +66,9 @@ author: "Machou"
 
 ****
 
-## [![World of Warcraft : Warlords of Draenor](assets/img/WoW "Logo World of Warcraft : Warlords of Draenor")](https://www.mamytwink.com/warlords-draenor)
+[![World of Warcraft : Warlords of Draenor](assets/img/WoW_WoD.png "Logo World of Warcraft : Warlords of Draenor")](#WoW-WoD)
+
+## [Guide de Warlords of Draenor sur Mamytwink](https://www.mamytwink.com/warlords-draenor)
 
 | Faction      | Zone                 | PnJ                                                                    | Point de passage       |
 | :----------: | :------------------: | :--------------------------------------------------------------------: | :--------------------: |
