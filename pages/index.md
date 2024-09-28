@@ -7,7 +7,7 @@ toc: false
 robots: "index, follow"
 canonical_url: "https://machou.github.io/"
 author: "Machou"
-favicon: "/assets/images/favicon.png"
+favicon: "assets/img/favicon.png"
 ---
 
 # Sommaire

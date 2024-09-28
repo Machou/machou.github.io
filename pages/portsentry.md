@@ -12,7 +12,7 @@ slug: "comment-utiliser-portsentry"
 robots: "index, follow"
 canonical_url: "https://machou.github.io/comment-utiliser-portsentry"
 author: "Machou"
-favicon: "/assets/images/favicon.png"
+favicon: "/assets/img/favicon.png"
 ---
 
 # PortSentry

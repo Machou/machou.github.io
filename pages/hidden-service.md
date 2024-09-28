@@ -12,7 +12,7 @@ slug: "comment-creer-hidden-service"
 robots: "index, follow"
 canonical_url: "https://machou.github.io/comment-creer-hidden-service"
 author: "Machou"
-favicon: "/assets/images/favicon.png"
+favicon: "/assets/img/favicon.png"
 ---
 
 ## **Sommaire**

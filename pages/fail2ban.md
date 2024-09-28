@@ -12,7 +12,7 @@ slug: "comment-utiliser-fail2ban"
 robots: "index, follow"
 canonical_url: "https://machou.github.io/comment-utiliser-fail2ban"
 author: "Machou"
-favicon: "/assets/images/favicon.png"
+favicon: "/assets/img/favicon.png"
 ---
 
 # Fail2ban
