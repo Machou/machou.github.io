@@ -64,7 +64,7 @@ author: "Machou"
 
 ****
 
-[![World of Warcraft : Warlords of Draenor](assets/img/WoW "Logo World of Warcraft : Warlords of Draenor")](https://www.mamytwink.com/warlords-draenor)
+## [![World of Warcraft : Warlords of Draenor](assets/img/WoW "Logo World of Warcraft : Warlords of Draenor")](https://www.mamytwink.com/warlords-draenor)
 
 | Faction      | Zone                 | PnJ                                                                        | Point de passage       |
 | :----------: | :------------------: | :------------------------------------------------------------------------: | :--------------------: |
