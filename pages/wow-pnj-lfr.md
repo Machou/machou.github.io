@@ -1,6 +1,6 @@
 ---
 lang: "fr"
-title: "World of Warcraft PNJ LFR"
+title: "Word of Warcraft : les PNJ pour l’Outil Recherche de Raid"
 description: "Liste et localisation des différents PNJ pour l’outil Recherche de Raid sur World of Warcraft"
 tags: ["wow", "lfr", "raid"]
 categories: ["Jeu vidéo"]
@@ -9,15 +9,13 @@ permalink: "/wow-pnj-lfr"
 draft: false
 toc: false
 slug: "wow-pnj-lfr"
-#cover_image: "/path/to/image.jpg" # Image de couverture
-#featured_image: "/path/to/featured-image.jpg" # Image en avant
 robots: "index, follow"
 canonical_url: "https://machou.github.io/wow-pnj-lfr"
 comments: true
 author: "Machou"
 ---
 
-[![World of Warcraft](assets/img/WoW.png "Logo World of Warcraft")](https://www.mamytwink.com/)
+[![World of Warcraft](assets/img/WoW.png "Logo World of Warcraft")](assets/img/Large-WoW.png)
 
 # Word of Warcraft : les PNJ pour l’Outil Recherche de Raid
 
