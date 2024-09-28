@@ -1,21 +1,16 @@
-# Informations de base sur le site
 title: ~ Pages GitHub de Machou ~
 description: "Pages GitHub générée via GitHub Pages"
 author: "Machou"
 language: fr
 baseurl: "" # Utilisé si le site est hébergé dans un sous-répertoire, sinon laisser vide
 url: "https://machou.github.io"
-markdown: kramdown # Activer le markdown
+markdown: kramdown
 theme: jekyll-theme-cayman
-#paginate: 5 # Nombre d'articles par page
-#paginate_path: "/page:num/"
-# google_analytics: UA-XXXXXXXX-X
 
 plugins:
   # - jekyll-feed # Pour ajouter un flux RSS
   - jekyll-sitemap # Pour générer un sitemap.xml
   - jekyll-seo-tag # Pour l'optimisation SEO
-  # - jekyll-paginate # Pour paginer les articles de blog
 
 sass:
   style: compressed

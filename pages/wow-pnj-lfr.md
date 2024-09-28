@@ -13,6 +13,7 @@ robots: "index, follow"
 canonical_url: "https://machou.github.io/wow-pnj-lfr"
 comments: true
 author: "Machou"
+favicon: "/assets/images/favicon-wow.png"
 ---
 
 [![World of Warcraft](assets/img/WoW.png "Logo World of Warcraft")](assets/img/Large-WoW.png)
