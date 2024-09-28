@@ -66,10 +66,10 @@ author: "Machou"
 
 ## [![World of Warcraft : Warlords of Draenor](assets/img/WoW "Logo World of Warcraft : Warlords of Draenor")](https://www.mamytwink.com/warlords-draenor)
 
-| Faction      | Zone                 | PnJ                                                                        | Point de passage       |
-| :----------: | :------------------: | :------------------------------------------------------------------------: | :--------------------: |
-| Horde        | **Mur-de-Givre**     | [**Voyant Kazal <Exilé ombrelune>**](https://www.wowhead.com/fr/npc=94870) | `/way 41.8 46.8`       |
-| Alliance     | **Chutelune**        | [**Voyant Kazal <Exilé ombrelune>**](https://www.wowhead.com/fr/npc=94870) | `/way 33.6 37.6`       |
+| Faction      | Zone                 | PnJ                                                                    | Point de passage       |
+| :----------: | :------------------: | :--------------------------------------------------------------------: | :--------------------: |
+| Horde        | **Mur-de-Givre**     | [Voyant Kazal <Exilé ombrelune>](https://www.wowhead.com/fr/npc=94870) | `/way 41.8 46.8`       |
+| Alliance     | **Chutelune**        | [Voyant Kazal <Exilé ombrelune>](https://www.wowhead.com/fr/npc=94870) | `/way 33.6 37.6`       |
 
 ### [Cognefort](https://www.wowhead.com/fr/zone=6996)
 
@@ -199,5 +199,5 @@ author: "Machou"
 [![World of Warcraft : Dragonflight](https://www.zupimages.net/up/23/42/uug7.png "Logo World of Warcraft : Dragonflight")](https://www.mamytwink.com/guides/dragonflight-toutes-les-informations-sur-lextension-wow)
 
 <p align="center">
-  <img src="https://i.ibb.co/0CDJBqd/kisspng-world-of-warcraft-warcraft-the-roleplaying-game-o-wow-horde-render-by-popokupingupop9-wow-5d.png">
+  <img src="assets/img/logo-horde.png">
 </p>
