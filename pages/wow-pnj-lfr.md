@@ -81,8 +81,8 @@ author: "Machou"
 
 | Faction      | Zone             | PnJ                                                                    | Point de passage  |
 | :----------: | :--------------: | :--------------------------------------------------------------------: | :---------------: |
-| Horde        | **Mur-de-Givre** | [Voyant Kazal <Exilé ombrelune>](https://www.wowhead.com/fr/npc=94870) | `/way 41.8 46.8`  |
-| Alliance     | **Chutelune**    | [Voyant Kazal <Exilé ombrelune>](https://www.wowhead.com/fr/npc=94870) | `/way 33.6 37.6`  |
+| Horde        | **Mur-de-Givre** | [Voyant Kazal « <Exilé ombrelune »](https://www.wowhead.com/fr/npc=94870) | `/way 41.8 46.8`  |
+| Alliance     | **Chutelune**    | [Voyant Kazal « Exilé ombrelune »](https://www.wowhead.com/fr/npc=94870) | `/way 33.6 37.6`  |
 
 ### [Cognefort](https://www.wowhead.com/fr/zone=6996)
 
