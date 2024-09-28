@@ -35,10 +35,13 @@ author: "Machou"
 
 - [Site officiel Mamytwink](https://www.mamytwink.com/)
 - [Guide de Mists of Pandaria sur Mamytwink](https://www.mamytwink.com/mists-of-pandaria/world-of-warcraft-mists-of-pandaria)
+## [Guide de Warlords of Draenor sur Mamytwink](https://www.mamytwink.com/warlords-draenor)
+https://www.mamytwink.com/actualite/legion-extension-world-of-warcraft
 
-
-
-[![World of Warcraft : Mists of Pandaria](assets/img/WoW_MoP.png "Logo World of Warcraft : Mists of Pandaria")](#WoW-MoP)
+https://www.mamytwink.com/actualite/battle-for-azeroth-nouvelle-extension-wow
+https://www.mamytwink.com/actualite/shadowlands-extension-wow-informations
+https://www.mamytwink.com/guides/dragonflight-toutes-les-informations-sur-lextension-wow
+[![World of Warcraft : Mists of Pandaria](assets/img/WoW_MoP.png "Logo World of Warcraft : Mists of Pandaria")](#WoW_MoP)
 
 **Val de l’Éternel printemps** > **[Chroniqueur Han <Conteur de l’outil Raids>](https://www.wowhead.com/fr/npc=80633])** > `/way #390 83.0 30.6 Chroniqueur Han`
 
@@ -72,9 +75,7 @@ author: "Machou"
 
 ****
 
-[![World of Warcraft : Warlords of Draenor](assets/img/WoW_WoD.png "Logo World of Warcraft : Warlords of Draenor")](#WoW-WoD)
-
-## [Guide de Warlords of Draenor sur Mamytwink](https://www.mamytwink.com/warlords-draenor)
+[![World of Warcraft : Warlords of Draenor](assets/img/WoW_WoD.png "Logo World of Warcraft : Warlords of Draenor")](#WoW_WoD)
 
 | Faction      | Zone                 | PnJ                                                                    | Point de passage       |
 | :----------: | :------------------: | :--------------------------------------------------------------------: | :--------------------: |
@@ -104,7 +105,7 @@ author: "Machou"
 
 ****
 
-[![World of Warcraft : Legion](https://i.ibb.co/k3vh6CG/Wo-W-Legion.png "Logo World of Warcraft : Legion")](https://www.mamytwink.com/actualite/legion-extension-world-of-warcraft)
+[![World of Warcraft : Legion](assets/img/WoW_Legion.png "Logo World of Warcraft : Legion")](#WoW_Legion)
 
 **Îles Brisées** > **Dalaran** > **[Archimage Timear](https://www.wowhead.com/fr/npc=111246)** > `/way 63.6 55.6`
 
@@ -141,7 +142,7 @@ author: "Machou"
 
 ****
 
-[![World of Warcraft : Battle for Azeroth](https://i.ibb.co/VTypybS/WoW-BfA.png "Logo World of Warcraft : Battle for Azeroth")](https://www.mamytwink.com/actualite/battle-for-azeroth-nouvelle-extension-wow)
+[![World of Warcraft : Battle for Azeroth](assets/img/WoW_BfA.png "Logo World of Warcraft : Battle for Azeroth")](#WoW_BfA)
 
 | Faction      | Zone         | PnJ          | Point de passage |
 | :----------: | :----------: | :----------: | :----------: |
@@ -179,7 +180,7 @@ author: "Machou"
 
 ****
 
-[![World of Warcraft : Shadowlands](https://www.zupimages.net/up/23/42/r62h.png "Logo World of Warcraft : Shadowlands")](https://www.mamytwink.com/actualite/shadowlands-extension-wow-informations)
+[![World of Warcraft : Shadowlands](assets/img/WoW_Shadowlands.png "Logo World of Warcraft : Shadowlands")](#WoW_Shadowlands)
 
 **Oribos** > **[Ta'elfar <Commerçant d'histoires>](https://www.wowhead.com/fr/npc=205959)** > `/way 42.4 72.2`
 
@@ -206,7 +207,7 @@ author: "Machou"
 
 ****
 
-[![World of Warcraft : Dragonflight](https://www.zupimages.net/up/23/42/uug7.png "Logo World of Warcraft : Dragonflight")](https://www.mamytwink.com/guides/dragonflight-toutes-les-informations-sur-lextension-wow)
+[![World of Warcraft : Dragonflight](assets/img/WoW_Dragonflight.png "Logo World of Warcraft : Dragonflight")](#WoW_Dragonflight)
 
 <p align="center">
   <img src="assets/img/logo-horde.png">
