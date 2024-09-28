@@ -43,7 +43,7 @@ author: "Machou"
 
 [![World of Warcraft : Mists of Pandaria](assets/img/WoW_MoP.png "Logo World of Warcraft : Mists of Pandaria")](assets/img/Large-WoW_MoP.png)
 
-**Val de l’Éternel printemps** > **[Chroniqueur Han <Conteur de l’outil Raids>](https://www.wowhead.com/fr/npc=80633])** > `/way #390 83.0 30.6 Chroniqueur Han`
+**Val de l’Éternel printemps** > [Chroniqueur Han <Conteur de l’outil Raids>](https://www.wowhead.com/fr/npc=80633]) > `/way #390 83.0 30.6 Chroniqueur Han`
 
 ### [Caveaux Mogu’shan](https://www.wowhead.com/fr/zone=6125)
 
@@ -79,10 +79,10 @@ author: "Machou"
 
 [![World of Warcraft : Warlords of Draenor](assets/img/WoW_WoD.png "Logo World of Warcraft : Warlords of Draenor")](assets/img/Large-WoW_WoD.png)
 
-| Faction      | Zone                 | PnJ                                                                    | Point de passage       |
-| :----------: | :------------------: | :--------------------------------------------------------------------: | :--------------------: |
-| Horde        | **Mur-de-Givre**     | [Voyant Kazal <Exilé ombrelune>](https://www.wowhead.com/fr/npc=94870) | `/way 41.8 46.8`       |
-| Alliance     | **Chutelune**        | [Voyant Kazal <Exilé ombrelune>](https://www.wowhead.com/fr/npc=94870) | `/way 33.6 37.6`       |
+| Faction      | Zone             | PnJ                                                                    | Point de passage  |
+| :----------: | :--------------: | :--------------------------------------------------------------------: | :---------------: |
+| Horde        | **Mur-de-Givre** | [Voyant Kazal <Exilé ombrelune>](https://www.wowhead.com/fr/npc=94870) | `/way 41.8 46.8`  |
+| Alliance     | **Chutelune**    | [Voyant Kazal <Exilé ombrelune>](https://www.wowhead.com/fr/npc=94870) | `/way 33.6 37.6`  |
 
 ### [Cognefort](https://www.wowhead.com/fr/zone=6996)
 
@@ -111,7 +111,7 @@ author: "Machou"
 
 [![World of Warcraft : Legion](assets/img/WoW_Legion.png "Logo World of Warcraft : Legion")](assets/img/Large-WoW_Legion.png)
 
-**Îles Brisées** > **Dalaran** > **[Archimage Timear](https://www.wowhead.com/fr/npc=111246)** > `/way 63.6 55.6`
+**Îles Brisées** > **Dalaran** > [Archimage Timear](https://www.wowhead.com/fr/npc=111246) > `/way 63.6 55.6`
 
 ### [Le Cauchemar d’émeraude](https://www.wowhead.com/fr/zone=8026)
 
@@ -150,10 +150,10 @@ author: "Machou"
 
 [![World of Warcraft : Battle for Azeroth](assets/img/WoW_BfA.png "Logo World of Warcraft : Battle for Azeroth")](assets/img/Large-WoW_BfA.png)
 
-| Faction      | Zone         | PnJ          | Point de passage |
-| :----------: | :----------: | :----------: | :----------: |
-| Horde        | **Le Grand Sceau** | **[Eppu <Gardien des histoires>](https://www.wowhead.com/fr/npc=177208)** | `/way 69.8 32.6` |
-| Alliance     | **Boralus** | **[Kiko <Gardienne des histoires>](https://www.wowhead.com/fr/npc=177193)** | `/way 74 13.6` |
+| Faction      | Zone               | PnJ                                                                     | Point de passage |
+| :----------: | :----------------: | :---------------------------------------------------------------------: | :--------------: |
+| Horde        | **Le Grand Sceau** | [Eppu <Gardien des histoires>](https://www.wowhead.com/fr/npc=177208)   | `/way 69.8 32.6` |
+| Alliance     | **Boralus**        | [Kiko <Gardienne des histoires>](https://www.wowhead.com/fr/npc=177193) | `/way 74 13.6`   |
 
 ### [Uldir](https://www.wowhead.com/fr/zone=9389)
 
@@ -190,7 +190,7 @@ author: "Machou"
 
 [![World of Warcraft : Shadowlands](assets/img/WoW_Shadowlands.png "Logo World of Warcraft : Shadowlands")](assets/img/Large-WoW_Shadowlands.png)
 
-**Oribos** > **[Ta'elfar <Commerçant d'histoires>](https://www.wowhead.com/fr/npc=205959)** > `/way 42.4 72.2`
+**Oribos** > [Ta'elfar <Commerçant d'histoires>](https://www.wowhead.com/fr/npc=205959) > `/way 42.4 72.2`
 
 ### [Château Nathria](https://www.wowhead.com/fr/zone=13224)
 
