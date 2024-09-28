@@ -22,12 +22,12 @@ author: "Machou"
 ## Sommaire
 
 - [Liste des guides Mamytwink](#liste-des-guides-mamytwink)
-- [World of Warcraft : Mist of Pandaria](#WoW_MoP)
-- [World of Warcraft : Warlords of Draenor](#WoW_WoD)
-- [World of Warcraft : Legion](#WoW_Legion)
-- [World of Warcraft : Battle of Azeroth](#WoW_BfA)
-- [World of Warcraft : Shadowlands](#WoW_Shadowlands)
-- [World of Warcraft : Dragonflight](#WoW_Dragonflight)
+- [World of Warcraft : Mist of Pandaria](#world-of-warcraft--mists-of-pandaria)
+- [World of Warcraft : Warlords of Draenor](#world-of-warcraft--warlords-of-draenor)
+- [World of Warcraft : Legion](#world-of-warcraft--legion)
+- [World of Warcraft : Battle of Azeroth](#world-of-warcraft--battle-of-azeroth)
+- [World of Warcraft : Shadowlands](#world-of-warcraft--shadowlands)
+- [World of Warcraft : Dragonflight](#world-of-warcraft--dragonflight)
 
 # Liste des guides Mamytwink
 
