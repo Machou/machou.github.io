@@ -24,23 +24,23 @@ author: "Machou"
 ## Sommaire
 
 - [Liste des guides Mamytwink](#liste-des-guides-mamytwink)
-- [World of Warcraft : Mist of Pandaria](#WoW-MoP)
-- [World of Warcraft : Warlords of Draenor](#WoW-)
-- [World of Warcraft : Legion](#WoW-)
-- [World of Warcraft : Battle of Azeroth](#WoW-)
-- [World of Warcraft : Shadowlands](#WoW-)
-- [World of Warcraft : Dragonflight](#WoW-)
+- [World of Warcraft : Mist of Pandaria](#WoW_MoP)
+- [World of Warcraft : Warlords of Draenor](#WoW_WoD)
+- [World of Warcraft : Legion](#WoW_Legion)
+- [World of Warcraft : Battle of Azeroth](#WoW_BfA)
+- [World of Warcraft : Shadowlands](#WoW_Shadowlands)
+- [World of Warcraft : Dragonflight](#WoW_Dragonflight)
 
 # Liste des guides Mamytwink
 
 - [Site officiel Mamytwink](https://www.mamytwink.com/)
 - [Guide de Mists of Pandaria sur Mamytwink](https://www.mamytwink.com/mists-of-pandaria/world-of-warcraft-mists-of-pandaria)
-## [Guide de Warlords of Draenor sur Mamytwink](https://www.mamytwink.com/warlords-draenor)
-https://www.mamytwink.com/actualite/legion-extension-world-of-warcraft
+- [Guide de Warlords of Draenor sur Mamytwink](https://www.mamytwink.com/warlords-draenor)
+- [Guide de Legion sur Mamytwink](https://www.mamytwink.com/actualite/legion-extension-world-of-warcraft)
+- [Guide de Battle for Azeroth sur Mamytwink](https://www.mamytwink.com/actualite/battle-for-azeroth-nouvelle-extension-wow)
+- [Guide de Shadowlands sur Mamytwink](https://www.mamytwink.com/actualite/shadowlands-extension-wow-informations)
+- [Guide de Dragonflight sur Mamytwink](https://www.mamytwink.com/guides/dragonflight-toutes-les-informations-sur-lextension-wow)
 
-https://www.mamytwink.com/actualite/battle-for-azeroth-nouvelle-extension-wow
-https://www.mamytwink.com/actualite/shadowlands-extension-wow-informations
-https://www.mamytwink.com/guides/dragonflight-toutes-les-informations-sur-lextension-wow
 [![World of Warcraft : Mists of Pandaria](assets/img/WoW_MoP.png "Logo World of Warcraft : Mists of Pandaria")](#WoW_MoP)
 
 **Val de l’Éternel printemps** > **[Chroniqueur Han <Conteur de l’outil Raids>](https://www.wowhead.com/fr/npc=80633])** > `/way #390 83.0 30.6 Chroniqueur Han`
