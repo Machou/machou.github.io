@@ -152,8 +152,8 @@ author: "Machou"
 
 | Faction      | Zone               | PnJ                                                                     | Point de passage |
 | :----------: | :----------------: | :---------------------------------------------------------------------: | :--------------: |
-| Horde        | **Le Grand Sceau** | [Eppu <Gardien des histoires>](https://www.wowhead.com/fr/npc=177208)   | `/way 69.8 32.6` |
-| Alliance     | **Boralus**        | [Kiko <Gardienne des histoires>](https://www.wowhead.com/fr/npc=177193) | `/way 74 13.6`   |
+| Horde        | **Le Grand Sceau** | [Eppu « <Gardien des histoires »](https://www.wowhead.com/fr/npc=177208)   | `/way 69.8 32.6` |
+| Alliance     | **Boralus**        | [Kiko « Gardienne des histoires »](https://www.wowhead.com/fr/npc=177193) | `/way 74 13.6`   |
 
 ### [Uldir](https://www.wowhead.com/fr/zone=9389)
 
