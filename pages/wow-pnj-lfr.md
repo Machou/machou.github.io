@@ -39,9 +39,9 @@ author: "Machou"
 - [Guide de Shadowlands sur Mamytwink](https://www.mamytwink.com/actualite/shadowlands-extension-wow-informations)
 - [Guide de Dragonflight sur Mamytwink](https://www.mamytwink.com/guides/dragonflight-toutes-les-informations-sur-lextension-wow)
 
-[![World of Warcraft : Mists of Pandaria](assets/img/WoW_MoP.png "Logo World of Warcraft : Mists of Pandaria")](assets/img/Large-WoW_MoP.png)
-
 ## World of Warcraft : Mists of Pandaria
+
+[![World of Warcraft : Mists of Pandaria](assets/img/WoW_MoP.png "Logo World of Warcraft : Mists of Pandaria")](assets/img/Large-WoW_MoP.png)
 
 **Val de l’Éternel printemps** > **[Chroniqueur Han <Conteur de l’outil Raids>](https://www.wowhead.com/fr/npc=80633])** > `/way #390 83.0 30.6 Chroniqueur Han`
 
@@ -75,9 +75,9 @@ author: "Machou"
 
 ****
 
-[![World of Warcraft : Warlords of Draenor](assets/img/WoW_WoD.png "Logo World of Warcraft : Warlords of Draenor")](assets/img/Large-WoW_WoD.png)
-
 ## World of Warcraft : Warlords of Draenor
+
+[![World of Warcraft : Warlords of Draenor](assets/img/WoW_WoD.png "Logo World of Warcraft : Warlords of Draenor")](assets/img/Large-WoW_WoD.png)
 
 | Faction      | Zone                 | PnJ                                                                    | Point de passage       |
 | :----------: | :------------------: | :--------------------------------------------------------------------: | :--------------------: |
@@ -107,7 +107,9 @@ author: "Machou"
 
 ****
 
-[![World of Warcraft : Legion](assets/img/WoW_Legion.png "Logo World of Warcraft : Legion")](#WoW_Legion)
+## World of Warcraft : Legion
+
+[![World of Warcraft : Legion](assets/img/WoW_Legion.png "Logo World of Warcraft : Legion")](assets/img/Large-WoW_Legion.png)
 
 **Îles Brisées** > **Dalaran** > **[Archimage Timear](https://www.wowhead.com/fr/npc=111246)** > `/way 63.6 55.6`
 
@@ -144,7 +146,9 @@ author: "Machou"
 
 ****
 
-[![World of Warcraft : Battle for Azeroth](assets/img/WoW_BfA.png "Logo World of Warcraft : Battle for Azeroth")](#WoW_BfA)
+## World of Warcraft : Battle for Azeroth
+
+[![World of Warcraft : Battle for Azeroth](assets/img/WoW_BfA.png "Logo World of Warcraft : Battle for Azeroth")](assets/img/Large-WoW_BfA.png)
 
 | Faction      | Zone         | PnJ          | Point de passage |
 | :----------: | :----------: | :----------: | :----------: |
@@ -182,7 +186,9 @@ author: "Machou"
 
 ****
 
-[![World of Warcraft : Shadowlands](assets/img/WoW_Shadowlands.png "Logo World of Warcraft : Shadowlands")](#WoW_Shadowlands)
+## World of Warcraft : Shadowlands
+
+[![World of Warcraft : Shadowlands](assets/img/WoW_Shadowlands.png "Logo World of Warcraft : Shadowlands")](assets/img/Large-WoW_Shadowlands.png)
 
 **Oribos** > **[Ta'elfar <Commerçant d'histoires>](https://www.wowhead.com/fr/npc=205959)** > `/way 42.4 72.2`
 
@@ -209,7 +215,9 @@ author: "Machou"
 
 ****
 
-[![World of Warcraft : Dragonflight](assets/img/WoW_Dragonflight.png "Logo World of Warcraft : Dragonflight")](#WoW_Dragonflight)
+## World of Warcraft : Dragonflight
+
+[![World of Warcraft : Dragonflight](assets/img/WoW_Dragonflight.png "Logo World of Warcraft : Dragonflight")](assets/img/Large-WoW_Dragonflight.png)
 
 <p align="center">
   <img src="assets/img/logo-horde.png">
