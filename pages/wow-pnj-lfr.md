@@ -23,16 +23,22 @@ author: "Machou"
 
 ## Sommaire
 
-- World of Warcraft : Mist of Pandaria
-- World of Warcraft : Warlords of Draenor
-- World of Warcraft : Legion
-- World of Warcraft : Battle of Azeroth
-- World of Warcraft : Shadowlands
-- World of Warcraft : Dragonflight
+- [Liste des guides Mamytwink](#liste-des-guides-mamytwink)
+- [World of Warcraft : Mist of Pandaria](#WoW-MoP)
+- [World of Warcraft : Warlords of Draenor](#WoW-)
+- [World of Warcraft : Legion](#WoW-)
+- [World of Warcraft : Battle of Azeroth](#WoW-)
+- [World of Warcraft : Shadowlands](#WoW-)
+- [World of Warcraft : Dragonflight](#WoW-)
+
+# Liste des guides Mamytwink
+
+- [Site officiel Mamytwink](https://www.mamytwink.com/)
+- [Guide de Mists of Pandaria sur Mamytwink](https://www.mamytwink.com/mists-of-pandaria/world-of-warcraft-mists-of-pandaria)
+
+
 
 [![World of Warcraft : Mists of Pandaria](assets/img/WoW_MoP.png "Logo World of Warcraft : Mists of Pandaria")](#WoW-MoP)
-
-## [Guide de Mists of Pandaria sur Mamytwink](https://www.mamytwink.com/mists-of-pandaria/world-of-warcraft-mists-of-pandaria)
 
 **Val de l’Éternel printemps** > **[Chroniqueur Han <Conteur de l’outil Raids>](https://www.wowhead.com/fr/npc=80633])** > `/way #390 83.0 30.6 Chroniqueur Han`
 
