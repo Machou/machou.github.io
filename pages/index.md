@@ -45,6 +45,8 @@ favicon: "assets/img/favicon.png"
 | [Cartes @machou.github.io](https://github.com/Machou/machou.github.io)                             | [![](https://github-readme-stats.vercel.app/api?username=Machou&locale=fr&repo=github-stats&theme=swift)](https://github.com/Machou/machou.github.io)                                        |
 | [Langages de programmation les plus utilisés dans les dépôts de Machou](https://github.com/Machou) | [![Top Languages Used](https://github-readme-stats.vercel.app/api/top-langs/?username=Machou&locale=fr&bg_color=30,e96443,904e95&title_color=fff&text_color=fff)](https://github.com/Machou) |
 
+[![Machou/machou.github.io](https://gh-card.dev/repos/Machou/machou.github.io.svg)](https://github.com/Machou/machou.github.io)
+
 [![Trophy](https://github-profile-trophy.vercel.app/?username=ryo-ma&theme=dracula)](https://github.com/ryo-ma/github-profile-trophy)
 
 ## Configuration et installation
