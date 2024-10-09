@@ -1,1 +1,1 @@
-# [GitHub Pages](https://machou.github.io/)
+# [GitHub Pages](machou.github.io)
