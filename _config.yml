@@ -8,22 +8,21 @@ markdown: kramdown
 theme: jekyll-theme-cayman
 
 plugins:
-  # - jekyll-feed # Pour ajouter un flux RSS
-  - jekyll-sitemap # Pour générer un sitemap.xml
-  - jekyll-seo-tag # Pour l'optimisation SEO
+  # - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
 
 sass:
   style: compressed
 
-# Réseaux sociaux
 github_username: Machou
 
 socials:
   GitHub: https://github.com/Machou
   GitLab: https://gitlab.com/Machou
-#   twitter: "https://twitter.com/votre-compte"
-#   github: "https://github.com/votre-compte"
-#   linkedin: "https://linkedin.com/in/votre-compte"
+#   twitter:
+#   github:
+#   linkedin:
 
 # Activer ou désactiver des fonctionnalités spécifiques
 markdown_ext: "markdown,mkdn,mkdn,md"
@@ -46,6 +45,5 @@ navbar:
   - title: "WoW PNJ LFR"
     url: "/wow-pnj-lfr"
 
-# Paramètres supplémentaires (ex. pour GitHub Pages)
 github:
   is_project_page: true

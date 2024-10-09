@@ -1,6 +1,3 @@
-# Created by https://www.toptal.com/developers/gitignore/api/python,symfony
-# Edit at https://www.toptal.com/developers/gitignore?templates=python,symfony
-
 ### Python ###
 # Byte-compiled / optimized / DLL files
 __pycache__/

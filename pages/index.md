@@ -1,4 +1,5 @@
 ---
+# Exemple : https://github.com/microsoft/generative-ai-for-beginners
 lang: "fr"
 published: true
 permalink: "/"
