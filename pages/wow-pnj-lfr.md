@@ -1,7 +1,7 @@
 ---
 lang: "fr"
 title: "Word of Warcraft : les PNJ pour l’Outil Recherche de Raid"
-description: "Liste et localisation des différents PNJ pour l’outil Recherche de Raid sur World of Warcraft"
+description: "Liste et localisation des différents PNJ pour l’outil Recherche de Raid pour World of Warcraft"
 tags: ["wow", "lfr", "raid"]
 categories: ["Jeu vidéo"]
 published: true
