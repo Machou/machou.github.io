@@ -13,7 +13,7 @@ favicon: "assets/img/favicon.png"
 
 # Sommaire
 
-- [Word of Warcraft : les PNJ pour l’Outil Recherche de Raid](https://machou.github.io/wow-pnj-lfr)
+- [Word of Warcraft : les PNJ pour l’outil Recherche de Raid](https://machou.github.io/wow-pnj-lfr)
 - [Comment créer un Hidden Service sécurisé de zéro avec Tor sur Debian](https://machou.github.io/comment-creer-hidden-service)
   - [Tutoriel PortSentry](https://machou.github.io/comment-utiliser-portsentry)
   - [Tutoriel Fail2ban](https://machou.github.io/comment-utiliser-fail2ban)

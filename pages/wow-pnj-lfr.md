@@ -1,6 +1,6 @@
 ---
 lang: "fr"
-title: "Word of Warcraft : les PNJ pour l’Outil Recherche de Raid"
+title: "Word of Warcraft : les PNJ pour l’outil Recherche de Raid"
 description: "Liste et localisation des différents PNJ pour l’outil Recherche de Raid pour World of Warcraft"
 tags: ["wow", "lfr", "raid"]
 categories: ["Jeu vidéo"]
@@ -17,7 +17,7 @@ favicon: "/assets/img/favicon-wow.png"
 
 [![World of Warcraft](assets/img/WoW.png "Logo World of Warcraft")](assets/img/Large-WoW.png)
 
-# Word of Warcraft : les PNJ pour l’Outil Recherche de Raid
+# Word of Warcraft : les PNJ pour l’outil Recherche de Raid
 
 ## Sommaire
 
