@@ -15,6 +15,8 @@ author: "Machou"
 favicon: "/assets/img/favicon-wow.png"
 ---
 
+@import "{{ site.theme }}";
+
 [![World of Warcraft](assets/img/WoW.png "Logo World of Warcraft")](assets/img/Large-WoW.png)
 
 # Word of Warcraft : les PNJ pour l’outil Recherche de Raid
