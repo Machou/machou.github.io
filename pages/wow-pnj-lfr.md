@@ -15,7 +15,11 @@ author: "Machou"
 favicon: "/assets/img/favicon-wow.png"
 ---
 
-@import "{{ site.theme }}";
+<style>
+.project-name {
+	color: #fde101
+}
+</style>
 
 [![World of Warcraft](assets/img/WoW.png "Logo World of Warcraft")](assets/img/Large-WoW.png)
 
