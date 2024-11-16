@@ -15,6 +15,8 @@ author: "Machou"
 favicon: "/assets/img/favicon-wow.png"
 ---
 
+<link rel="icon" type="image/x-icon" href="/assets/img/favicon-wow.png">
+
 <style>
 .project-name {
 	color: #fde101
