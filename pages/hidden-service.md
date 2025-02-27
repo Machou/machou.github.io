@@ -31,11 +31,15 @@ favicon: "/assets/img/favicon.png"
   - [Logiciels Debian](#logiciels-debian)
 - [Installation d’un serveur LAMP](#installation-dun-serveur-lamp)
   - [Apache](#installation-et-configuration-dapache2)
+    - [Virtual Host](#virtual-host)
+  - [nginx](#installation-et-configuration-de-nginx-comme-proxy)
   - [PHP](#installation-et-configuration-de-php)
   - [MariaDB](#installation-et-configuration-de-mysql)
-  - [Accéder aux tables SQL](#accéder-aux-tables-sql)
+    - [Base de données et utilisateur](#base-de-données-et-utilisateur)
+    - [Accéder aux tables SQL](#accéder-aux-tables-sql)
   - [Installation et configuration de Tor](#installation-et-configuration-de-tor)
-  - [Configuration du Hidden Service](#configuration-du-hidden-service)
+    - [Configuration du Hidden Service](#configuration-du-hidden-service)
+    - [Configuration de Tor pour Apache2](#configuration-de-tor-pour-apache2)
   - [Générer une adresse .onion personnalisée](#générer-une-adresse-onion-personnalisée)
   - [FAQ Debug Tor](#faq-debug-tor)
 - [PortSentry](PortSentry.md)
@@ -60,13 +64,13 @@ favicon: "/assets/img/favicon.png"
 
 Dans ce tutoriel, nous tenterons de garder les logiciels à jour avec leurs dernières versions. Voici la liste actuelle :
 
-- [Debian](https://www.debian.org/) — [version 12.7, liste des changements](https://www.debian.org/News/2024/20240831)
+- [Debian](https://www.debian.org/) — [version 12.9, liste des changements](https://www.debian.org/News/2025/20250111)
 - [Apache2](https://httpd.apache.org/) — [version 2.4.62, liste des changements](https://httpd.apache.org/security/vulnerabilities_24.html#2.4.62)
-- [PHP](https://www.php.net/) — [version 8.3.11, liste des changements](https://www.php.net/ChangeLog-8.php#8.3.11)
+- [PHP](https://www.php.net/) — [version 8.4.4, liste des changements](https://www.php.net/ChangeLog-8.php#8.4.4)
 - [MariaDB](https://mariadb.org/) — [version 10.11.6, liste des changements](https://mariadb.com/kb/en/mariadb-10-11-6-release-notes/)
-- [Tor](https://www.torproject.org/) — [version 0.4.8.12, liste des changements](https://gitlab.torproject.org/tpo/core/tor/-/commits/tor-0.4.8.12)
+- [Tor](https://www.torproject.org/) — [version 0.4.8.14, liste des changements](https://gitlab.torproject.org/tpo/core/tor/-/commits/tor-0.4.8.14)
 
-*Dernière mise à jour le 7 juin 2024*
+*Dernière mise à jour le 27 février 2025*
 
 Nous allons configurer notre serveur, qui sera basé sur Apache2, PHP et SQL. Ce type de serveur est plus communément appelé **LAMP**. LAMP est un acronyme désignant un ensemble de logiciels libres permettant de construire des serveurs de sites web. L’acronyme original se réfère aux logiciels suivants :
 
@@ -164,6 +168,8 @@ passwd
 
 ## SSH
 
+> **SSH** (Secure Shell) est un protocole réseau qui permet d’établir une connexion sécurisée entre un client et un serveur. Il est principalement utilisé pour accéder à distance à des systèmes informatiques, en garantissant la confidentialité et l’intégrité des données grâce au chiffrement. SSH permet d’exécuter des commandes, de transférer des fichiers en toute sécurité et d’administrer des serveurs à distance. Il remplace des protocoles moins sécurisés comme Telnet et FTP.
+
 ### Authentification SSH
 
 #### Méthode N°1 : clés SSH
@@ -221,7 +227,7 @@ C’est fait, la clé publique a bien été copiée dans le fichier **~/.ssh/aut
 
 *Pour se connecter :*
 
-Connectez-vous normalement en SSH via terminal par exemple :
+Connectez-vous normalement en SSH via un terminal, par exemple :
 
 `ssh <username>@<hostname>`
 
@@ -241,7 +247,7 @@ On met à jour notre fichier *sources.list* :
 
 `nano --backup /etc/apt/sources.list`
 
-On change pour :
+On copie / colle :
 
 ```sh
 deb https://deb.debian.org/debian bookworm main
@@ -274,7 +280,7 @@ Une fois notre utilisateur créé, on l’ajoute au groupe « *sudo* », cela pe
 
 `adduser salameche sudo`
 
-La sortie renverra :
+La sortie doit renvoyer :
 
 ```sh
 Adding user `salameche' to group `sudo' ...
@@ -339,7 +345,7 @@ On quitte et on redémarre SSH :
 
 `sudo /etc/init.d/ssh restart`
 
-### Double Authentification avec Google Authenticator PAM module
+### (Facultatif) Double Authentification avec Google Authenticator PAM module
 
 On peut ajouter une sécurité complémentaire en ajoutant la **double authentification** grâce au logiciel [Google Authenticator PAM module](https://github.com/google/google-authenticator-libpam) spécialement conçu pour SSH.
 
@@ -393,10 +399,9 @@ Si vous souhaitez ajouter le code TOTP directement, on copie / colle le code gé
 
 `Your new secret key is: **********`
 
-Ou on peut scanner le code QR avec une application. Voici une liste :
+On peut également scanner le QR code via une application, telle que :
 
-- [Bitwarden](https://bitwarden.com/) :+1: :+1: :+1:
-- [Authy](https://authy.com/) :+1: :+1:
+- [Bitwarden](https://bitwarden.com/) :+1: :+1:
 - [Google Authenticator Android](https://play.google.com/store/apps/details?id=com.google.android.apps.authenticator2&hl=fr) :+1:
 - [Google Authenticator iOS](https://apps.apple.com/fr/app/google-authenticator/id388497605) :+1:
 
@@ -457,31 +462,32 @@ On quitte et on redémarre SSH :
 
 On installe / désinstalle quelques logiciels pour la pratique et la sécurité, on recharge le cache de recherche et on met les liens symboliques à jour :
 
-`sudo apt install ca-certificates curl gnupg locate && sudo apt purge ntp rsyslog exim* postfix* sendmail* samba* && sudo updatedb`
+`sudo apt install ca-certificates curl gnupg && sudo apt purge ntp rsyslog exim* postfix* sendmail* samba*`
 
 ***Ajouts*** :
 
-- [ca-certificates](https://packages.debian.org/fr/bookworm/ca-certificates) : ce paquet inclut les autorités de certifications livrées avec les navigateurs Mozilla afin de permettre aux applications basées sur SSL de vérifier l’authenticité des connexions SSL.
-- [curl](https://packages.debian.org/fr/bookworm/curl) : curl est un outil en ligne de commande pour transférer des données avec une syntaxe URL qui prend en charge DICT, FILE, FTP, FTPS, GOPHER, HTTP, HTTPS, IMAP, IMAPS, LDAP, LDAPS, POP3, POP3S, RTMP, RTSP, SCP, SFTP, SMTP, SMTPS, TELNET et TFTP.
-- [gnupg](https://packages.debian.org/fr/bookworm/gnupg) : GnuPG est l’outil GNU pour sécuriser les communications et le stockage de données. Il peut être utilisé pour chiffrer des données et créer des signatures numériques. Il inclut un mécanisme perfectionné de gestion de clés et est compatible avec la proposition de standard OpenPGP pour Internet tel que décrit dans la RFC 4880.
-- [locate](https://packages.debian.org/fr/bookworm/locate) : updatedb génère un index de fichiers et répertoires. GNU locate peut être utilisé pour effectuer des requêtes rapides sur cet index.
+- [ca-certificates](https://packages.debian.org/fr/bookworm/ca-certificates) : ce paquet inclut les autorités de certifications livrées avec les navigateurs Mozilla afin de permettre aux applications basées sur SSL de vérifier l’authenticité des connexions SSL
+- [curl](https://packages.debian.org/fr/bookworm/curl) : curl est un outil en ligne de commande pour transférer des données avec une syntaxe URL qui prend en charge DICT, FILE, FTP, FTPS, GOPHER, HTTP, HTTPS, IMAP, IMAPS, LDAP, LDAPS, POP3, POP3S, RTMP, RTSP, SCP, SFTP, SMTP, SMTPS, TELNET et TFTP
+- [gnupg](https://packages.debian.org/fr/bookworm/gnupg) : GnuPG est l’outil GNU pour sécuriser les communications et le stockage de données. Il peut être utilisé pour chiffrer des données et créer des signatures numériques. Il inclut un mécanisme perfectionné de gestion de clés et est compatible avec la proposition de standard OpenPGP pour Internet tel que décrit dans la RFC 4880
 
 ***Suppressions*** :
 
-- [ntp](https://packages.debian.org/fr/bookworm/ntp) : il s’agit d’un package de transition factice pour passer à NTPsec. Il peut être retiré en toute sécurité.
-- [rsyslog](https://packages.debian.org/fr/bookworm/rsyslog) : rsyslog est une implémentation à unités d’exécution multiples de syslogd (un outil système qui fournit une journalisation de message).
-- [exim4](https://packages.debian.org/fr/bookworm/exim4) : exim (version 4) est un agent de transport de courrier. Exim4 est le métapaquet sur lequel dépendent les composants essentiels d’une installation de base d’exim4.
-- [postfix](https://packages.debian.org/fr/bookworm/postfix) : postfix est l’agent de transport de courriel de Wietse Venema qui a commencé son existence comme une alternative au très utilisé programme Sendmail. Postfix vise à être rapide, facile à administrer et sécuritaire, tout en restant assez compatible avec Sendmail pour ne pas frustrer ses utilisateurs. Ainsi, l’externe ressemble à Sendmail, alors que la structure interne est complètement différente.
-- [sendmail](https://packages.debian.org/fr/bookworm/sendmail) : sendmail est un agent de transmission de courriels (MTA) alternatif pour Debian. Il est adapté pour le traitement des configurations de messagerie sophistiquées, quoique cela signifie aussi que sa configuration peut être complexe.
-- [samba](https://packages.debian.org/fr/bookworm/samba) : samba est une implémentation du protocole SMB/CIFS pour les systèmes Unix, offrant la prise en charge du partage de fichiers et d’imprimantes multiplateforme avec Microsoft Windows, OS X et d’autres systèmes Unix. Samba peut également fonctionner comme un contrôleur de domaine de style Active Directory ou NT4 et peut s’intégrer aux domaines Active Directory ou aux domaines NT4 en tant que serveur membre.
+- [ntp](https://packages.debian.org/fr/bookworm/ntp) : il s’agit d’un package de transition factice pour passer à NTPsec. Il peut être retiré en toute sécurité
+- [rsyslog](https://packages.debian.org/fr/bookworm/rsyslog) : rsyslog est une implémentation à unités d’exécution multiples de syslogd (un outil système qui fournit une journalisation de message)
+- [exim4](https://packages.debian.org/fr/bookworm/exim4) : exim (version 4) est un agent de transport de courrier. Exim4 est le métapaquet sur lequel dépendent les composants essentiels d’une installation de base d’exim4
+- [postfix](https://packages.debian.org/fr/bookworm/postfix) : postfix est l’agent de transport de courriel de Wietse Venema qui a commencé son existence comme une alternative au très utilisé programme Sendmail. Postfix vise à être rapide, facile à administrer et sécuritaire, tout en restant assez compatible avec Sendmail pour ne pas frustrer ses utilisateurs. Ainsi, l’externe ressemble à Sendmail, alors que la structure interne est complètement différente
+- [sendmail](https://packages.debian.org/fr/bookworm/sendmail) : sendmail est un agent de transmission de courriels (MTA) alternatif pour Debian. Il est adapté pour le traitement des configurations de messagerie sophistiquées, quoique cela signifie aussi que sa configuration peut être complexe
+- [samba](https://packages.debian.org/fr/bookworm/samba) : samba est une implémentation du protocole SMB/CIFS pour les systèmes Unix, offrant la prise en charge du partage de fichiers et d’imprimantes multiplateforme avec Microsoft Windows, OS X et d’autres systèmes Unix. Samba peut également fonctionner comme un contrôleur de domaine de style Active Directory ou NT4 et peut s’intégrer aux domaines Active Directory ou aux domaines NT4 en tant que serveur membre
 
 ## Installation d’un serveur LAMP
 
 ### Installation et configuration d’Apache2
 
+> **Apache2** est un serveur web open source largement utilisé pour héberger des sites web et des applications. Développé par la fondation Apache, il est compatible avec divers systèmes d’exploitation, dont Linux et Windows. Apache2 prend en charge plusieurs modules pour étendre ses fonctionnalités, comme PHP, SSL pour la sécurité, et des options de configuration avancées pour gérer le trafic web. Sa flexibilité et sa fiabilité en font l’un des serveurs web les plus populaires au monde.
+
 On installe Apache2 :
 
-Avant toutes choses, on désinstalle Apache2 s’il est déjà installé, pour éviter tout conflit.
+Avant toute chose, on désinstalle Apache2 s’il est déjà installé, pour éviter tout conflit.
 
 `sudo apt purge apache*`
 
@@ -489,31 +495,21 @@ Puis on réinstalle Apache2 :
 
 `sudo apt install apache2 apache2-utils`
 
-On masque quelques informations d’Apache2 :
+Par défaut, Apache2 écoute sur le port 80. Pour utiliser Tor et nginx en proxy inverse, on va écouter sur le port 8080.
+
+`sudo nano /etc/apache2/ports.conf`
+
+On change :
+
+`Listen 80`
+
+par
+
+`Listen 127.0.0.1:8081`
+
+On configure Apache2 :
 
 `sudo nano /etc/apache2/apache2.conf`
-
-On vérifie que ces lignes correspondent à :
-
-```sh
-<Directory />
-	#Options FollowSymLinks
-	AllowOverride None
-	Require all denied
-</Directory>
-
-<Directory /usr/share>
-	AllowOverride None
-	#Require all granted
-	Require all denied
-</Directory>
-
-<Directory /var/www/>
-	Options FollowSymLinks
-	AllowOverride None
-	Require all granted
-</Directory>
-```
 
 On ajoute ces 3 lignes à la fin de la page :
 
@@ -523,34 +519,58 @@ ServerTokens Prod
 TraceEnable Off
 ```
 
-On sauvegarde et on ferme le fichier.
-
 - [ServerSignature](https://httpd.apache.org/docs/2.4/fr/mod/core.html#ServerSignature)
 - [ServerTokens](https://httpd.apache.org/docs/2.4/fr/mod/core.html#ServerTokens)
 - [TraceEnable](https://httpd.apache.org/docs/2.4/fr/mod/core.html#TraceEnable)
 
-Les fichiers :
-
-- **/etc/apache2/apache2.conf** : le fichier de configuration principal d’Apache.
-- **/etc/apache2/ports.conf** : configuration des ports.
-- **/etc/apache2/sites-available/** : répertoire pour les fichiers de configuration des sites disponibles.
-- **/etc/apache2/sites-enabled/** : répertoire pour les fichiers de configuration des sites activés.
-
-On supprime le dossier **/var/www/html** :
-
-`sudo rm -rf /var/www/html`
-
-On applique les droits **Apache2** sur le dossier de notre futur Hidden Service :
+On applique les droits **Apache2** sur le dossier de notre futur projet *Hidden Service* :
 
 ```sh
-sudo chown -R www-data:www-data /var/www
-sudo chmod 775 /var/www
 sudo usermod -aG www-data salameche
+sudo chown -R www-data:www-data /var/www/html
+sudo chmod -R 775 /var/www/html
+sudo chmod g+s /var/www/html
 ```
 
-**Le VirtualHost**
+#### Virtual Host
 
-> Un **VirtualHost** est une configuration qui permet à un serveur unique de répondre à des requêtes pour plusieurs noms de domaine. Cette fonctionnalité est particulièrement utile pour les serveurs web qui hébergent plusieurs sites web, permettant ainsi à chaque site d’avoir ses propres configurations et paramètres, tout en partageant les mêmes ressources serveur.
+> Un **Virtual Host** est une configuration qui permet à un serveur unique de répondre à des requêtes pour plusieurs noms de domaine. Cette fonctionnalité est particulièrement utile pour les serveurs web qui hébergent plusieurs sites web, permettant ainsi à chaque site d’avoir ses propres configurations et paramètres, tout en partageant les mêmes ressources serveur.
+
+On crée notre *Virtuel Host* :
+
+`sudo nano /etc/apache2/sites-available/hidden-service.conf`
+
+On copie / colle :
+
+```conf
+<VirtualHost 127.0.0.1:8081>
+    ServerName localhost
+    DocumentRoot /var/www/html
+
+    <Directory /var/www/html>
+        Options Indexes FollowSymLinks
+        AllowOverride All
+        Require all granted
+    </Directory>
+
+    AddDefaultCharset UTF-8
+    DefaultLanguage fr
+    RewriteEngine on
+    LimitRequestBody 10485760
+
+    ErrorLog ${APACHE_LOG_DIR}/error.log
+    CustomLog ${APACHE_LOG_DIR}/access.log combined
+</VirtualHost>
+```
+
+- `AddDefaultCharset UTF-8` : définit l’encodage **UTF-8** par défaut pour les pages servies par le serveur Apache
+- `DefaultLanguage fr` : définit la langue **fr** par défaut pour le contenu servi par le serveur Apache
+- `RewriteEngine on` : active le module de réécriture d’URL **mod_rewrite** d’Apache
+- `LimitRequestBody 10485760` : limite la taille à **10 Mo** maximale des requêtes HTTP que le serveur acceptera
+
+On active le *Virtual Host* :
+
+`sudo a2ensite hidden-service`
 
 On désactive le [mod_autoindex](https://httpd.apache.org/docs/2.4/fr/mod/mod_autoindex.html) et le [mod_status](https://httpd.apache.org/docs/2.4/fr/mod/mod_status.html) :
 
@@ -564,7 +584,7 @@ Le module **mod_autoindex** offre également des fonctionnalités de personnalis
 
 En résumé, le module Apache **mod_autoindex** simplifie la gestion des répertoires sur un serveur web en générant automatiquement des listes de fichiers et de répertoires lorsque nécessaire, offrant ainsi une manière pratique de naviguer dans la structure des fichiers sur un site web.
 
-- **mod_status** : Le module Apache **mod_status** est un module optionnel pour le serveur web Apache qui fournit des informations en temps réel sur la performance et l’utilisation du serveur. Il expose ces informations via une page HTML accessible via une URL spécifique.
+- **mod_status** : module optionnel pour le serveur web Apache qui fournit des informations en temps réel sur la performance et l’utilisation du serveur. Il expose ces informations via une page HTML accessible via une URL spécifique.
 
 Voici quelques-unes des informations que **mod_status** peut fournir :
 
@@ -581,14 +601,89 @@ Il convient de noter que, comme tout module Apache, **mod_status** doit être ac
 
 On active différents modules utiles pour Apache2 :
 
-`sudo a2enmod deflate headers rewrite`
+`sudo a2enmod proxy proxy_http deflate rewrite headers`
 
 On quitte et on redémarre Apache2 :
 
 `sudo service apache2 restart`
 
+On vérifie qu’Apache est bien configuré :
+
+`sudo netstat -tuln | grep 8080`
+
+La sortie doit renvoyer :
+
+`tcp        0      0 127.0.0.1:8080          0.0.0.0:*               LISTEN`
+
 - [Site officiel d’Apache2](https://httpd.apache.org/)
 - [Dépôt GitHub officiel](https://github.com/apache/httpd)
+
+### Installation et configuration de nginx comme proxy
+
+> Un proxy **nginx** / Apache2 est une configuration où nginx est utilisé comme proxy inverse (reverse proxy) devant Apache2. Nginx reçoit toutes les requêtes des clients sur le port 80 (HTTP) ou 443 (HTTPS). Apache2 traite les requêtes dynamiques (comme les scripts PHP) et renvoie les réponses à Nginx, qui les transmet ensuite au client. Cette combinaison permet de tirer parti des avantages des deux serveurs, offrant ainsi une meilleure performance, une sécurité accrue, et une grande flexibilité dans la gestion du trafic web.
+
+On installe nginx :
+
+Avant toute chose, on désinstalle nginx s’il est déjà installé, pour éviter tout conflit.
+
+`sudo apt purge nginx*`
+
+Puis on réinstalle Apache2 :
+
+`sudo apt install nginx`
+
+On crée un fichier de configuration pour le proxy :
+
+`sudo nano /etc/nginx/sites-available/proxy.conf`
+
+On copie / colle :
+
+```conf
+server {
+    listen 127.0.0.1:8080;
+    server_name localhost;
+
+    location / {
+        proxy_pass http://127.0.0.1:8081;
+        proxy_set_header Host $host;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_set_header X-Forwarded-Proto $scheme;
+    }
+
+    # Bloque l’accès aux fichiers sensibles (.htaccess, .git, .env, etc.)
+    location ~ /\.(ht|git|env) {
+        deny all;
+    }
+
+    # Sécurisation des requêtes
+    client_max_body_size 10M;
+    proxy_read_timeout 90;
+    proxy_connect_timeout 90;
+    proxy_send_timeout 90;
+    proxy_redirect off;
+
+    # Sécurité des en-têtes HTTP
+    add_header X-Frame-Options SAMEORIGIN;
+    add_header X-Content-Type-Options nosniff;
+    add_header X-XSS-Protection "1; mode=block";
+}
+```
+
+On active cette configuration :
+
+`sudo ln -s /etc/nginx/sites-available/proxy.conf /etc/nginx/sites-enabled/`
+
+On vérifie qu’nginx est bien configuré :
+
+`sudo nginx -t`
+
+La sortie doit renvoyer :
+
+```sh
+nginx: the configuration file /etc/nginx/nginx.conf syntax is ok
+nginx: configuration file /etc/nginx/nginx.conf test is successful
+```
 
 ### Installation et configuration de PHP
 
@@ -600,27 +695,22 @@ Qui est **Ondřej Surý** ?
 
 - [Site officiel de PHP](https://www.php.net/)
 - [Dépôt GitHub officiel](https://github.com/php/php-src)
-- [Nouveautés dans PHP 8.3](https://kinsta.com/fr/blog/php-8-3/)
+- [Nouveautés dans PHP 8.4](https://kinsta.com/fr/blog/php-8-4/)
 
-Avant toutes choses, on désinstalle PHP s’il est déjà installé, pour éviter tout conflit.
+Avant toute chose, on désinstalle PHP s’il est déjà installé, pour éviter tout conflit.
 
 ```sh
 sudo systemctl stop php*
 sudo apt autoremove --purge php*
-sudo a2dismod php5 php7.0 php7.1 php7.2 php7.3 php7.4 php8.0 php8.1 php8.2 php8.3
+sudo a2dismod php5 php7.0 php7.1 php7.2 php7.3 php7.4 php8.0 php8.1 php8.2 php8.3 php8.4
 ```
 
-*Des erreurs apparaitront si une version de PHP n’est pas installée.*
-
-On ajoute la clé GPG & le dépôt :
+On ajoute la clé GPG et le dépôt :
 
 ```sh
-sudo install -m 0755 -d /etc/apt/keyrings
-curl -fsSL https://packages.sury.org/php/apt.gpg | sudo gpg --dearmor -o /etc/apt/keyrings/php.gpg
-sudo chmod a+r /etc/apt/keyrings/php.gpg
-echo \
-  "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/php.gpg] https://packages.sury.org/php/ \
-  $(lsb_release -cs) main" | sudo tee /etc/apt/sources.list.d/php8.list > /dev/null
+sudo curl -sSLo /tmp/debsuryorg-archive-keyring.deb https://packages.sury.org/debsuryorg-archive-keyring.deb
+sudo dpkg -i /tmp/debsuryorg-archive-keyring.deb
+sudo sh -c 'echo "deb [signed-by=/usr/share/keyrings/deb.sury.org-php.gpg] https://packages.sury.org/php/ $(lsb_release -sc) main" > /etc/apt/sources.list.d/php.list'
 ```
 
 On met à jour les paquets :
@@ -630,18 +720,18 @@ On met à jour les paquets :
 On installe PHP et quelques dépendances utiles :
 
 ```sh
-sudo apt install php8.3 \
-php8.3-{bz2,cli,common,curl,intl,mbstring,mysql,opcache,xml,zip}
-libapache2-mod-php8.3
+sudo apt install php8.4 \
+php8.4-{bz2,cli,common,curl,intl,mbstring,mysql,opcache,xml,zip} \
+libapache2-mod-php8.4
 ```
 
 On active PHP pour Apache2 :
 
-`sudo a2enmod php8.3`
+`sudo a2enmod php8.4`
 
 On configure PHP :
 
-`sudo nano /etc/php/8.3/apache2/php.ini`
+`sudo nano /etc/php/8.4/apache2/php.ini`
 
 On remplace et / ou rajoute :
 
@@ -650,9 +740,55 @@ On remplace et / ou rajoute :
 short_open_tag = Off
 
 ; https://www.php.net/manual/fr/ini.core.php#ini.open-basedir
-open_basedir = /var/www
+open_basedir = /var/www/html:/tmp
 
-disable_functions = fonctions précédentes + ,passthru,shell_exec,system,proc_open,popen,curl_exec,curl_multi_exec,parse_ini_file,highlight_file,show_source,mail,phpinfo,passthru,eval,proc_get_status,proc_nice,proc_open,proc_terminate,ftp_alloc,ftp_cdup,ftp_chdir,ftp_close,ftp_connect,ftp_delete,ftp_exec,ftp_fget,ftp_fput,ftp_get,ftp_put,ftp_nlist,imap_open
+; https://www.php.net/manual/fr/ini.core.php#ini.disable-functions
+disable_functions =
+    show_source,          ; Affiche le code source d’un fichier
+    highlight_file,       ; Alias de show_source
+    fpassthru,            ; Lit un fichier et l’affiche
+    readlink,             ; Lit le chemin d’un lien symbolique
+    symlink,              ; Crée un lien symbolique
+    link,                 ; Crée un lien physique
+    getcwd,               ; Obtient le répertoire de travail courant
+    ;file_get_contents,    ; Lit le contenu d’un fichier dans une chaîne
+    ;file_put_contents,    ; Écrit une chaîne dans un fichier
+    parse_ini_file,       ; Analyse un fichier INI
+    tmpfile,              ; Crée un fichier temporaire
+    exec,                 ; Exécute une commande système
+    system,               ; Exécute une commande système et affiche le résultat
+    shell_exec,           ; Exécute une commande via le shell
+    passthru,             ; Exécute un programme externe et affiche la sortie brute
+    popen,                ; Ouvre un processus en lecture/écriture
+    proc_open,            ; Exécution avancée de commandes
+    pcntl_exec,           ; Exécute un programme
+    curl_exec,            ; Exécution d’une requête cURL
+    curl_multi_exec,      ; Exécution multiple de requêtes cURL
+    fsockopen,            ; Ouverture de sockets réseau
+    pfsockopen,           ; Ouverture persistante de sockets réseau
+    stream_socket_client, ; Ouverture de sockets réseau via flux
+    stream_socket_server  ; Création de serveurs socket
+    allow_url_include,    ; Interdit l’inclusion de fichiers distants
+    allow_url_fopen       ; Interdit l’ouverture de fichiers distants
+    phpinfo,              ; Affiche les informations PHP (peut exposer l’IP et d’autres infos sensibles)
+    ; getenv,               ; Obtient des variables d’environnement
+    putenv,               ; Définit des variables d’environnement
+    ini_set,              ; Modifie des options de configuration PHP
+    ini_restore,          ; Rétablit une option PHP à sa valeur initiale
+    dl,                   ; Charge une extension PHP au moment de l’exécution
+    leak,                 ; Permet des fuites de mémoire
+    posix_getpwuid,       ; Récupère les infos d’un utilisateur Unix
+    posix_getgrgid,       ; Récupère les infos d’un groupe Unix
+    get_current_user,     ; Récupère le nom de l’utilisateur sous lequel tourne PHP
+    proc_nice,            ; Change la priorité du processus
+    proc_terminate,       ; Termine un processus
+    proc_close            ; Ferme un processus ouvert avec proc_open
+    eval,                 ; Évalue du code PHP
+    assert,               ; Évalue une assertion PHP (pouvant exécuter du code)
+    create_function,      ; Crée une fonction anonyme à partir d’une chaîne
+    mail,                 ; Permet l’envoie d’un courriel
+	proc_get_status,      ; Lit les informations concernant un processus ouvert par proc_open()
+	imap_open             ; Ouvre un flux IMAP vers une boîte aux lettres
 
 ; https://www.php.net/manual/fr/info.configuration.php#ini.max-execution-time
 max_execution_time = 60
@@ -682,7 +818,7 @@ max_file_uploads = 0
 file_uploads = Off
 
 ; https://www.php.net/manual/fr/datetime.configuration.php#ini.date.timezone
-date.timezone = Australia/Melbourne
+date.timezone = Europe/Paris
 
 ; https://www.php.net/manual/fr/ini.core.php#ini.expose-php
 expose_php = Off
@@ -708,21 +844,19 @@ On sauvegarde le fichier **php.ini** et on redémarre Apache2 :
 
 ### Installation et configuration de MySQL
 
-MariaDB est un système de gestion de base de données édité sous licence GPL. Il s’agit d’un embranchement communautaire de MySQL : la gouvernance du projet est assurée par la fondation MariaDB, et sa maintenance par la société Monty Program AB, créateur du projet. Cette gouvernance confère au logiciel l’assurance de rester libre.
+> **MariaDB** est un système de gestion de base de données édité sous licence GPL. Il s’agit d’un embranchement communautaire de MySQL : la gouvernance du projet est assurée par la fondation MariaDB, et sa maintenance par la société Monty Program AB, créateur du projet. Cette gouvernance confère au logiciel l’assurance de rester libre.
 
 L’installation du méta-paquet **default-mysql-server** installera mariadb-server. Si les paquets mysql-server-* ou mysql-server-* sont installés, ils seront supprimés et remplacés par leur équivalent MariaDB. De la même façon, l’installation du méta-paquet default-mysql-client installera mariadb-client-*.
 
 - [Site officiel de MariaDB](https://mariadb.org/)
 - [Dépôt GitHub officiel](https://github.com/MariaDB/server)
 
-Avant toutes choses, on désinstalle MariaDB s’il est déjà installé, pour éviter tout conflit.
+Avant toute chose, on désinstalle MariaDB s’il est déjà installé, pour éviter tout conflit.
 
 ```sh
 sudo systemctl stop mysql* maria*
 sudo apt autoremove --purge mysql* maria*
 ```
-
-*Des erreurs apparaitront si une version de MySQL n’est pas installée.*
 
 On installe le serveur et le client MariaDB :
 
@@ -734,14 +868,17 @@ On lance la commande, pour configurer, sécuriser et finaliser l’installation 
 
 `sudo mysql_secure_installation`
 
-1. **Entrer** > pas de mot de passe requis (donc on laisse vide)
-2. **Entrer** > on change vers **unix_socket authentication**
-3. **Entrer** > on change le mot de passe root de MariaDB
-3.1. **Visual-Voiture12-Select!** : sera le mot de passe root
-4. on retire l’utilisateur anonyme
-5. **Entrer** > on désactive la connexion de root à distance
-6. **Entrer** > on retire les bases de données de test
-7. **Entrer** > on recharge les tables
+1. `Enter current password for root (enter for none):` : **Entrer** > on laisse vide (si un mot de passe a déjà été défini, entrez-le pour continuer)
+2. `Switch to unix_socket authentication [Y/n]` : **Y** > empêche les tentatives de connexion distantes en tant que root
+3. `Change the root password? [Y/n]` : **Y** > on change le mot de passe root (par exemple : Bing0_Serpent_Orange_Nmap4)
+4. `Remove anonymous users? [Y/n]` : **Y** > empêche les connexions anonymes
+5. `Disallow root login remotely? [Y/n]` : **Y** > empêche les tentatives de connexion root depuis l'extérieur du serveur
+6. `Remove test database and access to it? [Y/n]` : **Y** > la base de données de test est une potentielle faille de sécurité
+7. `Reload privilege tables now? [Y/n]` : **Y** > applique immédiatement les modifications de sécurité effectuées
+
+Une fois terminé, doit renvoyer :
+
+`All done!  If you've completed all of the above steps, your MariaDB installation should now be secure.`
 
 On redémarre MariaDB :
 
@@ -757,102 +894,93 @@ On vérifie que MariaDB fonctionne correctement :
 
 On vérifie que la connexion fonctionne :
 
-`sudo mariadb -u root -pVisual-Voiture12-Select!`
+`sudo mysql -u root`
 
 Une fois connecté, on peut afficher les bases de données :
 
 `SHOW DATABASES;`
 
-On redémarre le serveur :
+Cela fonctionne sans demander de mot de passe car vous utilisez le socket Unix en tant que root.
 
-`sudo reboot`
+#### Base de données et utilisateur
 
-### Accéder aux tables SQL
+On se connecte en root à la base de données MySQL :
 
-Pour accéder à votre base de données SQL, je vous propose d’utiliser le puissant [AdminEvo](https://docs.adminerevo.org/).
+`sudo mysql -u root`
 
-Généralement, on utilise [phpMyAdmin](https://www.phpmyadmin.net/), complet et facile d’utilisation mais malheureusement, ce gestionnaire n’est pas adapté à notre configuration. Vous trouverez les autres [logiciels SGBD sur sql.sh](https://sql.sh/logiciels).
+On crée notre base de données **mon_onion** :
 
-Mais **phpMyAdmin** est gourmand en ressource, il utilise JavaScript (à proscrire sur le réseau Tor), il s’expose à des vulnérabilités connues, etc.
+`CREATE DATABASE mon_onion CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;`
 
-Nous n’allons pas installer de gestionnaire de base de données à propremment parlé, mais on peut utiliser [AdminerEvo](https://docs.adminerevo.org/). Il vous suffira de télécharger le fichier lorsque vous aurez besoin d’accéder à votre base de données et de le supprimer une fois vos opérations terminées. Évidemment, la solution la plus sécurisée serait de manipuler les données SQL en ligne de commande.
+On crée un utilisateur **salameche** avec comme de mot de passe **mot_de_passe** :
 
-**AdminerEvo** est  léger (fichier unique), il ne dépand pas de JavaScript, il peut s’installer / désinstaller comme on le souhaite, etc.
+`CREATE USER 'salameche'@'localhost' IDENTIFIED BY 'mot_de_passe';`
 
-**Les pré-requis**
+On applique les privilèges pour la base de données **mon_onion** à **salameche** :
 
-- base de données type MySQL, MariaDB, PostgreSQL, SQLite, MS SQL, Oracle, Elasticsearch, MongoDB, SimpleDB (plugin), Firebird (plugin) ou ClickHouse (plugin)
-- PHP 5 minimum
-- disponible en Français, Anglais, Allemand, Espagnol, etc. (44 langues langues disponibles)
-- des dizaines de plugins disponibles
-- gratuit (Apache License ou GPL 2)
+`GRANT ALL PRIVILEGES ON mon_onion.* TO 'salameche'@'localhost';`
 
-Pour la configuration, rien de plus simple, il vous suffit de [télécharger AdminerEvo](https://download.adminerevo.org/4.8.4/adminer/adminer.zip) et de renommer le fichier, par exemple :
+On recharge les privilèges pour qu’ils prennent effet immédiatement :
+
+`FLUSH PRIVILEGES;`
+
+#### Accéder aux tables SQL
+
+Pour accéder à votre base de données SQL, je vous propose d’utiliser [AdminEvo](https://docs.adminerevo.org/).
+
+Généralement, on utilise [phpMyAdmin](https://www.phpmyadmin.net/), complet et facile d’utilisation mais malheureusement, ce gestionnaire n’est pas adapté à notre configuration car gourmand en ressource et il utilise JavaScript (à proscrire sur le réseau Tor), il s’expose à des vulnérabilités, etc. Si vous souhaitez utiliser un autre logiciel, vous trouverez des exemples sur [sql.sh](https://sql.sh/logiciels).
+
+Nous n’allons pas installer de gestionnaire de base de données à propremment parlé. Il vous suffira de télécharger le fichier lorsque vous aurez besoin d’accéder à votre base de données et de le supprimer une fois vos opérations terminées.
+
+Voici comment on peut utiliser **AdminerEvo** :
 
 ```sh
-mkdir /var/www/admin && cd /var/www/admin
-wget https://github.com/adminerevo/adminerevo/releases/download/v4.8.4/adminer-4.8.4.php -O "$(mktemp adminer-XXXXXXXXXXXXXXXXXXXX.php)"
+fichier=$(mktemp -u adminer_XXXXXXXXXXXXXXXXXXXX.php) && wget -O "$fichier" "https://github.com/adminerevo/adminerevo/releases/download/v4.8.4/adminer-4.8.4.php" && echo "Fichier Adminer : $fichier"
 ```
 
-On renomme logiquement le fichier aléatoirement, pour éviter, si vous oubliez de le supprimer, qu’un méchant robot attaque votre site. Dans tous les cas, vous devez supprimer le fichier une fois que vous avez terminé vos tâches avec MySQL.
-
-*Note : AdminerEvo, comme son nom l’indique, est une nouvelle version de la [version originale d’Adminer](https://www.adminer.org/) qui n’était plus maintenue*
+Lorsque vous avez terminé, **veuillez supprimer** le fichier **adminer_XXXXXXXXXXXXXXXXXXXX.php** !
 
 - [Site officiel d’AdminerEvo](https://docs.adminerevo.org/)
 - [Dépôt GitHub officiel](https://github.com/adminerevo/adminerevo)
 
 ### Installation et configuration de Tor
 
-Tor est un réseau informatique superposé mondial et décentralisé. Il se compose de serveurs, appelés nœuds du réseau et dont la liste est publique. Ce réseau permet d’anonymiser l’origine de connexions TCP. Cela peut entre autres servir à anonymiser la source d’une session de navigation Web ou de messagerie instantanée. Cependant, l’anonymisation du flux n’est pas totale, car l’application peut transmettre des informations annexes permettant d’identifier la personne, c’est pourquoi le projet Tor développe également un navigateur Web fondé sur Firefox, Tor Browser, ainsi que d’autres applications spécialement modifiées pour préserver l’anonymat de leurs usagers. L’implémentation de référence du protocole s’appelle « tor », c’est un logiciel libre sous licence BSD révisée.
-
-Le projet Tor reçoit le prix du logiciel libre 2010, dans la catégorie « projet d’intérêt social ». Le nom « Tor » est à l’origine un acronyme pour « The Onion Router », littéralement « le routeur oignon », qui s’est lexicalisé comme nom propre.
+> Tor est un réseau informatique superposé mondial et décentralisé. Il se compose de serveurs, appelés nœuds du réseau et dont la liste est publique. Ce réseau permet d’anonymiser l’origine de connexions TCP. Cela peut entre autres servir à anonymiser la source d’une session de navigation Web ou de messagerie instantanée. Cependant, l’anonymisation du flux n’est pas totale, car l’application peut transmettre des informations annexes permettant d’identifier la personne, c’est pourquoi le projet Tor développe également un navigateur Web fondé sur Firefox, Tor Browser, ainsi que d’autres applications spécialement modifiées pour préserver l’anonymat de leurs usagers. Le nom « Tor » est à l’origine un acronyme pour « The Onion Router », littéralement « le routeur oignon », qui s’est lexicalisé comme nom propre.
 
 - [Site officiel de Tor](https://www.torproject.org/)
 - [Dépôt GitLab officiel](https://gitlab.torproject.org/tpo/core/tor)
 - [Clé GPG officielle du projet Tor](https://support.torproject.org/tbb/how-to-verify-signature/)
 
-Avant toutes choses, on désinstalle Tor s’il est déjà installé, pour éviter tout conflit.
+Avant toute chose, on désinstalle Tor s’il est déjà installé, pour éviter tout conflit.
 
 ```sh
 sudo systemctl stop tor*
 sudo apt autoremove --purge tor*
 ```
 
-*Des erreurs apparaitront si une version de Tor n’est pas installée.*
-
-On ajoute la clé GPG & le dépôt :
-
-```sh
-curl -fsSL https://deb.torproject.org/torproject.org/A3C4F0F979CAA22CDBA8F512EE8CBC9E886DDD89.asc | sudo gpg --dearmor -o /etc/apt/keyrings/tor-archive-keyring.gpg
-sudo chmod a+r /etc/apt/keyrings/tor-archive-keyring.gpg
-echo \
-  "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/tor-archive-keyring.gpg] https://deb.torproject.org/torproject.org \
-  $(lsb_release -cs) main" | sudo tee /etc/apt/sources.list.d/tor.list > /dev/null
-```
-
-On met à jour les paquets :
-
-`sudo apt update`
-
 On installe Tor :
 
-`sudo apt install tor deb.torproject.org-keyring`
+`sudo apt install tor`
 
 On active Tor au démarrage :
 
 `sudo systemctl enable tor`
 
-### Configuration du Hidden Service
+On vérifie que Tor fonctionne et renvoie bien cette page :
+
+`curl --socks5 127.0.0.1:9050 https://check.torproject.org/`
+
+#### Configuration du Hidden Service
 
 On configure Tor :
 
 `sudo nano /etc/tor/torrc`
 
-Choisir le dossier de Tor :
+On recherche et ajoute / dé-commente ces lignes :
 
 ```sh
 HiddenServiceDir /var/lib/tor/hidden_service/
-HiddenServicePort 80 127.0.0.1:80
+HiddenServicePort 80 127.0.0.1:8080
 ```
 
 On limite l’accès à Tor SOCKS sur 127.0.0.1 :
@@ -866,7 +994,7 @@ SocksPolicy reject *
 
 On redémarre Tor :
 
-`sudo systemctl restart tor`
+`sudo systemsectl restart tor`
 
 On vérifie que Tor fonctionne correctement :
 
@@ -874,11 +1002,43 @@ On vérifie que Tor fonctionne correctement :
 
 Redémarrer Tor va créer le répertoire **/var/lib/tor/hidden_service** ainsi que deux fichiers très importants :
 
-**hostname** : le nom de votre hidden service : *ujgftyuiolrmez3lotccipshtkleegetolb73fuirgj7r4o4vfu7ozyd.onion*, par exemple
-
-**private_key** : la clé privée de votre hidden service
+- **hostname** : nom de votre Hidden Service : *gv3ebskdgoavtwl345y7tnqvcizljlmifxzvqnzx3p22sd5gd252z5id.onion*, par exemple
+- **private_key** : clé privée de votre Hidden Service
 
 *Notez le contenu de **hostname** quelque part, on l’utilisera plus tard !*
+
+#### Configuration de Tor pour Apache2
+
+On récupère l’adresse IP de notre serveur, `185.*.*.*`, et on bloque l’accès direct à l’IP du serveur :
+
+On crée un fichier **direct.conf** :
+
+`sudo nano /etc/apache2/sites-available/direct.conf`
+
+On ajoute :
+
+```sh
+<VirtualHost *:80>
+	ServerName 185.*.*.*
+	Redirect 403
+	DocumentRoot /dev/null
+</VirtualHost>
+```
+
+On active le *Virtual Host* *direct.conf* :
+
+`sudo a2ensite direct`
+
+On quitte et on redémarre Apache2 :
+
+`sudo service apache2 restart`
+
+On teste une page :
+
+```sh
+touch /var/www/html/index.html && nano /var/www/html/index.html
+Bienvenue sur ma page !
+```
 
 ### Générer une adresse .onion personnalisée
 
@@ -930,7 +1090,7 @@ sudo chmod -R u+rwX,og-rwx /var/lib/tor/hidden_service
 
 ### FAQ Debug Tor
 
-On vérifie l’état du service Tor :
+Vérifie l’état du service Tor :
 
 `sudo systemctl status tor`
 
@@ -938,144 +1098,27 @@ Si le service n’est pas actif, on le redémarre :
 
 `sudo systemctl restart tor`
 
-On vérifie la configuration du Hidden Service et est correcte dans le fichier `/etc/tor/torrc`. Voici un exemple de configuration :
-
-```sh
-HiddenServiceDir /var/lib/tor/hidden_service/
-HiddenServicePort 80 127.0.0.1:8080
-```
-
-On vérifie que le répertoire spécifié (`/var/lib/tor/hidden_service/`) existe et que Tor a les permissions nécessaires pour y accéder :
+On vérifie que le répertoire de Tor existe et que les permissions sont correctes :
 
 `sudo ls -la /var/lib/tor/hidden_service/`
 
-On s’assure que le propriétaire du répertoire et de ses fichiers est **tor** :
+Exemple :
 
-`sudo chown -R tor:tor /var/lib/tor/hidden_service`
+```sh
+-rw------- 1 debian-tor debian-tor   63 27 févr. 16:09 hostname
+-rw------- 1 debian-tor debian-tor   64 27 févr. 16:09 hs_ed25519_public_key
+-rw------- 1 debian-tor debian-tor   96 27 févr. 16:09 hs_ed25519_secret_key
+```
 
-On vérifie que votre service web fonctionne :
-
-`curl http://127.0.0.1:8080`
-
-*Cela doit renvoyer la page d’accueil de votre service web. Si ce n’est pas le cas, vérifiez que votre service web est démarré et configuré correctement.*
-
-On vérifie les journaux de Tor :
+Vérifie les journaux de Tor :
 
 `sudo journalctl -u tor`
 
-*Les journaux de Tor peuvent fournir des informations supplémentaires sur ce qui ne va pas; on recherche des messages d’erreur ou des avertissements qui pourraient indiquer ce qui ne va pas.*
-
-On vérifie les permissions du répertoire et des fichiers :
-
-```sh
-sudo chmod 700 /var/lib/tor/hidden_service
-sudo chmod 600 /var/lib/tor/hidden_service/*
-```
-
-*On s’assure que la machine peut accéder à Internet et que les ports nécessaires sont ouverts et non bloqués par un pare-feu.*
-
-Une fois toutes les vérifications effectuées, on redémarre Tor :
-
-`sudo systemctl restart tor`
-
-----------
-
-Si vous avez cette erreur :
-
-`chown: utilisateur incorrect: « tor:tor »`
-
-On doit créer le groupe tor :
-
-`sudo groupadd tor`
-
-On créé l’utilisateur tor et on l’ajoute au groupe tor :
-
-`sudo useradd -g tor -s /bin/false tor`
-
-On définit les permissions du répertoire du Hidden Service :
-
-```sh
-sudo mkdir -p /var/lib/tor/hidden_service
-sudo chown -R tor:tor /var/lib/tor/hidden_service
-```
-
-On redémarre Tor :
-
-`sudo systemctl restart tor`
-
-On vérifie que Tor fonctionne correctement :
+Vérifie que Tor fonctionne correctement :
 
 `sudo systemctl status tor`
 
-**Partie Apache2**
-
-*On doit configurer Apache2 afin de se connecter au **Hidden Service**, cette opération a été mentionnée plus haut, donc si vous ne l’avez pas effectuée, faites-le maintenant !*
-
-On modifie le site à héberger :
-
-`sudo nano /etc/apache2/sites-enabled/000-default.conf`
-
-On ajoute le nom du Hidden Service (Contenu dans **/var/lib/tor/hidden_service/hostname**) pour qu’Apache2 le reconnaisse :
-
-`ServerName machou********************************.onion`
-
-On modifie le répertoire par défaut du site :
-
-`DocumentRoot /var/www/html`
-
-en
-
-`DocumentRoot /var/www`
-
-On ajoute en dessous : (*optionnel*)
-
-```sh
-Header always append X-Frame-Options SAMEORIGIN
-Header set X-XSS-Protection "1; mode=block"
-```
-
-On active le VirtualHost par défaut :
-
-`sudo a2ensite 000-default`
-
-On récupère l’adresse IP de notre serveur, `185.141.102.27`, et on bloque l’accès direct à l’IP du serveur :
-
-On crée un fichier **direct.conf** :
-
-`sudo nano /etc/apache2/sites-available/direct.conf`
-
-On insère :
-
-```sh
-<VirtualHost *:80>
-	ServerName 185.141.102.27
-	Redirect 403
-	DocumentRoot /dev/null
-</VirtualHost>
-```
-
-On active le VirtualHost :
-
-`sudo a2ensite direct`
-
-On quitte et on redémarre Apache2 :
-
-`sudo service apache2 restart`
-
-On teste une page :
-
-```sh
-touch /var/www/index.html && nano /var/www/index.html
-Bienvenue sur mon Onion !
-```
-
-Une fois que toutes ces opérations sont effectuées, on redémarre le serveur :
-
-`sudo reboot`
-
-Et voilà, c’est terminé !
-
-Maintenant, lancez le [Navigateur Tor](https://www.torproject.org/download/) sur votre ordinateur et connectez-vous au Hidden Service que vous avez généré plus haut !
+Maintenant, lancez le [Navigateur Tor](https://www.torproject.org/download/) sur votre ordinateur et connectez-vous au *Hidden Service* que vous avez généré plus haut !
 
 ![](https://i.ibb.co/M267kK8/onion.png)
 
@@ -1098,7 +1141,7 @@ Generating locales (this might take a while)...
 Generation complete.
 ```
 
-La langue française a été choisie, mais libre à vous de configurer celle que vous souhaitez, c’est d’ailleurs fortement recommandé de ne pas choisir votre langue maternelle, sinon laissez celle par défaut.
+Les langues anglaise et française ont été selectionnées, mais libre à vous de configurer celle que vous souhaitez, c’est d’ailleurs fortement recommandé de ne pas choisir votre langue maternelle, sinon laissez celle par défaut.
 
 ### Configuration de la date et heure
 
@@ -1264,7 +1307,7 @@ On y ajoute :
 ```sh
 alias cleany="sudo truncate -s 0 /var/run/utmp && sudo truncate -s 0 /var/log/btmp && sudo truncate -s 0 /var/log/wtmp && sudo truncate -s 0 /var/log/lastlog"
 alias clog="find /var/log -type f -print0 | sudo xargs -0 shred -fuzv -n 35"
-alias update="sudo apt update && sudo apt upgrade && sudo apt full-upgrade && sudo apt dist-upgrade && sudo apt clean && sudo apt autoclean && sudo apt autoremove && sudo updatedb && sudo ldconfig && sudo chown www-data:www-data /var/www -R"
+alias update="sudo apt update && sudo apt upgrade && sudo apt full-upgrade && sudo apt dist-upgrade && sudo apt clean && sudo apt autoclean && sudo apt autoremove && sudo updatedb && sudo ldconfig && sudo chown www-data:www-data /var/www/html -R"
 ```
 
 - *cleany* : nettoie les connexions et les logs
@@ -1421,7 +1464,7 @@ On redémarre le serveur :
 
 ## À faire
 
-> - ajouter nginx pour créer un proxy inverser
+> - ajouter nginx pour créer un proxy inversé
 > - heberger le site directement dans la ram
 > - bloquer les ports inutiles
 > - chiffrer le disque dur
