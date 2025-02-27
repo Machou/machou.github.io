@@ -41,7 +41,7 @@ favicon: "/assets/img/favicon.png"
     - [Configuration du Hidden Service](#configuration-du-hidden-service)
     - [Configuration de Tor pour Apache2](#configuration-de-tor-pour-apache2)
   - [Générer une adresse .onion personnalisée](#générer-une-adresse-onion-personnalisée)
-  - [FAQ Debug Tor](#faq-debug-tor)
+  - [Debug](#debug)
 - [PortSentry](comment-utiliser-portsentry)
 - [Fail2ban](comment-utiliser-fail2ban)
 - [Facultatif](#facultatif)
@@ -872,7 +872,7 @@ On lance la commande, pour configurer, sécuriser et finaliser l’installation 
 2. `Switch to unix_socket authentication [Y/n]` : **Y** > empêche les tentatives de connexion distantes en tant que root
 3. `Change the root password? [Y/n]` : **Y** > on change le mot de passe root (par exemple : Bing0_Serpent_Orange_Nmap4)
 4. `Remove anonymous users? [Y/n]` : **Y** > empêche les connexions anonymes
-5. `Disallow root login remotely? [Y/n]` : **Y** > empêche les tentatives de connexion root depuis l'extérieur du serveur
+5. `Disallow root login remotely? [Y/n]` : **Y** > empêche les tentatives de connexion root depuis l’extérieur du serveur
 6. `Remove test database and access to it? [Y/n]` : **Y** > la base de données de test est une potentielle faille de sécurité
 7. `Reload privilege tables now? [Y/n]` : **Y** > applique immédiatement les modifications de sécurité effectuées
 
@@ -1088,15 +1088,24 @@ sudo chown -R tor: /var/lib/tor/hidden_service
 sudo chmod -R u+rwX,og-rwx /var/lib/tor/hidden_service
 ```
 
-### FAQ Debug Tor
+### Debug
 
-Vérifie l’état du service Tor :
+Résumé des Ports :
 
-`sudo systemctl status tor`
+- **Tor** → **nginx** : **Port 80** → **127.0.0.1:8080**
+- **nginx** → **Apache2** : **Port 8080** → **127.0.0.1:8081**
 
-Si le service n’est pas actif, on le redémarre :
+Status des services :
 
-`sudo systemctl restart tor`
+`sudo systemctl status tor nginx apache2`
+
+Surveillez les logs pour vérifier le bon fonctionnement :
+
+```sh
+sudo tail -f /var/log/apache2/access.log
+sudo tail -f /var/log/nginx/access.log
+sudo journalctl -u tor -f
+```
 
 On vérifie que le répertoire de Tor existe et que les permissions sont correctes :
 
@@ -1109,14 +1118,6 @@ Exemple :
 -rw------- 1 debian-tor debian-tor   64 27 févr. 16:09 hs_ed25519_public_key
 -rw------- 1 debian-tor debian-tor   96 27 févr. 16:09 hs_ed25519_secret_key
 ```
-
-Vérifie les journaux de Tor :
-
-`sudo journalctl -u tor`
-
-Vérifie que Tor fonctionne correctement :
-
-`sudo systemctl status tor`
 
 Maintenant, lancez le [Navigateur Tor](https://www.torproject.org/download/) sur votre ordinateur et connectez-vous au *Hidden Service* que vous avez généré plus haut !
 
