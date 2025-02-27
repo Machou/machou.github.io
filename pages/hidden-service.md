@@ -27,8 +27,8 @@ favicon: "/assets/img/favicon.png"
     - [Méthode N°1 : clés SSH](#méthode-n1--clés-ssh)
     - [Méthode N°2 : mot de passe](#méthode-n2--mot-de-passe)
   - [Autre configuration](#autre-configuration)
-  - [Double Authentification avec Google Authenticator PAM module](#double-authentification-avec-google-authenticator-pam-module)
-  - [Logiciels Debian](#logiciels-debian)
+  - [Double Authentification avec Google Authenticator PAM module](#facultatif-double-authentification-avec-google-authenticator-pam-module)
+  - [Configuration Debian](#configuration-debian)
 - [Installation d’un serveur LAMP](#installation-dun-serveur-lamp)
   - [Apache](#installation-et-configuration-dapache2)
     - [Virtual Host](#virtual-host)
@@ -458,7 +458,7 @@ On quitte et on redémarre SSH :
 
 `sudo /etc/init.d/ssh restart`
 
-### Logiciels Debian
+### Configuration Debian
 
 On installe / désinstalle quelques logiciels pour la pratique et la sécurité, on recharge le cache de recherche et on met les liens symboliques à jour :
 
@@ -487,7 +487,7 @@ On installe / désinstalle quelques logiciels pour la pratique et la sécurité,
 
 On installe Apache2 :
 
-Avant toute chose, on désinstalle Apache2 s’il est déjà installé, pour éviter tout conflit.
+Pour éviter tout conflit, on désinstalle Apache2 :
 
 `sudo apt purge apache*`
 
@@ -624,7 +624,7 @@ La sortie doit renvoyer :
 
 On installe nginx :
 
-Avant toute chose, on désinstalle nginx s’il est déjà installé, pour éviter tout conflit.
+Pour éviter tout conflit, on désinstalle nginx :
 
 `sudo apt purge nginx*`
 
@@ -697,7 +697,7 @@ Qui est **Ondřej Surý** ?
 - [Dépôt GitHub officiel](https://github.com/php/php-src)
 - [Nouveautés dans PHP 8.4](https://kinsta.com/fr/blog/php-8-4/)
 
-Avant toute chose, on désinstalle PHP s’il est déjà installé, pour éviter tout conflit.
+Pour éviter tout conflit, on désinstalle PHP :
 
 ```sh
 sudo systemctl stop php*
@@ -851,7 +851,7 @@ L’installation du méta-paquet **default-mysql-server** installera mariadb-ser
 - [Site officiel de MariaDB](https://mariadb.org/)
 - [Dépôt GitHub officiel](https://github.com/MariaDB/server)
 
-Avant toute chose, on désinstalle MariaDB s’il est déjà installé, pour éviter tout conflit.
+Pour éviter tout conflit, on désinstalle MariaDB :
 
 ```sh
 sudo systemctl stop mysql* maria*
@@ -951,7 +951,7 @@ Lorsque vous avez terminé, **veuillez supprimer** le fichier **adminer_XXXXXXXX
 - [Dépôt GitLab officiel](https://gitlab.torproject.org/tpo/core/tor)
 - [Clé GPG officielle du projet Tor](https://support.torproject.org/tbb/how-to-verify-signature/)
 
-Avant toute chose, on désinstalle Tor s’il est déjà installé, pour éviter tout conflit.
+Pour éviter tout conflit, on désinstalle Tor :
 
 ```sh
 sudo systemctl stop tor*
