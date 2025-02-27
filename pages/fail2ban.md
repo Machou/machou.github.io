@@ -268,7 +268,7 @@ On peut aussi bannir une IP manuellement :
 
 `sudo fail2ban-client set nom-du-service banip mon-ip`
 
-Merci au [Wiki officiel d’ubuntu-fr.org](https://doc.ubuntu-fr.org/fail2ban) et au [dépôt GitHub officiel de Fail2ban](https://github.com/Sean-Der/fail2web).
+Merci au [Wiki officiel d’ubuntu-fr.org](https://doc.ubuntu-fr.org/fail2ban) et au [dépôt GitHub officiel de Fail2ban](https://github.com/fail2ban/fail2ban).
 
 <p align="center">
   [ <a href="comment-creer-hidden-service">Retour à l’accueil</a> ]
