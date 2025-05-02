@@ -1,0 +1,49 @@
+title: ~ Pages GitHub de Machou ~
+description: "Pages GitHub générée via GitHub Pages"
+author: "Machou"
+language: fr
+baseurl: "" # Utilisé si le site est hébergé dans un sous-répertoire, sinon laisser vide
+url: "https://machou.github.io"
+markdown: kramdown
+theme: jekyll-theme-cayman
+
+plugins:
+  # - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+sass:
+  style: compressed
+
+github_username: Machou
+
+socials:
+  GitHub: https://github.com/Machou
+  GitLab: https://gitlab.com/Machou
+#   twitter:
+#   github:
+#   linkedin:
+
+# Activer ou désactiver des fonctionnalités spécifiques
+markdown_ext: "markdown,mkdn,mkdn,md"
+# include: ["_pages"]
+# exclude: ["node_modules", "Gemfile", "Gemfile.lock"]
+
+# Favicon et logo
+# favicon: "/assets/images/favicon.png"
+# logo: "/assets/images/logo.png"
+
+navbar:
+  - title: "Accueil"
+    url: "/"
+  - title: "Créer un Hidden Service"
+    url: "/comment-creer-hidden-service"
+  - title: "PortSentry"
+    url: "/comment-utiliser-portsentry"
+  - title: "Fail2ban"
+    url: "/comment-utiliser-portsentry"
+  - title: "WoW PNJ LFR"
+    url: "/wow-pnj-lfr"
+
+github:
+  is_project_page: true
