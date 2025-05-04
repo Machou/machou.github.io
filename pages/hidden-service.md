@@ -926,22 +926,22 @@ On recharge les privilèges pour qu’ils prennent effet immédiatement :
 
 #### Accéder aux tables SQL
 
-Pour accéder à votre base de données SQL, je vous propose d’utiliser [AdminEvo](https://docs.adminerevo.org/).
+Pour accéder à votre base de données SQL, je vous propose d’utiliser [Admin](https://www.adminer.org/).
 
 Généralement, on utilise [phpMyAdmin](https://www.phpmyadmin.net/), complet et facile d’utilisation mais malheureusement, ce gestionnaire n’est pas adapté à notre configuration car gourmand en ressource et il utilise JavaScript (à proscrire sur le réseau Tor), il s’expose à des vulnérabilités, etc. Si vous souhaitez utiliser un autre logiciel, vous trouverez des exemples sur [sql.sh](https://sql.sh/logiciels).
 
 Nous n’allons pas installer de gestionnaire de base de données à propremment parlé. Il vous suffira de télécharger le fichier lorsque vous aurez besoin d’accéder à votre base de données et de le supprimer une fois vos opérations terminées.
 
-Voici comment on peut utiliser **AdminerEvo** :
+Voici comment on peut utiliser **Adminer** :
 
 ```sh
-fichier=$(mktemp -u adminer_XXXXXXXXXXXXXXXXXXXX.php) && wget -O "$fichier" "https://github.com/adminerevo/adminerevo/releases/download/v4.8.4/adminer-4.8.4.php" && echo "Fichier Adminer : $fichier"
+fichier=$(mktemp -u adminer_XXXXXXXXXXXXXXXXXXXX.php) && wget -O "$fichier" "https://github.com/vrana/adminer/releases/download/v5.2.1/adminer-5.2.1.php" && echo "Fichier Adminer : $fichier"
 ```
 
 Lorsque vous avez terminé, **veuillez supprimer** le fichier **adminer_XXXXXXXXXXXXXXXXXXXX.php** !
 
-- [Site officiel d’AdminerEvo](https://docs.adminerevo.org/)
-- [Dépôt GitHub officiel](https://github.com/adminerevo/adminerevo)
+- [Site officiel d’Adminer](https://www.adminer.org/)
+- [Dépôt GitHub officiel](https://github.com/vrana/adminer)
 
 ### Installation et configuration de Tor
 
