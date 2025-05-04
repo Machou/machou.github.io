@@ -36,7 +36,7 @@ favicon: "/assets/img/favicon.png"
   - [PHP](#installation-et-configuration-de-php)
   - [MariaDB](#installation-et-configuration-de-mysql)
     - [Base de données et utilisateur](#base-de-données-et-utilisateur)
-    - [Accéder aux tables SQL](#accéder-aux-tables-sql)
+    - [Adminer : accéder aux tables SQL](#adminer--accéder-aux-tables-sql)
   - [Installation et configuration de Tor](#installation-et-configuration-de-tor)
     - [Configuration du Hidden Service](#configuration-du-hidden-service)
     - [Configuration de Tor pour Apache2](#configuration-de-tor-pour-apache2)
@@ -924,9 +924,9 @@ On recharge les privilèges pour qu’ils prennent effet immédiatement :
 
 `FLUSH PRIVILEGES;`
 
-#### Accéder aux tables SQL
+#### Adminer : accéder aux tables SQL
 
-Pour accéder à votre base de données SQL, je vous propose d’utiliser [Admin](https://www.adminer.org/).
+Pour accéder à votre base de données SQL, je vous propose d’utiliser [Adminer](https://www.adminer.org/).
 
 Généralement, on utilise [phpMyAdmin](https://www.phpmyadmin.net/), complet et facile d’utilisation mais malheureusement, ce gestionnaire n’est pas adapté à notre configuration car gourmand en ressource et il utilise JavaScript (à proscrire sur le réseau Tor), il s’expose à des vulnérabilités, etc. Si vous souhaitez utiliser un autre logiciel, vous trouverez des exemples sur [sql.sh](https://sql.sh/logiciels).
 
