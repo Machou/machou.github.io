@@ -2,6 +2,7 @@ title: ~ Pages GitHub de Machou ~
 description: "Pages GitHub générée via GitHub Pages"
 author: "Machou"
 language: fr
+lang: fr-FR
 baseurl: "" # Utilisé si le site est hébergé dans un sous-répertoire, sinon laisser vide
 url: "https://machou.github.io"
 markdown: kramdown
