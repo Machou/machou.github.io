@@ -12,11 +12,14 @@
 	<meta name="robots" content="index, follow">
 	<meta http-equiv="x-ua-compatible" content="ie=edge">
 
+	{% seo %}
+
 	{% if page.favicon %}
 		<link rel="icon" type="image/png" href="{{ page.favicon | relative_url }}">
 	{% else %}
 		<link rel="icon" type="image/png" href="{{ '/assets/img/favicon.png' | relative_url }}">
 	{% endif %}
+	<link rel="stylesheet" href="https://unpkg.com/bootstrap@5.3.6/dist/css/bootstrap.min.css">
 </head>
 
 <body>

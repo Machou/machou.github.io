@@ -8,12 +8,11 @@ draft: false
 toc: false
 url: "https://machou.github.io"
 markdown: kramdown
-theme: jekyll-theme-cayman
+# theme: jekyll-theme-cayman
 
 plugins:
   # - jekyll-feed
-  - jekyll-sitemap
-  - jekyll-seo-tag
+  - jekyll-seo-tag # https://github.com/jekyll/jekyll-seo-tag
 
 sass:
   style: compressed
@@ -27,9 +26,7 @@ socials:
 #   github:
 #   linkedin:
 
-markdown_ext: "markdown,mkdn,mkdn,md"
-# include: ["_pages"]
-# exclude: ["node_modules", "Gemfile", "Gemfile.lock"]
+markdown_ext: "markdown,mkdn,md"
 
 navbar:
   - title: "Accueil"
