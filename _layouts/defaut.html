@@ -20,11 +20,21 @@
 		<link rel="icon" type="image/png" href="{{ '/assets/img/favicon.png' | relative_url }}">
 	{% endif %}
 	<link rel="stylesheet" href="https://unpkg.com/bootstrap@5.3.6/dist/css/bootstrap.min.css">
+
+	<style>
+	body {
+		background-color: #eee;
+	}
+	</style>
 </head>
 
 <body>
 	<main>
-		{{ content }}
+		<div class="container">
+			<div class="border rounded-3 my-5 p-4">
+				{{ content }}
+			</div>
+		</div>
 	</main>
 </body>
 </html>

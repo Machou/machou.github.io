@@ -10,9 +10,9 @@ url: "https://machou.github.io"
 markdown: kramdown
 # theme: jekyll-theme-cayman
 
-plugins:
+# plugins:
   # - jekyll-feed
-  - jekyll-seo-tag # https://github.com/jekyll/jekyll-seo-tag
+  # - jekyll-seo-tag # https://github.com/jekyll/jekyll-seo-tag
 
 sass:
   style: compressed
