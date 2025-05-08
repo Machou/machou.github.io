@@ -73,7 +73,7 @@ favicon: "/assets/img/favicon-wow.png"
 
 | Continent    | Zone                             | PnJ                                                                                     | Point de passage                      |
 | :----------: | :------------------------------: | :-------------------------------------------------------------------------------------: | :-----------------------------------: |
-| **Pandarie** | **Val de l’Éternel printemps**   | [Chroniqueur Han <Conteur de l’outil Raids>](https://www.wowhead.com/fr/npc=80633])     | `/way #390 83.0 30.6 Chroniqueur Han` |
+| **Pandarie** | **Val de l’Éternel printemps**   | [Chroniqueur Han <Conteur de l’outil Raids>](https://www.wowhead.com/fr/npc=80633)     | `/way #390 83.0 30.6 Chroniqueur Han` |
 
 ### [Cœur de la peur](https://www.wowhead.com/fr/zone=6297)
 
@@ -259,6 +259,13 @@ favicon: "/assets/img/favicon-wow.png"
 ## World of Warcraft : The War Within
 
 [![World of Warcraft : Dragonflight](assets/img/WoW_TWW.png "Logo World of Warcraft : Dragonflight")](assets/img/WoW_TWW-Large.png)
+
+	[![W3C Validation](assets/img/logo-w3c-ilove.png "Valider le HTML sur W3.org")](https://validator.w3.org/nu/?showsource=yes&doc=https://machou.github.io/wow-pnj-lfr)
+
+<p align="center">
+	[![W3C Validation](assets/img/logo-w3c-ilove.png "Valider le HTML sur W3.org")](https://validator.w3.org/nu/?showsource=yes&doc=https://machou.github.io/wow-pnj-lfr)
+
+</p>
 
 <p align="center">
   <img src="assets/img/logo-horde.png">
