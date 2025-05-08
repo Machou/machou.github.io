@@ -57,13 +57,13 @@ favicon: "/assets/img/favicon-wow.png"
 
 ### [Caveaux Mogu’shan](https://www.wowhead.com/fr/zone=6125)
 
-1. **Gardiens de Mogu’shan** : [La garde de pierre](https://www.wowhead.com/fr/npc=60047), [Feng le Maudit](https://www.wowhead.com/fr/npc=60009), [Gara’jal le Lieur d’esprit](https://www.wowhead.com/fr/npc=60143)
-2. **Caveau des Mystères** : [Les esprits-rois](https://www.wowhead.com/fr/npc=60708), [Elegon](https://www.wowhead.com/fr/npc=60410), [Volonté de l’empereur](https://www.wowhead.com/fr/npc=60400)
+1. **Gardiens des Mogu’shan** : [La garde de pierre](https://www.wowhead.com/fr/npc=60047), [Feng le Maudit](https://www.wowhead.com/fr/npc=60009), [Gara’jal le Lieur d’esprit](https://www.wowhead.com/fr/npc=60143)
+2. **Le caveau des Mystères** : [Les esprits-rois](https://www.wowhead.com/fr/npc=60708), [Elegon](https://www.wowhead.com/fr/npc=60410), [Volonté de l’empereur](https://www.wowhead.com/fr/npc=60400)
 
 ### [Cœur de la peur](https://www.wowhead.com/fr/zone=6297)
 
-1. **Approche de l’effroi du Cœur de la peur** : [Vizir impérial Zor’lok](https://www.wowhead.com/fr/npc=62980), [Seigneur des lames Ta’yak](https://www.wowhead.com/fr/npc=62543), [Garalon](https://www.wowhead.com/fr/npc=62164)
-2. **Cauchemar de Shek’zeer** : [Seigneur du Vent Mel’jarak](https://www.wowhead.com/fr/npc=62397), [Sculpte-ambre Un’sok](https://www.wowhead.com/fr/npc=62511), [Grande impératrice Shek’zeer](https://www.wowhead.com/fr/npc=62837)
+1. **L’approche de l’effroi** : [Vizir impérial Zor’lok](https://www.wowhead.com/fr/npc=62980), [Seigneur des lames Ta’yak](https://www.wowhead.com/fr/npc=62543), [Garalon](https://www.wowhead.com/fr/npc=62164)
+2. **Le cauchemar de Shek’zeer** : [Seigneur du Vent Mel’jarak](https://www.wowhead.com/fr/npc=62397), [Sculpte-ambre Un’sok](https://www.wowhead.com/fr/npc=62511), [Grande impératrice Shek’zeer](https://www.wowhead.com/fr/npc=62837)
 
 ### [Terrasse Printanière](https://www.wowhead.com/fr/zone=6067)
 
@@ -71,17 +71,17 @@ favicon: "/assets/img/favicon-wow.png"
 
 ### [Trône du tonnerre](https://www.wowhead.com/fr/zone=6622)
 
-1. **Baroud d’honneur des Zandalari** : [Jin’rokh le Briseur](https://www.wowhead.com/fr/npc=69465), [Horridon](https://www.wowhead.com/fr/npc=68476), [Conseil dans anciens](https://www.wowhead.com/fr/npc=69134)
-2. **Pronfondeurs oubliées sous le Trône du tonnerre** : [Tortos](https://www.wowhead.com/fr/npc=67977), [Megaera](https://www.wowhead.com/fr/npc=70212), [Ji Kun](https://www.wowhead.com/fr/npc=69712)
-3. **Horribles salles des Sculpte-Chair mogu** : [Durumu l’Oublié](https://www.wowhead.com/fr/npc=68036), [Primordius](https://www.wowhead.com/fr/npc=69017), [Sombre animus](https://www.wowhead.com/fr/npc=69427)
-4. **Cime des Tempêtes de Lei Shen** : [Qwon de fer](https://www.wowhead.com/fr/npc=68078), [Jumelles empyréennes](https://www.wowhead.com/fr/npc=68905), [Lei Shen](https://www.wowhead.com/fr/npc=68397)
+1. **Le baroud d’honneur des Zandalari** : [Jin’rokh le Briseur](https://www.wowhead.com/fr/npc=69465), [Horridon](https://www.wowhead.com/fr/npc=68476), [Conseil dans anciens](https://www.wowhead.com/fr/npc=69134)
+2. **Pronfondeurs Oubliées** : [Tortos](https://www.wowhead.com/fr/npc=67977), [Megaera](https://www.wowhead.com/fr/npc=70212), [Ji Kun](https://www.wowhead.com/fr/npc=69712)
+3. **Salles des Sculpte-Chair** : [Durumu l’Oublié](https://www.wowhead.com/fr/npc=68036), [Primordius](https://www.wowhead.com/fr/npc=69017), [Sombre animus](https://www.wowhead.com/fr/npc=69427)
+4. **Cime des Tempêtes** : [Qwon de fer](https://www.wowhead.com/fr/npc=68078), [Jumelles empyréennes](https://www.wowhead.com/fr/npc=68905), [Lei Shen](https://www.wowhead.com/fr/npc=68397)
 
 ### [Siège d’Orgrimmar](https://www.wowhead.com/fr/zone=6738)
 
 1. **Val de l’Éternelle tristesse** : [Immerseus](https://www.wowhead.com/fr/npc=71543), [Les protecteurs déchus](https://www.wowhead.com/fr/npc=71475), [Norushen](https://www.wowhead.com/fr/npc=153325), [Sha de l’orgueil](https://www.wowhead.com/fr/npc=71734)
-2. **Portes de la Vindicte** : [Galakras](https://www.wowhead.com/fr/npc=72249), [Mastodonte de fer](https://www.wowhead.com/fr/npc=71466), [Sombres chamans kor’krons](https://www.wowhead.com/fr/npc=71859), [Général Nazgrim](https://www.wowhead.com/fr/npc=71515)
-3. **Fort-du-Gouffre sous** : [Malkorok](https://www.wowhead.com/fr/npc=71454), [Butin de Pandarie](https://www.wowhead.com/fr/npc=71889), [Thok le Sanguinaire](https://www.wowhead.com/fr/npc=71529/thok-le-sanguinaire)
-4. **Chute de Garrosh Hurlenfer** : [Ingé-siège Boîte-Noire](https://www.wowhead.com/fr/npc=71504), [Parangons des Klaxxi](https://www.wowhead.com/fr/npc=71152), [Garrosh Hurlenfer](https://www.wowhead.com/fr/npc=71865)
+2. **Les portes de la Vindicte** : [Galakras](https://www.wowhead.com/fr/npc=72249), [Mastodonte de fer](https://www.wowhead.com/fr/npc=71466), [Sombres chamans kor’krons](https://www.wowhead.com/fr/npc=71859), [Général Nazgrim](https://www.wowhead.com/fr/npc=71515)
+3. **Fort-du-Gouffre** : [Malkorok](https://www.wowhead.com/fr/npc=71454), [Butin de Pandarie](https://www.wowhead.com/fr/npc=71889), [Thok le Sanguinaire](https://www.wowhead.com/fr/npc=71529/thok-le-sanguinaire)
+4. **La chute** : [Ingé-siège Boîte-Noire](https://www.wowhead.com/fr/npc=71504), [Parangons des Klaxxi](https://www.wowhead.com/fr/npc=71152), [Garrosh Hurlenfer](https://www.wowhead.com/fr/npc=71865)
 
 ****
 
