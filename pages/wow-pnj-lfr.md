@@ -264,17 +264,9 @@ favicon: "/assets/img/favicon-wow.png"
 ****
 
 <p style="text-align: center;">
-  <a href="https://validator.w3.org/nu/?showsource=yes&doc=https://machou.github.io/wow-pnj-lfr"><img src="/img/logo-w3c-ilove.png" alt="W3C Validator" title="W3C Validator"></a>
-</p>
-
-<p align="center">
-  <a href="https://validator.w3.org/nu/?showsource=yes&doc=https://machou.github.io/wow-pnj-lfr"><img src="/img/logo-w3c-ilove.png" alt="W3C Validator" title="W3C Validator"></a>
+  <a href="https://validator.w3.org/nu/?showsource=yes&doc=https://machou.github.io/wow-pnj-lfr"><img src="assets/img/logo-w3c-ilove.png" alt="W3C Validator" title="W3C Validator"></a>
 </p>
 
 <p style="text-align: center;">
-  <img src="assets/img/logo-horde.png">
-</p>
-
-<p align="center">
   <img src="assets/img/logo-horde.png">
 </p>
