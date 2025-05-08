@@ -56,6 +56,7 @@ favicon: "/assets/img/favicon-wow.png"
   - [Sanctum de Domination](#sanctum-de-domination)
   - [Sépulcre des Fondateurs](#sépulcre-des-fondateurs)
 - [World of Warcraft : Dragonflight](#world-of-warcraft--dragonflight) (non disponible actuelemnt)
+- [World of Warcraft : The War Within](#world-of-warcraft--the-war-within) (disponible en jeu uniquement)
 
 # Liste des guides Mamytwink
 
@@ -73,7 +74,7 @@ favicon: "/assets/img/favicon-wow.png"
 
 | Continent    | Zone                             | PnJ                                                                                     | Point de passage                      |
 | :----------: | :------------------------------: | :-------------------------------------------------------------------------------------: | :-----------------------------------: |
-| **Pandarie** | **Val de l’Éternel printemps**   | [Chroniqueur Han <Conteur de l’outil Raids>](https://www.wowhead.com/fr/npc=80633)     | `/way #390 83.0 30.6 Chroniqueur Han` |
+| **Pandarie** | **Val de l’Éternel printemps**   | [Chroniqueur Han <Conteur de l’outil Raids>](https://www.wowhead.com/fr/npc=80633)      | `/way #390 83.0 30.6 Chroniqueur Han` |
 
 ### [Cœur de la peur](https://www.wowhead.com/fr/zone=6297)
 
@@ -260,11 +261,18 @@ favicon: "/assets/img/favicon-wow.png"
 
 [![World of Warcraft : Dragonflight](assets/img/WoW_TWW.png "Logo World of Warcraft : Dragonflight")](assets/img/WoW_TWW-Large.png)
 
-[![W3C Validation](assets/img/logo-w3c-ilove.png "Valider le HTML sur W3.org")](https://validator.w3.org/nu/?showsource=yes&doc=https://machou.github.io/wow-pnj-lfr)
+****
+
+<p style="text-align: center;">
+  <a href="https://validator.w3.org/nu/?showsource=yes&doc=https://machou.github.io/wow-pnj-lfr"><img src="/img/logo-w3c-ilove.png" alt="W3C Validator" title="W3C Validator"></a>
+</p>
 
 <p align="center">
-	[![W3C Validation](assets/img/logo-w3c-ilove.png "Valider le HTML sur W3.org")](https://validator.w3.org/nu/?showsource=yes&doc=https://machou.github.io/wow-pnj-lfr)
+  <a href="https://validator.w3.org/nu/?showsource=yes&doc=https://machou.github.io/wow-pnj-lfr"><img src="/img/logo-w3c-ilove.png" alt="W3C Validator" title="W3C Validator"></a>
+</p>
 
+<p style="text-align: center;">
+  <img src="assets/img/logo-horde.png">
 </p>
 
 <p align="center">
