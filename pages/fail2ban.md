@@ -1,17 +1,12 @@
 ---
-lang: "fr"
-title: "Fail2ban"
-description: "Comment utiliser le logiciel Fail2ban sur Debian"
-tags: ["linux", "debian", "fail2ban"]
-categories: ["Web"]
-published: true
+layout: defaut
 permalink: "/comment-utiliser-fail2ban"
-draft: false
-toc: false
 slug: "comment-utiliser-fail2ban"
-robots: "index, follow"
+title: "Comment utiliser Fail2ban sur Debian"
 canonical_url: "https://machou.github.io/comment-utiliser-fail2ban"
-author: "Machou"
+description: "Comment installer et configurer Fail2ban sur Debian"
+tags: ["fail2ban", "debian", "linux", "iptables"]
+categories: ["Linux"]
 favicon: "/assets/img/favicon.png"
 ---
 
@@ -270,7 +265,7 @@ On peut aussi bannir une IP manuellement :
 
 Merci au [Wiki officiel d’ubuntu-fr.org](https://doc.ubuntu-fr.org/fail2ban) et au [dépôt GitHub officiel de Fail2ban](https://github.com/fail2ban/fail2ban).
 
-<p align="center">
+<p style="text-align: center;">
   [ <a href="comment-creer-hidden-service">Retour à l’accueil</a> ]
   [ <a href="#fail2ban">Remonter la page</a> ]
 </p>

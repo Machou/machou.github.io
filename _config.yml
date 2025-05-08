@@ -1,9 +1,11 @@
-title: ~ Pages GitHub de Machou ~
-description: "Pages GitHub générée via GitHub Pages"
-author: "Machou"
 language: fr
 lang: fr-FR
-baseurl: "" # Utilisé si le site est hébergé dans un sous-répertoire, sinon laisser vide
+author: "Machou"
+robots: "all"
+date: 2025-05-08 18:30:00 +0200
+published: true
+draft: false
+toc: false
 url: "https://machou.github.io"
 markdown: kramdown
 theme: jekyll-theme-cayman
@@ -25,14 +27,9 @@ socials:
 #   github:
 #   linkedin:
 
-# Activer ou désactiver des fonctionnalités spécifiques
 markdown_ext: "markdown,mkdn,mkdn,md"
 # include: ["_pages"]
 # exclude: ["node_modules", "Gemfile", "Gemfile.lock"]
-
-# Favicon et logo
-# favicon: "/assets/images/favicon.png"
-# logo: "/assets/images/logo.png"
 
 navbar:
   - title: "Accueil"

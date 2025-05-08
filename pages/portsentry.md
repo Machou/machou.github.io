@@ -1,17 +1,12 @@
 ---
-lang: "fr"
-title: "PortSentry"
-description: "Comment utiliser le logiciel PortSentry sur Debian"
-tags: ["linux", "debian", "portsentry"]
-categories: ["Web"]
-published: true
+layout: defaut
 permalink: "/comment-utiliser-portsentry"
-draft: false
-toc: false
 slug: "comment-utiliser-portsentry"
-robots: "index, follow"
+title: "Comment utiliser PortSentry sur Debian"
 canonical_url: "https://machou.github.io/comment-utiliser-portsentry"
-author: "Machou"
+description: "Comment installer et configurer PortSentry sur Debian"
+tags: ["portsentry", "debian", "linux"]
+categories: ["Linux"]
 favicon: "/assets/img/favicon.png"
 ---
 
@@ -199,7 +194,7 @@ Si vous rencontrez une erreur avec une IP qui a été bannie alors qu’elle ne 
 
 `route del -host IP-PROBLÉMATIQUE reject`
 
-<p align="center">
+<p style="text-align: center;">
   [ <a href="comment-creer-hidden-service">Retour à l’accueil</a> ]
   [ <a href="#portsentry">Remonter la page</a> ]
 </p>

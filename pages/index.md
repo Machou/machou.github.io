@@ -1,14 +1,17 @@
 ---
-# Exemple : https://github.com/microsoft/generative-ai-for-beginners
-lang: "fr"
-published: true
+layout: defaut
 permalink: "/"
-draft: false
-toc: false
-robots: "index, follow"
+# slug:
+title: "Sommaire"
 canonical_url: "https://machou.github.io/"
-author: "Machou"
-favicon: "assets/img/favicon.png"
+description: "Pages GitHub générée via GitHub Pages. Informations sur World of Warcraft et tutoriel Tor."
+tags: ["wow", "lfr", "raid", "debian", "tor", "apache2", "sql", "adminer"]
+# categories:
+favicon: "/assets/img/favicon.png"
+---
+
+
+# Exemple : https://github.com/microsoft/generative-ai-for-beginners
 ---
 
 # Sommaire

@@ -1,17 +1,12 @@
 ---
-lang: "fr"
+layout: defaut
+permalink: "/comment-creer-hidden-service"
+slug: "comment-creer-hidden-service"
 title: "Créer un Hidden Service sur Tor"
+canonical_url: "https://machou.github.io/comment-creer-hidden-service"
 description: "Comment créer un Hidden Service sécurisé de zéro avec Tor sur Debian"
 tags: ["linux", "debian", "tor", "apache2", "mysql"]
-categories: ["Web"]
-published: true
-permalink: "/comment-creer-hidden-service"
-draft: false
-toc: false
-slug: "comment-creer-hidden-service"
-robots: "index, follow"
-canonical_url: "https://machou.github.io/comment-creer-hidden-service"
-author: "Machou"
+categories: ["Linux"]
 favicon: "/assets/img/favicon.png"
 ---
 
@@ -1477,6 +1472,6 @@ On redémarre le serveur :
 
 Si vous avez des idées ou des améliorations à proposer, n’hésitez pas à postez un commentaire ci-dessous.
 
-<p align="center">
+<p style="text-align: center;">
   [ <a href="#sommaire">Remonter la page</a> ]
 </p>
