@@ -18,7 +18,7 @@ markdown_ext: "markdown,mkdn,md"
 sass:
   style: compressed
 
-github_username: Machou
+# github_username: Machou
 
 socials:
   GitHub: https://github.com/Machou
