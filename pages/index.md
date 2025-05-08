@@ -8,9 +8,6 @@ description: "Pages GitHub générée via GitHub Pages. Informations sur World o
 tags: ["wow", "lfr", "raid", "debian", "tor", "apache2", "sql", "adminer"]
 # categories:
 favicon: "/assets/img/favicon.png"
----
-
-
 # Exemple : https://github.com/microsoft/generative-ai-for-beginners
 ---
 
