@@ -260,7 +260,7 @@ favicon: "/assets/img/favicon-wow.png"
 
 [![World of Warcraft : Dragonflight](assets/img/WoW_TWW.png "Logo World of Warcraft : Dragonflight")](assets/img/WoW_TWW-Large.png)
 
-	[![W3C Validation](assets/img/logo-w3c-ilove.png "Valider le HTML sur W3.org")](https://validator.w3.org/nu/?showsource=yes&doc=https://machou.github.io/wow-pnj-lfr)
+[![W3C Validation](assets/img/logo-w3c-ilove.png "Valider le HTML sur W3.org")](https://validator.w3.org/nu/?showsource=yes&doc=https://machou.github.io/wow-pnj-lfr)
 
 <p align="center">
 	[![W3C Validation](assets/img/logo-w3c-ilove.png "Valider le HTML sur W3.org")](https://validator.w3.org/nu/?showsource=yes&doc=https://machou.github.io/wow-pnj-lfr)
