@@ -22,10 +22,15 @@ h3 {
 	font-size: 1rem;
 	font-weight: 700;
 	line-height: 1;
-	padding: .5rem .75rem;
+	padding: .4rem .65rem;
 	text-align: center;
+	text-decoration: none;
 	white-space: nowrap;
 	vertical-align: baseline;
+}
+
+.table-wow a:hover {
+	opacity: .7;
 }
 
 .chasseur				{ color: #aad372 !important; }
