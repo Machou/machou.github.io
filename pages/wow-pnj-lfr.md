@@ -320,6 +320,10 @@ favicon: "/assets/img/favicon-wow.png"
 
 ****
 
-<p style="text-align: center;">
-  <a href="assets/img/logo-horde.png" data-fancybox="gallery"><img src="assets/img/logo-horde.png" alt="Logo Horde" title="Logo Horde"></a>
+<p class="text-center">
+	<a href="assets/img/logo-horde.png" data-fancybox="gallery"><img src="assets/img/logo-horde.png" alt="Logo Horde" title="Logo Horde"></a>
+</p>
+
+<p class="mb-0 text-center">
+	[ <a href="https://machou.github.io/">Retour à l’accueil</a> ]
 </p>
