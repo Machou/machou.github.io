@@ -3,12 +3,11 @@ pre.highlight,
 code {
 	background-color: #1e1e1e;
 	color: #d4d4d4;
-	padding: 1em;
+	padding: .5rem;
 	overflow-x: auto;
-	border-radius: 0.5em;
-	font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+	border-radius: .5rem;
+	font-family: 'Source Code Pro', Consolas, 'Andale Mono', 'Ubuntu Mono', monospace;
 	font-size: 0.9em;
-	line-height: 1.5;
 	display: block;
 }
 
