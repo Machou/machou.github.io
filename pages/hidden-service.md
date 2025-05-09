@@ -90,6 +90,7 @@ Un Hidden Service (ou service caché) est un service accessible uniquement via l
 > Cartographie des utilisateurs Tor, par pays.
 
 ![](https://i.ibb.co/fY6VCzk/Geographies-of-Tor.png)
+{:.img-fluid}
 
 *[Statistiques officielles du projet Tor](https://metrics.torproject.org/)*
 
@@ -1279,7 +1280,7 @@ On y ajoute :
 #!/bin/bash
 
 # Supprimer tous les fichiers dans /var/log de manière sécurisée
-find /var/log -type f -print0 | sudo xargs -0 shred -fuzv -n 35
+find /var/log -type f -print0 | sudo xargs -0 shred -fuzv -n 10
 
 # Supprimer tous les répertoires vides dans /var/log
 sudo find /var/log -type d -empty -exec rmdir {} \;
@@ -1307,7 +1308,7 @@ On y ajoute :
 
 ```sh
 alias cleany="sudo truncate -s 0 /var/run/utmp && sudo truncate -s 0 /var/log/btmp && sudo truncate -s 0 /var/log/wtmp && sudo truncate -s 0 /var/log/lastlog"
-alias clog="find /var/log -type f -print0 | sudo xargs -0 shred -fuzv -n 35"
+alias clog="find /var/log -type f -print0 | sudo xargs -0 shred -fuzv -n 10"
 alias update="sudo apt update && sudo apt upgrade && sudo apt full-upgrade && sudo apt dist-upgrade && sudo apt clean && sudo apt autoclean && sudo apt autoremove && sudo updatedb && sudo ldconfig && sudo chown www-data:www-data /var/www/html -R"
 ```
 
