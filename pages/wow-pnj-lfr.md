@@ -120,7 +120,7 @@ favicon: "/assets/img/favicon-wow.png"
 
 <a href="assets/img/WoW_WoD-Large.png" data-fancybox="gallery"><img src="assets/img/WoW_WoD.png" class="img-fluid" alt="Logo World of Warcraft : Warlords of Draenor" title="Logo World of Warcraft : Warlords of Draenor"></a>
 
-### (PnJ pour World of Warcraft : Warlords of Draenor)[#pnj-pour-world-of-warcraft--warlords-of-draenor]
+### [PnJ pour World of Warcraft : Warlords of Draenor](#pnj-pour-world-of-warcraft--warlords-of-draenor)
 
 | Faction      | Zone              | PnJ                                                                           | Point de passage                 |
 | :----------: | :---------------: | :---------------------------------------------------------------------------: | :------------------------------: |
