@@ -48,7 +48,7 @@
 	.epique					{ color: #a335ee !important; font-weight: bold !important; }
 	</style>
 
-	{% if page.url == "//wow-pnj-lfr" %}
+	{% if page.url == "/wow-pnj-lfr" %}
 		<!-- https://www.wowhead.com/tooltip -->
 		<script>const whTooltips = {colorLinks: true, iconizeLinks: true, renameLinks: true};</script>
 		<script src="https://wow.zamimg.com/js/tooltips.js"></script>
@@ -68,7 +68,7 @@
 	<footer>
 		<div class="container bg-light border border-2 rounded-4 my-5 p-4">
 			<p class="mb-0 text-center">
-				<a href="https://validator.w3.org/nu/?showsource=yes&doc=https://machou.github.io/wow-pnj-lfr"><img src="assets/img/logo-w3c-ilove.png" alt="W3C Validator" title="W3C Validator"></a>
+				<a href="https://validator.w3.org/nu/?showsource=yes&doc=https://machou.github.io{{ page.url }}"><img src="assets/img/logo-w3c-ilove.png" alt="W3C Validator" title="W3C Validator"></a>
 			</p>
 		</div>
 	</footer>
