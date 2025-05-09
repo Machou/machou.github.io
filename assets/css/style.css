@@ -19,3 +19,26 @@ body {
 .normal					{ color: #ffff !important; font-weight: bold !important; }
 .rare					{ color: #0070dd !important; font-weight: bold !important; }
 .epique					{ color: #a335ee !important; font-weight: bold !important; }
+
+/* Remonter la page */
+
+#remonterPage {
+	background-color: #fff;
+	border: 1px solid #000;
+	border-radius: .75rem;
+	bottom: 20px;
+	color: #333;
+	cursor: pointer;
+	display: none;
+	font-size: 1rem;
+	left: 50%;
+	opacity: .9;
+	padding: .5rem .75rem;
+	position: fixed;
+	transform: translateX(-50%);
+	z-index: 1000;
+}
+
+#remonterPage:hover{
+	opacity: 1;
+}
