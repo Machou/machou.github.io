@@ -94,6 +94,7 @@ favicon: "/assets/img/favicon-wow.png"
 
 | :------------------------------: | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
 | **Terrasse Printanière**         | [Protecteurs de l’Éternel](https://www.wowhead.com/fr/npc=60583/protecteur-kaolan), [Tsulong](https://www.wowhead.com/fr/npc=62442/tsulong), [Lei Shi](https://www.wowhead.com/fr/npc=62983/lei-shi), [Sha de la peur](https://www.wowhead.com/fr/npc=60999/sha-de-la-peur) |
+{:.table .table-hover}
 
 ### [Trône du tonnerre](https://www.wowhead.com/fr/zone=6622)
 
@@ -102,6 +103,7 @@ favicon: "/assets/img/favicon-wow.png"
 | **Pronfondeurs oubliées**             | [Tortos](https://www.wowhead.com/fr/npc=67977), [Megaera](https://www.wowhead.com/fr/npc=70212), [Ji Kun](https://www.wowhead.com/fr/npc=69712)                              |
 | **Salles des Sculpte-Chair**          | [Durumu l’Oublié](https://www.wowhead.com/fr/npc=68036), [Primordius](https://www.wowhead.com/fr/npc=69017), [Sombre animus](https://www.wowhead.com/fr/npc=69427)           |
 | **Cime des Tempêtes**                 | [Qwon de fer](https://www.wowhead.com/fr/npc=68078), [Jumelles empyréennes](https://www.wowhead.com/fr/npc=68905), [Lei Shen](https://www.wowhead.com/fr/npc=68397)          |
+{:.table .table-hover}
 
 ### [Siège d’Orgrimmar](https://www.wowhead.com/fr/zone=6738)
 
@@ -110,6 +112,7 @@ favicon: "/assets/img/favicon-wow.png"
 | **Les portes de la Vindicte**    | [Galakras](https://www.wowhead.com/fr/npc=72249), [Mastodonte de fer](https://www.wowhead.com/fr/npc=71466), [Sombres chamans kor’krons](https://www.wowhead.com/fr/npc=71859), [Général Nazgrim](https://www.wowhead.com/fr/npc=71515)  |
 | **Fort-du-Gouffre**              | [Malkorok](https://www.wowhead.com/fr/npc=71454), [Butin de Pandarie](https://www.wowhead.com/fr/npc=71889), [Thok le Sanguinaire](https://www.wowhead.com/fr/npc=71529/thok-le-sanguinaire)                                             |
 | **La chute**                     | [Ingé-siège Boîte-Noire](https://www.wowhead.com/fr/npc=71504), [Parangons des Klaxxi](https://www.wowhead.com/fr/npc=71152), [Garrosh Hurlenfer](https://www.wowhead.com/fr/npc=71865)                                                  |
+{:.table .table-hover}
 
 ****
 
