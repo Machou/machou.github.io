@@ -5,8 +5,9 @@
 	display: block;
 	font-family: 'Source Code Pro', Consolas, 'Ubuntu Mono', monospace;
 	font-size: 1rem;
+	margin-bottom: 1.5rem;
 	overflow-x: auto;
-	padding: 0 1rem;
+	padding: .5rem 1rem;
 }
 
 pre.highlight {
