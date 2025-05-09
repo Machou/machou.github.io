@@ -69,11 +69,12 @@ favicon: "/assets/img/favicon-wow.png"
 | **Pandarie** | **Val de l’Éternel printemps**   | [Chroniqueur Han <Conteur de l’outil Raids>](https://www.wowhead.com/fr/npc=80633)      | `/way #390 83.0 30.6 Chroniqueur Han` |
 {:.table table-hover}
 
+### [Cœur de la peur](https://www.wowhead.com/fr/zone=6297)
 
-| Raid                                                      | Partie                         |  Boss                           |
+| Partie                         |  Boss                           |
 | :-------------------------------------------------------: | :----------------------------: | :--------: |
-| ### [Cœur de la peur](https://www.wowhead.com/fr/zone=6297)   | **L’approche de l’effroi**     | [Vizir impérial Zor’lok](https://www.wowhead.com/fr/npc=62980), [Seigneur des lames Ta’yak](https://www.wowhead.com/fr/npc=62543), [Garalon](https://www.wowhead.com/fr/npc=62164) |
-|                                                           | **Le cauchemar de Shek’zeer**  | [Seigneur du Vent Mel’jarak](https://www.wowhead.com/fr/npc=62397), [Sculpte-ambre Un’sok](https://www.wowhead.com/fr/npc=62511), [Grande impératrice Shek’zeer](https://www.wowhead.com/fr/npc=62837) |
+| **L’approche de l’effroi**     | [Vizir impérial Zor’lok](https://www.wowhead.com/fr/npc=62980), [Seigneur des lames Ta’yak](https://www.wowhead.com/fr/npc=62543), [Garalon](https://www.wowhead.com/fr/npc=62164) |
+| **Le cauchemar de Shek’zeer**  | [Seigneur du Vent Mel’jarak](https://www.wowhead.com/fr/npc=62397), [Sculpte-ambre Un’sok](https://www.wowhead.com/fr/npc=62511), [Grande impératrice Shek’zeer](https://www.wowhead.com/fr/npc=62837) |
 {:.table table-hover}
 
 
