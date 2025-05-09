@@ -16,7 +16,7 @@ favicon: "/assets/img/favicon.png"
 	</ol>
 </nav>
 
-# Fail2ban
+# [Fail2ban](comment-utiliser-fail2ban)
 
 - [Qu’est ce que Fail2ban ?](#quest-ce-que-fail2ban-)
 - [Installation de Fail2ban](#installation-de-fail2ban)
@@ -25,7 +25,7 @@ favicon: "/assets/img/favicon.png"
 
 ## Qu’est ce que Fail2ban ?
 
-![](https://i.ibb.co/NmgL9QN/Fail2ban-screenshot.png)
+<p class="mb-0 text-center"><a href="https://i.ibb.co/NmgL9QN/Fail2ban-screenshot.png" data-fancybox="gallery"><img src="https://i.ibb.co/NmgL9QN/Fail2ban-screenshot.png" class="border rounded img-fluid" alt="Fenêtre Fail2ban" title="Fenêtre Fail2ban"></a></p>
 
 [Fail2ban](https://github.com/fail2ban/fail2ban) est un logiciel de sécurité destiné à prévenir les attaques par force brute en bloquant temporairement les adresses IP suspectes. Il analyse les journaux des services pour détecter des motifs d’échecs d’authentification répétés et autres comportements suspects, puis utilise des règles **iptables** pour bannir temporairement ces adresses IP.
 

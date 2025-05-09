@@ -15,9 +15,10 @@ favicon: "/assets/img/favicon.png"
 	</ol>
 </nav>
 
+# [Créer un Hidden Service sécurisé avec Tor sur Debian](comment-creer-hidden-service)
+
 ## **Sommaire**
 
-- [Créer un Hidden Service sécurisé avec Tor sur Debian](#créer-un-hidden-service-sécurisé-avec-tor-sur-debian)
 - [Liste des logiciels](#liste-des-logiciels)
 - [Qu’est-ce que Tor et un Hidden Service ?](#quest-ce-que-tor-et-un-hidden-service-)
   - [Quelques règles importantes](#quelques-règles-importantes)
@@ -57,8 +58,6 @@ favicon: "/assets/img/favicon.png"
     - [Méthode N°3 : rejeter tout le trafic IPv6](#méthode-n3--rejeter-tout-le-trafic-ipv6)
   - [Quelques liens / tutoriels utiles](#quelques-liens--tutoriels-utiles)
   - [À faire](#à-faire)
-
-# Créer un Hidden Service sécurisé avec Tor sur Debian
 
 ## Liste des logiciels
 
