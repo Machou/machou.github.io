@@ -41,9 +41,7 @@ favicon: "/assets/img/favicon.png"
 | Statistiques                | Les Langages                     |
 | :-------------------------: | :------------------------------: |
 | ![](generated/overview.svg) | ![](generated/languages.svg)     |
-{:.table table-hover}
-
------
+{:.table .table-hover}
 
 | Statistiques diverses        |
 | :-----: |
@@ -67,7 +65,7 @@ favicon: "/assets/img/favicon.png"
 **GitHub Repository Card for every web site**
 [![Machou/machou.github.io](https://gh-card.dev/repos/Machou/machou.github.io.svg)](https://github.com/Machou/machou.github.io)
 |
-{:.table table-hover}
+{:.table .table-hover}
 
 
 ## Configuration et installation
