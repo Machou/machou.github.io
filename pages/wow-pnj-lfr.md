@@ -65,11 +65,11 @@ favicon: "/assets/img/favicon-wow.png"
 - [Guide de Shadowlands sur Mamytwink](https://www.mamytwink.com/actualite/shadowlands-extension-wow-informations)
 - [Guide de Dragonflight sur Mamytwink](https://www.mamytwink.com/guides/dragonflight-toutes-les-informations-sur-lextension-wow)
 
-## World of Warcraft : Mists of Pandaria
+## [World of Warcraft : Mists of Pandaria](#world-of-warcraft--mists-of-pandaria)
 
 <a href="assets/img/WoW_MoP-Large.png"><img src="assets/img/WoW_MoP.png" class="img-fluid" alt="Logo World of Warcraft : Mists of Pandaria" title="Logo World of Warcraft : Mists of Pandaria"></a>
 
-### PnJ pour World of Warcraft : Mists of Pandaria
+### [PnJ pour World of Warcraft : Mists of Pandaria](#pnj-pour-world-of-warcraft--mists-of-pandaria)
 
 | Continent    | Zone                             | PnJ                                                                                     | Point de passage                      |
 | :----------: | :------------------------------: | :-------------------------------------------------------------------------------------: | :-----------------------------------: |
@@ -116,11 +116,11 @@ favicon: "/assets/img/favicon-wow.png"
 
 ****
 
-## World of Warcraft : Warlords of Draenor
+## [World of Warcraft : Warlords of Draenor](#world-of-warcraft--warlords-of-draenor)
 
 <a href="assets/img/WoW_WoD-Large.png"><img src="assets/img/WoW_WoD.png" class="img-fluid" alt="Logo World of Warcraft : Warlords of Draenor" title="Logo World of Warcraft : Warlords of Draenor"></a>
 
-### PnJ pour World of Warcraft : Warlords of Draenor
+### (PnJ pour World of Warcraft : Warlords of Draenor)[#pnj-pour-world-of-warcraft--warlords-of-draenor]
 
 | Faction      | Zone              | PnJ                                                                           | Point de passage                 |
 | :----------: | :---------------: | :---------------------------------------------------------------------------: | :------------------------------: |
@@ -157,11 +157,11 @@ favicon: "/assets/img/favicon-wow.png"
 
 ****
 
-## World of Warcraft : Legion
+## [World of Warcraft : Legion](#world-of-warcraft--legion)
 
 <a href="assets/img/WoW_Legion-Large.png"><img src="assets/img/WoW_Legion.png" class="img-fluid" alt="Logo World of Warcraft : Legion" title="Logo World of Warcraft : Legion"></a>
 
-### PnJ pour World of Warcraft : Legion
+### [PnJ pour World of Warcraft : Legion](#pnj-pour-world-of-warcraft--legion)
 
 | Zone              | Zone              | PnJ                                                            | Point de passage                      |
 | :---------------: | :---------------: | :------------------------------------------------------------: | :-----------------------------------: |
@@ -211,11 +211,11 @@ favicon: "/assets/img/favicon-wow.png"
 
 ****
 
-## World of Warcraft : Battle for Azeroth
+## [World of Warcraft : Battle for Azeroth](#world-of-warcraft--battle-for-azeroth)
 
 <a href="assets/img/WoW_BfA-Large.png"><img src="assets/img/WoW_BfA.png" class="img-fluid" alt="Logo World of Warcraft : Battle for Azeroth" title="Logo World of Warcraft : Battle for Azeroth"></a>
 
-### PnJ pour World of Warcraft : Battle for Azeroth
+### [PnJ pour World of Warcraft : Battle for Azeroth](#pnj-pour-world-of-warcraft--battle-for-azeroth)
 
 | Faction      | Zone                   | PnJ                                                                           | Point de passage       |
 | :----------: | :--------------------: | :---------------------------------------------------------------------------: | :--------------------: |
@@ -264,15 +264,16 @@ favicon: "/assets/img/favicon-wow.png"
 
 ****
 
-## World of Warcraft : Shadowlands
+## [World of Warcraft : Shadowlands](#world-of-warcraft--shadowlands)
 
 <a href="assets/img/WoW_Shadowlands-Large.png"><img src="assets/img/WoW_Shadowlands.png" class="img-fluid" alt="Logo World of Warcraft : Shadowlands" title="Logo World of Warcraft : Shadowlands"></a>
 
-### PnJ pour World of Warcraft : Shadowlands
+### [PnJ pour World of Warcraft : Shadowlands](#pnj-pour-world-of-warcraft--shadowlands)
 
 | Continent    | Zone         | PnJ                                                                           | Point de passage            |
 | :----------: | :----------: | :---------------------------------------------------------------------------: | :-------------------------: |
 | Ombreterre   | **Oribos**   | [Ta'elfar <Commerçant d'histoires>](https://www.wowhead.com/fr/npc=205959)    | `/way 42.4 72.2 Ta'elfar`   |
+{:.table .table-hover}
 
 ### [Château Nathria](https://www.wowhead.com/fr/zone=13224)
 
@@ -303,16 +304,19 @@ favicon: "/assets/img/favicon-wow.png"
 
 ****
 
-## World of Warcraft : Dragonflight
+## [World of Warcraft : Dragonflight](#world-of-warcraft--dragonflight)
 
-[![World of Warcraft : Dragonflight]( "
 <a href="assets/img/WoW_Dragonflight-Large.png"><img src="assets/img/WoW_Dragonflight.png" class="img-fluid" alt="Logo World of Warcraft : Dragonflight" title="Logo World of Warcraft : Dragonflight"></a>
+
+**Non diponsible**
 
 ****
 
-## World of Warcraft : The War Within
+## [World of Warcraft : The War Within](#world-of-warcraft--the-war-within)
 
 <a href="assets/img/WoW_TWW-Large.png"><img src="assets/img/WoW_TWW.png" class="img-fluid" alt="Logo World of Warcraft : The War Within" title="Logo World of Warcraft : The War Within"></a>
+
+**Non diponsible**
 
 ****
 
