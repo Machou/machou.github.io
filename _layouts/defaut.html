@@ -19,6 +19,11 @@
 	{% endif %}
 	<link rel="stylesheet" href="https://unpkg.com/bootstrap@5.3.6/dist/css/bootstrap.min.css">
 
+	{% if page.url == "/ma-page.html" %}
+	<!-- Code spécifique à cette page -->
+	{% endif %}
+
+
 	<style>
 	body {
 		background-color: #eee;
@@ -29,6 +34,7 @@
 <body>
 	<main>
 		<div class="container bg-light border border-2 rounded-4 my-5 p-4">
+			{{ page.url }}
 			{{ content }}
 		</div>
 	</main>
