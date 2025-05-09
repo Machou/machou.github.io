@@ -2,11 +2,11 @@ body {
 	background-color: #eee;
 }
 
-.table-wow col:first-child {
+.table-wow td:first-child {
 	width: 30%;
 }
 
-.table-wow col:last-child {
+.table-wow td:last-child {
 	width: 70%;
 }
 
