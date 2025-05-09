@@ -15,6 +15,8 @@ favicon: "/assets/img/favicon.png"
 	</ol>
 </nav>
 
+# [machou.github.io](https://machou.github.io/)
+
 # Sommaire
 
 - [Word of Warcraft : PNJ de l’outil Recherche de Raid](https://machou.github.io/wow-pnj-lfr)
