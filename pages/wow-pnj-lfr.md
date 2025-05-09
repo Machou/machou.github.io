@@ -5,22 +5,19 @@ slug: "wow-pnj-lfr"
 title: "Word of Warcraft : les PNJ pour l’outil Recherche de Raid"
 canonical_url: "https://machou.github.io/wow-pnj-lfr"
 description: "Liste et localisation des différents PNJ pour l’outil Recherche de Raid sur World of Warcraft"
-tags: ["wow", "lfr", "raid"]
-categories: ["Jeu vidéo"]
 favicon: "/assets/img/favicon-wow.png"
 ---
 
-<!-- <link rel="icon" type="image/x-icon" href="/assets/img/favicon-wow.png"> -->
+<nav style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='%236c757d'/%3E%3C/svg%3E&#34;);" aria-label="breadcrumb">
+	<ol class="breadcrumb">
+		<li class="breadcrumb-item"><a href="https://machou.github.io/">Accueil</a></li>
+		<li class="breadcrumb-item active" aria-current="page">Word of Warcraft : PNJ de l’outil Recherche de Raid</li>
+	</ol>
+</nav>
 
-<style>
-.project-name {
-	color: #fde101
-}
-</style>
+[![World of Warcraft](assets/img/WoW.png "Logo World of Warcraft")](assets/img/WoW-Large.png){.img-fluid}
 
-[![World of Warcraft](assets/img/WoW.png "Logo World of Warcraft")](assets/img/WoW-Large.png)
-
-# Word of Warcraft : les PNJ pour l’outil Recherche de Raid
+# Word of Warcraft : PNJ de l’outil Recherche de Raid
 
 ## Sommaire
 

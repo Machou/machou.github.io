@@ -5,15 +5,19 @@ permalink: "/"
 title: "Sommaire"
 canonical_url: "https://machou.github.io/"
 description: "Pages GitHub générée via GitHub Pages. Informations sur World of Warcraft et tutoriel Tor."
-tags: ["wow", "lfr", "raid", "debian", "tor", "apache2", "sql", "adminer"]
-# categories:
 favicon: "/assets/img/favicon.png"
 # Exemple : https://github.com/microsoft/generative-ai-for-beginners
 ---
 
+<nav style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='%236c757d'/%3E%3C/svg%3E&#34;);" aria-label="breadcrumb">
+	<ol class="breadcrumb">
+		<li class="breadcrumb-item active" aria-current="page">Accueil</li>
+	</ol>
+</nav>
+
 # Sommaire
 
-- [Word of Warcraft : les PNJ pour l’outil Recherche de Raid](https://machou.github.io/wow-pnj-lfr)
+- [Word of Warcraft : PNJ de l’outil Recherche de Raid](https://machou.github.io/wow-pnj-lfr)
 - [Comment créer un Hidden Service sécurisé de zéro avec Tor sur Debian](https://machou.github.io/comment-creer-hidden-service)
   - [Tutoriel PortSentry](https://machou.github.io/comment-utiliser-portsentry)
   - [Tutoriel Fail2ban](https://machou.github.io/comment-utiliser-fail2ban)
