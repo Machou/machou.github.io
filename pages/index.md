@@ -44,8 +44,8 @@ favicon: "/assets/img/favicon.png"
 {:.table table-hover}
 
 -----
------
-|                                                                                                        |
+
+| Statistiques diverses        |
 | :-----: |
 | 
   [Dépôts de Machou](https://github.com/Machou)
