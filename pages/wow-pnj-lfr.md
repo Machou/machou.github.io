@@ -69,7 +69,7 @@ favicon: "/assets/img/favicon-wow.png"
 
 <a href="assets/img/WoW_MoP-Large.png" data-fancybox="gallery"><img src="assets/img/WoW_MoP.png" class="img-fluid" alt="Logo World of Warcraft : Mists of Pandaria" title="Logo World of Warcraft : Mists of Pandaria"></a>
 
-### <i class="fa-solid fa-user"></i> [PnJ pour World of Warcraft : Mists of Pandaria](#pnj-pour-world-of-warcraft--mists-of-pandaria)
+### <i class="fa-solid fa-user"></i> [PnJ pour World of Warcraft : Mists of Pandaria](#-pnj-pour-world-of-warcraft--mists-of-pandaria)
 
 | Continent    | Zone                             | PnJ                                                                                     | Point de passage                      |
 | :----------: | :------------------------------: | :-------------------------------------------------------------------------------------: | :-----------------------------------: |
@@ -120,7 +120,7 @@ favicon: "/assets/img/favicon-wow.png"
 
 <a href="assets/img/WoW_WoD-Large.png" data-fancybox="gallery"><img src="assets/img/WoW_WoD.png" class="img-fluid" alt="Logo World of Warcraft : Warlords of Draenor" title="Logo World of Warcraft : Warlords of Draenor"></a>
 
-### <i class="fa-solid fa-user"></i> [PnJ pour World of Warcraft : Warlords of Draenor](#pnj-pour-world-of-warcraft--warlords-of-draenor)
+### <i class="fa-solid fa-user"></i> [PnJ pour World of Warcraft : Warlords of Draenor](#-pnj-pour-world-of-warcraft--warlords-of-draenor)
 
 | Faction      | Zone              | PnJ                                                                           | Point de passage                 |
 | :----------: | :---------------: | :---------------------------------------------------------------------------: | :------------------------------: |
