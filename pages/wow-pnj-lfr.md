@@ -71,6 +71,22 @@ favicon: "/assets/img/favicon-wow.png"
 
 ### PnJ pour World of Warcraft : Mists of Pandaria
 
+
+test
+
+|     |                     |                                                                                 |                |
+| :----------: | :------------------------------: | :-------------------------------------------------------------------------------------: | :-----------------------------------: |
+| **Pandarie** | **Val de l’Éternel printemps**   | [Chroniqueur Han <Conteur de l’outil Raids>](https://www.wowhead.com/fr/npc=80633)      | `/way #390 83.0 30.6 Chroniqueur Han` |
+
+test 2
+
+| :----------: | :------------------------------: | :-------------------------------------------------------------------------------------: | :-----------------------------------: |
+| **Pandarie** | **Val de l’Éternel printemps**   | [Chroniqueur Han <Conteur de l’outil Raids>](https://www.wowhead.com/fr/npc=80633)      | `/way #390 83.0 30.6 Chroniqueur Han` |
+
+
+
+
+
 | Continent    | Zone                             | PnJ                                                                                     | Point de passage                      |
 | :----------: | :------------------------------: | :-------------------------------------------------------------------------------------: | :-----------------------------------: |
 | **Pandarie** | **Val de l’Éternel printemps**   | [Chroniqueur Han <Conteur de l’outil Raids>](https://www.wowhead.com/fr/npc=80633)      | `/way #390 83.0 30.6 Chroniqueur Han` |
