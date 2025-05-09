@@ -22,9 +22,9 @@ favicon: "/assets/img/favicon-wow.png"
 ## Sommaire
 
 - [World of Warcraft : Mist of Pandaria](#world-of-warcraft--mists-of-pandaria)
+  - [Caveaux Mogu’shan](#caveaux-mogushan)
   - [Cœur de la peur](#cœur-de-la-peur)
   - [Terrasse Printanière](#terrasse-printanière)
-  - [Caveaux Mogu’shan](#caveaux-mogushan)
   - [Trône du tonnerre](#trône-du-tonnerre)
   - [Siège d’Orgrimmar](#siège-dorgrimmar)
 - [World of Warcraft : Warlords of Draenor](#world-of-warcraft--warlords-of-draenor)
@@ -70,13 +70,17 @@ favicon: "/assets/img/favicon-wow.png"
 {:.table table-hover}
 
 
-| Raid    | Partie                             | Intitulé                             | Boss                                                                                     | Point de passage                      |
-| :----------: | :------------------------------: | :-------------------------------------------------------------------------------------: | :-----------------------------------: |
-| [Cœur de la peur](https://www.wowhead.com/fr/zone=6297) | Partie 1 | **L’approche de l’effroi** | [Vizir impérial Zor’lok](https://www.wowhead.com/fr/npc=62980), [Seigneur des lames Ta’yak](https://www.wowhead.com/fr/npc=62543), [Garalon](https://www.wowhead.com/fr/npc=62164) |
-| [Cœur de la peur](https://www.wowhead.com/fr/zone=6297) | Partie 2 | **Le cauchemar de Shek’zeer** | [Seigneur du Vent Mel’jarak](https://www.wowhead.com/fr/npc=62397), [Sculpte-ambre Un’sok](https://www.wowhead.com/fr/npc=62511), [Grande impératrice Shek’zeer](https://www.wowhead.com/fr/npc=62837) |
-
+| Raid                                                      | Partie     | Intitulé                       |  Boss                           |
+| :-------------------------------------------------------: | :-----------------------------------------: | :--------: |
+| [Cœur de la peur](https://www.wowhead.com/fr/zone=6297)   | Partie 1   | **L’approche de l’effroi**     | [Vizir impérial Zor’lok](https://www.wowhead.com/fr/npc=62980), [Seigneur des lames Ta’yak](https://www.wowhead.com/fr/npc=62543), [Garalon](https://www.wowhead.com/fr/npc=62164) |
+|                                                           | Partie 2   | **Le cauchemar de Shek’zeer**  | [Seigneur du Vent Mel’jarak](https://www.wowhead.com/fr/npc=62397), [Sculpte-ambre Un’sok](https://www.wowhead.com/fr/npc=62511), [Grande impératrice Shek’zeer](https://www.wowhead.com/fr/npc=62837) |
 {:.table table-hover}
 
+
+### [Caveaux Mogu’shan](https://www.wowhead.com/fr/zone=6125)
+
+1. **Gardiens des Mogu’shan** : [La garde de pierre](https://www.wowhead.com/fr/npc=60047), [Feng le Maudit](https://www.wowhead.com/fr/npc=60009), [Gara’jal le Lieur d’esprit](https://www.wowhead.com/fr/npc=60143)
+2. **Le caveau des Mystères** : [Les esprits-rois](https://www.wowhead.com/fr/npc=60708), [Elegon](https://www.wowhead.com/fr/npc=60410), [Volonté de l’empereur](https://www.wowhead.com/fr/npc=60400)
 
 ### [Cœur de la peur](https://www.wowhead.com/fr/zone=6297)
 
@@ -86,11 +90,6 @@ favicon: "/assets/img/favicon-wow.png"
 ### [Terrasse Printanière](https://www.wowhead.com/fr/zone=6067)
 
 1. **Terrasse Printanière** : [Protecteurs de l’Éternel](https://www.wowhead.com/fr/npc=60583/protecteur-kaolan), [Tsulong](https://www.wowhead.com/fr/npc=62442/tsulong), [Lei Shi](https://www.wowhead.com/fr/npc=62983/lei-shi), [Sha de la peur](https://www.wowhead.com/fr/npc=60999/sha-de-la-peur)
-
-### [Caveaux Mogu’shan](https://www.wowhead.com/fr/zone=6125)
-
-1. **Gardiens des Mogu’shan** : [La garde de pierre](https://www.wowhead.com/fr/npc=60047), [Feng le Maudit](https://www.wowhead.com/fr/npc=60009), [Gara’jal le Lieur d’esprit](https://www.wowhead.com/fr/npc=60143)
-2. **Le caveau des Mystères** : [Les esprits-rois](https://www.wowhead.com/fr/npc=60708), [Elegon](https://www.wowhead.com/fr/npc=60410), [Volonté de l’empereur](https://www.wowhead.com/fr/npc=60400)
 
 ### [Trône du tonnerre](https://www.wowhead.com/fr/zone=6622)
 
@@ -267,5 +266,5 @@ favicon: "/assets/img/favicon-wow.png"
 ****
 
 <p style="text-align: center;">
-  <img src="assets/img/logo-horde.png">
+  <img src="assets/img/logo-horde.png" alt="Logo Horde" title="Logo Horde">
 </p>
