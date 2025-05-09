@@ -1,0 +1,21 @@
+body {
+	background-color: #eee;
+}
+
+.chasseur				{ color: #aad372 !important; }
+.chaman					{ color: #0070dd !important; }
+.chasseur-de-demons		{ color: #a330c9 !important; }
+.chevalier-de-la-mort	{ color: #c41e3a !important; }
+.demoniste				{ color: #8788ee !important; }
+.druide					{ color: #ff7c0a !important; }
+.evocateur				{ color: #33937f !important; }
+.guerrier				{ color: #c69b6d !important; }
+.mage					{ color: #3fc7eb !important; }
+.moine					{ color: #00ff98 !important; }
+.paladin				{ color: #f48cba !important; }
+.pretre					{ color: #ffffff !important; }
+.voleur					{ color: #fff468 !important; }
+
+.normal					{ color: #ffff !important; font-weight: bold !important; }
+.rare					{ color: #0070dd !important; font-weight: bold !important; }
+.epique					{ color: #a335ee !important; font-weight: bold !important; }

@@ -1,11 +1,9 @@
 name: Generate Stats Images
 
 on:
-  push:
-    branches: [ "main" ]
   schedule:
-    - cron: "0 0 1,15 * *"
-  workflow_dispatch:
+    - cron: "0 0 1,15 * *"  # Tous les 1er et 15 du mois à minuit UTC
+  workflow_dispatch:        # Lancement manuel depuis l'interface GitHub
 
 jobs:
   build:
@@ -30,7 +28,6 @@ jobs:
         python3 -m pip install -r requirements.txt
     - name: Generate images
       run: |
-        python3 --version
         python3 generate_images.py
       env:
         ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
