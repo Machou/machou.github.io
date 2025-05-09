@@ -41,7 +41,7 @@ favicon: "/assets/img/favicon-wow.png"
   - [Tombe de Sargeras](#tombe-de-sargeras)
   - [Antorus, le Trône ardent](#antorus-le-trône-ardent)
 - [World of Warcraft : Battle for Azeroth](#world-of-warcraft--battle-for-azeroth)
-  - <i class="fa-solid fa-user"></i> [PnJ pour World of Warcraft : Battle for Azeroth](#-pnj-pour-world-of-warcraft--battle-of-azeroth)
+  - <i class="fa-solid fa-user"></i> [PnJ pour World of Warcraft : Battle for Azeroth](#-pnj-pour-world-of-warcraft--battle-for-azeroth)
   - [Uldir](#uldir)
   - [Bataille de Dazar’alor](#bataille-de-dazaralor)
   - [Creuset des Tempêtes](#creuset-des-tempêtes)
@@ -215,7 +215,7 @@ favicon: "/assets/img/favicon-wow.png"
 
 <a href="assets/img/WoW_BfA-Large.png" data-fancybox="gallery"><img src="assets/img/WoW_BfA.png" class="img-fluid" alt="Logo World of Warcraft : Battle for Azeroth" title="Logo World of Warcraft : Battle for Azeroth"></a>
 
-### <i class="fa-solid fa-user"></i> [PnJ pour World of Warcraft : Battle for Azeroth](#-pnj-pour-world-of-warcraft--battle-of-azeroth)
+### <i class="fa-solid fa-user"></i> [PnJ pour World of Warcraft : Battle for Azeroth](#-pnj-pour-world-of-warcraft--battle-for-azeroth)
 
 | Faction      | Zone                   | PnJ                                                                           | Point de passage       |
 | :----------: | :--------------------: | :---------------------------------------------------------------------------: | :--------------------: |
