@@ -22,33 +22,33 @@ favicon: "/assets/img/favicon-wow.png"
 ## Sommaire
 
 - [World of Warcraft : Mist of Pandaria](#world-of-warcraft--mists-of-pandaria)
-  - [PnJ pour World of Warcraft : Mists of Pandaria](#)
+  - [PnJ pour World of Warcraft : Mists of Pandaria](#pnj-pour-world-of-warcraft--mists-of-pandaria)
   - [Caveaux Mogu’shan](#caveaux-mogushan)
   - [Cœur de la peur](#cœur-de-la-peur)
   - [Terrasse Printanière](#terrasse-printanière)
   - [Trône du tonnerre](#trône-du-tonnerre)
   - [Siège d’Orgrimmar](#siège-dorgrimmar)
 - [World of Warcraft : Warlords of Draenor](#world-of-warcraft--warlords-of-draenor)
-  - [PnJ pour World of Warcraft : Warlords of Draenor](#)
+  - [PnJ pour World of Warcraft : Warlords of Draenor](#pnj-pour-world-of-warcraft--warlords-of-draenor)
   - [Cognefort](#cognefort)
   - [Fonderie des Rochenoires](#fonderie-des-rochenoires)
   - [Citadelle des Flammes infernales](#citadelle-des-flammes-infernales)
 - [World of Warcraft : Legion](#world-of-warcraft--legion)
-  - [PnJ pour World of Warcraft : Legion](#)
+  - [PnJ pour World of Warcraft : Legion](#pnj-pour-world-of-warcraft--legion)
   - [Le Cauchemar d’émeraude](#le-cauchemar-démeraude)
   - [Le Jugement des Valeureux](#le-jugement-des-valeureux)
   - [Palais Sacrenuit](#palais-sacrenuit)
   - [Tombe de Sargeras](#tombe-de-sargeras)
   - [Antorus, le Trône ardent](#antorus-le-trône-ardent)
 - [World of Warcraft : Battle for Azeroth](#world-of-warcraft--battle-for-azeroth)
-  - [PnJ pour World of Warcraft : Battle for Azeroth](#)
+  - [PnJ pour World of Warcraft : Battle for Azeroth](##pnj-pour-world-of-warcraft--battle-of-azeroth)
   - [Uldir](#uldir)
   - [Bataille de Dazar’alor](#bataille-de-dazaralor)
   - [Creuset des Tempêtes](#creuset-des-tempêtes)
   - [Palais Éternel](#palais-éternel)
   - [Ny’alotha, la cité en éveil](#nyalotha-la-cité-en-éveil)
 - [World of Warcraft : Shadowlands](#world-of-warcraft--shadowlands)
-  - [PnJ pour World of Warcraft : Shadowlands](#)
+  - [PnJ pour World of Warcraft : Shadowlands](#pnj-pour-world-of-warcraft--shadowlands)
   - [Château Nathria](#château-nathria)
   - [Sanctum de Domination](#sanctum-de-domination)
   - [Sépulcre des Fondateurs](#sépulcre-des-fondateurs)
@@ -118,7 +118,7 @@ favicon: "/assets/img/favicon-wow.png"
 
 ## [World of Warcraft : Warlords of Draenor](#world-of-warcraft--warlords-of-draenor)
 
-<a href="assets/img/WoW_WoD-Large.png" data-fancybox="gallery"="assets/img/WoW_WoD.png" class="img-fluid" alt="Logo World of Warcraft : Warlords of Draenor" title="Logo World of Warcraft : Warlords of Draenor"></a>
+<a href="assets/img/WoW_WoD-Large.png" data-fancybox="gallery"><img src="assets/img/WoW_WoD.png" class="img-fluid" alt="Logo World of Warcraft : Warlords of Draenor" title="Logo World of Warcraft : Warlords of Draenor"></a>
 
 ### (PnJ pour World of Warcraft : Warlords of Draenor)[#pnj-pour-world-of-warcraft--warlords-of-draenor]
 
