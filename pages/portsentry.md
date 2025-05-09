@@ -199,7 +199,3 @@ ou
 Si vous rencontrez une erreur avec une IP qui a été bannie alors qu’elle ne devrait pas l’être, on peut la retirer :
 
 `route del -host IP-PROBLÉMATIQUE reject`
-
-<p class="mb-0 text-center">
-	[ <a href="https://machou.github.io/">Retour à l’accueil</a> ]
-</p>

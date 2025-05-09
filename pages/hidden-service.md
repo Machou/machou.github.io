@@ -1475,7 +1475,3 @@ On redémarre le serveur :
 > - soit de les traiter avec logrotate (et le paramètre shred — 3 max.)
 
 Si vous avez des idées ou des améliorations à proposer, n’hésitez pas à postez un commentaire ci-dessous.
-
-<p class="mb-0 text-center">
-	[ <a href="https://machou.github.io/">Retour à l’accueil</a> ]
-</p>

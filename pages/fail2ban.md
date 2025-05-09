@@ -270,7 +270,3 @@ On peut aussi bannir une IP manuellement :
 `sudo fail2ban-client set nom-du-service banip mon-ip`
 
 Merci au [Wiki officiel d’ubuntu-fr.org](https://doc.ubuntu-fr.org/fail2ban) et au [dépôt GitHub officiel de Fail2ban](https://github.com/fail2ban/fail2ban).
-
-<p class="mb-0 text-center">
-	[ <a href="https://machou.github.io/">Retour à l’accueil</a> ]
-</p>
