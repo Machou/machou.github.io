@@ -787,8 +787,8 @@ disable_functions =
     assert,               ; Évalue une assertion PHP (pouvant exécuter du code)
     create_function,      ; Crée une fonction anonyme à partir d’une chaîne
     mail,                 ; Permet l’envoie d’un courriel
-	proc_get_status,      ; Lit les informations concernant un processus ouvert par proc_open()
-	imap_open             ; Ouvre un flux IMAP vers une boîte aux lettres
+    proc_get_status,      ; Lit les informations concernant un processus ouvert par proc_open()
+    imap_open             ; Ouvre un flux IMAP vers une boîte aux lettres
 
 ; https://www.php.net/manual/fr/info.configuration.php#ini.max-execution-time
 max_execution_time = 60
