@@ -28,19 +28,6 @@ $array = [1, 2, 3, 17];
 foreach ($array as $value) {
     echo "Valeur courante de \$array: $value.\n";
 }
-
-/* Exemple : clé et valeur */
-
-$array = [
-    "un" => 1,
-    "deux" => 2,
-    "trois" => 3,
-    "dix-sept" => 17
-];
-
-foreach ($array as $key => $value) {
-    echo "\$array[$key] => $value.\n";
-}
 ```
 
 - [Liste des logiciels](#liste-des-logiciels)
