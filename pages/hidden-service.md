@@ -89,7 +89,7 @@ Un Hidden Service (ou service caché) est un service accessible uniquement via l
 
 > Cartographie des utilisateurs Tor, par pays.
 
-<a href="https://i.ibb.co/fY6VCzk/Geographies-of-Tor.png" data-fancybox="gallery"><img src="https://i.ibb.co/fY6VCzk/Geographies-of-Tor.png" class="img-fluid" alt="Cartographie des utilisateurs" title="Cartographie des utilisateurs"></a>
+<p class="mb-0 text-center"><a href="https://i.ibb.co/fY6VCzk/Geographies-of-Tor.png" data-fancybox="gallery"><img src="https://i.ibb.co/fY6VCzk/Geographies-of-Tor.png" class="border rounded img-fluid" alt="Cartographie des utilisateurs" title="Cartographie des utilisateurs"></a></p>
 
 *[Statistiques officielles du projet Tor](https://metrics.torproject.org/)*
 
@@ -1121,7 +1121,7 @@ Exemple :
 
 Maintenant, lancez le [Navigateur Tor](https://www.torproject.org/download/) sur votre ordinateur et connectez-vous au *Hidden Service* que vous avez généré plus haut !
 
-<a href="https://i.ibb.co/M267kK8/onion.png" data-fancybox="gallery"><img src="https://i.ibb.co/M267kK8/onion.png" class="img-fluid" alt="Fenêtre Tor" title="Fenêtre Tor"></a>
+<p class="mb-0 text-center"><a href="https://i.ibb.co/M267kK8/onion.png" data-fancybox="gallery"><img src="https://i.ibb.co/M267kK8/onion.png" class="border rounded img-fluid" alt="Fenêtre Tor" title="Fenêtre Tor"></a></p>
 
 ## Facultatif
 
@@ -1206,7 +1206,7 @@ perl nipe.pl restart
 perl nipe.pl status
 ```
 
-![](https://heitorgouvea.me/images/projects/nipe/demo.gif)
+<p class="mb-0 text-center"><a href="https://heitorgouvea.me/images/projects/nipe/demo.gif" data-fancybox="gallery"><img src="https://heitorgouvea.me/images/projects/nipe/demo.gif" class="border rounded img-fluid" alt="Cartographie des utilisateurs" title="Cartographie des utilisateurs"></a></p>
 
 - [Dépôt GitHub officiel du projet Nipe](https://github.com/GouveaHeitor/nipe)
 
