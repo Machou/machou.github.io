@@ -15,7 +15,7 @@ favicon: "/assets/img/favicon-wow.png"
 	</ol>
 </nav>
 
-[![World of Warcraft](assets/img/WoW.png "Logo World of Warcraft")](assets/img/WoW-Large.png){.img-fluid}
+[![World of Warcraft](assets/img/WoW.png "Logo World of Warcraft")](assets/img/WoW-Large.png){.markdown-img-fluid}
 
 # Word of Warcraft : PNJ de l’outil Recherche de Raid
 

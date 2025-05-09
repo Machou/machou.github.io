@@ -19,16 +19,45 @@
 	{% endif %}
 	<link rel="stylesheet" href="https://unpkg.com/bootstrap@5.3.6/dist/css/bootstrap.min.css">
 
-	{% if page.url == "/ma-page.html" %}
+	{% if page.url == "//wow-pnj-lfr" %}
 	<!-- Code spécifique à cette page -->
 	{% endif %}
 
+	<link rel="stylesheet" href="/assets/css/vendors.css?1746515475">
+	<link rel="stylesheet" href="/assets/css/brain-video.css?1746546793">
 
 	<style>
 	body {
 		background-color: #eee;
 	}
+
+	.markdown-img-fluid img {
+		max-width: 100%;
+		height: auto;
+	}
+
+	.chasseur				{ color: #aad372 !important; }
+	.chaman					{ color: #0070dd !important; }
+	.chasseur-de-demons		{ color: #a330c9 !important; }
+	.chevalier-de-la-mort	{ color: #c41e3a !important; }
+	.demoniste				{ color: #8788ee !important; }
+	.druide					{ color: #ff7c0a !important; }
+	.evocateur				{ color: #33937f !important; }
+	.guerrier				{ color: #c69b6d !important; }
+	.mage					{ color: #3fc7eb !important; }
+	.moine					{ color: #00ff98 !important; }
+	.paladin				{ color: #f48cba !important; }
+	.pretre					{ color: #ffffff !important; }
+	.voleur					{ color: #fff468 !important; }
+
+	.normal				{ color: #ffff !important; font-weight: bold !important; }
+	.rare				{ color: #0070dd !important; font-weight: bold !important; }
+	.epique				{ color: #a335ee !important; font-weight: bold !important; }
 	</style>
+
+	<!-- https://www.wowhead.com/tooltip -->
+	<script>const whTooltips = {colorLinks: true, iconizeLinks: true, renameLinks: true};</script>
+	<script src="https://wow.zamimg.com/js/tooltips.js"></script>
 </head>
 
 <body>
