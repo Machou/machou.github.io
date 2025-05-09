@@ -89,7 +89,7 @@ Un Hidden Service (ou service caché) est un service accessible uniquement via l
 
 > Cartographie des utilisateurs Tor, par pays.
 
-<a href="https://i.ibb.co/fY6VCzk/Geographies-of-Tor.png" data-fancybox="gallery"><img src="https://i.ibb.co/fY6VCzk/Geographies-of-Tor.png" alt="Cartographie des utilisateurs" title="Cartographie des utilisateurs"></a>
+<a href="https://i.ibb.co/fY6VCzk/Geographies-of-Tor.png" data-fancybox="gallery"><img src="https://i.ibb.co/fY6VCzk/Geographies-of-Tor.png" class="img-fluid" alt="Cartographie des utilisateurs" title="Cartographie des utilisateurs"></a>
 
 *[Statistiques officielles du projet Tor](https://metrics.torproject.org/)*
 
@@ -1121,8 +1121,7 @@ Exemple :
 
 Maintenant, lancez le [Navigateur Tor](https://www.torproject.org/download/) sur votre ordinateur et connectez-vous au *Hidden Service* que vous avez généré plus haut !
 
-![](https://i.ibb.co/M267kK8/onion.png)
-{: .img-fluid}
+<a href="https://i.ibb.co/M267kK8/onion.png" data-fancybox="gallery"><img src="https://i.ibb.co/M267kK8/onion.png" class="img-fluid" alt="Fenêtre Tor" title="Fenêtre Tor"></a>
 
 ## Facultatif
 
