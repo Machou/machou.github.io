@@ -78,7 +78,6 @@ favicon: "/assets/img/favicon-wow.png"
 
 ### [Caveaux Mogu’shan](https://www.wowhead.com/fr/zone=6125)
 
-| Partie                      | Boss                                                                                                                                                                                   |
 | :-------------------------: | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
 | **Gardiens des Mogu’shan**  | [La garde de pierre](https://www.wowhead.com/fr/npc=60047), [Feng le Maudit](https://www.wowhead.com/fr/npc=60009), [Gara’jal le Lieur d’esprit](https://www.wowhead.com/fr/npc=60143) |
 | **Le caveau des Mystères**  | [Les esprits-rois](https://www.wowhead.com/fr/npc=60708), [Elegon](https://www.wowhead.com/fr/npc=60410), [Volonté de l’empereur](https://www.wowhead.com/fr/npc=60400)                |
@@ -86,7 +85,6 @@ favicon: "/assets/img/favicon-wow.png"
 
 ### [Cœur de la peur](https://www.wowhead.com/fr/zone=6297)
 
-| Partie                           | Boss                                                                                                                                                                                                      |
 | :------------------------------: | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
 | **L’approche de l’effroi**       | [Vizir impérial Zor’lok](https://www.wowhead.com/fr/npc=62980), [Seigneur des lames Ta’yak](https://www.wowhead.com/fr/npc=62543), [Garalon](https://www.wowhead.com/fr/npc=62164)                         |
 | **Le cauchemar de Shek’zeer**    | [Seigneur du Vent Mel’jarak](https://www.wowhead.com/fr/npc=62397), [Sculpte-ambre Un’sok](https://www.wowhead.com/fr/npc=62511), [Grande impératrice Shek’zeer](https://www.wowhead.com/fr/npc=62837)     |
