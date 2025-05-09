@@ -30,6 +30,7 @@ favicon: "/assets/img/favicon-wow.png"
   - [Siège d’Orgrimmar](#siège-dorgrimmar)
 - [World of Warcraft : Warlords of Draenor](#world-of-warcraft--warlords-of-draenor)
   - <i class="fa-solid fa-user"></i> [PnJ pour World of Warcraft : Warlords of Draenor](#-pnj-pour-world-of-warcraft--warlords-of-draenor)
+  - <i class="fa-solid fa-user"></i> [PnJ pour World of Warcraft : Warlords of Draenor](#-pnj-pour-world-of-warcraft--warlords-of-draenor)
   - [Cognefort](#cognefort)
   - [Fonderie des Rochenoires](#fonderie-des-rochenoires)
   - [Citadelle des Flammes infernales](#citadelle-des-flammes-infernales)

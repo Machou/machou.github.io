@@ -19,6 +19,12 @@ favicon: "/assets/img/favicon.png"
 
 ## **Sommaire**
 
+```php
+<?php
+echo 'Hello World !';
+?>
+```
+
 - [Liste des logiciels](#liste-des-logiciels)
 - [Qu’est-ce que Tor et un Hidden Service ?](#quest-ce-que-tor-et-un-hidden-service-)
   - [Quelques règles importantes](#quelques-règles-importantes)
