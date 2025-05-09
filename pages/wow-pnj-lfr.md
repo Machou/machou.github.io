@@ -15,7 +15,7 @@ favicon: "/assets/img/favicon-wow.png"
 	</ol>
 </nav>
 
-[![World of Warcraft](assets/img/WoW.png "Logo World of Warcraft")](assets/img/WoW-Large.png){.markdown-img-fluid}
+<a href="assets/img/WoW-Large.png"><img src="assets/img/WoW.png" class="img-fluid" alt="World of Warcraft" title="Logo World of Warcraft"></a>
 
 # Word of Warcraft : PNJ de l’outil Recherche de Raid
 
@@ -62,7 +62,7 @@ favicon: "/assets/img/favicon-wow.png"
 
 ## World of Warcraft : Mists of Pandaria
 
-[![World of Warcraft : Mists of Pandaria](assets/img/WoW_MoP.png "Logo World of Warcraft : Mists of Pandaria")](assets/img/WoW_MoP-Large.png)
+<a href="assets/img/WoW_MoP-Large.png"><img src="assets/img/WoW_MoP.png" class="img-fluid" alt="Logo World of Warcraft" title="Logo World of Warcraft"></a>
 
 | Continent    | Zone                             | PnJ                                                                                     | Point de passage                      |
 | :----------: | :------------------------------: | :-------------------------------------------------------------------------------------: | :-----------------------------------: |
@@ -101,7 +101,7 @@ favicon: "/assets/img/favicon-wow.png"
 
 ## World of Warcraft : Warlords of Draenor
 
-[![World of Warcraft : Warlords of Draenor](assets/img/WoW_WoD.png "Logo World of Warcraft : Warlords of Draenor")](assets/img/WoW_WoD-Large.png)
+<a href="assets/img/WoW_WoD-Large.png"><img src="assets/img/WoW_WoD.png" class="img-fluid" alt="Logo World of Warcraft : Warlords of Draenor" title="Logo World of Warcraft : Warlords of Draenor"></a>
 
 | Faction      | Zone              | PnJ                                                                           | Point de passage                 |
 | :----------: | :---------------: | :---------------------------------------------------------------------------: | :------------------------------: |
@@ -133,7 +133,7 @@ favicon: "/assets/img/favicon-wow.png"
 
 ## World of Warcraft : Legion
 
-[![World of Warcraft : Legion](assets/img/WoW_Legion.png "Logo World of Warcraft : Legion")](assets/img/WoW_Legion-Large.png)
+<a href="assets/img/WoW_Legion-Large.png"><img src="assets/img/WoW_Legion.png" class="img-fluid" alt="Logo World of Warcraft : Legion" title="Logo World of Warcraft : Legion"></a>
 
 | Zone              | Zone              | PnJ                                                            | Point de passage                      |
 | :---------------: | :---------------: | :------------------------------------------------------------: | :-----------------------------------: |
@@ -175,7 +175,7 @@ favicon: "/assets/img/favicon-wow.png"
 
 ## World of Warcraft : Battle for Azeroth
 
-[![World of Warcraft : Battle for Azeroth](assets/img/WoW_BfA.png "Logo World of Warcraft : Battle for Azeroth")](assets/img/WoW_BfA-Large.png)
+<a href="assets/img/WoW_BfA-Large.png"><img src="assets/img/WoW_BfA.png" class="img-fluid" alt="Logo World of Warcraft : Battle for Azeroth" title="Logo World of Warcraft : Battle for Azeroth"></a>
 
 | Faction      | Zone                   | PnJ                                                                           | Point de passage       |
 | :----------: | :--------------------: | :---------------------------------------------------------------------------: | :--------------------: |
@@ -215,7 +215,7 @@ favicon: "/assets/img/favicon-wow.png"
 
 ## World of Warcraft : Shadowlands
 
-[![World of Warcraft : Shadowlands](assets/img/WoW_Shadowlands.png "Logo World of Warcraft : Shadowlands")](assets/img/WoW_Shadowlands-Large.png)
+<a href="assets/img/WoW_Shadowlands-Large.png"><img src="assets/img/WoW_Shadowlands.png" class="img-fluid" alt="Logo World of Warcraft : Shadowlands" title="Logo World of Warcraft : Shadowlands"></a>
 
 | Continent    | Zone         | PnJ                                                                           | Point de passage            |
 | :----------: | :----------: | :---------------------------------------------------------------------------: | :-------------------------: |
@@ -246,13 +246,14 @@ favicon: "/assets/img/favicon-wow.png"
 
 ## World of Warcraft : Dragonflight
 
-[![World of Warcraft : Dragonflight](assets/img/WoW_Dragonflight.png "Logo World of Warcraft : Dragonflight")](assets/img/WoW_Dragonflight-Large.png)
+[![World of Warcraft : Dragonflight]( "
+<a href="assets/img/WoW_Dragonflight-Large.png"><img src="assets/img/WoW_Dragonflight.png" class="img-fluid" alt="Logo World of Warcraft : Dragonflight" title="Logo World of Warcraft : Dragonflight"></a>
 
 ****
 
 ## World of Warcraft : The War Within
 
-[![World of Warcraft : Dragonflight](assets/img/WoW_TWW.png "Logo World of Warcraft : Dragonflight")](assets/img/WoW_TWW-Large.png)
+<a href="assets/img/WoW_TWW-Large.png"><img src="assets/img/WoW_TWW.png" class="img-fluid" alt="Logo World of Warcraft : Dragonflight" title="Logo World of Warcraft : Dragonflight"></a>
 
 ****
 
