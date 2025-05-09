@@ -238,7 +238,7 @@ Source : [LeCrabe.info](https://lecrabeinfo.net/se-connecter-en-ssh-par-echange-
 
 #### Méthode N°2 : mot de passe
 
-Je vous conseille de lire le début du [tutoriel pour apprendre à vous connecter à SSH]([https://mondedie.fr/d/11708).
+Je vous conseille de lire le début du [tutoriel pour apprendre à vous connecter à SSH](https://mondedie.fr/d/11708).
 
 ### Autre configuration
 
