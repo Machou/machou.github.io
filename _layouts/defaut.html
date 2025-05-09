@@ -18,12 +18,11 @@
 		<link rel="icon" type="image/png" href="{{ '/assets/img/favicon.png' | relative_url }}">
 	{% endif %}
 	<link rel="stylesheet" href="https://unpkg.com/bootstrap@5.3.6/dist/css/bootstrap.min.css">
-
-	{% if page.url == "//wow-pnj-lfr" %}
-	<!-- Code spécifique à cette page -->
-	{% endif %}
-
 	<link rel="stylesheet" href="https://unpkg.com/@fancyapps/ui@5.0.36/dist/fancybox/fancybox.css">
+	<link rel="stylesheet" href="https://unpkg.com/@fortawesome/fontawesome-free@6.7.2/css/fontawesome.min.css">
+	<link rel="stylesheet" href="https://unpkg.com/@fortawesome/fontawesome-free@6.7.2/css/brands.min.css">
+	<link rel="stylesheet" href="https://unpkg.com/@fortawesome/fontawesome-free@6.7.2/css/regular.min.css">
+	<link rel="stylesheet" href="https://unpkg.com/@fortawesome/fontawesome-free@6.7.2/css/solid.min.css">
 
 	<style>
 	body {
@@ -49,9 +48,12 @@
 	.epique					{ color: #a335ee !important; font-weight: bold !important; }
 	</style>
 
-	<!-- https://www.wowhead.com/tooltip -->
-	<script>const whTooltips = {colorLinks: true, iconizeLinks: true, renameLinks: true};</script>
-	<script src="https://wow.zamimg.com/js/tooltips.js"></script>
+	{% if page.url == "//wow-pnj-lfr" %}
+		<!-- https://www.wowhead.com/tooltip -->
+		<script>const whTooltips = {colorLinks: true, iconizeLinks: true, renameLinks: true};</script>
+		<script src="https://wow.zamimg.com/js/tooltips.js"></script>
+	{% endif %}
+
 	<script src="https://unpkg.com/@fancyapps/ui@5.0.36/dist/fancybox/fancybox.umd.js"></script>
 	<script src="https://unpkg.com/@fancyapps/ui@5.0.36/dist/fancybox/l10n/fr.umd.js"></script>
 </head>
