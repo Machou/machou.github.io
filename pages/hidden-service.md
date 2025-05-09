@@ -1267,7 +1267,7 @@ Il est important de noter que l’utilisation de shred ne garantit pas à 100% q
 
 Vous pouvez utiliser shred sur tous les fichiers que vous souhaitez, j’utilise le dossier `/var/log` pour l’exemple.
 
-`sudo find /var/log -type f -print0 | sudo xargs -0 shred -fuzv -n 35`
+`find /var/log -type f -print0 | sudo xargs -0 shred -fuzv -n 10`
 
 On peut aussi créer un fichier qui s’exécutera tous les jours à minuit :
 
@@ -1279,7 +1279,7 @@ On y ajoute :
 #!/bin/bash
 
 # Supprimer tous les fichiers dans /var/log de manière sécurisée
-sudo find /var/log -type f -print0 | sudo xargs -0 shred -fuzv -n 35
+find /var/log -type f -print0 | sudo xargs -0 shred -fuzv -n 35
 
 # Supprimer tous les répertoires vides dans /var/log
 sudo find /var/log -type d -empty -exec rmdir {} \;
