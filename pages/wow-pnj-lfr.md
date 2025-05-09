@@ -22,28 +22,33 @@ favicon: "/assets/img/favicon-wow.png"
 ## Sommaire
 
 - [World of Warcraft : Mist of Pandaria](#world-of-warcraft--mists-of-pandaria)
+  - [PnJ pour World of Warcraft : Mists of Pandaria](#)
   - [Caveaux Mogu’shan](#caveaux-mogushan)
   - [Cœur de la peur](#cœur-de-la-peur)
   - [Terrasse Printanière](#terrasse-printanière)
   - [Trône du tonnerre](#trône-du-tonnerre)
   - [Siège d’Orgrimmar](#siège-dorgrimmar)
 - [World of Warcraft : Warlords of Draenor](#world-of-warcraft--warlords-of-draenor)
+  - [PnJ pour World of Warcraft : Warlords of Draenor](#)
   - [Cognefort](#cognefort)
   - [Fonderie des Rochenoires](#fonderie-des-rochenoires)
   - [Citadelle des Flammes infernales](#citadelle-des-flammes-infernales)
 - [World of Warcraft : Legion](#world-of-warcraft--legion)
+  - [PnJ pour World of Warcraft : Legion](#)
   - [Le Cauchemar d’émeraude](#le-cauchemar-démeraude)
   - [Le Jugement des Valeureux](#le-jugement-des-valeureux)
   - [Palais Sacrenuit](#palais-sacrenuit)
   - [Tombe de Sargeras](#tombe-de-sargeras)
   - [Antorus, le Trône ardent](#antorus-le-trône-ardent)
 - [World of Warcraft : Battle for Azeroth](#world-of-warcraft--battle-for-azeroth)
+  - [PnJ pour World of Warcraft : Battle for Azeroth](#)
   - [Uldir](#uldir)
   - [Bataille de Dazar’alor](#bataille-de-dazaralor)
   - [Creuset des Tempêtes](#creuset-des-tempêtes)
   - [Palais Éternel](#palais-éternel)
   - [Ny’alotha, la cité en éveil](#nyalotha-la-cité-en-éveil)
 - [World of Warcraft : Shadowlands](#world-of-warcraft--shadowlands)
+  - [PnJ pour World of Warcraft : Shadowlands](#)
   - [Château Nathria](#château-nathria)
   - [Sanctum de Domination](#sanctum-de-domination)
   - [Sépulcre des Fondateurs](#sépulcre-des-fondateurs)
@@ -63,6 +68,8 @@ favicon: "/assets/img/favicon-wow.png"
 ## World of Warcraft : Mists of Pandaria
 
 <a href="assets/img/WoW_MoP-Large.png"><img src="assets/img/WoW_MoP.png" class="img-fluid" alt="Logo World of Warcraft : Mists of Pandaria" title="Logo World of Warcraft : Mists of Pandaria"></a>
+
+### PnJ pour World of Warcraft : Mists of Pandaria
 
 | Continent    | Zone                             | PnJ                                                                                     | Point de passage                      |
 | :----------: | :------------------------------: | :-------------------------------------------------------------------------------------: | :-----------------------------------: |
@@ -109,6 +116,8 @@ favicon: "/assets/img/favicon-wow.png"
 
 <a href="assets/img/WoW_WoD-Large.png"><img src="assets/img/WoW_WoD.png" class="img-fluid" alt="Logo World of Warcraft : Warlords of Draenor" title="Logo World of Warcraft : Warlords of Draenor"></a>
 
+### PnJ pour World of Warcraft : Warlords of Draenor
+
 | Faction      | Zone              | PnJ                                                                           | Point de passage                 |
 | :----------: | :---------------: | :---------------------------------------------------------------------------: | :------------------------------: |
 | Horde        | **Mur-de-Givre**  | [Voyant Kazal « <Exilé ombrelune »](https://www.wowhead.com/fr/npc=94870)     | `/way 41.8 46.8 Voyant Kazal`    |
@@ -140,6 +149,8 @@ favicon: "/assets/img/favicon-wow.png"
 ## World of Warcraft : Legion
 
 <a href="assets/img/WoW_Legion-Large.png"><img src="assets/img/WoW_Legion.png" class="img-fluid" alt="Logo World of Warcraft : Legion" title="Logo World of Warcraft : Legion"></a>
+
+### PnJ pour World of Warcraft : Legion
 
 | Zone              | Zone              | PnJ                                                            | Point de passage                      |
 | :---------------: | :---------------: | :------------------------------------------------------------: | :-----------------------------------: |
@@ -183,6 +194,8 @@ favicon: "/assets/img/favicon-wow.png"
 
 <a href="assets/img/WoW_BfA-Large.png"><img src="assets/img/WoW_BfA.png" class="img-fluid" alt="Logo World of Warcraft : Battle for Azeroth" title="Logo World of Warcraft : Battle for Azeroth"></a>
 
+### PnJ pour World of Warcraft : Battle for Azeroth
+
 | Faction      | Zone                   | PnJ                                                                           | Point de passage       |
 | :----------: | :--------------------: | :---------------------------------------------------------------------------: | :--------------------: |
 | Horde        | **Le Grand Sceau**     | [Eppu « <Gardien des histoires »](https://www.wowhead.com/fr/npc=177208)      | `/way 69.8 32.6 Eppu`  |
@@ -222,6 +235,8 @@ favicon: "/assets/img/favicon-wow.png"
 ## World of Warcraft : Shadowlands
 
 <a href="assets/img/WoW_Shadowlands-Large.png"><img src="assets/img/WoW_Shadowlands.png" class="img-fluid" alt="Logo World of Warcraft : Shadowlands" title="Logo World of Warcraft : Shadowlands"></a>
+
+### PnJ pour World of Warcraft : Shadowlands
 
 | Continent    | Zone         | PnJ                                                                           | Point de passage            |
 | :----------: | :----------: | :---------------------------------------------------------------------------: | :-------------------------: |
