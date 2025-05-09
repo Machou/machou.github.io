@@ -53,6 +53,43 @@
 	<!-- https://www.wowhead.com/tooltip -->
 	<script>const whTooltips = {colorLinks: true, iconizeLinks: true, renameLinks: true};</script>
 	<script src="https://wow.zamimg.com/js/tooltips.js"></script>
+	<script src="https://unpkg.com/@fancyapps/ui@5.0.36/dist/fancybox/fancybox.umd.js"></script>
+	<script src="https://unpkg.com/@fancyapps/ui@5.0.36/dist/fancybox/l10n/fr.umd.js"></script>
+
+	<script>
+	Fancybox.bind('[data-fancybox="gallery"]', {
+		l10n: Fancybox.l10n.fr,
+
+		Carousel: {
+		infinite: true,
+	},
+	Slideshow: {
+		// playOnStart: true,
+		// timeout: 3000,
+	},
+	Toolbar: {
+		display: {
+			left: ['infobar'],
+			// middle: [
+			// 	'zoomIn',
+			// 	'zoomOut',
+			// 	'toggle1to1',
+			// 	'rotateCCW',
+			// 	'rotateCW',
+			// 	'flipX',
+			// 	'flipY',
+			// ],
+			right: ['slideshow', 'download', 'thumbs', 'close'],
+		},
+	},
+	Images: {
+		zoom: true,
+	},
+	Thumbs: {
+		type: 'modern', // classic
+		}
+	});
+	</script>
 </head>
 
 <body>

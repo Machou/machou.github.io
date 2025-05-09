@@ -15,7 +15,7 @@ favicon: "/assets/img/favicon-wow.png"
 	</ol>
 </nav>
 
-<a href="assets/img/WoW-Large.png"><img src="assets/img/WoW.png" class="img-fluid" alt="Logo World of Warcraft" title="Logo World of Warcraft"></a>
+<a href="assets/img/WoW-Large.png" data-fancybox="gallery"><img src="assets/img/WoW.png" class="img-fluid" alt="Logo World of Warcraft" title="Logo World of Warcraft"></a>
 
 # Word of Warcraft : PNJ de l’outil Recherche de Raid
 
@@ -274,10 +274,6 @@ favicon: "/assets/img/favicon-wow.png"
 | :----------: | :----------: | :---------------------------------------------------------------------------: | :-------------------------: |
 | Ombreterre   | **Oribos**   | [Ta'elfar <Commerçant d'histoires>](https://www.wowhead.com/fr/npc=205959)    | `/way 42.4 72.2 Ta'elfar`   |
 {:.table .table-hover}
-
-10.67.90.248:80/admin
-eDePVyLl
-
 
 ### [Château Nathria](https://www.wowhead.com/fr/zone=13224)
 
