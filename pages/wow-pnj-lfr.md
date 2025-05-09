@@ -152,7 +152,7 @@ favicon: "/assets/img/favicon-wow.png"
 | **Salles de Sang**          | [Haut conseil des Flammes infernales](https://www.wowhead.com/fr/npc=92146), [Kilrogg Oeil-Mort](https://www.wowhead.com/fr/npc=90378), [Fielsang](https://www.wowhead.com/fr/npc=91809)    |
 | **Bastion des Ombres**      | [Seigneur de l’ombre Iskar](https://www.wowhead.com/fr/npc=90316), [Socrethar l’Éternel](https://www.wowhead.com/fr/npc=90296), [Velhari la Despote](https://www.wowhead.com/fr/npc=93439)  |
 | **Cime du Destructeur**     | [Gangreseigneur Zakuun](https://www.wowhead.com/fr/npc=89890), [Xhul’horac](https://www.wowhead.com/fr/npc=93068), [Mannoroth](https://www.wowhead.com/fr/npc=91349)                        |
-5. **La Porte noire**         | [Archimonde](https://www.wowhead.com/fr/npc=91331)
+| **La Porte noire**          | [Archimonde](https://www.wowhead.com/fr/npc=91331)                                                                                                                                          |
 {:.table .table-hover}
 
 ****
@@ -172,7 +172,7 @@ favicon: "/assets/img/favicon-wow.png"
 
 | :-------------------------: | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
 | **Sombranche**              | [Nythendra](https://www.wowhead.com/fr/npc=102672), [Elerethe Ranfarouche](https://www.wowhead.com/fr/npc=106087), [Il’gynoth, le Cœur de la Corruption](https://www.wowhead.com/fr/npc=105393)  |
-| **Gardiens tourmentés**     | [Ursoc](https://www.wowhead.com/fr/npc=100497), [Dragons du Cauchemar](https://www.wowhead.com/fr/achievement=10825), [Cénarius](https://www.wowhead.com/fr/npc=104636)                          |
+| **Gardiens tourmentés**     | [Ursoc](https://www.wowhead.com/fr/npc=100497), [Dragons du Cauchemar](https://www.wowhead.com/fr/npc=102679), [Cénarius](https://www.wowhead.com/fr/npc=104636)                                 |
 | **Failles d’Aln**           | [Xavius](https://www.wowhead.com/fr/npc=103769)                                                                                                                                                  |
 {:.table .table-hover}
 
