@@ -30,7 +30,6 @@ favicon: "/assets/img/favicon-wow.png"
   - [Siège d’Orgrimmar](#siège-dorgrimmar)
 - [World of Warcraft : Warlords of Draenor](#world-of-warcraft--warlords-of-draenor)
   - <i class="fa-solid fa-user"></i> [PnJ pour World of Warcraft : Warlords of Draenor](#-pnj-pour-world-of-warcraft--warlords-of-draenor)
-  - <i class="fa-solid fa-user"></i> [PnJ pour World of Warcraft : Warlords of Draenor](#-pnj-pour-world-of-warcraft--warlords-of-draenor)
   - [Cognefort](#cognefort)
   - [Fonderie des Rochenoires](#fonderie-des-rochenoires)
   - [Citadelle des Flammes infernales](#citadelle-des-flammes-infernales)
@@ -162,7 +161,7 @@ favicon: "/assets/img/favicon-wow.png"
 
 <a href="assets/img/WoW_Legion-Large.png" data-fancybox="gallery"><img src="assets/img/WoW_Legion.png" class="img-fluid" alt="Logo World of Warcraft : Legion" title="Logo World of Warcraft : Legion"></a>
 
-### <i class="fa-solid fa-user"></i> [PnJ pour World of Warcraft : Legion](#pnj-pour-world-of-warcraft--legion)
+### <i class="fa-solid fa-user"></i> [PnJ pour World of Warcraft : Legion](#-pnj-pour-world-of-warcraft--legion)
 
 | Zone              | Zone              | PnJ                                                            | Point de passage                      |
 | :---------------: | :---------------: | :------------------------------------------------------------: | :-----------------------------------: |
@@ -216,7 +215,7 @@ favicon: "/assets/img/favicon-wow.png"
 
 <a href="assets/img/WoW_BfA-Large.png" data-fancybox="gallery"><img src="assets/img/WoW_BfA.png" class="img-fluid" alt="Logo World of Warcraft : Battle for Azeroth" title="Logo World of Warcraft : Battle for Azeroth"></a>
 
-### <i class="fa-solid fa-user"></i> [PnJ pour World of Warcraft : Battle for Azeroth](#pnj-pour-world-of-warcraft--battle-for-azeroth)
+### <i class="fa-solid fa-user"></i> [PnJ pour World of Warcraft : Battle for Azeroth](#-pnj-pour-world-of-warcraft--battle-of-azeroth)
 
 | Faction      | Zone                   | PnJ                                                                           | Point de passage       |
 | :----------: | :--------------------: | :---------------------------------------------------------------------------: | :--------------------: |
@@ -269,7 +268,7 @@ favicon: "/assets/img/favicon-wow.png"
 
 <a href="assets/img/WoW_Shadowlands-Large.png" data-fancybox="gallery"><img src="assets/img/WoW_Shadowlands.png" class="img-fluid" alt="Logo World of Warcraft : Shadowlands" title="Logo World of Warcraft : Shadowlands"></a>
 
-### <i class="fa-solid fa-user"></i> [PnJ pour World of Warcraft : Shadowlands](#pnj-pour-world-of-warcraft--shadowlands)
+### <i class="fa-solid fa-user"></i> [PnJ pour World of Warcraft : Shadowlands](#-pnj-pour-world-of-warcraft--shadowlands)
 
 | Continent    | Zone         | PnJ                                                                           | Point de passage            |
 | :----------: | :----------: | :---------------------------------------------------------------------------: | :-------------------------: |
