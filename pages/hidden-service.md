@@ -1131,7 +1131,7 @@ Exemple :
 
 Maintenant, lancez le [Navigateur Tor](https://www.torproject.org/download/) sur votre ordinateur et connectez-vous au *Hidden Service* que vous avez généré plus haut !
 
-<p class="mb-0 text-center"><a href="https://i.ibb.co/M267kK8/onion.png" data-fancybox="gallery"><img src="https://i.ibb.co/M267kK8/onion.png" class="border rounded img-fluid" alt="Fenêtre Tor" title="Fenêtre Tor"></a></p>
+<p class="text-center"><a href="https://i.ibb.co/M267kK8/onion.png" data-fancybox="gallery"><img src="https://i.ibb.co/M267kK8/onion.png" class="border rounded img-fluid" alt="Fenêtre Tor" title="Fenêtre Tor"></a></p>
 
 ## [Facultatif](#facultatif)
 

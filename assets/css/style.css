@@ -2,20 +2,18 @@ body {
 	background-color: #eee;
 }
 
-h3, h4 {
+h2, h3, h4 {
 	margin: 1.5rem 0 1rem;
 	text-decoration: underline;
 	text-underline-offset: .375rem;
 }
 
-h3 a, h4 a {
+h2 a, h3 a, h4 a {
 	color: #212529;
 }
 
-h3::before, h4::before {
-	margin: 1.5rem 0 1rem;
-	text-decoration: underline;
-	text-underline-offset: .375rem;
+h2::before, h3::before, h4::before {
+
 }
 
 .table-wow td:first-child {
