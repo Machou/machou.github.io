@@ -13,7 +13,13 @@ h2 a, h3 a, h4 a {
 }
 
 h2::before, h3::before, h4::before {
-
+	content: "◆ ";
+	/* content: "● ";
+	content: "■ ";
+	content: "▶ ";
+	content: "✦ ";
+	content: "→ ";
+	content: "↠ "; */
 }
 
 h2 {
