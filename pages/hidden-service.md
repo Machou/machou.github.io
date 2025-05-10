@@ -841,7 +841,7 @@ On sauvegarde le fichier **php.ini** et on redémarre Apache2 :
 
 `sudo service apache2 restart`
 
-### Installation et configuration de MySQL
+### [Installation et configuration de MySQL](#installation-et-configuration-de-mysql)
 
 > **MariaDB** est un système de gestion de base de données édité sous licence GPL. Il s’agit d’un embranchement communautaire de MySQL : la gouvernance du projet est assurée par la fondation MariaDB, et sa maintenance par la société Monty Program AB, créateur du projet. Cette gouvernance confère au logiciel l’assurance de rester libre.
 
