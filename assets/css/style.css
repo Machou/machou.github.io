@@ -4,6 +4,8 @@ body {
 
 h3 {
 	margin: 1.5rem 0 1rem;
+	text-decoration: underline;
+	text-underline-offset: .375rem;
 }
 
 .table-wow td:first-child {
