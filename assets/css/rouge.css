@@ -11,7 +11,10 @@
 }
 
 pre.highlight {
+	border-radius: 0;
+	background-color: transparent;
 	margin-bottom: 0;
+	padding: 0;
 }
 
 /* Syntaxe Rouge – classes générées automatiquement */
