@@ -12,14 +12,22 @@ h2 a, h3 a, h4 a {
 	color: #212529;
 }
 
-h2::before, h3::before, h4::before {
+h2::before {
+	content: "→ ";
+}
+
+h3::before {
+	content: "● ";
+}
+
+h4::before {
 	/* content: "◆ "; */
 	/* content: "● "; */
 	/* content: "■ "; */
 	/* content: "▶ "; */
 	/* content: "✦ "; */
-	content: "→ ";
 	/* content: "↠ "; */
+	content: "▶ ";
 }
 
 h2 {
