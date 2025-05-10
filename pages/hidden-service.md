@@ -59,6 +59,9 @@ favicon: "/assets/img/favicon.png"
     - [Méthode N°2 : désactiver IPv6 via le fichier sysctl](#méthode-n2--désactiver-ipv6-via-le-fichier-sysctl)
     - [Méthode N°3 : rejeter tout le trafic IPv6](#méthode-n3--rejeter-tout-le-trafic-ipv6)
   - [Quelques liens / tutoriels utiles](#quelques-liens--tutoriels-utiles)
+    - [Aide-mémoires / turoriels](#aide-mémoires--turoriels)
+    - [Documentations](#documentations)
+    - [Autres](#autres)
   - [À faire](#à-faire)
 
 ## [Liste des logiciels](#liste-des-logiciels)
@@ -1447,13 +1450,7 @@ On redémarre le serveur :
 
 ## [Quelques liens / tutoriels utiles](#quelques-liens--tutoriels-utiles)
 
-
-
-### Aide-mémoires / turoriels
-### Documentations
-### Autres
-
-### [Aide-mémoires / turoriels](aide-memoires-tutoriels)
+### [Aide-mémoires / turoriels](#aide-mémoires--turoriels)
 
 - [Aide-mémoire Bash](https://devhints.io/bash) 🇺🇸
 - [Aide-mémoire du mode d’édition Bash Emacs](https://catonmat.net/bash-emacs-editing-mode-cheat-sheet) 🇺🇸
