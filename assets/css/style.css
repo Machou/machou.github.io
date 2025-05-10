@@ -21,13 +21,6 @@ h3::before {
 }
 
 h4::before {
-	/* content: "◆ "; */
-	/* content: "● "; */
-	/* content: "■ "; */
-	/* content: "▶ "; */
-	/* content: "✦ "; */
-	/* content: "↠ "; */
-	content: "▶ ";
 }
 
 h2 {
