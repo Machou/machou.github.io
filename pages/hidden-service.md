@@ -1486,3 +1486,9 @@ On redémarre le serveur :
 > - soit de les traiter avec logrotate (et le paramètre shred — 3 max.)
 
 Si vous avez des idées ou des améliorations à proposer, n’hésitez pas à postez un commentaire ci-dessous.
+
+****
+
+<p class="text-center">
+	<a href="assets/img/logo-tutoriel-tor.png" data-fancybox="gallery"><img src="assets/img/logo-tutoriel-tor.png" alt="Logo Tor / Debian" title="Logo Tor / Debian"></a>
+</p>

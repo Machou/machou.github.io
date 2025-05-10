@@ -277,7 +277,7 @@ favicon: "/assets/img/favicon-wow.png"
 
 ### [Château Nathria](https://www.wowhead.com/fr/zone=13224)
 
-| :---------------------------: | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
+| :---------------------------: | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
 | **Caveaux Drainants**         | [Altimor le Veneur](https://www.wowhead.com/fr/npc=165066), [Destructeur affamé](https://www.wowhead.com/fr/npc=164261), [Dame Inerva Sombreveine](https://www.wowhead.com/fr/npc=167517) |
 | **Reliquaire de l'opulence**  | [Artificier Xy'mox](https://www.wowhead.com/fr/npc=166644), [Salut du roi-soleil](https://www.wowhead.com/fr/npc=165759), [Le conseil du Sang](https://www.wowhead.com/fr/npc=166971)     |
 | **Sang de la pierre**         | [Hurlaile](https://www.wowhead.com/fr/npc=172145), [Fangepoing](https://www.wowhead.com/fr/npc=174733), [Généraux de la Légion de pierre](https://www.wowhead.com/fr/npc=165318)          |
