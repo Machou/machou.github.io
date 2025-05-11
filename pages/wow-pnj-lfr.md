@@ -73,7 +73,7 @@ favicon: "/assets/img/favicon-wow.png"
 
 | Continent    | Zone                             | PnJ                                                                                | Point de passage                      |
 | :----------: | :------------------------------: | :--------------------------------------------------------------------------------: | :-----------------------------------: |
-| **Pandarie** | **Val de l’Éternel printemps**   | [Chroniqueur Han <Conteur de l’outil Raids>](https://www.wowhead.com/fr/npc=80633) | `/way #390 8|0 30.6 Chroniqueur Han`  |
+| **Pandarie** | **Val de l’Éternel printemps**   | [Chroniqueur Han <Conteur de l’outil Raids>](https://www.wowhead.com/fr/npc=80633) | `/way #390 83.0 30.6 Chroniqueur Han` |
 {:.table .table-hover}
 
 ### [Caveaux Mogu’shan](https://www.wowhead.com/fr/zone=6125)
@@ -122,10 +122,10 @@ favicon: "/assets/img/favicon-wow.png"
 
 ### <i class="fa-solid fa-user"></i> [PnJ pour World of Warcraft : Warlords of Draenor](#-pnj-pour-world-of-warcraft--warlords-of-draenor)
 
-| Faction  | Zone             | PnJ                                                                       | Point de passage              |
-| :------: | :--------------: | :-----------------------------------------------------------------------: | :---------------------------: |
-| Horde    | **Mur-de-Givre** | [Voyant Kazal « <Exilé ombrelune »](https://www.wowhead.com/fr/npc=94870) | `/way 41.8 46.8 Voyant Kazal` |
-| Alliance | **Chutelune**    | [Voyant Kazal « Exilé ombrelune »](https://www.wowhead.com/fr/npc=94870)  | `/way 3|6 37.6 Voyant Kazal`  |
+| Faction                                | Zone             | PnJ                                                                       | Point de passage               |
+| :------------------------------------: | :--------------: | :-----------------------------------------------------------------------: | :----------------------------: |
+| <span class="alliance">Alliance</span> | **Chutelune**    | [Voyant Kazal « Exilé ombrelune »](https://www.wowhead.com/fr/npc=94870)  | `/way 33.6 37.6 Voyant Kazal`  |
+| <span class="horde">Horde</span>       | **Mur-de-Givre** | [Voyant Kazal « <Exilé ombrelune »](https://www.wowhead.com/fr/npc=94870) | `/way 41.8 46.8 Voyant Kazal`  |
 {:.table .table-hover}
 
 ### [Cognefort](https://www.wowhead.com/fr/zone=6996)
@@ -217,10 +217,10 @@ favicon: "/assets/img/favicon-wow.png"
 
 ### <i class="fa-solid fa-user"></i> [PnJ pour World of Warcraft : Battle for Azeroth](#-pnj-pour-world-of-warcraft--battle-for-azeroth)
 
-| Faction  | Zone               | PnJ                                                                       | Point de passage      |
-| :------: | :----------------: | :-----------------------------------------------------------------------: | :-------------------: |
-| Alliance{:.alliance} | **Boralus**        | [Kiko « Gardienne des histoires »](https://www.wowhead.com/fr/npc=177193) | `/way 74 1|6 Kiko`    |
-| Horde{:.horde}    | **Le Grand Sceau** | [Eppu « <Gardien des histoires »](https://www.wowhead.com/fr/npc=177208)  | `/way 69.8 32.6 Eppu` |
+| Faction                             | Zone               | PnJ                                                                       | Point de passage      |
+| :---------------------------------: | :----------------: | :-----------------------------------------------------------------------: | :-------------------: |
+| <span class="horde">Alliance</span> | **Boralus**        | [Kiko « Gardienne des histoires »](https://www.wowhead.com/fr/npc=177193) | `/way 74 13.6 Kiko`   |
+| <span class="horde">Horde</span>    | **Le Grand Sceau** | [Eppu « <Gardien des histoires »](https://www.wowhead.com/fr/npc=177208)  | `/way 69.8 32.6 Eppu` |
 {:.table .table-hover}
 
 ### [Uldir](https://www.wowhead.com/fr/zone=9389)
