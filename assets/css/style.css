@@ -76,6 +76,9 @@ h4::before {
 .rare					{ color: #0070dd !important; font-weight: bold !important; }
 .epique					{ color: #a335ee !important; font-weight: bold !important; }
 
+.alliance				{ color: #3a7bbb; }
+.horde					{ color: #c35f61; }
+
 /* Remonter la page */
 
 #remonterPage {

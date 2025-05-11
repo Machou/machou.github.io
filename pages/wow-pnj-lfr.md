@@ -219,8 +219,8 @@ favicon: "/assets/img/favicon-wow.png"
 
 | Faction  | Zone               | PnJ                                                                       | Point de passage      |
 | :------: | :----------------: | :-----------------------------------------------------------------------: | :-------------------: |
-| Horde    | **Le Grand Sceau** | [Eppu « <Gardien des histoires »](https://www.wowhead.com/fr/npc=177208)  | `/way 69.8 32.6 Eppu` |
-| Alliance | **Boralus**        | [Kiko « Gardienne des histoires »](https://www.wowhead.com/fr/npc=177193) | `/way 74 1|6 Kiko`    |
+| Alliance{:.alliance} | **Boralus**        | [Kiko « Gardienne des histoires »](https://www.wowhead.com/fr/npc=177193) | `/way 74 1|6 Kiko`    |
+| Horde{:.horde}    | **Le Grand Sceau** | [Eppu « <Gardien des histoires »](https://www.wowhead.com/fr/npc=177208)  | `/way 69.8 32.6 Eppu` |
 {:.table .table-hover}
 
 ### [Uldir](https://www.wowhead.com/fr/zone=9389)
