@@ -172,7 +172,7 @@ favicon: "/assets/img/favicon-wow.png"
 
 | :---------------------: | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
 | **Sombranche**          | [Nythendra](https://www.wowhead.com/fr/npc=102672), [Elerethe Ranfarouche](https://www.wowhead.com/fr/npc=106087), [Il’gynoth, le Cœur de la Corruption](https://www.wowhead.com/fr/npc=105393) |
-| **Gardiens tourmentés** | [Ursoc](https://www.wowhead.com/fr/npc=100497), [Dragons du Cauchemar](https://www.wowhead.com/fr/npc=102679), [Cénarius](https://www.wowhead.com/fr/npc=104636)                                |
+| **Gardiens tourmentés** | [Ursoc](https://www.wowhead.com/fr/npc=100497), [Ysondre](https://www.wowhead.com/fr/npc=102679) et [Léthon](https://www.wowhead.com/fr/npc=102682), [Cénarius](https://www.wowhead.com/fr/npc=104636)                                |
 | **Failles d’Aln**       | [Xavius](https://www.wowhead.com/fr/npc=103769)                                                                                                                                                 |
 {:.table .table-hover .table-wow}
 
