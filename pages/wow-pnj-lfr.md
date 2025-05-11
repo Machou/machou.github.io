@@ -163,9 +163,9 @@ favicon: "/assets/img/favicon-wow.png"
 
 ### <i class="fa-solid fa-user"></i> [PnJ pour World of Warcraft : Legion](#-pnj-pour-world-of-warcraft--legion)
 
-| Zone             | Zone              | PnJ                                                       | Point de passage                 |
-| :--------------: | :---------------: | :-------------------------------------------------------: | :------------------------------: |
-| **Îles Brisées** | **Dalaran**       | [Archimage Timear](https://www.wowhead.com/fr/npc=111246) | `/way 6|6 55.6 Archimage Timear` |
+| Zone             | Zone              | PnJ                                                       | Point de passage                  |
+| :--------------: | :---------------: | :-------------------------------------------------------: | :-------------------------------: |
+| **Îles Brisées** | **Dalaran**       | [Archimage Timear](https://www.wowhead.com/fr/npc=111246) | `/way 63.6 55.6 Archimage Timear` |
 {:.table .table-hover}
 
 ### [Le Cauchemar d’émeraude](https://www.wowhead.com/fr/zone=8026)
