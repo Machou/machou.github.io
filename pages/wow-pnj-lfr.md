@@ -176,12 +176,6 @@ favicon: "/assets/img/favicon-wow.png"
 | **Failles d’Aln**       | [Xavius](https://www.wowhead.com/fr/npc=103769)                                                                                                                                                 |
 {:.table .table-hover .table-wow}
 
-### [Le Jugement des Valeureux](https://www.wowhead.com/fr/zone=8440)
-
-| :---------------------------: | :-------------------------------------------------------------------------------------------------------------------------------------------: |
-| **Le Jugement des Valeureux** | [Odyn](https://www.wowhead.com/fr/npc=114263), [Guarm](https://www.wowhead.com/fr/npc=114344), [Helya](https://www.wowhead.com/fr/npc=114537) |
-{:.table .table-hover .table-wow}
-
 ### [Palais Sacrenuit](https://www.wowhead.com/fr/zone=8025)
 
 | :------------------------: | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
@@ -189,6 +183,12 @@ favicon: "/assets/img/favicon-wow.png"
 | **L’Athenaeum royal**      | [Sorcelame Aluriel](https://www.wowhead.com/fr/npc=107699), [Etraeus, l’augure stellaire](https://www.wowhead.com/fr/npc=103758), [Grand botaniste Tel’arn](https://www.wowhead.com/fr/npc=104528) |
 | **La Nocteflèche**         | [Tichondrius](https://www.wowhead.com/fr/npc=103685), [Krosus](https://www.wowhead.com/fr/npc=101002), [Grande magistrice Élisande](https://www.wowhead.com/fr/npc=150013)                         |
 | **L’ascension du Traître** | [Gul’dan](https://www.wowhead.com/fr/npc=105503)                                                                                                                                                   |
+{:.table .table-hover .table-wow}
+
+### [Le Jugement des Valeureux](https://www.wowhead.com/fr/zone=8440)
+
+| :---------------------------: | :-------------------------------------------------------------------------------------------------------------------------------------------: |
+| **Le Jugement des Valeureux** | [Odyn](https://www.wowhead.com/fr/npc=114263), [Guarm](https://www.wowhead.com/fr/npc=114344), [Helya](https://www.wowhead.com/fr/npc=114537) |
 {:.table .table-hover .table-wow}
 
 ### [Tombe de Sargeras](https://www.wowhead.com/fr/zone=8524)
