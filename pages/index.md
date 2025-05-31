@@ -40,9 +40,9 @@ favicon: "/assets/img/favicon.png"
 
 ## Statistiques
 
-| Statistiques                | Les Langages                 |
-| :-------------------------: | :--------------------------: |
-| ![](generated/overview.svg) | ![](generated/languages.svg) |
+| Statistiques                | Les Langages                 | [Metrics](https://github.com/lowlighter/metrics) |
+| :-------------------------: | :--------------------------: | :----------------------------------------------: |
+| ![](generated/overview.svg) | ![](generated/languages.svg) | ![](generated/github-metrics.svg.svg)            |
 {:.table .table-hover}
 
 | Statistiques diverses                                                                                                                                                                                                                                                                                      |
