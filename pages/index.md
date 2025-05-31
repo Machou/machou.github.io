@@ -38,11 +38,11 @@ favicon: "/assets/img/favicon.png"
 * [Syntaxe Showdown](https://github.com/showdownjs/showdown/wiki/Showdown's-Markdown-syntax)
 * [GitHub Stats Visualization](https://github.com/jstrieb/github-stats)
 
-## Statistiques
+## [Statistiques](#statistiques)
 
 | Statistiques                | Les Langages                 | [Metrics](https://github.com/lowlighter/metrics) |
 | :-------------------------: | :--------------------------: | :----------------------------------------------: |
-| ![](generated/overview.svg) | ![](generated/languages.svg) | ![](generated/github-metrics.svg.svg)            |
+| ![](generated/overview.svg) | ![](generated/languages.svg) | ![](generated/github-metrics.svg)            |
 {:.table .table-hover}
 
 | Statistiques diverses                                                                                                                                                                                                                                                                                      |
@@ -55,7 +55,7 @@ favicon: "/assets/img/favicon.png"
 {:.table .table-hover}
 
 
-## Configuration et installation
+## [Configuration et installation](configuration-et-installation)
 
 Les `Pages` utilisent une mise en page et des styles / thèmes **Jekyll** que vous avez sélectionnés dans les [options de votre dépôt](https://github.com/Machou/machou.github.io/settings). Les options de ce thème sont sauvegardées dans le fichier [_config.yml](https://jekyllrb.com/docs/configuration/).
 
