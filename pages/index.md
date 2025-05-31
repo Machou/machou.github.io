@@ -27,7 +27,7 @@ favicon: "/assets/img/favicon.png"
 - [Statistiques](#statistiques)
 - [Configuration et installation](#configuration-et-installation)
 
-## Liens divers
+## [Liens divers](#liens-divers)
 
 * [GitHub Support](https://support.github.com/)
 * [GitHub Pages](https://pages.github.com/)
