@@ -149,11 +149,12 @@ favicon: "/assets/img/favicon-wow.png"
 
 | :---------------------: | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
 | **Brèche infernale**    | [Assaut des Flammes infernales](https://www.wowhead.com/fr/npc=95068), [Saccageur de Fer](https://www.wowhead.com/fr/npc=90284), [Kormrok](https://www.wowhead.com/fr/npc=90776)           |
-| **Salles de Sang**      | [Haut conseil des Flammes infernales](https://www.wowhead.com/fr/npc=92146), [Kilrogg Oeil-Mort](https://www.wowhead.com/fr/npc=90378), [Fielsang](https://www.wowhead.com/fr/npc=91809)   |
+| **Salles de Sang**      | [Haut conseil des Flammes infernales](https://www.wowhead.com/fr/npc=92146) (([Gurtogg Fièvresang](https://wowhead.com/fr/npc=92146), [Dia Sombre-Murmure](https://wowhead.com/fr/npc=92144) et [Maître-lame Jubei’thos](https://wowhead.com/fr/npc=92142))), [Kilrogg Oeil-Mort](https://www.wowhead.com/fr/npc=90378), [Fielsang](https://www.wowhead.com/fr/npc=91809)   |
 | **Bastion des Ombres**  | [Seigneur de l’ombre Iskar](https://www.wowhead.com/fr/npc=90316), [Socrethar l’Éternel](https://www.wowhead.com/fr/npc=90296), [Velhari la Despote](https://www.wowhead.com/fr/npc=93439) |
 | **Cime du Destructeur** | [Gangreseigneur Zakuun](https://www.wowhead.com/fr/npc=89890), [Xhul’horac](https://www.wowhead.com/fr/npc=93068), [Mannoroth](https://www.wowhead.com/fr/npc=91349)                       |
 | **La Porte noire**      | [Archimonde](https://www.wowhead.com/fr/npc=91331)                                                                                                                                         |
 {:.table .table-hover .table-wow}
+
 
 ****
 
