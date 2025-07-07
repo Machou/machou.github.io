@@ -1012,7 +1012,12 @@ On vérifie que Tor fonctionne correctement :
 
 Redémarrer Tor va créer le répertoire **/var/lib/tor/hidden_service** ainsi que deux fichiers très importants :
 
-- **hostname** : nom de votre Hidden Service : *gv3ebskdgoavtwl345y7tnqvcizljlmifxzvqnzx3p22sd5gd252z5id.onion*, par exemple
+- **hostname** : nom de votre Hidden Service : `gv3ebskdgoavtwl345y7tnqvcizljlmifxzvqnzx3p22sd5gd252z5id.onion`, par exemple
+
+- **hostname** : nom de votre Hidden Service : <span class="text-break">gv3ebskdgoavtwl345y7tnqvcizljlmifxzvqnzx3p22sd5gd252z5id.onion</span>, par exemple
+
+- **hostname** : nom de votre Hidden Service : <span class="text-truncate">gv3ebskdgoavtwl345y7tnqvcizljlmifxzvqnzx3p22sd5gd252z5id.onion</span>, par exemple
+
 - **private_key** : clé privée de votre Hidden Service
 
 *Notez le contenu de **hostname** quelque part, on l’utilisera plus tard !*
