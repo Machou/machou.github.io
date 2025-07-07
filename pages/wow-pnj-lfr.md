@@ -322,5 +322,5 @@ favicon: "/assets/img/favicon-wow.png"
 ****
 
 <p class="text-center">
-	<a href="assets/img/logo-horde.png" data-fancybox="gallery"><img src="assets/img/logo-horde.png" alt="Logo Horde" title="Logo Horde"></a>
+	<a href="assets/img/logo-horde.png" data-fancybox="gallery"><img src="assets/img/logo-horde.png" class="img-fluid" alt="Logo Horde" title="Logo Horde"></a>
 </p>
