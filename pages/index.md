@@ -44,6 +44,17 @@ favicon: "/assets/img/favicon.png"
 
 ## Statistiques
 
+**Statistiques**<br><br>[![](generated/overview.svg)](https://github.com/jstrieb/github-stats)
+
+-
+
+**Les Langages**<br><br>[![](generated/languages.svg)](https://github.com/jstrieb/github-stats)
+
+-
+
+**Métriques**<br><br>[![](generated/github-metrics.svg)](https://github.com/lowlighter/metrics)
+
+
 |                                                                                                                                                                                                                                                                                                            |
 | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
 | **Statistiques**<br><br>[![](generated/overview.svg)](https://github.com/jstrieb/github-stats)                                                                                                                                                                                                             |
