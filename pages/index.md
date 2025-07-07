@@ -44,28 +44,35 @@ favicon: "/assets/img/favicon.png"
 
 ## Statistiques
 
-**Statistiques**<br><br>[![](generated/overview.svg)](https://github.com/jstrieb/github-stats)
+**Statistiques**<br>[![](generated/overview.svg)](https://github.com/jstrieb/github-stats)
 
--
+---
 
-**Les Langages**<br><br>[![](generated/languages.svg)](https://github.com/jstrieb/github-stats)
+**Les Langages**<br>[![](generated/languages.svg)](https://github.com/jstrieb/github-stats)
 
--
+---
 
-**Métriques**<br><br>[![](generated/github-metrics.svg)](https://github.com/lowlighter/metrics)
+**Métriques**<br>[![](generated/github-metrics.svg)](https://github.com/lowlighter/metrics)
 
+---
 
-|                                                                                                                                                                                                                                                                                                            |
-| :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
-| **Statistiques**<br><br>[![](generated/overview.svg)](https://github.com/jstrieb/github-stats)                                                                                                                                                                                                             |
-| **Les Langages**<br><br>[![](generated/languages.svg)](https://github.com/jstrieb/github-stats)                                                                                                                                                                                                            |
-| **Métriques**<br><br>[![](generated/github-metrics.svg)](https://github.com/lowlighter/metrics)                                                                                                                                                                                                                                                     |
-| **Statistiques GitHub**<br><br>[![](https://github-readme-stats.vercel.app/api?username=Machou&locale=fr&show_icons=true)](https://github.com/anuraghazra/github-readme-stats)                                                                                                                             |
-| **Cartes @machou.github.io**<br><br>[![](https://github-readme-stats.vercel.app/api?username=Machou&locale=fr&repo=github-stats&theme=cobalt)](https://github.com/anuraghazra/github-readme-stats)                                                                                                         |
-| **Langages les plus utilisés dans les dépôts de Machou**<br><br>[![Top Languages Used](https://github-readme-stats.vercel.app/api/top-langs/?username=Machou&locale=fr&theme=dracula)](https://github.com/anuraghazra/github-readme-stats)                                                                 |
-| **Trophées**<br><br>[![Trophy](https://github-profile-trophy.vercel.app/?username=ryo-ma&theme=matrix)](https://github.com/ryo-ma/github-profile-trophy)                                                                                                                                                   |
-| **GitHub Repository Card for every web site**<br><br>[![Machou/machou.github.io](https://gh-card.dev/repos/Machou/machou.github.io.svg)](https://gh-card.dev/)                                                                                                                                             |
-{:.table .table-hover}
+**Statistiques GitHub**<br><br>[![](https://github-readme-stats.vercel.app/api?username=Machou&locale=fr&show_icons=true)](https://github.com/anuraghazra/github-readme-stats)                                                                                                                             |
+
+---
+
+**Cartes @machou.github.io**<br><br>[![](https://github-readme-stats.vercel.app/api?username=Machou&locale=fr&repo=github-stats&theme=cobalt)](https://github.com/anuraghazra/github-readme-stats)                                                                                                         |
+
+---
+
+**Langages les plus utilisés dans les dépôts de Machou**<br><br>[![Top Languages Used](https://github-readme-stats.vercel.app/api/top-langs/?username=Machou&locale=fr&theme=dracula)](https://github.com/anuraghazra/github-readme-stats)                                                                 |
+
+---
+
+**Trophées**<br><br>[![Trophy](https://github-profile-trophy.vercel.app/?username=ryo-ma&theme=matrix)](https://github.com/ryo-ma/github-profile-trophy)                                                                                                                                                   |
+
+---
+
+**GitHub Repository Card for every web site**<br><br>[![Machou/machou.github.io](https://gh-card.dev/repos/Machou/machou.github.io.svg)](https://gh-card.dev/)                                                                                                                                             |
 
 ## Configuration et installation
 
