@@ -68,11 +68,11 @@ favicon: "/assets/img/favicon-tor.svg"
 
 Dans ce tutoriel, nous tenterons de garder les logiciels à jour avec leurs dernières versions. Voici la liste actuelle :
 
-- [Debian](https://www.debian.org/) — [version 12.9, liste des changements](https://www.debian.org/News/2025/20250111)
+- [Debian](https://www.debian.org/) — [version 12.11, liste des changements](https://www.debian.org/News/2025/20250517)
 - [Apache2](https://httpd.apache.org/) — [version 2.4.62, liste des changements](https://httpd.apache.org/security/vulnerabilities_24.html#2.4.62)
-- [PHP](https://www.php.net/) — [version 8.4.4, liste des changements](https://www.php.net/ChangeLog-8.php#8.4.4)
-- [MariaDB](https://mariadb.org/) — [version 10.11.6, liste des changements](https://mariadb.com/kb/en/mariadb-10-11-6-release-notes/)
-- [Tor](https://www.torproject.org/) — [version 0.4.8.14, liste des changements](https://gitlab.torproject.org/tpo/core/tor/-/commits/tor-0.4.8.14)
+- [PHP](https://www.php.net/) — [version 8.4.10, liste des changements](https://www.php.net/ChangeLog-8.php#8.4.10)
+- [MariaDB](https://mariadb.org/) — [version 10.11.11, liste des changements](https://mariadb.com/kb/en/mariadb-10-11-11-release-notes/)
+- [Tor](https://www.torproject.org/) — [version 0.4.8.17, liste des changements](https://gitlab.torproject.org/tpo/core/tor/-/commits/tor-0.4.8.17)
 
 *Dernière mise à jour le 27 février 2025*
 
