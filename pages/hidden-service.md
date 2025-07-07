@@ -1490,5 +1490,5 @@ Si vous avez des idées ou des améliorations à proposer, n’hésitez pas à p
 ****
 
 <p class="text-center">
-	<a href="assets/img/logo-tutoriel-tor.png" data-fancybox="gallerie"><img src="assets/img/logo-tutoriel-tor.png" class="img-fluid" alt="Logo Tor / Debian" title="Logo Tor / Debian"></a>
+	<a href="assets/img/tor.svg" data-fancybox="gallerie"><img src="assets/img/tor.svg" class="img-fluid" alt="Logo Tor / Debian" title="Logo Tor / Debian"></a>
 </p>
