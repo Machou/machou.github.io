@@ -36,15 +36,18 @@ favicon: "/assets/img/favicon.png"
   * [GitHub Actions Examples](https://github.com/actions/cache/blob/master/examples.md)
 * [Documentation Markdown](https://docs.github.com/fr/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)
 * [Syntaxe Showdown](https://github.com/showdownjs/showdown/wiki/Showdown's-Markdown-syntax)
+
+## Statistiques
+
 * [GitHub Stats Visualization](https://github.com/jstrieb/github-stats)
 * [GitHub Metrics](https://github.com/lowlighter/metrics)
 * [GitHub Readme Stats](https://github.com/anuraghazra/github-readme-stats)
 * [GitHub Profile Trophy](https://github.com/ryo-ma/github-profile-trophy)
 * [GitHub Repository Card for every web site](https://gh-card.dev/)
 
-## Statistiques
+## Les statistiques
 
-**Statistiques**<br>[![](generated/overview.svg)](https://github.com/jstrieb/github-stats)
+**Statistiques diverses**<br>[![](generated/overview.svg)](https://github.com/jstrieb/github-stats)
 
 ---
 
