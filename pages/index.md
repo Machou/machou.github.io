@@ -46,13 +46,28 @@ favicon: "/assets/img/favicon.png"
 | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
 | **Statistiques**<br><br>![](generated/overview.svg)                                                                                                                                                                                                                                                        |
 | **Les Langages**<br><br>![](generated/languages.svg)                                                                                                                                                                                                                                                       |
-| **Métriques**<br><br>![](generated/github-metrics.svg)                                                                                                                                                                                                                                                       |
-| **Statistiques GitHub**<br><br>[![](https://github-readme-stats.vercel.app/api?username=Machou&locale=fr&show_icons=true)](https://github.com/anuraghazra/github-readme-stats)                                                                                     |
-| **Cartes @machou.github.io**<br><br>[![](https://github-readme-stats.vercel.app/api?username=Machou&locale=fr&repo=github-stats&theme=cobalt)](https://github.com/anuraghazra/github-readme-stats)                                                                    |
-| **Langages les plus utilisés dans les dépôts de Machou**<br><br>[![Top Languages Used](https://github-readme-stats.vercel.app/api/top-langs/?username=Machou&locale=fr&theme=dracula)](https://github.com/anuraghazra/github-readme-stats)            |
-| **Trophées**<br><br>[![Trophy](https://github-profile-trophy.vercel.app/?username=ryo-ma&theme=dracula)](https://github.com/ryo-ma/github-profile-trophy)                                                                                                      |
-| **GitHub Repository Card for every web site**<br><br>[![Machou/machou.github.io](https://gh-card.dev/repos/Machou/machou.github.io.svg)](https://gh-card.dev/)                                                                                               |
+| **Métriques**<br><br>![](generated/github-metrics.svg)                                                                                                                                                                                                                                                     |
+| **Statistiques GitHub**<br><br>[![](https://github-readme-stats.vercel.app/api?username=Machou&locale=fr&show_icons=true)](https://github.com/anuraghazra/github-readme-stats)                                                                                                                             |
+| **Cartes @machou.github.io**<br><br>[![](https://github-readme-stats.vercel.app/api?username=Machou&locale=fr&repo=github-stats&theme=cobalt)](https://github.com/anuraghazra/github-readme-stats)                                                                                                         |
+| **Langages les plus utilisés dans les dépôts de Machou**<br><br>[![Top Languages Used](https://github-readme-stats.vercel.app/api/top-langs/?username=Machou&locale=fr&theme=dracula)](https://github.com/anuraghazra/github-readme-stats)                                                                 |
+| **Trophées**<br><br>[![Trophy](https://github-profile-trophy.vercel.app/?username=ryo-ma&theme=matrix)](https://github.com/ryo-ma/github-profile-trophy)                                                                                                                                                   |
+| **GitHub Repository Card for every web site**<br><br>[![Machou/machou.github.io](https://gh-card.dev/repos/Machou/machou.github.io.svg)](https://gh-card.dev/)                                                                                                                                             |
 {:.table .table-hover}
+
+
+<div class="container">
+	<div class="row">
+		<div class="col-12 col-lg-8">**Statistiques**<br><br>![](generated/overview.svg)</div>
+		<div class="col-12 col-lg-8">**Les Langages**<br><br>![](generated/languages.svg)</div>
+		<div class="col-12 col-lg-8">**Métriques**<br><br>![](generated/github-metrics.svg)</div>
+		<div class="col-12 col-lg-8">**Statistiques GitHub**<br><br>[![](https://github-readme-stats.vercel.app/api?username=Machou&locale=fr&show_icons=true)](https://github.com/anuraghazra/github-readme-stats)</div>
+		<div class="col-12 col-lg-8">**Cartes @machou.github.io**<br><br>[![](https://github-readme-stats.vercel.app/api?username=Machou&locale=fr&repo=github-stats&theme=cobalt)](https://github.com/anuraghazra/github-readme-stats)</div>
+		<div class="col-12 col-lg-8">**Langages les plus utilisés dans les dépôts de Machou**<br><br>[![Top Languages Used](https://github-readme-stats.vercel.app/api/top-langs/?username=Machou&locale=fr&theme=dracula)](https://github.com/anuraghazra/github-readme-stats)</div>
+		<div class="col-12 col-lg-8">**Trophées**<br><br>[![Trophy](https://github-profile-trophy.vercel.app/?username=ryo-ma&theme=matrix)](https://github.com/ryo-ma/github-profile-trophy)</div>
+		<div class="col-12 col-lg-8">**GitHub Repository Card for every web site**<br><br>[![Machou/machou.github.io](https://gh-card.dev/repos/Machou/machou.github.io.svg)](https://gh-card.dev/)</div>
+	</div>
+</div>                                                                                                                                 |
+
 
 ## Configuration et installation
 
