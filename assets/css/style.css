@@ -91,13 +91,13 @@ h4::before {
 	display: none;
 	font-size: 1rem;
 	left: 50%;
-	opacity: .9;
+	opacity: .85;
 	padding: .5rem .75rem;
 	position: fixed;
 	transform: translateX(-50%);
 	z-index: 1000;
 }
 
-#remonterPage:hover{
+#remonterPage:hover {
 	opacity: 1;
 }
