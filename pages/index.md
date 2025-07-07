@@ -36,17 +36,19 @@ favicon: "/assets/img/favicon.png"
   * [GitHub Actions Examples](https://github.com/actions/cache/blob/master/examples.md)
 * [Documentation Markdown](https://docs.github.com/fr/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)
 * [Syntaxe Showdown](https://github.com/showdownjs/showdown/wiki/Showdown's-Markdown-syntax)
-* [GitHub Repository Card for every web site](https://gh-card.dev/)
 * [GitHub Stats Visualization](https://github.com/jstrieb/github-stats)
+* [GitHub Metrics](https://github.com/lowlighter/metrics)
+* [GitHub Readme Stats](https://github.com/anuraghazra/github-readme-stats)
 * [GitHub Profile Trophy](https://github.com/ryo-ma/github-profile-trophy)
+* [GitHub Repository Card for every web site](https://gh-card.dev/)
 
 ## Statistiques
 
 |                                                                                                                                                                                                                                                                                                            |
 | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
-| **Statistiques**<br><br>![](generated/overview.svg)                                                                                                                                                                                                                                                        |
-| **Les Langages**<br><br>![](generated/languages.svg)                                                                                                                                                                                                                                                       |
-| **Métriques**<br><br>![](generated/github-metrics.svg)                                                                                                                                                                                                                                                     |
+| **Statistiques**<br><br>[![](generated/overview.svg)](https://github.com/jstrieb/github-stats)                                                                                                                                                                                                             |
+| **Les Langages**<br><br>[![](generated/languages.svg)](https://github.com/jstrieb/github-stats)                                                                                                                                                                                                            |
+| **Métriques**<br><br>[![](generated/github-metrics.svg)](https://github.com/lowlighter/metrics)                                                                                                                                                                                                                                                     |
 | **Statistiques GitHub**<br><br>[![](https://github-readme-stats.vercel.app/api?username=Machou&locale=fr&show_icons=true)](https://github.com/anuraghazra/github-readme-stats)                                                                                                                             |
 | **Cartes @machou.github.io**<br><br>[![](https://github-readme-stats.vercel.app/api?username=Machou&locale=fr&repo=github-stats&theme=cobalt)](https://github.com/anuraghazra/github-readme-stats)                                                                                                         |
 | **Langages les plus utilisés dans les dépôts de Machou**<br><br>[![Top Languages Used](https://github-readme-stats.vercel.app/api/top-langs/?username=Machou&locale=fr&theme=dracula)](https://github.com/anuraghazra/github-readme-stats)                                                                 |
