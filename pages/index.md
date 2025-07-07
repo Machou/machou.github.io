@@ -27,7 +27,7 @@ favicon: "/assets/img/favicon.png"
 - [Statistiques](#statistiques)
 - [Configuration et installation](#configuration-et-installation)
 
-## [Liens divers](#liens-divers)
+## Liens divers
 
 * [GitHub Support](https://support.github.com/)
 * [GitHub Pages](https://pages.github.com/)
@@ -38,24 +38,20 @@ favicon: "/assets/img/favicon.png"
 * [Syntaxe Showdown](https://github.com/showdownjs/showdown/wiki/Showdown's-Markdown-syntax)
 * [GitHub Stats Visualization](https://github.com/jstrieb/github-stats)
 
-## [Statistiques](#statistiques)
+## Statistiques
 
-| Statistiques                | Les Langages                 | [Metrics](https://github.com/lowlighter/metrics) |
-| :-------------------------: | :--------------------------: | :----------------------------------------------: |
-| ![](generated/overview.svg) | ![](generated/languages.svg) | ![](generated/github-metrics.svg)            |
-{:.table .table-hover}
-
-| Statistiques diverses                                                                                                                                                                                                                                                                                      |
+|                                                                                                                                                                                                                                                                                                            |
 | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
+| **Statistiques**<br><br>![](generated/overview.svg)                                                                                                                                                                                                                                                        |
+| **Les Langages**<br><br>![](generated/languages.svg)                                                                                                                                                                                                                                                       |
 | [**Dépôts de Machou**](https://github.com/Machou)<br><br>[![](https://github-readme-stats.vercel.app/api?username=Machou&locale=fr&show_icons=true&theme=onedark)](https://github.com/anuraghazra/github-readme-stats)                                                                                     |
 | [**Cartes @machou.github.io**](https://github.com/Machou/machou.github.io)<br><br>[![](https://github-readme-stats.vercel.app/api?username=Machou&locale=fr&repo=github-stats&theme=swift)](https://github.com/Machou/machou.github.io)                                                                    |
 | [**Langages de programmation les plus utilisés dans les dépôts de Machou**](https://github.com/Machou)<br><br>[![Top Languages Used](https://github-readme-stats.vercel.app/api/top-langs/?username=Machou&locale=fr&bg_color=30,e96443,904e95&title_color=fff&text_color=fff)](https://github.com/Machou) |
 | [**Trophées**](https://github-profile-trophy.vercel.app)<br><br>[![Trophy](https://github-profile-trophy.vercel.app/?username=ryo-ma&theme=dracula)](https://github.com/ryo-ma/github-profile-trophy)                                                                                                      |
-| **GitHub Repository Card for every web site**<br><br>[![Machou/machou.github.io](https://gh-card.dev/repos/Machou/machou.github.io.svg)](https://github.com/Machou/machou.github.io)                                                                                                                       |
+| [**GitHub Repository Card for every web site**](https://gh-card.dev/)<br><br>[![Machou/machou.github.io](https://gh-card.dev/repos/Machou/machou.github.io.svg)](https://github.com/Machou/machou.github.io)                                                                                               |
 {:.table .table-hover}
 
-
-## [Configuration et installation](configuration-et-installation)
+## Configuration et installation
 
 Les `Pages` utilisent une mise en page et des styles / thèmes **Jekyll** que vous avez sélectionnés dans les [options de votre dépôt](https://github.com/Machou/machou.github.io/settings). Les options de ce thème sont sauvegardées dans le fichier [_config.yml](https://jekyllrb.com/docs/configuration/).
 
