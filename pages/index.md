@@ -59,11 +59,7 @@ favicon: "/assets/img/favicon.png"
 
 ---
 
-**Statistiques GitHub**<br><br>[![](https://github-readme-stats.vercel.app/api?username=Machou&locale=fr&show_icons=true)](https://github.com/anuraghazra/github-readme-stats)                                                                                                                             |
-
----
-
-**Cartes @machou.github.io**<br><br>[![](https://github-readme-stats.vercel.app/api?username=Machou&locale=fr&repo=github-stats&theme=cobalt)](https://github.com/anuraghazra/github-readme-stats)                                                                                                         |
+**Statistiques GitHub**<br><br>[![](https://github-readme-stats.vercel.app/api?username=Machou&locale=fr&show_icons=cobalt)](https://github.com/anuraghazra/github-readme-stats)                                                                                                                             |
 
 ---
 
@@ -71,11 +67,11 @@ favicon: "/assets/img/favicon.png"
 
 ---
 
-**Trophées**<br><br>[![Trophy](https://github-profile-trophy.vercel.app/?username=ryo-ma&theme=matrix)](https://github.com/ryo-ma/github-profile-trophy)                                                                                                                                                   |
+**Trophées**<br><br>[![Trophy](https://github-profile-trophy.vercel.app/?username=Machou&theme=matrix)](https://github.com/ryo-ma/github-profile-trophy)                                                                                                                                                   |
 
 ---
 
-**GitHub Repository Card for every web site**<br><br>[![Machou/machou.github.io](https://gh-card.dev/repos/Machou/machou.github.io.svg)](https://gh-card.dev/)                                                                                                                                             |
+**GitHub Repository Card**<br><br>[![Machou/machou.github.io](https://gh-card.dev/repos/Machou/machou.github.io.svg)](https://gh-card.dev/)                                                                                                                                             |
 
 ## Configuration et installation
 
