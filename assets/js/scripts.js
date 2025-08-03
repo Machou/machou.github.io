@@ -3,35 +3,35 @@
 Fancybox.bind('[data-fancybox="gallerie"]', {
 	l10n: Fancybox.l10n.fr_FR,
 	zoomEffect: false,
-		Carousel: {
-			Autoplay: {
-				autoStart: true,
-				timeout: 5000,
-			},
-		Toolbar: {
-			display: {
-				left: ['infobar'],
-				middle: ['zoomIn', 'zoomOut', 'rotateCCW', 'rotateCW', 'flipX', 'flipY'],
-				right: ['download', 'thumbs', 'close'],
-			},
-		},
-	},
+	Toolbar: {
+		display: {
+			left: ['infobar'],
+			middle: ['zoomIn', 'zoomOut', 'rotateCCW', 'rotateCW', 'flipX', 'flipY'],
+			right: ['download', 'thumbs', 'close'],
+		}
+	}
+	// Carousel: {
+	// 	Autoplay: {
+	// 		autoStart: true,
+	// 		timeout: 5000,
+	// 	},
 });
 
 Fancybox.bind('[data-fancybox="image"]', {
 	l10n: Fancybox.l10n.fr_FR,
 	zoomEffect: false,
-		Carousel: {
-			Autoplay: {
-				autoStart: false,
-			},
-		Toolbar: {
-			display: {
-				left: ['infobar'],
-				right: ['toggleFull', 'slideshow', 'download', 'thumbs', 'close'],
-			},
-		},
-	},
+	Toolbar: {
+		display: {
+			left: ['infobar'],
+			middle: ['zoomIn', 'zoomOut', 'rotateCCW', 'rotateCW', 'flipX', 'flipY'],
+			right: ['download', 'thumbs', 'close'],
+		}
+	}
+	// Carousel: {
+	// 	Autoplay: {
+	// 		autoStart: true,
+	// 		timeout: 5000,
+	// 	},
 });
 
 // Remonter la page
