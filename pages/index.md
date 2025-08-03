@@ -71,7 +71,7 @@ favicon: "/assets/img/favicon.png"
 
 ---
 
-**Trophées**<br><br>[![Trophy](https://github-profile-trophy.vercel.app/?username=Machou&theme=matrix)](https://github.com/ryo-ma/github-profile-trophy)                                                                                                                                                   |
+**Trophées**<br><br>[![Trophy](https://github-profile-trophy.vercel.app/?username=Machou&theme=matrix&row=3&column=3)](https://github.com/ryo-ma/github-profile-trophy)                                                                                                                                                   |
 
 ---
 

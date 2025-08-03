@@ -17,23 +17,6 @@ Fancybox.bind('[data-fancybox="gallerie"]', {
 	// 	},
 });
 
-Fancybox.bind('[data-fancybox="image"]', {
-	l10n: Fancybox.l10n.fr_FR,
-	zoomEffect: false,
-	Toolbar: {
-		display: {
-			left: ['infobar'],
-			middle: ['zoomIn', 'zoomOut', 'rotateCCW', 'rotateCW', 'flipX', 'flipY'],
-			right: ['download', 'thumbs', 'close'],
-		}
-	}
-	// Carousel: {
-	// 	Autoplay: {
-	// 		autoStart: true,
-	// 		timeout: 5000,
-	// 	},
-});
-
 // Remonter la page
 
 const remonterPage = document.querySelector('#remonterPage');
