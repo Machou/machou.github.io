@@ -11,10 +11,10 @@ markdown: kramdown
 markdown_ext: "markdown,mkdn,md"
 highlighter: rouge
 # theme: jekyll-theme-cayman
+theme: jekyll-theme-lightspeed
 
+# https://dashboard.jekyllrb.com/
 # plugins:
-  # - jekyll-feed
-  # - jekyll-seo-tag # https://github.com/jekyll/jekyll-seo-tag
 
 sass:
   style: compressed
