@@ -2,8 +2,8 @@ name: Generate Stats Images
 
 on:
   schedule:
-    - cron: "0 0 1,15 * *"  # Tous les 1er et 15 du mois à minuit UTC
-  workflow_dispatch:        # Lancement manuel depuis l'interface GitHub
+    - cron: "0 0 1,15 * *"
+  workflow_dispatch:
 
 jobs:
   build:

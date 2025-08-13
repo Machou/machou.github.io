@@ -1,17 +1,17 @@
 ---
 layout: defaut
-permalink: "/release"
-slug: "standardiser-ma-release"
-title: "Nettoie ma Release SCENE"
-canonical_url: "https://machou.github.io/release"
+title: "Standardiser ma Release"
 description: ""
-favicon: "/assets/img/favicon-html.png"
+permalink: /release
+slug: standardiser-ma-release
+canonical_url: https://machou.github.io/release
+favicon: /assets/img/favicon-html.png
 ---
 
-<nav style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='%236c757d'/%3E%3C/svg%3E&#34;);" aria-label="breadcrumb">
+<nav aria-label="breadcrumb">
 	<ol class="breadcrumb">
 		<li class="breadcrumb-item"><a href="https://machou.github.io/">Accueil</a></li>
-		<li class="breadcrumb-item"><a href="release">Standardiser ma Release</a></li>
+		<li class="breadcrumb-item" aria-current="page"><a href="release">Standardiser ma Release</a></li>
 	</ol>
 </nav>
 
