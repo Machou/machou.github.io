@@ -11,7 +11,7 @@ favicon: /assets/img/favicon-tor.svg
 <nav aria-label="breadcrumb">
 	<ol class="breadcrumb">
 		<li class="breadcrumb-item"><a href="https://machou.github.io/">Accueil</a></li>
-		<li class="breadcrumb-item active" aria-current="page"><a href="comment-creer-hidden-service">Créer un Hidden Service</a></li>
+		<li class="breadcrumb-item active" aria-current="page">Créer un Hidden Service</li>
 	</ol>
 </nav>
 

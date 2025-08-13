@@ -11,7 +11,7 @@ favicon: /assets/img/favicon-html.png
 <nav aria-label="breadcrumb">
 	<ol class="breadcrumb">
 		<li class="breadcrumb-item"><a href="https://machou.github.io/">Accueil</a></li>
-		<li class="breadcrumb-item" aria-current="page"><a href="release">Standardiser ma Release</a></li>
+		<li class="breadcrumb-item active" aria-current="page">Standardiser ma Release</li>
 	</ol>
 </nav>
 
