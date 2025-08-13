@@ -23,7 +23,7 @@ favicon: /assets/img/favicon.png
 - [Comment créer un Hidden Service sécurisé de zéro avec Tor sur Debian](/comment-creer-hidden-service)
   - [Tutoriel PortSentry](/comment-utiliser-portsentry)
   - [Tutoriel Fail2ban](/comment-utiliser-fail2ban)
-- [Titre Release](/release)
+- [Standardiser ma Release](/release)
 - [Liens divers](#liens-divers)
 - [Statistiques](#statistiques)
 - [Configuration et installation](#configuration-et-installation)
