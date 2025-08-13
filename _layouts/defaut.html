@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+<head>
+	<meta charset="utf-8">
+
+	<title>{{ page.title }}</title>
+
+	{% if page.description %}
+		<meta name="description" content="{{ page.description }}">
+	{% endif %}
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="robots" content="index, follow">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+
+	{% if page.favicon %}
+		<link rel="icon" type="image/svg+xml" href="{{ page.favicon | relative_url }}?v={{ site.time | date: '%Y%m%d%H%M%S' }}">
+	{% else %}
+		<link rel="icon" type="image/png" href="{{ '/assets/img/favicon.png' | relative_url }}?v={{ site.time | date: '%Y%m%d%H%M%S' }}">
+	{% endif %}
+
+	<link rel="stylesheet" href="https://unpkg.com/bootstrap@5.3.7/dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://unpkg.com/@fancyapps/ui@6.0.22/dist/fancybox/fancybox.css">
+
+	<link rel="stylesheet" href="https://unpkg.com/@fortawesome/fontawesome-free@7.0.0/css/all.min.css">
+
+	<link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}?v={{ site.time | date: '%Y%m%d%H%M%S' }}">
+	<link rel="stylesheet" href="{{ '/assets/css/rouge.css' | relative_url }}?v={{ site.time | date: '%Y%m%d%H%M%S' }}">
+
+	{% if page.url == "/wow-pnj-lfr" %}
+		<!-- https://www.wowhead.com/tooltip -->
+		<script>const whTooltips = {colorLinks: true, iconizeLinks: true, renameLinks: true};</script>
+		<script src="https://wow.zamimg.com/js/tooltips.js" defer></script>
+	{% endif %}
+</head>
+
+<body>
+	<main>
+		<div class="container bg-light border border-2 rounded-4 my-5 p-4">
+			{{ content }}
+		</div>
+	</main>
+
+	<footer>
+		<div class="container bg-light border border-2 rounded-4 my-5 p-4 text-center">
+			{% if page.url != "/" %}[ <a href="/">Retour à l’accueil</a>{% endif %}
+
+			[ <a href="https://validator.w3.org/nu/?showsource=yes&doc={{ page.url | absolute_url | uri_escape }}"><img src="{{ '/assets/img/logo-w3c-ilove.png' | relative_url }}" alt="W3C Validator" title="W3C Validator"></a> ]
+		</div>
+	</footer>
+
+	{% if page.url != "/release" %}
+		<button id="remonterPage">↑ Remonter la page ↑</button>
+
+		<script src="https://unpkg.com/@fancyapps/ui@6.0.22/dist/fancybox/fancybox.umd.js" defer></script>
+		<script src="https://unpkg.com/@fancyapps/ui@6.0.22/dist/fancybox/l10n/fr_FR.umd.js" defer></script>
+
+		<script src="{{ '/assets/js/scripts.js' | relative_url }}?v={{ site.time | date: '%Y%m%d%H%M%S' }}" defer></script>
+	{% endif %}
+
+	{% if page.url == "/release" %}
+		<script src="{{ '/assets/js/rls.js' | relative_url }}?v={{ site.time | date: '%Y%m%d%H%M%S' }}" defer></script>
+	{% endif %}
+</body>
+</html>

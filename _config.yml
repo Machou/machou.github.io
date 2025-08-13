@@ -1,0 +1,45 @@
+language: fr
+lang: fr-FR
+author: "Machou"
+robots: "all"
+date: 2025-05-08 18:30:00 +0200
+published: true
+draft: false
+toc: false
+url: "https://machou.github.io"
+markdown: kramdown
+markdown_ext: "markdown,mkdn,md"
+highlighter: rouge
+theme: jekyll-theme-cayman
+
+# https://dashboard.jekyllrb.com/
+# plugins:
+
+sass:
+  style: compressed
+
+# github_username: Machou
+
+socials:
+  GitHub: https://github.com/Machou
+  GitLab: https://gitlab.com/Machou
+#   twitter:
+#   github:
+#   linkedin:
+
+navbar:
+  - title: "Accueil"
+    url: "/"
+  - title: "Créer un Hidden Service"
+    url: "/comment-creer-hidden-service"
+  - title: "PortSentry"
+    url: "/comment-utiliser-portsentry"
+  - title: "Fail2ban"
+    url: "/comment-utiliser-portsentry"
+  - title: "WoW PNJ LFR"
+    url: "/wow-pnj-lfr"
+  - title: "Standardiser ma Release"
+    url: "/standardiser-ma-release"
+
+github:
+  is_project_page: true
