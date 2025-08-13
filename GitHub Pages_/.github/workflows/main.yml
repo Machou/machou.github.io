@@ -1,0 +1,46 @@
+name: Generate Stats Images
+
+on:
+  schedule:
+    - cron: "0 0 1,15 * *"  # Tous les 1er et 15 du mois à minuit UTC
+  workflow_dispatch:        # Lancement manuel depuis l'interface GitHub
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v5
+    - name: Set up Python 3.13
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.13'
+        architecture: 'x64'
+    - uses: actions/cache@v4
+      with:
+        path: ~/.cache/pip
+        key: ${{ runner.os }}-pip-${{ hashFiles('**/requirements.txt') }}
+        restore-keys: |
+          ${{ runner.os }}-pip-
+    - name: Install requirements
+      run: |
+        python3 -m pip install --upgrade pip setuptools wheel
+        python3 -m pip install -r requirements.txt
+    - name: Generate images
+      run: |
+        python3 generate_images.py
+      env:
+        ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        EXCLUDED: ${{ secrets.EXCLUDED }}
+        EXCLUDED_LANGS: ${{ secrets.EXCLUDED_LANGS }}
+        EXCLUDE_FORKED_REPOS: true
+    - name: Commit to the repo
+      env:
+        TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      run: |
+        git config --global user.name "machou/github-stats"
+        git config --global user.email "github-stats@machou.github.io"
+        git add .
+        git commit -m 'Update generated files' || echo
+        git push
