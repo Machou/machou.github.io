@@ -1,37 +1,37 @@
 name: Generate Stats Images
 
-permissions:
-  contents: write
-
 on:
+  push:
+    branches: [ master ]
   schedule:
     - cron: "0 0 1,15 * *"
   workflow_dispatch:
-  push: {branches: ["master", "main"]}
+
+permissions:
+  contents: write
 
 jobs:
   build:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v4
-    - name: Set up Python 3.13
+    - uses: actions/checkout@v5
+
+    - name: Set up Python 3.12
       uses: actions/setup-python@v5
       with:
-        python-version: '3.13'
+        python-version: '3.12'
         architecture: 'x64'
-    - uses: actions/cache@v4
-      with:
-        path: ~/.cache/pip
-        key: ${{ runner.os }}-pip-${{ hashFiles('**/requirements.txt') }}
-        restore-keys: |
-          ${{ runner.os }}-pip-
+        cache: 'pip'
+
     - name: Install requirements
       run: |
         python3 -m pip install --upgrade pip setuptools wheel
         python3 -m pip install -r requirements.txt
+
     - name: Generate images
       run: |
+        python3 --version
         python3 generate_images.py
       env:
         ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
@@ -39,12 +39,11 @@ jobs:
         EXCLUDED: ${{ secrets.EXCLUDED }}
         EXCLUDED_LANGS: ${{ secrets.EXCLUDED_LANGS }}
         EXCLUDE_FORKED_REPOS: true
+
     - name: Commit to the repo
-      env:
-        TOKEN: ${{ secrets.GITHUB_TOKEN }}
       run: |
-        git config user.name "machou/github-stats"
-        git config user.email "github-stats@machou.github.io"
+        git config user.name "Machou"
+        git config user.email "github-stats[bot]@machou.github.io"
         git add .
-        git commit -m "Update GitHub Stats Generated Images ($(date -u +'%Y-%m-%d %H:%M:%S') UTC)" || echo "No changes"
+        git commit -m 'Update Images generated files' || true
         git push
