@@ -366,8 +366,6 @@ Languages:
             else:
                 break
 
-        # TODO: Improve languages to scale by number of contributions to
-        #       specific filetypes
         langs_total = sum([v.get("size", 0) for v in self._languages.values()])
         for k, v in self._languages.items():
             v["prop"] = 100 * (v.get("size", 0) / langs_total)
@@ -525,7 +523,6 @@ async def main() -> None:
     async with aiohttp.ClientSession() as session:
         s = Stats(user, access_token, session)
         print(await s.to_str())
-
 
 if __name__ == "__main__":
     asyncio.run(main())
