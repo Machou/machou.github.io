@@ -22,7 +22,7 @@ favicon: /assets/img/favicon-html.png
 		<div class="col-12 col-lg-8 mx-auto">
 			<div class="mb-4">
 				<label for="release" class="form-label">Ma Release</label>
-				<input type="text" name="rls" class="form-control form-control-lg" id="release" placeholder="Inception 2010 FRENCH WEB x265-FW">
+				<input type="text" name="rls" class="form-control form-control-lg" id="release" placeholder="Casino.1995.FRENCH.1080p.WEB-DL.H264-Slay3R.mkv">
 			</div>
 
 			<pre class="border rounded mb-0 px-3 py-4 fs-5 user-select-all" id="out"></pre>
