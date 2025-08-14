@@ -3,11 +3,8 @@
 import asyncio
 import os
 from typing import Dict, List, Optional, Set, Tuple, Any, cast
-
 import aiohttp
 import requests
-
-# Main Classes
 
 class Queries(object):
     """
@@ -512,8 +509,6 @@ Languages:
 
         self._views = total
         return total
-
-# Main Function
 
 async def main() -> None:
     """

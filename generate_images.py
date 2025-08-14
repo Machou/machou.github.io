@@ -4,10 +4,7 @@ import asyncio
 import os
 import re
 import aiohttp
-
 from github_stats import Stats
-
-# Helper Functions
 
 def generate_output_folder() -> None:
     """
@@ -15,8 +12,6 @@ def generate_output_folder() -> None:
     """
     if not os.path.isdir("generated"):
         os.mkdir("generated")
-
-# Individual Image Generation Functions
 
 async def generate_overview(s: Stats) -> None:
     """
@@ -38,7 +33,6 @@ async def generate_overview(s: Stats) -> None:
     generate_output_folder()
     with open("generated/overview.svg", "w") as f:
         f.write(output)
-
 
 async def generate_languages(s: Stats) -> None:
     """
@@ -63,14 +57,15 @@ async def generate_languages(s: Stats) -> None:
             f'class="progress-item"></span>'
         )
         lang_list += f"""
-        <li style="animation-delay: {i * delay_between}ms;">
-        <svg xmlns="http://www.w3.org/2000/svg" class="octicon" style="fill:{color};"
-        viewBox="0 0 16 16" version="1.1" width="16" height="16"><path
-        fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8z"></path></svg>
-        <span class="lang">{lang}</span>
-        <span class="percent">{data.get("prop", 0):0.2f}%</span>
-        </li>
-        """
+<li style="animation-delay: {i * delay_between}ms;">
+<svg xmlns="http://www.w3.org/2000/svg" class="octicon" style="fill:{color};"
+viewBox="0 0 16 16" version="1.1" width="16" height="16"><path
+fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8z"></path></svg>
+<span class="lang">{lang}</span>
+<span class="percent">{data.get("prop", 0):0.2f}%</span>
+</li>
+
+"""
 
     output = re.sub(r"{{ progress }}", progress, output)
     output = re.sub(r"{{ lang_list }}", lang_list, output)
@@ -79,14 +74,13 @@ async def generate_languages(s: Stats) -> None:
     with open("generated/languages.svg", "w") as f:
         f.write(output)
 
-# Main Function
-
 async def main() -> None:
     """
     Generate all badges
     """
     access_token = os.getenv("ACCESS_TOKEN")
     if not access_token:
+        # access_token = os.getenv("GITHUB_TOKEN")
         raise Exception("A personal access token is required to proceed!")
     user = os.getenv("GITHUB_ACTOR")
     if user is None:
@@ -99,6 +93,7 @@ async def main() -> None:
     excluded_langs = (
         {x.strip() for x in exclude_langs.split(",")} if exclude_langs else None
     )
+    # Convert a truthy value to a Boolean
     raw_ignore_forked_repos = os.getenv("EXCLUDE_FORKED_REPOS")
     ignore_forked_repos = (
         not not raw_ignore_forked_repos
@@ -114,6 +109,7 @@ async def main() -> None:
             ignore_forked_repos=ignore_forked_repos,
         )
         await asyncio.gather(generate_languages(s), generate_overview(s))
+
 
 if __name__ == "__main__":
     asyncio.run(main())
