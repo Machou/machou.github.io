@@ -1,50 +1,49 @@
-name: Generate Stats Images
+name: Generate GitHub Stats
 
 on:
-  push:
-    branches: [ master ]
   schedule:
-    - cron: "0 0 1,15 * *"
-  workflow_dispatch:
-
-permissions:
-  contents: write
+    - cron: '0 0 * * *'  # Tous les jours à minuit
+  workflow_dispatch:  # Permet l'exécution manuelle
+  push:
+    branches: [ main ]
 
 jobs:
-  build:
+  generate-stats:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v5
+    - name: Checkout repository
+      uses: actions/checkout@v3
 
-    - name: Set up Python 3.11
-      uses: actions/setup-python@v5
+    - name: Set up Python
+      uses: actions/setup-python@v4
       with:
         python-version: '3.11'
-        architecture: 'x64'
-        cache: 'pip'
 
-    - name: Install requirements
+    - name: Install dependencies
       run: |
-        python3 -m pip install --upgrade pip setuptools wheel
-        python3 -m pip install -r requirements.txt
+        python -m pip install --upgrade pip
+        pip install aiohttp requests
 
-    - name: Generate images
-      run: |
-        python3 --version
-        python3 generate_images.py
+    - name: Create templates directory
+      run: mkdir -p templates
+
+    - name: Generate GitHub Stats
       env:
-        ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        EXCLUDED: ${{ secrets.EXCLUDED }}
-        EXCLUDED_LANGS: ${{ secrets.EXCLUDED_LANGS }}
-        EXCLUDE_FORKED_REPOS: true
-
-    - name: Commit to the repo
+        ACCESS_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        GITHUB_ACTOR: ${{ github.actor }}
       run: |
-        git config --global user.name "machou/github-stats"
-        git config --global user.email "github-stats[bot]@machou.github.io"
-        git add .
-        # Force the build to succeed, even if no files were changed
-        git commit -m 'Update generated files' || true
-        git push
+        python generate_images.py
+
+    - name: List generated files
+      run: |
+        echo "Generated files:"
+        ls -la generated/ || echo "No generated folder found"
+
+    - name: Commit and push if changed
+      run: |
+        git config --local user.email "action@github.com"
+        git config --local user.name "GitHub Action"
+        git add generated/ || true
+        git diff --staged --quiet || git commit -m "Update GitHub stats"
+        git push || true
