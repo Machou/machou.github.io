@@ -2,8 +2,7 @@ name: Generate Stats Images
 
 on:
   push:
-    branches:
-      - ${{ github.event.repository.default_branch }}
+    branches: [ master ]
   schedule:
     - cron: "0 0 1,15 * *"
   workflow_dispatch:
@@ -14,35 +13,38 @@ permissions:
 jobs:
   build:
     runs-on: ubuntu-latest
+
     steps:
-      - uses: actions/checkout@v5
+    - uses: actions/checkout@v5
 
-      - name: Set up Python 3.13
-        uses: actions/setup-python@v5
-        with:
-          python-version: '3.13'
-          cache: 'pip'
+    - name: Set up Python 3.11
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.11'
+        architecture: 'x64'
+        cache: 'pip'
 
-      - name: Install requirements
-        run: |
-          python3 -m pip install --upgrade pip setuptools wheel
-          python3 -m pip install -r requirements.txt
+    - name: Install requirements
+      run: |
+        python3 -m pip install --upgrade pip setuptools wheel
+        python3 -m pip install -r requirements.txt
 
-      - name: Generate images
-        env:
-          ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}   # ou supprimez si fallback GITHUB_TOKEN
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          EXCLUDED: ${{ secrets.EXCLUDED }}
-          EXCLUDED_LANGS: ${{ secrets.EXCLUDED_LANGS }}
-          EXCLUDE_FORKED_REPOS: "true"
-        run: |
-          python3 --version
-          python3 generate_images.py
+    - name: Generate images
+      run: |
+        python3 --version
+        python3 generate_images.py
+      env:
+        ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        EXCLUDED: ${{ secrets.EXCLUDED }}
+        EXCLUDED_LANGS: ${{ secrets.EXCLUDED_LANGS }}
+        EXCLUDE_FORKED_REPOS: true
 
-      - name: Commit to the repo
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add generated/*.svg || true
-          git commit -m "Update Images generated files" || true
-          git push
+    - name: Commit to the repo
+      run: |
+        git config --global user.name "machou/github-stats"
+        git config --global user.email "github-stats[bot]@machou.github.io"
+        git add .
+        # Force the build to succeed, even if no files were changed
+        git commit -m 'Update generated files' || true
+        git push
