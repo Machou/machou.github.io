@@ -4,6 +4,7 @@ on:
   schedule:
     - cron: "0 0 1,15 * *"
   workflow_dispatch:
+  push: {branches: ["master", "main"]}
 
 jobs:
   build:
@@ -39,8 +40,8 @@ jobs:
       env:
         TOKEN: ${{ secrets.GITHUB_TOKEN }}
       run: |
-        git config --global user.name "machou/github-stats"
-        git config --global user.email "github-stats@machou.github.io"
+        git config user.name "machou/github-stats"
+        git config user.email "github-stats@machou.github.io"
         git add .
-        git commit -m 'Update generated files' || echo
+        git commit -m 'Update GitHub Stats Generated Images ($(date -u +'%Y-%m-%d %H:%M:%S') UTC)' || echo
         git push
