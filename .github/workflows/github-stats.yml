@@ -1,5 +1,8 @@
 name: Generate Stats Images
 
+permissions:
+  contents: write
+
 on:
   schedule:
     - cron: "0 0 1,15 * *"
@@ -43,5 +46,5 @@ jobs:
         git config user.name "machou/github-stats"
         git config user.email "github-stats@machou.github.io"
         git add .
-        git commit -m 'Update GitHub Stats Generated Images ($(date -u +'%Y-%m-%d %H:%M:%S') UTC)' || echo
+        git commit -m "Update GitHub Stats Generated Images ($(date -u +'%Y-%m-%d %H:%M:%S') UTC)" || echo "No changes"
         git push
