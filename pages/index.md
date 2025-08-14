@@ -15,7 +15,7 @@ favicon: /assets/img/favicon.png
 	</ol>
 </nav>
 
-# [<i class="fa-brands fa-github"></i> Dépôt GitHub](https://github.com/Machou/machou.github.io) [Page GitHub](https://machou.github.io/)
+# [<i class="fa-brands fa-github"></i> Dépôt GitHub](https://github.com/Machou/machou.github.io) — [Page GitHub](https://machou.github.io/)
 
 # Sommaire
 
