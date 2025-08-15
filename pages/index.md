@@ -41,16 +41,13 @@ favicon: /assets/img/favicon.png
 ## Liens Statistiques
 
 * [GitHub Stats Visualization](https://github.com/jstrieb/github-stats)
-* [GitHub Metrics](https://github.com/lowlighter/metrics)
 * [GitHub Readme Stats](https://github.com/anuraghazra/github-readme-stats)
 * [GitHub Profile Trophy](https://github.com/ryo-ma/github-profile-trophy)
 * [GitHub Repository Card for every web site](https://gh-card.dev/)
+* [GitHub Metrics](https://github.com/lowlighter/metrics)
+* [Générer les Metrics](https://metrics.lecoq.io/embed?user=Machou/machou.github.io)
 
 ## Mes Statistiques
-
-**Métriques**<br>[![](generated/github-metrics.svg)](https://github.com/lowlighter/metrics)
-
----
 
 **Statistiques GitHub**<br><br>[![](https://github-readme-stats.vercel.app/api?username=Machou&locale=fr&show_icons=cobalt)](https://github.com/anuraghazra/github-readme-stats)
 
@@ -65,3 +62,7 @@ favicon: /assets/img/favicon.png
 ---
 
 **GitHub Repository Card**<br><br>[![Machou/machou.github.io](https://gh-card.dev/repos/Machou/machou.github.io.svg)](https://gh-card.dev/)
+
+---
+
+**Métriques**<br>[![](generated/github-metrics.svg)](https://github.com/lowlighter/metrics)
