@@ -22,6 +22,7 @@ jobs:
           base: header, activity, community, repositories, metadata
           plugin_achievements: yes
           plugin_achievements_display: compact
+          plugin_achievements_limit: 5
           plugin_languages_recent_days: 14
           plugin_languages_recent_load: 400
           plugin_languages_sections: recently-used
