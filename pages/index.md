@@ -25,8 +25,8 @@ favicon: /assets/img/favicon.png
   - [Tutoriel Fail2ban](/comment-utiliser-fail2ban)
 - [Standardiser ma Release](/release)
 - [Liens divers](#liens-divers)
-- [Statistiques](#statistiques)
-- [Configuration et installation](#configuration-et-installation)
+- [Statistiques](#liens-statistiques)
+- [Mes Statistiques](#mes-statistiques)
 
 ## Liens divers
 
@@ -38,7 +38,7 @@ favicon: /assets/img/favicon.png
 * [Documentation Markdown](https://docs.github.com/fr/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)
 * [Syntaxe Showdown](https://github.com/showdownjs/showdown/wiki/Showdown's-Markdown-syntax)
 
-## Statistiques
+## Liens Statistiques
 
 * [GitHub Stats Visualization](https://github.com/jstrieb/github-stats)
 * [GitHub Metrics](https://github.com/lowlighter/metrics)
@@ -46,7 +46,7 @@ favicon: /assets/img/favicon.png
 * [GitHub Profile Trophy](https://github.com/ryo-ma/github-profile-trophy)
 * [GitHub Repository Card for every web site](https://gh-card.dev/)
 
-## Les statistiques
+## Mes Statistiques
 
 **Métriques**<br>[![](generated/github-metrics.svg)](https://github.com/lowlighter/metrics)
 
