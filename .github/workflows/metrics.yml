@@ -23,6 +23,13 @@ jobs:
           plugin_achievements: yes
           plugin_achievements_display: compact
           plugin_achievements_limit: 5
+          plugin_achievements_only: >-
+            polyglot, stargazer, sponsor, deployer, member, maintainer, developer,
+            scripter, packager, explorer, infographile, manager
+          plugin_activity: yes
+          plugin_activity_limit: 5
+          plugin_activity_days: 0
+          plugin_activity_filter: issue, pr, release, fork, review, ref/create
           plugin_languages_recent_days: 14
           plugin_languages_recent_load: 400
           plugin_languages_sections: recently-used
