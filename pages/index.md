@@ -25,10 +25,10 @@ favicon: /assets/img/favicon.png
   - [Tutoriel Fail2ban](/comment-utiliser-fail2ban)
 - [Standardiser ma Release](/release)
 - [Liens divers](#liens-divers)
-- [Statistiques](#liens-statistiques)
+- [Liens Statistiques](#liens-statistiques)
 - [Mes Statistiques](#mes-statistiques)
 
-## Liens divers
+## Liens Divers
 
 * [GitHub Support](https://support.github.com/)
 * [GitHub Pages](https://pages.github.com/)
