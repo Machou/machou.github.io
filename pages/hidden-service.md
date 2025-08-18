@@ -31,7 +31,6 @@ favicon: /assets/img/favicon-tor.svg
     - [Authentification SSH](#authentification-ssh)
       - [Méthode N°1 : clés SSH](#méthode-n1--clés-ssh)
       - [Méthode N°2 : mot de passe](#méthode-n2--mot-de-passe)
-    - [Autre configuration](#autre-configuration)
     - [Double Authentification avec Google Authenticator PAM module](#facultatif-double-authentification-avec-google-authenticator-pam-module)
 - [Installation d’un serveur LAMP](#installation-dun-serveur-lamp)
   - [Apache](#installation-et-configuration-dapache2)
