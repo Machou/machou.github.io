@@ -24,11 +24,11 @@ favicon: /assets/img/favicon-tor.svg
   - [Quelques règles importantes](#quelques-règles-importantes)
 - [Configuration du serveur](#configuration-du-serveur)
   - [SSH](#ssh)
-  - [Authentification SSH](#authentification-ssh)
-    - [Méthode N°1 : clés SSH](#méthode-n1--clés-ssh)
-    - [Méthode N°2 : mot de passe](#méthode-n2--mot-de-passe)
-  - [Autre configuration](#autre-configuration)
-  - [Double Authentification avec Google Authenticator PAM module](#facultatif-double-authentification-avec-google-authenticator-pam-module)
+    - [Authentification SSH](#authentification-ssh)
+      - [Méthode N°1 : clés SSH](#méthode-n1--clés-ssh)
+      - [Méthode N°2 : mot de passe](#méthode-n2--mot-de-passe)
+    - [Autre configuration](#autre-configuration)
+    - [Double Authentification avec Google Authenticator PAM module](#facultatif-double-authentification-avec-google-authenticator-pam-module)
   - [Configuration Debian](#configuration-debian)
 - [Installation d’un serveur LAMP](#installation-dun-serveur-lamp)
   - [Apache](#installation-et-configuration-dapache2)
@@ -341,96 +341,68 @@ AllowUsers salameche
 
 On quitte et on redémarre SSH :
 
-`sudo /etc/init.d/ssh restart`
+`sudo systemctl restart sshd`
 
 ### [(Facultatif) Double Authentification avec Google Authenticator PAM module](#facultatif-double-authentification-avec-google-authenticator-pam-module)
 
-On peut ajouter une sécurité complémentaire en ajoutant la **double authentification** grâce au logiciel [Google Authenticator PAM module](https://github.com/google/google-authenticator-libpam) spécialement conçu pour SSH.
+Il est possible d’activer l’authentification multifacteur (MFA/2FA) pour les connexions SSH sous Debian. Cette couche supplémentaire vient renforcer la sécurité au-delà du simple mot de passe. Lorsqu’on se connecte à une machine distante protégée par la MFA/2FA, on vous demandera d’abord un code à six chiffres, puis votre mot de passe habituel.
 
-On installe le module PAM Google Authenticator :
+Ce code de vérification est calculé à partir d’un secret partagé entre l’appareil et le serveur, de l’heure courante — d’où l’importance de la synchronisation des horloges — ainsi que d’un algorithme de hachage. Ce procédé repose sur la norme TOTP (**Time‑based One‑Time Password**).
 
-`sudo apt install libpam-google-authenticator`
+À noter que cette approche ne s’appuie sur aucun service externe : le serveur n’a pas besoin d’accès à Internet ni d’interroger *Google* ou un autre fournisseur tiers.
 
-On configure le fichier :
+L’objectif est de sécuriser les connexions SSH (au lieu de se reposer uniquement sur un mot de passe) en demandant aux utilisateurs de fournir un mot de passe à usage unique (TOTP).
 
-`sudo nano /etc/pam.d/sshd`
+On se connecte en root et on installe [Google Authenticator PAM module](https://github.com/google/google-authenticator-libpam) :
 
-On y ajoute à la fin du fichier :
+`sudo apt update && sudo apt install libpam-google-authenticator`
 
-```sh
-# Google Authenticator PAM module
-auth required pam_google_authenticator.so
-```
+Une fois `libpam-google-authenticator` installé, basculez sur le compte utilisateur pour lequel vous souhaitez activer la double authentification (MFA/2FA).
 
-On change la ligne dans le fichier SSH :
+`su salameche`
 
-`sudo nano /etc/ssh/sshd_config`
-
-`ChallengeResponseAuthentication no`
-
-par
-
-`ChallengeResponseAuthentication yes`
-
-**Si la ligne n’existe pas, on l’ajoutera à la fin du fichier.**
-
-On quitte et on redémarre SSH :
-
-`sudo /etc/init.d/ssh restart`
-
-On initialise la double authentification :
-
-*Vous devez être connecté sur le compte avec lequel on va activer la 2FA.*
-
-On lance **Google Authenticator PAM module** :
+On lance la commande :
 
 `google-authenticator`
 
-On réponds aux questions :
+Ce qui donne :
 
-`Do you want authentication tokens to be time-based (y/n) y`
-> Cette question demande si on utilisera les jetons d’authentification basés sur la durée, on répondra « Oui »
+```bash
+Do you want authentication tokens to be time-based (y/n) y
+Warning: pasting the following URL into your browser exposes the OTP secret to Google:
+  https://www.google.com/chart?chs=200x200&chld=M|0&cht=qr&chl=otpauth://totp/root@Localhost%3Fsecret%3DKTWW75POHG75HQYVKGCEYAGBK4%26issuer%3DLocalhost
 
-Ici, on doit ajouter le **code de vérification TOTP**, 2 options, soit on ajoute le code directement dans notre application ou on scan le code QR.
+Your new secret key is: KTWW75POHG75HQYVKGCEYAGBK4
+Enter code from app (-1 to skip):
+```
 
-Si vous souhaitez ajouter le code TOTP directement, on copie / colle le code généré par **Google Authenticator PAM module** :
+Soit on capture le QR Code ou on entre le code secret (`KTWW75POHG75HQYVKGCEYAGBK4`) dans notre application pour générer notre code TOTP :
 
-`Your new secret key is: **********`
-
-On peut également scanner le QR code via une application, telle que :
-
-- [Bitwarden](https://bitwarden.com/) ⭐ ⭐ ⭐
-- [Google Authenticator Android](https://play.google.com/store/apps/details?id=com.google.android.apps.authenticator2&hl=fr) ⭐ ⭐
-- [Google Authenticator iOS](https://apps.apple.com/fr/app/google-authenticator/id388497605) ⭐ ⭐
-
-Une fois le code actif, on entre le code :
-
-```sh
-Enter code from app (-1 to skip): 679799
+```bash
+Enter code from app (-1 to skip): 457816
 Code confirmed
-```
-
-Ensuite on enregistre les codes de secours quelques part :
-
-```sh
 Your emergency scratch codes are:
-  47404***
-  90525***
-  35213***
-  20322***
-  14217***
+  30488198
+  31255118
+  10646665
+  91637824
+  69014874
 ```
 
-`Do you want me to update your "/home/freebox/.google_authenticator" file? (y/n) y`
+> Voici quelques application pour gérer les codes TOTP :
+> Bitwarden ⭐⭐⭐⭐ [iOS](https://apps.apple.com/fr/app/bitwarden/id1137397744) [Android](https://play.google.com/store/apps/details?id=com.x8bit.bitwarden&hl=fr)
+> Twilio Authy Authenticator Android ⭐⭐⭐ [iOS](https://apps.apple.com/fr/app/twilio-authy/id494168017) [Android](https://play.google.com/store/apps/details?id=com.authy.authy&hl=fr)
+> Google Authenticator ⭐⭐⭐ [iOS](https://apps.apple.com/fr/app/google-authenticator/id388497605) [Android](https://play.google.com/store/apps/details?id=com.google.android.apps.authenticator2&hl=fr)
 
-```sh
+Une fois le code TOTP confirmé, **sauvegardez vos codes de secours**, puis répondez aux questions selon vos besoins :
+
+```bash
+Do you want me to update your "/root/.google_authenticator" file? (y/n) y
+
 Do you want to disallow multiple uses of the same authentication
 token? This restricts you to one login about every 30s, but it increases
-your chances to notice or even prevent man-in-the-middle attacks (y/n) n
-```
-> Cette question sert à bloquer l’utilisation du même code sur une durée de 30 secondes, on répondra « Non »
+your chances to notice or even prevent man-in-the-middle attacks (y/n) y
 
-```sh
 By default, a new token is generated every 30 seconds by the mobile app.
 In order to compensate for possible time-skew between the client and the server,
 we allow an extra token before and after the current time. This allows for a
@@ -440,21 +412,41 @@ from its default size of 3 permitted codes (one previous code, the current
 code, the next code) to 17 permitted codes (the 8 previous codes, the current
 code, and the 8 next codes). This will permit for a time skew of up to 4 minutes
 between client and server.
-Do you want to do so? (y/n) n
-```
-> Cette question permet d’utiliser un code 4 minutes après avoir lancé l’authentification, augemente les vecteurs d’attaque, on répondra « Non »
+Do you want to do so? (y/n) y
 
-```sh
 If the computer that you are logging into isn't hardened against brute-force
 login attempts, you can enable rate-limiting for the authentication module.
 By default, this limits attackers to no more than 3 login attempts every 30s.
 Do you want to enable rate-limiting? (y/n) y
 ```
-> Cette question permet d’activer une limitation des tentatives de connexion toutes les 30 secondes, qui sera limitée à 3, on répondra « Oui »
+
+Une fois notre code OPT installé et configuré, on va modifier le fichier de configuration PAM pour le service **PAM** nommé **sshd** :
+
+`sudo nano /etc/pam.d/sshd`
+
+On ajoute, en haut du fichier :
+
+`auth required pam_google_authenticator.so nullok`
+
+- **auth** : utile pour l’authentification
+- **required** : contrôle obligatoire, l’authentification échouera si celui-ci ne réussit pas
+- **pam_google_authenticator.so** : le module PAM qui active le TOTP
+- **nullok** : si le fichier `~/.google_authenticator` n’existe pas, le TOTP sera ignoré. Supprimez cette option si vous souhaitez imposer le TOTP pour toutes les connexions.
+
+Ensuite on modifie le fichier de configuration principal du démon serveur **OpenSSH** (**sshd**) :
+
+`sudo nano /etc/ssh/sshd_config`
+
+On ajoute / modifie :
+
+```bash
+ChallengeResponseAuthentication yes
+KbdInteractiveAuthentication yes
+```
 
 On quitte et on redémarre SSH :
 
-`sudo /etc/init.d/ssh restart`
+`sudo systemctl restart sshd`
 
 ### [Configuration Debian](#configuration-debian)
 
@@ -603,7 +595,7 @@ On active différents modules utiles pour Apache2 :
 
 On quitte et on redémarre Apache2 :
 
-`sudo service apache2 restart`
+`sudo systemctl restart apache2`
 
 On vérifie qu’Apache est bien configuré :
 
@@ -840,7 +832,7 @@ Ces fonctions sont à titre d’information, vous pouvez activer / désactiver c
 
 On sauvegarde le fichier **php.ini** et on redémarre Apache2 :
 
-`sudo service apache2 restart`
+`sudo systemctl restart apache2`
 
 ## [MariaDB](#mariadb)
 
@@ -884,7 +876,7 @@ Une fois terminé, doit renvoyer :
 
 On redémarre MariaDB :
 
-`sudo service mariadb restart`
+`sudo systemctl restart mariadb`
 
 On active MariaDB au démarrage :
 
@@ -998,7 +990,7 @@ SocksPolicy reject *
 
 On redémarre Tor :
 
-`sudo systemsectl restart tor`
+`sudo systemctl restart tor`
 
 On vérifie que Tor fonctionne correctement :
 
@@ -1036,7 +1028,7 @@ On active le *Virtual Host* *direct.conf* :
 
 On quitte et on redémarre Apache2 :
 
-`sudo service apache2 restart`
+`sudo systemctl restart apache2`
 
 On teste une page :
 
