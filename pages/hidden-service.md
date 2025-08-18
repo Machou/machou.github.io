@@ -352,9 +352,9 @@ Your emergency scratch codes are:
 
 Voici quelques application pour gérer les codes TOTP :
 
-- Bitwarden [iOS](https://apps.apple.com/fr/app/bitwarden/id1137397744) [Android](https://play.google.com/store/apps/details?id=com.x8bit.bitwarden&hl=fr) ⭐⭐⭐⭐
-- Twilio Authy Authenticator Android [iOS](https://apps.apple.com/fr/app/twilio-authy/id494168017) [Android](https://play.google.com/store/apps/details?id=com.authy.authy&hl=fr) ⭐⭐⭐
-- Google Authenticator [iOS](https://apps.apple.com/fr/app/google-authenticator/id388497605) [Android](https://play.google.com/store/apps/details?id=com.google.android.apps.authenticator2&hl=fr) ⭐⭐⭐
+- [Bitwarden](https://bitwarden.com/) : [iOS](https://apps.apple.com/fr/app/bitwarden/id1137397744) - [Android](https://play.google.com/store/apps/details?id=com.x8bit.bitwarden&hl=fr) ⭐⭐⭐⭐
+- [Twilio Authy](https://www.authy.com/) : [iOS](https://apps.apple.com/fr/app/twilio-authy/id494168017) - [Android](https://play.google.com/store/apps/details?id=com.authy.authy&hl=fr) ⭐⭐⭐
+- Google Authenticator : [iOS](https://apps.apple.com/fr/app/google-authenticator/id388497605) - [Android](https://play.google.com/store/apps/details?id=com.google.android.apps.authenticator2&hl=fr) ⭐⭐⭐
 
 Une fois le code TOTP confirmé, **sauvegardez vos codes de secours**, puis répondez aux questions selon vos besoins :
 
