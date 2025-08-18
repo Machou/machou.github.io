@@ -23,13 +23,16 @@ favicon: /assets/img/favicon-tor.svg
 - [Qu’est-ce que Tor et un Hidden Service ?](#quest-ce-que-tor-et-un-hidden-service-)
   - [Quelques règles importantes](#quelques-règles-importantes)
 - [Configuration du serveur](#configuration-du-serveur)
+  - [Configuration Debian](#configuration-debian)
+    - [sources.list](#sources-list)
+    - [Les Logiciels](#les-logiciels)
   - [SSH](#ssh)
+    - [Configuration SSH](#configuration-ssh)
     - [Authentification SSH](#authentification-ssh)
       - [Méthode N°1 : clés SSH](#méthode-n1--clés-ssh)
       - [Méthode N°2 : mot de passe](#méthode-n2--mot-de-passe)
     - [Autre configuration](#autre-configuration)
     - [Double Authentification avec Google Authenticator PAM module](#facultatif-double-authentification-avec-google-authenticator-pam-module)
-  - [Configuration Debian](#configuration-debian)
 - [Installation d’un serveur LAMP](#installation-dun-serveur-lamp)
   - [Apache](#installation-et-configuration-dapache2)
     - [Virtual Host](#virtual-host)
@@ -175,6 +178,63 @@ passwd
 
 > **SSH** (Secure Shell) est un protocole réseau qui permet d’établir une connexion sécurisée entre un client et un serveur. Il est principalement utilisé pour accéder à distance à des systèmes informatiques, en garantissant la confidentialité et l’intégrité des données grâce au chiffrement. SSH permet d’exécuter des commandes, de transférer des fichiers en toute sécurité et d’administrer des serveurs à distance. Il remplace des protocoles moins sécurisés comme Telnet et FTP.
 
+### [Configuration SSH](#configuration-ssh)
+
+On paramètre / sécurise SSH :
+
+`sudo nano /etc/ssh/sshd_config`
+
+On change le port SSH :
+
+`Port _PORT_`
+
+C’est une forme de sécurité simple, mais étonnamment efficace.
+
+Les serveurs utilisent généralement le port 22 pour se connecter à SSH, donc il est moins susceptible d’être trouvé par des robots qui analysent les adresses IP à la recherche de mot de passe faible sur les comptes par défaut. Si vous numérisez tout le réseau, vous ne pouvez pas vous permettre de vérifier tous les ports possibles (65 535 ports disponibles) pour trouver le serveur SSH.
+
+Cependant, si quelqu’un vous ciblera activement, cela ne fournit aucun bénéfice, car une simple analyse *nmap* unique révèlera le port sur lequel **SSH** fonctionne réellement (on utilisera [PortSentry](PortSentry.md) pour bloquer ces attaques, voir plus bas).
+
+- **Le port doit être compris entre 0-65535**
+- **Le port utiliser ne doit pas être déjà utilisé par une application**
+
+On désactive la connexion root en SSH :
+
+`PermitRootLogin no`
+
+Nous n’utiliserons pas le protocole [FTP](https://fr.wikipedia.org/wiki/File_Transfer_Protocol), cela pour des raisons évidentes de sécurités, mais [sFTP](https://fr.wikipedia.org/wiki/SSH_File_Transfer_Protocol).
+
+On commente et / ou supprime cette ligne :
+
+`#Subsystem sftp /usr/lib/openssh/sftp-server`
+
+On ajoute en dessous :
+
+`Subsystem sftp internal-sftp`
+
+**internal-sftp** est recommandé pour les scénarios où la sécurité et l’isolation sont importantes, comme le chrooting des utilisateurs vers un répertoire spécifique.*
+
+À la fin de la page, on ajoute : (on vérifie que les paramètres ne sont pas présents pour éviter les doublons)
+
+```sh
+UseDNS no
+UsePAM yes
+
+DebianBanner no
+
+AllowUsers salameche
+```
+
+- **UseDNS** : par défaut, le serveur cherche à établir la résolution DNS inverse depuis votre IP. Cette requête peut être assez longue, c’est pour cela que nous désactivons cette fonctionnalité, plutôt inutile
+- **UsePAM** : PAM doit être désactivé si vous utilisez des clés d’authentifications, ce qui n’est pas notre cas, donc il doit être activé
+- **DebianBanner** : permet d’éviter que le serveur SSH n’affiche la distribution Linux Ubuntu ou Debian
+- **AllowUsers** : ajoute les utilisateurs autorisés à se connecter à SSH, pour notre cas, on ajoutera simplement « *salameche* »
+
+On quitte et on redémarre SSH :
+
+`sudo systemctl restart sshd`
+
+
+
 ### [Authentification SSH](#authentification-ssh)
 
 #### [Méthode N°1 : clés SSH](#méthode-n1--clés-ssh)
@@ -243,105 +303,6 @@ Source : [Se connecter en SSH par échange de clés SSH - LeCrabe.info](https://
 #### [Méthode N°2 : mot de passe](#méthode-n2--mot-de-passe)
 
 Je vous conseille de lire le début du [tutoriel pour apprendre à vous connecter à SSH](https://mondedie.fr/d/11708).
-
-### [Autre configuration](#autre-configuration)
-
-On met à jour notre fichier *sources.list* :
-
-`nano --backup /etc/apt/sources.list`
-
-On copie / colle :
-
-```sh
-deb http://deb.debian.org/debian trixie main contrib non-free-firmware
-deb http://security.debian.org/debian-security trixie-security main contrib non-free-firmware
-deb http://deb.debian.org/debian trixie-updates main contrib non-free-firmware
-```
-
-On met à jour les paquets et on installe [nano](https://doc.ubuntu-fr.org/nano) (éditeur de texte) et [sudo](https://doc.ubuntu-fr.org/sudo) (permet à un utilisateur normal d’exécuter des commandes en tant que super-utilisateur (ou « root »)).
-
-*Ces deux logiciels ne sont pas installés par défaut sur certains VPS, cela dépend du fournisseur et de la distribution, donc pour éviter tout problème, on installe, s’ils sont déjà présents sur le serveur, ça ne changera rien.*
-
-`apt update && apt install apt-transport-https lsb-release ca-certificates nano sudo wget`
-
-On re-met à jour le serveur :
-
-`apt update && apt upgrade -y`
-
-On crée notre utilisateur principal :
-
-`adduser salameche`
-
-Pour plus de clarté dans ce tutoriel, j’utiliserai comme nom d’utilisateur : **salameche**
-
-Une fois notre utilisateur créé, on l’ajoute au groupe « *sudo* », cela permettra d’exécuter les commandes « *root* », sans être « *root* », cela améliore grandement la sécurité et évitera de faire des bêtises :
-
-`adduser salameche sudo`
-
-La sortie doit renvoyer :
-
-```sh
-Adding user `salameche' to group `sudo' ...
-Adding user salameche to group sudo
-Done.
-```
-
-Une fois l’utilisateur ajouté au groupe « *sudo* », on se connecte sur notre compte utilisateur « *salameche* » :
-
-`su salameche`
-
-On paramètre / sécurise SSH :
-
-`sudo nano /etc/ssh/sshd_config`
-
-On change le port SSH :
-
-`Port _PORT_`
-
-C’est une forme de sécurité simple, mais étonnamment efficace.
-
-Les serveurs utilisent généralement le port 22 pour se connecter à SSH, donc il est moins susceptible d’être trouvé par des robots qui analysent les adresses IP à la recherche de mot de passe faible sur les comptes par défaut. Si vous numérisez tout le réseau, vous ne pouvez pas vous permettre de vérifier tous les ports possibles (65 535 ports disponibles) pour trouver le serveur SSH.
-
-Cependant, si quelqu’un vous ciblera activement, cela ne fournit aucun bénéfice, car une simple analyse *nmap* unique révèlera le port sur lequel **SSH** fonctionne réellement (on utilisera [PortSentry](PortSentry.md) pour bloquer ces attaques, voir plus bas).
-
-- **Le port doit être compris entre 0-65535**
-- **Le port utiliser ne doit pas être déjà utilisé par une application**
-
-On désactive la connexion root en SSH :
-
-`PermitRootLogin no`
-
-Nous n’utiliserons pas le protocole [FTP](https://fr.wikipedia.org/wiki/File_Transfer_Protocol), cela pour des raisons évidentes de sécurités, mais [sFTP](https://fr.wikipedia.org/wiki/SSH_File_Transfer_Protocol).
-
-On commente et / ou supprime cette ligne :
-
-`#Subsystem sftp /usr/lib/openssh/sftp-server`
-
-On ajoute en dessous :
-
-`Subsystem sftp internal-sftp`
-
-**internal-sftp** est recommandé pour les scénarios où la sécurité et l’isolation sont importantes, comme le chrooting des utilisateurs vers un répertoire spécifique.*
-
-À la fin de la page, on ajoute : (on vérifie que les paramètres ne sont pas présents pour éviter les doublons)
-
-```sh
-UseDNS no
-UsePAM yes
-
-DebianBanner no
-
-AllowUsers salameche
-```
-
-- **UseDNS** : par défaut, le serveur cherche à établir la résolution DNS inverse depuis votre IP. Cette requête peut être assez longue, c’est pour cela que nous désactivons cette fonctionnalité, plutôt inutile
-- **UsePAM** : PAM doit être désactivé si vous utilisez des clés d’authentifications, ce qui n’est pas notre cas, donc il doit être activé
-- **DebianBanner** : permet d’éviter que le serveur SSH n’affiche la distribution Linux Ubuntu ou Debian
-- **AllowUsers** : ajoute les utilisateurs autorisés à se connecter à SSH, pour notre cas, on ajoutera simplement « *salameche* »
-
-On quitte et on redémarre SSH :
-
-`sudo systemctl restart sshd`
 
 ### [(Facultatif) Double Authentification avec Google Authenticator PAM module](#facultatif-double-authentification-avec-google-authenticator-pam-module)
 
@@ -449,6 +410,58 @@ On quitte et on redémarre SSH :
 `sudo systemctl restart sshd`
 
 ### [Configuration Debian](#configuration-debian)
+
+#### [sources.list](#sources-list)
+
+On met à jour notre fichier *sources.list* :
+
+`nano --backup /etc/apt/sources.list`
+
+On copie / colle :
+
+```sh
+deb http://deb.debian.org/debian trixie main contrib non-free-firmware
+deb http://security.debian.org/debian-security trixie-security main contrib non-free-firmware
+deb http://deb.debian.org/debian trixie-updates main contrib non-free-firmware
+```
+
+On met à jour :
+
+`sudo apt update`
+
+#### [Les Logiciels](#les-logiciels)
+
+On met à jour les paquets et on installe [nano](https://doc.ubuntu-fr.org/nano) (éditeur de texte) et [sudo](https://doc.ubuntu-fr.org/sudo) (permet à un utilisateur normal d’exécuter des commandes en tant que super-utilisateur (ou « root »)).
+
+*Ces deux logiciels ne sont pas installés par défaut sur certains VPS, cela dépend du fournisseur et de la distribution, donc pour éviter tout problème, on installe, s’ils sont déjà présents sur le serveur, ça ne changera rien.*
+
+`apt update && apt install apt-transport-https lsb-release ca-certificates nano sudo wget`
+
+On re-met à jour le serveur :
+
+`apt update && apt upgrade -y`
+
+On crée notre utilisateur principal :
+
+`adduser salameche`
+
+Pour plus de clarté dans ce tutoriel, j’utiliserai comme nom d’utilisateur : **salameche**
+
+Une fois notre utilisateur créé, on l’ajoute au groupe « *sudo* », cela permettra d’exécuter les commandes « *root* », sans être « *root* », cela améliore grandement la sécurité et évitera de faire des bêtises :
+
+`adduser salameche sudo`
+
+La sortie doit renvoyer :
+
+```sh
+Adding user `salameche' to group `sudo' ...
+Adding user salameche to group sudo
+Done.
+```
+
+Une fois l’utilisateur ajouté au groupe « *sudo* », on se connecte sur notre compte utilisateur « *salameche* » :
+
+`su salameche`
 
 On installe / désinstalle quelques logiciels pour la pratique et la sécurité, on recharge le cache de recherche et on met les liens symboliques à jour :
 
