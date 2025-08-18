@@ -24,8 +24,8 @@ favicon: /assets/img/favicon-tor.svg
   - [Quelques règles importantes](#quelques-règles-importantes)
 - [Configuration du serveur](#configuration-du-serveur)
   - [Configuration Debian](#configuration-debian)
-    - [sources.list](#sources-list)
-    - [Les Logiciels](#les-logiciels)
+    - [sources.list](#sourceslist)
+    - [Les paquets](#les-paquets)
   - [SSH](#ssh)
     - [Configuration SSH](#configuration-ssh)
     - [Authentification SSH](#authentification-ssh)
@@ -411,7 +411,7 @@ On quitte et on redémarre SSH :
 
 ### [Configuration Debian](#configuration-debian)
 
-#### [sources.list](#sources-list)
+#### [sources.list](#sourceslist)
 
 On met à jour notre fichier *sources.list* :
 
@@ -420,16 +420,25 @@ On met à jour notre fichier *sources.list* :
 On copie / colle :
 
 ```sh
-deb http://deb.debian.org/debian trixie main contrib non-free-firmware
-deb http://security.debian.org/debian-security trixie-security main contrib non-free-firmware
-deb http://deb.debian.org/debian trixie-updates main contrib non-free-firmware
+deb https://deb.debian.org/debian trixie main contrib non-free-firmware
+deb https://security.debian.org/debian-security trixie-security main contrib non-free-firmware
+deb https://deb.debian.org/debian trixie-updates main contrib non-free-firmware
 ```
+
+- **main** : logiciels 100% libres selon les critères Debian
+- **contrib** : logiciels libres qui dépendent de paquets non libres (p. ex. nécessitent un firmware non libre pour fonctionner)
+- **non-free-firmware** : section spéciale dédiée aux firmwares redistribuables mais non libres, utiles notamment pour cartes Wi‑Fi, GPU, etc. (*séparée de non-free depuis Debian 12 pour mieux isoler ces blobs*)
+- **trixie-updates** : « pocket » des mises à jour dites **stable-updates**
+
+**Ligne 1** : paquets de base de Trixie
+**Ligne 2** : correctifs de sécurité pour Trixie
+**Ligne 3** : mises à jour urgentes non-sécurité pour Trixie
 
 On met à jour :
 
 `sudo apt update`
 
-#### [Les Logiciels](#les-logiciels)
+#### [Les paquets](#les-paquets)
 
 On met à jour les paquets et on installe [nano](https://doc.ubuntu-fr.org/nano) (éditeur de texte) et [sudo](https://doc.ubuntu-fr.org/sudo) (permet à un utilisateur normal d’exécuter des commandes en tant que super-utilisateur (ou « root »)).
 
