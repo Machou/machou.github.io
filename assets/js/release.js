@@ -38,8 +38,7 @@ function normalizeTokens(tokens) {
         if (/^multi$/i.test(t)) return "MULTi";
         if (/^vostfr$/i.test(t)) return "VOSTFR";
 
-        const mVF = /^vf(f)?(2)?$/i.exec(t);
-        if (mVF) return `VF${mVF[2] ? "2" : ""}`;
+        if (/^vff?2?$/i.test(t)) return "VF";
 
         if (/^vfi$/i.test(t)) return "VFi";
         if (/^vo$/i.test(t)) return "VO";
@@ -47,7 +46,7 @@ function normalizeTokens(tokens) {
         if (/^hdr$/i.test(t)) return "HDR";
         if (/^dv$/i.test(t)) return "DV";
 
-        if (/^10[\s-]?Bit$/i.test(t)) return "10bit";
+		if (/^10[\s-]?Bit$/i.test(t)) return "10bit";
         if (/^hevc$/i.test(t)) return "HEVC";
 
         return t;
@@ -85,33 +84,11 @@ function cleanRelease(input) {
 
     base = base.replace(/\s*-\s*([A-Za-z0-9._]+)$/u, "");
 
-    // let s = base.replace(/[._]/g, (ch, i) => {
-    //     if (ch !== '.') return ' ';
-    //     const prev = base[i - 1], next = base[i + 1], next2 = base[i + 2], next3 = base[i + 3];
-    //     if (i > 0 && /\d/.test(prev) && /\d/.test(next)) return '.';
-    //     if ((prev === 'H' || prev === 'h') && next === '2' && next2 === '6' && (next3 === '4' || next3 === '5')) return '.';
-    //     return ' ';
-    // }).replace(/\s+/g, ' ').trim();
-
     let s = base.replace(/[._]/g, (ch, i) => {
         if (ch !== '.') return ' ';
-
-        const prev = base[i - 1];
-        const next = base[i + 1];
-        const next2 = base[i + 2];
-        const next3 = base[i + 3];
-
-        // Conserver pour H.264 / H.265
-        if ((prev === 'H' || prev === 'h') && next === '2' && next2 === '6' && (next3 === '4' || next3 === '5')) {
-            return '.';
-        }
-
-        // Conserver UNIQUEMENT pour 5.1 / 7.1 (audio)
-        if ((prev === '5' || prev === '7') && next === '1') {
-            return '.';
-        }
-
-        // Sinon, remplacer par espace
+        const prev = base[i - 1], next = base[i + 1], next2 = base[i + 2], next3 = base[i + 3];
+        if (i > 0 && /\d/.test(prev) && /\d/.test(next)) return '.';
+        if ((prev === 'H' || prev === 'h') && next === '2' && next2 === '6' && (next3 === '4' || next3 === '5')) return '.';
         return ' ';
     }).replace(/\s+/g, ' ').trim();
 
