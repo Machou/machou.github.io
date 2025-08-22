@@ -37,13 +37,14 @@ function normalizeTokens(tokens) {
 
         if (/^multi$/i.test(t)) return "MULTi";
         if (/^vostfr$/i.test(t)) return "VOSTFR";
-        if (/^vf$/i.test(t)) return "VF";
+        if (/^vff?2?$/i.test(t)) return "VF";
+        if (/^vfi$/i.test(t)) return "VFi";
         if (/^vo$/i.test(t)) return "VO";
 
         if (/^hdr$/i.test(t)) return "HDR";
         if (/^dv$/i.test(t)) return "DV";
 
-        if (/^10[- ]?Bit$/i.test(t)) return "10bit";
+		if (/^10[\s-]?Bit$/i.test(t)) return "10bit";
         if (/^hevc$/i.test(t)) return "HEVC";
 
         return t;
