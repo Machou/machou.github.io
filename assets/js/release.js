@@ -37,7 +37,9 @@ function normalizeTokens(tokens) {
 
         if (/^multi$/i.test(t)) return "MULTi";
         if (/^vostfr$/i.test(t)) return "VOSTFR";
+
         if (/^vff?2?$/i.test(t)) return "VF";
+
         if (/^vfi$/i.test(t)) return "VFi";
         if (/^vo$/i.test(t)) return "VO";
 
