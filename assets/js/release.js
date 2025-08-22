@@ -43,6 +43,7 @@ function normalizeTokens(tokens) {
         if (/^hdr$/i.test(t)) return "HDR";
         if (/^dv$/i.test(t)) return "DV";
 
+        if (/^10[- ]?Bit$/i.test(t)) return "10bit";
         if (/^hevc$/i.test(t)) return "HEVC";
 
         return t;
@@ -115,7 +116,6 @@ function cleanRelease(input) {
     return result.replace(/\s+(\.[A-Za-z0-9]{2,5})$/, "$1");
 }
 
-/* --- wiring DOM propre --- */
 const inputEl = document.querySelector('#release');
 const outEl = document.getElementById('out');
 
@@ -131,5 +131,5 @@ function render() {
 }
 
 inputEl.addEventListener('input', render);
-render(); // initial
+render();
 window.cleanRelease = cleanRelease;
