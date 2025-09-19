@@ -25,6 +25,12 @@ favicon: /assets/img/favicon-html.png
 				<input type="text" name="rls" class="form-control form-control-lg" id="release" placeholder="Casino.1995.FRENCH.1080p.WEB-DL.H264-Slay3R.mkv">
 			</div>
 
+			<script>
+			document.querySelector('#release').addEventListener('click', function() {
+				this.select();
+			});
+			</script>
+
 			<pre class="border rounded mb-0 px-3 py-4 fs-5 user-select-all" id="out"></pre>
 		</div>
 	</div>
