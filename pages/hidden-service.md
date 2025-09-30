@@ -951,7 +951,7 @@ Nous n’allons pas installer de gestionnaire de base de données à propremment
 Voici comment on peut utiliser **Adminer** :
 
 ```sh
-fichier=$(mktemp -u adminer_XXXXXXXXXXXXXXXXXXXX.php) && wget -O "$fichier" "https://github.com/vrana/adminer/releases/download/v5.4.0/adminer-5.4.0.php" && echo "Fichier Adminer : $fichier"
+fichier=$(mktemp -u adminer_XXXXXXXXXXXXXXXXXXXX.php) && wget -O "$fichier" "https://github.com/vrana/adminer/releases/download/v5.4.1/adminer-5.4.1.php" && echo "Fichier Adminer : $fichier"
 ```
 
 Lorsque vous avez terminé, **veuillez supprimer** le fichier **adminer_XXXXXXXXXXXXXXXXXXXX.php** !
