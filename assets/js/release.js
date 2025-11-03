@@ -20,7 +20,6 @@ function titleCase(str) {
 
 function normalizeTokens(tokens) {
     return tokens.map((t) => {
-        // Résolutions
         if (/^2160p$/i.test(t)) return "2160p";
         if (/^1080p$/i.test(t)) return "1080p";
         if (/^720p$/i.test(t)) return "720p";
@@ -28,7 +27,6 @@ function normalizeTokens(tokens) {
         if (/^1080i/i.test(t)) return "1080p";
         if (/^720i$/i.test(t)) return "720p";
 
-        // Codecs
         if (/^h\.?265$/i.test(t)) return "h265";
         if (/^h\.?264$/i.test(t)) return "h264";
         if (/^x265$/i.test(t)) return "x265";
@@ -36,38 +34,24 @@ function normalizeTokens(tokens) {
         if (/^hevc$/i.test(t)) return "HEVC";
         if (/^hsbs$/i.test(t)) return "HSBS";
 
-        // Audio
-        if (/^h\.?265$/i.test(t)) return "h265";
-        if (/^h\.?264$/i.test(t)) return "h264";
-        if (/^ac3$/i.test(t)) return "AC3";
-        if (/^eac3$/i.test(t)) return "EAC3";
-        if (/^x264$/i.test(t)) return "x264";
-        if (/^hevc$/i.test(t)) return "HEVC";
-        if (/^hsbs$/i.test(t)) return "HSBS";
-
-        // WEB
-        if (/^web(?:rip)?$/i.test(t)) return "WEBRip";
+        if (/^web(rip)?$/i.test(t)) return "WEBRip";
         if (/^web-?dl$/i.test(t)) return "WEBRip";
         if (/^we?bdl$/i.test(t)) return "WEBRip";
 
-        // Blu-ray : supprimé (souvent redondant)
         if (/^blu[- ]?ray$/i.test(t)) return "";
 
-        // Langues / pistes
         if (/^multi$/i.test(t)) return "MULTi";
         if (/^vostfr$/i.test(t)) return "VOSTFR";
-        if (/^vff$/i.test(t)) return "VFF";
+
+        if (/^vff?2?$/i.test(t)) return "VFF";
+
         if (/^vfi$/i.test(t)) return "VFi";
         if (/^vo$/i.test(t)) return "VO";
 
-        // Divers
-        if (/^10[\s-]?bit$/i.test(t)) return "10bit";
         if (/^hdr$/i.test(t)) return "HDR";
-        if (/^sdr$/i.test(t)) return "SDR";
         if (/^dv$/i.test(t)) return "DV";
-        if (/^hsbs$/i.test(t)) return "HSBS";
-        if (/^3d$/i.test(t)) return "3D";
-        if (/^integrale$/i.test(t)) return "iNTEGRALE";
+
+		if (/^10[\s-]?Bit$/i.test(t)) return "10bit";
 
         return t;
     });
@@ -82,6 +66,7 @@ function mergeDD(tokens) {
         if (/^dd$/i.test(t) && /^(5\.1|7\.1)$/i.test(n || '')) { out.push(`DD${n}`); i++; continue; }
         out.push(t);
     }
+
     return out;
 }
 
@@ -92,6 +77,7 @@ function mergeWEB(tokens) {
         if (/^web$/i.test(t) && /^dl$/i.test(n || '')) { out.push("WEBRip"); i++; continue; }
         out.push(t);
     }
+
     return out;
 }
 
@@ -110,7 +96,9 @@ function cleanRelease(input) {
         if (i > 0 && /\d/.test(prev) && /\d/.test(next)) return '.';
         if ((prev === 'H' || prev === 'h') && next === '2' && next2 === '6' && (next3 === '4' || next3 === '5')) return '.';
         return ' ';
-    }).replace(/\s+/g, ' ').trim();
+    })
+    .replace(/\s+/g, ' ')
+    .trim();
 
     const yearRegex = /\b(19|20)\d{2}\b/;
     const yearMatch = s.match(yearRegex);
