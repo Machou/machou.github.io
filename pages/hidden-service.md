@@ -70,14 +70,14 @@ favicon: /assets/img/favicon-tor.svg
 
 Dans ce tutoriel, nous tenterons de garder les logiciels à jour avec leurs dernières versions. Voici la liste actuelle :
 
-- [Debian](https://www.debian.org/) — [version 13.0, liste des changements](https://www.debian.org/News/2025/20250809)
-- [Apache2](https://httpd.apache.org/) — [version 2.4.62, liste des changements](https://httpd.apache.org/security/vulnerabilities_24.html#2.4.62)
-- [nginx](https://nginx.org/) — [version 1.23.3, liste des changements](https://nginx.org/en/CHANGES-1.26)
-- [PHP](https://www.php.net/) — [version 8.4.11, liste des changements](https://www.php.net/ChangeLog-8.php#8.4.11)
-- [MariaDB](https://mariadb.org/) — [version 11.8.2, liste des changements](https://mariadb.com/kb/en/mariadb-11-8-2-release-notes/)
+- [Debian](https://www.debian.org/) — [version 13.1, liste des changements](https://www.debian.org/News/2025/20250906)
+- [Apache2](https://httpd.apache.org/) — [version 2.4.65, liste des changements](https://httpd.apache.org/security/vulnerabilities_24.html#2.4.65)
+- [nginx](https://nginx.org/) — [version 1.26.3, liste des changements](https://nginx.org/en/CHANGES-1.26)
+- [PHP](https://www.php.net/) — [version 8.4.14, liste des changements](https://www.php.net/ChangeLog-8.php#8.4.14)
+- [MariaDB](https://mariadb.org/) — [version 11.8.3, liste des changements](https://mariadb.com/docs/release-notes/community-server/mariadb-11-8-series/mariadb-11.8.3-release-notes)
 - [Tor](https://www.torproject.org/) — [version 0.4.8.16, liste des changements](https://gitlab.torproject.org/tpo/core/tor/-/commits/tor-0.4.8.16)
 
-*Dernière mise à jour le 9 août 2025*
+*Dernière mise à jour le 4 novembre 2025*
 
 Nous allons configurer notre serveur, qui sera basé sur Apache2, PHP et SQL. Ce type de serveur est plus communément appelé **LAMP**. LAMP est un acronyme désignant un ensemble de logiciels libres permettant de construire des serveurs de sites web. L’acronyme original se réfère aux logiciels suivants :
 
