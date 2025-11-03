@@ -15,7 +15,7 @@ favicon: /assets/img/favicon-html.png
 	</ol>
 </nav>
 
-# [Standardiser ma Release](#release)
+# [Standardiser ma Release](https://machou.github.io/release)
 
 <main class="container">
 	<div class="row">
