@@ -33,12 +33,12 @@ function normalizeTokens(tokens) {
         if (/^web-?dl$/i.test(t)) return "WEBRip";
         if (/^we?bdl$/i.test(t)) return "WEBRip";
 
-        if (/^blu[- ]?ray$/i.test(t)) return "BluRay";
+        if (/^blu[- ]?ray$/i.test(t)) return "";
 
         if (/^multi$/i.test(t)) return "MULTi";
         if (/^vostfr$/i.test(t)) return "VOSTFR";
 
-        if (/^vff?2?$/i.test(t)) return "VF";
+        if (/^vff$/i.test(t)) return "VFF";
 
         if (/^vfi$/i.test(t)) return "VFi";
         if (/^vo$/i.test(t)) return "VO";
