@@ -90,15 +90,45 @@ function cleanRelease(input) {
 
     base = base.replace(/\s*-\s*([A-Za-z0-9._]+)$/u, "");
 
-    let s = base.replace(/[._]/g, (ch, i) => {
-        if (ch !== '.') return ' ';
-        const prev = base[i - 1], next = base[i + 1], next2 = base[i + 2], next3 = base[i + 3];
-        if (i > 0 && /\d/.test(prev) && /\d/.test(next)) return '.';
-        if ((prev === 'H' || prev === 'h') && next === '2' && next2 === '6' && (next3 === '4' || next3 === '5')) return '.';
-        return ' ';
-    })
-    .replace(/\s+/g, ' ')
-    .trim();
+    // let s = base.replace(/[._]/g, (ch, i) => {
+    //     if (ch !== '.') return ' ';
+    //     const prev = base[i - 1], next = base[i + 1], next2 = base[i + 2], next3 = base[i + 3];
+    //     if (i > 0 && /\d/.test(prev) && /\d/.test(next)) return '.';
+    //     if ((prev === 'H' || prev === 'h') && next === '2' && next2 === '6' && (next3 === '4' || next3 === '5')) return '.';
+    //     return ' ';
+    // })
+    // .replace(/\s+/g, ' ')
+    // .trim();
+// ... dans cleanRelease(), remplacez le .replace(/[._]/g, ...) par ceci :
+	let s = base.replace(/[._]/g, (ch, i) => {
+		if (ch !== '.') return ' ';
+
+		const p2 = base[i - 2];
+		const p1 = base[i - 1];
+		const n1 = base[i + 1];
+		const n2 = base[i + 2];
+		const n3 = base[i + 3];
+
+		// Conserver pour h.264 / h.265
+		if ((p1 === 'H' || p1 === 'h') && n1 === '2' && n2 === '6' && (n3 === '4' || n3 === '5')) {
+			return '.';
+		}
+
+		// Conserver uniquement les décimaux 1 chiffre . 1 chiffre (ex: 5.1, 7.1, 2.0)
+		const prevIsDigit = /\d/.test(p1);
+		const nextIsDigit = /\d/.test(n1);
+		const prevPrevIsDigit = /\d/.test(p2 || '');
+		const nextNextIsDigit = /\d/.test(n2 || '');
+
+		if (prevIsDigit && nextIsDigit && !prevPrevIsDigit && !nextNextIsDigit) {
+			return '.';
+		}
+
+		// Sinon, espace
+		return ' ';
+	})
+	.replace(/\s+/g, ' ')
+	.trim();
 
     const yearRegex = /\b(19|20)\d{2}\b/;
     const yearMatch = s.match(yearRegex);
