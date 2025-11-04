@@ -43,7 +43,8 @@ function normalizeTokens(tokens) {
         if (/^multi$/i.test(t)) return "MULTi";
         if (/^vostfr$/i.test(t)) return "VOSTFR";
 
-        if (/^vff?2?$/i.test(t)) return "VFF";
+        if (/^vff$/i.test(t)) return "VFF";
+        if (/^vf2$/i.test(t)) return "VF2";
 
         if (/^vfi$/i.test(t)) return "VFi";
         if (/^vo$/i.test(t)) return "VO";
@@ -90,16 +91,6 @@ function cleanRelease(input) {
 
     base = base.replace(/\s*-\s*([A-Za-z0-9._]+)$/u, "");
 
-    // let s = base.replace(/[._]/g, (ch, i) => {
-    //     if (ch !== '.') return ' ';
-    //     const prev = base[i - 1], next = base[i + 1], next2 = base[i + 2], next3 = base[i + 3];
-    //     if (i > 0 && /\d/.test(prev) && /\d/.test(next)) return '.';
-    //     if ((prev === 'H' || prev === 'h') && next === '2' && next2 === '6' && (next3 === '4' || next3 === '5')) return '.';
-    //     return ' ';
-    // })
-    // .replace(/\s+/g, ' ')
-    // .trim();
-// ... dans cleanRelease(), remplacez le .replace(/[._]/g, ...) par ceci :
 	let s = base.replace(/[._]/g, (ch, i) => {
 		if (ch !== '.') return ' ';
 
@@ -114,7 +105,6 @@ function cleanRelease(input) {
 			return '.';
 		}
 
-		// Conserver uniquement les décimaux 1 chiffre . 1 chiffre (ex: 5.1, 7.1, 2.0)
 		const prevIsDigit = /\d/.test(p1);
 		const nextIsDigit = /\d/.test(n1);
 		const prevPrevIsDigit = /\d/.test(p2 || '');
@@ -124,7 +114,6 @@ function cleanRelease(input) {
 			return '.';
 		}
 
-		// Sinon, espace
 		return ' ';
 	})
 	.replace(/\s+/g, ' ')
