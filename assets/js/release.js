@@ -33,24 +33,26 @@ function normalizeTokens(tokens) {
         if (/^x264$/i.test(t)) return "x264";
         if (/^hevc$/i.test(t)) return "HEVC";
         if (/^hsbs$/i.test(t)) return "HSBS";
+        if (/^av1$/i.test(t)) return "AV1";
 
         if (/^web(rip)?$/i.test(t)) return "WEBRip";
         if (/^web-?dl$/i.test(t)) return "WEBRip";
         if (/^we?bdl$/i.test(t)) return "WEBRip";
 
         if (/^blu[- ]?ray$/i.test(t)) return "";
+        if (/^opus$/i.test(t)) return "";
 
         if (/^multi$/i.test(t)) return "MULTi";
         if (/^vostfr$/i.test(t)) return "VOSTFR";
 
         if (/^vff$/i.test(t)) return "VFF";
         if (/^vf2$/i.test(t)) return "VF2";
-
         if (/^vfi$/i.test(t)) return "VFi";
         if (/^vo$/i.test(t)) return "VO";
 
         if (/^hdr$/i.test(t)) return "HDR";
         if (/^dv$/i.test(t)) return "DV";
+        if (/^version longue$/i.test(t)) return "VERSiON LONGUE";
 
 		if (/^10[\s-]?Bit$/i.test(t)) return "10bit";
 
