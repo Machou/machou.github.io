@@ -25,7 +25,7 @@ function parseReleaseName(name)
     baseName = baseName.replace(/\./g, ' ');
 
     // 4. Supprimer les mots clés
-    baseName = baseName.replace(/\b(bluray|blu-ray)\b/gi, '');
+    baseName = baseName.replace(/\b(bluray|blu-ray|blu ray)\b/gi, '');
 
     // 5. Standardiser les résolutions
     baseName = baseName.replace(/\b(2160|1080|720)[Pi]\b/gi, '$1p');
