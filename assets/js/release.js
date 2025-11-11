@@ -31,7 +31,7 @@ function parseReleaseName(name)
     baseName = baseName.replace(/\b(2160|1080|720)[Pi]\b/gi, '$1p');
 
     // 6. Standardiser WEB/WEBDL -> WEBRip
-    baseName = baseName.replace(/\b(WEB|WEB-?DL)\b/gi, 'WEBRip');
+    baseName = baseName.replace(/\b(WEB|WEB-?DL|WEBRiP)\b/gi, 'WEBRip');
 
     // 7. Standardiser les codecs (H264/X264 -> h264/x264, x 264 -> x264)
     // Remplace les codecs majuscules en minuscules
