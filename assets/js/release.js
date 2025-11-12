@@ -1,12 +1,8 @@
 const inputElement = document.querySelector('#release');
 const outputElement = document.querySelector('#out');
 
-/**
- * Fonction principale de parsing de la release
- * @param {string} name - Le nom de la release brut
- * @returns {string} - Le nom parsé et formaté
- */
-function parseReleaseName(name) {
+function parseReleaseName(name)
+{
         if (!name) {
             return "";
         }
@@ -42,7 +38,7 @@ function parseReleaseName(name) {
         baseName = baseName.replace(/<DECIMAL_DOT>/g, '.');
 
         // 7. Supprimer les mots clés (Bluray, etc.)
-        baseName = baseName.replace(/\b(Bluray|blu-Ray)\b/gi, '');
+        baseName = baseName.replace(/\b(bluray|blu-ray|blu ray)\b/gi, '');
 
         // 8. Standardiser les résolutions
         baseName = baseName.replace(/\b(2160|1080|720)[Pi]\b/gi, '$1p');
