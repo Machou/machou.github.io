@@ -1,3 +1,6 @@
+const inputElement = document.querySelector('#release');
+const outputElement = document.querySelector('#out');
+
 /**
  * Fonction principale de parsing de la release
  * @param {string} name - Le nom de la release brut
@@ -70,4 +73,13 @@ function parseReleaseName(name) {
 
     // 12. Ré-assembler le nom de base et l'extension (anciennement étape 11)
     return baseName + extension;
+}
+
+if (inputElement && outputElement) {
+    inputElement.addEventListener('input', function() {
+        const rawText = this.value;
+        const parsedText = parseReleaseName(rawText);
+
+        outputElement.textContent = parsedText;
+    });
 }
