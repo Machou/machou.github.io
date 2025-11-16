@@ -327,7 +327,7 @@ On lance la commande :
 
 Ce qui donne :
 
-```bash
+```sh
 Do you want authentication tokens to be time-based (y/n) y
 Warning: pasting the following URL into your browser exposes the OTP secret to Google:
   https://www.google.com/chart?chs=200x200&chld=M|0&cht=qr&chl=otpauth://totp/root@Localhost%3Fsecret%3DKTWW75POHG75HQYVKGCEYAGBK4%26issuer%3DLocalhost
@@ -338,7 +338,7 @@ Enter code from app (-1 to skip):
 
 Soit on capture le QR Code ou on entre le code secret (`KTWW75POHG75HQYVKGCEYAGBK4`) dans notre application pour générer notre code TOTP :
 
-```bash
+```sh
 Enter code from app (-1 to skip): 457816
 Code confirmed
 Your emergency scratch codes are:
@@ -357,7 +357,7 @@ Voici quelques application pour gérer les codes TOTP :
 
 Une fois le code TOTP confirmé, **sauvegardez vos codes de secours**, puis répondez aux questions selon vos besoins :
 
-```bash
+```sh
 Do you want me to update your "/root/.google_authenticator" file? (y/n) y
 
 Do you want to disallow multiple uses of the same authentication
@@ -400,7 +400,7 @@ Ensuite on modifie le fichier de configuration principal du démon serveur **Ope
 
 On ajoute / modifie :
 
-```bash
+```sh
 ChallengeResponseAuthentication yes
 KbdInteractiveAuthentication yes
 ```
@@ -1294,7 +1294,7 @@ On peut aussi créer un fichier qui s’exécutera tous les jours à minuit :
 
 On y ajoute :
 
-```bash
+```sh
 #!/bin/bash
 
 # Supprimer tous les fichiers dans /var/log de manière sécurisée
