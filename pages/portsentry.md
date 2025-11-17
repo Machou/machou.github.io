@@ -85,117 +85,75 @@ On ajoute l’IP de notre serveur pour éviter de se faire bannir :
 
 à la fin du fichier, on y ajoute notre IP.
 
-On configure PortSentry :
+Ensuite, on active le mode de détection avancé ; PortSentry propose deux modes : simple et avancé. Le mode avancé est recommandé, car il ne « ferme » pas un port en apparence seulement ; il surveille directement les paquets entrants.
 
-`sudo nano /etc/portsentry/portsentry.conf`
-
-Ces options vous permettent d’activer les réponses automatiques pour les protocoles TCP / UDP. Cela est utile si vous souhaitez afficher des avertissements pour les connexions sur un protocole particulier (par exemple, bloquer TCP mais pas UDP). Pour éviter une attaque par déni de service (DoS) contre UDP et la détection de scan furtif pour TCP, il peut être préférable de désactiver le blocage tout en maintenant l’avertissement activé.
-
-La troisième option permet d’exécuter uniquement une commande externe en cas de scan pour lancer un script de notification sans interrompre la route. Cela peut être utile pour les administrateurs qui veulent bloquer TCP tout en recevant seulement des alertes.
-
-* 0 = ne pas bloquer les scans TCP / UDP
-* 1 = bloquer les scans TCP / UDP
-* 2 = exécuter uniquement la commande externe (KILL_RUN_CMD)
-
-On change :
-
-```sh
-BLOCK_UDP="0"
-BLOCK_TCP="0"
-```
-
-En :
-
-```sh
-BLOCK_UDP="1"
-BLOCK_TCP="1"
-```
-
-On vérifie que ces options sont commentées :
-
-`KILL_ROUTE="/sbin/route add -host $TARGET$ reject"`
-
-et
-
-`KILL_HOSTS_DENY="ALL: $TARGET$ : DENY"`
-
-*à chercher dans le fichier*
-
-On change :
-
-`#KILL_RUN_CMD_FIRST = "0"`
-
-en
-
-`KILL_RUN_CMD_FIRST = "1"`
-
-Plus loin, on ajoute la commande :
-
-`KILL_RUN_CMD="/sbin/iptables -I INPUT -s $TARGET$ -j DROP && /sbin/iptables -I INPUT -s $TARGET$ -m limit --limit 3/minute --limit-burst 5 -j LOG --log-level debug --log-prefix 'Portsentry: dropping: '"`
-
-On changé également :
-
-`SCAN_TRIGGER="0"`
-
-en
-
-`SCAN_TRIGGER="1"`
-
-Il y a deux façons d’utiliser PortSentry.
-
-* On définit la liste des ports TCP et UDP à écouter depuis **UDP_PORTS** et **TCP_PORTS** du fichier de configuration
-* On laisse PortSentry ouvrir tous les ports disponibles avant le **port 1024**, port défini par défaut dans les paramètres **ADVANCED_PORTS_TCP** et **ADVANCED_PORTS_UDP** du fichier de configuration
-
-On ouvre le fichier de configuration de PortSentry :
-
-`sudo nano /etc/default/portsentry`
-
-On change :
-
-```sh
-TCP_MODE="tcp"
-UDP_MODE="udp"
-```
-
-en
+Dans `/etc/default/portsentry`, activez le mode avancé :
 
 ```sh
 TCP_MODE="atcp"
 UDP_MODE="audp"
 ```
 
-Avec ce changement PortSentry laissera ouvert tous les ports disponibles.
+Puis on configure les actions à effectuer lors d’une détection
 
-`sudo nano /etc/portsentry/portsentry.conf`
+Dans `/etc/portsentry/portsentry.conf`, adaptez les directives importantes.
 
-On modifie dans le fichier de configuration :
-
-```sh
-TCP_MODE="tcp"
-UDP_MODE="udp"
-```
-
-On peut aussi détecter les *Stealth Scan* en modifiant les paramètres aux valeurs suivantes, utile pour détecter les scans de ports furtifs :
+Activation du blocage par iptables :
 
 ```sh
-TCP_MODE="stcp"
-UDP_MODE="sudp"
+BLOCK_UDP="1"
+BLOCK_TCP="1"
+KILL_ROUTE="/sbin/iptables -I INPUT -s $TARGET$ -j DROP"
 ```
 
-On redémarre PortSentry :
+On évite de ce faire bannir, on ajoute / modifie la ligne :
 
-`sudo systemctl restart portsentry`
+`IGNORE_FILE="/etc/portsentry/portsentry.ignore"`
 
-On patiente quelques minutes / heures et on peut déjà constater que PortSentry fait correctement son travail en affichant le fichier des IP bloquées :
+On modifie le fichier **portsentry.ignore** :
 
-`sudo tail -f /etc/hosts.deny`
+```sh
+127.0.0.1
+192.168.0.0/16
+10.0.0.0/8
+mon-ip
+ip-du-serveur
+```
 
-ou
+On active l’écriture des fichiers journaux :
 
-`sudo tail -f /var/lib/portsentry/portsentry.history`
+`SYSLOG_FACILITY="auth"`
 
-*on note que cette commande affiche la date, l’IP ainsi que le port*
+On peut demander à **PortSentry** d’éviter de bloquer certaines IP sensibles (serveur DNS, passerelle, etc.) en les ajoutant dans :
 
-Si vous rencontrez une erreur avec une IP qui a été bannie alors qu’elle ne devrait pas l’être, on peut la retirer :
+`/etc/portsentry/portsentry.ignore.static`
 
-`route del -host IP-PROBLÉMATIQUE reject`
+On active le blocage permanent :
+
+```sh
+HISTORY_FILE="/var/lib/portsentry/portsentry.history"
+BLOCK_FILE="/var/lib/portsentry/portsentry.blocked"
+```
+
+Une fois la configuration terminée, on redémarre **PortSentry** :
+
+```sh
+sudo systemctl restart portsentry
+sudo systemctl enable portsentry
+```
+
+On vérifie qu'il fonctionne :
+
+`sudo systemctl status portsentry`
+
+Pour observer ce que PortSentry bloque :
+
+`sudo iptables -L -n`
+
+Pour surveiller les alertes dans les logs du système :
+
+`sudo journalctl -u portsentry`
+
+ou, selon le mode d’écriture :
+
+`sudo tail -f /var/log/auth.log`
