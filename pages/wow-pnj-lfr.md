@@ -165,9 +165,9 @@ favicon: /assets/img/favicon-wow.svg
 
 ### <i class="fa-solid fa-user"></i> [PnJ pour World of Warcraft : Legion](#-pnj-pour-world-of-warcraft--legion)
 
-| Zone             | Zone              | PnJ                                                       | Point de passage                  |
-| ---------------- | ----------------- | --------------------------------------------------------- | --------------------------------- |
-| **Îles Brisées** | **Dalaran**       | [Archimage Timear](https://www.wowhead.com/fr/npc=111246) | `/way 63.6 55.6 Archimage Timear` |
+| Zone                           | PnJ                                                       | Point de passage                  |
+| ------------------------------ | --------------------------------------------------------- | --------------------------------- |
+| **Îles Brisées** > **Dalaran** | [Archimage Timear](https://www.wowhead.com/fr/npc=111246) | `/way 63.6 55.6 Archimage Timear` |
 {:.table .table-hover .table-wow}
 
 ### [Le Cauchemar d’émeraude](https://www.wowhead.com/fr/zone=8026)
@@ -219,11 +219,11 @@ favicon: /assets/img/favicon-wow.svg
 
 ### <i class="fa-solid fa-user"></i> [PnJ pour World of Warcraft : Battle for Azeroth](#-pnj-pour-world-of-warcraft--battle-for-azeroth)
 
-| Faction                                | Zone               | PnJ                                                                       | Point de passage      |
-| -------------------------------------- | ------------------ | ------------------------------------------------------------------------- | --------------------- |
-| <span class="alliance">Alliance</span> | **Boralus**        | [Kiko « Gardienne des histoires »](https://www.wowhead.com/fr/npc=177193) | `/way 74 13.6 Kiko`   |
-| <span class="horde">Horde</span>       | **Le Grand Sceau** | [Eppu « <Gardien des histoires »](https://www.wowhead.com/fr/npc=177208)  | `/way 69.8 32.6 Eppu` |
-{:.table .table-hover .table-wow}
+| Zone               | PnJ                                                                                                              | Point de passage      |
+| ------------------ | ---------------------------------------------------------------------------------------------------------------- | --------------------- |
+| **Boralus**        | <span class="alliance">Alliance</span> [Kiko « Gardienne des histoires »](https://www.wowhead.com/fr/npc=177193) | `/way 74 13.6 Kiko`   |
+| **Le Grand Sceau** | <span class="horde">Horde</span> [Eppu « <Gardien des histoires »](https://www.wowhead.com/fr/npc=177208)        | `/way 69.8 32.6 Eppu` |
+{:.table .table-hover .table-wow-pnj}
 
 ### [Uldir](https://www.wowhead.com/fr/zone=9389)
 
@@ -275,7 +275,7 @@ favicon: /assets/img/favicon-wow.svg
 | Zone                      | PnJ                                                                        | Point de passage          |
 | ------------------------- | -------------------------------------------------------------------------- | ------------------------- |
 | Ombreterre > **Oribos**   | [Ta'elfar <Commerçant d'histoires>](https://www.wowhead.com/fr/npc=205959) | `/way 42.4 72.2 Ta'elfar` |
-{:.table .table-hover .table-wow}
+{:.table .table-hover .table-wow-pnj}
 
 ### [Château Nathria](https://www.wowhead.com/fr/zone=13224)
 
