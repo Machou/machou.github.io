@@ -24,17 +24,12 @@ h2::before {
 	content: "→ ";
 }
 
-.table-wow td:first-child {
-	width: 30%;
-}
-
-.table-wow td:last-child {
-	width: 70%;
-}
+.table-wow					{ border: 1px solid #eceef0; }
+.table-wow td:first-child	{ width: 30%; }
+.table-wow td:last-child	{ width: 70%; }
 
 .table-wow a {
 	background-color: rgba(13,110,253, 1);
-	border: 1px solid #eceef0;
 	border-radius: 0.375rem;
 	color: rgba(255,255,255, 1) !important;
 	display: inline-block;
