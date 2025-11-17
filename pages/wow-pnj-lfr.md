@@ -56,7 +56,7 @@ favicon: /assets/img/favicon-wow.svg
 - [World of Warcraft : The War Within](#world-of-warcraft--the-war-within) (**PnJ LFR non disponible**)
 - [World of Warcraft : Midnight](#world-of-warcraft--midnight) (**PnJ LFR non disponible**)
 
-# Liste des guides Mamytwink
+## **Liste des guides Mamytwink**
 
 - [Site officiel Mamytwink](https://www.mamytwink.com/)
 - [Guide de Mists of Pandaria sur Mamytwink](https://www.mamytwink.com/mists-of-pandaria/world-of-warcraft-mists-of-pandaria)
