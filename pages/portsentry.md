@@ -18,11 +18,11 @@ favicon: /assets/img/favicon.png
 
 # [PortSentry](comment-utiliser-portsentry)
 
-- [Qu’est ce que PortSentry ?](#quest-ce-que-portsentry-)
+- [Qu’est-ce que PortSentry ?](#quest-ce-que-portsentry-)
 - [Installation de PortSentry](#installation-de-portsentry)
 - [Configuration de PortSentry](#configuration-de-portsentry)
 
-## Qu’est ce que PortSentry ?
+## Qu’est-ce que PortSentry ?
 
 [PortSentry](https://github.com/Perdjesk/portsentry) est un outil de détection et de réponse aux scans de port conçu pour améliorer la sécurité des systèmes en surveillant les connexions réseau suspectes. Il peut identifier les tentatives de scan de port sur un système et réagir en bloquant les adresses IP des attaquants, empêchant ainsi les intrusions potentielles.
 
@@ -184,7 +184,7 @@ UDP_MODE="sudp"
 
 On redémarre PortSentry :
 
-`sudo service portsentry restart`
+`sudo systemctl restart portsentry`
 
 On patiente quelques minutes / heures et on peut déjà constater que PortSentry fait correctement son travail en affichant le fichier des IP bloquées :
 

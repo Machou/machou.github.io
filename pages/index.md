@@ -19,7 +19,7 @@ favicon: /assets/img/favicon.png
 
 # Sommaire
 
-- [Word of Warcraft : PNJ de l’outil Recherche de Raid](/wow-pnj-lfr)
+- [World of Warcraft : PNJ de l’outil Recherche de Raid](/wow-pnj-lfr)
 - [Comment créer un Hidden Service sécurisé de zéro avec Tor sur Debian](/comment-creer-hidden-service)
   - [Tutoriel PortSentry](/comment-utiliser-portsentry)
   - [Tutoriel Fail2ban](/comment-utiliser-fail2ban)

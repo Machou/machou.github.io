@@ -18,12 +18,12 @@ favicon: /assets/img/favicon.png
 
 # [Fail2ban](comment-utiliser-fail2ban)
 
-- [Qu’est ce que Fail2ban ?](#quest-ce-que-fail2ban-)
+- [Qu’est-ce que Fail2ban ?](#quest-ce-que-fail2ban-)
 - [Installation de Fail2ban](#installation-de-fail2ban)
 - [Configuration de Fail2ban](#configuration-de-fail2ban-pour-les-services-actifs)
 - [Configuration avancée](#configuration-avancée)
 
-## Qu’est ce que Fail2ban ?
+## Qu’est-ce que Fail2ban ?
 
 <p class="text-center"><a href="https://i.ibb.co/NmgL9QN/Fail2ban-screenshot.png" data-fancybox="gallerie"><img src="https://i.ibb.co/NmgL9QN/Fail2ban-screenshot.png" class="border rounded img-fluid" alt="Fenêtre Fail2ban" title="Fenêtre Fail2ban"></a></p>
 
@@ -74,11 +74,11 @@ On vérifie que le service fonctionne :
 
 `systemctl status fail2ban`
 
-Nous allons créer et modifier les fichiers de configuration de Fail2ban, mais comme indiqué dans le fichier `/etc/fail2ban/fail2ban.conf`, ce fichier sera probablement remplacé ou amélioré lors d’une mise à jour. De ce fait, nous allons créé des « prisons » dans les fichiers placés dans le dossier `/etc/fail2ban/jail.d`.
+Nous allons créer et modifier les fichiers de configuration de Fail2ban, mais comme indiqué dans le fichier `/etc/fail2ban/fail2ban.conf`, ce fichier sera probablement remplacé ou amélioré lors d’une mise à jour. De ce fait, nous allons créer des « prisons » dans les fichiers placés dans le dossier `/etc/fail2ban/jail.d`.
 
 Le fichier `/etc/fail2ban/jail.conf` peut servir de documentation et les paramètres par défaut sont écrits à l’intérieur.
 
-On va créer un filtre pour gérer la configuration par défaut de tous les filtres actifs et à venir :
+On 																																rer la configuration par défaut de tous les filtres actifs et à venir :
 
 `sudo nano /etc/fail2ban/jail.d/prisons.conf`
 
@@ -86,7 +86,7 @@ On y ajoute :
 
 ```sh
 [DEFAULT]
-ignoreip = 127.0.0.1 192.168.1.0/24 ip-du-serveur mon-ip
+ignoreip = 127.0.0.1/8 ::1 192.168.1.0/24 ip-du-serveur mon-ip
 findtime = 10m
 bantime = 72h
 maxretry = 3
