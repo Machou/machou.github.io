@@ -81,9 +81,10 @@ favicon: /assets/img/favicon-wow.svg
 | **Pandarie** > **Val de l’Éternel printemps**   | [Chroniqueur Han <Conteur de l’outil Raids>](https://www.wowhead.com/fr/npc=80633) | `/way #390 83.0 30.6 Chroniqueur Han` |
 {:.table .table-hover .table-wow-pnj}
 
+
 #### [Caveaux Mogu’shan](https://www.wowhead.com/fr/zone=6125)
 
-|   |   |
+| #### [Caveaux Mogu’shan](https://www.wowhead.com/fr/zone=6125) |
 | -------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | **Gardiens des Mogu’shan** | [La garde de pierre](https://www.wowhead.com/fr/npc=60047) [Feng le Maudit](https://www.wowhead.com/fr/npc=60009) [Gara’jal le Lieur d’esprit](https://www.wowhead.com/fr/npc=60143) |
 | **Le caveau des Mystères** | [Les esprits-rois](https://www.wowhead.com/fr/npc=60708) [Elegon](https://www.wowhead.com/fr/npc=60410) [Volonté de l’empereur](https://www.wowhead.com/fr/npc=60400)                |
