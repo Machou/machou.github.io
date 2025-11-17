@@ -25,6 +25,7 @@ h2::before {
 }
 
 .table-wow					{ border: 1px solid #eceef0; }
+.table-wow th				{ width: 25%; }
 .table-wow td:first-child	{ width: 30%; }
 .table-wow td:last-child	{ width: 70%; }
 
