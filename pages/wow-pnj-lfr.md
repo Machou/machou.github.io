@@ -21,40 +21,40 @@ favicon: /assets/img/favicon-wow.svg
 
 ## **Sommaire**
 
-- [World of Warcraft : Mist of Pandaria](#world-of-warcraft--mists-of-pandaria)
-  - <i class="fa-solid fa-user"></i> [PnJ pour World of Warcraft : Mists of Pandaria](#-pnj-pour-world-of-warcraft--mists-of-pandaria)
+- [Mist of Pandaria](#mists-of-pandaria)
+  - <i class="fa-solid fa-user"></i> [PnJ pour Mists of Pandaria](#-pnj-pour-mists-of-pandaria)
   - [Caveaux Mogu’shan](#caveaux-mogushan)
   - [Cœur de la peur](#cœur-de-la-peur)
   - [Terrasse Printanière](#terrasse-printanière)
   - [Trône du tonnerre](#trône-du-tonnerre)
   - [Siège d’Orgrimmar](#siège-dorgrimmar)
-- [World of Warcraft : Warlords of Draenor](#world-of-warcraft--warlords-of-draenor)
-  - <i class="fa-solid fa-user"></i> [PnJ pour World of Warcraft : Warlords of Draenor](#-pnj-pour-world-of-warcraft--warlords-of-draenor)
+- [Warlords of Draenor](#warlords-of-draenor)
+  - <i class="fa-solid fa-user"></i> [PnJ pour Warlords of Draenor](#-pnj-pour-warlords-of-draenor)
   - [Cognefort](#cognefort)
   - [Fonderie des Rochenoires](#fonderie-des-rochenoires)
   - [Citadelle des Flammes infernales](#citadelle-des-flammes-infernales)
-- [World of Warcraft : Legion](#world-of-warcraft--legion)
-  - <i class="fa-solid fa-user"></i> [PnJ pour World of Warcraft : Legion](#-pnj-pour-world-of-warcraft--legion)
+- [Legion](#legion)
+  - <i class="fa-solid fa-user"></i> [PnJ pour Legion](#-pnj-pour-legion)
   - [Le Cauchemar d’émeraude](#le-cauchemar-démeraude)
   - [Le Jugement des Valeureux](#le-jugement-des-valeureux)
   - [Palais Sacrenuit](#palais-sacrenuit)
   - [Tombe de Sargeras](#tombe-de-sargeras)
   - [Antorus, le Trône ardent](#antorus-le-trône-ardent)
-- [World of Warcraft : Battle for Azeroth](#world-of-warcraft--battle-for-azeroth)
-  - <i class="fa-solid fa-user"></i> [PnJ pour World of Warcraft : Battle for Azeroth](#-pnj-pour-world-of-warcraft--battle-for-azeroth)
+- [Battle for Azeroth](#battle-for-azeroth)
+  - <i class="fa-solid fa-user"></i> [PnJ pour Battle for Azeroth](#-pnj-pour-battle-for-azeroth)
   - [Uldir](#uldir)
   - [Bataille de Dazar’alor](#bataille-de-dazaralor)
   - [Creuset des Tempêtes](#creuset-des-tempêtes)
   - [Palais Éternel](#palais-éternel)
   - [Ny’alotha, la cité en éveil](#nyalotha-la-cité-en-éveil)
-- [World of Warcraft : Shadowlands](#world-of-warcraft--shadowlands)
-  - <i class="fa-solid fa-user"></i> [PnJ pour World of Warcraft : Shadowlands](#-pnj-pour-world-of-warcraft--shadowlands)
+- [Shadowlands](#shadowlands)
+  - <i class="fa-solid fa-user"></i> [PnJ pour Shadowlands](#-pnj-pour-shadowlands)
   - [Château Nathria](#château-nathria)
   - [Sanctum de Domination](#sanctum-de-domination)
   - [Sépulcre des Fondateurs](#sépulcre-des-fondateurs)
-- [World of Warcraft : Dragonflight](#world-of-warcraft--dragonflight) (**PnJ LFR non disponible**)
-- [World of Warcraft : The War Within](#world-of-warcraft--the-war-within) (**PnJ LFR non disponible**)
-- [World of Warcraft : Midnight](#world-of-warcraft--midnight) (**PnJ LFR non disponible**)
+- [Dragonflight](#dragonflight) (**PnJ LFR non disponible**)
+- [The War Within](#the-war-within) (**PnJ LFR non disponible**)
+- [Midnight](#midnight) (**PnJ LFR non disponible**)
 
 ## **Liste des guides Mamytwink**
 
@@ -70,11 +70,11 @@ favicon: /assets/img/favicon-wow.svg
 
 ## Le LFR
 
-### [World of Warcraft : Mists of Pandaria](#world-of-warcraft--mists-of-pandaria)
+### Mists of Pandaria
 
 <a href="assets/img/WoW_5_MoP-Large.png" data-fancybox="gallerie"><img src="assets/img/WoW_5_MoP.png" class="d-block w-75 m-auto img-fluid" alt="Logo World of Warcraft : Mists of Pandaria" title="Logo World of Warcraft : Mists of Pandaria"></a>
 
-### <i class="fa-solid fa-user"></i> [PnJ pour World of Warcraft : Mists of Pandaria](#-pnj-pour-world-of-warcraft--mists-of-pandaria)
+### <i class="fa-solid fa-user"></i> [PnJ pour Mists of Pandaria](#-pnj-pour-world-of-warcraft--mists-of-pandaria)
 
 | Zone                                            | PnJ                                                                                | Point de passage                        |
 | ----------------------------------------------- | ---------------------------------------------------------------------------------- | --------------------------------------- |
@@ -84,7 +84,6 @@ favicon: /assets/img/favicon-wow.svg
 
 #### [Caveaux Mogu’shan](https://www.wowhead.com/fr/zone=6125)
 
-| #### [Caveaux Mogu’shan](https://www.wowhead.com/fr/zone=6125) |
 | -------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | **Gardiens des Mogu’shan** | [La garde de pierre](https://www.wowhead.com/fr/npc=60047) [Feng le Maudit](https://www.wowhead.com/fr/npc=60009) [Gara’jal le Lieur d’esprit](https://www.wowhead.com/fr/npc=60143) |
 | **Le caveau des Mystères** | [Les esprits-rois](https://www.wowhead.com/fr/npc=60708) [Elegon](https://www.wowhead.com/fr/npc=60410) [Volonté de l’empereur](https://www.wowhead.com/fr/npc=60400)                |
@@ -123,11 +122,11 @@ favicon: /assets/img/favicon-wow.svg
 
 ****
 
-### [World of Warcraft : Warlords of Draenor](#world-of-warcraft--warlords-of-draenor)
+### Warlords of Draenor
 
 <a href="assets/img/WoW_6_WoD-Large.png" data-fancybox="gallerie"><img src="assets/img/WoW_6_WoD.png" class="d-block w-75 m-auto img-fluid" alt="Logo World of Warcraft : Warlords of Draenor" title="Logo World of Warcraft : Warlords of Draenor"></a>
 
-#### <i class="fa-solid fa-user"></i> [PnJ pour World of Warcraft : Warlords of Draenor](#-pnj-pour-world-of-warcraft--warlords-of-draenor)
+#### <i class="fa-solid fa-user"></i> [PnJ pour Warlords of Draenor](#-pnj-pour-world-of-warcraft--warlords-of-draenor)
 
 | Zone              | PnJ                                                                                                               | Point de passage               |
 | ----------------- | ----------------------------------------------------------------------------------------------------------------- | ------------------------------ |
@@ -164,11 +163,11 @@ favicon: /assets/img/favicon-wow.svg
 
 ****
 
-### [World of Warcraft : Legion](#world-of-warcraft--legion)
+### Legion
 
 <a href="assets/img/WoW_7_Legion-Large.png" data-fancybox="gallerie"><img src="assets/img/WoW_7_Legion.png" class="d-block w-75 m-auto img-fluid" alt="Logo World of Warcraft : Legion" title="Logo World of Warcraft : Legion"></a>
 
-#### <i class="fa-solid fa-user"></i> [PnJ pour World of Warcraft : Legion](#-pnj-pour-world-of-warcraft--legion)
+#### <i class="fa-solid fa-user"></i> [PnJ pour Legion](#-pnj-pour-world-of-warcraft--legion)
 
 | Zone                           | PnJ                                                       | Point de passage                  |
 | ------------------------------ | --------------------------------------------------------- | --------------------------------- |
@@ -218,11 +217,11 @@ favicon: /assets/img/favicon-wow.svg
 
 ****
 
-### [World of Warcraft : Battle for Azeroth](#world-of-warcraft--battle-for-azeroth)
+### Battle for Azeroth
 
 <a href="assets/img/WoW_8_BfA-Large.png" data-fancybox="gallerie"><img src="assets/img/WoW_8_BfA.png" class="d-block w-75 m-auto img-fluid" alt="Logo World of Warcraft : Battle for Azeroth" title="Logo World of Warcraft : Battle for Azeroth"></a>
 
-### <i class="fa-solid fa-user"></i> [PnJ pour World of Warcraft : Battle for Azeroth](#-pnj-pour-world-of-warcraft--battle-for-azeroth)
+### <i class="fa-solid fa-user"></i> [PnJ pour Battle for Azeroth](#-pnj-pour-world-of-warcraft--battle-for-azeroth)
 
 | Zone               | PnJ                                                                                                              | Point de passage      |
 | ------------------ | ---------------------------------------------------------------------------------------------------------------- | --------------------- |
@@ -271,11 +270,11 @@ favicon: /assets/img/favicon-wow.svg
 
 ****
 
-### [World of Warcraft : Shadowlands](#world-of-warcraft--shadowlands)
+### Shadowlands
 
 <a href="assets/img/WoW_9_SL-Large.png" data-fancybox="gallerie"><img src="assets/img/WoW_9_SL.png" class="d-block w-75 m-auto img-fluid" alt="Logo World of Warcraft : Shadowlands" title="Logo World of Warcraft : Shadowlands"></a>
 
-#### <i class="fa-solid fa-user"></i> [PnJ pour World of Warcraft : Shadowlands](#-pnj-pour-world-of-warcraft--shadowlands)
+#### <i class="fa-solid fa-user"></i> [PnJ pour Shadowlands](#-pnj-pour-world-of-warcraft--shadowlands)
 
 | Zone                      | PnJ                                                                        | Point de passage          |
 | ------------------------- | -------------------------------------------------------------------------- | ------------------------- |
@@ -311,7 +310,7 @@ favicon: /assets/img/favicon-wow.svg
 
 ****
 
-### [World of Warcraft : Dragonflight](#world-of-warcraft--dragonflight)
+### Dragonflight
 
 <a href="assets/img/WoW_10_DF-Large.png" data-fancybox="gallerie"><img src="assets/img/WoW_10_DF.png" class="d-block w-75 m-auto img-fluid" alt="Logo World of Warcraft : Dragonflight" title="Logo World of Warcraft : Dragonflight"></a>
 
@@ -319,7 +318,7 @@ favicon: /assets/img/favicon-wow.svg
 
 ****
 
-### [World of Warcraft : The War Within](#world-of-warcraft--the-war-within)
+### The War Within
 
 <a href="assets/img/WoW_11_TWW-Large.png" data-fancybox="gallerie"><img src="assets/img/WoW_11_TWW.png" class="d-block w-75 m-auto img-fluid" alt="Logo World of Warcraft : The War Within" title="Logo World of Warcraft : The War Within"></a>
 
@@ -327,7 +326,7 @@ favicon: /assets/img/favicon-wow.svg
 
 ****
 
-### [World of Warcraft : Midnight](#world-of-warcraft--midnight)
+### Midnight
 
 <a href="assets/img/WoW_12_MN-Large.png" data-fancybox="gallerie"><img src="assets/img/WoW_12_MN.png" class="d-block w-75 m-auto img-fluid" alt="Logo World of Warcraft : The War Within" title="Logo World of Warcraft : The War Within"></a>
 
