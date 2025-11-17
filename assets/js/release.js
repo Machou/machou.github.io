@@ -14,28 +14,28 @@ function parseReleaseName(name)
 		extension = name.substring(lastDotIndex);
 	}
 
-	// Supprimer la team
+	// Supprime la team
 	baseName = baseName.replace(/-[\w\d]+$/i, '');
 
-	// Protéger les points décimaux (UNIQUEMENT pour l'audio)
+	// Protége les points décimaux (UNIQUEMENT pour l'audio)
 	baseName = baseName.replace(/(AAC|AC3|DTS)(\d)\.(\d)/gi, '$1$2<DECIMAL_DOT>$3');
 
-	// Standardiser les codecs (H.264 -> h264) et WEBRip (WEB-DL -> WEBRip)
+	// Standardise les codecs (H.264 -> h264) et WEBRip (WEB-DL -> WEBRip)
 	baseName = baseName.replace(/\b(H|x)\.?\s?(264|265)\b/gi, (match, p1, p2) => {
 		return p1.toLowerCase() + p2;
 	});
 	baseName = baseName.replace(/\b(WEB-?DL|WEB)\b/gi, 'WEBRip');
 
-	// Remplacer les . (séparateurs) restants par des espaces
+	// Remplace les . (séparateurs) restants par des espaces
 	baseName = baseName.replace(/\./g, ' ');
 
-	// Restaurer les points décimaux (ex: AAC2.0)
+	// Restaure les points décimaux (ex: AAC2.0)
 	baseName = baseName.replace(/<DECIMAL_DOT>/g, '.');
 
-	// Supprimer les mots clés (Bluray, etc.)
+	// Supprime les mots clés (Bluray, etc.)
 	baseName = baseName.replace(/\b(bluray|blu-ray|blu ray)\b/gi, '');
 
-	// Standardiser les résolutions
+	// Standardise les résolutions
 	baseName = baseName.replace(/\b(2160|1080|720)[Pi]\b/gi, '$1p');
 
 	// Cas spécial pour 'i' (MULTI -> MULTi)

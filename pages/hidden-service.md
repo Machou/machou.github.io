@@ -15,7 +15,7 @@ favicon: /assets/img/favicon-tor.svg
 	</ol>
 </nav>
 
-# [Créer un Hidden Service sécurisé avec Tor sur Debian](comment-creer-hidden-service)
+# Créer un Hidden Service sécurisé avec Tor sur Debian
 
 ## **Sommaire**
 
@@ -66,7 +66,7 @@ favicon: /assets/img/favicon-tor.svg
     - [Autres](#autres)
   - [À faire](#à-faire)
 
-## [Liste des logiciels](#liste-des-logiciels)
+## Liste des logiciels
 
 Dans ce tutoriel, nous tenterons de garder les logiciels à jour avec leurs dernières versions. Voici la liste actuelle :
 
@@ -88,7 +88,7 @@ Nous allons configurer notre serveur, qui sera basé sur Apache2, PHP et SQL. Ce
 
 Bien sûr, nous pourrions utiliser une [image Docker LAMP](https://hub.docker.com/r/mattrayner/lamp), mais le but est de se familiariser avec l’environnement Linux. Aussi, il existe d’autres logiciels pour le serveur web, comme [nginx](https://nginx.org/) ou [Caddy](https://caddyserver.com/). Cependant, j’ai choisi d’utiliser Apache2, mais vous êtes libre de changer.
 
-## [Qu’est-ce que Tor et un Hidden Service ?](#quest-ce-que-tor-et-un-hidden-service-)
+## Qu’est-ce que Tor et un Hidden Service ?
 
 Tor (acronyme de « **The Onion Router** ») est un réseau de communication anonyme. Il permet aux utilisateurs de naviguer sur Internet de manière anonyme en dirigeant le trafic à travers une série de serveurs (appelés nœuds) gérés par des bénévoles. Chaque **nœud** ne connaît que les informations du nœud précédent et du nœud suivant, ce qui rend difficile pour quelqu’un de surveiller le chemin complet des données. Tor utilise un système de couches de chiffrage, d’où le terme « onion » (oignon) qui fait référence aux multiples couches de protection.
 
@@ -121,7 +121,7 @@ Plusieurs choses :
 
 Malheureusement, qui dit anonymisation des utilisateurs, dit criminalité en tout genre, vente de drogue, d’armes, trafic d’êtres humains, de fausse monnaie, etc. et j’en passe. Il a des côtés positifs et des côtés négatifs. Que ce soit dans la vraie vie ou sur internet, on sera toujours embêté par les vilains… Le but de ce tutoriel n’est pas de vous montrer comment acheter de la drogue mais d’apprendre le fonctionnement d’un serveur web utilisant le service de cryptage de Tor.
 
-## [Quelques règles importantes](#quelques-règles-importantes)
+## Quelques règles importantes
 
 *Ce tutoriel est à titre informatif et scolaire. Vous pouvez adapter en fonction de vos besoins.*
 
@@ -132,7 +132,7 @@ Malheureusement, qui dit anonymisation des utilisateurs, dit criminalité en tou
 - Démarrer votre installation / configuration avec un VPS / serveur dont vous êtes certain de la source
 - Démarrer votre installation / configuration sur un système d’exploitation fraîchement installé
 - Utiliser un courriel anonyme pour le service sur lequel vous allez louer votre VPS / serveur
-- *[liste de quelques services de courriels sécurisés](https://www.privacytools.io/privacy-email)*
+- *[Liste de quelques services de courriels sécurisés](https://www.privacytools.io/privacy-email)*
 - Payer votre VPS / serveur en [cryptomonnaie](https://fr.wikipedia.org/wiki/Cryptomonnaie) (Bitcoin, Monero, etc.)
 - Ne JAMAIS fournir votre identité lorsque vous payez via Cryptomonnaie
 - **Ne JAMAIS faire fonctionner un relais Tor sur le VPS / serveur, car ces adresses IP sont rendues publiques**
@@ -164,7 +164,7 @@ Dans l’ensemble, l’utilisation de Tor est considérée comme la solution la 
 
 **VPNs recommandés :** [Mullvad](https://mullvad.net/) ou [ProtonVPN](https://protonvpn.com/)
 
-## [Configuration du serveur](#configuration-du-serveur)
+## Configuration du serveur
 
 On se connecte au serveur via SSH et on change le mot de passe root :
 
@@ -173,11 +173,11 @@ sudo su
 passwd
 ```
 
-## [SSH](#ssh)
+## SSH
 
 > **SSH** (Secure Shell) est un protocole réseau qui permet d’établir une connexion sécurisée entre un client et un serveur. Il est principalement utilisé pour accéder à distance à des systèmes informatiques, en garantissant la confidentialité et l’intégrité des données grâce au chiffrement. SSH permet d’exécuter des commandes, de transférer des fichiers en toute sécurité et d’administrer des serveurs à distance. Il remplace des protocoles moins sécurisés comme Telnet et FTP.
 
-### [Configuration SSH](#configuration-ssh)
+### Configuration SSH
 
 On paramètre / sécurise SSH :
 
@@ -232,11 +232,9 @@ On quitte et on redémarre SSH :
 
 `sudo systemctl restart sshd`
 
+### Authentification SSH
 
-
-### [Authentification SSH](#authentification-ssh)
-
-#### [Méthode N°1 : clés SSH](#méthode-n1--clés-ssh)
+#### Méthode N°1 : clés SSH
 
 On génère les clés SSH avec l’algorithme de chiffrement [ed25519](https://fr.wikipedia.org/wiki/EdDSA) :
 
@@ -299,11 +297,11 @@ Entrez votre mot de passe de clé générée ci-dessus, voilà, vous êtes maint
 
 Source : [Se connecter en SSH par échange de clés SSH - LeCrabe.info](https://lecrabeinfo.net/tutoriels/se-connecter-en-ssh-par-echange-de-cles-ssh/#etape-1-generer-des-cles-ssh)
 
-#### [Méthode N°2 : mot de passe](#méthode-n2--mot-de-passe)
+#### Méthode N°2 : mot de passe
 
 Je vous conseille de lire le début du [tutoriel pour apprendre à vous connecter à SSH](https://mondedie.fr/d/11708).
 
-### [(Facultatif) Double Authentification avec Google Authenticator PAM module](#facultatif-double-authentification-avec-google-authenticator-pam-module)
+### (Facultatif) Double Authentification avec Google Authenticator PAM module
 
 Il est possible d’activer l’authentification multifacteur (MFA/2FA) pour les connexions SSH sous Debian. Cette couche supplémentaire vient renforcer la sécurité au-delà du simple mot de passe. Lorsqu’on se connecte à une machine distante protégée par la MFA/2FA, on vous demandera d’abord un code à six chiffres, puis votre mot de passe habituel.
 
@@ -409,9 +407,9 @@ On quitte et on redémarre SSH :
 
 `sudo systemctl restart sshd`
 
-### [Configuration Debian](#configuration-debian)
+### Configuration Debian
 
-#### [sources.list](#sourceslist)
+#### sources.list
 
 On met à jour notre fichier *sources.list* :
 
@@ -438,7 +436,7 @@ On met à jour :
 
 `sudo apt update`
 
-#### [Les paquets](#les-paquets)
+#### Les paquets
 
 On met à jour les paquets et on installe [nano](https://doc.ubuntu-fr.org/nano) (éditeur de texte) et [sudo](https://doc.ubuntu-fr.org/sudo) (permet à un utilisateur normal d’exécuter des commandes en tant que super-utilisateur (ou « root »)).
 
@@ -490,9 +488,9 @@ On installe / désinstalle quelques logiciels pour la pratique et la sécurité,
 - [sendmail](https://packages.debian.org/fr/bookworm/sendmail) : sendmail est un agent de transmission de courriels (MTA) alternatif pour Debian. Il est adapté pour le traitement des configurations de messagerie sophistiquées, quoique cela signifie aussi que sa configuration peut être complexe
 - [samba](https://packages.debian.org/fr/bookworm/samba) : samba est une implémentation du protocole SMB/CIFS pour les systèmes Unix, offrant la prise en charge du partage de fichiers et d’imprimantes multiplateforme avec Microsoft Windows, OS X et d’autres systèmes Unix. Samba peut également fonctionner comme un contrôleur de domaine de style Active Directory ou NT4 et peut s’intégrer aux domaines Active Directory ou aux domaines NT4 en tant que serveur membre
 
-## [Installation d’un serveur LAMP](#installation-dun-serveur-lamp)
+## Installation d’un serveur LAMP
 
-### [Installation et configuration d’Apache2](#installation-et-configuration-dapache2)
+### Installation et configuration d’Apache2
 
 > **Apache2** est un serveur web open source largement utilisé pour héberger des sites web et des applications. Développé par la fondation Apache, il est compatible avec divers systèmes d’exploitation, dont Linux et Windows. Apache2 prend en charge plusieurs modules pour étendre ses fonctionnalités, comme PHP, SSL pour la sécurité, et des options de configuration avancées pour gérer le trafic web. Sa flexibilité et sa fiabilité en font l’un des serveurs web les plus populaires au monde.
 
@@ -543,7 +541,7 @@ sudo chmod -R 775 /var/www/html
 sudo chmod g+s /var/www/html
 ```
 
-####  [Virtual Host](#virtual-host)
+#### Virtual Host
 
 > Un **Virtual Host** est une configuration qui permet à un serveur unique de répondre à des requêtes pour plusieurs noms de domaine. Cette fonctionnalité est particulièrement utile pour les serveurs web qui hébergent plusieurs sites web, permettant ainsi à chaque site d’avoir ses propres configurations et paramètres, tout en partageant les mêmes ressources serveur.
 
@@ -629,7 +627,7 @@ La sortie doit renvoyer :
 - [Site officiel d’Apache2](https://httpd.apache.org/)
 - [Dépôt GitHub officiel](https://github.com/apache/httpd)
 
-### [Installation et configuration de nginx comme proxy](#installation-et-configuration-de-nginx-comme-proxy)
+### Installation et configuration de nginx comme proxy
 
 > Un proxy **nginx** / Apache2 est une configuration où nginx est utilisé comme proxy inverse (reverse proxy) devant Apache2. Nginx reçoit toutes les requêtes des clients sur le port 80 (HTTP) ou 443 (HTTPS). Apache2 traite les requêtes dynamiques (comme les scripts PHP) et renvoie les réponses à Nginx, qui les transmet ensuite au client. Cette combinaison permet de tirer parti des avantages des deux serveurs, offrant ainsi une meilleure performance, une sécurité accrue, et une grande flexibilité dans la gestion du trafic web.
 
@@ -696,9 +694,9 @@ nginx: the configuration file /etc/nginx/nginx.conf syntax is ok
 nginx: configuration file /etc/nginx/nginx.conf test is successful
 ```
 
-## [PHP](#php)
+## PHP
 
-### [Installation et configuration de PHP](#installation-et-configuration-de-php)
+### Installation et configuration de PHP
 
 On va installer PHP 8 via le dépôt d’[Ondřej Surý](https://deb.sury.org/) car les dernières versions de PHP ne sont pas disponibles sur Debian.
 
@@ -855,9 +853,9 @@ On sauvegarde le fichier **php.ini** et on redémarre Apache2 :
 
 `sudo systemctl restart apache2`
 
-## [MariaDB](#mariadb)
+## MariaDB
 
-### [Installation et configuration de MySQL](#installation-et-configuration-de-mysql)
+### Installation et configuration de MySQL
 
 > **MariaDB** est un système de gestion de base de données édité sous licence GPL. Il s’agit d’un embranchement communautaire de MySQL : la gouvernance du projet est assurée par la fondation MariaDB, et sa maintenance par la société Monty Program AB, créateur du projet. Cette gouvernance confère au logiciel l’assurance de rester libre.
 
@@ -917,7 +915,7 @@ Une fois connecté, on peut afficher les bases de données :
 
 Cela fonctionne sans demander de mot de passe car vous utilisez le socket Unix en tant que root.
 
-#### [Base de données et utilisateur](#base-de-données-et-utilisateur)
+#### Base de données et utilisateur
 
 On se connecte en root à la base de données MySQL :
 
@@ -939,7 +937,7 @@ On recharge les privilèges pour qu’ils prennent effet immédiatement :
 
 `FLUSH PRIVILEGES;`
 
-#### [Adminer : accéder aux tables SQL](#adminer--accéder-aux-tables-sql)
+#### Adminer : accéder aux tables SQL
 
 Pour accéder à votre base de données SQL, je vous propose d’utiliser [Adminer](https://www.adminer.org/).
 
@@ -958,9 +956,9 @@ Lorsque vous avez terminé, **veuillez supprimer** le fichier **adminer_XXXXXXXX
 - [Site officiel d’Adminer](https://www.adminer.org/)
 - [Dépôt GitHub officiel](https://github.com/vrana/adminer)
 
-## [Tor](#tor)
+## Tor
 
-### [Installation et configuration de Tor](#installation-et-configuration-de-tor)
+### Installation et configuration de Tor
 
 > Tor est un réseau informatique superposé mondial et décentralisé. Il se compose de serveurs, appelés nœuds du réseau et dont la liste est publique. Ce réseau permet d’anonymiser l’origine de connexions TCP. Cela peut entre autres servir à anonymiser la source d’une session de navigation Web ou de messagerie instantanée. Cependant, l’anonymisation du flux n’est pas totale, car l’application peut transmettre des informations annexes permettant d’identifier la personne, c’est pourquoi le projet Tor développe également un navigateur Web fondé sur Firefox, Tor Browser, ainsi que d’autres applications spécialement modifiées pour préserver l’anonymat de leurs usagers. Le nom « Tor » est à l’origine un acronyme pour « The Onion Router », littéralement « le routeur oignon », qui s’est lexicalisé comme nom propre.
 
@@ -987,7 +985,7 @@ On vérifie que Tor fonctionne et renvoie bien cette page :
 
 `curl --socks5 127.0.0.1:9050 https://check.torproject.org/`
 
-#### [Configuration du Hidden Service](#configuration-du-hidden-service)
+#### Configuration du Hidden Service
 
 On configure Tor :
 
@@ -1025,7 +1023,7 @@ Redémarrer Tor va créer le répertoire **/var/lib/tor/hidden_service** ainsi q
 
 *Notez le contenu de **hostname** quelque part, on l’utilisera plus tard !*
 
-### [Générer une adresse .onion personnalisée](#générer-une-adresse-onion-personnalisée)
+### Générer une adresse .onion personnalisée
 
 Les adresses en .onion sont générées aléatoirement par un algorithme intégré à Tor et n’a pas d’identité propre, en revanche vous pouvez personnaliser les premiers caractères de l’adresse .onion. Le nombre de caractères dépendra de votre puissance de calcul liée à votre carte graphique ou processeur. On va utiliser le logiciel [mkp224o](https://github.com/cathugger/mkp224o) pour générer les adresses.
 
@@ -1071,7 +1069,7 @@ sudo chown -R debian-tor:debian-tor /var/lib/tor/hidden_service
 sudo chmod -R u+rwX,og-rwx /var/lib/tor/hidden_service
 ```
 
-### [Debug](#debug)
+### Debug
 
 Résumé des Ports :
 
@@ -1106,9 +1104,9 @@ Maintenant, lancez le [Navigateur Tor](https://www.torproject.org/download/) sur
 
 <p class="text-center"><a href="https://i.ibb.co/M267kK8/onion.png" data-fancybox="gallerie"><img src="https://i.ibb.co/M267kK8/onion.png" class="border rounded img-fluid" alt="Fenêtre Tor" title="Fenêtre Tor"></a></p>
 
-## [Facultatif](#facultatif)
+## Facultatif
 
-### [Configuration du Pare-feu (UFW)](#configuration-du-pare-feu-ufw)
+### Configuration du Pare-feu (UFW)
 
 Pour s’assurer que seuls Tor (via le *Hidden Service*) et vous (via SSH) pouvez accéder au serveur, nous allons installer `ufw` (Uncomplicated Firewall).
 
@@ -1131,7 +1129,7 @@ On active le pare-feu :
 
 Vérifiez que votre connexion SSH est toujours active !
 
-### [Configuration de la langue](#configuration-de-la-langue)
+### Configuration de la langue
 
 On peut changer la langue pour brouiller un peu les pistes :
 
@@ -1150,7 +1148,7 @@ Generation complete.
 
 Les langues anglaise et française ont été sélectionnées, mais libre à vous de configurer celle que vous souhaitez, c’est d’ailleurs fortement recommandé de ne pas choisir votre langue maternelle, sinon laissez celle par défaut.
 
-### [Configuration de la date et heure](#configuration-de-la-date-et-heure)
+### Configuration de la date et heure
 
 On peut changer la date et heure pour brouiller un peu les robots :
 
@@ -1168,7 +1166,7 @@ Universal Time is now:  Thu Jun 20 13:51:54 UTC 2024.
 
 Le fuseau horaire de Paris a été choisi, mais libre à vous de configurer celui que vous souhaitez, c’est d’ailleurs fortement recommandé de ne pas choisir celui où vous résidez (pays ou ville), sinon laissez celui par défaut.
 
-### [Rediriger le trafic réseau du serveur vers Tor](#rediriger-le-trafic-réseau-du-serveur-vers-tor)
+### Rediriger le trafic réseau du serveur vers Tor
 
 **Nipe** est un script pour faire de Tor Network votre passerelle réseau par défaut.
 
@@ -1216,7 +1214,7 @@ perl nipe.pl status
 
 - [Dépôt GitHub officiel du projet Nipe](https://github.com/GouveaHeitor/nipe)
 
-### [Réécrire la RAM avant un arrêt / redémarrage du serveur](#réécrire-la-ram-avant-un-arrêt--redémarrage-du-serveur)
+### Réécrire la RAM avant un arrêt / redémarrage du serveur
 
 On installe le paquet `secure-delete`
 
@@ -1262,7 +1260,7 @@ fi
 - Redémarrer le serveur : `./ram.sh shutdown`
 - Arrêter le serveur : `./ram.sh reboot`
 
-### [Supprimer mes traces](#supprimer-mes-traces)
+### Supprimer mes traces
 
 Nous allons utiliser [shred](https://doc.ubuntu-fr.org/shred) pour supprimer les fichiers logs sur le serveur. **shred** est un utilitaire de ligne de commande sous Linux et Unix qui permet de supprimer définitivement des fichiers en écrivant de manière aléatoire des données sur les emplacements de stockage correspondants. Il est généralement utilisé pour supprimer des fichiers sensibles ou confidentiels de manière sécurisée afin de s’assurer qu’ils ne peuvent pas être récupérés.
 
@@ -1317,7 +1315,7 @@ On y ajoute la ligne de commande :
 
 `0 0 * * * /home/salameche/delete.sh`
 
-#### [Alias utiles (*~/.bashrc*)](#alias-utiles-pour-le-serveur)
+#### Alias utiles (*~/.bashrc*)
 
 On édite notre fichier **~/.bashrc** :
 
@@ -1339,9 +1337,9 @@ On recharge le fichier **~/.bashrc** :
 
 `source ~/.bashrc`
 
-### [Désactiver IPv6](#désactiver-ipv6)
+### Désactiver IPv6
 
-#### [Méthode N°1 : désactiver IPv6 via le fichier de configuration GRUB](#méthode-n1--désactiver-ipv6-via-le-fichier-de-configuration-grub)
+#### Méthode N°1 : désactiver IPv6 via le fichier de configuration GRUB
 
 On modifie le fichier de configuration GRUB :
 
@@ -1369,7 +1367,7 @@ Une fois redémarrer, on vérifie qu’IPv6 est désactivé ;
 
 La sortie doit renvoyer **1**, indiquant que IPv6 est désactivé.
 
-#### [Méthode N°2 : désactiver IPv6 via le fichier sysctl](#méthode-n2--désactiver-ipv6-via-le-fichier-sysctl)
+#### Méthode N°2 : désactiver IPv6 via le fichier sysctl
 
 On modifie le fichier de configuration **sysctl** :
 
@@ -1407,7 +1405,7 @@ On redémarre le serveur :
 
 `sudo reboot`
 
-#### [Méthode N°3 : rejeter tout le trafic IPv6](#méthode-n3--rejeter-tout-le-trafic-ipv6)
+#### Méthode N°3 : rejeter tout le trafic IPv6](#méthode-n3--rejeter-tout-le-trafic-ipv6)
 
 On crée la règle de blocage :
 
@@ -1458,9 +1456,9 @@ On redémarre le serveur :
 
 `sudo reboot`
 
-## [Quelques liens / tutoriels utiles](#quelques-liens--tutoriels-utiles)
+## Quelques liens / tutoriels utiles](#quelques-liens--tutoriels-utiles)
 
-### [Aide-mémoires / tutoriels](#aide-mémoires--tutoriels)
+### Aide-mémoires / tutoriels](#aide-mémoires--tutoriels)
 
 - [Aide-mémoire Bash](https://devhints.io/bash) 🇺🇸
 - [Aide-mémoire du mode d’édition Bash Emacs](https://catonmat.net/bash-emacs-editing-mode-cheat-sheet) 🇺🇸
@@ -1471,19 +1469,19 @@ On redémarre le serveur :
 - [How To  A Linux Server](https://github.com/imthenachoman/How-To-Secure-A-Linux-Server) 🇺🇸
 - [The Onion Diaries](https://github.com/alecmuffett/the-onion-diaries/tree/master) 🇺🇸
 
-### [Documentations](#documentations)
+### Documentations](#documentations)
 
 - [FAQ Debian GNU/Linux](https://www.debian.org/doc/manuals/debian-faq/) 🇫🇷
 - [Documentation officielle Debian](https://www.debian.org/releases/stable/amd64/index.fr.html) 🇫🇷
 - [Documentation officielle Ubuntu](https://help.ubuntu.com/lts/ubuntu-help/index.html) 🇫🇷
 
-### [Autres](#autres)
+### Autres](#autres)
 
 - [Commande : sudo](https://wiki.debian.org/fr/sudo) 🇫🇷
 - [Générateur de couleur : .bashrc & PS1](https://robotmoon.com/bash-prompt-generator/) 🇺🇸
 - [vim pour les humains](https://vimebook.com/fr) 🇫🇷
 
-## [À faire](#à-faire)
+## À faire](#à-faire)
 
 > - héberger le site directement dans la ram
 > - bloquer les ports inutiles
