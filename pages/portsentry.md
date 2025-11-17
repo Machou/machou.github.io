@@ -111,7 +111,7 @@ BLOCK_UDP="1"
 BLOCK_TCP="1"
 ```
 
-On vérifie que ces options sont décommentées :
+On vérifie que ces options sont commentées :
 
 `KILL_ROUTE="/sbin/route add -host $TARGET$ reject"`
 

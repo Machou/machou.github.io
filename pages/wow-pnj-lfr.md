@@ -72,7 +72,7 @@ favicon: /assets/img/favicon-wow.svg
 
 ### <i class="fa-solid fa-user"></i> [PnJ pour World of Warcraft : Mists of Pandaria](#-pnj-pour-world-of-warcraft--mists-of-pandaria)
 
-| Zone                           				  | PnJ                                                                                | Point de passage                        |
+| Zone                                            | PnJ                                                                                | Point de passage                        |
 | ----------------------------------------------- | ---------------------------------------------------------------------------------- | --------------------------------------- |
 | **Pandarie** > **Val de l’Éternel printemps**   | [Chroniqueur Han <Conteur de l’outil Raids>](https://www.wowhead.com/fr/npc=80633) | `/way #390 83.0 30.6 Chroniqueur Han` |
 {:.table .table-hover .table-wow}
@@ -123,10 +123,10 @@ favicon: /assets/img/favicon-wow.svg
 
 ### <i class="fa-solid fa-user"></i> [PnJ pour World of Warcraft : Warlords of Draenor](#-pnj-pour-world-of-warcraft--warlords-of-draenor)
 
-| Faction                                | Zone             | PnJ                                                                       | Point de passage               |
-| -------------------------------------- | ---------------- | ------------------------------------------------------------------------- | ------------------------------ |
-| <span class="alliance">Alliance</span> | **Chutelune**    | [Voyant Kazal « Exilé ombrelune »](https://www.wowhead.com/fr/npc=94870)  | `/way 33.6 37.6 Voyant Kazal`  |
-| <span class="horde">Horde</span>       | **Mur-de-Givre** | [Voyant Kazal « <Exilé ombrelune »](https://www.wowhead.com/fr/npc=94870) | `/way 41.8 46.8 Voyant Kazal`  |
+| Zone              | PnJ                                                                                                               | Point de passage               |
+| ----------------- | ----------------------------------------------------------------------------------------------------------------- | ------------------------------ |
+| **Chutelune**     | <span class="alliance">Alliance</span> [Voyant Kazal « Exilé ombrelune »](https://www.wowhead.com/fr/npc=94870)   | `/way 33.6 37.6 Voyant Kazal`  |
+| **Mur-de-Givre**  | <span class="horde">Horde</span> [Voyant Kazal « <Exilé ombrelune »](https://www.wowhead.com/fr/npc=94870)        | `/way 41.8 46.8 Voyant Kazal`  |
 {:.table .table-hover .table-wow}
 
 ### [Cognefort](https://www.wowhead.com/fr/zone=6996)
@@ -272,9 +272,9 @@ favicon: /assets/img/favicon-wow.svg
 
 ### <i class="fa-solid fa-user"></i> [PnJ pour World of Warcraft : Shadowlands](#-pnj-pour-world-of-warcraft--shadowlands)
 
-| Continent  | Zone       | PnJ                                                                        | Point de passage          |
-| ---------- | ---------- | -------------------------------------------------------------------------- | ------------------------- |
-| Ombreterre | **Oribos** | [Ta'elfar <Commerçant d'histoires>](https://www.wowhead.com/fr/npc=205959) | `/way 42.4 72.2 Ta'elfar` |
+| Zone                      | PnJ                                                                        | Point de passage          |
+| ------------------------- | -------------------------------------------------------------------------- | ------------------------- |
+| Ombreterre > **Oribos**   | [Ta'elfar <Commerçant d'histoires>](https://www.wowhead.com/fr/npc=205959) | `/way 42.4 72.2 Ta'elfar` |
 {:.table .table-hover .table-wow}
 
 ### [Château Nathria](https://www.wowhead.com/fr/zone=13224)
