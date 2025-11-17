@@ -74,7 +74,7 @@ favicon: /assets/img/favicon-wow.svg
 | Continent    | Zone                             | PnJ                                                                                | Point de passage                        |
 | ------------ | -------------------------------- | ---------------------------------------------------------------------------------- | --------------------------------------- |
 | **Pandarie** | **Val de l’Éternel printemps**   | [Chroniqueur Han <Conteur de l’outil Raids>](https://www.wowhead.com/fr/npc=80633) | `/way #390 83.0 30.6 Chroniqueur Han` |
-{:.table .table-hover}
+{:.table .table-hover .table-wow}
 
 ### [Caveaux Mogu’shan](https://www.wowhead.com/fr/zone=6125)
 
@@ -126,7 +126,7 @@ favicon: /assets/img/favicon-wow.svg
 | -------------------------------------- | ---------------- | ------------------------------------------------------------------------- | ------------------------------ |
 | <span class="alliance">Alliance</span> | **Chutelune**    | [Voyant Kazal « Exilé ombrelune »](https://www.wowhead.com/fr/npc=94870)  | `/way 33.6 37.6 Voyant Kazal`  |
 | <span class="horde">Horde</span>       | **Mur-de-Givre** | [Voyant Kazal « <Exilé ombrelune »](https://www.wowhead.com/fr/npc=94870) | `/way 41.8 46.8 Voyant Kazal`  |
-{:.table .table-hover}
+{:.table .table-hover .table-wow}
 
 ### [Cognefort](https://www.wowhead.com/fr/zone=6996)
 
@@ -167,7 +167,7 @@ favicon: /assets/img/favicon-wow.svg
 | Zone             | Zone              | PnJ                                                       | Point de passage                  |
 | ---------------- | ----------------- | --------------------------------------------------------- | --------------------------------- |
 | **Îles Brisées** | **Dalaran**       | [Archimage Timear](https://www.wowhead.com/fr/npc=111246) | `/way 63.6 55.6 Archimage Timear` |
-{:.table .table-hover}
+{:.table .table-hover .table-wow}
 
 ### [Le Cauchemar d’émeraude](https://www.wowhead.com/fr/zone=8026)
 
@@ -222,7 +222,7 @@ favicon: /assets/img/favicon-wow.svg
 | ----------------------------------- | ------------------ | ------------------------------------------------------------------------- | --------------------- |
 | <span class="horde">Alliance</span> | **Boralus**        | [Kiko « Gardienne des histoires »](https://www.wowhead.com/fr/npc=177193) | `/way 74 13.6 Kiko`   |
 | <span class="horde">Horde</span>    | **Le Grand Sceau** | [Eppu « <Gardien des histoires »](https://www.wowhead.com/fr/npc=177208)  | `/way 69.8 32.6 Eppu` |
-{:.table .table-hover}
+{:.table .table-hover .table-wow}
 
 ### [Uldir](https://www.wowhead.com/fr/zone=9389)
 
@@ -274,7 +274,7 @@ favicon: /assets/img/favicon-wow.svg
 | Continent  | Zone       | PnJ                                                                        | Point de passage          |
 | ---------- | ---------- | -------------------------------------------------------------------------- | ------------------------- |
 | Ombreterre | **Oribos** | [Ta'elfar <Commerçant d'histoires>](https://www.wowhead.com/fr/npc=205959) | `/way 42.4 72.2 Ta'elfar` |
-{:.table .table-hover}
+{:.table .table-hover .table-wow}
 
 ### [Château Nathria](https://www.wowhead.com/fr/zone=13224)
 
