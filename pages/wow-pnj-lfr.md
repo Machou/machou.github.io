@@ -218,10 +218,10 @@ favicon: /assets/img/favicon-wow.svg
 
 ### <i class="fa-solid fa-user"></i> [PnJ pour World of Warcraft : Battle for Azeroth](#-pnj-pour-world-of-warcraft--battle-for-azeroth)
 
-| Faction                             | Zone               | PnJ                                                                       | Point de passage      |
-| ----------------------------------- | ------------------ | ------------------------------------------------------------------------- | --------------------- |
-| <span class="horde">Alliance</span> | **Boralus**        | [Kiko « Gardienne des histoires »](https://www.wowhead.com/fr/npc=177193) | `/way 74 13.6 Kiko`   |
-| <span class="horde">Horde</span>    | **Le Grand Sceau** | [Eppu « <Gardien des histoires »](https://www.wowhead.com/fr/npc=177208)  | `/way 69.8 32.6 Eppu` |
+| Faction                                | Zone               | PnJ                                                                       | Point de passage      |
+| -------------------------------------- | ------------------ | ------------------------------------------------------------------------- | --------------------- |
+| <span class="alliance">Alliance</span> | **Boralus**        | [Kiko « Gardienne des histoires »](https://www.wowhead.com/fr/npc=177193) | `/way 74 13.6 Kiko`   |
+| <span class="horde">Horde</span>       | **Le Grand Sceau** | [Eppu « <Gardien des histoires »](https://www.wowhead.com/fr/npc=177208)  | `/way 69.8 32.6 Eppu` |
 {:.table .table-hover .table-wow}
 
 ### [Uldir](https://www.wowhead.com/fr/zone=9389)
