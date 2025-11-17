@@ -52,8 +52,9 @@ favicon: /assets/img/favicon-wow.svg
   - [Château Nathria](#château-nathria)
   - [Sanctum de Domination](#sanctum-de-domination)
   - [Sépulcre des Fondateurs](#sépulcre-des-fondateurs)
-- [World of Warcraft : Dragonflight](#world-of-warcraft--dragonflight) (pas de PNJ héritage)
-- [World of Warcraft : The War Within](#world-of-warcraft--the-war-within) (pas de PNJ héritage)
+- [World of Warcraft : Dragonflight](#world-of-warcraft--dragonflight) (**PnJ LFR non disponible**)
+- [World of Warcraft : The War Within](#world-of-warcraft--the-war-within) (**PnJ LFR non disponible**)
+- [World of Warcraft : Midnight](#world-of-warcraft--midnight) (**PnJ LFR non disponible**)
 
 # Liste des guides Mamytwink
 
@@ -309,7 +310,7 @@ favicon: /assets/img/favicon-wow.svg
 
 <a href="assets/img/WoW_10_DF-Large.png" data-fancybox="gallerie"><img src="assets/img/WoW_10_DF.png" class="d-block w-75 m-auto img-fluid" alt="Logo World of Warcraft : Dragonflight" title="Logo World of Warcraft : Dragonflight"></a>
 
-**PnJ LFR non disponible pour le moment**
+**PnJ LFR non disponible**
 
 ****
 
@@ -317,7 +318,7 @@ favicon: /assets/img/favicon-wow.svg
 
 <a href="assets/img/WoW_11_TWW-Large.png" data-fancybox="gallerie"><img src="assets/img/WoW_11_TWW.png" class="d-block w-75 m-auto img-fluid" alt="Logo World of Warcraft : The War Within" title="Logo World of Warcraft : The War Within"></a>
 
-**PnJ LFR non disponible pour le moment**
+**PnJ LFR non disponible**
 
 ****
 
@@ -325,7 +326,7 @@ favicon: /assets/img/favicon-wow.svg
 
 <a href="assets/img/WoW_12_MN-Large.png" data-fancybox="gallerie"><img src="assets/img/WoW_12_MN.png" class="d-block w-75 m-auto img-fluid" alt="Logo World of Warcraft : The War Within" title="Logo World of Warcraft : The War Within"></a>
 
-**PnJ LFR non disponible pour le moment**
+**PnJ LFR non disponible**
 
 ****
 
