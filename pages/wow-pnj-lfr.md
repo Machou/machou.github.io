@@ -75,7 +75,7 @@ favicon: /assets/img/favicon-wow.svg
 | Zone                                            | PnJ                                                                                | Point de passage                        |
 | ----------------------------------------------- | ---------------------------------------------------------------------------------- | --------------------------------------- |
 | **Pandarie** > **Val de l’Éternel printemps**   | [Chroniqueur Han <Conteur de l’outil Raids>](https://www.wowhead.com/fr/npc=80633) | `/way #390 83.0 30.6 Chroniqueur Han` |
-{:.table .table-hover .table-wow}
+{:.table .table-hover .table-wow-pnj}
 
 ### [Caveaux Mogu’shan](https://www.wowhead.com/fr/zone=6125)
 
@@ -127,7 +127,7 @@ favicon: /assets/img/favicon-wow.svg
 | ----------------- | ----------------------------------------------------------------------------------------------------------------- | ------------------------------ |
 | **Chutelune**     | <span class="alliance">Alliance</span> [Voyant Kazal « Exilé ombrelune »](https://www.wowhead.com/fr/npc=94870)   | `/way 33.6 37.6 Voyant Kazal`  |
 | **Mur-de-Givre**  | <span class="horde">Horde</span> [Voyant Kazal « <Exilé ombrelune »](https://www.wowhead.com/fr/npc=94870)        | `/way 41.8 46.8 Voyant Kazal`  |
-{:.table .table-hover .table-wow}
+{:.table .table-hover .table-wow-pnj}
 
 ### [Cognefort](https://www.wowhead.com/fr/zone=6996)
 
@@ -168,7 +168,7 @@ favicon: /assets/img/favicon-wow.svg
 | Zone                           | PnJ                                                       | Point de passage                  |
 | ------------------------------ | --------------------------------------------------------- | --------------------------------- |
 | **Îles Brisées** > **Dalaran** | [Archimage Timear](https://www.wowhead.com/fr/npc=111246) | `/way 63.6 55.6 Archimage Timear` |
-{:.table .table-hover .table-wow}
+{:.table .table-hover .table-wow-pnj}
 
 ### [Le Cauchemar d’émeraude](https://www.wowhead.com/fr/zone=8026)
 
