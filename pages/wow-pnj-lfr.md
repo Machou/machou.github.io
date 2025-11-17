@@ -72,9 +72,9 @@ favicon: /assets/img/favicon-wow.svg
 
 ### <i class="fa-solid fa-user"></i> [PnJ pour World of Warcraft : Mists of Pandaria](#-pnj-pour-world-of-warcraft--mists-of-pandaria)
 
-| Continent    | Zone                             | PnJ                                                                                | Point de passage                        |
-| ------------ | -------------------------------- | ---------------------------------------------------------------------------------- | --------------------------------------- |
-| **Pandarie** | **Val de l’Éternel printemps**   | [Chroniqueur Han <Conteur de l’outil Raids>](https://www.wowhead.com/fr/npc=80633) | `/way #390 83.0 30.6 Chroniqueur Han` |
+| Zone                           				  | PnJ                                                                                | Point de passage                        |
+| ----------------------------------------------- | ---------------------------------------------------------------------------------- | --------------------------------------- |
+| **Pandarie** > **Val de l’Éternel printemps**   | [Chroniqueur Han <Conteur de l’outil Raids>](https://www.wowhead.com/fr/npc=80633) | `/way #390 83.0 30.6 Chroniqueur Han` |
 {:.table .table-hover .table-wow}
 
 ### [Caveaux Mogu’shan](https://www.wowhead.com/fr/zone=6125)
