@@ -47,9 +47,9 @@ favicon: /assets/img/favicon.png
 
 #### Modes de fonctionnement
 
-- **Mode "attracteur" (Honey Pot)** : simule des ports ouverts pour attirer les attaquants et détecter les scans
-- **Mode "détection avancée"** : surveille une liste spécifiée de ports pour des tentatives de connexion suspectes
-- **Mode "stealth"** : fonctionne de manière discrète pour éviter d’être détecté par les scanners
+- **Mode « attracteur » (Honey Pot)** : simule des ports ouverts pour attirer les attaquants et détecter les scans
+- **Mode « détection avancée »** : surveille une liste spécifiée de ports pour des tentatives de connexion suspectes
+- **Mode « stealth »** : fonctionne de manière discrète pour éviter d’être détecté par les scanners
 
 #### Configuration
 
@@ -57,7 +57,7 @@ favicon: /assets/img/favicon.png
 - **Personnalisation des ports** : il est possible de spécifier quels ports doivent être surveillés en fonction des besoins spécifiques de sécurité
 - **Options de journalisation** : il peut être configuré pour enregistrer les tentatives de connexion suspectes dans des fichiers de journal pour une analyse ultérieure
 
-PortSentry est un outil essentiel pour renforcer la sécurité des systèmes en détectant et en réagissant aux scans de port, réduisant ainsi le risque d’intrusion par des attaquants potentiels.
+PortSentry est un outil robuste mais ancien. Son approche est efficace contre les scans agressifs, mais moins adaptée à des attaques modernes plus subtiles. Il reste cependant pertinent pour renforcer une défense en profondeur, en complément d’un pare-feu configuré avec soin et d’un système de supervision.
 
 ## Installation de PortSentry
 
