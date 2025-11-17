@@ -44,24 +44,24 @@ favicon: /assets/img/favicon-tor.svg
   - [Tor](#tor)
     - [Installation et configuration de Tor](#installation-et-configuration-de-tor)
       - [Configuration du Hidden Service](#configuration-du-hidden-service)
-      - [Configuration de Tor pour Apache2](#configuration-de-tor-pour-apache2)
   - [Générer une adresse .onion personnalisée](#générer-une-adresse-onion-personnalisée)
   - [Debug](#debug)
 - [PortSentry](comment-utiliser-portsentry)
 - [Fail2ban](comment-utiliser-fail2ban)
 - [Facultatif](#facultatif)
+  - [Configuration du Pare-feu (UFW)](#configuration-du-pare-feu-ufw)
   - [Configuration de la langue](#configuration-de-la-langue)
   - [Configuration de la date et heure](#configuration-de-la-date-et-heure)
   - [Rediriger le trafic réseau du serveur vers Tor](#rediriger-le-trafic-réseau-du-serveur-vers-tor)
   - [Réécrire la RAM avant un arrêt / redémarrage du serveur](#réécrire-la-ram-avant-un-arrêt--redémarrage-du-serveur)
-  - [Supprimez ses traces](#supprimez-ses-traces)
+  - [Supprimer mes traces](#supprimer-mes-traces)
   - [Alias utiles (*~/.bashrc*)](#alias-utiles-pour-le-serveur)
   - [Désactiver IPv6](#désactiver-ipv6)
     - [Méthode N°1 : désactiver IPv6 via le fichier de configuration GRUB](#méthode-n1--désactiver-ipv6-via-le-fichier-de-configuration-grub)
     - [Méthode N°2 : désactiver IPv6 via le fichier sysctl](#méthode-n2--désactiver-ipv6-via-le-fichier-sysctl)
     - [Méthode N°3 : rejeter tout le trafic IPv6](#méthode-n3--rejeter-tout-le-trafic-ipv6)
   - [Quelques liens / tutoriels utiles](#quelques-liens--tutoriels-utiles)
-    - [Aide-mémoires / turoriels](#aide-mémoires--turoriels)
+    - [Aide-mémoires / tutoriels](#aide-mémoires--tutoriels)
     - [Documentations](#documentations)
     - [Autres](#autres)
   - [À faire](#à-faire)
@@ -112,20 +112,20 @@ Pour faire simple, un *Hidden Service* va vous permettre d’avoir un serveur Ja
 
 Plusieurs choses :
 
-- les utilisateurs Chinois bloqués par le [Grand Firewall de Chine](https://fr.wikipedia.org/wiki/Grand_Firewall_de_Chine) peuvent accéder à l’internet sans censure
-- les utilisateurs Iraniens / Turques, etc. bloqués par leur gouvernement peuvent accéder à l’internet sans censure
-- être anonyme à 99.99% pendant la navigation sur internet
+- les utilisateurs chinois bloqués par le [Grand Firewall de Chine](https://fr.wikipedia.org/wiki/Grand_Firewall_de_Chine) peuvent accéder à l’internet sans censure
+- les utilisateurs Iraniens / Turcs, etc. bloqués par leur gouvernement peuvent accéder à l’internet sans censure
+- être anonyme à 99,99% pendant la navigation sur internet
 - accéder aux sites cachés via les adresses en .onion
 - discuter sur des messageries utilisant le proxy Tor
 - etc.
 
-Malheureusement, qui dit anonymisation des utilisateurs, dit criminalité en tout genre, vente de drogue, d’armes, trafic d’être humains, de fausse monnaie, etc. et j’en passe. Il a des côtés positifs et des côtés négatifs. Que ça soit dans la vraie vie ou sur internet, on sera toujours embêté par les vilains… Le but de ce tutoriel n’est pas de vous montrer comment acheter de la drogue mais d’apprendre le fonctionnement d’un serveur web utilisant le service de cryptage de Tor.
+Malheureusement, qui dit anonymisation des utilisateurs, dit criminalité en tout genre, vente de drogue, d’armes, trafic d’êtres humains, de fausse monnaie, etc. et j’en passe. Il a des côtés positifs et des côtés négatifs. Que ce soit dans la vraie vie ou sur internet, on sera toujours embêté par les vilains… Le but de ce tutoriel n’est pas de vous montrer comment acheter de la drogue mais d’apprendre le fonctionnement d’un serveur web utilisant le service de cryptage de Tor.
 
 ## [Quelques règles importantes](#quelques-règles-importantes)
 
 *Ce tutoriel est à titre informatif et scolaire. Vous pouvez adapter en fonction de vos besoins.*
 
-- Toujours se connecter à vos services (SSH, sFTP, FTP, etc) via un proxy SOCK ⁵ de Tor
+- Toujours se connecter à vos services (SSH, sFTP, FTP, etc) via un proxy SOCK5 de Tor
 - Ne JAMAIS installer de logiciel / script (PHP, Python, Bash, etc.), dont vous n’êtes pas certain de la source
 - Ne JAMAIS exécuter de logiciel / script / commande dont vous n’êtes pas certain de la source
 - Ne JAMAIS réaliser des tâches dont vous n’êtes pas certain de la source
@@ -137,7 +137,7 @@ Malheureusement, qui dit anonymisation des utilisateurs, dit criminalité en tou
 - Ne JAMAIS fournir votre identité lorsque vous payez via Cryptomonnaie
 - **Ne JAMAIS faire fonctionner un relais Tor sur le VPS / serveur, car ces adresses IP sont rendues publiques**
 - Ne JAMAIS envoyer de courriel via le VPS / serveur (donc désactiver tous les logiciels / fonctions liées aux courriels)
-- Ne JAMAIS autoriser l’envoie de fichier sur le VPS / serveur où va être hébergé votre site
+- Ne JAMAIS autoriser l’envoie de fichiers sur le VPS / serveur où va être hébergé votre site
 - Ne JAMAIS autoriser l’ajout d’image distante (exemple, avec la balise *img src=""*)
 - JavaScript est à BANNIR sur les applications Web que vous allez développer / héberger
 - Désactiver toutes les fonctions Apache2, nginx, PHP, etc. qui sont susceptibles de renvoyer des erreurs aux visiteurs et peuvent afficher votre adresse IP (une liste non-exhaustive sera fournie)
@@ -191,10 +191,10 @@ C’est une forme de sécurité simple, mais étonnamment efficace.
 
 Les serveurs utilisent généralement le port 22 pour se connecter à SSH, donc il est moins susceptible d’être trouvé par des robots qui analysent les adresses IP à la recherche de mot de passe faible sur les comptes par défaut. Si vous numérisez tout le réseau, vous ne pouvez pas vous permettre de vérifier tous les ports possibles (65 535 ports disponibles) pour trouver le serveur SSH.
 
-Cependant, si quelqu’un vous ciblera activement, cela ne fournit aucun bénéfice, car une simple analyse *nmap* unique révèlera le port sur lequel **SSH** fonctionne réellement (on utilisera [PortSentry](PortSentry.md) pour bloquer ces attaques, voir plus bas).
+Cependant, si quelqu’un vous cible activement, cela ne fournit aucun bénéfice, car une simple analyse *nmap* unique révèlera le port sur lequel **SSH** fonctionne réellement (on utilisera [PortSentry](PortSentry.md) pour bloquer ces attaques, voir plus bas).
 
 - **Le port doit être compris entre 0-65535**
-- **Le port utiliser ne doit pas être déjà utilisé par une application**
+- **Le port utilisé ne doit pas être déjà utilisé par une application**
 
 On désactive la connexion root en SSH :
 
@@ -224,7 +224,7 @@ AllowUsers salameche
 ```
 
 - **UseDNS** : par défaut, le serveur cherche à établir la résolution DNS inverse depuis votre IP. Cette requête peut être assez longue, c’est pour cela que nous désactivons cette fonctionnalité, plutôt inutile
-- **UsePAM** : PAM doit être désactivé si vous utilisez des clés d’authentifications, ce qui n’est pas notre cas, donc il doit être activé
+- **UsePAM** : UsePAM gère les modules d’authentification (PAM) et on doit le laisser à *yes* si on veut utiliser l’authentification à deux facteurs (2FA) via `libpam-google-authenticator`, même si on utilise des clés SSH
 - **DebianBanner** : permet d’éviter que le serveur SSH n’affiche la distribution Linux Ubuntu ou Debian
 - **AllowUsers** : ajoute les utilisateurs autorisés à se connecter à SSH, pour notre cas, on ajoutera simplement « *salameche* »
 
@@ -474,7 +474,7 @@ Une fois l’utilisateur ajouté au groupe « *sudo* », on se connecte sur notr
 
 On installe / désinstalle quelques logiciels pour la pratique et la sécurité, on recharge le cache de recherche et on met les liens symboliques à jour :
 
-`sudo apt install ca-certificates curl gnupg && sudo apt purge ntp rsyslog exim* postfix* sendmail* samba*`
+`sudo apt install ca-certificates curl gnupg && sudo apt purge ntp exim* postfix* sendmail* samba*`
 
 ***Ajouts*** :
 
@@ -485,7 +485,6 @@ On installe / désinstalle quelques logiciels pour la pratique et la sécurité,
 ***Suppressions*** :
 
 - [ntp](https://packages.debian.org/fr/bookworm/ntp) : il s’agit d’un package de transition factice pour passer à NTPsec. Il peut être retiré en toute sécurité
-- [rsyslog](https://packages.debian.org/fr/bookworm/rsyslog) : rsyslog est une implémentation à unités d’exécution multiples de syslogd (un outil système qui fournit une journalisation de message)
 - [exim4](https://packages.debian.org/fr/bookworm/exim4) : exim (version 4) est un agent de transport de courrier. Exim4 est le métapaquet sur lequel dépendent les composants essentiels d’une installation de base d’exim4
 - [postfix](https://packages.debian.org/fr/bookworm/postfix) : postfix est l’agent de transport de courriel de Wietse Venema qui a commencé son existence comme une alternative au très utilisé programme Sendmail. Postfix vise à être rapide, facile à administrer et sécuritaire, tout en restant assez compatible avec Sendmail pour ne pas frustrer ses utilisateurs. Ainsi, l’externe ressemble à Sendmail, alors que la structure interne est complètement différente
 - [sendmail](https://packages.debian.org/fr/bookworm/sendmail) : sendmail est un agent de transmission de courriels (MTA) alternatif pour Debian. Il est adapté pour le traitement des configurations de messagerie sophistiquées, quoique cela signifie aussi que sa configuration peut être complexe
@@ -613,7 +612,7 @@ Il convient de noter que, comme tout module Apache, **mod_status** doit être ac
 
 On active différents modules utiles pour Apache2 :
 
-`sudo a2enmod proxy proxy_http deflate rewrite headers`
+`sudo a2enmod deflate rewrite headers`
 
 On quitte et on redémarre Apache2 :
 
@@ -621,11 +620,11 @@ On quitte et on redémarre Apache2 :
 
 On vérifie qu’Apache est bien configuré :
 
-`sudo netstat -tuln | grep 8080`
+`sudo netstat -tuln | grep 8081`
 
 La sortie doit renvoyer :
 
-`tcp        0      0 127.0.0.1:8080          0.0.0.0:*               LISTEN`
+`tcp        0      0 127.0.0.1:8081          0.0.0.0:*					LISTEN`
 
 - [Site officiel d’Apache2](https://httpd.apache.org/)
 - [Dépôt GitHub officiel](https://github.com/apache/httpd)
@@ -946,7 +945,7 @@ Pour accéder à votre base de données SQL, je vous propose d’utiliser [Admin
 
 Généralement, on utilise [phpMyAdmin](https://www.phpmyadmin.net/), complet et facile d’utilisation mais malheureusement, ce gestionnaire n’est pas adapté à notre configuration car gourmand en ressource et il utilise JavaScript (à proscrire sur le réseau Tor), il s’expose à des vulnérabilités, etc. Si vous souhaitez utiliser un autre logiciel, vous trouverez des exemples sur [sql.sh](https://sql.sh/logiciels).
 
-Nous n’allons pas installer de gestionnaire de base de données à propremment parlé. Il vous suffira de télécharger le fichier lorsque vous aurez besoin d’accéder à votre base de données et de le supprimer une fois vos opérations terminées.
+Nous n’allons pas installer de gestionnaire de base de données à propremment parler. Il vous suffira de télécharger le fichier lorsque vous aurez besoin d’accéder à votre base de données et de le supprimer une fois vos opérations terminées.
 
 Voici comment on peut utiliser **Adminer** :
 
@@ -1026,51 +1025,16 @@ Redémarrer Tor va créer le répertoire **/var/lib/tor/hidden_service** ainsi q
 
 *Notez le contenu de **hostname** quelque part, on l’utilisera plus tard !*
 
-#### [Configuration de Tor pour Apache2](#configuration-de-tor-pour-apache2)
-
-On récupère l’adresse IP de notre serveur, `185.*.*.*`, et on bloque l’accès direct à l’IP du serveur :
-
-On crée un fichier **direct.conf** :
-
-`sudo nano /etc/apache2/sites-available/direct.conf`
-
-On ajoute :
-
-```sh
-<VirtualHost *:80>
-	ServerName 185.*.*.*
-	Redirect 403
-	DocumentRoot /dev/null
-</VirtualHost>
-```
-
-On active le *Virtual Host* *direct.conf* :
-
-`sudo a2ensite direct`
-
-On quitte et on redémarre Apache2 :
-
-`sudo systemctl restart apache2`
-
-On teste une page :
-
-```sh
-touch /var/www/html/index.html && nano /var/www/html/index.html
-Bienvenue sur ma page !
-```
-
 ### [Générer une adresse .onion personnalisée](#générer-une-adresse-onion-personnalisée)
-
-Si vous souhaitez une adresse .onion personnalisée, lisez la suite, sinon on passe directement à la [Partie Apache2](#-11).
 
 Les adresses en .onion sont générées aléatoirement par un algorithme intégré à Tor et n’a pas d’identité propre, en revanche vous pouvez personnaliser les premiers caractères de l’adresse .onion. Le nombre de caractères dépendra de votre puissance de calcul liée à votre carte graphique ou processeur. On va utiliser le logiciel [mkp224o](https://github.com/cathugger/mkp224o) pour générer les adresses.
 
 Temps moyen pour générer un alias personnalisé sur une carte graphique *nVidia GeForce GTX 4070* :
 
-5 lettres : 1 seconde
-6 lettres : 10 secondes
-7 lettres : 15 secondes
-8 lettres : 1 minute
+- **5** lettres : 1 seconde
+- **6** lettres : 10 secondes
+- **7** lettres : 15 secondes
+- **8** lettres : 1 minute
 
 On installe les pré-requis :
 
@@ -1103,7 +1067,7 @@ On copie ce répertoire dans le dossier du **Hidden Service**, sur le serveur :
 On ajuste les droits :
 
 ```sh
-sudo chown -R tor: /var/lib/tor/hidden_service
+sudo chown -R debian-tor:debian-tor /var/lib/tor/hidden_service
 sudo chmod -R u+rwX,og-rwx /var/lib/tor/hidden_service
 ```
 
@@ -1144,6 +1108,29 @@ Maintenant, lancez le [Navigateur Tor](https://www.torproject.org/download/) sur
 
 ## [Facultatif](#facultatif)
 
+### [Configuration du Pare-feu (UFW)](#configuration-du-pare-feu-ufw)
+
+Pour s’assurer que seuls Tor (via le *Hidden Service*) et vous (via SSH) pouvez accéder au serveur, nous allons installer `ufw` (Uncomplicated Firewall).
+
+`sudo apt install ufw`
+
+Par défaut, on bloque tout :
+
+`sudo ufw default deny incoming`
+`sudo ufw default allow outgoing`
+
+On autorise ensuite **uniquement** notre port SSH (remplace `_PORT_` par ton port SSH personnalisé) :
+
+`sudo ufw allow _PORT_/tcp`
+
+**Important** : nous n’avons **pas** besoin d’ouvrir les ports 80, 8080, ou 8081. Tor (le service) et Nginx/Apache communiquent en local (`127.0.0.1`), ce qui n’est pas filtré par `ufw` de cette manière.
+
+On active le pare-feu :
+
+`sudo ufw enable`
+
+Vérifiez que votre connexion SSH est toujours active !
+
 ### [Configuration de la langue](#configuration-de-la-langue)
 
 On peut changer la langue pour brouiller un peu les pistes :
@@ -1161,7 +1148,7 @@ Generating locales (this might take a while)...
 Generation complete.
 ```
 
-Les langues anglaise et française ont été selectionnées, mais libre à vous de configurer celle que vous souhaitez, c’est d’ailleurs fortement recommandé de ne pas choisir votre langue maternelle, sinon laissez celle par défaut.
+Les langues anglaise et française ont été sélectionnées, mais libre à vous de configurer celle que vous souhaitez, c’est d’ailleurs fortement recommandé de ne pas choisir votre langue maternelle, sinon laissez celle par défaut.
 
 ### [Configuration de la date et heure](#configuration-de-la-date-et-heure)
 
@@ -1179,7 +1166,7 @@ Local time is now:      Thu Jun 20 15:51:54 CEST 2024.
 Universal Time is now:  Thu Jun 20 13:51:54 UTC 2024.
 ```
 
-Le fuseau horaire de Paris a été choisi, mais libre à vous de configurer celui que vous souhaitez, c’est d’ailleurs fortement recommandé de ne pas choisir celui où vous résider (pays ou ville), sinon laissez celui par défaut.
+Le fuseau horaire de Paris a été choisi, mais libre à vous de configurer celui que vous souhaitez, c’est d’ailleurs fortement recommandé de ne pas choisir celui où vous résidez (pays ou ville), sinon laissez celui par défaut.
 
 ### [Rediriger le trafic réseau du serveur vers Tor](#rediriger-le-trafic-réseau-du-serveur-vers-tor)
 
@@ -1231,62 +1218,76 @@ perl nipe.pl status
 
 ### [Réécrire la RAM avant un arrêt / redémarrage du serveur](#réécrire-la-ram-avant-un-arrêt--redémarrage-du-serveur)
 
-On créé un fichier que l’exécutera à chaque arrête / redémarrage du serveur :
+On installe le paquet `secure-delete`
+
+`sudo apt install secure-delete`
+
+On créé notre fichier script :
 
 `nano /home/salameche/ram.sh`
+
+On rend le script exécutable :
+
+`chmod +x ram.sh`
 
 On y ajoute :
 
 ```sh
 #!/bin/bash
 
-# Fonction pour purger la RAM
-purge_ram() {
-	echo "Purge de la RAM en cours..."
-
-	# Allouer et libérer de la mémoire
-	sudo dd if=/dev/urandom of=/dev/null bs=1M count=$(free -m | grep Mem | awk '{print $7}')
-
-	echo "RAM purgée."
-}
-
 # Vérifier les arguments
 if [ "$1" != "shutdown" ] && [ "$1" != "reboot" ]; then
-	echo "Usage: $0 <shutdown|reboot>"
-	exit 1
+    echo "Usage: $0 <shutdown|reboot>"
+    exit 1
 fi
 
-# Purger la RAM
-purge_ram
+echo "Purge de la RAM en cours (peut prendre du temps)..."
+# Utilise sdmem pour réécrire la RAM
+# -f (fast) -l (less secure, 1 pass) -v (verbose)
+# On peut enlever -f et -l pour 38 passes (très lent)
+sudo sdmem -f -l -v
 
-# Arrêter ou redémarrer le serveur en fonction de l’argument
+echo "RAM purgée."
+
+# Arrêter ou redémarrer le serveur
 if [ "$1" == "shutdown" ]; then
-	echo "Arrêt du serveur..."
-	sudo shutdown -h now
+    echo "Arrêt du serveur..."
+    sudo shutdown -h now
 elif [ "$1" == "reboot" ]; then
-	echo "Redémarrage du serveur..."
-	sudo reboot
+    echo "Redémarrage du serveur..."
+    sudo reboot
 fi
 ```
-
-On rend le script exécutable :
-
-`chmod +x ram.sh`
 
 - Redémarrer le serveur : `./ram.sh shutdown`
 - Arrêter le serveur : `./ram.sh reboot`
 
-Le script va lire des données aléatoires de `/dev/urandom` et les écrire dans `/dev/null`, ce qui force la mémoire RAM à être remplie avec des données aléatoires, réduisant ainsi la possibilité de récupération des données sensibles ou pour éviter les [attaque par démarrage à froid](https://fr.wikipedia.org/wiki/Attaque_par_démarrage_%C3%A0_froid).
+### [Supprimer mes traces](#supprimer-mes-traces)
 
-### [Supprimez ses traces](#supprimez-ses-traces)
+Nous allons utiliser [shred](https://doc.ubuntu-fr.org/shred) pour supprimer les fichiers logs sur le serveur. **shred** est un utilitaire de ligne de commande sous Linux et Unix qui permet de supprimer définitivement des fichiers en écrivant de manière aléatoire des données sur les emplacements de stockage correspondants. Il est généralement utilisé pour supprimer des fichiers sensibles ou confidentiels de manière sécurisée afin de s’assurer qu’ils ne peuvent pas être récupérés.
 
-Nous allons utiliser [shred](https://doc.ubuntu-fr.org/shred) pour supprimer les fichiers logs sur le serveur. Le logiciel shred est un utilitaire de ligne de commande sous Linux et Unix qui permet de supprimer définitivement des fichiers en écrivant de manière aléatoire des données sur les emplacements de stockage correspondants. Il est généralement utilisé pour supprimer des fichiers sensibles ou confidentiels de manière sécurisée afin de s’assurer qu’ils ne peuvent pas être récupérés.
-
-Il est important de noter que l’utilisation de shred ne garantit pas à 100% que les données sont totalement irrécupérables, car il est toujours possible qu’une partie des données soit récupérée à l’aide de techniques de récupération avancées. Cependant, shred offre une méthode simple et efficace pour supprimer de manière sécurisée des fichiers sur un système Linux ou Unix.
+Il est important de noter que l’utilisation de **shred** ne garantit pas à 100% que les données sont totalement irrécupérables, car il est toujours possible qu’une partie des données soit récupérée à l’aide de techniques de récupération avancées. Cependant, shred offre une méthode simple et efficace pour supprimer de manière sécurisée des fichiers sur un système Linux ou Unix.
 
 Vous pouvez utiliser shred sur tous les fichiers que vous souhaitez, j’utilise le dossier `/var/log` pour l’exemple.
 
-`find /var/log -type f -print0 | sudo xargs -0 shred -fuzv -n 10`
+`sudo find /var/log -type f -print0 | sudo xargs -0 shred -fuzv -n 15`
+
+Explications de la commande :
+
+| Commandes		| Explications																																		|
+| ------------- | ------------------------------------------------------------------------------------------------------------------------------------------------- |
+| sudo			| exécute la commande en tant que super-utilisateur pour avoir le droit de lire tous les fichiers dans /var/log										|
+| find			| outil de recherche																																|
+| -type f		| cherche uniquement les fichiers																													|
+| -print0		| sépare les fichiers trouvés par un caractère nul (\0). Essentiel pour que `xargs` ne « trébuche » pas sur un nom de fichier contenant un espace	|
+| xargs			| permet de transformer l’entrée standard en une séquence d’arguments pour une autre commande														|
+| -0			| les noms de fichiers devront être séparés par un caractère nul (pour correspondre au `-print0` de `find`)											|
+| shred			| réécrit par-dessus x fois avant de le supprimer																									|
+| -f			| force l'opération, même si le fichier est protégé en écriture (change les permissions si besoin)													|
+| -u			| supprime le fichier après l'avoir « déchiqueté »																									|
+| -z			| fait une passe finale d'écriture avec des zéros (pour masquer le fait que shred a été utilisé)													|
+| -v			| affiche ce qu'il est en train de faire (mode bavard)																								|
+| -n 15			| réécrit 15 fois des données aléatoires sur le fichier avant la passe de zéros et la suppression. (Le défaut est 3).		|
 
 On peut aussi créer un fichier qui s’exécutera tous les jours à minuit :
 
@@ -1298,7 +1299,7 @@ On y ajoute :
 #!/bin/bash
 
 # Supprimer tous les fichiers dans /var/log de manière sécurisée
-find /var/log -type f -print0 | sudo xargs -0 shred -fuzv -n 10
+sudo find /var/log -type f -print0 | sudo xargs -0 shred -fuzv -n 15
 
 # Supprimer tous les répertoires vides dans /var/log
 sudo find /var/log -type d -empty -exec rmdir {} \;
@@ -1408,7 +1409,7 @@ On redémarre le serveur :
 
 #### [Méthode N°3 : rejeter tout le trafic IPv6](#méthode-n3--rejeter-tout-le-trafic-ipv6)
 
-On créé la rêgle de blocage :
+On crée la règle de blocage :
 
 `sudo nano /etc/ipv6-iptables-rules`
 
@@ -1459,7 +1460,7 @@ On redémarre le serveur :
 
 ## [Quelques liens / tutoriels utiles](#quelques-liens--tutoriels-utiles)
 
-### [Aide-mémoires / turoriels](#aide-mémoires--turoriels)
+### [Aide-mémoires / tutoriels](#aide-mémoires--tutoriels)
 
 - [Aide-mémoire Bash](https://devhints.io/bash) 🇺🇸
 - [Aide-mémoire du mode d’édition Bash Emacs](https://catonmat.net/bash-emacs-editing-mode-cheat-sheet) 🇺🇸
@@ -1484,8 +1485,7 @@ On redémarre le serveur :
 
 ## [À faire](#à-faire)
 
-> - ajouter nginx pour créer un proxy inversé
-> - heberger le site directement dans la ram
+> - héberger le site directement dans la ram
 > - bloquer les ports inutiles
 > - chiffrer le disque dur
 > - stocker les clés dans le CPU plutôt que dans la RAM (qui peut être copiée) par exemple via TRESOR
@@ -1494,7 +1494,7 @@ On redémarre le serveur :
 > - soit de ne pas en émettre
 > - soit de les traiter avec logrotate (et le paramètre shred — 3 max.)
 
-Si vous avez des idées ou des améliorations à proposer, n’hésitez pas à postez un commentaire ci-dessous.
+Si vous avez des idées ou des améliorations à proposer, n’hésitez pas à poster un commentaire ci-dessous.
 
 ****
 
