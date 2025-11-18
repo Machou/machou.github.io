@@ -117,6 +117,7 @@ logpath = /var/log/auth.log
 | **logrotate** | utilitaire système conçu pour gérer automatiquement les fichiers journaux (logs).                                                          |
 | **enabled**   | simple booléen (`true`/`false` ou `1`/`0`) qui active ou désactive une **jail** (une règle de protection pour un service donné)            |
 | **destemail** | adresse e-mail à laquelle Fail2Ban enverra les notifications ou les rapports                                                               |
+{:.table .table-hover}
 
 Si le fichier `/var/log/auth.log` n’existe pas, on vérifie si **rsyslog** est installé et en cours d’exécution :
 
@@ -203,6 +204,7 @@ maxretry = 1
 | **apache-badbots**       | détecte les accès par des robots malveillants connus sur un serveur web Apache. Les « mauvais robots »sont des scripts automatisés qui tentent d’exploiter des vulnérabilités ou de surcharger le serveur                                               |
 | **apache-fakegooglebot** | détecte les faux robots se faisant passer pour les Robots de Google (Googlebot) mais qui ne proviennent pas des plages d’adresses IP légitimes de Google                                                                                                |
 | **apache-overflows**     | détecte les tentatives d’attaque par débordement de tampon (buffer overflow) sur un serveur web Apache. Ces attaques exploitent des failles de sécurité en envoyant des données excessivement longues pour causer des erreurs de dépassement de mémoire |
+{:.table .table-hover}
 
 ## Configuration avancée
 
