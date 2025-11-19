@@ -106,9 +106,7 @@ Dans la section `DROPPING ROUTES`, on dé-commente ou rajoute cette ligne :
 
 > Note : Sur **Debian 13**, `/sbin/iptables` interagit avec le backend `nftables`, ce qui est parfait.
 
-### Section `Scan trigger value`
-
-On dé-commente ou rajoute cette ligne :
+Dans la section `Scan trigger value`, on dé-commente ou rajoute cette ligne :
 
 `SCAN_TRIGGER="0"`
 
