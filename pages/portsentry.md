@@ -104,7 +104,7 @@ Dans la section `DROPPING ROUTES`, on dé-commente ou rajoute cette ligne :
 
 `KILL_ROUTE="/sbin/iptables -I INPUT -s $TARGET$ -j DROP"`
 
-> Note : Sur **Debian 13**, `/sbin/iptables` interagit avec le backend `nftables`, ce qui est parfait.
+> Note : Sur **Debian 13**, `/sbin/iptables` interagit avec le backend [`nftables`](https://www.netfilter.org/projects/nftables/index.html), ce qui est parfait.
 
 Dans la section `Scan trigger value`, on dé-commente ou rajoute cette ligne :
 
@@ -162,6 +162,7 @@ On force le démasquage (si le lien existe). Si la commande `systemctl unmask` n
 *Attention : faire ceci uniquement si la commande `ls -l` a confirmé l'existence du lien symbolique.*
 
 On recharge la configuration `systemd` :
+
 *Pour s'assurer que systemd prend en compte la nouvelle configuration du service démasqué.*
 
 `sudo systemctl daemon-reload`
@@ -178,129 +179,4 @@ sudo netstat -taupen | grep portsentry
 sudo ss -lptn | grep portsentry
 ```
 
-Note : En mode "Advanced", il est possible que tu ne voies pas les ports ouverts de manière classique avec netstat car il utilise des raw sockets, mais le processus doit être là.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-1. Activer le blocage
-
-Cherche BLOCK_UDP et BLOCK_TCP. Par défaut à 0, passe-les à 1 pour activer la riposte.
-
-
-## Configuration de PortSentry
-
-On démarre le service :
-
-`systemctl start portsentry`
-
-On active le démarrage automatique :
-
-`systemctl enable portsentry`
-
-On vérifie que le service fonctionne :
-
-`systemctl status portsentry`
-
-On ajoute l’IP de notre serveur pour éviter de se faire bannir :
-
-`sudo nano /etc/portsentry/portsentry.ignore.static`
-
-à la fin du fichier, on y ajoute notre IP.
-
-Ensuite, on active le mode de détection avancé ; PortSentry propose deux modes : simple et avancé. Le mode avancé est recommandé, car il ne « ferme » pas un port en apparence seulement ; il surveille directement les paquets entrants.
-
-Dans `/etc/default/portsentry`, activez le mode avancé :
-
-```sh
-TCP_MODE="atcp"
-UDP_MODE="audp"
-```
-
-Puis on configure les actions à effectuer lors d’une détection
-
-Dans `/etc/portsentry/portsentry.conf`, adaptez les directives importantes.
-
-Activation du blocage par iptables :
-
-```sh
-BLOCK_UDP="1"
-BLOCK_TCP="1"
-KILL_ROUTE="/sbin/iptables -I INPUT -s $TARGET$ -j DROP"
-```
-
-On évite de ce faire bannir, on ajoute / modifie la ligne :
-
-`IGNORE_FILE="/etc/portsentry/portsentry.ignore"`
-
-On modifie le fichier **portsentry.ignore** :
-
-```sh
-127.0.0.1
-192.168.0.0/16
-10.0.0.0/8
-mon-ip
-ip-du-serveur
-```
-
-On active l’écriture des fichiers journaux :
-
-`SYSLOG_FACILITY="auth"`
-
-On peut demander à **PortSentry** d’éviter de bloquer certaines IP sensibles (serveur DNS, passerelle, etc.) en les ajoutant dans :
-
-`/etc/portsentry/portsentry.ignore.static`
-
-On active le blocage permanent :
-
-```sh
-HISTORY_FILE="/var/lib/portsentry/portsentry.history"
-BLOCK_FILE="/var/lib/portsentry/portsentry.blocked"
-```
-
-Une fois la configuration terminée, on redémarre **PortSentry** :
-
-```sh
-sudo systemctl restart portsentry
-sudo systemctl enable portsentry
-```
-
-On vérifie qu'il fonctionne :
-
-`sudo systemctl status portsentry`
-
-Pour observer ce que PortSentry bloque :
-
-`sudo iptables -L -n`
-
-Pour surveiller les alertes dans les logs du système :
-
-`sudo journalctl -u portsentry`
-
-ou, selon le mode d’écriture :
-
-`sudo tail -f /var/log/auth.log`
+> Note : En mode « Advanced », il est possible que tu ne voies pas les ports ouverts de manière classique avec netstat car il utilise des raw sockets, mais le processus doit être là.
