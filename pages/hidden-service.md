@@ -1050,7 +1050,7 @@ On configure **mkp224o** :
 make
 ```
 
-On créé notre adresse personnalisée qui commence par **machou** :
+On crée notre adresse personnalisée qui commence par **machou** :
 
 `./mkp224o machou`
 
@@ -1220,7 +1220,7 @@ On installe le paquet `secure-delete`
 
 `sudo apt install secure-delete`
 
-On créé notre fichier script :
+On crée notre fichier script :
 
 `nano /home/salameche/ram.sh`
 
@@ -1494,7 +1494,7 @@ On redémarre le serveur :
 
 Si vous avez des idées ou des améliorations à proposer, n’hésitez pas à poster un commentaire ci-dessous.
 
------
+---
 
 <p class="text-center">
 	<a href="assets/img/tor.svg" data-fancybox="gallerie"><img src="assets/img/tor.svg" class="img-fluid" alt="Logo Tor / Debian" title="Logo Tor / Debian"></a>

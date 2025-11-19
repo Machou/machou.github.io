@@ -66,7 +66,7 @@ favicon: /assets/img/favicon-wow.svg
 - [Guide de **Shadowlands**](https://www.mamytwink.com/actualite/shadowlands-extension-wow-informations)
 - [Guide de **Dragonflight**](https://www.mamytwink.com/guides/dragonflight-toutes-les-informations-sur-lextension-wow)
 - [Guide de **The War Within**](https://www.mamytwink.com/guides/the-war-within-toutes-les-informations-sur-lextension-de-wow)
-- [Guide de **The War Within**](https://www.mamytwink.com/guides/the-midnight-toutes-les-informations-sur-lextension-de-wow)
+- [Guide de **Midnight**](https://www.mamytwink.com/guides/the-midnight-toutes-les-informations-sur-lextension-de-wow)
 
 ## Le LFR
 
@@ -104,11 +104,11 @@ favicon: /assets/img/favicon-wow.svg
 
 #### [Trône du tonnerre](https://www.wowhead.com/fr/zone=6622)
 
-| ------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Le baroud d’honneur des Zandalari** | [Jin’rokh le Briseur](https://www.wowhead.com/fr/npc=69465) [Horridon](https://www.wowhead.com/fr/npc=68476) [Conseil des anciens](https://www.wowhead.com/fr/npc=69134)  |
-| **Profondeurs oubliée**               | [Tortos](https://www.wowhead.com/fr/npc=67977) [Megaera](https://www.wowhead.com/fr/npc=70212) [Ji Kun](https://www.wowhead.com/fr/npc=69712)                             |
-| **Salles des Sculpte-Chair**          | [Durumu l’Oublié](https://www.wowhead.com/fr/npc=68036) [Primordius](https://www.wowhead.com/fr/npc=69017) [Sombre animus](https://www.wowhead.com/fr/npc=69427)          |
-| **Cime des Tempêtes**                 | [Qwon de fer](https://www.wowhead.com/fr/npc=68078) [Jumelles empyréennes](https://www.wowhead.com/fr/npc=68905) [Lei Shen](https://www.wowhead.com/fr/npc=68397)         |
+| ------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| **Le baroud d’honneur des Zandalari** | [Jin’rokh le Briseur](https://www.wowhead.com/fr/npc=69465) [Horridon](https://www.wowhead.com/fr/npc=68476) [Conseil des anciens](https://www.wowhead.com/fr/npc=69134) |
+| **Profondeurs oubliée**               | [Tortos](https://www.wowhead.com/fr/npc=67977) [Megaera](https://www.wowhead.com/fr/npc=70212) [Ji Kun](https://www.wowhead.com/fr/npc=69712)                            |
+| **Salles des Sculpte-Chair**          | [Durumu l’Oublié](https://www.wowhead.com/fr/npc=68036) [Primordius](https://www.wowhead.com/fr/npc=69017) [Sombre animus](https://www.wowhead.com/fr/npc=69427)         |
+| **Cime des Tempêtes**                 | [Qwon de fer](https://www.wowhead.com/fr/npc=68078) [Jumelles empyréennes](https://www.wowhead.com/fr/npc=68905) [Lei Shen](https://www.wowhead.com/fr/npc=68397)        |
 {:.table .table-hover .table-wow}
 
 #### [Siège d’Orgrimmar](https://www.wowhead.com/fr/zone=6738)
@@ -120,7 +120,7 @@ favicon: /assets/img/favicon-wow.svg
 | **La chute**                     | [Ingé-siège Boîte-Noire](https://www.wowhead.com/fr/npc=71504) [Parangons des Klaxxi](https://www.wowhead.com/fr/npc=71152) [Garrosh Hurlenfer](https://www.wowhead.com/fr/npc=71865)                                                |
 {:.table .table-hover .table-wow}
 
------
+---
 
 ### Warlords of Draenor
 
@@ -161,7 +161,7 @@ favicon: /assets/img/favicon-wow.svg
 | **La Porte noire**      | [Archimonde](https://www.wowhead.com/fr/npc=91331)                                                                                                                                       |
 {:.table .table-hover .table-wow}
 
------
+---
 
 ### Legion
 
@@ -215,7 +215,7 @@ favicon: /assets/img/favicon-wow.svg
 | **Le Siège du Panthéon**  | [Aggramar](https://www.wowhead.com/fr/npc=121975) [Argus l’Annihilateur](https://www.wowhead.com/fr/npc=124828)                                                                                      |
 {:.table .table-hover .table-wow}
 
------
+---
 
 ### Battle for Azeroth
 
@@ -268,7 +268,7 @@ favicon: /assets/img/favicon-wow.svg
 | **Le Rêve éveillé**       | [Carapace de N’Zoth](https://www.wowhead.com/fr/npc=157439) [N'Zoth le Corrupteur](https://www.wowhead.com/fr/npc=158041)                                                                                                           |
 {:.table .table-hover .table-wow}
 
------
+---
 
 ### Shadowlands
 
@@ -308,7 +308,7 @@ favicon: /assets/img/favicon-wow.svg
 | **Le grand dessein**         | [Le Geôlier](https://www.wowhead.com/fr/npc=180990)                                                                                                                                                                                                          |
 {:.table .table-hover .table-wow}
 
------
+---
 
 ### Dragonflight
 
@@ -316,7 +316,7 @@ favicon: /assets/img/favicon-wow.svg
 
 **PnJ LFR non disponible**
 
------
+---
 
 ### The War Within
 
@@ -324,7 +324,7 @@ favicon: /assets/img/favicon-wow.svg
 
 **PnJ LFR non disponible**
 
------
+---
 
 ### Midnight
 
@@ -332,7 +332,7 @@ favicon: /assets/img/favicon-wow.svg
 
 **PnJ LFR non disponible**
 
------
+---
 
 <p class="text-center">
 	<a href="assets/img/logo-horde.png" data-fancybox="gallerie"><img src="assets/img/logo-horde.png" class="d-block w-75 m-auto img-fluid" alt="Logo Horde" title="Logo Horde"></a>

@@ -59,11 +59,164 @@ favicon: /assets/img/favicon.png
 
 PortSentry est un outil robuste mais ancien. Son approche est efficace contre les scans agressifs, mais moins adaptée à des attaques modernes plus subtiles. Il reste cependant pertinent pour renforcer une défense en profondeur, en complément d’un pare-feu configuré avec soin et d’un système de supervision.
 
-## Installation de PortSentry
+## Installation et configuration de PortSentry
 
 On installe PortSentry :
 
 `sudo apt install portsentry`
+
+On ajoute notre IP en liste blanche : (pour ne pas te bannir sois-même par accident)
+
+`sudo nano /etc/portsentry/portsentry.ignore`
+
+On s'assure que `127.0.0.1/32` est présent.
+
+On rajoute notre adresse IP publique (et celle du VPN si on en utilise un).
+
+Ajoute ton adresse IP publique et celle de tes serveurs de monitoring ou VPN à la fin du fichier.
+
+Le fichier **portsentry.ignore** doit ressembler à :
+
+```text
+127.0.0.1/32
+MON_IP
+```
+
+On active le blocage :
+
+`sudo nano /etc/portsentry/portsentry.conf`
+
+On change :
+
+```sh
+BLOCK_UDP="0"
+BLOCK_TCP="0"
+```
+
+en
+
+```sh
+BLOCK_UDP="1"
+BLOCK_TCP="1"
+```
+
+PortSentry peut bloquer de plusieurs façons (hosts.deny, route, iptables). La méthode la plus propre sur un Linux moderne est d'utiliser [iptables](https://www.netfilter.org/projects/iptables/).
+
+### Section `DROPPING ROUTES`
+
+Dé-commenter ou rajoute cette ligne :
+
+`KILL_ROUTE="/sbin/iptables -I INPUT -s $TARGET$ -j DROP"`
+
+> Note : Sur **Debian 13**, `/sbin/iptables` interagit avec le backend `nftables`, ce qui est parfait.
+
+### Section `Scan trigger value`
+
+On dé-commente ou rajoute cette ligne :
+
+`SCAN_TRIGGER="0"`
+
+> Cela signifie qu'une seule touche sur un port piège suffit à bannir l'IP. Pour plus de tolérance, on peut changer à **1** ou **2**
+
+Par défaut, PortSentry utilise le mode « Classic » qui écoute sur des ports spécifiques. Le mode « Advanced » (*Stealth*) est bien meilleur : il surveille tous les ports en dessous d'une certaine limite (sauf ceux déjà utilisés par tes services comme SSH ou Apache).
+
+On modifie le fichier de démarrage par défaut :
+
+`sudo nano /etc/default/portsentry`
+
+On change :
+
+```sh
+TCP_MODE="atcp"
+UDP_MODE="audp"
+``
+
+en
+
+```sh
+TCP_MODE="atcp"
+UDP_MODE="audp"
+```
+
+On active `portsentry` au démarrage du serveur :
+
+`sudo systemctl enable portsentry`
+
+On démarre / redémarre le service :
+
+`sudo systemctl restart portsentry`
+
+---
+
+Sur les systèmes basés sur `systemd` (comme **Debian 13**) pour certains outils sensibles comme **PortSentry**, le service est volontairement désactivé pour éviter qu'il ne se lance accidentellement sans être configuré.
+
+On démasque le service :
+
+`sudo systemctl unmask portsentry`
+
+Si le service `portsentry` reste toujours masquer, on teste si le lien existe :
+
+`ls -l /etc/systemd/system/portsentry.service`
+
+Si cette commande affiche une ligne se terminant par -> `/dev/null`, c'est que le service est toujours masqué.
+Si le fichier n'existe pas, c'est qu'il a été démasqué mais que `systemd` n'a pas mis à jour son statut.
+
+On force le démasquage (si le lien existe). Si la commande `systemctl unmask` ne fonctionne pas, on peut tenter de supprimer le lien manuellement (c'est ce que fait unmask en coulisse) :
+
+`sudo rm /etc/systemd/system/portsentry.service`
+
+*Attention : faire ceci uniquement si la commande `ls -l` a confirmé l'existence du lien symbolique.*
+
+On recharge la configuration `systemd` :
+*Pour s'assurer que systemd prend en compte la nouvelle configuration du service démasqué.*
+
+`sudo systemctl daemon-reload`
+
+Pour vérifier que tout fonctionne : (on regarde les logs : **PortSentry** note son démarrage dans syslog)
+
+`grep "portsentry" /var/log/syslog`
+
+On peut aussi vérifier l'écout du port :
+
+```sh
+sudo netstat -taupen | grep portsentry
+# Ou avec ss
+sudo ss -lptn | grep portsentry
+```
+
+Note : En mode "Advanced", il est possible que tu ne voies pas les ports ouverts de manière classique avec netstat car il utilise des raw sockets, mais le processus doit être là.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1. Activer le blocage
+
+Cherche BLOCK_UDP et BLOCK_TCP. Par défaut à 0, passe-les à 1 pour activer la riposte.
+
 
 ## Configuration de PortSentry
 

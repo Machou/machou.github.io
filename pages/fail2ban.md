@@ -40,15 +40,15 @@ favicon: /assets/img/favicon.png
 
 #### Méthode N°1
 
-On installe **Fail2ban** via les paquets officiels :
+Installation de **Fail2ban** via les paquets officiels :
 
 `sudo apt install fail2ban`
 
------
+---
 
 #### Méthode N°2 : via les sources
 
-On installe **Fail2ban** via les sources du dépôt GitHub :
+Installation de **Fail2ban** via les sources du dépôt GitHub :
 
 ```sh
 git clone https://github.com/fail2ban/fail2ban.git
