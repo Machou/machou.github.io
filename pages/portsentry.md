@@ -28,8 +28,8 @@ favicon: /assets/img/favicon.png
 
 ### Fonctionnalités principales de PortSentry
 
-1. **Détection de scans de port** : PortSentry surveille les tentatives de connexion sur les ports ouverts ou fermés pour détecter les scans de port effectués par des attaquants
-2. **Réponse active** : lorsqu’un scan de port est détecté, PortSentry peut réagir en bloquant l’adresse IP de l’attaquant en temps réel, souvent en ajoutant des règles de pare-feu ou en modifiant les fichiers de configuration réseau
+1. **Détection de scans de port** : **PortSentry** surveille les tentatives de connexion sur les ports ouverts ou fermés pour détecter les scans de port effectués par des attaquants
+2. **Réponse active** : lorsqu’un scan de port est détecté, **PortSentry** peut réagir en bloquant l’adresse IP de l’attaquant en temps réel, souvent en ajoutant des règles de pare-feu ou en modifiant les fichiers de configuration réseau
 3. **Modes de fonctionnement** : il peut fonctionner en plusieurs modes, notamment le mode "stealth" où il simule des ports ouverts pour attirer et détecter les scanners, et le mode "advanced" où il surveille des ports spécifiques
 4. **Flexibilité et configuration** : il est hautement configurable, permettant aux administrateurs de définir les ports à surveiller, les actions à entreprendre en cas de détection de scan, et les niveaux de sensibilité
 
@@ -37,12 +37,12 @@ favicon: /assets/img/favicon.png
 
 #### Surveillance des ports
 
-- **Surveillance des ports ouverts** : PortSentry peut surveiller les ports ouverts légitimes pour détecter les tentatives de connexion suspectes
+- **Surveillance des ports ouverts** : **PortSentry** peut surveiller les ports ouverts légitimes pour détecter les tentatives de connexion suspectes
 - **Surveillance des ports fermés** : il peut également surveiller les ports fermés pour détecter les scans de port, attirant les attaquants vers des ports qui ne devraient pas être accessibles
 
 #### Actions de réponse
 
-- **Blocage d’IP** : en réponse à un scan de port, PortSentry peut bloquer automatiquement l’adresse IP de l’attaquant en ajoutant des règles de pare-feu (comme iptables) ou en modifiant les fichiers de configuration des hôtes
+- **Blocage d’IP** : en réponse à un scan de port, **PortSentry** peut bloquer automatiquement l’adresse IP de l’attaquant en ajoutant des règles de pare-feu (comme iptables) ou en modifiant les fichiers de configuration des hôtes
 - **Notifications** : il peut envoyer des notifications aux administrateurs en cas de détection d’activités suspectes, permettant une réponse rapide aux incidents
 
 #### Modes de fonctionnement
@@ -53,15 +53,15 @@ favicon: /assets/img/favicon.png
 
 #### Configuration
 
-- **Sensibilité** : Les administrateurs peuvent configurer le niveau de sensibilité de PortSentry pour définir combien de tentatives de connexion sont nécessaires avant qu’une IP soit bloquée
+- **Sensibilité** : Les administrateurs peuvent configurer le niveau de sensibilité de **PortSentry** pour définir combien de tentatives de connexion sont nécessaires avant qu’une IP soit bloquée
 - **Personnalisation des ports** : il est possible de spécifier quels ports doivent être surveillés en fonction des besoins spécifiques de sécurité
 - **Options de journalisation** : il peut être configuré pour enregistrer les tentatives de connexion suspectes dans des fichiers de journal pour une analyse ultérieure
 
-PortSentry est un outil robuste mais ancien. Son approche est efficace contre les scans agressifs, mais moins adaptée à des attaques modernes plus subtiles. Il reste cependant pertinent pour renforcer une défense en profondeur, en complément d’un pare-feu configuré avec soin et d’un système de supervision.
+**PortSentry** est un outil robuste mais ancien. Son approche est efficace contre les scans agressifs, mais moins adaptée à des attaques modernes plus subtiles. Il reste cependant pertinent pour renforcer une défense en profondeur, en complément d’un pare-feu configuré avec soin et d’un système de supervision.
 
 ## Installation et configuration de PortSentry
 
-On installe PortSentry :
+On installe **PortSentry** :
 
 `sudo apt install portsentry`
 
@@ -98,11 +98,9 @@ BLOCK_UDP="1"
 BLOCK_TCP="1"
 ```
 
-PortSentry peut bloquer de plusieurs façons (hosts.deny, route, iptables). La méthode la plus propre sur un Linux moderne est d'utiliser [iptables](https://www.netfilter.org/projects/iptables/).
+**PortSentry** peut bloquer de plusieurs façons (`hosts.deny`, `route`, `iptables`). La méthode la plus propre sur un Linux moderne est d'utiliser [iptables](https://www.netfilter.org/projects/iptables/).
 
-### Section `DROPPING ROUTES`
-
-Dé-commenter ou rajoute cette ligne :
+Dans la section `DROPPING ROUTES`, on dé-commente ou rajoute cette ligne :
 
 `KILL_ROUTE="/sbin/iptables -I INPUT -s $TARGET$ -j DROP"`
 
@@ -116,7 +114,7 @@ On dé-commente ou rajoute cette ligne :
 
 > Cela signifie qu'une seule touche sur un port piège suffit à bannir l'IP. Pour plus de tolérance, on peut changer à **1** ou **2**
 
-Par défaut, PortSentry utilise le mode « Classic » qui écoute sur des ports spécifiques. Le mode « Advanced » (*Stealth*) est bien meilleur : il surveille tous les ports en dessous d'une certaine limite (sauf ceux déjà utilisés par tes services comme SSH ou Apache).
+Par défaut, **PortSentry** utilise le mode « Classic » qui écoute sur des ports spécifiques. Le mode « Advanced » (*Stealth*) est bien meilleur : il surveille tous les ports en dessous d'une certaine limite (sauf ceux déjà utilisés par tes services comme SSH ou Apache).
 
 On modifie le fichier de démarrage par défaut :
 
@@ -136,7 +134,7 @@ TCP_MODE="atcp"
 UDP_MODE="audp"
 ```
 
-On active `portsentry` au démarrage du serveur :
+On active **PortSentry** au démarrage du serveur :
 
 `sudo systemctl enable portsentry`
 
