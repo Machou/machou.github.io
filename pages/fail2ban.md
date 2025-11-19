@@ -44,7 +44,7 @@ On installe **Fail2ban** via les paquets officiels :
 
 `sudo apt install fail2ban`
 
-----------
+-----
 
 #### Méthode N°2 : via les sources
 

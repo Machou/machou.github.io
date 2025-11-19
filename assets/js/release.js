@@ -9,6 +9,20 @@ function parseReleaseName(name)
     let baseName = name;
     let extension = '';
 
+    // On cherche une ou plusieurs extensions classiques à la fin (.mkv, .mp4, .avi)
+    const extMatch = baseName.match(/(\.(mkv|mp4|avi|srt|sub))+$/i);
+
+    if (extMatch) {
+        // On coupe tout ce qui ressemble à des extensions à la fin
+        baseName = baseName.substring(0, extMatch.index);
+
+        // On ne garde que la première extension trouvée (ex: .mkv) pour la fin
+        extension = extMatch[0].match(/\.\w{3,4}$/)[0].toLowerCase();
+    }
+
+    // Supprime la team collée avec un tiret
+    baseName = baseName.replace(/-[a-zA-Z0-9]+$/i, '');
+
     const lastDotIndex = name.lastIndexOf('.');
     if (lastDotIndex > -1 && lastDotIndex > name.length - 6) {
         baseName = name.substring(0, lastDotIndex);
