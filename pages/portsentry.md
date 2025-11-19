@@ -24,7 +24,7 @@ favicon: /assets/img/favicon.png
 
 ## Qu’est-ce que PortSentry ?
 
-[PortSentry](https://github.com/Perdjesk/portsentry) est un outil de détection et de réponse aux scans de port conçu pour améliorer la sécurité des systèmes en surveillant les connexions réseau suspectes. Il peut identifier les tentatives de scan de port sur un système et réagir en bloquant les adresses IP des attaquants, empêchant ainsi les intrusions potentielles.
+[PortSentry](https://github.com/portsentry/portsentry) est un outil de détection et de réponse aux scans de port conçu pour améliorer la sécurité des systèmes en surveillant les connexions réseau suspectes. Il peut identifier les tentatives de scan de port sur un système et réagir en bloquant les adresses IP des attaquants, empêchant ainsi les intrusions potentielles.
 
 ### Fonctionnalités principales de PortSentry
 
@@ -72,8 +72,6 @@ On ajoute notre IP en liste blanche : (pour ne pas te bannir sois-même par acci
 On s'assure que `127.0.0.1/32` est présent.
 
 On rajoute notre adresse IP publique (et celle du VPN si on en utilise un).
-
-Ajoute ton adresse IP publique et celle de tes serveurs de monitoring ou VPN à la fin du fichier.
 
 Le fichier **portsentry.ignore** doit ressembler à :
 
