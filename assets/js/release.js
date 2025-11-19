@@ -1,4 +1,5 @@
 
+
 const inputElement = document.querySelector('#release');
 const outputElement = document.querySelector('#out');
 
@@ -20,36 +21,26 @@ function parseReleaseName(name)
         extension = extMatch[0].match(/\.\w{3,4}$/)[0].toLowerCase();
     }
 
-    // Supprime la team collée avec un tiret
+    // Supprime la team collée avec un tiret (ex: -mHDgz)
     baseName = baseName.replace(/-[a-zA-Z0-9]+$/i, '');
-
-    const lastDotIndex = name.lastIndexOf('.');
-    if (lastDotIndex > -1 && lastDotIndex > name.length - 6) {
-        baseName = name.substring(0, lastDotIndex);
-        extension = name.substring(lastDotIndex);
-    }
-
-    // Supprime la team
-    baseName = baseName.replace(/-[\w\d]+$/i, '');
 
     // Protège les points décimaux pour l'audio (ex: 5.1) et les codecs (H.264)
     baseName = baseName.replace(/(AAC|AC3|DTS)(\d)\.(\d)/gi, '$1$2<DECIMAL_DOT>$3');
-    // On protège aussi temporairement le H.264/265 pour éviter qu'il soit coupé par le nettoyage des points
     baseName = baseName.replace(/\b(H|x)\.(264|265)\b/gi, '$1<DOT>$2');
 
-    // On remplace les points et les parenthèses par des espaces
+    // Nettoyage global (Points ET Parenthèses -> Espaces)
     baseName = baseName.replace(/[().]/g, ' ');
 
     // Restauration des points protégés
     baseName = baseName.replace(/<DECIMAL_DOT>/g, '.');
-    baseName = baseName.replace(/<DOT>/g, '.'); // Restaure le point du H.264 si présent
+    baseName = baseName.replace(/<DOT>/g, '.');
 
     // Standardise les codecs (H.264 -> h264)
     baseName = baseName.replace(/\b(H|x)\.?\s?(264|265)\b/gi, (match, p1, p2) => {
         return p1.toLowerCase() + p2;
     });
 
-    // Standardise WEBRip (WEB-DL -> WEBRip)
+    // Standardise WEBRip
     baseName = baseName.replace(/\b(WEB-?DL|WEB)\b/gi, 'WEBRip');
 
     // Supprime les mots clés inutiles
@@ -58,22 +49,15 @@ function parseReleaseName(name)
     // Standardise les résolutions
     baseName = baseName.replace(/\b(2160|1080|720)[Pi]\b/gi, '$1p');
 
-    // --- CORRECTION 2 : Réorganisation et Majuscule ---
-    const langList = 'MULTi|VFi|VFF|TRUEFRENCH|FRENCH|VOF|SUBFRENCH|VOSTFR';
-    const reorderRegex = new RegExp(
-        '(\\b(?:S\\d{1,2}E\\d{1,2}|(?:19|20)\\d{2})\\b)' +  // $1: Ancre (Année ou SxxExx)
-        '(.*?)' +                                           // $2: Milieu (ce qu'il y a entre l'ancre et la langue)
-        '(\\b(?:' + langList + ')\\b)',                     // $3: Langue
-        'i'
-    );
+    const langList = 'MULTi|VFi|VFF|TRUEFRENCH|FRENCH|FR|VOF|SUBFRENCH|VOSTFR';
+    const reorderRegex = new RegExp('(\\b(?:S\\d{1,2}E\\d{1,2}|(?:19|20)\\d{2})\\b)' + '(.*?)' + '(\\b(?:' + langList + ')\\b)','i');
 
     if (baseName.match(reorderRegex)) {
         baseName = baseName.replace(reorderRegex, (match, p1, p2, p3) => {
-            // p1 = Année/Episode, p2 = Milieu, p3 = Langue
             let lang = p3.toUpperCase();
 
-            // Cas spécial pour MULTi et VFi (garder le 'i' minuscule si on veut être puriste, ou tout majuscule selon ton choix)
-            // Ici je force le standard : MULTI -> MULTi
+            if (lang === 'FR') { lang = 'FRENCH'; }
+
             if (['MULTI', 'VFI'].includes(lang)) {
                 lang = lang.slice(0, -1) + 'i';
             }
@@ -82,7 +66,7 @@ function parseReleaseName(name)
         });
     }
 
-    // Nettoyer les espaces multiples résiduels
+    // Nettoyer les espaces multiples et trim
     baseName = baseName.replace(/\s{2,}/g, ' ');
     baseName = baseName.trim();
 
