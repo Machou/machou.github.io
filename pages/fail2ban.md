@@ -74,207 +74,173 @@ On vérifie que le service fonctionne :
 
 `systemctl status fail2ban`
 
-Nous allons créer et modifier les fichiers de configuration de Fail2ban, mais comme indiqué dans le fichier `/etc/fail2ban/fail2ban.conf`, ce fichier sera probablement remplacé ou amélioré lors d’une mise à jour. De ce fait, nous allons créer des « prisons » dans les fichiers placés dans le dossier `/etc/fail2ban/jail.d`.
+Par défaut, **Fail2ban** utilise le fichier `/etc/fail2ban/jail.conf` qui contient les réglages globaux et les définitions des prisons (*jails*). Ce fichier **ne doit jamais être modifié** car il serait écrasé lors d'une mise à jour de **Fail2ban**.
 
-Le fichier `/etc/fail2ban/jail.conf` peut servir de documentation et les paramètres par défaut sont écrits à l’intérieur.
+La méthode standard consiste à créer un fichier de configuration local qui surchargera uniquement les paramètres qu’on souhaite modifier :
 
-On 																																rer la configuration par défaut de tous les filtres actifs et à venir :
+`sudo nano /etc/fail2ban/jail.local`
 
-`sudo nano /etc/fail2ban/jail.d/prisons.conf`
+On va configurer le fichier `jail.local` et utiliser paramètres par défaut les plus importants pour définir la politique de bannissement pour toutes les prisons qui seront activées :
 
-On y ajoute :
-
-```sh
+```toml
 [DEFAULT]
-ignoreip = 127.0.0.1/8 ::1 192.168.1.0/24 ip-du-serveur mon-ip
+bantime = 24h
 findtime = 10m
-bantime = 72h
 maxretry = 3
-```
-
-* **ignoreip** : liste des adresses IP ignorées
-  * **ignoreip** : plages IP ; exemples : `ignoreip = 192.168.1.0/24` ou `ignoreip = 192.168.1.0/24 10.0.0.1 172.16.0.0/16`
-* **findtime** : spécifie la fenêtre de temps pendant laquelle Fail2ban recherche des tentatives de connexion répétées
-* **bantime** : définit la durée pendant laquelle une adresse IP est bannie après avoir dépassé le nombre de tentatives de connexion échouées
-* **maxretry** : définit le nombre maximal de tentatives de connexion échouées autorisées dans la période définie par `findtime` avant que Fail2ban ne déclenche un bannissement
-
-On y ajoute le filtre pour le service *SSH* :
-
-```sh
-[sshd]
-enabled = true
-filter = sshd
-port = 22
-logpath = /var/log/auth.log
+ignoreip = 127.0.0.1/8 192.168.1.0/24 ::1
+action = %(action_)s
 ```
 
 | Paramètres    | Description                                                                                                                                |
 |---------------|--------------------------------------------------------------------------------------------------------------------------------------------|
-| **ignoreip**  | liste des adresses IP ignorées<br>plages IP ; exemples : `ignoreip = 192.168.1.0/24` ou `ignoreip = 192.168.1.0/24 10.0.0.1 172.16.0.0/16` |
-| **findtime**  | fenêtre de temps (en secondes) pendant laquelle Fail2Ban compte les tentatives de connexion échouée                                        |
-| **bantime**   | durée du bannissement (en secondes) qui s’applique à une IP une fois qu’elle a atteint le seuil `maxretry`                                 |
+| **bantime**   | durée du bannissement qui s’applique à une IP une fois qu’elle a atteint le seuil `maxretry`                                               |
+| **findtime**  | fenêtre de temps pendant laquelle **Fail2Ban** compte les tentatives de connexion échouée                                                  |
 | **maxretry**  | nombre maximal d’échecs (tentatives) qu’une IP peut faire avant d’être bannie.                                                             |
+| **ignoreip**  | liste des adresses IP (IPv4 et IPv6) ignorées<br>plages IP ; exemples : `ignoreip = 192.168.1.0/24` ou `ignoreip = 192.168.1.0/24 10.0.0.1 172.16.0.0/16` |
+| **action**    | action par défaut : utilise `iptables` (ou `nftables`) pour bannir l’IP                                                                    |
+{:.table .table-hover}
+
+**Autres paramètres**
+
+| Paramètres    | Description                                                                                                                                |
+|---------------|--------------------------------------------------------------------------------------------------------------------------------------------|
 | **logrotate** | utilitaire système conçu pour gérer automatiquement les fichiers journaux (logs).                                                          |
 | **enabled**   | simple booléen (`true`/`false` ou `1`/`0`) qui active ou désactive une **jail** (une règle de protection pour un service donné)            |
-| **destemail** | adresse e-mail à laquelle Fail2Ban enverra les notifications ou les rapports                                                               |
+| **destemail** | adresse e-mail à laquelle **Fail2Ban** enverra les notifications ou les rapports                                                           |
 {:.table .table-hover}
 
-Si le fichier `/var/log/auth.log` n’existe pas, on vérifie si **rsyslog** est installé et en cours d’exécution :
+### Activer la prison SSH (sshd)
 
-`sudo systemctl status rsyslog`
+Maintenant que les valeurs par défaut sont définies, nous allons créer (ou surcharger) la section spécifique au service SSH (nommé `sshd` dans **Fail2ban**).
 
-Si **rsyslog** n’est pas installé, on l’installe :
+On modifie le fichier `jail.local` :
 
-```sh
-sudo apt update
-sudo apt install rsyslog
+`sudo nano /etc/fail2ban/jail.local`
+
+On cherche la partie `[sshd]` :
+
+```toml
+[sshd]
+enabled = true
+port = ssh
+filter = sshd
+maxretry = 3
+bantime = 48h
 ```
 
-On vérifie la configuration de **rsyslog** :
+Le paramètre `filter = sshd` indique à **Fail2ban** d’utiliser le fichier de filtre pré-écrit `/etc/fail2ban/filter.d/sshd.conf`. Ce fichier contient les expressions régulières (failregex) nécessaires pour identifier les lignes de tentatives de connexion échouées dans le fichier de journal (auth.log).
 
-`sudo nano /etc/rsyslog.conf`
-
-On s’assure que la ligne suivante n’est pas commentée (pas de # au début) :
-
-`auth,authpriv.*                 /var/log/auth.log`
-
-On redémarre **rsyslog** :
-
-`sudo systemctl restart rsyslog`
-
-Debian utilise **systemd** et ses logs peuvent être consultés via **journald**. On peut afficher les logs SSH avec la commande suivante :
-
-`sudo journalctl -u ssh`
-
-ou
-
-`sudo cat /var/log/auth.log`
-
-On redémarre Fail2ban pour appliquer les modifications :
+On applique les modifications :
 
 `sudo systemctl restart fail2ban`
 
-On vérifie que le filtre a été prit en compte :
+On vérifie que **Fail2ban** fonctionne :
 
-`sudo fail2ban-client status`
+`sudo systemctl status fail2ban`
 
-La sortie renverra :
-
-```sh
-Status
-|- Number of jail: 1
-`- Jail list:   sshd
-```
-
-Vous allez probablement créer différents filtres, si vous souhaitez en activer / désactiver certains, on peut utiliser :
-
-`sudo fail2ban-client start|stop|status sshd`
-
-Quelques exemples de filtres, à ajouter dans le fichier :
-
-`sudo nano /etc/fail2ban/jail.d/prisons.conf`
-
-On y ajoute :
+Doit renvoyer :
 
 ```sh
-[apache-auth]
-enabled = true
-bantime = 744h
-maxretry = 1
+● fail2ban.service - Fail2Ban Service
+     Loaded: loaded (/usr/lib/systemd/system/fail2ban.service; enabled; preset: enabled)
+     Active: active (running) since Thu 2025-11-20 13:47:43 CET; 1s ago
+ Invocation: 1ff45edcd8eb4238bbaec105c3c9cf2c
+       Docs: man:fail2ban(1)
+   Main PID: 72339 (fail2ban-server)
+      Tasks: 7 (limit: 4596)
+     Memory: 14.4M (peak: 16.8M)
+        CPU: 1.627s
+     CGroup: /system.slice/fail2ban.service
+             ├─72339 /usr/bin/python3 /usr/bin/fail2ban-server -xf start
+             └─72448 /usr/bin/python3 /usr/bin/fail2ban-server -xf start
 
-[apache-badbots]
-enabled = true
-bantime = 744h
-maxretry = 1
-
-[apache-fakegooglebot]
-enabled = true
-bantime = 744h
-maxretry = 1
-
-[apache-overflows]
-enabled = true
-bantime = 744h
-maxretry = 1
+nov. 20 13:47:43 sd-117585 systemd[1]: Started fail2ban.service - Fail2Ban Service.
+nov. 20 13:47:43 sd-117585 fail2ban-server[72339]: Server ready
 ```
 
-| Prisons                  | Description                                                                                                                                                                                                                                             |
-|--------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **apache-auth**          | détecte les tentatives de connexion échouées à des zones protégées par mot de passe sur un serveur web Apache. Cela inclut les échecs d’authentification HTTP basique ou digest                                                                         |
-| **apache-badbots**       | détecte les accès par des robots malveillants connus sur un serveur web Apache. Les « mauvais robots »sont des scripts automatisés qui tentent d’exploiter des vulnérabilités ou de surcharger le serveur                                               |
-| **apache-fakegooglebot** | détecte les faux robots se faisant passer pour les Robots de Google (Googlebot) mais qui ne proviennent pas des plages d’adresses IP légitimes de Google                                                                                                |
-| **apache-overflows**     | détecte les tentatives d’attaque par débordement de tampon (buffer overflow) sur un serveur web Apache. Ces attaques exploitent des failles de sécurité en envoyant des données excessivement longues pour causer des erreurs de dépassement de mémoire |
-{:.table .table-hover}
-
-## Configuration avancée
-
-Pour être averti par courriel lorsque Fail2ban banni une IP, on modifie la configuration globale :
-
-`sudo nano /etc/fail2ban/jail.d/prisons.conf`
-
-On y ajoute, dans la partie *[DEFAULT]* :
-
-```sh
-action = %(action_mw)s
-destemail = fail2ban@monsite.fr
-```
-
-Pour envoyer un courriel plus détaillé (whois + logs), on change :
-
-`action = %(action_mwl)s`
-
-On redémarre Fail2ban :
-
-`sudo systemctl restart fail2ban`
-
-La configuration actuelle est globale, mais on peut spécifier l’envoie de courriel pour chaque filtre séparément.
-
-Fail2ban gère aussi les expressions régulières (regex), qui sont définies par la directive `failregex`.
-
-**Utilisateur avancé** : pour ceux qui souhaitent créer des filtres personnalisés, ou pour testé un filtre sur un fichier log, on utilisera `fail2ban-regex`.
-
-Fail2ban met à disposition des filtres déjà écrits. Pour tester le filtre qui gére les « mauvais robots » qui se balade sur votre serveur, on peut tester le script :
-
-`fail2ban-regex /var/log/apache2/access.log /etc/fail2ban/filter.d/apache-badbots.conf`
-
-Pour afficher les prisons actives :
-
-`sudo fail2ban-client status`
-
-La sortie renverra :
-
-```sh
-Status
-|- Number of jail: 1
-`- Jail list:   sshd
-```
-
-Pour afficher le nombre de tentative, le nombre d’IP bannie ainsi que la liste des IP bannies :
+Pour vérifier l’état de la prison `[sshd]` :
 
 `sudo fail2ban-client status sshd`
 
-La sortie renverra :
+Vous devriez voir une sortie similaire à ceci, confirmant que le filtre surveille le bon journal :
 
-```sh
+```text
 Status for the jail: sshd
 |- Filter
-|  |- Currently failed: 6
-|  |- Total failed:     485
+|  |- Currently failed: 0
+|  |- Total failed:     0
 |  `- File list:        /var/log/auth.log
 `- Actions
-   |- Currently banned: 70
-   |- Total banned:     70
-   `- Banned IP list:   37.156.*.* 183.81.*.* 121.233.*.* 45.148.*.* …etc
+   |- Currently banned: 0
+   |- Total banned:     0
+   `- Banned IP list:
 ```
 
-Si votre adresse IP se retrouve dans la liste des IP bannies, pas de panique, nous pouvons la retirer !
+### La Prison spéciale
 
-On tape :
+On va créer une prison pour bannir des adresses IP manuellement et éviter de rentrer en conflit avec d¹autres filtres.
 
-`sudo fail2ban-client set nom-du-service mon-ip`
+Voici comment la mettre en place :
 
-On peut aussi bannir une IP manuellement :
+On va ajouter cette nouvelle section dans votre fichier de configuration local, soit `/etc/fail2ban/jail.local`, soit dans un nouveau fichier de la structure `/etc/fail2ban/jail.d/`.
 
-`sudo fail2ban-client set nom-du-service banip mon-ip`
+On ajoute, à la fin du fichier :
 
-Merci au [Wiki officiel d’ubuntu-fr.org](https://doc.ubuntu-fr.org/fail2ban) et au [dépôt GitHub officiel de Fail2ban](https://github.com/fail2ban/fail2ban).
+`sudo nano /etc/fail2ban/jail.local`
+
+````toml
+[manual-jail]
+enabled = true
+logpath = /dev/null
+filter =
+bantime = 1y
+maxretry = 1
+```
+
+| Paramètres   | Description                                                     |
+|--------------|-----------------------------------------------------------------|
+| **enabled**  | on active la prison                                             |
+| **logpath**  | pas de chemin de journal (on ne surveille rien)                 |
+| **filter**   | pas de filtre associé (on ne cherche pas de tentatives d'échec) |
+| **bantime**  | on va lui donner un temps de bannissement très long, 1 année    |
+| **maxretry** |                                                                 |
+{:.table .table-hover}
+
+Note : En utilisant `logpath = /dev/null`, on indique à **Fail2ban** de ne lire aucun fichier pour cette prison, ce qui réduit la charge inutile.
+
+On active la prison :
+
+`sudo systemctl restart fail2ban`
+
+On vérifie qu’elle est active :
+
+`sudo fail2ban-client status manual-jail`
+
+Vous devriez voir une sortie similaire à ceci, confirmant que la prison est active :
+
+````text
+Status for the jail: manual-jail
+|- Filter
+|  |- Currently failed: 0
+|  |- Total failed:     0
+|  `- File list:        /dev/null
+`- Actions
+   |- Currently banned: 0
+   |- Total banned:     0
+   `- Banned IP list:
+```
+
+Une fois le service **Fail2ban** redémarré et la prison activée, on va pouvoir l’utiliser à tout moment pour bannir / dé-bannir une IP spécifique.
+
+#### Bannissement manuel
+
+`sudo fail2ban-client set manual-jail banip IP_À_BANNIR`
+
+#### Dé-bannissement manuel
+
+`sudo fail2ban-client set manual-jail unbanip IP_À_DÉBANNIR`
+
+Avantages de cette méthode
+
+- Séparation des tâches : cela vous permet de séparer clairement les bannissements automatiques (basés sur les logs) des bannissements que vous décidez d'appliquer vous-même.
+- Politique de temps dédiée : vVous pouvez donner à cette prison manuelle une durée de bannissement (`bantime`) très différente des autres (par exemple, 1 an ou même permanent si vous configurez les actions appropriées), sans affecter les autres prisons.
