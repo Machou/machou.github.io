@@ -184,11 +184,13 @@ Voici comment la mettre en place :
 
 On va ajouter cette nouvelle section dans votre fichier de configuration local, soit `/etc/fail2ban/jail.local`, soit dans un nouveau fichier de la structure `/etc/fail2ban/jail.d/`.
 
-On ajoute, à la fin du fichier :
+On ouvre `jail.local` :
 
 `sudo nano /etc/fail2ban/jail.local`
 
-````toml
+On ajoute à la fin du fichier :
+
+```toml
 [manual-jail]
 enabled = true
 logpath = /dev/null
