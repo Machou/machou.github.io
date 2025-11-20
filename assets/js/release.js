@@ -1,5 +1,3 @@
-
-
 const inputElement = document.querySelector('#release');
 const outputElement = document.querySelector('#out');
 
@@ -21,7 +19,7 @@ function parseReleaseName(name)
         extension = extMatch[0].match(/\.\w{3,4}$/)[0].toLowerCase();
     }
 
-    // Supprime la team collée avec un tiret (ex: -mHDgz)
+    // Supprime la team collée avec un tiret
     baseName = baseName.replace(/-[a-zA-Z0-9]+$/i, '');
 
     // Protège les points décimaux pour l'audio (ex: 5.1) et les codecs (H.264)

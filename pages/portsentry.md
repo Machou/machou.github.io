@@ -69,7 +69,7 @@ On ajoute notre IP en liste blanche : (pour ne pas te bannir sois-même par acci
 
 `sudo nano /etc/portsentry/portsentry.ignore`
 
-On s'assure que `127.0.0.1/32` est présent.
+On s’assure que `127.0.0.1/32` est présent.
 
 On rajoute notre adresse IP publique (et celle du VPN si on en utilise un).
 
@@ -98,21 +98,21 @@ BLOCK_UDP="1"
 BLOCK_TCP="1"
 ```
 
-**PortSentry** peut bloquer de plusieurs façons (`hosts.deny`, `route`, `iptables`). La méthode la plus propre sur un Linux moderne est d'utiliser [iptables](https://www.netfilter.org/projects/iptables/).
+**PortSentry** peut bloquer de plusieurs façons (`hosts.deny`, `route`, `iptables`). La méthode la plus propre sur un Linux moderne est d’utiliser [iptables](https://www.netfilter.org/projects/iptables/).
 
 Dans la section `DROPPING ROUTES`, on dé-commente ou rajoute cette ligne :
 
 `KILL_ROUTE="/sbin/iptables -I INPUT -s $TARGET$ -j DROP"`
 
-> Note : Sur **Debian 13**, `/sbin/iptables` interagit avec le backend [`nftables`](https://www.netfilter.org/projects/nftables/index.html), ce qui est parfait.
+> Note : dans **Debian 13**, `/sbin/iptables` interagit avec le backend [nftables](https://www.netfilter.org/projects/nftables/index.html), ce qui est parfait.
 
 Dans la section `Scan trigger value`, on dé-commente ou rajoute cette ligne :
 
 `SCAN_TRIGGER="0"`
 
-> Cela signifie qu'une seule touche sur un port piège suffit à bannir l'IP. Pour plus de tolérance, on peut changer à **1** ou **2**
+> Cela signifie qu’une seule touche sur un port piège suffit à bannir l’IP. Pour plus de tolérance, on peut changer à **1** ou **2**
 
-Par défaut, **PortSentry** utilise le mode « Classic » qui écoute sur des ports spécifiques. Le mode « Advanced » (*Stealth*) est bien meilleur : il surveille tous les ports en dessous d'une certaine limite (sauf ceux déjà utilisés par tes services comme SSH ou Apache).
+Par défaut, **PortSentry** utilise le mode « Classic » qui écoute sur des ports spécifiques. Le mode « Advanced » (*Stealth*) est bien meilleur : il surveille tous les ports en dessous d’une certaine limite (sauf ceux déjà utilisés par tes services comme SSH ou Apache).
 
 On modifie le fichier de démarrage par défaut :
 
@@ -142,7 +142,66 @@ On démarre / redémarre le service :
 
 ---
 
-Sur les systèmes basés sur `systemd` (comme **Debian 13**) pour certains outils sensibles comme **PortSentry**, le service est volontairement désactivé pour éviter qu'il ne se lance accidentellement sans être configuré.
+## Dépannage
+
+Lors du lancement de **PortSentry** cette erreur peu apparaitre :
+
+````sh
+sudo systemctl start portsentry
+Failed to start portsentry.service: Unit portsentry.service is masked.
+```
+
+Sur les systèmes basés sur `systemd` (comme **Debian 13**) pour certains outils sensibles comme **PortSentry**, le service est volontairement désactivé pour éviter qu’il ne se lance accidentellement sans être configuré.
+
+On vérifie l’état du service :
+
+`systemctl status portsentry.service`
+
+Un message de ce type devrai s’afficher :
+
+```text
+○ portsentry.service
+     Loaded: masked (Reason: Unit portsentry.service is masked.)
+     Active: inactive (dead)
+```
+
+On doit *démasquer*, puis *le **réactiver* le service :
+
+```sh
+sudo systemctl unmask portsentry.service
+sudo systemctl enable portsentry.service
+sudo systemctl start portsentry.service
+```
+
+Si ça ne fonctionne pas, on vérifie que **PortSentry** est bien installé :
+
+`dpkg -l | grep portsentry`
+
+Doit renvoyer :
+
+`ii  portsentry                        1.2-16                               amd64        Portscan detection daemon`
+
+Sur certaines versions de Debian, **PortSentry** ne fournit pas de service systemd par défaut car il tournait via `init.d`.
+
+On vérifie que le script exsite :
+
+`ls -l /etc/init.d/portsentry`
+
+Doit renvoyer :
+
+`-rwxr-xr-x 1 root root 2116 15 oct.   2024 /etc/init.d/portsentry*`
+
+On peut l’activer via ce script :
+
+```sh
+sudo update-rc.d portsentry defaults
+sudo service portsentry start
+```
+
+
+
+
+
 
 On démasque le service :
 
@@ -152,18 +211,18 @@ Si le service `portsentry` reste toujours masquer, on teste si le lien existe :
 
 `ls -l /etc/systemd/system/portsentry.service`
 
-Si cette commande affiche une ligne se terminant par -> `/dev/null`, c'est que le service est toujours masqué.
-Si le fichier n'existe pas, c'est qu'il a été démasqué mais que `systemd` n'a pas mis à jour son statut.
+Si cette commande affiche une ligne se terminant par -> `/dev/null`, c’est que le service est toujours masqué.
+Si le fichier n’existe pas, c’est qu’il a été démasqué mais que `systemd` n’a pas mis à jour son statut.
 
-On force le démasquage (si le lien existe). Si la commande `systemctl unmask` ne fonctionne pas, on peut tenter de supprimer le lien manuellement (c'est ce que fait unmask en coulisse) :
+On force le démasquage (si le lien existe). Si la commande `systemctl unmask` ne fonctionne pas, on peut tenter de supprimer le lien manuellement (c’est ce que fait unmask en coulisse) :
 
 `sudo rm /etc/systemd/system/portsentry.service`
 
-*Attention : faire ceci uniquement si la commande `ls -l` a confirmé l'existence du lien symbolique.*
+*Attention : faire ceci uniquement si la commande `ls -l` a confirmé l’existence du lien symbolique.*
 
 On recharge la configuration `systemd` :
 
-*Pour s'assurer que systemd prend en compte la nouvelle configuration du service démasqué.*
+*Pour s’assurer que systemd prend en compte la nouvelle configuration du service démasqué.*
 
 `sudo systemctl daemon-reload`
 
@@ -171,7 +230,7 @@ Pour vérifier que tout fonctionne : (on regarde les logs : **PortSentry** note 
 
 `grep "portsentry" /var/log/syslog`
 
-On peut aussi vérifier l'écout du port :
+On peut aussi vérifier l’écout du port :
 
 ```sh
 sudo netstat -taupen | grep portsentry
