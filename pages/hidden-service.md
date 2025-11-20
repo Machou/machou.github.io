@@ -1483,14 +1483,14 @@ On redémarre le serveur :
 
 ## À faire
 
-> - héberger le site directement dans la ram
-> - bloquer les ports inutiles
-> - chiffrer le disque dur
-> - stocker les clés dans le CPU plutôt que dans la RAM (qui peut être copiée) par exemple via TRESOR
-> - SSH par clé avec accès selon IP ou par PortKnocking
-> Concernant les logs, 2 solutions, sur des machines dites « sécurisées » :
-> - soit de ne pas en émettre
-> - soit de les traiter avec logrotate (et le paramètre shred — 3 max.)
+- héberger le site directement dans la ram
+- bloquer les ports inutiles
+- chiffrer le disque dur
+- stocker les clés dans le CPU plutôt que dans la RAM (qui peut être copiée) par exemple via TRESOR
+- SSH par clé avec accès selon IP ou par PortKnocking
+- Concernant les logs, 2 solutions, sur des machines dites « sécurisées » :
+  - soit de ne pas en émettre
+  - soit de les traiter avec logrotate (et le paramètre shred — 3 max.)
 
 Si vous avez des idées ou des améliorations à proposer, n’hésitez pas à poster un commentaire ci-dessous.
 
