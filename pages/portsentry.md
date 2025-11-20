@@ -165,7 +165,7 @@ Un message de ce type devrai s’afficher :
      Active: inactive (dead)
 ```
 
-On doit *démasquer*, puis *le **réactiver* le service :
+On doit *démasquer*, puis *réactiver* le service :
 
 ```sh
 sudo systemctl unmask portsentry.service
@@ -183,7 +183,7 @@ Doit renvoyer :
 
 Sur certaines versions de Debian, **PortSentry** ne fournit pas de service systemd par défaut car il tournait via `init.d`.
 
-On vérifie que le script exsite :
+On vérifie que le script existe :
 
 `ls -l /etc/init.d/portsentry`
 
@@ -198,44 +198,116 @@ sudo update-rc.d portsentry defaults
 sudo service portsentry start
 ```
 
+Si ça ne se lance toujours pas, on supprime le service manuellement :
 
+```sh
+sudo rm -f /etc/systemd/system/portsentry.service
+sudo systemctl daemon-reload
+```
 
+On vérifie ce que voit `systemd` :
 
+`systemctl list-unit-files | grep -i portsentry`
 
+Doit renvoyer :
 
-On démasque le service :
+```text
+portsentry.service                                                        masked          enabled
+portsentry@.service                                                       disabled        enabled
+```
 
-`sudo systemctl unmask portsentry`
+On vérifie que le script existe :
 
-Si le service `portsentry` reste toujours masquer, on teste si le lien existe :
+`ls -l /etc/init.d/portsentry`
 
-`ls -l /etc/systemd/system/portsentry.service`
+On le lance :
 
-Si cette commande affiche une ligne se terminant par -> `/dev/null`, c’est que le service est toujours masqué.
-Si le fichier n’existe pas, c’est qu’il a été démasqué mais que `systemd` n’a pas mis à jour son statut.
+`sudo /etc/init.d/portsentry start`
 
-On force le démasquage (si le lien existe). Si la commande `systemctl unmask` ne fonctionne pas, on peut tenter de supprimer le lien manuellement (c’est ce que fait unmask en coulisse) :
+Si le service n'est toujours pas lancé, on relance :
 
-`sudo rm /etc/systemd/system/portsentry.service`
+```sh
+sudo find /etc/systemd /run/systemd /usr/lib/systemd -maxdepth 5 \
+-type l -lname /dev/null -iname '*portsentry*' -print
+```
 
-*Attention : faire ceci uniquement si la commande `ls -l` a confirmé l’existence du lien symbolique.*
+On supprime tous les masques :
 
-On recharge la configuration `systemd` :
+```sh
+sudo rm -f /etc/systemd/system/portsentry.service \
+sudo rm -f /run/systemd/system/portsentry.service \
+sudo rm -f /usr/lib/systemd/system/portsentry.service
+```
 
-*Pour s’assurer que systemd prend en compte la nouvelle configuration du service démasqué.*
+On recharge :
 
 `sudo systemctl daemon-reload`
 
-Pour vérifier que tout fonctionne : (on regarde les logs : **PortSentry** note son démarrage dans syslog)
+On vérifie l’état du service :
 
-`grep "portsentry" /var/log/syslog`
+`systemctl status portsentry.service`
 
-On peut aussi vérifier l’écout du port :
+Si tout s'est déroulé correctement :
 
-```sh
-sudo netstat -taupen | grep portsentry
-# Ou avec ss
-sudo ss -lptn | grep portsentry
+```text
+○ portsentry.service - LSB: # start and stop portsentry
+     Loaded: loaded (/etc/init.d/portsentry; generated)
+     Active: inactive (dead)
+       Docs: man:systemd-sysv-generator(8)
 ```
 
-> Note : En mode « Advanced », il est possible que tu ne voies pas les ports ouverts de manière classique avec netstat car il utilise des raw sockets, mais le processus doit être là.
+### Service portsentry
+
+On va recréer un service propre :
+
+`sudo nano /etc/systemd/system/portsentry.service`
+
+On y ajoute :
+
+```sh
+[Unit]
+Description=PortSentry portscan detector
+After=network.target
+
+[Service]
+Type=forking
+ExecStart=/etc/init.d/portsentry start
+ExecStop=/etc/init.d/portsentry stop
+ExecReload=/etc/init.d/portsentry restart
+
+[Install]
+WantedBy=multi-user.target
+```
+
+On recharge :
+
+`sudo systemctl daemon-reload`
+
+On active le service de **PortSentry** :
+
+`sudo systemctl enable portsentry.service`
+
+On démarre **PortSentry** :
+
+`sudo systemctl start portsentry.service`
+
+On vérifie l’état du service :
+
+`systemctl status portsentry.service`
+
+Si tout s'est déroulé correctement :
+
+```sh
+systemctl status portsentry.service
+● portsentry.service - PortSentry portscan detector
+     Loaded: loaded (/etc/systemd/system/portsentry.service; enabled; preset: enabled)
+     Active: active (running) since Thu 2025-11-20 04:38:22 CET; 2s ago
+ Invocation: 0302690d30f4477fb3b83ecfea5e7eea
+    Process: 67679 ExecStart=/etc/init.d/portsentry start (code=exited, status=0/SUCCESS)
+      Tasks: 2 (limit: 4596)
+     Memory: 520K (peak: 4.8M)
+        CPU: 334ms
+     CGroup: /system.slice/portsentry.service
+             ├─67688 /usr/sbin/portsentry -atcp
+             └─67692 /usr/sbin/portsentry -audp
+```

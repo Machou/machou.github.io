@@ -5,7 +5,7 @@ function parseReleaseName(name)
 {
     if (!name) { return ""; }
 
-    let baseName = name;
+    let baseName = name.trim();
     let extension = '';
 
     // On cherche une ou plusieurs extensions classiques à la fin (.mkv, .mp4, .avi)
