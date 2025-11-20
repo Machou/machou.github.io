@@ -1481,7 +1481,7 @@ On redémarre le serveur :
 - [Générateur de couleur : .bashrc & PS1](https://robotmoon.com/bash-prompt-generator/) 🇺🇸
 - [vim pour les humains](https://vimebook.com/fr) 🇫🇷
 
-## À faire](#à-faire)
+## À faire
 
 > - héberger le site directement dans la ram
 > - bloquer les ports inutiles
