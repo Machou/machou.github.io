@@ -1,4 +1,3 @@
-
 name: Metrics
 
 on:
@@ -27,12 +26,12 @@ jobs:
           plugin_achievements_limit: 5
           plugin_achievements_secrets: yes
           plugin_achievements_threshold: C
-          plugin_activity: yes
-          plugin_activity_days: 31
-          plugin_activity_filter: all
-          plugin_activity_limit: 5
-          plugin_activity_load: 300
-          plugin_activity_visibility: all
+          # plugin_activity: yes
+          # plugin_activity_days: 31
+          # plugin_activity_filter: issue, pr, release, fork, review, ref/create, star, comment, push
+          # plugin_activity_limit: 5
+          # plugin_activity_load: 300
+          # plugin_activity_visibility: all
           plugin_gists: yes
           plugin_isocalendar: yes
           plugin_isocalendar_duration: full-year
@@ -63,4 +62,4 @@ jobs:
           #plugin_steam_recent_games_limit: 1
           #plugin_steam_sections: player, most-played, recently-played
           #plugin_steam_user: 76561198043649353
-          config_output: detailed
+          # config_output: detailed
