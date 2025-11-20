@@ -1405,7 +1405,7 @@ On redémarre le serveur :
 
 `sudo reboot`
 
-#### Méthode N°3 : rejeter tout le trafic IPv6](#méthode-n3--rejeter-tout-le-trafic-ipv6)
+#### Méthode N°3 : rejeter tout le trafic IPv6
 
 On crée la règle de blocage :
 
@@ -1456,9 +1456,9 @@ On redémarre le serveur :
 
 `sudo reboot`
 
-## Quelques liens / tutoriels utiles](#quelques-liens--tutoriels-utiles)
+## Quelques liens / tutoriels utiles
 
-### Aide-mémoires / tutoriels](#aide-mémoires--tutoriels)
+### Aide-mémoires / tutoriels
 
 - [Aide-mémoire Bash](https://devhints.io/bash) 🇺🇸
 - [Aide-mémoire du mode d’édition Bash Emacs](https://catonmat.net/bash-emacs-editing-mode-cheat-sheet) 🇺🇸
@@ -1469,13 +1469,13 @@ On redémarre le serveur :
 - [How To  A Linux Server](https://github.com/imthenachoman/How-To-Secure-A-Linux-Server) 🇺🇸
 - [The Onion Diaries](https://github.com/alecmuffett/the-onion-diaries/tree/master) 🇺🇸
 
-### Documentations](#documentations)
+### Documentations
 
 - [FAQ Debian GNU/Linux](https://www.debian.org/doc/manuals/debian-faq/) 🇫🇷
 - [Documentation officielle Debian](https://www.debian.org/releases/stable/amd64/index.fr.html) 🇫🇷
 - [Documentation officielle Ubuntu](https://help.ubuntu.com/lts/ubuntu-help/index.html) 🇫🇷
 
-### Autres](#autres)
+### Autres
 
 - [Commande : sudo](https://wiki.debian.org/fr/sudo) 🇫🇷
 - [Générateur de couleur : .bashrc & PS1](https://robotmoon.com/bash-prompt-generator/) 🇺🇸
