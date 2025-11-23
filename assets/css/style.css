@@ -25,10 +25,12 @@ h2::before {
 }
 
 .table-wow,
-.table-wow-pnj			{ border: 1px solid #eceef0; }
+.table-wow-pnj					{ border: 1px solid #eceef0; }
+
+.table-wow-pnj td:first-child	{ width: 20%; }
 
 .table-wow-pnj th,
-.table-wow-pnj td		{ width: 33%; }
+.table-wow-pnj td				{ width: 33%; }
 
 .table-wow a {
 	background-color: rgba(13,110,253, 1);
