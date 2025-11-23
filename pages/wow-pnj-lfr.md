@@ -63,7 +63,7 @@ favicon: /assets/img/favicon-wow.svg
 - [Guide de **The War Within**](https://www.mamytwink.com/guides/the-war-within-toutes-les-informations-sur-lextension-de-wow)
 - [Guide de **Midnight**](https://www.mamytwink.com/guides/the-midnight-toutes-les-informations-sur-lextension-de-wow)
 
-## Le LFR
+## **Le LFR**
 
 ### Mists of Pandaria
 

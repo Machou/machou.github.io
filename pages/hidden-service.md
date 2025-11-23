@@ -119,7 +119,7 @@ Plusieurs choses :
 - discuter sur des messageries utilisant le proxy Tor
 - etc.
 
-Malheureusement, qui dit anonymisation des utilisateurs, dit criminalité en tout genre, vente de drogue, d’armes, trafic d’êtres humains, de fausse monnaie, etc. et j’en passe. Il a des côtés positifs et des côtés négatifs. Que ce soit dans la vraie vie ou sur internet, on sera toujours embêté par les vilains… Le but de ce tutoriel n’est pas de vous montrer comment acheter de la drogue mais d’apprendre le fonctionnement d’un serveur web utilisant le service de cryptage de Tor.
+Malheureusement, qui dit anonymisation des utilisateurs, dit criminalité en tout genre, vente de drogue, d’armes, trafic d’êtres humains, de fausse monnaie, etc. et j’en passe. Il y a des côtés positifs et des côtés négatifs. Que ce soit dans la vraie vie ou sur internet, on sera toujours embêté par les vilains… Le but de ce tutoriel n’est pas de vous montrer comment acheter de la drogue mais d’apprendre le fonctionnement d’un serveur web utilisant le service de cryptage de Tor.
 
 ## Quelques règles importantes
 
@@ -558,7 +558,7 @@ On copie / colle :
 
     <Directory /var/www/html>
         Options Indexes FollowSymLinks
-        AllowOverride All
+        AllowOverride none
         Require all granted
     </Directory>
 
@@ -762,8 +762,8 @@ disable_functions =
     symlink,              ; Crée un lien symbolique
     link,                 ; Crée un lien physique
     getcwd,               ; Obtient le répertoire de travail courant
-    ;file_get_contents,    ; Lit le contenu d’un fichier dans une chaîne
-    ;file_put_contents,    ; Écrit une chaîne dans un fichier
+    file_get_contents,    ; Lit le contenu d’un fichier dans une chaîne
+    file_put_contents,    ; Écrit une chaîne dans un fichier
     parse_ini_file,       ; Analyse un fichier INI
     tmpfile,              ; Crée un fichier temporaire
     exec,                 ; Exécute une commande système
@@ -1131,7 +1131,7 @@ Vérifiez que votre connexion SSH est toujours active !
 
 ### Configuration de la langue
 
-On peut changer la langue pour brouiller un peu les pistes :
+On peut modifier la langue pour brouiller un peu les pistes :
 
 `sudo dpkg-reconfigure locales`
 
@@ -1150,11 +1150,11 @@ Les langues anglaise et française ont été sélectionnées, mais libre à vous
 
 ### Configuration de la date et heure
 
-On peut changer la date et heure pour brouiller un peu les robots :
+On peut modifier la date et heure pour brouiller un peu les robots :
 
 `sudo dpkg-reconfigure tzdata`
 
-Dans la liste, on choisit le fuseau horaire que l’on souhaite, pour nous ça sera Paris :
+Dans la liste, on choisit le fuseau horaire que l’on souhaite, pour nous ce sera Paris :
 
 Cela renverra :
 
@@ -1235,11 +1235,12 @@ On y ajoute :
 
 # Vérifier les arguments
 if [ "$1" != "shutdown" ] && [ "$1" != "reboot" ]; then
-    echo "Usage: $0 <shutdown|reboot>"
+    echo "Usage : $0 <shutdown|reboot>"
     exit 1
 fi
 
 echo "Purge de la RAM en cours (peut prendre du temps)..."
+
 # Utilise sdmem pour réécrire la RAM
 # -f (fast) -l (less secure, 1 pass) -v (verbose)
 # On peut enlever -f et -l pour 38 passes (très lent)
@@ -1257,8 +1258,8 @@ elif [ "$1" == "reboot" ]; then
 fi
 ```
 
-- Redémarrer le serveur : `./ram.sh shutdown`
-- Arrêter le serveur : `./ram.sh reboot`
+- Redémarrer le serveur : `./ram.sh reboot`
+- Arrêter le serveur : `./ram.sh shutdown`
 
 ### Supprimer mes traces
 
