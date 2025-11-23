@@ -30,7 +30,7 @@ favicon: /assets/img/favicon.png
 
 1. **Détection de scans de port** : **PortSentry** surveille les tentatives de connexion sur les ports ouverts ou fermés pour détecter les scans de port effectués par des attaquants
 2. **Réponse active** : lorsqu’un scan de port est détecté, **PortSentry** peut réagir en bloquant l’adresse IP de l’attaquant en temps réel, souvent en ajoutant des règles de pare-feu ou en modifiant les fichiers de configuration réseau
-3. **Modes de fonctionnement** : il peut fonctionner en plusieurs modes, notamment le mode "stealth" où il simule des ports ouverts pour attirer et détecter les scanners, et le mode "advanced" où il surveille des ports spécifiques
+3. **Modes de fonctionnement** : il peut fonctionner en plusieurs modes, notamment le mode « stealth » où il simule des ports ouverts pour attirer et détecter les scanners, et le mode « advanced » où il surveille des ports spécifiques
 4. **Flexibilité et configuration** : il est hautement configurable, permettant aux administrateurs de définir les ports à surveiller, les actions à entreprendre en cas de détection de scan, et les niveaux de sensibilité
 
 ### Services et options
@@ -65,7 +65,7 @@ On installe **PortSentry** :
 
 `sudo apt install portsentry`
 
-On ajoute notre IP en liste blanche : (pour ne pas te bannir sois-même par accident)
+On ajoute notre IP en liste blanche : (pour ne pas se bannir sois-même par accident)
 
 `sudo nano /etc/portsentry/portsentry.ignore`
 
@@ -77,7 +77,7 @@ Le fichier **portsentry.ignore** doit ressembler à :
 
 ```text
 127.0.0.1/32
-MON_IP
+ADRESSE_IP_DU_SERVEUR
 ```
 
 On active le blocage :
@@ -100,17 +100,17 @@ BLOCK_TCP="1"
 
 **PortSentry** peut bloquer de plusieurs façons (`hosts.deny`, `route`, `iptables`). La méthode la plus propre sur un Linux moderne est d’utiliser [iptables](https://www.netfilter.org/projects/iptables/).
 
-Dans la section `DROPPING ROUTES`, on dé-commente ou rajoute cette ligne :
+Dans la section `DROPPING ROUTES`, on décommente ou rajoute cette ligne :
 
 `KILL_ROUTE="/sbin/iptables -I INPUT -s $TARGET$ -j DROP"`
 
 > Note : dans **Debian 13**, `/sbin/iptables` interagit avec le backend [nftables](https://www.netfilter.org/projects/nftables/index.html), ce qui est parfait.
 
-Dans la section `Scan trigger value`, on dé-commente ou rajoute cette ligne :
+Dans la section `Scan trigger value`, on décommente ou rajoute cette ligne :
 
 `SCAN_TRIGGER="0"`
 
-> Cela signifie qu’une seule touche sur un port piège suffit à bannir l’IP. Pour plus de tolérance, on peut changer à **1** ou **2**
+> Cela signifie qu’une seule tentative sur un port piège suffit à bannir l’IP. Pour plus de tolérance, on peut changer la valeur à **1** ou **2**
 
 Par défaut, **PortSentry** utilise le mode « Classic » qui écoute sur des ports spécifiques. Le mode « Advanced » (*Stealth*) est bien meilleur : il surveille tous les ports en dessous d’une certaine limite (sauf ceux déjà utilisés par tes services comme SSH ou Apache).
 
@@ -144,7 +144,7 @@ On démarre / redémarre le service :
 
 ## Dépannage
 
-Lors du lancement de **PortSentry** cette erreur peu apparaitre :
+Lors du lancement de **PortSentry** cette erreur peut apparaitre :
 
 ````sh
 sudo systemctl start portsentry
@@ -224,7 +224,7 @@ On le lance :
 
 `sudo /etc/init.d/portsentry start`
 
-Si le service n'est toujours pas lancé, on relance :
+Si le service n’est toujours pas lancé, on relance :
 
 ```sh
 sudo find /etc/systemd /run/systemd /usr/lib/systemd -maxdepth 5 \
@@ -247,7 +247,7 @@ On vérifie l’état du service :
 
 `systemctl status portsentry.service`
 
-Si tout s'est déroulé correctement :
+Si tout s’est déroulé correctement :
 
 ```text
 ○ portsentry.service - LSB: # start and stop portsentry
@@ -295,7 +295,7 @@ On vérifie l’état du service :
 
 `systemctl status portsentry.service`
 
-Si tout s'est déroulé correctement :
+Si tout s’est déroulé correctement :
 
 ```sh
 systemctl status portsentry.service

@@ -991,7 +991,7 @@ On configure Tor :
 
 `sudo nano /etc/tor/torrc`
 
-On recherche et ajoute / dé-commente ces lignes :
+On recherche et ajoute / décommente ces lignes :
 
 ```sh
 HiddenServiceDir /var/lib/tor/hidden_service/
@@ -1000,7 +1000,7 @@ HiddenServicePort 80 127.0.0.1:8080
 
 On limite l’accès à Tor SOCKS sur 127.0.0.1 :
 
-On recherche et ajoute / dé-commente ces lignes :
+On recherche et ajoute / décommente ces lignes :
 
 ```sh
 SocksPolicy accept 192.168.0.0/16
