@@ -87,6 +87,7 @@ On va configurer le fichier `jail.local` et utiliser paramètres par défaut les
 bantime = 24h
 findtime = 10m
 maxretry = 3
+# Remplacez 192.168.1.0/24 par la plage d'IP de votre réseau local, si applicable.
 ignoreip = 127.0.0.1/8 192.168.1.0/24 ::1
 action = %(action_)s
 ```
@@ -245,4 +246,4 @@ Une fois le service **Fail2ban** redémarré et la prison activée, on va pouvoi
 Avantages de cette méthode
 
 - Séparation des tâches : cela vous permet de séparer clairement les bannissements automatiques (basés sur les logs) des bannissements que vous décidez d'appliquer vous-même.
-- Politique de temps dédiée : vVous pouvez donner à cette prison manuelle une durée de bannissement (`bantime`) très différente des autres (par exemple, 1 an ou même permanent si vous configurez les actions appropriées), sans affecter les autres prisons.
+- Politique de temps dédiée : vous pouvez donner à cette prison manuelle une durée de bannissement (`bantime`) très différente des autres (par exemple, 1 an ou même permanent si vous configurez les actions appropriées), sans affecter les autres prisons.
