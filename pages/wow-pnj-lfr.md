@@ -69,8 +69,6 @@ favicon: /assets/img/favicon-wow.svg
 
 <a href="assets/img/WoW_5_MoP-Large.png" data-fancybox="gallerie"><img src="assets/img/WoW_5_MoP.png" class="d-block w-75 m-auto img-fluid" alt="Logo World of Warcraft : Mists of Pandaria" title="Logo World of Warcraft : Mists of Pandaria"></a>
 
-### <i class="fa-solid fa-user"></i> Mists of Pandaria
-
 | Zone                                            | PnJ                                                                                | Point de passage                        |
 | ----------------------------------------------- | ---------------------------------------------------------------------------------- | --------------------------------------- |
 | **Pandarie** > **Val de l’Éternel printemps**   | [Chroniqueur Han <Conteur de l’outil Raids>](https://www.wowhead.com/fr/npc=80633) | `/way #390 83.0 30.6 Chroniqueur Han` |
@@ -121,8 +119,6 @@ favicon: /assets/img/favicon-wow.svg
 
 <a href="assets/img/WoW_6_WoD-Large.png" data-fancybox="gallerie"><img src="assets/img/WoW_6_WoD.png" class="d-block w-75 m-auto img-fluid" alt="Logo World of Warcraft : Warlords of Draenor" title="Logo World of Warcraft : Warlords of Draenor"></a>
 
-#### <i class="fa-solid fa-user"></i> [Warlords of Draenor](#-pnj-pour-world-of-warcraft--warlords-of-draenor)
-
 | Zone              | PnJ                                                                                                               | Point de passage              |
 | ----------------- | ----------------------------------------------------------------------------------------------------------------- | ----------------------------- |
 | **Chutelune**     | <span class="alliance">Alliance</span> [Voyant Kazal « Exilé ombrelune »](https://www.wowhead.com/fr/npc=94870)   | `/way 33.6 37.6 Voyant Kazal` |
@@ -161,8 +157,6 @@ favicon: /assets/img/favicon-wow.svg
 ### Legion
 
 <a href="assets/img/WoW_7_Legion-Large.png" data-fancybox="gallerie"><img src="assets/img/WoW_7_Legion.png" class="d-block w-75 m-auto img-fluid" alt="Logo World of Warcraft : Legion" title="Logo World of Warcraft : Legion"></a>
-
-#### <i class="fa-solid fa-user"></i> [Legion](#-pnj-pour-world-of-warcraft--legion)
 
 | Zone                           | PnJ                                                       | Point de passage                  |
 | ------------------------------ | --------------------------------------------------------- | --------------------------------- |
@@ -216,8 +210,6 @@ favicon: /assets/img/favicon-wow.svg
 
 <a href="assets/img/WoW_8_BfA-Large.png" data-fancybox="gallerie"><img src="assets/img/WoW_8_BfA.png" class="d-block w-75 m-auto img-fluid" alt="Logo World of Warcraft : Battle for Azeroth" title="Logo World of Warcraft : Battle for Azeroth"></a>
 
-### <i class="fa-solid fa-user"></i> [Battle for Azeroth](#-pnj-pour-world-of-warcraft--battle-for-azeroth)
-
 | Zone               | PnJ                                                                                                              | Point de passage      |
 | ------------------ | ---------------------------------------------------------------------------------------------------------------- | --------------------- |
 | **Boralus**        | <span class="alliance">Alliance</span> [Kiko « Gardienne des histoires »](https://www.wowhead.com/fr/npc=177193) | `/way 74 13.6 Kiko`   |
@@ -268,8 +260,6 @@ favicon: /assets/img/favicon-wow.svg
 ### Shadowlands
 
 <a href="assets/img/WoW_9_SL-Large.png" data-fancybox="gallerie"><img src="assets/img/WoW_9_SL.png" class="d-block w-75 m-auto img-fluid" alt="Logo World of Warcraft : Shadowlands" title="Logo World of Warcraft : Shadowlands"></a>
-
-#### <i class="fa-solid fa-user"></i> [Shadowlands](#-pnj-pour-world-of-warcraft--shadowlands)
 
 | Zone                      | PnJ                                                                        | Point de passage          |
 | ------------------------- | -------------------------------------------------------------------------- | ------------------------- |
