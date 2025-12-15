@@ -24,7 +24,7 @@ favicon: /assets/img/favicon.png
   - [Tutoriel PortSentry](/comment-utiliser-portsentry)
   - [Tutoriel Fail2ban](/comment-utiliser-fail2ban)
 - [Standardiser ma Release](/release)
-- [Liens divers](#liens-divers)
+- [Liens Divers](#liens-divers)
 - [Liens Statistiques](#liens-statistiques)
 - [Mes Statistiques](#mes-statistiques)
 
