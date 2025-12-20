@@ -40,8 +40,8 @@ function parseReleaseName(name)
         return p1.toLowerCase() + p2;
     });
 
-    // Standardise WEBRip (WEB, WEB-DL, WEBRip, WEBrip...)
-    baseName = baseName.replace(/\bWEB(?:-?DL)?\b/gi, "WEBRip");
+    // Standardise WEBRip
+    baseName = baseName.replace(/\bWEB(?:\s|-)?RIP\b|\bWEB(?:\s|-)?DL\b|\bWEBDL\b|\bWEB\b/gi, "WEBRip");
 
     // Supprime mots clés inutiles
     baseName = baseName.replace(/\b(bluray|blu-ray|blu ray)\b/gi, "");
