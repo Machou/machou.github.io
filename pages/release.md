@@ -25,28 +25,13 @@ favicon: /assets/img/favicon-html.png
 				<input type="text" name="rls" class="form-control form-control-lg" id="release" placeholder="Casino.1995.FRENCH.1080p.WEB-DL.H264-Slay3R.mkv">
 			</div>
 
-			<div class="position-relative">
-				<button type="button" class="btn btn-sm btn-outline-secondary position-absolute top-0 end-0 m-2" id="copyBtn" title="Copier">Copier</button>
-				<pre class="border rounded mb-0 px-3 py-4 fs-5 user-select-all" id="out"></pre>
-			</div>
+			<script>
+			document.querySelector('#release').addEventListener('click', function() {
+				this.select();
+			});
+			</script>
+
+			<pre class="border rounded mb-0 px-3 py-4 fs-5 user-select-all" id="out"></pre>
 		</div>
 	</div>
 </main>
-
-<script>
-document.querySelector('#release').addEventListener('click', function() {
-	this.select();
-});
-
-document.querySelector('#copyBtn').addEventListener('click', function () {
-	const text = document.querySelector('#out').innerText.trim();
-
-	navigator.clipboard.writeText(text).then(() => {
-		this.textContent = 'Copié ✓';
-
-		setTimeout(() => {
-			this.textContent = 'Copier';
-		}, 1500);
-	});
-});
-</script>
