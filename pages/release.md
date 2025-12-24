@@ -26,12 +26,29 @@ favicon: /assets/img/favicon-html.png
 			</div>
 
 			<script>
-			document.querySelector('#release').addEventListener('click', function() {
-				this.select();
+			document.getElementById("copyBtn").addEventListener("click", function () {
+				const text = document.getElementById("out").innerText.trim();
+
+				navigator.clipboard.writeText(text).then(() => {
+					this.textContent = "Copié ✓";
+
+					setTimeout(() => {
+						this.textContent = "Copier";
+					}, 1500);
+				});
 			});
 			</script>
 
-			<pre class="border rounded mb-0 px-3 py-4 fs-5 user-select-all" id="out"></pre>
+			<div class="position-relative">
+				<button
+					type="button"
+					class="btn btn-sm btn-outline-secondary position-absolute top-0 end-0 m-2"
+					id="copyBtn"
+					title="Copier">
+					Copier
+				</button>
+				<pre class="border rounded mb-0 px-3 py-4 fs-5 user-select-all" id="out"></pre>
+			</div>
 		</div>
 	</div>
 </main>
