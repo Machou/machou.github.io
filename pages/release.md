@@ -30,7 +30,7 @@ favicon: /assets/img/favicon-html.png
 
 				<button type="button" class="btn btn-sm btn-outline-secondary mt-2" id="copyBtn" title="Copier">Copier</button>
 			</div>
-
+z
 			<script>
 			document.querySelector('#release').addEventListener('click', function() {
 				this.select();
