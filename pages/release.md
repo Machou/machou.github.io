@@ -25,28 +25,53 @@ favicon: /assets/img/favicon-html.png
 				<input type="text" name="rls" class="form-control form-control-lg" id="release" placeholder="Casino.1995.FRENCH.1080p.WEB-DL.H264-Slay3R.mkv">
 			</div>
 
-			<div class="d-flex align-items-start gap-3">
+			<div class="d-flex align-items-start gap-3 d-none" id="outputWrapper">
 				<pre class="border rounded mb-0 px-3 py-2 fs-5 user-select-all flex-grow-1" id="out"></pre>
 				<button type="button" class="btn btn-sm btn-outline-secondary mt-2" id="copyBtn" title="Copier">Copier</button>
 			</div>
 
-			<script>
-			document.querySelector('#release').addEventListener('click', function() {
-				this.select();
-			});
+<script>
+const releaseInput = document.querySelector('#release');
+const outputWrapper = document.querySelector('#outputWrapper');
+const out = document.querySelector('#out');
+const copyBtn = document.querySelector('#copyBtn');
 
-			document.querySelector('#copyBtn').addEventListener('click', function () {
-				const text = document.querySelector('#out').innerText.trim();
+// Sélection auto au clic
+releaseInput.addEventListener('click', function () {
+	this.select();
+});
 
-				navigator.clipboard.writeText(text).then(() => {
-					this.textContent = 'Copié ✓';
+// Affiche / cache le bloc selon le contenu de l’input
+releaseInput.addEventListener('input', function () {
+	const value = this.value.trim();
 
-					setTimeout(() => {
-						this.textContent = 'Copier';
-					}, 1500);
-				});
-			});
-			</script>
+	if (value === '') {
+		outputWrapper.classList.add('d-none');
+		out.textContent = '';
+	} else {
+		outputWrapper.classList.remove('d-none');
+		out.textContent = value; // ou ton futur traitement
+	}
+});
+
+// Copie le contenu du <pre>
+copyBtn.addEventListener('click', function () {
+	const text = out.innerText.trim();
+
+	if (!text) {
+		return;
+	}
+
+	navigator.clipboard.writeText(text).then(() => {
+		this.textContent = 'Copié ✓';
+
+		setTimeout(() => {
+			this.textContent = 'Copier';
+		}, 1500);
+	});
+});
+</script>
+
 		</div>
 	</div>
 </main>
