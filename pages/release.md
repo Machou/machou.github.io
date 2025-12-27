@@ -25,12 +25,11 @@ favicon: /assets/img/favicon-html.png
 				<input type="text" name="rls" class="form-control form-control-lg" id="release" placeholder="Casino.1995.FRENCH.1080p.WEB-DL.H264-Slay3R.mkv">
 			</div>
 
-			<div class="d-flex align-items-start gap-2">
-				<pre class="border rounded mb-0 px-3 py-4 fs-5 user-select-all flex-grow-1" id="out"></pre>
-
+			<div class="d-flex align-items-start gap-3">
+				<pre class="border rounded mb-0 px-3 py-2 fs-5 user-select-all flex-grow-1" id="out"></pre>
 				<button type="button" class="btn btn-sm btn-outline-secondary mt-2" id="copyBtn" title="Copier">Copier</button>
 			</div>
-z
+
 			<script>
 			document.querySelector('#release').addEventListener('click', function() {
 				this.select();
