@@ -17,9 +17,9 @@ favicon: /assets/img/favicon-html.png
 
 # [Standardiser ma Release](https://machou.github.io/release)
 
-<main class="container">
+<main class="container p-0">
 	<div class="row">
-		<div class="col-12 col-lg-8 mx-auto">
+		<div class="col-12 col-lg-8 mx-auto p-0">
 			<div class="mb-4">
 				<label for="release" class="form-label">Ma Release</label>
 				<input type="text" name="rls" class="form-control form-control-lg" id="release" placeholder="Casino.1995.FRENCH.1080p.WEB-DL.H264-Slay3R.mkv">
@@ -29,6 +29,9 @@ favicon: /assets/img/favicon-html.png
 				<pre class="border rounded mb-0 px-3 py-2 fs-5 user-select-all flex-grow-1" id="out"></pre>
 				<button type="button" class="btn btn-sm btn-outline-secondary mt-2" id="copyBtn" title="Copier">Copier</button>
 			</div>
+		</div>
+	</div>
+</main>
 
 <script>
 const releaseInput = document.querySelector('#release');
@@ -36,12 +39,10 @@ const outputWrapper = document.querySelector('#outputWrapper');
 const out = document.querySelector('#out');
 const copyBtn = document.querySelector('#copyBtn');
 
-// Sélection auto au clic
 releaseInput.addEventListener('click', function () {
 	this.select();
 });
 
-// Affiche / cache le bloc selon le contenu de l’input
 releaseInput.addEventListener('input', function () {
 	const value = this.value.trim();
 
@@ -54,7 +55,6 @@ releaseInput.addEventListener('input', function () {
 	}
 });
 
-// Copie le contenu du <pre>
 copyBtn.addEventListener('click', function () {
 	const text = out.innerText.trim();
 
@@ -71,7 +71,3 @@ copyBtn.addEventListener('click', function () {
 	});
 });
 </script>
-
-		</div>
-	</div>
-</main>
