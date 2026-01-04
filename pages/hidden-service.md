@@ -70,14 +70,14 @@ favicon: /assets/img/favicon-tor.svg
 
 Dans ce tutoriel, nous tenterons de garder les logiciels à jour avec leurs dernières versions. Voici la liste actuelle :
 
-- [Debian](https://www.debian.org/) — [version 13.1, liste des changements](https://www.debian.org/News/2025/20250906)
+- [Debian](https://www.debian.org/) — [version 13.2, liste des changements](https://www.debian.org/News/2025/20251115)
 - [Apache2](https://httpd.apache.org/) — [version 2.4.65, liste des changements](https://httpd.apache.org/security/vulnerabilities_24.html#2.4.65)
 - [nginx](https://nginx.org/) — [version 1.26.3, liste des changements](https://nginx.org/en/CHANGES-1.26)
 - [PHP](https://www.php.net/) — [version 8.4.14, liste des changements](https://www.php.net/ChangeLog-8.php#8.4.14)
 - [MariaDB](https://mariadb.org/) — [version 11.8.3, liste des changements](https://mariadb.com/docs/release-notes/community-server/mariadb-11-8-series/mariadb-11.8.3-release-notes)
 - [Tor](https://www.torproject.org/) — [version 0.4.8.21, liste des changements](https://gitlab.torproject.org/tpo/core/tor/-/commits/tor-0.4.8.21)
 
-*Dernière mise à jour le 4 novembre 2025*
+*Dernière mise à jour le 4 décembre 2026*
 
 Nous allons configurer notre serveur, qui sera basé sur Apache2, PHP et SQL. Ce type de serveur est plus communément appelé **LAMP**. LAMP est un acronyme désignant un ensemble de logiciels libres permettant de construire des serveurs de sites web. L’acronyme original se réfère aux logiciels suivants :
 
@@ -1160,8 +1160,8 @@ Cela renverra :
 
 ```sh
 Current default time zone: 'Europe/Paris'
-Local time is now:      Thu Jun 20 15:51:54 CEST 2024.
-Universal Time is now:  Thu Jun 20 13:51:54 UTC 2024.
+Local time is now:      Thu Jun 20 15:51:54 CEST 2025.
+Universal Time is now:  Thu Jun 20 13:51:54 UTC 2025.
 ```
 
 Le fuseau horaire de Paris a été choisi, mais libre à vous de configurer celui que vous souhaitez, c’est d’ailleurs fortement recommandé de ne pas choisir celui où vous résidez (pays ou ville), sinon laissez celui par défaut.
