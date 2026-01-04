@@ -73,7 +73,7 @@ Dans ce tutoriel, nous tenterons de garder les logiciels à jour avec leurs dern
 - [Debian](https://www.debian.org/) — [version 13.2, liste des changements](https://www.debian.org/News/2025/20251115)
 - [Apache2](https://httpd.apache.org/) — [version 2.4.65, liste des changements](https://httpd.apache.org/security/vulnerabilities_24.html#2.4.65)
 - [nginx](https://nginx.org/) — [version 1.26.3, liste des changements](https://nginx.org/en/CHANGES-1.26)
-- [PHP](https://www.php.net/) — [version 8.4.14, liste des changements](https://www.php.net/ChangeLog-8.php#8.4.14)
+- [PHP](https://www.php.net/) — [version 8.5.1, liste des changements](https://www.php.net/ChangeLog-8.php#8.5.1)
 - [MariaDB](https://mariadb.org/) — [version 11.8.3, liste des changements](https://mariadb.com/docs/release-notes/community-server/mariadb-11-8-series/mariadb-11.8.3-release-notes)
 - [Tor](https://www.torproject.org/) — [version 0.4.8.21, liste des changements](https://gitlab.torproject.org/tpo/core/tor/-/commits/tor-0.4.8.21)
 

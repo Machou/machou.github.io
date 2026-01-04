@@ -40,7 +40,6 @@ favicon: /assets/img/favicon.png
 
 ## Liens Statistiques
 
-* [GitHub Stats Visualization](https://github.com/jstrieb/github-stats)
 * [GitHub Readme Stats](https://github.com/anuraghazra/github-readme-stats)
 * [GitHub Profile Trophy](https://github.com/ryo-ma/github-profile-trophy)
 * [GitHub Repository Card for every web site](https://gh-card.dev/)
