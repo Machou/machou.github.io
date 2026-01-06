@@ -1,17 +1,20 @@
 // Théme Clair / Sombre
 
 (() => {
-	const key = 'theme';
+	const STORAGE_KEY = 'theme';
 	const html = document.documentElement;
-	const btn = document.querySelector('#themeToggle');
+	const btn = document.getElementById('changerTheme');
+	if (!btn) return;
 
 	const setTheme = (theme) => {
 		html.setAttribute('data-bs-theme', theme);
-		localStorage.setItem(key, theme);
-		btn.textContent = theme === 'dark' ? '☀️ Clair' : '🌙 Sombre';
+		localStorage.setItem(STORAGE_KEY, theme);
+		btn.innerHTML =
+			theme === 'dark' ? '<i class="fa-solid fa-sun"></i> Clair' : '<i class="fa-solid fa-moon"></i> Sombre';
 	};
 
-	setTheme(localStorage.getItem(key) || 'light');
+	const savedTheme = localStorage.getItem(STORAGE_KEY) || 'light';
+	setTheme(savedTheme);
 
 	btn.addEventListener('click', () => {
 		setTheme(
