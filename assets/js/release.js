@@ -1,8 +1,7 @@
 const inputElement = document.querySelector('#release');
 const outputElement = document.querySelector('#out');
 
-function parseReleaseName(name)
-{
+function parseReleaseName(name) {
     if (!name) { return ''; }
 
     let baseName = name.trim();
@@ -118,7 +117,7 @@ function parseReleaseName(name)
 }
 
 if (inputElement && outputElement) {
-    inputElement.addEventListener('input', function() {
+    inputElement.addEventListener('input', function () {
         const rawText = this.value;
         const parsedText = parseReleaseName(rawText);
         outputElement.textContent = parsedText;

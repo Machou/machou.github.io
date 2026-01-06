@@ -1,11 +1,37 @@
+:root {
+	--bg: rgba(238,238,238, 1);
+	--fg: rgba(33,37,41, 1);
+	--card: rgba(255,255,255, 1);
+	--border: rgba(222,226,230, 1);
+}
+
+html[data-theme="dark"] {
+	--bg: rgba(18,18,18, 1);
+	--fg: rgba(233,236,239, 1);
+	--card: rgba(30,30,30, 1);
+	--border: rgba(51,51,51, 1);
+}
+
 body {
-	background-color: rgba(238,238,238, 1);
+	background-color: var(--bg);
+	color: var(--fg);
+}
+
+.container.bg-light {
+	background-color: var(--card) !important;
+	border-color: var(--border) !important;
+}
+
+pre,
+.form-control {
+	background-color: var(--card);
+	color: var(--fg);
+	border-color: var(--border);
 }
 
 h1 {
 	margin: 0 0 2rem;
 }
-
 h2,
 h3,
 h4 {
@@ -17,7 +43,7 @@ h4 {
 h2 a,
 h3 a,
 h4 a {
-	color: rgba(33,37,41, 1);
+	color: var(--fg);
 }
 
 h2::before {
@@ -35,7 +61,7 @@ h2::before {
 .table-wow a {
 	background-color: rgba(13,110,253, 1);
 	border-radius: 0.375rem;
-	color: rgba(255,255,255, 1) !important;
+	color: var(--fg) !important;
 	display: inline-block;
 	font-size: 1rem;
 	font-weight: 700;
@@ -77,8 +103,8 @@ h2::before {
 /* Remonter la page */
 
 #remonterPage {
-	background-color: rgba(255,255,255, 1);
-	border: 1px solid rgba(0,0,0, 1);
+	background-color: var(--bg);
+	border: 1px solid var(--fg);
 	border-radius: .75rem;
 	bottom: 25px;
 	color: rgba(51,51,51, 1);
