@@ -18,12 +18,23 @@ function parseReleaseName(name)
     // Supprime la team collée avec un tiret (cas classique)
     baseName = baseName.replace(/-[a-z0-9]+$/i, '');
 
-    // Protéger les canaux audio: 5.1 / 7.1 / 2.0 / 1.0 etc (EAC3.5.1, DTS.5.1, 5.1 isolé, etc.)
-    // baseName = baseName.replace(/\b(\d{1,2})\.(\d)\b/g, "$1<DECIMAL_DOT>$2");
+    // AAC2.0 -> AAC2.0
+    baseName = baseName.replace(/\bAAC\s?2\.0\b/gi, 'AAC2<DECIMAL_DOT>0');
 
-    // Protéger codecs audio avec canaux : AAC2.0 / AAC5.1 / EAC3.5.1 / DDP2.0 / AC3.5.1 / DTS.5.1
-    baseName = baseName.replace(/\b(AAC|EAC3|AC3|DDP|DTS)\s?(\d)\.(\d)\b/gi, "$1$2<DECIMAL_DOT>$3");
+    // DDP2.0 -> DDP2.0
+    baseName = baseName.replace(/\bDDP\s?2\.0\b/gi, 'DDP2<DECIMAL_DOT>0');
 
+    // AAC5.1 -> AAC 5.1
+    baseName = baseName.replace(/\bAAC\s?5\.1\b/gi, 'AAC 5<DECIMAL_DOT>1');
+
+    // EAC3.5.1 -> EAC3 5.1
+    baseName = baseName.replace(/\bEAC3\.5\.1\b/gi, 'EAC3 5<DECIMAL_DOT>1');
+
+    // AC3.5.1 -> AC3 5.1
+    baseName = baseName.replace(/\bAC3\.5\.1\b/gi, 'AC3 5<DECIMAL_DOT>1');
+
+    // DTS.5.1 -> DTS 5.1
+    baseName = baseName.replace(/\bDTS\.5\.1\b/gi, 'DTS 5<DECIMAL_DOT>1');
 
     // Protéger H.264 / H.265 / x.264 / x.265 (si jamais)
     baseName = baseName.replace(/\b(H|x)\.(264|265)\b/gi, "$1<DOT>$2");
