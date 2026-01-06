@@ -12,13 +12,6 @@
 	<meta name="robots" content="index, follow">
 	<meta http-equiv="x-ua-compatible" content="ie=edge">
 
-	{% set favicon = page.favicon ?? '/assets/img/favicon.png' %}
-	{% set type = 'image/png' %}
-
-	{% if favicon ends with '.svg' %}
-		{% set type = 'image/svg+xml' %}
-	{% endif %}
-
 	<link rel="icon" href="{{ favicon | relative_url }}?v={{ site.time | date: '%Y%m%d%H%M%S' }}">
 
 	<link rel="stylesheet" href="https://unpkg.com/bootstrap@5.3.8/dist/css/bootstrap.min.css">
