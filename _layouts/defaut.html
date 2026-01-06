@@ -12,11 +12,14 @@
 	<meta name="robots" content="index, follow">
 	<meta http-equiv="x-ua-compatible" content="ie=edge">
 
-	{% if page.favicon %}
-		<link rel="icon" type="image/svg+xml" href="{{ page.favicon | relative_url }}?v={{ site.time | date: '%Y%m%d%H%M%S' }}">
-	{% else %}
-		<link rel="icon" type="image/png" href="{{ '/assets/img/favicon.png' | relative_url }}?v={{ site.time | date: '%Y%m%d%H%M%S' }}">
+	{% set favicon = page.favicon ?? '/assets/img/favicon.png' %}
+	{% set type = 'image/png' %}
+
+	{% if favicon ends with '.svg' %}
+		{% set type = 'image/svg+xml' %}
 	{% endif %}
+
+	<link rel="icon" href="{{ favicon | relative_url }}?v={{ site.time | date: '%Y%m%d%H%M%S' }}">
 
 	<link rel="stylesheet" href="https://unpkg.com/bootstrap@5.3.8/dist/css/bootstrap.min.css">
 	<link rel="stylesheet" href="https://unpkg.com/@fancyapps/ui@6.1.7/dist/fancybox/fancybox.css">
@@ -42,7 +45,7 @@
 
 	<footer>
 		<div class="container bg-light border border-2 rounded-4 my-5 p-4 text-center">
-			<button id="changerTheme" class="btn btn-sm btn-outline-secondary"><i class="fa-solid fa-moon"></i> Sombre</button>
+			<button id="changerTheme" class="btn btn-sm btn-outline-secondary me-2"><i class="fa-solid fa-moon"></i> Sombre</button>
 
 			{% if page.url != "/" %}[ <a href="/">Retour à l’accueil</a>{% endif %}
 

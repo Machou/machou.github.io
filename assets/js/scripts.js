@@ -10,19 +10,21 @@
         html.setAttribute('data-theme', theme);
         localStorage.setItem(STORAGE_KEY, theme);
 
-        if (theme === 'Sombre') {
+        if (theme === 'sombre') {
             toggleBtn.innerHTML = '<i class="fa-solid fa-sun"></i> Clair';
         } else {
             toggleBtn.innerHTML = '<i class="fa-solid fa-moon"></i> Sombre';
         }
     };
 
-    const savedTheme = localStorage.getItem(STORAGE_KEY) || 'Clair';
+    // Init
+    const savedTheme = localStorage.getItem(STORAGE_KEY) || 'clair';
     setTheme(savedTheme);
 
+    // Toggle
     toggleBtn.addEventListener('click', () => {
         const current = html.getAttribute('data-theme');
-        setTheme(current === 'Sombre' ? 'Clair' : 'Sombre');
+        setTheme(current === 'sombre' ? 'clair' : 'sombre');
     });
 })();
 
