@@ -8,7 +8,7 @@
     if (!toggleBtn) return;
 
     const setTheme = (theme) => {
-        html.setAttribute('data-theme', theme);
+        html.setAttribute('data-bs-theme', theme);
         localStorage.setItem(STORAGE_KEY, theme);
 
         if (theme === 'sombre') {
@@ -24,7 +24,7 @@
 
     // Toggle
     toggleBtn.addEventListener('click', () => {
-        const current = html.getAttribute('data-theme');
+        const current = html.getAttribute('data-bs-theme');
         setTheme(current === 'sombre' ? 'clair' : 'sombre');
     });
 })();

@@ -5,7 +5,7 @@
 	--border: rgba(222,226,230, 1);
 }
 
-html[data-theme="dark"] {
+html[data-bs-theme="sombre"] {
 	--bg: rgba(18,18,18, 1);
 	--fg: rgba(233,236,239, 1);
 	--card: rgba(30,30,30, 1);
