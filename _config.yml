@@ -2,14 +2,13 @@ language: fr
 lang: fr-FR
 author: "Machou"
 robots: "all"
-date: 2026-01-04 14:30:00 +0200
+date: 2026-01-06 14:30:00 +0200
 published: true
 draft: false
 toc: false
 url: "https://machou.github.io"
 markdown: kramdown
 markdown_ext: "markdown,mkdn,md"
-highlighter: rouge
 theme: jekyll-theme-cayman
 
 # https://dashboard.jekyllrb.com/
@@ -23,9 +22,6 @@ sass:
 socials:
   GitHub: https://github.com/Machou
   GitLab: https://gitlab.com/Machou
-#   twitter:
-#   github:
-#   linkedin:
 
 navbar:
   - title: "Accueil"

@@ -12,6 +12,7 @@
 	<meta name="robots" content="index, follow">
 	<meta http-equiv="x-ua-compatible" content="ie=edge">
 
+	{% assign favicon = page.favicon | default: "/assets/img/favicon.png" %}
 	<link rel="icon" href="{{ favicon | relative_url }}?v={{ site.time | date: '%Y%m%d%H%M%S' }}">
 
 	<link rel="stylesheet" href="https://unpkg.com/bootstrap@5.3.8/dist/css/bootstrap.min.css">
@@ -20,7 +21,6 @@
 	<link rel="stylesheet" href="https://unpkg.com/@fortawesome/fontawesome-free@7.1.0/css/all.min.css">
 
 	<link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}?v={{ site.time | date: '%Y%m%d%H%M%S' }}">
-	<link rel="stylesheet" href="{{ '/assets/css/rouge.css' | relative_url }}?v={{ site.time | date: '%Y%m%d%H%M%S' }}">
 
 	{% if page.url == "/wow-pnj-lfr" %}
 		<!-- https://www.wowhead.com/tooltip -->
@@ -51,9 +51,9 @@
 
 		<script src="https://unpkg.com/@fancyapps/ui@6.1.7/dist/fancybox/fancybox.umd.js" defer></script>
 		<script src="https://unpkg.com/@fancyapps/ui@6.1.7/dist/fancybox/l10n/fr_FR.umd.js" defer></script>
-
-		<script src="{{ '/assets/js/scripts.js' | relative_url }}?v={{ site.time | date: '%Y%m%d%H%M%S' }}" defer></script>
 	{% endif %}
+
+	<script src="{{ '/assets/js/scripts.js' | relative_url }}?v={{ site.time | date: '%Y%m%d%H%M%S' }}" defer></script>
 
 	{% if page.url == "/release" %}
 		<script src="{{ '/assets/js/release.js' | relative_url }}?v={{ site.time | date: '%Y%m%d%H%M%S' }}" defer></script>
