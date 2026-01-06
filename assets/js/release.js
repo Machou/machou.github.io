@@ -63,6 +63,9 @@ function parseReleaseName(name)
     // Résolutions
     baseName = baseName.replace(/\b(2160|1080|720)[Pi]\b/gi, "$1p");
 
+    // Divers
+    baseName = baseName.replace(/\bFench\b/gi, 'FRENCH');
+
     const langList = 'MULTi|VFi|VFF|TRUEFRENCH|FRENCH|FR|VOF|SUBFRENCH|VOSTFR';
     const reorderRegex = new RegExp(
         "(\\b(?:S\\d{1,2}E\\d{1,2}|(?:19|20)\\d{2})\\b)(.*?)(\\b(?:" + langList + ")\\b)",
