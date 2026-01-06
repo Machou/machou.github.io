@@ -5,7 +5,7 @@ description: "Liste et localisation des différents PNJ pour l’outil Recherche
 permalink: /wow-pnj-lfr
 slug: wow-pnj-lfr
 canonical_url: https://machou.github.io/wow-pnj-lfr
-favicon: /assets/img/favicon-wow.svg
+w: /assets/img/favicon-wow.svg
 ---
 
 <nav aria-label="breadcrumb">

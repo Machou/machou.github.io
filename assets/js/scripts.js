@@ -1,28 +1,3 @@
-// Théme Clair / Sombre
-
-(() => {
-	const STORAGE_KEY = 'theme';
-	const html = document.documentElement;
-	const btn = document.getElementById('changerTheme');
-	if (!btn) return;
-
-	const setTheme = (theme) => {
-		html.setAttribute('data-bs-theme', theme);
-		localStorage.setItem(STORAGE_KEY, theme);
-		btn.innerHTML =
-			theme === 'dark' ? '<i class="fa-solid fa-sun"></i> Clair' : '<i class="fa-solid fa-moon"></i> Sombre';
-	};
-
-	const savedTheme = localStorage.getItem(STORAGE_KEY) || 'light';
-	setTheme(savedTheme);
-
-	btn.addEventListener('click', () => {
-		setTheme(
-			html.getAttribute('data-bs-theme') === 'dark' ? 'light' : 'dark'
-		);
-	});
-})();
-
 // Fancybox - https://fancyapps.com/fancybox/api/options/
 
 document.addEventListener('DOMContentLoaded', () => {

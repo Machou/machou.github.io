@@ -31,15 +31,13 @@
 
 <body>
 	<main>
-		<div class="container bg-light border border-2 rounded-4 mb-5 mt-4 mt-lg-5 p-4">
+		<div class="container bg-body text-body border border-2 rounded-4 mb-5 mt-4 mt-lg-5 p-4">
 			{{ content }}
 		</div>
 	</main>
 
 	<footer>
-		<div class="container bg-light border border-2 rounded-4 my-5 p-4 text-center">
-			<button id="changerTheme" class="btn btn-sm btn-outline-secondary me-2"><i class="fa-solid fa-sun"></i> Clair</button>
-
+		<div class="container border border-2 rounded-4 my-5 p-4 text-center">
 			{% if page.url != "/" %}[ <a href="/">Retour à l’accueil</a>{% endif %}
 
 			[ <a href="https://validator.w3.org/nu/?showsource=yes&doc={{ page.url | absolute_url | uri_escape }}"><img src="{{ '/assets/img/logo-w3c-ilove.png' | relative_url }}" alt="W3C Validator" title="W3C Validator"></a> ]
