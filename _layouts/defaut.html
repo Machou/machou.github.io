@@ -31,13 +31,17 @@
 
 <body>
 	<main class="mx-1 mx-lg-0">
-		<div class="container bg-light border border-2 rounded-4 mb-5 mt-4 mt-lg-5 p-4">
+		{% if page.url == "/" %}
+			<div class="container bg-body border border-2 rounded-3 mb-5 mt-4 mt-lg-5 p-4 overflow-scroll">
+		{% else %}
+			<div class="container bg-light border border-2 rounded-3 mb-5 mt-4 mt-lg-5 p-4">
+		{% endif %}
 			{{ content }}
 		</div>
 	</main>
 
 	<footer class="mx-1 mx-lg-0">
-		<div class="container bg-light border border-2 rounded-4 my-5 p-4 text-center">
+		<div class="container bg-body border border-2 rounded-3 my-5 p-4 text-center">
 			{% if page.url != "/" %}[ <a href="/">Retour à l’accueil</a>{% endif %}
 
 			[ <a href="https://validator.w3.org/nu/?showsource=yes&doc={{ page.url | absolute_url | uri_escape }}"><img src="{{ '/assets/img/logo-w3c-ilove.png' | relative_url }}" alt="W3C Validator" title="W3C Validator"></a> ]
