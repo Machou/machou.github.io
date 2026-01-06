@@ -1,4 +1,5 @@
 // Théme Clair / Sombre
+
 (() => {
     const STORAGE_KEY = 'theme';
     const toggleBtn = document.querySelector('#changerTheme');
@@ -30,17 +31,34 @@
 
 // Fancybox - https://fancyapps.com/fancybox/api/options/
 
-Fancybox.bind('[data-fancybox="gallerie"]', {
-    l10n: Fancybox.l10n.fr_FR,
-    zoomEffect: false,
-    Toolbar: {
-        display: {
-            left: ['infobar'],
-            middle: ['zoomIn', 'zoomOut', 'rotateCCW', 'rotateCW', 'flipX', 'flipY'],
-            right: ['download', 'thumbs', 'close'],
+document.addEventListener('DOMContentLoaded', () => {
+    if (typeof Fancybox === 'undefined') return;
+
+    Fancybox.bind('[data-fancybox="gallerie"]', {
+        l10n: Fancybox.l10n.fr_FR,
+        zoomEffect: false,
+        Toolbar: {
+            display: {
+                left: ['infobar'],
+                middle: ['zoomIn', 'zoomOut', 'rotateCCW', 'rotateCW', 'flipX', 'flipY'],
+                right: ['download', 'thumbs', 'close'],
+            }
         }
-    }
+    });
 });
+
+
+// Fancybox.bind('[data-fancybox="gallerie"]', {
+//     l10n: Fancybox.l10n.fr_FR,
+//     zoomEffect: false,
+//     Toolbar: {
+//         display: {
+//             left: ['infobar'],
+//             middle: ['zoomIn', 'zoomOut', 'rotateCCW', 'rotateCW', 'flipX', 'flipY'],
+//             right: ['download', 'thumbs', 'close'],
+//         }
+//     }
+// });
 
 // Remonter la page
 
