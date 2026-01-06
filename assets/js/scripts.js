@@ -47,19 +47,6 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
-
-// Fancybox.bind('[data-fancybox="gallerie"]', {
-//     l10n: Fancybox.l10n.fr_FR,
-//     zoomEffect: false,
-//     Toolbar: {
-//         display: {
-//             left: ['infobar'],
-//             middle: ['zoomIn', 'zoomOut', 'rotateCCW', 'rotateCW', 'flipX', 'flipY'],
-//             right: ['download', 'thumbs', 'close'],
-//         }
-//     }
-// });
-
 // Remonter la page
 
 const remonterPage = document.querySelector('#remonterPage');
