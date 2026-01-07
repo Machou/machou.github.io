@@ -15,20 +15,6 @@ favicon: /assets/img/favicon-fdj.ico
   </ol>
 </nav>
 
-<style>
-  /* Couleurs charts via variables CSS (fallbacks) */
-  :root{
-    --chart-numbers: var(--accent, #3498db);
-    --chart-stars: #f1c40f;
-    --chart-danger: #e74c3c;
-  }
-  .table-wrap { max-height: 600px; overflow: auto; }
-  .sticky-head thead th { position: sticky; top: 0; background: var(--bs-body-bg); z-index: 1; }
-  .small-muted { font-size: .9rem; color: #6c757d; }
-  .delta-pos { font-weight: 600; }
-  .delta-neg { font-weight: 600; opacity: .9; }
-</style>
-
 <div class="d-flex justify-content-between align-items-start mb-2 gap-3">
   <div class="small-muted">
     Analyse de <span class="fw-bold">1907</span> tirages valides
@@ -39,7 +25,7 @@ favicon: /assets/img/favicon-fdj.ico
       
     </div>
   </div>
-  <div class="small-muted fst-italic">Généré le 07/01/2026 à 05:03</div>
+  <div class="small-muted fst-italic">Généré le 07/01/2026 à 05:09</div>
 </div>
 
 <div class="row text-center mb-4 g-2">
@@ -1864,7 +1850,7 @@ favicon: /assets/img/favicon-fdj.ico
   new Chart(document.getElementById('chartNumbers'), {
     type: "bar",
     data: {
-      labels: [&#34;44&#34;, &#34;23&#34;, &#34;42&#34;, &#34;29&#34;, &#34;19&#34;, &#34;21&#34;, &#34;50&#34;, &#34;17&#34;, &#34;10&#34;, &#34;25&#34;, &#34;37&#34;, &#34;45&#34;, &#34;35&#34;, &#34;20&#34;, &#34;27&#34;, &#34;15&#34;, &#34;26&#34;, &#34;7&#34;, &#34;13&#34;, &#34;38&#34;, &#34;24&#34;, &#34;14&#34;, &#34;49&#34;, &#34;30&#34;, &#34;4&#34;, &#34;5&#34;, &#34;12&#34;, &#34;34&#34;, &#34;39&#34;, &#34;11&#34;, &#34;48&#34;, &#34;3&#34;, &#34;16&#34;, &#34;6&#34;, &#34;8&#34;, &#34;9&#34;, &#34;28&#34;, &#34;1&#34;, &#34;36&#34;, &#34;31&#34;, &#34;32&#34;, &#34;2&#34;, &#34;43&#34;, &#34;47&#34;, &#34;40&#34;, &#34;41&#34;, &#34;18&#34;, &#34;33&#34;, &#34;46&#34;, &#34;22&#34;],
+      labels: ["44", "23", "42", "29", "19", "21", "50", "17", "10", "25", "37", "45", "35", "20", "27", "15", "26", "7", "13", "38", "24", "14", "49", "30", "4", "5", "12", "34", "39", "11", "48", "3", "16", "6", "8", "9", "28", "1", "36", "31", "32", "2", "43", "47", "40", "41", "18", "33", "46", "22"],
       datasets: [{
         label: 'Sorties',
         data: [217, 215, 214, 212, 212, 211, 205, 205, 203, 202, 201, 201, 200, 200, 198, 198, 197, 196, 195, 195, 194, 194, 193, 193, 192, 192, 191, 190, 190, 189, 189, 187, 187, 185, 182, 182, 182, 181, 181, 179, 178, 178, 176, 175, 174, 173, 168, 167, 166, 150],
@@ -1885,7 +1871,7 @@ favicon: /assets/img/favicon-fdj.ico
   new Chart(document.getElementById("chartStars"), {
     type: "bar",
     data: {
-      labels: [&#34;3&#34;, &#34;2&#34;, &#34;8&#34;, &#34;9&#34;, &#34;6&#34;, &#34;7&#34;, &#34;5&#34;, &#34;1&#34;, &#34;4&#34;, &#34;10&#34;, &#34;11&#34;, &#34;12&#34;],
+      labels: ["3", "2", "8", "9", "6", "7", "5", "1", "4", "10", "11", "12"],
       datasets: [{
         label: 'Sorties',
         data: [379, 378, 365, 350, 341, 340, 338, 329, 301, 268, 258, 167],
@@ -1906,7 +1892,7 @@ favicon: /assets/img/favicon-fdj.ico
   new Chart(document.getElementById("multiAxisChart"), {
     type: 'line',
     data: {
-      labels: [&#34;1&#34;, &#34;2&#34;, &#34;3&#34;, &#34;4&#34;, &#34;5&#34;, &#34;6&#34;, &#34;7&#34;, &#34;8&#34;, &#34;9&#34;, &#34;10&#34;],
+      labels: ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10"],
       datasets: [
         {
           label: 'Occurrences',

@@ -26,12 +26,22 @@
 
 	{% if page.url == "/statistiques-euromillions" %}
 		<style>
+		:root{
+			--chart-numbers: var(--accent, #3498db);
+			--chart-stars: #f1c40f;
+			--chart-danger: #e74c3c;
+		}
 		body { background-color: rgba(248,249,250, 1); }
 		th { background-color: rgba(44,62,80, 1) !important; color: rgba(255,255,255, 1) !important; text-align: center; }
 		td { text-align: center; vertical-align: middle; }
 		.section { margin: 2rem 0; padding: 1rem 1.5rem; background: rgba(255,255,255, 1); border-radius: 8px; box-shadow: 0 0px 3px rgba(0, 0, 0, .5); }
 		h1 { color: rgba(44,62,80, 1); font-weight: bold; }
 		h2 { border-bottom: 2px solid rgba(52,152,219, 1); padding-bottom: .5rem; margin-bottom: 1.5rem; }
+		.table-wrap { max-height: 600px; overflow: auto; }
+		.sticky-head thead th { position: sticky; top: 0; background: var(--bs-body-bg); z-index: 1; }
+		.small-muted { font-size: .9rem; color: #6c757d; }
+		.delta-pos { font-weight: 600; }
+		.delta-neg { font-weight: 600; opacity: .9; }
 		</style>
 
 		<script src="https://unpkg.com/chart.js@latest/dist/chart.umd.js"></script>
