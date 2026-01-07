@@ -21,7 +21,7 @@ favicon: /assets/img/favicon-html.png
 	<div class="row">
 		<div class="col-12 col-lg-8 mx-auto p-0">
 			<div class="mb-4">
-				<label for="release" class="form-label">Ma Release</label>
+				<label for="release" class="form-label">Ma Release — <span class="small mb-0">Ne pas inclure les releases <strong class="text-danger">AV1</strong></span></label>
 				<input type="text" name="rls" class="form-control form-control-lg" id="release" placeholder="Casino.1995.FRENCH.1080p.WEB-DL.H264-Slay3R.mkv">
 			</div>
 
@@ -29,8 +29,6 @@ favicon: /assets/img/favicon-html.png
 				<pre class="border rounded mb-0 px-3 py-2 fs-5 user-select-all flex-grow-1" id="out"></pre>
 				<button type="button" style="width: 150px;" class="btn btn-sm btn-outline-secondary mt-2" id="copyBtn" title="Copier">Copier</button>
 			</div>
-
-			<p class="small mb-0">Ne pas inclure les releases <span class="fw-bold text-danger">AV1</span></p>
 		</div>
 	</div>
 </main>
