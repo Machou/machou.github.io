@@ -15,7 +15,10 @@ favicon: /assets/img/favicon-fdj.ico
 	</ol>
 </nav>
 
-<p class="text-muted">Analyse de <span class="fw-bold">1907</span> tirages (2004 – 2026)</p>
+<div class="d-flex justify-content-between">
+    <span class="text-muted">Analyse de <span class="fw-bold">1907</span> tirages (2004 – 2026)</span>
+    <span class="text-muted fst-italic">Généré le 07/01/2026 à 04:42</span>
+</div>
 
 <div class="row text-center mb-4">
 	<div class="col-4">
@@ -344,10 +347,6 @@ favicon: /assets/img/favicon-fdj.ico
 	<h2>📈 Comparaison (Zoom sur les 10 premiers numéros)</h2>
 	<canvas id="multiAxisChart" height="100"></canvas>
 </div>
-
-<p class="text-muted fst-italic">
-	Généré le 07/01/2026 à 04:33
-</p>
 
 <script>
     function toggleTable(showId, hideId) {
