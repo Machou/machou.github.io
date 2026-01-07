@@ -40,9 +40,12 @@ favicon: /assets/img/favicon-fdj.ico
 
 <div class="section">
 	<h2>🔟 Top Numéros</h2>
-	<div class="d-flex justify-content-center gap-2 my-3">
-		<button class="btn btn-primary" onclick="toggleTable('numberTableFreq', 'numberTableValue')">📊 Par Fréquence</button>
-		<button class="btn btn-outline-secondary" onclick="toggleTable('numberTableValue', 'numberTableFreq')">🔢 Par Valeur</button>
+	<div class="d-flex justify-content-center gap-2 my-3" role="group" aria-label="Tri numbers">
+		<input type="radio" class="btn-check" name="numbersSort" id="numbersFreq" autocomplete="off" checked onclick="toggleTable('numberTableFreq','numberTableValue')">
+		<label class="btn btn-primary" for="numbersFreq">📊 Par Fréquence</label>
+
+		<input type="radio" class="btn-check" name="numbersSort" id="numbersValue" autocomplete="off" onclick="toggleTable('numberTableValue','numberTableFreq')">
+		<label class="btn btn-outline-secondary" for="numbersValue">🔢 Par Valeur</label>
 	</div>
 
 	<div style="max-height: 600px; overflow-y: auto;">
@@ -266,10 +269,15 @@ favicon: /assets/img/favicon-fdj.ico
 
 <div class="section">
 	<h2>★ Top Étoiles</h2>
-	<div class="d-flex justify-content-center gap-2 my-3">
-		<button class="btn btn-warning text-white" onclick="toggleTable('starTableFreq', 'starTableValue')">📊 Par Fréquence</button>
-		<button class="btn btn-outline-secondary" onclick="toggleTable('starTableValue', 'starTableFreq')">🔢 Par Valeur</button>
+
+	<div class="d-flex justify-content-center gap-2 my-3" role="group" aria-label="Tri stars">
+		<input type="radio" class="btn-check" name="starsSort" id="starsFreq" autocomplete="off" checked onclick="toggleTable('starTableFreq','starTableValue')">
+		<label class="btn btn-warning text-white" for="starsFreq">📊 Par Fréquence</label>
+
+		<input type="radio" class="btn-check" name="starsSort" id="starsValue" autocomplete="off" onclick="toggleTable('starTableValue','starTableFreq')">
+		<label class="btn btn-outline-secondary" for="starsValue">🔢 Par Valeur</label>
 	</div>
+
 
 	<div style="height: 550px; overflow-y: auto;">
 		<table class="table table-striped table-hover" id="starTableFreq">
@@ -344,10 +352,31 @@ favicon: /assets/img/favicon-fdj.ico
 </div>
 
 <script>
-	function toggleTable(showId, hideId) {
-		document.getElementById(showId).style.display = '';
-		document.getElementById(hideId).style.display = 'none';
-	}
+    function toggleTable(showId, hideId) {
+        document.getElementById(showId).style.display = '';
+        document.getElementById(hideId).style.display = 'none';
+    }
+
+    function toggleTableBtns(clickedBtn, groupName, showId, hideId) {
+        toggleTable(showId, hideId);
+
+        const group = document.querySelector(`[data-toggle-group="${groupName}"]`);
+        const buttons = group.querySelectorAll("button");
+
+        buttons.forEach(btn => {
+            btn.classList.remove("btn-secondary");
+            btn.classList.add("btn-outline-secondary");
+            btn.classList.remove("active");
+        });
+
+        clickedBtn.classList.add("active");
+
+        const isSpecial = clickedBtn.classList.contains("btn-primary") || clickedBtn.classList.contains("btn-warning");
+        if (!isSpecial) {
+            clickedBtn.classList.remove("btn-outline-secondary");
+            clickedBtn.classList.add("btn-secondary");
+        }
+    }
 
 	// Graphique Numéros
 	new Chart(document.getElementById('chartNumbers'), {
