@@ -15,9 +15,14 @@ favicon: /assets/img/favicon-fdj.ico
 	</ol>
 </nav>
 
-<div class="d-flex justify-content-between">
+<div class="d-flex justify-content-between mb-2">
     <span class="text-muted">Analyse de <span class="fw-bold">1907</span> tirages (2004 – 2026)</span>
-    <span class="text-muted fst-italic">Généré le 07/01/2026 à 04:44</span>
+    <span class="text-muted fst-italic">Généré le 07/01/2026 à 04:51</span>
+</div>
+
+<div class="d-flex justify-content-between mb-2">
+    <p>EuroMillions (également typographié Euromillions ou Euro Millions) est une loterie transnationale, proposée dans douze pays européens (dont les trois micro-états que sont Monaco, Andorre et le Liechtenstein), les quatre monnaies de jeu étant l'euro, la livre sterling, le franc suisse et le franc pacifique.</p>
+    <p><a href="https://fr.wikipedia.org/wiki/EuroMillions">+ d’informations sur Wikipédia</p>
 </div>
 
 <div class="row text-center mb-4">
