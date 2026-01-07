@@ -20,7 +20,9 @@
 
 	<link rel="stylesheet" href="https://unpkg.com/@fortawesome/fontawesome-free@7.1.0/css/all.min.css">
 
-	<link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}?v={{ site.time | date: '%Y%m%d%H%M%S' }}">
+	{% if page.url != "/statistiques-euromillions" %}
+		<link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}?v={{ site.time | date: '%Y%m%d%H%M%S' }}">
+	{% endif %}
 
 	{% if page.url == "/wow-pnj-lfr" %}
 		<!-- https://www.wowhead.com/tooltip -->
@@ -28,15 +30,13 @@
 		<script src="https://wow.zamimg.com/js/tooltips.js" defer></script>
 	{% elsif page.url == "/statistiques-euromillions" %}
 		<style>
-		body { background-color: #f8f9fa; }
-		th { background-color: #2c3e50 !important; color: #fff !important; text-align: center; }
+		body { background-color: rgba(248,249,250, 1); }
+		th { background-color: rgba(44,62,80, 1) !important; color: rgba(255,255,255, 1) !important; text-align: center; }
 		td { text-align: center; vertical-align: middle; }
-		.section { margin: 4rem 0; padding: 2rem; background: white; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.05); }
-		h1 { color: #2c3e50; font-weight: bold; }
-		h2 { border-bottom: 2px solid #3498db; padding-bottom: 0.5rem; margin-bottom: 1.5rem; }
+		.section { margin: 2rem 0; padding: 1rem 1.5rem; background: rgba(255,255,255, 1); border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0, 1); }
+		h1 { color: rgba(44,62,80, 1); font-weight: bold; }
+		h2 { border-bottom: 2px solid rgba(52,152,219, 1); padding-bottom: .5rem; margin-bottom: 1.5rem; }
 		</style>
-
-		<script src="https://unpkg.com/chart.js@latest/dist/chart.umd.js"></script>
 	{% endif %}
 </head>
 
@@ -50,6 +50,8 @@
 	<main class="mx-1 mx-lg-0">
 		{% if page.url == "/" %}
 			<div class="container bg-body border border-2 rounded-3 mb-5 mt-4 mt-lg-5 p-4 overflow-scroll">
+		{% elsif page.url == "/statistiques-euromillions" %}
+			<div class="container">
 		{% else %}
 			<div class="container bg-light border border-2 rounded-3 mb-5 mt-4 mt-lg-5 p-4">
 		{% endif %}
@@ -59,6 +61,8 @@
 
 	{% if page.url == "/statistiques-euromillions" %}
 		<footer class="text-center py-5 text-muted">Généré en Python • 2026</footer>
+
+		<script src="https://unpkg.com/chart.js@latest/dist/chart.umd.js"></script>
 	{% else %}
 		<footer class="mx-1 mx-lg-0">
 			<div class="container bg-body border border-2 rounded-3 my-5 p-4 text-center">

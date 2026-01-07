@@ -36,7 +36,7 @@ navbar:
     url: "/wow-pnj-lfr"
   - title: "Standardiser ma Release"
     url: "/standardiser-ma-release"
-  - title: "Statistiques EuroMillions 2004 – 2026"
+  - title: "Statistiques EuroMillions"
     url: "/statistiques-euromillions"
 
 github:

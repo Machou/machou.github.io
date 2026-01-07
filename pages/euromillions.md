@@ -1,6 +1,6 @@
 ---
 layout: defaut
-title: "Statistiques EuroMillions 2004 – 2026"
+title: "Statistiques EuroMillions"
 description: ""
 permalink: /statistiques-euromillions
 slug: statistiques-euromillions
@@ -8,23 +8,30 @@ canonical_url: https://machou.github.io/statistiques-euromillions
 favicon: /assets/img/favicon-fdj.ico
 ---
 
-<p class="text-muted">Analyse de <span class="fw-bold">1907</span> tirages (2004 – 2025)</p>
+<nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="https://machou.github.io/">Accueil</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Statistiques EuroMillions 2004 – 2026</li>
+    </ol>
+</nav>
+
+<p class="text-muted">Analyse de <span class="fw-bold">1907</span> tirages (2004 – 2026)</p>
 
 <div class="row text-center mb-4">
     <div class="col-4">
-        <div class="card p-3">
+        <div class="card p-1 p-lg-3">
             <h3>1907</h3>
             <small class="text-muted">Tirages analysés</small>
         </div>
     </div>
     <div class="col-4">
-        <div class="card p-3">
+        <div class="card p-1 p-lg-3">
             <h3>50</h3>
             <small class="text-muted">Numéros uniques sortis</small>
         </div>
     </div>
     <div class="col-4">
-        <div class="card p-3">
+        <div class="card p-1 p-lg-3">
             <h3>12</h3>
             <small class="text-muted">Étoiles uniques sorties</small>
         </div>
@@ -38,7 +45,7 @@ favicon: /assets/img/favicon-fdj.ico
         <button class="btn btn-outline-secondary" onclick="toggleTable('numberTableValue', 'numberTableFreq')">🔢 Par Valeur</button>
     </div>
 
-    <div style="max-height: 500px; overflow-y: auto;">
+    <div style="max-height: 600px; overflow-y: auto;">
         <table class="table table-striped table-hover" id="numberTableFreq">
             <thead><tr><th>Numéro</th><th>Occurrences</th><th>%</th></tr></thead>
             <tbody>
@@ -335,3 +342,74 @@ favicon: /assets/img/favicon-fdj.ico
     <h2>📈 Comparaison (Zoom sur les 10 premiers numéros)</h2>
     <canvas id="multiAxisChart" height="100"></canvas>
 </div>
+
+<script>
+    function toggleTable(showId, hideId) {
+        document.getElementById(showId).style.display = '';
+        document.getElementById(hideId).style.display = 'none';
+    }
+
+    // Graphique Numéros
+    new Chart(document.getElementById('chartNumbers'), {
+        type: "bar",
+        data: {
+            labels: ["44", "23", "42", "29", "19", "21", "50", "17", "10", "25", "37", "45", "35", "20", "27", "15", "26", "7", "13", "38", "24", "14", "49", "30", "4", "5", "12", "34", "39", "11", "48", "3", "16", "6", "8", "9", "28", "1", "36", "31", "32", "2", "43", "47", "40", "41", "18", "33", "46", "22"],
+            datasets: [{
+                label: 'Sorties',
+                data: [217, 215, 214, 212, 212, 211, 205, 205, 203, 202, 201, 201, 200, 200, 198, 198, 197, 196, 195, 195, 194, 194, 193, 193, 192, 192, 191, 190, 190, 189, 189, 187, 187, 185, 182, 182, 182, 181, 181, 179, 178, 178, 176, 175, 174, 173, 168, 167, 166, 150],
+                backgroundColor: "#3498db",
+                borderRadius: 4
+            }]
+        },
+        options: { responsive: true }
+    });
+
+    // Graphique Étoiles
+    new Chart(document.getElementById("chartStars"), {
+        type: "bar",
+        data: {
+            labels: ["3", "2", "8", "9", "6", "7", "5", "1", "4", "10", "11", "12"],
+            datasets: [{
+                label: 'Sorties',
+                data: [379, 378, 365, 350, 341, 340, 338, 329, 301, 268, 258, 167],
+                backgroundColor: "#f1c40f",
+                borderRadius: 4
+            }]
+        },
+        options: { responsive: true }
+    });
+
+    // Graphique Multi-axe
+    new Chart(document.getElementById("multiAxisChart"), {
+        type: 'line',
+        data: {
+            labels: ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10"],
+            datasets: [
+                {
+                    label: 'Occurrences',
+                    data: [181, 178, 187, 192, 192, 185, 196, 182, 182, 203],
+                    yAxisID: 'y',
+                    borderColor: '#3498db',
+                    backgroundColor: '#3498db',
+                    tension: 0.3
+                },
+                {
+                    label: 'Pourcentage (%)',
+                    data: [1.9, 1.87, 1.96, 2.01, 2.01, 1.94, 2.06, 1.91, 1.91, 2.13],
+                    yAxisID: 'y1',
+                    borderColor: '#e74c3c',
+                    backgroundColor: '#e74c3c',
+                    tension: 0.3
+                }
+            ]
+        },
+        options: {
+            responsive: true,
+            interaction: { mode: 'index', intersect: false },
+            scales: {
+                y: { type: 'linear', display: true, position: 'left' },
+                y1: { type: 'linear', display: true, position: 'right', grid: { drawOnChartArea: false } }
+            }
+        }
+    });
+</script>
