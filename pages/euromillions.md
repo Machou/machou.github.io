@@ -25,7 +25,7 @@ favicon: /assets/img/favicon-fdj.ico
       
     </div>
   </div>
-  <div class="small-muted fst-italic">Généré le 07/01/2026 à 05:17</div>
+  <div class="small-muted fst-italic">Généré le 07/01/2026 à 05:22</div>
 </div>
 
 <div class="row text-center mb-4 g-2">
