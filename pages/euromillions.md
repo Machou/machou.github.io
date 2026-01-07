@@ -25,7 +25,7 @@ favicon: /assets/img/favicon-fdj.ico
       
     </div>
   </div>
-  <div class="small-muted fst-italic">Généré le 07/01/2026 à 05:26</div>
+  <div class="small-muted fst-italic">Généré le 07/01/2026 à 05:29</div>
 </div>
 
 <div class="row text-center mb-4 g-2">
@@ -63,7 +63,7 @@ favicon: /assets/img/favicon-fdj.ico
       <button class="btn btn-primary" onclick="toggleTableAndButtons(this,'numberTableFreq','numberTableValue')">📊 Par Fréquence</button>
       <button class="btn btn-outline-secondary" onclick="toggleTableAndButtons(this,'numberTableValue','numberTableFreq')">🔢 Par Valeur</button>
     </div>
-    <input class="form-control" style="max-width:280px" placeholder="Filtrer (ex: 7)" oninput="filterTable('numberTableFreq', this.value); filterTable('numberTableValue', this.value)" />
+    <input class="form-control" style="max-width:280px" placeholder="Filtrer (ex : 7)" oninput="filterTable('numberTableFreq', this.value); filterTable('numberTableValue', this.value)" />
   </div>
 
   <div class="table-wrap">
@@ -295,7 +295,7 @@ favicon: /assets/img/favicon-fdj.ico
       <button class="btn btn-warning text-white" onclick="toggleTableAndButtons(this,'starTableFreq','starTableValue')">📊 Par Fréquence</button>
       <button class="btn btn-outline-secondary" onclick="toggleTableAndButtons(this,'starTableValue','starTableFreq')">🔢 Par Valeur</button>
     </div>
-    <input class="form-control" style="max-width:280px" placeholder="Filtrer (ex: 2)" oninput="filterTable('starTableFreq', this.value); filterTable('starTableValue', this.value)" />
+    <input class="form-control" style="max-width:280px" placeholder="Filtrer (ex : 2)" oninput="filterTable('starTableFreq', this.value); filterTable('starTableValue', this.value)" />
   </div>
 
   <div class="table-wrap" style="max-height:550px">
@@ -384,7 +384,7 @@ favicon: /assets/img/favicon-fdj.ico
     <div class="col-12 col-lg-6">
       <div class="card p-2 p-lg-3">
         <h3 class="h5 mb-3">Numéros (1–50)</h3>
-        <input class="form-control mb-2" placeholder="Filtrer (ex: 23)" oninput="filterTable('trendNumbers', this.value)" />
+        <input class="form-control mb-2" placeholder="Filtrer (ex : 23)" oninput="filterTable('trendNumbers', this.value)" />
         <div class="table-wrap" style="max-height:420px">
           <table class="table table-striped table-hover sticky-head" id="trendNumbers">
             <thead>
@@ -847,14 +847,13 @@ favicon: /assets/img/favicon-fdj.ico
             </tbody>
           </table>
         </div>
-        <small class="text-muted">Astuce : trie visuellement en cliquant sur l’entête si ton theme ajoute un plugin. Sinon on peut coder un tri JS.</small>
       </div>
     </div>
 
     <div class="col-12 col-lg-6">
       <div class="card p-2 p-lg-3">
         <h3 class="h5 mb-3">Étoiles (1–12)</h3>
-        <input class="form-control mb-2" placeholder="Filtrer (ex: 7)" oninput="filterTable('trendStars', this.value)" />
+        <input class="form-control mb-2" placeholder="Filtrer (ex : 7)" oninput="filterTable('trendStars', this.value)" />
         <div class="table-wrap" style="max-height:420px">
           <table class="table table-striped table-hover sticky-head" id="trendStars">
             <thead>
@@ -975,7 +974,6 @@ favicon: /assets/img/favicon-fdj.ico
             </tbody>
           </table>
         </div>
-        <small class="text-muted">Si ta période couvre l’ancienne règle d’étoiles, passe <code>--stars-max 11</code>.</small>
       </div>
     </div>
   </div>
@@ -987,7 +985,7 @@ favicon: /assets/img/favicon-fdj.ico
     <div class="col-12 col-lg-6">
       <div class="card p-2 p-lg-3">
         <h3 class="h5 mb-3">Numéros (Top retard)</h3>
-        <input class="form-control mb-2" placeholder="Filtrer (ex: 41)" oninput="filterTable('delayNumbers', this.value)" />
+        <input class="form-control mb-2" placeholder="Filtrer (ex : 41)" oninput="filterTable('delayNumbers', this.value)" />
         <div class="table-wrap" style="max-height:420px">
           <table class="table table-striped table-hover sticky-head" id="delayNumbers">
             <thead><tr><th>Num</th><th>Retard (tirages)</th><th>Dernière date</th></tr></thead>
@@ -1302,7 +1300,7 @@ favicon: /assets/img/favicon-fdj.ico
     <div class="col-12 col-lg-6">
       <div class="card p-2 p-lg-3">
         <h3 class="h5 mb-3">Étoiles (Top retard)</h3>
-        <input class="form-control mb-2" placeholder="Filtrer (ex: 9)" oninput="filterTable('delayStars', this.value)" />
+        <input class="form-control mb-2" placeholder="Filtrer (ex : 9)" oninput="filterTable('delayStars', this.value)" />
         <div class="table-wrap" style="max-height:420px">
           <table class="table table-striped table-hover sticky-head" id="delayStars">
             <thead><tr><th>★</th><th>Retard (tirages)</th><th>Dernière date</th></tr></thead>
@@ -1395,7 +1393,7 @@ favicon: /assets/img/favicon-fdj.ico
     <div class="col-12 col-lg-6">
       <div class="card p-2 p-lg-3">
         <h3 class="h5 mb-3">Numéros</h3>
-        <input class="form-control mb-2" placeholder="Filtrer (ex: 12)" oninput="filterTable('gapNumbers', this.value)" />
+        <input class="form-control mb-2" placeholder="Filtrer (ex : 12)" oninput="filterTable('gapNumbers', this.value)" />
         <div class="table-wrap" style="max-height:420px">
           <table class="table table-striped table-hover sticky-head" id="gapNumbers">
             <thead><tr><th>Num</th><th>Apparitions</th><th>Gap moyen (tirages)</th></tr></thead>
@@ -1710,7 +1708,7 @@ favicon: /assets/img/favicon-fdj.ico
     <div class="col-12 col-lg-6">
       <div class="card p-2 p-lg-3">
         <h3 class="h5 mb-3">Étoiles</h3>
-        <input class="form-control mb-2" placeholder="Filtrer (ex: 3)" oninput="filterTable('gapStars', this.value)" />
+        <input class="form-control mb-2" placeholder="Filtrer (ex : 3)" oninput="filterTable('gapStars', this.value)" />
         <div class="table-wrap" style="max-height:420px">
           <table class="table table-striped table-hover sticky-head" id="gapStars">
             <thead><tr><th>★</th><th>Apparitions</th><th>Gap moyen (tirages)</th></tr></thead>
