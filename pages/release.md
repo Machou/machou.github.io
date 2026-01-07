@@ -29,6 +29,8 @@ favicon: /assets/img/favicon-html.png
 				<pre class="border rounded mb-0 px-3 py-2 fs-5 user-select-all flex-grow-1" id="out"></pre>
 				<button type="button" style="width: 150px;" class="btn btn-sm btn-outline-secondary mt-2" id="copyBtn" title="Copier">Copier</button>
 			</div>
+
+			<p class="small mb-0">Ne pas inclure les releases <span class="fw-bold text-danger">AV1</span></p>
 		</div>
 	</div>
 </main>

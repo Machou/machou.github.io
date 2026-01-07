@@ -345,6 +345,10 @@ favicon: /assets/img/favicon-fdj.ico
 	<canvas id="multiAxisChart" height="100"></canvas>
 </div>
 
+<p class="text-muted fst-italic">
+	Généré le 07/01/2026 à 04:33
+</p>
+
 <script>
     function toggleTable(showId, hideId) {
         document.getElementById(showId).style.display = '';
@@ -377,7 +381,6 @@ favicon: /assets/img/favicon-fdj.ico
                 clickedBtn.classList.add('btn-primary');
             }
         } else {
-            clickedBtn.classList.remove('active', 'btn-outline-secondary');
             clickedBtn.classList.add('btn-secondary');
         }
     }
