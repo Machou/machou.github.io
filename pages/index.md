@@ -24,6 +24,7 @@ favicon: /assets/img/favicon.png
   - [Tutoriel PortSentry](/comment-utiliser-portsentry)
   - [Tutoriel Fail2ban](/comment-utiliser-fail2ban)
 - [Standardiser ma Release](/release)
+- [Statistiques EuroMillions 2004 – 2026](/statistiques-euromillions)
 - [Liens Divers](#liens-divers)
 - [Liens Statistiques](#liens-statistiques)
 - [Mes Statistiques](#mes-statistiques)
