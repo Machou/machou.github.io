@@ -17,7 +17,7 @@ favicon: /assets/img/favicon-fdj.ico
 
 <div class="d-flex justify-content-between">
     <span class="text-muted">Analyse de <span class="fw-bold">1907</span> tirages (2004 – 2026)</span>
-    <span class="text-muted fst-italic">Généré le 07/01/2026 à 04:42</span>
+    <span class="text-muted fst-italic">Généré le 07/01/2026 à 04:44</span>
 </div>
 
 <div class="row text-center mb-4">
@@ -364,6 +364,7 @@ favicon: /assets/img/favicon-fdj.ico
             btn.classList.remove(
                 'btn-primary',
                 'btn-warning',
+                'btn-secondary',
                 'text-white',
                 'active'
             );
@@ -374,7 +375,8 @@ favicon: /assets/img/favicon-fdj.ico
         clickedBtn.classList.add('active');
 
         if (clickedBtn.textContent.includes('Fréquence')) {
-            if (clickedBtn.closest('[data-btn-group]').innerHTML.includes('btn-warning')) {
+            const isStarsGroup = group.querySelector('.btn-warning') !== null;
+            if (isStarsGroup) {
                 clickedBtn.classList.add('btn-warning', 'text-white');
             } else {
                 clickedBtn.classList.add('btn-primary');
@@ -383,6 +385,7 @@ favicon: /assets/img/favicon-fdj.ico
             clickedBtn.classList.add('btn-secondary');
         }
     }
+
 
 	// Graphique Numéros
 	new Chart(document.getElementById('chartNumbers'), {
