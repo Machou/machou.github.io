@@ -42,7 +42,7 @@ favicon: /assets/img/favicon-fdj.ico
 	<h2>🔟 Top Numéros</h2>
 
 	<div class="d-flex justify-content-center gap-2 my-3" data-btn-group>
-		<button class="btn btn-primary"onclick="toggleTableAndButtons(this,'numberTableFreq','numberTableValue')">📊 Par Fréquence</button>
+		<button class="btn btn-primary" onclick="toggleTableAndButtons(this,'numberTableFreq','numberTableValue')">📊 Par Fréquence</button>
 		<button class="btn btn-outline-secondary" onclick="toggleTableAndButtons(this,'numberTableValue','numberTableFreq')">🔢 Par Valeur</button>
 	</div>
 
@@ -359,10 +359,10 @@ favicon: /assets/img/favicon-fdj.ico
 
         buttons.forEach(btn => {
             btn.classList.remove(
-            'btn-primary',
-            'btn-warning',
-            'text-white',
-            'active'
+                'btn-primary',
+                'btn-warning',
+                'text-white',
+                'active'
             );
             btn.classList.add('btn-outline-secondary');
         });
@@ -377,6 +377,7 @@ favicon: /assets/img/favicon-fdj.ico
                 clickedBtn.classList.add('btn-primary');
             }
         } else {
+            clickedBtn.classList.remove('active', 'btn-secondary');
             clickedBtn.classList.add('btn-secondary');
         }
     }
