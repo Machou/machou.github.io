@@ -40,12 +40,10 @@ favicon: /assets/img/favicon-fdj.ico
 
 <div class="section">
 	<h2>🔟 Top Numéros</h2>
-	<div class="d-flex justify-content-center gap-2 my-3" role="group" aria-label="Tri numbers">
-		<input type="radio" class="btn-check" name="numbersSort" id="numbersFreq" autocomplete="off" checked onclick="toggleTable('numberTableFreq','numberTableValue')">
-		<label class="btn btn-primary" for="numbersFreq">📊 Par Fréquence</label>
 
-		<input type="radio" class="btn-check" name="numbersSort" id="numbersValue" autocomplete="off" onclick="toggleTable('numberTableValue','numberTableFreq')">
-		<label class="btn btn-outline-secondary" for="numbersValue">🔢 Par Valeur</label>
+	<div class="d-flex justify-content-center gap-2 my-3" data-btn-group>
+		<button class="btn btn-primary"onclick="toggleTableAndButtons(this,'numberTableFreq','numberTableValue')">📊 Par Fréquence</button>
+		<button class="btn btn-outline-secondary" onclick="toggleTableAndButtons(this,'numberTableValue','numberTableFreq')">🔢 Par Valeur</button>
 	</div>
 
 	<div style="max-height: 600px; overflow-y: auto;">
@@ -270,14 +268,10 @@ favicon: /assets/img/favicon-fdj.ico
 <div class="section">
 	<h2>★ Top Étoiles</h2>
 
-	<div class="d-flex justify-content-center gap-2 my-3" role="group" aria-label="Tri stars">
-		<input type="radio" class="btn-check" name="starsSort" id="starsFreq" autocomplete="off" checked onclick="toggleTable('starTableFreq','starTableValue')">
-		<label class="btn btn-warning text-white" for="starsFreq">📊 Par Fréquence</label>
-
-		<input type="radio" class="btn-check" name="starsSort" id="starsValue" autocomplete="off" onclick="toggleTable('starTableValue','starTableFreq')">
-		<label class="btn btn-outline-secondary" for="starsValue">🔢 Par Valeur</label>
+	<div class="d-flex justify-content-center gap-2 my-3" data-btn-group>
+		<button class="btn btn-warning text-white" onclick="toggleTableAndButtons(this,'starTableFreq','starTableValue')">📊 Par Fréquence</button>
+		<button class="btn btn-outline-secondary" onclick="toggleTableAndButtons(this,'starTableValue','starTableFreq')">🔢 Par Valeur</button>
 	</div>
-
 
 	<div style="height: 550px; overflow-y: auto;">
 		<table class="table table-striped table-hover" id="starTableFreq">
@@ -357,24 +351,33 @@ favicon: /assets/img/favicon-fdj.ico
         document.getElementById(hideId).style.display = 'none';
     }
 
-    function toggleTableBtns(clickedBtn, groupName, showId, hideId) {
+    function toggleTableAndButtons(clickedBtn, showId, hideId) {
         toggleTable(showId, hideId);
 
-        const group = document.querySelector(`[data-toggle-group="${groupName}"]`);
-        const buttons = group.querySelectorAll("button");
+        const group = clickedBtn.closest('[data-btn-group]');
+        const buttons = group.querySelectorAll('.btn');
 
         buttons.forEach(btn => {
-            btn.classList.remove("btn-secondary");
-            btn.classList.add("btn-outline-secondary");
-            btn.classList.remove("active");
+            btn.classList.remove(
+            'btn-primary',
+            'btn-warning',
+            'text-white',
+            'active'
+            );
+            btn.classList.add('btn-outline-secondary');
         });
 
-        clickedBtn.classList.add("active");
+        clickedBtn.classList.remove('btn-outline-secondary');
+        clickedBtn.classList.add('active');
 
-        const isSpecial = clickedBtn.classList.contains("btn-primary") || clickedBtn.classList.contains("btn-warning");
-        if (!isSpecial) {
-            clickedBtn.classList.remove("btn-outline-secondary");
-            clickedBtn.classList.add("btn-secondary");
+        if (clickedBtn.textContent.includes('Fréquence')) {
+            if (clickedBtn.closest('[data-btn-group]').innerHTML.includes('btn-warning')) {
+                clickedBtn.classList.add('btn-warning', 'text-white');
+            } else {
+                clickedBtn.classList.add('btn-primary');
+            }
+        } else {
+            clickedBtn.classList.add('btn-secondary');
         }
     }
 
