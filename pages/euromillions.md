@@ -378,7 +378,7 @@ favicon: /assets/img/favicon-fdj.ico
             }
         } else {
             clickedBtn.classList.remove('active', 'btn-secondary');
-            clickedBtn.classList.add('btn-secondary');
+            clickedBtn.classList.add('btn-outline-secondary');
         }
     }
 
