@@ -1,4 +1,3 @@
-
 ---
 layout: defaut
 title: "Statistiques EuroMillions 2004 – 2026"
