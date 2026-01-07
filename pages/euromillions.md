@@ -21,11 +21,11 @@ favicon: /assets/img/favicon-fdj.ico
     
     <div class="mt-1">
       
-        Période détectée : <strong>2004-02-13</strong> → <strong>2025-12-30</strong>
+        Période détectée : <strong>13/02/2004</strong> → <strong>30/12/2025</strong>
       
     </div>
   </div>
-  <div class="small-muted fst-italic">Généré le 07/01/2026 à 05:22</div>
+  <div class="small-muted fst-italic">Généré le 07/01/2026 à 05:26</div>
 </div>
 
 <div class="row text-center mb-4 g-2">
@@ -996,301 +996,301 @@ favicon: /assets/img/favicon-fdj.ico
                 <tr>
                   <td><strong>50</strong></td>
                   <td>50</td>
-                  <td>2025-07-08</td>
+                  <td>08/07/2025</td>
                 </tr>
               
                 <tr>
                   <td><strong>23</strong></td>
                   <td>31</td>
-                  <td>2025-09-12</td>
+                  <td>12/09/2025</td>
                 </tr>
               
                 <tr>
                   <td><strong>1</strong></td>
                   <td>30</td>
-                  <td>2025-09-16</td>
+                  <td>16/09/2025</td>
                 </tr>
               
                 <tr>
                   <td><strong>10</strong></td>
                   <td>29</td>
-                  <td>2025-09-19</td>
+                  <td>19/09/2025</td>
                 </tr>
               
                 <tr>
                   <td><strong>3</strong></td>
                   <td>26</td>
-                  <td>2025-09-30</td>
+                  <td>30/09/2025</td>
                 </tr>
               
                 <tr>
                   <td><strong>18</strong></td>
                   <td>22</td>
-                  <td>2025-10-14</td>
+                  <td>14/10/2025</td>
                 </tr>
               
                 <tr>
                   <td><strong>31</strong></td>
                   <td>19</td>
-                  <td>2025-10-24</td>
+                  <td>24/10/2025</td>
                 </tr>
               
                 <tr>
                   <td><strong>24</strong></td>
                   <td>18</td>
-                  <td>2025-10-28</td>
+                  <td>28/10/2025</td>
                 </tr>
               
                 <tr>
                   <td><strong>38</strong></td>
                   <td>17</td>
-                  <td>2025-10-31</td>
+                  <td>31/10/2025</td>
                 </tr>
               
                 <tr>
                   <td><strong>28</strong></td>
                   <td>16</td>
-                  <td>2025-11-04</td>
+                  <td>04/11/2025</td>
                 </tr>
               
                 <tr>
                   <td><strong>47</strong></td>
                   <td>14</td>
-                  <td>2025-11-11</td>
+                  <td>11/11/2025</td>
                 </tr>
               
                 <tr>
                   <td><strong>45</strong></td>
                   <td>13</td>
-                  <td>2025-11-14</td>
+                  <td>14/11/2025</td>
                 </tr>
               
                 <tr>
                   <td><strong>19</strong></td>
                   <td>11</td>
-                  <td>2025-11-21</td>
+                  <td>21/11/2025</td>
                 </tr>
               
                 <tr>
                   <td><strong>6</strong></td>
                   <td>10</td>
-                  <td>2025-11-25</td>
+                  <td>25/11/2025</td>
                 </tr>
               
                 <tr>
                   <td><strong>35</strong></td>
                   <td>10</td>
-                  <td>2025-11-25</td>
+                  <td>25/11/2025</td>
                 </tr>
               
                 <tr>
                   <td><strong>5</strong></td>
                   <td>9</td>
-                  <td>2025-11-28</td>
+                  <td>28/11/2025</td>
                 </tr>
               
                 <tr>
                   <td><strong>33</strong></td>
                   <td>9</td>
-                  <td>2025-11-28</td>
+                  <td>28/11/2025</td>
                 </tr>
               
                 <tr>
                   <td><strong>42</strong></td>
                   <td>9</td>
-                  <td>2025-11-28</td>
+                  <td>28/11/2025</td>
                 </tr>
               
                 <tr>
                   <td><strong>4</strong></td>
                   <td>8</td>
-                  <td>2025-12-02</td>
+                  <td>02/12/2025</td>
                 </tr>
               
                 <tr>
                   <td><strong>20</strong></td>
                   <td>8</td>
-                  <td>2025-12-02</td>
+                  <td>02/12/2025</td>
                 </tr>
               
                 <tr>
                   <td><strong>9</strong></td>
                   <td>7</td>
-                  <td>2025-12-05</td>
+                  <td>05/12/2025</td>
                 </tr>
               
                 <tr>
                   <td><strong>15</strong></td>
                   <td>7</td>
-                  <td>2025-12-05</td>
+                  <td>05/12/2025</td>
                 </tr>
               
                 <tr>
                   <td><strong>46</strong></td>
                   <td>7</td>
-                  <td>2025-12-05</td>
+                  <td>05/12/2025</td>
                 </tr>
               
                 <tr>
                   <td><strong>2</strong></td>
                   <td>6</td>
-                  <td>2025-12-09</td>
+                  <td>09/12/2025</td>
                 </tr>
               
                 <tr>
                   <td><strong>13</strong></td>
                   <td>6</td>
-                  <td>2025-12-09</td>
+                  <td>09/12/2025</td>
                 </tr>
               
                 <tr>
                   <td><strong>49</strong></td>
                   <td>6</td>
-                  <td>2025-12-09</td>
+                  <td>09/12/2025</td>
                 </tr>
               
                 <tr>
                   <td><strong>7</strong></td>
                   <td>5</td>
-                  <td>2025-12-12</td>
+                  <td>12/12/2025</td>
                 </tr>
               
                 <tr>
                   <td><strong>25</strong></td>
                   <td>5</td>
-                  <td>2025-12-12</td>
+                  <td>12/12/2025</td>
                 </tr>
               
                 <tr>
                   <td><strong>30</strong></td>
                   <td>5</td>
-                  <td>2025-12-12</td>
+                  <td>12/12/2025</td>
                 </tr>
               
                 <tr>
                   <td><strong>37</strong></td>
                   <td>5</td>
-                  <td>2025-12-12</td>
+                  <td>12/12/2025</td>
                 </tr>
               
                 <tr>
                   <td><strong>14</strong></td>
                   <td>4</td>
-                  <td>2025-12-16</td>
+                  <td>16/12/2025</td>
                 </tr>
               
                 <tr>
                   <td><strong>16</strong></td>
                   <td>4</td>
-                  <td>2025-12-16</td>
+                  <td>16/12/2025</td>
                 </tr>
               
                 <tr>
                   <td><strong>40</strong></td>
                   <td>4</td>
-                  <td>2025-12-16</td>
+                  <td>16/12/2025</td>
                 </tr>
               
                 <tr>
                   <td><strong>41</strong></td>
                   <td>4</td>
-                  <td>2025-12-16</td>
+                  <td>16/12/2025</td>
                 </tr>
               
                 <tr>
                   <td><strong>17</strong></td>
                   <td>3</td>
-                  <td>2025-12-19</td>
+                  <td>19/12/2025</td>
                 </tr>
               
                 <tr>
                   <td><strong>21</strong></td>
                   <td>3</td>
-                  <td>2025-12-19</td>
+                  <td>19/12/2025</td>
                 </tr>
               
                 <tr>
                   <td><strong>39</strong></td>
                   <td>3</td>
-                  <td>2025-12-19</td>
+                  <td>19/12/2025</td>
                 </tr>
               
                 <tr>
                   <td><strong>43</strong></td>
                   <td>3</td>
-                  <td>2025-12-19</td>
+                  <td>19/12/2025</td>
                 </tr>
               
                 <tr>
                   <td><strong>8</strong></td>
                   <td>2</td>
-                  <td>2025-12-23</td>
+                  <td>23/12/2025</td>
                 </tr>
               
                 <tr>
                   <td><strong>27</strong></td>
                   <td>2</td>
-                  <td>2025-12-23</td>
+                  <td>23/12/2025</td>
                 </tr>
               
                 <tr>
                   <td><strong>12</strong></td>
                   <td>1</td>
-                  <td>2025-12-26</td>
+                  <td>26/12/2025</td>
                 </tr>
               
                 <tr>
                   <td><strong>22</strong></td>
                   <td>1</td>
-                  <td>2025-12-26</td>
+                  <td>26/12/2025</td>
                 </tr>
               
                 <tr>
                   <td><strong>32</strong></td>
                   <td>1</td>
-                  <td>2025-12-26</td>
+                  <td>26/12/2025</td>
                 </tr>
               
                 <tr>
                   <td><strong>36</strong></td>
                   <td>1</td>
-                  <td>2025-12-26</td>
+                  <td>26/12/2025</td>
                 </tr>
               
                 <tr>
                   <td><strong>48</strong></td>
                   <td>1</td>
-                  <td>2025-12-26</td>
+                  <td>26/12/2025</td>
                 </tr>
               
                 <tr>
                   <td><strong>11</strong></td>
                   <td>0</td>
-                  <td>2025-12-30</td>
+                  <td>30/12/2025</td>
                 </tr>
               
                 <tr>
                   <td><strong>26</strong></td>
                   <td>0</td>
-                  <td>2025-12-30</td>
+                  <td>30/12/2025</td>
                 </tr>
               
                 <tr>
                   <td><strong>29</strong></td>
                   <td>0</td>
-                  <td>2025-12-30</td>
+                  <td>30/12/2025</td>
                 </tr>
               
                 <tr>
                   <td><strong>34</strong></td>
                   <td>0</td>
-                  <td>2025-12-30</td>
+                  <td>30/12/2025</td>
                 </tr>
               
                 <tr>
                   <td><strong>44</strong></td>
                   <td>0</td>
-                  <td>2025-12-30</td>
+                  <td>30/12/2025</td>
                 </tr>
               
             </tbody>
@@ -1311,73 +1311,73 @@ favicon: /assets/img/favicon-fdj.ico
                 <tr>
                   <td><strong>7</strong></td>
                   <td>10</td>
-                  <td>2025-11-25</td>
+                  <td>25/11/2025</td>
                 </tr>
               
                 <tr>
                   <td><strong>9</strong></td>
                   <td>9</td>
-                  <td>2025-11-28</td>
+                  <td>28/11/2025</td>
                 </tr>
               
                 <tr>
                   <td><strong>6</strong></td>
                   <td>8</td>
-                  <td>2025-12-02</td>
+                  <td>02/12/2025</td>
                 </tr>
               
                 <tr>
                   <td><strong>8</strong></td>
                   <td>7</td>
-                  <td>2025-12-05</td>
+                  <td>05/12/2025</td>
                 </tr>
               
                 <tr>
                   <td><strong>5</strong></td>
                   <td>5</td>
-                  <td>2025-12-12</td>
+                  <td>12/12/2025</td>
                 </tr>
               
                 <tr>
                   <td><strong>2</strong></td>
                   <td>4</td>
-                  <td>2025-12-16</td>
+                  <td>16/12/2025</td>
                 </tr>
               
                 <tr>
                   <td><strong>11</strong></td>
                   <td>2</td>
-                  <td>2025-12-23</td>
+                  <td>23/12/2025</td>
                 </tr>
               
                 <tr>
                   <td><strong>12</strong></td>
                   <td>2</td>
-                  <td>2025-12-23</td>
+                  <td>23/12/2025</td>
                 </tr>
               
                 <tr>
                   <td><strong>3</strong></td>
                   <td>1</td>
-                  <td>2025-12-26</td>
+                  <td>26/12/2025</td>
                 </tr>
               
                 <tr>
                   <td><strong>4</strong></td>
                   <td>1</td>
-                  <td>2025-12-26</td>
+                  <td>26/12/2025</td>
                 </tr>
               
                 <tr>
                   <td><strong>1</strong></td>
                   <td>0</td>
-                  <td>2025-12-30</td>
+                  <td>30/12/2025</td>
                 </tr>
               
                 <tr>
                   <td><strong>10</strong></td>
                   <td>0</td>
-                  <td>2025-12-30</td>
+                  <td>30/12/2025</td>
                 </tr>
               
             </tbody>
