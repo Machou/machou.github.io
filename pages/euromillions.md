@@ -15,17 +15,16 @@ favicon: /assets/img/favicon-fdj.ico
     </ol>
 </nav>
 
-<div class="d-flex justify-content-between align-items-start mb-2 gap-3">
-    <div class="small-muted">
-        Analyse de <span class="fw-bold">1907</span> tirages valides
+<div class="d-flex justify-content-between align-items-start mb-3 gap-3">
+    <p class="mb-0">Analyse de <span class="fw-bold">1907</span> tirages valides</p>
+    <p class="mb-0">
         
-        <div class="mt-1">
-            
-                Période détectée : <strong>13/02/2004</strong> → <strong>30/12/2025</strong>
-            
-        </div>
-    </div>
-    <div class="small-muted fst-italic">Généré le 09/01/2026 à 00:29</div>
+
+        
+            Période détectée : <strong>13/02/2004</strong> → <strong>30/12/2025</strong>
+        
+    </p>
+    <p class="mb-0 small-muted fst-italic">Généré le 09/01/2026 à 00:33</p>
 </div>
 
 <div class="row text-center mb-4 g-2">
