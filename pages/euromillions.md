@@ -20,12 +20,12 @@ favicon: /assets/img/favicon-fdj.ico
         Analyse de <span class="fw-bold">1907</span> tirages valides
         
         <div class="mt-1">
-        
-            Période détectée : <strong>13/02/2004</strong> → <strong>30/12/2025</strong>
-        
+            
+                Période détectée : <strong>13/02/2004</strong> → <strong>30/12/2025</strong>
+            
         </div>
     </div>
-    <div class="small-muted fst-italic">Généré le 09/01/2026 à 00:13</div>
+    <div class="small-muted fst-italic">Généré le 09/01/2026 à 00:20</div>
 </div>
 
 <div class="row text-center mb-4 g-2">
@@ -60,8 +60,8 @@ favicon: /assets/img/favicon-fdj.ico
 
     <div class="d-flex flex-wrap justify-content-between align-items-center gap-2 my-3">
         <div class="d-flex justify-content-center gap-2" data-btn-group>
-        <button class="btn btn-primary" onclick="toggleTableAndButtons(this,'numberTableFreq','numberTableValue')">📊 Par Fréquence</button>
-        <button class="btn btn-outline-secondary" onclick="toggleTableAndButtons(this,'numberTableValue','numberTableFreq')">🔢 Par Valeur</button>
+            <button class="btn btn-primary" onclick="toggleTableAndButtons(this,'numberTableFreq','numberTableValue')">📊 Par Fréquence</button>
+            <button class="btn btn-outline-secondary" onclick="toggleTableAndButtons(this,'numberTableValue','numberTableFreq')">🔢 Par Valeur</button>
         </div>
         <input class="form-control" style="max-width:280px" placeholder="Filtrer (ex : 7)" oninput="filterTable('numberTableFreq', this.value); filterTable('numberTableValue', this.value)" />
     </div>
@@ -172,113 +172,113 @@ favicon: /assets/img/favicon-fdj.ico
                 <tr><td><strong>22</strong></td><td>150</td><td>1.57%</td></tr>
                 
             </tbody>
-            </table>
+        </table>
 
-            <table class="table table-striped table-hover sticky-head" id="numberTableValue" style="display:none;">
+        <table class="table table-striped table-hover sticky-head" id="numberTableValue" style="display:none;">
             <thead><tr><th>Numéro</th><th>Occurrences</th><th>%</th></tr></thead>
-            <tbody>
-                
-                <tr><td><strong>1</strong></td><td>181</td><td>1.9%</td></tr>
-                
-                <tr><td><strong>2</strong></td><td>178</td><td>1.87%</td></tr>
-                
-                <tr><td><strong>3</strong></td><td>187</td><td>1.96%</td></tr>
-                
-                <tr><td><strong>4</strong></td><td>192</td><td>2.01%</td></tr>
-                
-                <tr><td><strong>5</strong></td><td>192</td><td>2.01%</td></tr>
-                
-                <tr><td><strong>6</strong></td><td>185</td><td>1.94%</td></tr>
-                
-                <tr><td><strong>7</strong></td><td>196</td><td>2.06%</td></tr>
-                
-                <tr><td><strong>8</strong></td><td>182</td><td>1.91%</td></tr>
-                
-                <tr><td><strong>9</strong></td><td>182</td><td>1.91%</td></tr>
-                
-                <tr><td><strong>10</strong></td><td>203</td><td>2.13%</td></tr>
-                
-                <tr><td><strong>11</strong></td><td>189</td><td>1.98%</td></tr>
-                
-                <tr><td><strong>12</strong></td><td>191</td><td>2.0%</td></tr>
-                
-                <tr><td><strong>13</strong></td><td>195</td><td>2.05%</td></tr>
-                
-                <tr><td><strong>14</strong></td><td>194</td><td>2.03%</td></tr>
-                
-                <tr><td><strong>15</strong></td><td>198</td><td>2.08%</td></tr>
-                
-                <tr><td><strong>16</strong></td><td>187</td><td>1.96%</td></tr>
-                
-                <tr><td><strong>17</strong></td><td>205</td><td>2.15%</td></tr>
-                
-                <tr><td><strong>18</strong></td><td>168</td><td>1.76%</td></tr>
-                
-                <tr><td><strong>19</strong></td><td>212</td><td>2.22%</td></tr>
-                
-                <tr><td><strong>20</strong></td><td>200</td><td>2.1%</td></tr>
-                
-                <tr><td><strong>21</strong></td><td>211</td><td>2.21%</td></tr>
-                
-                <tr><td><strong>22</strong></td><td>150</td><td>1.57%</td></tr>
-                
-                <tr><td><strong>23</strong></td><td>215</td><td>2.25%</td></tr>
-                
-                <tr><td><strong>24</strong></td><td>194</td><td>2.03%</td></tr>
-                
-                <tr><td><strong>25</strong></td><td>202</td><td>2.12%</td></tr>
-                
-                <tr><td><strong>26</strong></td><td>197</td><td>2.07%</td></tr>
-                
-                <tr><td><strong>27</strong></td><td>198</td><td>2.08%</td></tr>
-                
-                <tr><td><strong>28</strong></td><td>182</td><td>1.91%</td></tr>
-                
-                <tr><td><strong>29</strong></td><td>212</td><td>2.22%</td></tr>
-                
-                <tr><td><strong>30</strong></td><td>193</td><td>2.02%</td></tr>
-                
-                <tr><td><strong>31</strong></td><td>179</td><td>1.88%</td></tr>
-                
-                <tr><td><strong>32</strong></td><td>178</td><td>1.87%</td></tr>
-                
-                <tr><td><strong>33</strong></td><td>167</td><td>1.75%</td></tr>
-                
-                <tr><td><strong>34</strong></td><td>190</td><td>1.99%</td></tr>
-                
-                <tr><td><strong>35</strong></td><td>200</td><td>2.1%</td></tr>
-                
-                <tr><td><strong>36</strong></td><td>181</td><td>1.9%</td></tr>
-                
-                <tr><td><strong>37</strong></td><td>201</td><td>2.11%</td></tr>
-                
-                <tr><td><strong>38</strong></td><td>195</td><td>2.05%</td></tr>
-                
-                <tr><td><strong>39</strong></td><td>190</td><td>1.99%</td></tr>
-                
-                <tr><td><strong>40</strong></td><td>174</td><td>1.82%</td></tr>
-                
-                <tr><td><strong>41</strong></td><td>173</td><td>1.81%</td></tr>
-                
-                <tr><td><strong>42</strong></td><td>214</td><td>2.24%</td></tr>
-                
-                <tr><td><strong>43</strong></td><td>176</td><td>1.85%</td></tr>
-                
-                <tr><td><strong>44</strong></td><td>217</td><td>2.28%</td></tr>
-                
-                <tr><td><strong>45</strong></td><td>201</td><td>2.11%</td></tr>
-                
-                <tr><td><strong>46</strong></td><td>166</td><td>1.74%</td></tr>
-                
-                <tr><td><strong>47</strong></td><td>175</td><td>1.84%</td></tr>
-                
-                <tr><td><strong>48</strong></td><td>189</td><td>1.98%</td></tr>
-                
-                <tr><td><strong>49</strong></td><td>193</td><td>2.02%</td></tr>
-                
-                <tr><td><strong>50</strong></td><td>205</td><td>2.15%</td></tr>
-                
-            </tbody>
+                <tbody>
+                    
+                    <tr><td><strong>1</strong></td><td>181</td><td>1.9%</td></tr>
+                    
+                    <tr><td><strong>2</strong></td><td>178</td><td>1.87%</td></tr>
+                    
+                    <tr><td><strong>3</strong></td><td>187</td><td>1.96%</td></tr>
+                    
+                    <tr><td><strong>4</strong></td><td>192</td><td>2.01%</td></tr>
+                    
+                    <tr><td><strong>5</strong></td><td>192</td><td>2.01%</td></tr>
+                    
+                    <tr><td><strong>6</strong></td><td>185</td><td>1.94%</td></tr>
+                    
+                    <tr><td><strong>7</strong></td><td>196</td><td>2.06%</td></tr>
+                    
+                    <tr><td><strong>8</strong></td><td>182</td><td>1.91%</td></tr>
+                    
+                    <tr><td><strong>9</strong></td><td>182</td><td>1.91%</td></tr>
+                    
+                    <tr><td><strong>10</strong></td><td>203</td><td>2.13%</td></tr>
+                    
+                    <tr><td><strong>11</strong></td><td>189</td><td>1.98%</td></tr>
+                    
+                    <tr><td><strong>12</strong></td><td>191</td><td>2.0%</td></tr>
+                    
+                    <tr><td><strong>13</strong></td><td>195</td><td>2.05%</td></tr>
+                    
+                    <tr><td><strong>14</strong></td><td>194</td><td>2.03%</td></tr>
+                    
+                    <tr><td><strong>15</strong></td><td>198</td><td>2.08%</td></tr>
+                    
+                    <tr><td><strong>16</strong></td><td>187</td><td>1.96%</td></tr>
+                    
+                    <tr><td><strong>17</strong></td><td>205</td><td>2.15%</td></tr>
+                    
+                    <tr><td><strong>18</strong></td><td>168</td><td>1.76%</td></tr>
+                    
+                    <tr><td><strong>19</strong></td><td>212</td><td>2.22%</td></tr>
+                    
+                    <tr><td><strong>20</strong></td><td>200</td><td>2.1%</td></tr>
+                    
+                    <tr><td><strong>21</strong></td><td>211</td><td>2.21%</td></tr>
+                    
+                    <tr><td><strong>22</strong></td><td>150</td><td>1.57%</td></tr>
+                    
+                    <tr><td><strong>23</strong></td><td>215</td><td>2.25%</td></tr>
+                    
+                    <tr><td><strong>24</strong></td><td>194</td><td>2.03%</td></tr>
+                    
+                    <tr><td><strong>25</strong></td><td>202</td><td>2.12%</td></tr>
+                    
+                    <tr><td><strong>26</strong></td><td>197</td><td>2.07%</td></tr>
+                    
+                    <tr><td><strong>27</strong></td><td>198</td><td>2.08%</td></tr>
+                    
+                    <tr><td><strong>28</strong></td><td>182</td><td>1.91%</td></tr>
+                    
+                    <tr><td><strong>29</strong></td><td>212</td><td>2.22%</td></tr>
+                    
+                    <tr><td><strong>30</strong></td><td>193</td><td>2.02%</td></tr>
+                    
+                    <tr><td><strong>31</strong></td><td>179</td><td>1.88%</td></tr>
+                    
+                    <tr><td><strong>32</strong></td><td>178</td><td>1.87%</td></tr>
+                    
+                    <tr><td><strong>33</strong></td><td>167</td><td>1.75%</td></tr>
+                    
+                    <tr><td><strong>34</strong></td><td>190</td><td>1.99%</td></tr>
+                    
+                    <tr><td><strong>35</strong></td><td>200</td><td>2.1%</td></tr>
+                    
+                    <tr><td><strong>36</strong></td><td>181</td><td>1.9%</td></tr>
+                    
+                    <tr><td><strong>37</strong></td><td>201</td><td>2.11%</td></tr>
+                    
+                    <tr><td><strong>38</strong></td><td>195</td><td>2.05%</td></tr>
+                    
+                    <tr><td><strong>39</strong></td><td>190</td><td>1.99%</td></tr>
+                    
+                    <tr><td><strong>40</strong></td><td>174</td><td>1.82%</td></tr>
+                    
+                    <tr><td><strong>41</strong></td><td>173</td><td>1.81%</td></tr>
+                    
+                    <tr><td><strong>42</strong></td><td>214</td><td>2.24%</td></tr>
+                    
+                    <tr><td><strong>43</strong></td><td>176</td><td>1.85%</td></tr>
+                    
+                    <tr><td><strong>44</strong></td><td>217</td><td>2.28%</td></tr>
+                    
+                    <tr><td><strong>45</strong></td><td>201</td><td>2.11%</td></tr>
+                    
+                    <tr><td><strong>46</strong></td><td>166</td><td>1.74%</td></tr>
+                    
+                    <tr><td><strong>47</strong></td><td>175</td><td>1.84%</td></tr>
+                    
+                    <tr><td><strong>48</strong></td><td>189</td><td>1.98%</td></tr>
+                    
+                    <tr><td><strong>49</strong></td><td>193</td><td>2.02%</td></tr>
+                    
+                    <tr><td><strong>50</strong></td><td>205</td><td>2.15%</td></tr>
+                    
+                </tbody>
         </table>
     </div>
 
@@ -296,8 +296,8 @@ favicon: /assets/img/favicon-fdj.ico
 
     <div class="d-flex flex-wrap justify-content-between align-items-center gap-2 my-3">
         <div class="d-flex justify-content-center gap-2" data-btn-group>
-        <button class="btn btn-warning text-white" onclick="toggleTableAndButtons(this,'starTableFreq','starTableValue')">📊 Par Fréquence</button>
-        <button class="btn btn-outline-secondary" onclick="toggleTableAndButtons(this,'starTableValue','starTableFreq')">🔢 Par Valeur</button>
+            <button class="btn btn-warning text-white" onclick="toggleTableAndButtons(this,'starTableFreq','starTableValue')">📊 Par Fréquence</button>
+            <button class="btn btn-outline-secondary" onclick="toggleTableAndButtons(this,'starTableValue','starTableFreq')">🔢 Par Valeur</button>
         </div>
         <input class="form-control" style="max-width:280px" placeholder="Filtrer (ex : 2)" oninput="filterTable('starTableFreq', this.value); filterTable('starTableValue', this.value)" />
     </div>
@@ -379,9 +379,9 @@ favicon: /assets/img/favicon-fdj.ico
     <h2>📈 Comparaison (Zoom sur 10 numéros)</h2>
     <p class="small-muted mb-2">Occurrences et pourcentage historiques pour les 10 premiers numéros (par valeur).</p>
     <canvas id="multiAxisChart" height="100"></canvas>
-    </div>
+</div>
 
-    <div class="section">
+<div class="section">
     <h2>🔥 Tendance récente (50 derniers tirages)</h2>
     <p class="small-muted">
         Delta = (pourcentage récent) − (pourcentage historique).
@@ -390,472 +390,472 @@ favicon: /assets/img/favicon-fdj.ico
 
     <div class="row g-3">
         <div class="col-12 col-lg-6">
-        <div class="card p-2 p-lg-3">
-            <h3 class="h5 mb-3">Numéros (1–50)</h3>
-            <input class="form-control mb-2" placeholder="Filtrer (ex : 23)" oninput="filterTable('trendNumbers', this.value)" />
-            <div class="table-wrap" style="max-height:420px">
-            <table class="table table-striped table-hover sticky-head" id="trendNumbers">
-                <thead>
-                <tr>
-                    <th>Num</th><th>Hist</th><th>% Hist</th><th>Récent</th><th>% Récent</th><th>Delta</th>
-                </tr>
-                </thead>
-                <tbody>
-                    
+            <div class="card p-2 p-lg-3">
+                <h3 class="h5 mb-3">Numéros (1–50)</h3>
+                <input class="form-control mb-2" placeholder="Filtrer (ex : 23)" oninput="filterTable('trendNumbers', this.value)" />
+                <div class="table-wrap" style="max-height:420px">
+                    <table class="table table-striped table-hover sticky-head" id="trendNumbers">
+                        <thead>
                         <tr>
-                        <td><strong>1</strong></td>
-                        <td>181</td>
-                        <td>1.9%</td>
-                        <td>2</td>
-                        <td>0.8%</td>
-                        <td class="delta-neg">-1.1%</td>
+                            <th>Num</th><th>Hist</th><th>% Hist</th><th>Récent</th><th>% Récent</th><th>Delta</th>
                         </tr>
-                    
-                        <tr>
-                        <td><strong>2</strong></td>
-                        <td>178</td>
-                        <td>1.87%</td>
-                        <td>4</td>
-                        <td>1.6%</td>
-                        <td class="delta-neg">-0.27%</td>
-                        </tr>
-                    
-                        <tr>
-                        <td><strong>3</strong></td>
-                        <td>187</td>
-                        <td>1.96%</td>
-                        <td>3</td>
-                        <td>1.2%</td>
-                        <td class="delta-neg">-0.76%</td>
-                        </tr>
-                    
-                        <tr>
-                        <td><strong>4</strong></td>
-                        <td>192</td>
-                        <td>2.01%</td>
-                        <td>5</td>
-                        <td>2.0%</td>
-                        <td class="delta-neg">-0.01%</td>
-                        </tr>
-                    
-                        <tr>
-                        <td><strong>5</strong></td>
-                        <td>192</td>
-                        <td>2.01%</td>
-                        <td>7</td>
-                        <td>2.8%</td>
-                        <td class="delta-pos">0.79%</td>
-                        </tr>
-                    
-                        <tr>
-                        <td><strong>6</strong></td>
-                        <td>185</td>
-                        <td>1.94%</td>
-                        <td>8</td>
-                        <td>3.2%</td>
-                        <td class="delta-pos">1.26%</td>
-                        </tr>
-                    
-                        <tr>
-                        <td><strong>7</strong></td>
-                        <td>196</td>
-                        <td>2.06%</td>
-                        <td>5</td>
-                        <td>2.0%</td>
-                        <td class="delta-neg">-0.06%</td>
-                        </tr>
-                    
-                        <tr>
-                        <td><strong>8</strong></td>
-                        <td>182</td>
-                        <td>1.91%</td>
-                        <td>9</td>
-                        <td>3.6%</td>
-                        <td class="delta-pos">1.69%</td>
-                        </tr>
-                    
-                        <tr>
-                        <td><strong>9</strong></td>
-                        <td>182</td>
-                        <td>1.91%</td>
-                        <td>6</td>
-                        <td>2.4%</td>
-                        <td class="delta-pos">0.49%</td>
-                        </tr>
-                    
-                        <tr>
-                        <td><strong>10</strong></td>
-                        <td>203</td>
-                        <td>2.13%</td>
-                        <td>3</td>
-                        <td>1.2%</td>
-                        <td class="delta-neg">-0.93%</td>
-                        </tr>
-                    
-                        <tr>
-                        <td><strong>11</strong></td>
-                        <td>189</td>
-                        <td>1.98%</td>
-                        <td>4</td>
-                        <td>1.6%</td>
-                        <td class="delta-neg">-0.38%</td>
-                        </tr>
-                    
-                        <tr>
-                        <td><strong>12</strong></td>
-                        <td>191</td>
-                        <td>2.0%</td>
-                        <td>4</td>
-                        <td>1.6%</td>
-                        <td class="delta-neg">-0.4%</td>
-                        </tr>
-                    
-                        <tr>
-                        <td><strong>13</strong></td>
-                        <td>195</td>
-                        <td>2.05%</td>
-                        <td>10</td>
-                        <td>4.0%</td>
-                        <td class="delta-pos">1.95%</td>
-                        </tr>
-                    
-                        <tr>
-                        <td><strong>14</strong></td>
-                        <td>194</td>
-                        <td>2.03%</td>
-                        <td>5</td>
-                        <td>2.0%</td>
-                        <td class="delta-neg">-0.03%</td>
-                        </tr>
-                    
-                        <tr>
-                        <td><strong>15</strong></td>
-                        <td>198</td>
-                        <td>2.08%</td>
-                        <td>4</td>
-                        <td>1.6%</td>
-                        <td class="delta-neg">-0.48%</td>
-                        </tr>
-                    
-                        <tr>
-                        <td><strong>16</strong></td>
-                        <td>187</td>
-                        <td>1.96%</td>
-                        <td>3</td>
-                        <td>1.2%</td>
-                        <td class="delta-neg">-0.76%</td>
-                        </tr>
-                    
-                        <tr>
-                        <td><strong>17</strong></td>
-                        <td>205</td>
-                        <td>2.15%</td>
-                        <td>6</td>
-                        <td>2.4%</td>
-                        <td class="delta-pos">0.25%</td>
-                        </tr>
-                    
-                        <tr>
-                        <td><strong>18</strong></td>
-                        <td>168</td>
-                        <td>1.76%</td>
-                        <td>3</td>
-                        <td>1.2%</td>
-                        <td class="delta-neg">-0.56%</td>
-                        </tr>
-                    
-                        <tr>
-                        <td><strong>19</strong></td>
-                        <td>212</td>
-                        <td>2.22%</td>
-                        <td>3</td>
-                        <td>1.2%</td>
-                        <td class="delta-neg">-1.02%</td>
-                        </tr>
-                    
-                        <tr>
-                        <td><strong>20</strong></td>
-                        <td>200</td>
-                        <td>2.1%</td>
-                        <td>2</td>
-                        <td>0.8%</td>
-                        <td class="delta-neg">-1.3%</td>
-                        </tr>
-                    
-                        <tr>
-                        <td><strong>21</strong></td>
-                        <td>211</td>
-                        <td>2.21%</td>
-                        <td>4</td>
-                        <td>1.6%</td>
-                        <td class="delta-neg">-0.61%</td>
-                        </tr>
-                    
-                        <tr>
-                        <td><strong>22</strong></td>
-                        <td>150</td>
-                        <td>1.57%</td>
-                        <td>2</td>
-                        <td>0.8%</td>
-                        <td class="delta-neg">-0.77%</td>
-                        </tr>
-                    
-                        <tr>
-                        <td><strong>23</strong></td>
-                        <td>215</td>
-                        <td>2.25%</td>
-                        <td>3</td>
-                        <td>1.2%</td>
-                        <td class="delta-neg">-1.05%</td>
-                        </tr>
-                    
-                        <tr>
-                        <td><strong>24</strong></td>
-                        <td>194</td>
-                        <td>2.03%</td>
-                        <td>8</td>
-                        <td>3.2%</td>
-                        <td class="delta-pos">1.17%</td>
-                        </tr>
-                    
-                        <tr>
-                        <td><strong>25</strong></td>
-                        <td>202</td>
-                        <td>2.12%</td>
-                        <td>8</td>
-                        <td>3.2%</td>
-                        <td class="delta-pos">1.08%</td>
-                        </tr>
-                    
-                        <tr>
-                        <td><strong>26</strong></td>
-                        <td>197</td>
-                        <td>2.07%</td>
-                        <td>5</td>
-                        <td>2.0%</td>
-                        <td class="delta-neg">-0.07%</td>
-                        </tr>
-                    
-                        <tr>
-                        <td><strong>27</strong></td>
-                        <td>198</td>
-                        <td>2.08%</td>
-                        <td>3</td>
-                        <td>1.2%</td>
-                        <td class="delta-neg">-0.88%</td>
-                        </tr>
-                    
-                        <tr>
-                        <td><strong>28</strong></td>
-                        <td>182</td>
-                        <td>1.91%</td>
-                        <td>3</td>
-                        <td>1.2%</td>
-                        <td class="delta-neg">-0.71%</td>
-                        </tr>
-                    
-                        <tr>
-                        <td><strong>29</strong></td>
-                        <td>212</td>
-                        <td>2.22%</td>
-                        <td>8</td>
-                        <td>3.2%</td>
-                        <td class="delta-pos">0.98%</td>
-                        </tr>
-                    
-                        <tr>
-                        <td><strong>30</strong></td>
-                        <td>193</td>
-                        <td>2.02%</td>
-                        <td>6</td>
-                        <td>2.4%</td>
-                        <td class="delta-pos">0.38%</td>
-                        </tr>
-                    
-                        <tr>
-                        <td><strong>31</strong></td>
-                        <td>179</td>
-                        <td>1.88%</td>
-                        <td>5</td>
-                        <td>2.0%</td>
-                        <td class="delta-pos">0.12%</td>
-                        </tr>
-                    
-                        <tr>
-                        <td><strong>32</strong></td>
-                        <td>178</td>
-                        <td>1.87%</td>
-                        <td>5</td>
-                        <td>2.0%</td>
-                        <td class="delta-pos">0.13%</td>
-                        </tr>
-                    
-                        <tr>
-                        <td><strong>33</strong></td>
-                        <td>167</td>
-                        <td>1.75%</td>
-                        <td>3</td>
-                        <td>1.2%</td>
-                        <td class="delta-neg">-0.55%</td>
-                        </tr>
-                    
-                        <tr>
-                        <td><strong>34</strong></td>
-                        <td>190</td>
-                        <td>1.99%</td>
-                        <td>4</td>
-                        <td>1.6%</td>
-                        <td class="delta-neg">-0.39%</td>
-                        </tr>
-                    
-                        <tr>
-                        <td><strong>35</strong></td>
-                        <td>200</td>
-                        <td>2.1%</td>
-                        <td>6</td>
-                        <td>2.4%</td>
-                        <td class="delta-pos">0.3%</td>
-                        </tr>
-                    
-                        <tr>
-                        <td><strong>36</strong></td>
-                        <td>181</td>
-                        <td>1.9%</td>
-                        <td>5</td>
-                        <td>2.0%</td>
-                        <td class="delta-pos">0.1%</td>
-                        </tr>
-                    
-                        <tr>
-                        <td><strong>37</strong></td>
-                        <td>201</td>
-                        <td>2.11%</td>
-                        <td>3</td>
-                        <td>1.2%</td>
-                        <td class="delta-neg">-0.91%</td>
-                        </tr>
-                    
-                        <tr>
-                        <td><strong>38</strong></td>
-                        <td>195</td>
-                        <td>2.05%</td>
-                        <td>3</td>
-                        <td>1.2%</td>
-                        <td class="delta-neg">-0.85%</td>
-                        </tr>
-                    
-                        <tr>
-                        <td><strong>39</strong></td>
-                        <td>190</td>
-                        <td>1.99%</td>
-                        <td>7</td>
-                        <td>2.8%</td>
-                        <td class="delta-pos">0.81%</td>
-                        </tr>
-                    
-                        <tr>
-                        <td><strong>40</strong></td>
-                        <td>174</td>
-                        <td>1.82%</td>
-                        <td>6</td>
-                        <td>2.4%</td>
-                        <td class="delta-pos">0.58%</td>
-                        </tr>
-                    
-                        <tr>
-                        <td><strong>41</strong></td>
-                        <td>173</td>
-                        <td>1.81%</td>
-                        <td>8</td>
-                        <td>3.2%</td>
-                        <td class="delta-pos">1.39%</td>
-                        </tr>
-                    
-                        <tr>
-                        <td><strong>42</strong></td>
-                        <td>214</td>
-                        <td>2.24%</td>
-                        <td>9</td>
-                        <td>3.6%</td>
-                        <td class="delta-pos">1.36%</td>
-                        </tr>
-                    
-                        <tr>
-                        <td><strong>43</strong></td>
-                        <td>176</td>
-                        <td>1.85%</td>
-                        <td>6</td>
-                        <td>2.4%</td>
-                        <td class="delta-pos">0.55%</td>
-                        </tr>
-                    
-                        <tr>
-                        <td><strong>44</strong></td>
-                        <td>217</td>
-                        <td>2.28%</td>
-                        <td>9</td>
-                        <td>3.6%</td>
-                        <td class="delta-pos">1.32%</td>
-                        </tr>
-                    
-                        <tr>
-                        <td><strong>45</strong></td>
-                        <td>201</td>
-                        <td>2.11%</td>
-                        <td>8</td>
-                        <td>3.2%</td>
-                        <td class="delta-pos">1.09%</td>
-                        </tr>
-                    
-                        <tr>
-                        <td><strong>46</strong></td>
-                        <td>166</td>
-                        <td>1.74%</td>
-                        <td>3</td>
-                        <td>1.2%</td>
-                        <td class="delta-neg">-0.54%</td>
-                        </tr>
-                    
-                        <tr>
-                        <td><strong>47</strong></td>
-                        <td>175</td>
-                        <td>1.84%</td>
-                        <td>3</td>
-                        <td>1.2%</td>
-                        <td class="delta-neg">-0.64%</td>
-                        </tr>
-                    
-                        <tr>
-                        <td><strong>48</strong></td>
-                        <td>189</td>
-                        <td>1.98%</td>
-                        <td>7</td>
-                        <td>2.8%</td>
-                        <td class="delta-pos">0.82%</td>
-                        </tr>
-                    
-                        <tr>
-                        <td><strong>49</strong></td>
-                        <td>193</td>
-                        <td>2.02%</td>
-                        <td>4</td>
-                        <td>1.6%</td>
-                        <td class="delta-neg">-0.42%</td>
-                        </tr>
-                    
-                        <tr>
-                        <td><strong>50</strong></td>
-                        <td>205</td>
-                        <td>2.15%</td>
-                        <td>0</td>
-                        <td>0.0%</td>
-                        <td class="delta-neg">-2.15%</td>
-                        </tr>
-                    
-                </tbody>
-            </table>
+                        </thead>
+                        <tbody>
+                            
+                                <tr>
+                                <td><strong>1</strong></td>
+                                <td>181</td>
+                                <td>1.9%</td>
+                                <td>2</td>
+                                <td>0.8%</td>
+                                <td class="delta-neg">-1.1%</td>
+                                </tr>
+                            
+                                <tr>
+                                <td><strong>2</strong></td>
+                                <td>178</td>
+                                <td>1.87%</td>
+                                <td>4</td>
+                                <td>1.6%</td>
+                                <td class="delta-neg">-0.27%</td>
+                                </tr>
+                            
+                                <tr>
+                                <td><strong>3</strong></td>
+                                <td>187</td>
+                                <td>1.96%</td>
+                                <td>3</td>
+                                <td>1.2%</td>
+                                <td class="delta-neg">-0.76%</td>
+                                </tr>
+                            
+                                <tr>
+                                <td><strong>4</strong></td>
+                                <td>192</td>
+                                <td>2.01%</td>
+                                <td>5</td>
+                                <td>2.0%</td>
+                                <td class="delta-neg">-0.01%</td>
+                                </tr>
+                            
+                                <tr>
+                                <td><strong>5</strong></td>
+                                <td>192</td>
+                                <td>2.01%</td>
+                                <td>7</td>
+                                <td>2.8%</td>
+                                <td class="delta-pos">0.79%</td>
+                                </tr>
+                            
+                                <tr>
+                                <td><strong>6</strong></td>
+                                <td>185</td>
+                                <td>1.94%</td>
+                                <td>8</td>
+                                <td>3.2%</td>
+                                <td class="delta-pos">1.26%</td>
+                                </tr>
+                            
+                                <tr>
+                                <td><strong>7</strong></td>
+                                <td>196</td>
+                                <td>2.06%</td>
+                                <td>5</td>
+                                <td>2.0%</td>
+                                <td class="delta-neg">-0.06%</td>
+                                </tr>
+                            
+                                <tr>
+                                <td><strong>8</strong></td>
+                                <td>182</td>
+                                <td>1.91%</td>
+                                <td>9</td>
+                                <td>3.6%</td>
+                                <td class="delta-pos">1.69%</td>
+                                </tr>
+                            
+                                <tr>
+                                <td><strong>9</strong></td>
+                                <td>182</td>
+                                <td>1.91%</td>
+                                <td>6</td>
+                                <td>2.4%</td>
+                                <td class="delta-pos">0.49%</td>
+                                </tr>
+                            
+                                <tr>
+                                <td><strong>10</strong></td>
+                                <td>203</td>
+                                <td>2.13%</td>
+                                <td>3</td>
+                                <td>1.2%</td>
+                                <td class="delta-neg">-0.93%</td>
+                                </tr>
+                            
+                                <tr>
+                                <td><strong>11</strong></td>
+                                <td>189</td>
+                                <td>1.98%</td>
+                                <td>4</td>
+                                <td>1.6%</td>
+                                <td class="delta-neg">-0.38%</td>
+                                </tr>
+                            
+                                <tr>
+                                <td><strong>12</strong></td>
+                                <td>191</td>
+                                <td>2.0%</td>
+                                <td>4</td>
+                                <td>1.6%</td>
+                                <td class="delta-neg">-0.4%</td>
+                                </tr>
+                            
+                                <tr>
+                                <td><strong>13</strong></td>
+                                <td>195</td>
+                                <td>2.05%</td>
+                                <td>10</td>
+                                <td>4.0%</td>
+                                <td class="delta-pos">1.95%</td>
+                                </tr>
+                            
+                                <tr>
+                                <td><strong>14</strong></td>
+                                <td>194</td>
+                                <td>2.03%</td>
+                                <td>5</td>
+                                <td>2.0%</td>
+                                <td class="delta-neg">-0.03%</td>
+                                </tr>
+                            
+                                <tr>
+                                <td><strong>15</strong></td>
+                                <td>198</td>
+                                <td>2.08%</td>
+                                <td>4</td>
+                                <td>1.6%</td>
+                                <td class="delta-neg">-0.48%</td>
+                                </tr>
+                            
+                                <tr>
+                                <td><strong>16</strong></td>
+                                <td>187</td>
+                                <td>1.96%</td>
+                                <td>3</td>
+                                <td>1.2%</td>
+                                <td class="delta-neg">-0.76%</td>
+                                </tr>
+                            
+                                <tr>
+                                <td><strong>17</strong></td>
+                                <td>205</td>
+                                <td>2.15%</td>
+                                <td>6</td>
+                                <td>2.4%</td>
+                                <td class="delta-pos">0.25%</td>
+                                </tr>
+                            
+                                <tr>
+                                <td><strong>18</strong></td>
+                                <td>168</td>
+                                <td>1.76%</td>
+                                <td>3</td>
+                                <td>1.2%</td>
+                                <td class="delta-neg">-0.56%</td>
+                                </tr>
+                            
+                                <tr>
+                                <td><strong>19</strong></td>
+                                <td>212</td>
+                                <td>2.22%</td>
+                                <td>3</td>
+                                <td>1.2%</td>
+                                <td class="delta-neg">-1.02%</td>
+                                </tr>
+                            
+                                <tr>
+                                <td><strong>20</strong></td>
+                                <td>200</td>
+                                <td>2.1%</td>
+                                <td>2</td>
+                                <td>0.8%</td>
+                                <td class="delta-neg">-1.3%</td>
+                                </tr>
+                            
+                                <tr>
+                                <td><strong>21</strong></td>
+                                <td>211</td>
+                                <td>2.21%</td>
+                                <td>4</td>
+                                <td>1.6%</td>
+                                <td class="delta-neg">-0.61%</td>
+                                </tr>
+                            
+                                <tr>
+                                <td><strong>22</strong></td>
+                                <td>150</td>
+                                <td>1.57%</td>
+                                <td>2</td>
+                                <td>0.8%</td>
+                                <td class="delta-neg">-0.77%</td>
+                                </tr>
+                            
+                                <tr>
+                                <td><strong>23</strong></td>
+                                <td>215</td>
+                                <td>2.25%</td>
+                                <td>3</td>
+                                <td>1.2%</td>
+                                <td class="delta-neg">-1.05%</td>
+                                </tr>
+                            
+                                <tr>
+                                <td><strong>24</strong></td>
+                                <td>194</td>
+                                <td>2.03%</td>
+                                <td>8</td>
+                                <td>3.2%</td>
+                                <td class="delta-pos">1.17%</td>
+                                </tr>
+                            
+                                <tr>
+                                <td><strong>25</strong></td>
+                                <td>202</td>
+                                <td>2.12%</td>
+                                <td>8</td>
+                                <td>3.2%</td>
+                                <td class="delta-pos">1.08%</td>
+                                </tr>
+                            
+                                <tr>
+                                <td><strong>26</strong></td>
+                                <td>197</td>
+                                <td>2.07%</td>
+                                <td>5</td>
+                                <td>2.0%</td>
+                                <td class="delta-neg">-0.07%</td>
+                                </tr>
+                            
+                                <tr>
+                                <td><strong>27</strong></td>
+                                <td>198</td>
+                                <td>2.08%</td>
+                                <td>3</td>
+                                <td>1.2%</td>
+                                <td class="delta-neg">-0.88%</td>
+                                </tr>
+                            
+                                <tr>
+                                <td><strong>28</strong></td>
+                                <td>182</td>
+                                <td>1.91%</td>
+                                <td>3</td>
+                                <td>1.2%</td>
+                                <td class="delta-neg">-0.71%</td>
+                                </tr>
+                            
+                                <tr>
+                                <td><strong>29</strong></td>
+                                <td>212</td>
+                                <td>2.22%</td>
+                                <td>8</td>
+                                <td>3.2%</td>
+                                <td class="delta-pos">0.98%</td>
+                                </tr>
+                            
+                                <tr>
+                                <td><strong>30</strong></td>
+                                <td>193</td>
+                                <td>2.02%</td>
+                                <td>6</td>
+                                <td>2.4%</td>
+                                <td class="delta-pos">0.38%</td>
+                                </tr>
+                            
+                                <tr>
+                                <td><strong>31</strong></td>
+                                <td>179</td>
+                                <td>1.88%</td>
+                                <td>5</td>
+                                <td>2.0%</td>
+                                <td class="delta-pos">0.12%</td>
+                                </tr>
+                            
+                                <tr>
+                                <td><strong>32</strong></td>
+                                <td>178</td>
+                                <td>1.87%</td>
+                                <td>5</td>
+                                <td>2.0%</td>
+                                <td class="delta-pos">0.13%</td>
+                                </tr>
+                            
+                                <tr>
+                                <td><strong>33</strong></td>
+                                <td>167</td>
+                                <td>1.75%</td>
+                                <td>3</td>
+                                <td>1.2%</td>
+                                <td class="delta-neg">-0.55%</td>
+                                </tr>
+                            
+                                <tr>
+                                <td><strong>34</strong></td>
+                                <td>190</td>
+                                <td>1.99%</td>
+                                <td>4</td>
+                                <td>1.6%</td>
+                                <td class="delta-neg">-0.39%</td>
+                                </tr>
+                            
+                                <tr>
+                                <td><strong>35</strong></td>
+                                <td>200</td>
+                                <td>2.1%</td>
+                                <td>6</td>
+                                <td>2.4%</td>
+                                <td class="delta-pos">0.3%</td>
+                                </tr>
+                            
+                                <tr>
+                                <td><strong>36</strong></td>
+                                <td>181</td>
+                                <td>1.9%</td>
+                                <td>5</td>
+                                <td>2.0%</td>
+                                <td class="delta-pos">0.1%</td>
+                                </tr>
+                            
+                                <tr>
+                                <td><strong>37</strong></td>
+                                <td>201</td>
+                                <td>2.11%</td>
+                                <td>3</td>
+                                <td>1.2%</td>
+                                <td class="delta-neg">-0.91%</td>
+                                </tr>
+                            
+                                <tr>
+                                <td><strong>38</strong></td>
+                                <td>195</td>
+                                <td>2.05%</td>
+                                <td>3</td>
+                                <td>1.2%</td>
+                                <td class="delta-neg">-0.85%</td>
+                                </tr>
+                            
+                                <tr>
+                                <td><strong>39</strong></td>
+                                <td>190</td>
+                                <td>1.99%</td>
+                                <td>7</td>
+                                <td>2.8%</td>
+                                <td class="delta-pos">0.81%</td>
+                                </tr>
+                            
+                                <tr>
+                                <td><strong>40</strong></td>
+                                <td>174</td>
+                                <td>1.82%</td>
+                                <td>6</td>
+                                <td>2.4%</td>
+                                <td class="delta-pos">0.58%</td>
+                                </tr>
+                            
+                                <tr>
+                                <td><strong>41</strong></td>
+                                <td>173</td>
+                                <td>1.81%</td>
+                                <td>8</td>
+                                <td>3.2%</td>
+                                <td class="delta-pos">1.39%</td>
+                                </tr>
+                            
+                                <tr>
+                                <td><strong>42</strong></td>
+                                <td>214</td>
+                                <td>2.24%</td>
+                                <td>9</td>
+                                <td>3.6%</td>
+                                <td class="delta-pos">1.36%</td>
+                                </tr>
+                            
+                                <tr>
+                                <td><strong>43</strong></td>
+                                <td>176</td>
+                                <td>1.85%</td>
+                                <td>6</td>
+                                <td>2.4%</td>
+                                <td class="delta-pos">0.55%</td>
+                                </tr>
+                            
+                                <tr>
+                                <td><strong>44</strong></td>
+                                <td>217</td>
+                                <td>2.28%</td>
+                                <td>9</td>
+                                <td>3.6%</td>
+                                <td class="delta-pos">1.32%</td>
+                                </tr>
+                            
+                                <tr>
+                                <td><strong>45</strong></td>
+                                <td>201</td>
+                                <td>2.11%</td>
+                                <td>8</td>
+                                <td>3.2%</td>
+                                <td class="delta-pos">1.09%</td>
+                                </tr>
+                            
+                                <tr>
+                                <td><strong>46</strong></td>
+                                <td>166</td>
+                                <td>1.74%</td>
+                                <td>3</td>
+                                <td>1.2%</td>
+                                <td class="delta-neg">-0.54%</td>
+                                </tr>
+                            
+                                <tr>
+                                <td><strong>47</strong></td>
+                                <td>175</td>
+                                <td>1.84%</td>
+                                <td>3</td>
+                                <td>1.2%</td>
+                                <td class="delta-neg">-0.64%</td>
+                                </tr>
+                            
+                                <tr>
+                                <td><strong>48</strong></td>
+                                <td>189</td>
+                                <td>1.98%</td>
+                                <td>7</td>
+                                <td>2.8%</td>
+                                <td class="delta-pos">0.82%</td>
+                                </tr>
+                            
+                                <tr>
+                                <td><strong>49</strong></td>
+                                <td>193</td>
+                                <td>2.02%</td>
+                                <td>4</td>
+                                <td>1.6%</td>
+                                <td class="delta-neg">-0.42%</td>
+                                </tr>
+                            
+                                <tr>
+                                <td><strong>50</strong></td>
+                                <td>205</td>
+                                <td>2.15%</td>
+                                <td>0</td>
+                                <td>0.0%</td>
+                                <td class="delta-neg">-2.15%</td>
+                                </tr>
+                            
+                        </tbody>
+                    </table>
+                </div>
             </div>
-        </div>
         </div>
 
         <div class="col-12 col-lg-6">
@@ -1718,84 +1718,84 @@ favicon: /assets/img/favicon-fdj.ico
                 <h3 class="h5 mb-3">Étoiles</h3>
                 <input class="form-control mb-2" placeholder="Filtrer (ex : 3)" oninput="filterTable('gapStars', this.value)" />
                 <div class="table-wrap" style="max-height:420px">
-                <table class="table table-striped table-hover sticky-head" id="gapStars">
-                    <thead><tr><th>★</th><th>Apparitions</th><th>Gap moyen (tirages)</th></tr></thead>
-                    <tbody>
-                        
-                            <tr>
-                            <td><strong>3</strong></td>
-                            <td>379</td>
-                            <td>5.02</td>
-                            </tr>
-                        
-                            <tr>
-                            <td><strong>2</strong></td>
-                            <td>378</td>
-                            <td>5.04</td>
-                            </tr>
-                        
-                            <tr>
-                            <td><strong>8</strong></td>
-                            <td>365</td>
-                            <td>5.2</td>
-                            </tr>
-                        
-                            <tr>
-                            <td><strong>9</strong></td>
-                            <td>350</td>
-                            <td>5.44</td>
-                            </tr>
-                        
-                            <tr>
-                            <td><strong>6</strong></td>
-                            <td>341</td>
-                            <td>5.55</td>
-                            </tr>
-                        
-                            <tr>
-                            <td><strong>7</strong></td>
-                            <td>340</td>
-                            <td>5.59</td>
-                            </tr>
-                        
-                            <tr>
-                            <td><strong>5</strong></td>
-                            <td>338</td>
-                            <td>5.64</td>
-                            </tr>
-                        
-                            <tr>
-                            <td><strong>10</strong></td>
-                            <td>268</td>
-                            <td>5.69</td>
-                            </tr>
-                        
-                            <tr>
-                            <td><strong>1</strong></td>
-                            <td>329</td>
-                            <td>5.8</td>
-                            </tr>
-                        
-                            <tr>
-                            <td><strong>12</strong></td>
-                            <td>167</td>
-                            <td>5.81</td>
-                            </tr>
-                        
-                            <tr>
-                            <td><strong>11</strong></td>
-                            <td>258</td>
-                            <td>5.93</td>
-                            </tr>
-                        
-                            <tr>
-                            <td><strong>4</strong></td>
-                            <td>301</td>
-                            <td>6.34</td>
-                            </tr>
-                        
-                    </tbody>
-                </table>
+                    <table class="table table-striped table-hover sticky-head" id="gapStars">
+                        <thead><tr><th>★</th><th>Apparitions</th><th>Gap moyen (tirages)</th></tr></thead>
+                        <tbody>
+                            
+                                <tr>
+                                <td><strong>3</strong></td>
+                                <td>379</td>
+                                <td>5.02</td>
+                                </tr>
+                            
+                                <tr>
+                                <td><strong>2</strong></td>
+                                <td>378</td>
+                                <td>5.04</td>
+                                </tr>
+                            
+                                <tr>
+                                <td><strong>8</strong></td>
+                                <td>365</td>
+                                <td>5.2</td>
+                                </tr>
+                            
+                                <tr>
+                                <td><strong>9</strong></td>
+                                <td>350</td>
+                                <td>5.44</td>
+                                </tr>
+                            
+                                <tr>
+                                <td><strong>6</strong></td>
+                                <td>341</td>
+                                <td>5.55</td>
+                                </tr>
+                            
+                                <tr>
+                                <td><strong>7</strong></td>
+                                <td>340</td>
+                                <td>5.59</td>
+                                </tr>
+                            
+                                <tr>
+                                <td><strong>5</strong></td>
+                                <td>338</td>
+                                <td>5.64</td>
+                                </tr>
+                            
+                                <tr>
+                                <td><strong>10</strong></td>
+                                <td>268</td>
+                                <td>5.69</td>
+                                </tr>
+                            
+                                <tr>
+                                <td><strong>1</strong></td>
+                                <td>329</td>
+                                <td>5.8</td>
+                                </tr>
+                            
+                                <tr>
+                                <td><strong>12</strong></td>
+                                <td>167</td>
+                                <td>5.81</td>
+                                </tr>
+                            
+                                <tr>
+                                <td><strong>11</strong></td>
+                                <td>258</td>
+                                <td>5.93</td>
+                                </tr>
+                            
+                                <tr>
+                                <td><strong>4</strong></td>
+                                <td>301</td>
+                                <td>6.34</td>
+                                </tr>
+                            
+                        </tbody>
+                    </table>
                 </div>
             </div>
         </div>
