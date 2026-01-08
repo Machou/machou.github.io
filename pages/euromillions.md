@@ -25,7 +25,7 @@ favicon: /assets/img/favicon-fdj.ico
             
         </div>
     </div>
-    <div class="small-muted fst-italic">Généré le 09/01/2026 à 00:20</div>
+    <div class="small-muted fst-italic">Généré le 09/01/2026 à 00:29</div>
 </div>
 
 <div class="row text-center mb-4 g-2">
@@ -283,11 +283,11 @@ favicon: /assets/img/favicon-fdj.ico
     </div>
 
     <div class="mt-4">
-        <canvas id="chartNumbers" height="100"></canvas>
+        <canvas class="mx-auto" id="chartNumbers" height="100"></canvas>
     </div>
 
     <div class="mt-4">
-        <canvas id="chartNumbersDoughnut" height="120"></canvas>
+        <canvas class="mx-auto" id="chartNumbersDoughnut" height="100"></canvas>
     </div>
 </div>
 
@@ -367,18 +367,18 @@ favicon: /assets/img/favicon-fdj.ico
     </div>
 
     <div class="mt-4">
-        <canvas id="chartStars" height="100"></canvas>
+        <canvas class="mx-auto" id="chartStars" height="100"></canvas>
     </div>
 
     <div class="mt-4">
-        <canvas id="chartStarsDoughnut" height="120"></canvas>
+        <canvas class="mx-auto" id="chartStarsDoughnut" height="100"></canvas>
     </div>
 </div>
 
 <div class="section">
     <h2>📈 Comparaison (Zoom sur 10 numéros)</h2>
     <p class="small-muted mb-2">Occurrences et pourcentage historiques pour les 10 premiers numéros (par valeur).</p>
-    <canvas id="multiAxisChart" height="100"></canvas>
+    <canvas class="mx-auto" id="multiAxisChart" height="100"></canvas>
 </div>
 
 <div class="section">
