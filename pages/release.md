@@ -26,7 +26,7 @@ favicon: /assets/img/favicon-html.png
 			</div>
 
 			<div class="input-group d-none" id="outputWrapper">
-				<input value="" class="border rounded-start" id="out">
+				<input value="" style="font-size: 1.25rem;" class="form-control" id="out">
 				<button type="button" class="btn btn-outline-secondary" id="copyBtn" title="Copier">Copier</button>
 			</div>
 		</div>
