@@ -82,18 +82,12 @@
 			</div>
 		</footer>
 
-		{% if page.url != "/release" %}
-			<button id="remonterPage">↑ Remonter la page ↑</button>
+		<button id="remonterPage">↑ Remonter la page ↑</button>
 
-			<script src="https://unpkg.com/@fancyapps/ui@6.1.7/dist/fancybox/fancybox.umd.js" defer></script>
-			<script src="https://unpkg.com/@fancyapps/ui@6.1.7/dist/fancybox/l10n/fr_FR.umd.js" defer></script>
-		{% endif %}
+		<script src="https://unpkg.com/@fancyapps/ui@6.1.7/dist/fancybox/fancybox.umd.js" defer></script>
+		<script src="https://unpkg.com/@fancyapps/ui@6.1.7/dist/fancybox/l10n/fr_FR.umd.js" defer></script>
 
 		<script src="{{ '/assets/js/scripts.js' | relative_url }}?v={{ site.time | date: '%Y%m%d%H%M%S' }}" defer></script>
-
-		{% if page.url == "/release" %}
-			<script src="{{ '/assets/js/release.js' | relative_url }}?v={{ site.time | date: '%Y%m%d%H%M%S' }}" defer></script>
-		{% endif %}
 	{% endif %}
 </body>
 </html>

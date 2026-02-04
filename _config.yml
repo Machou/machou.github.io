@@ -34,8 +34,6 @@ navbar:
     url: "/comment-utiliser-portsentry"
   - title: "WoW PNJ LFR"
     url: "/wow-pnj-lfr"
-  - title: "Standardiser ma Release"
-    url: "/standardiser-ma-release"
   - title: "Statistiques EuroMillions"
     url: "/statistiques-euromillions"
 
