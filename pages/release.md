@@ -25,8 +25,8 @@ favicon: /assets/img/favicon-html.png
 				<input type="text" name="rls" class="form-control form-control-lg" id="release" placeholder="Casino.1995.FRENCH.1080p.WEB-DL.H264-Slay3R.mkv">
 			</div>
 
-			<div class="input-group d-none rounded-start" id="outputWrapper">
-				<input class="border rounded user-select-all" id="out">
+			<div class="input-group d-none" id="outputWrapper">
+				<input class="border rounded-start user-select-all" id="out">
 				<button type="button" class="btn btn-outline-secondary" id="copyBtn" title="Copier">Copier</button>
 			</div>
 		</div>
