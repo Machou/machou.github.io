@@ -27,7 +27,7 @@ favicon: /assets/img/favicon-html.png
 
 			<div class="d-flex align-items-start gap-3 d-none" id="outputWrapper">
 				<pre class="border rounded mb-0 px-3 py-2 fs-5 user-select-all flex-grow-1" id="out"></pre>
-				<button type="button" style="width: 150px;" class="btn btn-sm btn-outline-secondary mt-2" id="copyBtn" title="Copier">Copier</button>
+				<button type="button" style="width: 215px;" class="btn btn-sm btn-outline-secondary mt-2" id="copyBtn" title="Copier">Copier</button>
 			</div>
 		</div>
 	</div>
