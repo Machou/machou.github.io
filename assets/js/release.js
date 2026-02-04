@@ -120,6 +120,6 @@ if (inputElement && outputElement) {
     inputElement.addEventListener('input', function () {
         const rawText = this.value;
         const parsedText = parseReleaseName(rawText);
-        outputElement.textContent = parsedText;
+        outputElement.value = parsedText;
     });
 }
