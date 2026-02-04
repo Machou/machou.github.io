@@ -26,7 +26,7 @@ favicon: /assets/img/favicon-html.png
 			</div>
 
 			<div class="input-group d-none" id="outputWrapper">
-				<input class="border rounded-start user-select-all" id="out">
+				<input value="" class="border rounded-start user-select-all" id="out">
 				<button type="button" class="btn btn-outline-secondary" id="copyBtn" title="Copier">Copier</button>
 			</div>
 		</div>
@@ -48,10 +48,11 @@ releaseInput.addEventListener('input', function () {
 
 	if (value === '') {
 		outputWrapper.classList.add('d-none');
-		out.textContent = '';
+		out.value = '';
 	} else {
 		outputWrapper.classList.remove('d-none');
 		out.value = value;
+
 		out.focus();
 		out.select();
 	}
@@ -59,7 +60,6 @@ releaseInput.addEventListener('input', function () {
 
 copyBtn.addEventListener('click', function () {
 	const text = out.value.trim();
-
 	if (!text) return;
 
 	navigator.clipboard.writeText(text).then(() => {
