@@ -47,7 +47,10 @@ w: /assets/img/favicon-wow.svg
   - [Château Nathria](#château-nathria)
   - [Sanctum de Domination](#sanctum-de-domination)
   - [Sépulcre des Fondateurs](#sépulcre-des-fondateurs)
-- [Dragonflight](#dragonflight) (**PnJ LFR non disponible**)
+- [Dragonflight](#dragonflight)
+  - [Caveau des Incarnations](#caveau-des-incarnations)
+  - [Aberrus, le creuset de l’Ombre](#aberrus-le-creuset-de-lombre)
+  - [Amirdrassil, l’Espoir du Rêve](#amirdrassil-lespoir-du-rêve)
 - [The War Within](#the-war-within) (**PnJ LFR non disponible**)
 - [Midnight](#midnight) (**PnJ LFR non disponible**)
 
@@ -299,7 +302,36 @@ w: /assets/img/favicon-wow.svg
 
 <a href="assets/img/WoW_10_DF-Large.png" data-fancybox="gallerie"><img src="assets/img/WoW_10_DF.png" class="d-block w-75 m-auto img-fluid" alt="Logo World of Warcraft : Dragonflight" title="Logo World of Warcraft : Dragonflight"></a>
 
-**PnJ LFR non disponible**
+| Zone                              | PnJ                                                   | Point de passage             |
+| --------------------------------- | ----------------------------------------------------- | ---------------------------- |
+| Îles aux Dragons > **Valdrakken** | [Loute Irède>](https://www.wowhead.com/fr/npc=205959) | `/way 42.4 72.2 Loute Irède` |
+{:.table .table-hover .table-wow-pnj}
+
+#### [Caveau des Incarnations](https://www.wowhead.com/fr/zone=14030)
+
+| ------------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Rempart primordial**         | [Eranog](https://www.wowhead.com/fr/npc=184972) [Dathéa transcendée](https://www.wowhead.com/fr/npc=189813) [Le Conseil primordial](https://www.wowhead.com/fr/npc=187771)  |
+| **Cavernes de l’Imprégnation** | [Kurog Totem-Sinistre](https://www.wowhead.com/fr/npc=181378) [Sennarth la Glaciale](https://www.wowhead.com/fr/npc=187967) [Terros](https://www.wowhead.com/fr/npc=190496) |
+| **Fureur de l’orage**          | [Garde-couvée Diurna](https://www.wowhead.com/fr/npc=190245) [Raszageth la Mange-tempêtes](https://www.wowhead.com/fr/npc=189492)                                           |
+{:.table .table-hover .table-wow}
+
+#### [Aberrus, le creuset de l’Ombre](https://www.wowhead.com/fr/zone=14663)
+
+| ------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Les rebuts**            | [Kazzara, née des enfers](https://www.wowhead.com/fr/npc=201261) [La chambre d’amalgamation](https://www.wowhead.com/fr/npc=201934) [Les expériences oubliées](https://www.wowhead.com/fr/npc=200912) |
+| **Fureur des Géants**     | [Assaut des Zaqalis](https://www.wowhead.com/fr/npc=199659) [Rashok, l’Ancien](https://www.wowhead.com/fr/npc=201320) [Zskarn, l’Intendant vigilant](https://www.wowhead.com/fr/npc=202637)           |
+| **L’ombre de Neltharion** | [Magmorax](https://www.wowhead.com/fr/npc=201579) [Écho de Neltharion](https://www.wowhead.com/fr/npc201668)                                                                                          |
+| **Au bord du Vide**       | [Squammandant Sarkareth](https://www.wowhead.com/fr/npc=201754)                                                                                                                                       |
+{:.table .table-hover .table-wow}
+
+#### [Amirdrassil, l’Espoir du Rêve](https://www.wowhead.com/fr/zone=14643)
+
+| ---------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| **Sillage de l’Incarnation** | [Racine-Noueuse](https://www.wowhead.com/fr/npc=209333) [Igira la Cruelle](https://www.wowhead.com/fr/npc=200926) [Fumeron](https://www.wowhead.com/fr/npc=200927) |
+| **Incursion en fusion**      | [Volcoross](https://www.wowhead.com/fr/npc=208478) [Larodar, gardien de la flamme](https://www.wowhead.com/fr/npc208445)                                           |
+| **La trame viride**          | [Conseil des rêves](https://www.wowhead.com/fr/npc=208363) [Nymue, la trame du cercle](https://www.wowhead.com/fr/npc=206172)                                      |
+| **Le destin d’Amirdrassil**  | [Tindral Vifsage, prophète de flamme](https://www.wowhead.com/fr/npc=209090) [Fyrakka le Flamboyant](https://www.wowhead.com/fr/npc=204931)                        |
+{:.table .table-hover .table-wow}
 
 ---
 
