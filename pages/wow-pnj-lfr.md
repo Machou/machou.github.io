@@ -51,8 +51,8 @@ w: /assets/img/favicon-wow.svg
   - [Caveau des Incarnations](#caveau-des-incarnations)
   - [Aberrus, le creuset de l’Ombre](#aberrus-le-creuset-de-lombre)
   - [Amirdrassil, l’Espoir du Rêve](#amirdrassil-lespoir-du-rêve)
-- [The War Within](#the-war-within) (**PnJ LFR non disponible**)
-- [Midnight](#midnight) (**PnJ LFR non disponible**)
+- [The War Within](#the-war-within) (**non disponible**)
+- [Midnight](#midnight) (**non disponible**)
 
 ## **Liste des guides Mamytwink**
 
@@ -302,9 +302,9 @@ w: /assets/img/favicon-wow.svg
 
 <a href="assets/img/WoW_10_DF-Large.png" data-fancybox="gallerie"><img src="assets/img/WoW_10_DF.png" class="d-block w-75 m-auto img-fluid" alt="Logo World of Warcraft : Dragonflight" title="Logo World of Warcraft : Dragonflight"></a>
 
-| Zone                              | PnJ                                                   | Point de passage             |
-| --------------------------------- | ----------------------------------------------------- | ---------------------------- |
-| Îles aux Dragons > **Valdrakken** | [Loute Irède>](https://www.wowhead.com/fr/npc=205959) | `/way 42.4 72.2 Loute Irède` |
+| Zone                              | PnJ         | Point de passage             |
+| --------------------------------- | ----------- | ---------------------------- |
+| Îles aux Dragons > **Valdrakken** | Loute Irède | `/way 42.4 72.2 Loute Irède` |
 {:.table .table-hover .table-wow-pnj}
 
 #### [Caveau des Incarnations](https://www.wowhead.com/fr/zone=14030)
@@ -320,7 +320,7 @@ w: /assets/img/favicon-wow.svg
 | ------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **Les rebuts**            | [Kazzara, née des enfers](https://www.wowhead.com/fr/npc=201261) [La chambre d’amalgamation](https://www.wowhead.com/fr/npc=201934) [Les expériences oubliées](https://www.wowhead.com/fr/npc=200912) |
 | **Fureur des Géants**     | [Assaut des Zaqalis](https://www.wowhead.com/fr/npc=199659) [Rashok, l’Ancien](https://www.wowhead.com/fr/npc=201320) [Zskarn, l’Intendant vigilant](https://www.wowhead.com/fr/npc=202637)           |
-| **L’ombre de Neltharion** | [Magmorax](https://www.wowhead.com/fr/npc=201579) [Écho de Neltharion](https://www.wowhead.com/fr/npc201668)                                                                                          |
+| **L’ombre de Neltharion** | [Magmorax](https://www.wowhead.com/fr/npc=201579) [Écho de Neltharion](https://www.wowhead.com/fr/npc=201668)                                                                                          |
 | **Au bord du Vide**       | [Squammandant Sarkareth](https://www.wowhead.com/fr/npc=201754)                                                                                                                                       |
 {:.table .table-hover .table-wow}
 
