@@ -328,7 +328,7 @@ w: /assets/img/favicon-wow.svg
 
 | ---------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | **Sillage de l’Incarnation** | [Racine-Noueuse](https://www.wowhead.com/fr/npc=209333) [Igira la Cruelle](https://www.wowhead.com/fr/npc=200926) [Fumeron](https://www.wowhead.com/fr/npc=200927) |
-| **Incursion en fusion**      | [Volcoross](https://www.wowhead.com/fr/npc=208478) [Larodar, gardien de la flamme](https://www.wowhead.com/fr/npc208445)                                           |
+| **Incursion en fusion**      | [Volcoross](https://www.wowhead.com/fr/npc=208478) [Larodar, gardien de la flamme](https://www.wowhead.com/fr/npc=208445)                                           |
 | **La trame viride**          | [Conseil des rêves](https://www.wowhead.com/fr/npc=208363) [Nymue, la trame du cercle](https://www.wowhead.com/fr/npc=206172)                                      |
 | **Le destin d’Amirdrassil**  | [Tindral Vifsage, prophète de flamme](https://www.wowhead.com/fr/npc=209090) [Fyrakka le Flamboyant](https://www.wowhead.com/fr/npc=204931)                        |
 {:.table .table-hover .table-wow}
