@@ -7,6 +7,7 @@ slug: statistiques-euromillions
 canonical_url: https://machou.github.io/statistiques-euromillions
 favicon: /assets/img/favicon-fdj.ico
 ---
+
 <nav aria-label="breadcrumb">
     <ol class="breadcrumb">
         <li class="breadcrumb-item"><a href="https://machou.github.io/">Accueil</a></li>
@@ -16,33 +17,39 @@ favicon: /assets/img/favicon-fdj.ico
 
 <div class="d-flex justify-content-between align-items-start mb-3 gap-3">
     <p class="mb-0">Analyse de <span class="fw-bold">1928</span> tirages valides</p>
-    <p class="mb-0">Période détectée : <strong>13/02/2004</strong> → <strong>13/03/2026</strong></p>
-    <p class="mb-0 small-muted fst-italic">Généré le 14/03/2026 à 00:04</p>
+    <p class="mb-0">
+        
+
+        
+            Période détectée : <strong>13/02/2004</strong> → <strong>13/03/2026</strong>
+        
+    </p>
+    <p class="mb-0 small-muted fst-italic">Généré le 17/03/2026 à 01:35</p>
 </div>
 
 <div class="row text-center mb-4 g-2">
     <div class="col-12 col-md-3">
         <div class="card p-2 p-lg-3">
-            <h3 class="mb-0">1928</h3>
-            <small class="text-muted">Tirages valides</small>
+        <h3 class="mb-0">1928</h3>
+        <small class="text-muted">Tirages valides</small>
         </div>
     </div>
     <div class="col-12 col-md-3">
         <div class="card p-2 p-lg-3">
-            <h3 class="mb-0">1928</h3>
-            <small class="text-muted">Tirages bruts</small>
+        <h3 class="mb-0">1928</h3>
+        <small class="text-muted">Tirages bruts</small>
         </div>
     </div>
     <div class="col-12 col-md-3">
         <div class="card p-2 p-lg-3">
-            <h3 class="mb-0">50</h3>
-            <small class="text-muted">Numéros uniques sortis</small>
+        <h3 class="mb-0">50</h3>
+        <small class="text-muted">Numéros uniques sortis</small>
         </div>
     </div>
     <div class="col-12 col-md-3">
         <div class="card p-2 p-lg-3">
-            <h3 class="mb-0">12</h3>
-            <small class="text-muted">Étoiles uniques sorties</small>
+        <h3 class="mb-0">12</h3>
+        <small class="text-muted">Étoiles uniques sorties</small>
         </div>
     </div>
 </div>
@@ -60,628 +67,217 @@ favicon: /assets/img/favicon-fdj.ico
 
     <div class="table-wrap">
         <table class="table table-striped table-hover sticky-head" id="numberTableFreq">
-            <thead>
-                <tr>
-                    <th>Numéro</th>
-                    <th>Occurrences</th>
-                    <th>%</th>
-                </tr>
-            </thead>
+            <thead><tr><th>Numéro</th><th>Occurrences</th><th>%</th></tr></thead>
             <tbody>
-                <tr>
-                    <td><strong>44</strong></td>
-                    <td>220</td>
-                    <td>2.28%</td>
-                </tr>
-
-                <tr>
-                    <td><strong>42</strong></td>
-                    <td>219</td>
-                    <td>2.27%</td>
-                </tr>
-
-                <tr>
-                    <td><strong>23</strong></td>
-                    <td>217</td>
-                    <td>2.25%</td>
-                </tr>
-
-                <tr>
-                    <td><strong>19</strong></td>
-                    <td>215</td>
-                    <td>2.23%</td>
-                </tr>
-
-                <tr>
-                    <td><strong>29</strong></td>
-                    <td>213</td>
-                    <td>2.21%</td>
-                </tr>
-
-                <tr>
-                    <td><strong>21</strong></td>
-                    <td>212</td>
-                    <td>2.2%</td>
-                </tr>
-
-                <tr>
-                    <td><strong>50</strong></td>
-                    <td>209</td>
-                    <td>2.17%</td>
-                </tr>
-
-                <tr>
-                    <td><strong>17</strong></td>
-                    <td>209</td>
-                    <td>2.17%</td>
-                </tr>
-
-                <tr>
-                    <td><strong>10</strong></td>
-                    <td>208</td>
-                    <td>2.16%</td>
-                </tr>
-
-                <tr>
-                    <td><strong>37</strong></td>
-                    <td>204</td>
-                    <td>2.12%</td>
-                </tr>
-
-                <tr>
-                    <td><strong>27</strong></td>
-                    <td>203</td>
-                    <td>2.11%</td>
-                </tr>
-
-                <tr>
-                    <td><strong>35</strong></td>
-                    <td>202</td>
-                    <td>2.1%</td>
-                </tr>
-
-                <tr>
-                    <td><strong>25</strong></td>
-                    <td>202</td>
-                    <td>2.1%</td>
-                </tr>
-
-                <tr>
-                    <td><strong>45</strong></td>
-                    <td>201</td>
-                    <td>2.09%</td>
-                </tr>
-
-                <tr>
-                    <td><strong>20</strong></td>
-                    <td>201</td>
-                    <td>2.09%</td>
-                </tr>
-
-                <tr>
-                    <td><strong>13</strong></td>
-                    <td>200</td>
-                    <td>2.07%</td>
-                </tr>
-
-                <tr>
-                    <td><strong>26</strong></td>
-                    <td>200</td>
-                    <td>2.07%</td>
-                </tr>
-
-                <tr>
-                    <td><strong>15</strong></td>
-                    <td>199</td>
-                    <td>2.06%</td>
-                </tr>
-
-                <tr>
-                    <td><strong>24</strong></td>
-                    <td>199</td>
-                    <td>2.06%</td>
-                </tr>
-
-                <tr>
-                    <td><strong>7</strong></td>
-                    <td>198</td>
-                    <td>2.05%</td>
-                </tr>
-
-                <tr>
-                    <td><strong>14</strong></td>
-                    <td>198</td>
-                    <td>2.05%</td>
-                </tr>
-
-                <tr>
-                    <td><strong>4</strong></td>
-                    <td>195</td>
-                    <td>2.02%</td>
-                </tr>
-
-                <tr>
-                    <td><strong>5</strong></td>
-                    <td>195</td>
-                    <td>2.02%</td>
-                </tr>
-
-                <tr>
-                    <td><strong>38</strong></td>
-                    <td>195</td>
-                    <td>2.02%</td>
-                </tr>
-
-                <tr>
-                    <td><strong>34</strong></td>
-                    <td>194</td>
-                    <td>2.01%</td>
-                </tr>
-
-                <tr>
-                    <td><strong>49</strong></td>
-                    <td>193</td>
-                    <td>2.0%</td>
-                </tr>
-
-                <tr>
-                    <td><strong>30</strong></td>
-                    <td>193</td>
-                    <td>2.0%</td>
-                </tr>
-
-                <tr>
-                    <td><strong>12</strong></td>
-                    <td>192</td>
-                    <td>1.99%</td>
-                </tr>
-
-                <tr>
-                    <td><strong>39</strong></td>
-                    <td>191</td>
-                    <td>1.98%</td>
-                </tr>
-
-                <tr>
-                    <td><strong>11</strong></td>
-                    <td>190</td>
-                    <td>1.97%</td>
-                </tr>
-
-                <tr>
-                    <td><strong>48</strong></td>
-                    <td>190</td>
-                    <td>1.97%</td>
-                </tr>
-
-                <tr>
-                    <td><strong>16</strong></td>
-                    <td>188</td>
-                    <td>1.95%</td>
-                </tr>
-
-                <tr>
-                    <td><strong>6</strong></td>
-                    <td>188</td>
-                    <td>1.95%</td>
-                </tr>
-
-                <tr>
-                    <td><strong>3</strong></td>
-                    <td>187</td>
-                    <td>1.94%</td>
-                </tr>
-
-                <tr>
-                    <td><strong>28</strong></td>
-                    <td>185</td>
-                    <td>1.92%</td>
-                </tr>
-
-                <tr>
-                    <td><strong>1</strong></td>
-                    <td>184</td>
-                    <td>1.91%</td>
-                </tr>
-
-                <tr>
-                    <td><strong>9</strong></td>
-                    <td>183</td>
-                    <td>1.9%</td>
-                </tr>
-
-                <tr>
-                    <td><strong>8</strong></td>
-                    <td>183</td>
-                    <td>1.9%</td>
-                </tr>
-
-                <tr>
-                    <td><strong>31</strong></td>
-                    <td>182</td>
-                    <td>1.89%</td>
-                </tr>
-
-                <tr>
-                    <td><strong>36</strong></td>
-                    <td>181</td>
-                    <td>1.88%</td>
-                </tr>
-
-                <tr>
-                    <td><strong>32</strong></td>
-                    <td>178</td>
-                    <td>1.85%</td>
-                </tr>
-
-                <tr>
-                    <td><strong>47</strong></td>
-                    <td>178</td>
-                    <td>1.85%</td>
-                </tr>
-
-                <tr>
-                    <td><strong>43</strong></td>
-                    <td>178</td>
-                    <td>1.85%</td>
-                </tr>
-
-                <tr>
-                    <td><strong>2</strong></td>
-                    <td>178</td>
-                    <td>1.85%</td>
-                </tr>
-
-                <tr>
-                    <td><strong>40</strong></td>
-                    <td>176</td>
-                    <td>1.83%</td>
-                </tr>
-
-                <tr>
-                    <td><strong>41</strong></td>
-                    <td>175</td>
-                    <td>1.82%</td>
-                </tr>
-
-                <tr>
-                    <td><strong>18</strong></td>
-                    <td>172</td>
-                    <td>1.78%</td>
-                </tr>
-
-                <tr>
-                    <td><strong>33</strong></td>
-                    <td>168</td>
-                    <td>1.74%</td>
-                </tr>
-
-                <tr>
-                    <td><strong>46</strong></td>
-                    <td>168</td>
-                    <td>1.74%</td>
-                </tr>
-
-                <tr>
-                    <td><strong>22</strong></td>
-                    <td>151</td>
-                    <td>1.57%</td>
-                </tr>
-
+                
+                <tr><td><strong>44</strong></td><td>220</td><td>2.28%</td></tr>
+                
+                <tr><td><strong>42</strong></td><td>219</td><td>2.27%</td></tr>
+                
+                <tr><td><strong>23</strong></td><td>217</td><td>2.25%</td></tr>
+                
+                <tr><td><strong>19</strong></td><td>215</td><td>2.23%</td></tr>
+                
+                <tr><td><strong>29</strong></td><td>213</td><td>2.21%</td></tr>
+                
+                <tr><td><strong>21</strong></td><td>212</td><td>2.2%</td></tr>
+                
+                <tr><td><strong>50</strong></td><td>209</td><td>2.17%</td></tr>
+                
+                <tr><td><strong>17</strong></td><td>209</td><td>2.17%</td></tr>
+                
+                <tr><td><strong>10</strong></td><td>208</td><td>2.16%</td></tr>
+                
+                <tr><td><strong>37</strong></td><td>204</td><td>2.12%</td></tr>
+                
+                <tr><td><strong>27</strong></td><td>203</td><td>2.11%</td></tr>
+                
+                <tr><td><strong>35</strong></td><td>202</td><td>2.1%</td></tr>
+                
+                <tr><td><strong>25</strong></td><td>202</td><td>2.1%</td></tr>
+                
+                <tr><td><strong>45</strong></td><td>201</td><td>2.09%</td></tr>
+                
+                <tr><td><strong>20</strong></td><td>201</td><td>2.09%</td></tr>
+                
+                <tr><td><strong>13</strong></td><td>200</td><td>2.07%</td></tr>
+                
+                <tr><td><strong>26</strong></td><td>200</td><td>2.07%</td></tr>
+                
+                <tr><td><strong>15</strong></td><td>199</td><td>2.06%</td></tr>
+                
+                <tr><td><strong>24</strong></td><td>199</td><td>2.06%</td></tr>
+                
+                <tr><td><strong>7</strong></td><td>198</td><td>2.05%</td></tr>
+                
+                <tr><td><strong>14</strong></td><td>198</td><td>2.05%</td></tr>
+                
+                <tr><td><strong>4</strong></td><td>195</td><td>2.02%</td></tr>
+                
+                <tr><td><strong>5</strong></td><td>195</td><td>2.02%</td></tr>
+                
+                <tr><td><strong>38</strong></td><td>195</td><td>2.02%</td></tr>
+                
+                <tr><td><strong>34</strong></td><td>194</td><td>2.01%</td></tr>
+                
+                <tr><td><strong>49</strong></td><td>193</td><td>2.0%</td></tr>
+                
+                <tr><td><strong>30</strong></td><td>193</td><td>2.0%</td></tr>
+                
+                <tr><td><strong>12</strong></td><td>192</td><td>1.99%</td></tr>
+                
+                <tr><td><strong>39</strong></td><td>191</td><td>1.98%</td></tr>
+                
+                <tr><td><strong>11</strong></td><td>190</td><td>1.97%</td></tr>
+                
+                <tr><td><strong>48</strong></td><td>190</td><td>1.97%</td></tr>
+                
+                <tr><td><strong>16</strong></td><td>188</td><td>1.95%</td></tr>
+                
+                <tr><td><strong>6</strong></td><td>188</td><td>1.95%</td></tr>
+                
+                <tr><td><strong>3</strong></td><td>187</td><td>1.94%</td></tr>
+                
+                <tr><td><strong>28</strong></td><td>185</td><td>1.92%</td></tr>
+                
+                <tr><td><strong>1</strong></td><td>184</td><td>1.91%</td></tr>
+                
+                <tr><td><strong>9</strong></td><td>183</td><td>1.9%</td></tr>
+                
+                <tr><td><strong>8</strong></td><td>183</td><td>1.9%</td></tr>
+                
+                <tr><td><strong>31</strong></td><td>182</td><td>1.89%</td></tr>
+                
+                <tr><td><strong>36</strong></td><td>181</td><td>1.88%</td></tr>
+                
+                <tr><td><strong>32</strong></td><td>178</td><td>1.85%</td></tr>
+                
+                <tr><td><strong>47</strong></td><td>178</td><td>1.85%</td></tr>
+                
+                <tr><td><strong>43</strong></td><td>178</td><td>1.85%</td></tr>
+                
+                <tr><td><strong>2</strong></td><td>178</td><td>1.85%</td></tr>
+                
+                <tr><td><strong>40</strong></td><td>176</td><td>1.83%</td></tr>
+                
+                <tr><td><strong>41</strong></td><td>175</td><td>1.82%</td></tr>
+                
+                <tr><td><strong>18</strong></td><td>172</td><td>1.78%</td></tr>
+                
+                <tr><td><strong>33</strong></td><td>168</td><td>1.74%</td></tr>
+                
+                <tr><td><strong>46</strong></td><td>168</td><td>1.74%</td></tr>
+                
+                <tr><td><strong>22</strong></td><td>151</td><td>1.57%</td></tr>
+                
             </tbody>
         </table>
 
         <table class="table table-striped table-hover sticky-head" id="numberTableValue" style="display:none;">
-            <thead>
-                <tr>
-                    <th>Numéro</th>
-                    <th>Occurrences</th>
-                    <th>%</th>
-                </tr>
-            </thead>
-            <tbody>
-
-                <tr>
-                    <td><strong>1</strong></td>
-                    <td>184</td>
-                    <td>1.91%</td>
-                </tr>
-
-                <tr>
-                    <td><strong>2</strong></td>
-                    <td>178</td>
-                    <td>1.85%</td>
-                </tr>
-
-                <tr>
-                    <td><strong>3</strong></td>
-                    <td>187</td>
-                    <td>1.94%</td>
-                </tr>
-
-                <tr>
-                    <td><strong>4</strong></td>
-                    <td>195</td>
-                    <td>2.02%</td>
-                </tr>
-
-                <tr>
-                    <td><strong>5</strong></td>
-                    <td>195</td>
-                    <td>2.02%</td>
-                </tr>
-
-                <tr>
-                    <td><strong>6</strong></td>
-                    <td>188</td>
-                    <td>1.95%</td>
-                </tr>
-
-                <tr>
-                    <td><strong>7</strong></td>
-                    <td>198</td>
-                    <td>2.05%</td>
-                </tr>
-
-                <tr>
-                    <td><strong>8</strong></td>
-                    <td>183</td>
-                    <td>1.9%</td>
-                </tr>
-
-                <tr>
-                    <td><strong>9</strong></td>
-                    <td>183</td>
-                    <td>1.9%</td>
-                </tr>
-
-                <tr>
-                    <td><strong>10</strong></td>
-                    <td>208</td>
-                    <td>2.16%</td>
-                </tr>
-
-                <tr>
-                    <td><strong>11</strong></td>
-                    <td>190</td>
-                    <td>1.97%</td>
-                </tr>
-
-                <tr>
-                    <td><strong>12</strong></td>
-                    <td>192</td>
-                    <td>1.99%</td>
-                </tr>
-
-                <tr>
-                    <td><strong>13</strong></td>
-                    <td>200</td>
-                    <td>2.07%</td>
-                </tr>
-
-                <tr>
-                    <td><strong>14</strong></td>
-                    <td>198</td>
-                    <td>2.05%</td>
-                </tr>
-
-                <tr>
-                    <td><strong>15</strong></td>
-                    <td>199</td>
-                    <td>2.06%</td>
-                </tr>
-
-                <tr>
-                    <td><strong>16</strong></td>
-                    <td>188</td>
-                    <td>1.95%</td>
-                </tr>
-
-                <tr>
-                    <td><strong>17</strong></td>
-                    <td>209</td>
-                    <td>2.17%</td>
-                </tr>
-
-                <tr>
-                    <td><strong>18</strong></td>
-                    <td>172</td>
-                    <td>1.78%</td>
-                </tr>
-
-                <tr>
-                    <td><strong>19</strong></td>
-                    <td>215</td>
-                    <td>2.23%</td>
-                </tr>
-
-                <tr>
-                    <td><strong>20</strong></td>
-                    <td>201</td>
-                    <td>2.09%</td>
-                </tr>
-
-                <tr>
-                    <td><strong>21</strong></td>
-                    <td>212</td>
-                    <td>2.2%</td>
-                </tr>
-
-                <tr>
-                    <td><strong>22</strong></td>
-                    <td>151</td>
-                    <td>1.57%</td>
-                </tr>
-
-                <tr>
-                    <td><strong>23</strong></td>
-                    <td>217</td>
-                    <td>2.25%</td>
-                </tr>
-
-                <tr>
-                    <td><strong>24</strong></td>
-                    <td>199</td>
-                    <td>2.06%</td>
-                </tr>
-
-                <tr>
-                    <td><strong>25</strong></td>
-                    <td>202</td>
-                    <td>2.1%</td>
-                </tr>
-
-                <tr>
-                    <td><strong>26</strong></td>
-                    <td>200</td>
-                    <td>2.07%</td>
-                </tr>
-
-                <tr>
-                    <td><strong>27</strong></td>
-                    <td>203</td>
-                    <td>2.11%</td>
-                </tr>
-
-                <tr>
-                    <td><strong>28</strong></td>
-                    <td>185</td>
-                    <td>1.92%</td>
-                </tr>
-
-                <tr>
-                    <td><strong>29</strong></td>
-                    <td>213</td>
-                    <td>2.21%</td>
-                </tr>
-
-                <tr>
-                    <td><strong>30</strong></td>
-                    <td>193</td>
-                    <td>2.0%</td>
-                </tr>
-
-                <tr>
-                    <td><strong>31</strong></td>
-                    <td>182</td>
-                    <td>1.89%</td>
-                </tr>
-
-                <tr>
-                    <td><strong>32</strong></td>
-                    <td>178</td>
-                    <td>1.85%</td>
-                </tr>
-
-                <tr>
-                    <td><strong>33</strong></td>
-                    <td>168</td>
-                    <td>1.74%</td>
-                </tr>
-
-                <tr>
-                    <td><strong>34</strong></td>
-                    <td>194</td>
-                    <td>2.01%</td>
-                </tr>
-
-                <tr>
-                    <td><strong>35</strong></td>
-                    <td>202</td>
-                    <td>2.1%</td>
-                </tr>
-
-                <tr>
-                    <td><strong>36</strong></td>
-                    <td>181</td>
-                    <td>1.88%</td>
-                </tr>
-
-                <tr>
-                    <td><strong>37</strong></td>
-                    <td>204</td>
-                    <td>2.12%</td>
-                </tr>
-
-                <tr>
-                    <td><strong>38</strong></td>
-                    <td>195</td>
-                    <td>2.02%</td>
-                </tr>
-
-                <tr>
-                    <td><strong>39</strong></td>
-                    <td>191</td>
-                    <td>1.98%</td>
-                </tr>
-
-                <tr>
-                    <td><strong>40</strong></td>
-                    <td>176</td>
-                    <td>1.83%</td>
-                </tr>
-
-                <tr>
-                    <td><strong>41</strong></td>
-                    <td>175</td>
-                    <td>1.82%</td>
-                </tr>
-
-                <tr>
-                    <td><strong>42</strong></td>
-                    <td>219</td>
-                    <td>2.27%</td>
-                </tr>
-
-                <tr>
-                    <td><strong>43</strong></td>
-                    <td>178</td>
-                    <td>1.85%</td>
-                </tr>
-
-                <tr>
-                    <td><strong>44</strong></td>
-                    <td>220</td>
-                    <td>2.28%</td>
-                </tr>
-
-                <tr>
-                    <td><strong>45</strong></td>
-                    <td>201</td>
-                    <td>2.09%</td>
-                </tr>
-
-                <tr>
-                    <td><strong>46</strong></td>
-                    <td>168</td>
-                    <td>1.74%</td>
-                </tr>
-
-                <tr>
-                    <td><strong>47</strong></td>
-                    <td>178</td>
-                    <td>1.85%</td>
-                </tr>
-
-                <tr>
-                    <td><strong>48</strong></td>
-                    <td>190</td>
-                    <td>1.97%</td>
-                </tr>
-
-                <tr>
-                    <td><strong>49</strong></td>
-                    <td>193</td>
-                    <td>2.0%</td>
-                </tr>
-
-                <tr>
-                    <td><strong>50</strong></td>
-                    <td>209</td>
-                    <td>2.17%</td>
-                </tr>
-
-            </tbody>
+            <thead><tr><th>Numéro</th><th>Occurrences</th><th>%</th></tr></thead>
+                <tbody>
+                    
+                    <tr><td><strong>1</strong></td><td>184</td><td>1.91%</td></tr>
+                    
+                    <tr><td><strong>2</strong></td><td>178</td><td>1.85%</td></tr>
+                    
+                    <tr><td><strong>3</strong></td><td>187</td><td>1.94%</td></tr>
+                    
+                    <tr><td><strong>4</strong></td><td>195</td><td>2.02%</td></tr>
+                    
+                    <tr><td><strong>5</strong></td><td>195</td><td>2.02%</td></tr>
+                    
+                    <tr><td><strong>6</strong></td><td>188</td><td>1.95%</td></tr>
+                    
+                    <tr><td><strong>7</strong></td><td>198</td><td>2.05%</td></tr>
+                    
+                    <tr><td><strong>8</strong></td><td>183</td><td>1.9%</td></tr>
+                    
+                    <tr><td><strong>9</strong></td><td>183</td><td>1.9%</td></tr>
+                    
+                    <tr><td><strong>10</strong></td><td>208</td><td>2.16%</td></tr>
+                    
+                    <tr><td><strong>11</strong></td><td>190</td><td>1.97%</td></tr>
+                    
+                    <tr><td><strong>12</strong></td><td>192</td><td>1.99%</td></tr>
+                    
+                    <tr><td><strong>13</strong></td><td>200</td><td>2.07%</td></tr>
+                    
+                    <tr><td><strong>14</strong></td><td>198</td><td>2.05%</td></tr>
+                    
+                    <tr><td><strong>15</strong></td><td>199</td><td>2.06%</td></tr>
+                    
+                    <tr><td><strong>16</strong></td><td>188</td><td>1.95%</td></tr>
+                    
+                    <tr><td><strong>17</strong></td><td>209</td><td>2.17%</td></tr>
+                    
+                    <tr><td><strong>18</strong></td><td>172</td><td>1.78%</td></tr>
+                    
+                    <tr><td><strong>19</strong></td><td>215</td><td>2.23%</td></tr>
+                    
+                    <tr><td><strong>20</strong></td><td>201</td><td>2.09%</td></tr>
+                    
+                    <tr><td><strong>21</strong></td><td>212</td><td>2.2%</td></tr>
+                    
+                    <tr><td><strong>22</strong></td><td>151</td><td>1.57%</td></tr>
+                    
+                    <tr><td><strong>23</strong></td><td>217</td><td>2.25%</td></tr>
+                    
+                    <tr><td><strong>24</strong></td><td>199</td><td>2.06%</td></tr>
+                    
+                    <tr><td><strong>25</strong></td><td>202</td><td>2.1%</td></tr>
+                    
+                    <tr><td><strong>26</strong></td><td>200</td><td>2.07%</td></tr>
+                    
+                    <tr><td><strong>27</strong></td><td>203</td><td>2.11%</td></tr>
+                    
+                    <tr><td><strong>28</strong></td><td>185</td><td>1.92%</td></tr>
+                    
+                    <tr><td><strong>29</strong></td><td>213</td><td>2.21%</td></tr>
+                    
+                    <tr><td><strong>30</strong></td><td>193</td><td>2.0%</td></tr>
+                    
+                    <tr><td><strong>31</strong></td><td>182</td><td>1.89%</td></tr>
+                    
+                    <tr><td><strong>32</strong></td><td>178</td><td>1.85%</td></tr>
+                    
+                    <tr><td><strong>33</strong></td><td>168</td><td>1.74%</td></tr>
+                    
+                    <tr><td><strong>34</strong></td><td>194</td><td>2.01%</td></tr>
+                    
+                    <tr><td><strong>35</strong></td><td>202</td><td>2.1%</td></tr>
+                    
+                    <tr><td><strong>36</strong></td><td>181</td><td>1.88%</td></tr>
+                    
+                    <tr><td><strong>37</strong></td><td>204</td><td>2.12%</td></tr>
+                    
+                    <tr><td><strong>38</strong></td><td>195</td><td>2.02%</td></tr>
+                    
+                    <tr><td><strong>39</strong></td><td>191</td><td>1.98%</td></tr>
+                    
+                    <tr><td><strong>40</strong></td><td>176</td><td>1.83%</td></tr>
+                    
+                    <tr><td><strong>41</strong></td><td>175</td><td>1.82%</td></tr>
+                    
+                    <tr><td><strong>42</strong></td><td>219</td><td>2.27%</td></tr>
+                    
+                    <tr><td><strong>43</strong></td><td>178</td><td>1.85%</td></tr>
+                    
+                    <tr><td><strong>44</strong></td><td>220</td><td>2.28%</td></tr>
+                    
+                    <tr><td><strong>45</strong></td><td>201</td><td>2.09%</td></tr>
+                    
+                    <tr><td><strong>46</strong></td><td>168</td><td>1.74%</td></tr>
+                    
+                    <tr><td><strong>47</strong></td><td>178</td><td>1.85%</td></tr>
+                    
+                    <tr><td><strong>48</strong></td><td>190</td><td>1.97%</td></tr>
+                    
+                    <tr><td><strong>49</strong></td><td>193</td><td>2.0%</td></tr>
+                    
+                    <tr><td><strong>50</strong></td><td>209</td><td>2.17%</td></tr>
+                    
+                </tbody>
         </table>
     </div>
 
@@ -699,183 +295,72 @@ favicon: /assets/img/favicon-fdj.ico
 
     <div class="d-flex flex-wrap justify-content-between align-items-center gap-2 my-3">
         <div class="d-flex justify-content-center gap-2" data-btn-group>
-            <button class="btn btn-warning text-white"
-                onclick="toggleTableAndButtons(this,'starTableFreq','starTableValue')">📊 Par Fréquence</button>
-            <button class="btn btn-outline-secondary"
-                onclick="toggleTableAndButtons(this,'starTableValue','starTableFreq')">🔢 Par Valeur</button>
+            <button class="btn btn-warning text-white" onclick="toggleTableAndButtons(this,'starTableFreq','starTableValue')">📊 Par Fréquence</button>
+            <button class="btn btn-outline-secondary" onclick="toggleTableAndButtons(this,'starTableValue','starTableFreq')">🔢 Par Valeur</button>
         </div>
-        <input class="form-control" style="max-width:280px" placeholder="Filtrer (ex : 2)"
-            oninput="filterTable('starTableFreq', this.value); filterTable('starTableValue', this.value)" />
+        <input class="form-control" style="max-width:280px" placeholder="Filtrer (ex : 2)" oninput="filterTable('starTableFreq', this.value); filterTable('starTableValue', this.value)" />
     </div>
 
     <div class="table-wrap" style="max-height:550px">
         <table class="table table-striped table-hover sticky-head" id="starTableFreq">
-            <thead>
-                <tr>
-                    <th>Étoile</th>
-                    <th>Occurrences</th>
-                    <th>%</th>
-                </tr>
-            </thead>
+            <thead><tr><th>Étoile</th><th>Occurrences</th><th>%</th></tr></thead>
             <tbody>
-
-                <tr>
-                    <td>★ 3</td>
-                    <td>381</td>
-                    <td>9.88%</td>
-                </tr>
-
-                <tr>
-                    <td>★ 2</td>
-                    <td>380</td>
-                    <td>9.85%</td>
-                </tr>
-
-                <tr>
-                    <td>★ 8</td>
-                    <td>366</td>
-                    <td>9.49%</td>
-                </tr>
-
-                <tr>
-                    <td>★ 9</td>
-                    <td>355</td>
-                    <td>9.21%</td>
-                </tr>
-
-                <tr>
-                    <td>★ 6</td>
-                    <td>346</td>
-                    <td>8.97%</td>
-                </tr>
-
-                <tr>
-                    <td>★ 5</td>
-                    <td>343</td>
-                    <td>8.9%</td>
-                </tr>
-
-                <tr>
-                    <td>★ 7</td>
-                    <td>342</td>
-                    <td>8.87%</td>
-                </tr>
-
-                <tr>
-                    <td>★ 1</td>
-                    <td>331</td>
-                    <td>8.58%</td>
-                </tr>
-
-                <tr>
-                    <td>★ 4</td>
-                    <td>305</td>
-                    <td>7.91%</td>
-                </tr>
-
-                <tr>
-                    <td>★ 10</td>
-                    <td>276</td>
-                    <td>7.16%</td>
-                </tr>
-
-                <tr>
-                    <td>★ 11</td>
-                    <td>261</td>
-                    <td>6.77%</td>
-                </tr>
-
-                <tr>
-                    <td>★ 12</td>
-                    <td>170</td>
-                    <td>4.41%</td>
-                </tr>
-
+                
+                <tr><td>★ 3</td><td>381</td><td>9.88%</td></tr>
+                
+                <tr><td>★ 2</td><td>380</td><td>9.85%</td></tr>
+                
+                <tr><td>★ 8</td><td>366</td><td>9.49%</td></tr>
+                
+                <tr><td>★ 9</td><td>355</td><td>9.21%</td></tr>
+                
+                <tr><td>★ 6</td><td>346</td><td>8.97%</td></tr>
+                
+                <tr><td>★ 5</td><td>343</td><td>8.9%</td></tr>
+                
+                <tr><td>★ 7</td><td>342</td><td>8.87%</td></tr>
+                
+                <tr><td>★ 1</td><td>331</td><td>8.58%</td></tr>
+                
+                <tr><td>★ 4</td><td>305</td><td>7.91%</td></tr>
+                
+                <tr><td>★ 10</td><td>276</td><td>7.16%</td></tr>
+                
+                <tr><td>★ 11</td><td>261</td><td>6.77%</td></tr>
+                
+                <tr><td>★ 12</td><td>170</td><td>4.41%</td></tr>
+                
             </tbody>
         </table>
 
         <table class="table table-striped table-hover sticky-head" id="starTableValue" style="display:none;">
-            <thead>
-                <tr>
-                    <th>Étoile</th>
-                    <th>Occurrences</th>
-                    <th>%</th>
-                </tr>
-            </thead>
+            <thead><tr><th>Étoile</th><th>Occurrences</th><th>%</th></tr></thead>
             <tbody>
-
-                <tr>
-                    <td>★ 1</td>
-                    <td>331</td>
-                    <td>8.58%</td>
-                </tr>
-
-                <tr>
-                    <td>★ 2</td>
-                    <td>380</td>
-                    <td>9.85%</td>
-                </tr>
-
-                <tr>
-                    <td>★ 3</td>
-                    <td>381</td>
-                    <td>9.88%</td>
-                </tr>
-
-                <tr>
-                    <td>★ 4</td>
-                    <td>305</td>
-                    <td>7.91%</td>
-                </tr>
-
-                <tr>
-                    <td>★ 5</td>
-                    <td>343</td>
-                    <td>8.9%</td>
-                </tr>
-
-                <tr>
-                    <td>★ 6</td>
-                    <td>346</td>
-                    <td>8.97%</td>
-                </tr>
-
-                <tr>
-                    <td>★ 7</td>
-                    <td>342</td>
-                    <td>8.87%</td>
-                </tr>
-
-                <tr>
-                    <td>★ 8</td>
-                    <td>366</td>
-                    <td>9.49%</td>
-                </tr>
-
-                <tr>
-                    <td>★ 9</td>
-                    <td>355</td>
-                    <td>9.21%</td>
-                </tr>
-
-                <tr>
-                    <td>★ 10</td>
-                    <td>276</td>
-                    <td>7.16%</td>
-                </tr>
-
-                <tr>
-                    <td>★ 11</td>
-                    <td>261</td>
-                    <td>6.77%</td>
-                </tr>
-
-                <tr>
-                    <td>★ 12</td>
-                    <td>170</td>
-                    <td>4.41%</td>
-                </tr>
-
+                
+                <tr><td>★ 1</td><td>331</td><td>8.58%</td></tr>
+                
+                <tr><td>★ 2</td><td>380</td><td>9.85%</td></tr>
+                
+                <tr><td>★ 3</td><td>381</td><td>9.88%</td></tr>
+                
+                <tr><td>★ 4</td><td>305</td><td>7.91%</td></tr>
+                
+                <tr><td>★ 5</td><td>343</td><td>8.9%</td></tr>
+                
+                <tr><td>★ 6</td><td>346</td><td>8.97%</td></tr>
+                
+                <tr><td>★ 7</td><td>342</td><td>8.87%</td></tr>
+                
+                <tr><td>★ 8</td><td>366</td><td>9.49%</td></tr>
+                
+                <tr><td>★ 9</td><td>355</td><td>9.21%</td></tr>
+                
+                <tr><td>★ 10</td><td>276</td><td>7.16%</td></tr>
+                
+                <tr><td>★ 11</td><td>261</td><td>6.77%</td></tr>
+                
+                <tr><td>★ 12</td><td>170</td><td>4.41%</td></tr>
+                
             </tbody>
         </table>
     </div>
@@ -906,472 +391,466 @@ favicon: /assets/img/favicon-fdj.ico
         <div class="col-12 col-lg-6">
             <div class="card p-2 p-lg-3">
                 <h3 class="h5 mb-3">Numéros (1–50)</h3>
-                <input class="form-control mb-2" placeholder="Filtrer (ex : 23)"
-                    oninput="filterTable('trendNumbers', this.value)" />
+                <input class="form-control mb-2" placeholder="Filtrer (ex : 23)" oninput="filterTable('trendNumbers', this.value)" />
                 <div class="table-wrap" style="max-height:420px">
                     <table class="table table-striped table-hover sticky-head" id="trendNumbers">
                         <thead>
-                            <tr>
-                                <th>Num</th>
-                                <th>Hist</th>
-                                <th>% Hist</th>
-                                <th>Récent</th>
-                                <th>% Récent</th>
-                                <th>Delta</th>
-                            </tr>
+                        <tr>
+                            <th>Num</th><th>Hist</th><th>% Hist</th><th>Récent</th><th>% Récent</th><th>Delta</th>
+                        </tr>
                         </thead>
                         <tbody>
-
-                            <tr>
+                            
+                                <tr>
                                 <td><strong>1</strong></td>
                                 <td>184</td>
                                 <td>1.91%</td>
                                 <td>3</td>
                                 <td>1.2%</td>
                                 <td class="delta-neg">-0.71%</td>
-                            </tr>
-
-                            <tr>
+                                </tr>
+                            
+                                <tr>
                                 <td><strong>2</strong></td>
                                 <td>178</td>
                                 <td>1.85%</td>
                                 <td>2</td>
                                 <td>0.8%</td>
                                 <td class="delta-neg">-1.05%</td>
-                            </tr>
-
-                            <tr>
+                                </tr>
+                            
+                                <tr>
                                 <td><strong>3</strong></td>
                                 <td>187</td>
                                 <td>1.94%</td>
                                 <td>1</td>
                                 <td>0.4%</td>
                                 <td class="delta-neg">-1.54%</td>
-                            </tr>
-
-                            <tr>
+                                </tr>
+                            
+                                <tr>
                                 <td><strong>4</strong></td>
                                 <td>195</td>
                                 <td>2.02%</td>
                                 <td>7</td>
                                 <td>2.8%</td>
                                 <td class="delta-pos">0.78%</td>
-                            </tr>
-
-                            <tr>
+                                </tr>
+                            
+                                <tr>
                                 <td><strong>5</strong></td>
                                 <td>195</td>
                                 <td>2.02%</td>
                                 <td>7</td>
                                 <td>2.8%</td>
                                 <td class="delta-pos">0.78%</td>
-                            </tr>
-
-                            <tr>
+                                </tr>
+                            
+                                <tr>
                                 <td><strong>6</strong></td>
                                 <td>188</td>
                                 <td>1.95%</td>
                                 <td>7</td>
                                 <td>2.8%</td>
                                 <td class="delta-pos">0.85%</td>
-                            </tr>
-
-                            <tr>
+                                </tr>
+                            
+                                <tr>
                                 <td><strong>7</strong></td>
                                 <td>198</td>
                                 <td>2.05%</td>
                                 <td>6</td>
                                 <td>2.4%</td>
                                 <td class="delta-pos">0.35%</td>
-                            </tr>
-
-                            <tr>
+                                </tr>
+                            
+                                <tr>
                                 <td><strong>8</strong></td>
                                 <td>183</td>
                                 <td>1.9%</td>
                                 <td>7</td>
                                 <td>2.8%</td>
                                 <td class="delta-pos">0.9%</td>
-                            </tr>
-
-                            <tr>
+                                </tr>
+                            
+                                <tr>
                                 <td><strong>9</strong></td>
                                 <td>183</td>
                                 <td>1.9%</td>
                                 <td>4</td>
                                 <td>1.6%</td>
                                 <td class="delta-neg">-0.3%</td>
-                            </tr>
-
-                            <tr>
+                                </tr>
+                            
+                                <tr>
                                 <td><strong>10</strong></td>
                                 <td>208</td>
                                 <td>2.16%</td>
                                 <td>5</td>
                                 <td>2.0%</td>
                                 <td class="delta-neg">-0.16%</td>
-                            </tr>
-
-                            <tr>
+                                </tr>
+                            
+                                <tr>
                                 <td><strong>11</strong></td>
                                 <td>190</td>
                                 <td>1.97%</td>
                                 <td>5</td>
                                 <td>2.0%</td>
                                 <td class="delta-pos">0.03%</td>
-                            </tr>
-
-                            <tr>
+                                </tr>
+                            
+                                <tr>
                                 <td><strong>12</strong></td>
                                 <td>192</td>
                                 <td>1.99%</td>
                                 <td>3</td>
                                 <td>1.2%</td>
                                 <td class="delta-neg">-0.79%</td>
-                            </tr>
-
-                            <tr>
+                                </tr>
+                            
+                                <tr>
                                 <td><strong>13</strong></td>
                                 <td>200</td>
                                 <td>2.07%</td>
                                 <td>9</td>
                                 <td>3.6%</td>
                                 <td class="delta-pos">1.53%</td>
-                            </tr>
-
-                            <tr>
+                                </tr>
+                            
+                                <tr>
                                 <td><strong>14</strong></td>
                                 <td>198</td>
                                 <td>2.05%</td>
                                 <td>8</td>
                                 <td>3.2%</td>
                                 <td class="delta-pos">1.15%</td>
-                            </tr>
-
-                            <tr>
+                                </tr>
+                            
+                                <tr>
                                 <td><strong>15</strong></td>
                                 <td>199</td>
                                 <td>2.06%</td>
                                 <td>4</td>
                                 <td>1.6%</td>
                                 <td class="delta-neg">-0.46%</td>
-                            </tr>
-
-                            <tr>
+                                </tr>
+                            
+                                <tr>
                                 <td><strong>16</strong></td>
                                 <td>188</td>
                                 <td>1.95%</td>
                                 <td>3</td>
                                 <td>1.2%</td>
                                 <td class="delta-neg">-0.75%</td>
-                            </tr>
-
-                            <tr>
+                                </tr>
+                            
+                                <tr>
                                 <td><strong>17</strong></td>
                                 <td>209</td>
                                 <td>2.17%</td>
                                 <td>10</td>
                                 <td>4.0%</td>
                                 <td class="delta-pos">1.83%</td>
-                            </tr>
-
-                            <tr>
+                                </tr>
+                            
+                                <tr>
                                 <td><strong>18</strong></td>
                                 <td>172</td>
                                 <td>1.78%</td>
                                 <td>6</td>
                                 <td>2.4%</td>
                                 <td class="delta-pos">0.62%</td>
-                            </tr>
-
-                            <tr>
+                                </tr>
+                            
+                                <tr>
                                 <td><strong>19</strong></td>
                                 <td>215</td>
                                 <td>2.23%</td>
                                 <td>4</td>
                                 <td>1.6%</td>
                                 <td class="delta-neg">-0.63%</td>
-                            </tr>
-
-                            <tr>
+                                </tr>
+                            
+                                <tr>
                                 <td><strong>20</strong></td>
                                 <td>201</td>
                                 <td>2.09%</td>
                                 <td>3</td>
                                 <td>1.2%</td>
                                 <td class="delta-neg">-0.89%</td>
-                            </tr>
-
-                            <tr>
+                                </tr>
+                            
+                                <tr>
                                 <td><strong>21</strong></td>
                                 <td>212</td>
                                 <td>2.2%</td>
                                 <td>5</td>
                                 <td>2.0%</td>
                                 <td class="delta-neg">-0.2%</td>
-                            </tr>
-
-                            <tr>
+                                </tr>
+                            
+                                <tr>
                                 <td><strong>22</strong></td>
                                 <td>151</td>
                                 <td>1.57%</td>
                                 <td>3</td>
                                 <td>1.2%</td>
                                 <td class="delta-neg">-0.37%</td>
-                            </tr>
-
-                            <tr>
+                                </tr>
+                            
+                                <tr>
                                 <td><strong>23</strong></td>
                                 <td>217</td>
                                 <td>2.25%</td>
                                 <td>2</td>
                                 <td>0.8%</td>
                                 <td class="delta-neg">-1.45%</td>
-                            </tr>
-
-                            <tr>
+                                </tr>
+                            
+                                <tr>
                                 <td><strong>24</strong></td>
                                 <td>199</td>
                                 <td>2.06%</td>
                                 <td>9</td>
                                 <td>3.6%</td>
                                 <td class="delta-pos">1.54%</td>
-                            </tr>
-
-                            <tr>
+                                </tr>
+                            
+                                <tr>
                                 <td><strong>25</strong></td>
                                 <td>202</td>
                                 <td>2.1%</td>
                                 <td>6</td>
                                 <td>2.4%</td>
                                 <td class="delta-pos">0.3%</td>
-                            </tr>
-
-                            <tr>
+                                </tr>
+                            
+                                <tr>
                                 <td><strong>26</strong></td>
                                 <td>200</td>
                                 <td>2.07%</td>
                                 <td>6</td>
                                 <td>2.4%</td>
                                 <td class="delta-pos">0.33%</td>
-                            </tr>
-
-                            <tr>
+                                </tr>
+                            
+                                <tr>
                                 <td><strong>27</strong></td>
                                 <td>203</td>
                                 <td>2.11%</td>
                                 <td>7</td>
                                 <td>2.8%</td>
                                 <td class="delta-pos">0.69%</td>
-                            </tr>
-
-                            <tr>
+                                </tr>
+                            
+                                <tr>
                                 <td><strong>28</strong></td>
                                 <td>185</td>
                                 <td>1.92%</td>
                                 <td>5</td>
                                 <td>2.0%</td>
                                 <td class="delta-pos">0.08%</td>
-                            </tr>
-
-                            <tr>
+                                </tr>
+                            
+                                <tr>
                                 <td><strong>29</strong></td>
                                 <td>213</td>
                                 <td>2.21%</td>
                                 <td>8</td>
                                 <td>3.2%</td>
                                 <td class="delta-pos">0.99%</td>
-                            </tr>
-
-                            <tr>
+                                </tr>
+                            
+                                <tr>
                                 <td><strong>30</strong></td>
                                 <td>193</td>
                                 <td>2.0%</td>
                                 <td>1</td>
                                 <td>0.4%</td>
                                 <td class="delta-neg">-1.6%</td>
-                            </tr>
-
-                            <tr>
+                                </tr>
+                            
+                                <tr>
                                 <td><strong>31</strong></td>
                                 <td>182</td>
                                 <td>1.89%</td>
                                 <td>4</td>
                                 <td>1.6%</td>
                                 <td class="delta-neg">-0.29%</td>
-                            </tr>
-
-                            <tr>
+                                </tr>
+                            
+                                <tr>
                                 <td><strong>32</strong></td>
                                 <td>178</td>
                                 <td>1.85%</td>
                                 <td>2</td>
                                 <td>0.8%</td>
                                 <td class="delta-neg">-1.05%</td>
-                            </tr>
-
-                            <tr>
+                                </tr>
+                            
+                                <tr>
                                 <td><strong>33</strong></td>
                                 <td>168</td>
                                 <td>1.74%</td>
                                 <td>3</td>
                                 <td>1.2%</td>
                                 <td class="delta-neg">-0.54%</td>
-                            </tr>
-
-                            <tr>
+                                </tr>
+                            
+                                <tr>
                                 <td><strong>34</strong></td>
                                 <td>194</td>
                                 <td>2.01%</td>
                                 <td>6</td>
                                 <td>2.4%</td>
                                 <td class="delta-pos">0.39%</td>
-                            </tr>
-
-                            <tr>
+                                </tr>
+                            
+                                <tr>
                                 <td><strong>35</strong></td>
                                 <td>202</td>
                                 <td>2.1%</td>
                                 <td>6</td>
                                 <td>2.4%</td>
                                 <td class="delta-pos">0.3%</td>
-                            </tr>
-
-                            <tr>
+                                </tr>
+                            
+                                <tr>
                                 <td><strong>36</strong></td>
                                 <td>181</td>
                                 <td>1.88%</td>
                                 <td>2</td>
                                 <td>0.8%</td>
                                 <td class="delta-neg">-1.08%</td>
-                            </tr>
-
-                            <tr>
+                                </tr>
+                            
+                                <tr>
                                 <td><strong>37</strong></td>
                                 <td>204</td>
                                 <td>2.12%</td>
                                 <td>4</td>
                                 <td>1.6%</td>
                                 <td class="delta-neg">-0.52%</td>
-                            </tr>
-
-                            <tr>
+                                </tr>
+                            
+                                <tr>
                                 <td><strong>38</strong></td>
                                 <td>195</td>
                                 <td>2.02%</td>
                                 <td>1</td>
                                 <td>0.4%</td>
                                 <td class="delta-neg">-1.62%</td>
-                            </tr>
-
-                            <tr>
+                                </tr>
+                            
+                                <tr>
                                 <td><strong>39</strong></td>
                                 <td>191</td>
                                 <td>1.98%</td>
                                 <td>6</td>
                                 <td>2.4%</td>
                                 <td class="delta-pos">0.42%</td>
-                            </tr>
-
-                            <tr>
+                                </tr>
+                            
+                                <tr>
                                 <td><strong>40</strong></td>
                                 <td>176</td>
                                 <td>1.83%</td>
                                 <td>5</td>
                                 <td>2.0%</td>
                                 <td class="delta-pos">0.17%</td>
-                            </tr>
-
-                            <tr>
+                                </tr>
+                            
+                                <tr>
                                 <td><strong>41</strong></td>
                                 <td>175</td>
                                 <td>1.82%</td>
                                 <td>6</td>
                                 <td>2.4%</td>
                                 <td class="delta-pos">0.58%</td>
-                            </tr>
-
-                            <tr>
+                                </tr>
+                            
+                                <tr>
                                 <td><strong>42</strong></td>
                                 <td>219</td>
                                 <td>2.27%</td>
                                 <td>8</td>
                                 <td>3.2%</td>
                                 <td class="delta-pos">0.93%</td>
-                            </tr>
-
-                            <tr>
+                                </tr>
+                            
+                                <tr>
                                 <td><strong>43</strong></td>
                                 <td>178</td>
                                 <td>1.85%</td>
                                 <td>6</td>
                                 <td>2.4%</td>
                                 <td class="delta-pos">0.55%</td>
-                            </tr>
-
-                            <tr>
+                                </tr>
+                            
+                                <tr>
                                 <td><strong>44</strong></td>
                                 <td>220</td>
                                 <td>2.28%</td>
                                 <td>10</td>
                                 <td>4.0%</td>
                                 <td class="delta-pos">1.72%</td>
-                            </tr>
-
-                            <tr>
+                                </tr>
+                            
+                                <tr>
                                 <td><strong>45</strong></td>
                                 <td>201</td>
                                 <td>2.09%</td>
                                 <td>4</td>
                                 <td>1.6%</td>
                                 <td class="delta-neg">-0.49%</td>
-                            </tr>
-
-                            <tr>
+                                </tr>
+                            
+                                <tr>
                                 <td><strong>46</strong></td>
                                 <td>168</td>
                                 <td>1.74%</td>
                                 <td>3</td>
                                 <td>1.2%</td>
                                 <td class="delta-neg">-0.54%</td>
-                            </tr>
-
-                            <tr>
+                                </tr>
+                            
+                                <tr>
                                 <td><strong>47</strong></td>
                                 <td>178</td>
                                 <td>1.85%</td>
                                 <td>5</td>
                                 <td>2.0%</td>
                                 <td class="delta-pos">0.15%</td>
-                            </tr>
-
-                            <tr>
+                                </tr>
+                            
+                                <tr>
                                 <td><strong>48</strong></td>
                                 <td>190</td>
                                 <td>1.97%</td>
                                 <td>7</td>
                                 <td>2.8%</td>
                                 <td class="delta-pos">0.83%</td>
-                            </tr>
-
-                            <tr>
+                                </tr>
+                            
+                                <tr>
                                 <td><strong>49</strong></td>
                                 <td>193</td>
                                 <td>2.0%</td>
                                 <td>2</td>
                                 <td>0.8%</td>
                                 <td class="delta-neg">-1.2%</td>
-                            </tr>
-
-                            <tr>
+                                </tr>
+                            
+                                <tr>
                                 <td><strong>50</strong></td>
                                 <td>209</td>
                                 <td>2.17%</td>
                                 <td>4</td>
                                 <td>1.6%</td>
                                 <td class="delta-neg">-0.57%</td>
-                            </tr>
-
+                                </tr>
+                            
                         </tbody>
                     </table>
                 </div>
@@ -1381,130 +860,124 @@ favicon: /assets/img/favicon-fdj.ico
         <div class="col-12 col-lg-6">
             <div class="card p-2 p-lg-3">
                 <h3 class="h5 mb-3">Étoiles (1–12)</h3>
-                <input class="form-control mb-2" placeholder="Filtrer (ex : 7)"
-                    oninput="filterTable('trendStars', this.value)" />
+                <input class="form-control mb-2" placeholder="Filtrer (ex : 7)" oninput="filterTable('trendStars', this.value)" />
                 <div class="table-wrap" style="max-height:420px">
                     <table class="table table-striped table-hover sticky-head" id="trendStars">
                         <thead>
                             <tr>
-                                <th>★</th>
-                                <th>Hist</th>
-                                <th>% Hist</th>
-                                <th>Récent</th>
-                                <th>% Récent</th>
-                                <th>Delta</th>
+                                <th>★</th><th>Hist</th><th>% Hist</th><th>Récent</th><th>% Récent</th><th>Delta</th>
                             </tr>
                         </thead>
                         <tbody>
-
-                            <tr>
+                            
+                                <tr>
                                 <td><strong>1</strong></td>
                                 <td>331</td>
                                 <td>8.58%</td>
                                 <td>6</td>
                                 <td>6.0%</td>
                                 <td class="delta-neg">-2.58%</td>
-                            </tr>
-
-                            <tr>
+                                </tr>
+                            
+                                <tr>
                                 <td><strong>2</strong></td>
                                 <td>380</td>
                                 <td>9.85%</td>
                                 <td>10</td>
                                 <td>10.0%</td>
                                 <td class="delta-pos">0.15%</td>
-                            </tr>
-
-                            <tr>
+                                </tr>
+                            
+                                <tr>
                                 <td><strong>3</strong></td>
                                 <td>381</td>
                                 <td>9.88%</td>
                                 <td>7</td>
                                 <td>7.0%</td>
                                 <td class="delta-neg">-2.88%</td>
-                            </tr>
-
-                            <tr>
+                                </tr>
+                            
+                                <tr>
                                 <td><strong>4</strong></td>
                                 <td>305</td>
                                 <td>7.91%</td>
                                 <td>6</td>
                                 <td>6.0%</td>
                                 <td class="delta-neg">-1.91%</td>
-                            </tr>
-
-                            <tr>
+                                </tr>
+                            
+                                <tr>
                                 <td><strong>5</strong></td>
                                 <td>343</td>
                                 <td>8.9%</td>
                                 <td>11</td>
                                 <td>11.0%</td>
                                 <td class="delta-pos">2.1%</td>
-                            </tr>
-
-                            <tr>
+                                </tr>
+                            
+                                <tr>
                                 <td><strong>6</strong></td>
                                 <td>346</td>
                                 <td>8.97%</td>
                                 <td>9</td>
                                 <td>9.0%</td>
                                 <td class="delta-pos">0.03%</td>
-                            </tr>
-
-                            <tr>
+                                </tr>
+                            
+                                <tr>
                                 <td><strong>7</strong></td>
                                 <td>342</td>
                                 <td>8.87%</td>
                                 <td>5</td>
                                 <td>5.0%</td>
                                 <td class="delta-neg">-3.87%</td>
-                            </tr>
-
-                            <tr>
+                                </tr>
+                            
+                                <tr>
                                 <td><strong>8</strong></td>
                                 <td>366</td>
                                 <td>9.49%</td>
                                 <td>6</td>
                                 <td>6.0%</td>
                                 <td class="delta-neg">-3.49%</td>
-                            </tr>
-
-                            <tr>
+                                </tr>
+                            
+                                <tr>
                                 <td><strong>9</strong></td>
                                 <td>355</td>
                                 <td>9.21%</td>
                                 <td>8</td>
                                 <td>8.0%</td>
                                 <td class="delta-neg">-1.21%</td>
-                            </tr>
-
-                            <tr>
+                                </tr>
+                            
+                                <tr>
                                 <td><strong>10</strong></td>
                                 <td>276</td>
                                 <td>7.16%</td>
                                 <td>13</td>
                                 <td>13.0%</td>
                                 <td class="delta-pos">5.84%</td>
-                            </tr>
-
-                            <tr>
+                                </tr>
+                            
+                                <tr>
                                 <td><strong>11</strong></td>
                                 <td>261</td>
                                 <td>6.77%</td>
                                 <td>9</td>
                                 <td>9.0%</td>
                                 <td class="delta-pos">2.23%</td>
-                            </tr>
-
-                            <tr>
+                                </tr>
+                            
+                                <tr>
                                 <td><strong>12</strong></td>
                                 <td>170</td>
                                 <td>4.41%</td>
                                 <td>10</td>
                                 <td>10.0%</td>
                                 <td class="delta-pos">5.59%</td>
-                            </tr>
-
+                                </tr>
+                            
                         </tbody>
                     </table>
                 </div>
@@ -1519,319 +992,312 @@ favicon: /assets/img/favicon-fdj.ico
         <div class="col-12 col-lg-6">
             <div class="card p-2 p-lg-3">
                 <h3 class="h5 mb-3">Numéros (Top retard)</h3>
-                <input class="form-control mb-2" placeholder="Filtrer (ex : 41)"
-                    oninput="filterTable('delayNumbers', this.value)" />
+                <input class="form-control mb-2" placeholder="Filtrer (ex : 41)" oninput="filterTable('delayNumbers', this.value)" />
                 <div class="table-wrap" style="max-height:420px">
                     <table class="table table-striped table-hover sticky-head" id="delayNumbers">
-                        <thead>
-                            <tr>
-                                <th>Num</th>
-                                <th>Retard (tirages)</th>
-                                <th>Dernière date</th>
-                            </tr>
-                        </thead>
+                        <thead><tr><th>Num</th><th>Retard (tirages)</th><th>Dernière date</th></tr></thead>
                         <tbody>
-
-                            <tr>
+                            
+                                <tr>
                                 <td><strong>3</strong></td>
                                 <td>47</td>
                                 <td>30/09/2025</td>
-                            </tr>
-
-                            <tr>
+                                </tr>
+                            
+                                <tr>
                                 <td><strong>38</strong></td>
                                 <td>38</td>
                                 <td>31/10/2025</td>
-                            </tr>
-
-                            <tr>
+                                </tr>
+                            
+                                <tr>
                                 <td><strong>45</strong></td>
                                 <td>34</td>
                                 <td>14/11/2025</td>
-                            </tr>
-
-                            <tr>
+                                </tr>
+                            
+                                <tr>
                                 <td><strong>2</strong></td>
                                 <td>27</td>
                                 <td>09/12/2025</td>
-                            </tr>
-
-                            <tr>
+                                </tr>
+                            
+                                <tr>
                                 <td><strong>49</strong></td>
                                 <td>27</td>
                                 <td>09/12/2025</td>
-                            </tr>
-
-                            <tr>
+                                </tr>
+                            
+                                <tr>
                                 <td><strong>25</strong></td>
                                 <td>26</td>
                                 <td>12/12/2025</td>
-                            </tr>
-
-                            <tr>
+                                </tr>
+                            
+                                <tr>
                                 <td><strong>30</strong></td>
                                 <td>26</td>
                                 <td>12/12/2025</td>
-                            </tr>
-
-                            <tr>
+                                </tr>
+                            
+                                <tr>
                                 <td><strong>32</strong></td>
                                 <td>22</td>
                                 <td>26/12/2025</td>
-                            </tr>
-
-                            <tr>
+                                </tr>
+                            
+                                <tr>
                                 <td><strong>36</strong></td>
                                 <td>22</td>
                                 <td>26/12/2025</td>
-                            </tr>
-
-                            <tr>
+                                </tr>
+                            
+                                <tr>
                                 <td><strong>8</strong></td>
                                 <td>20</td>
                                 <td>02/01/2026</td>
-                            </tr>
-
-                            <tr>
+                                </tr>
+                            
+                                <tr>
                                 <td><strong>29</strong></td>
                                 <td>16</td>
                                 <td>16/01/2026</td>
-                            </tr>
-
-                            <tr>
+                                </tr>
+                            
+                                <tr>
                                 <td><strong>11</strong></td>
                                 <td>15</td>
                                 <td>20/01/2026</td>
-                            </tr>
-
-                            <tr>
+                                </tr>
+                            
+                                <tr>
                                 <td><strong>22</strong></td>
                                 <td>15</td>
                                 <td>20/01/2026</td>
-                            </tr>
-
-                            <tr>
+                                </tr>
+                            
+                                <tr>
                                 <td><strong>5</strong></td>
                                 <td>14</td>
                                 <td>23/01/2026</td>
-                            </tr>
-
-                            <tr>
+                                </tr>
+                            
+                                <tr>
                                 <td><strong>21</strong></td>
                                 <td>14</td>
                                 <td>23/01/2026</td>
-                            </tr>
-
-                            <tr>
+                                </tr>
+                            
+                                <tr>
                                 <td><strong>18</strong></td>
                                 <td>12</td>
                                 <td>30/01/2026</td>
-                            </tr>
-
-                            <tr>
+                                </tr>
+                            
+                                <tr>
                                 <td><strong>46</strong></td>
                                 <td>12</td>
                                 <td>30/01/2026</td>
-                            </tr>
-
-                            <tr>
+                                </tr>
+                            
+                                <tr>
                                 <td><strong>20</strong></td>
                                 <td>10</td>
                                 <td>06/02/2026</td>
-                            </tr>
-
-                            <tr>
+                                </tr>
+                            
+                                <tr>
                                 <td><strong>23</strong></td>
                                 <td>10</td>
                                 <td>06/02/2026</td>
-                            </tr>
-
-                            <tr>
+                                </tr>
+                            
+                                <tr>
                                 <td><strong>9</strong></td>
                                 <td>8</td>
                                 <td>13/02/2026</td>
-                            </tr>
-
-                            <tr>
+                                </tr>
+                            
+                                <tr>
                                 <td><strong>31</strong></td>
                                 <td>8</td>
                                 <td>13/02/2026</td>
-                            </tr>
-
-                            <tr>
+                                </tr>
+                            
+                                <tr>
                                 <td><strong>1</strong></td>
                                 <td>7</td>
                                 <td>17/02/2026</td>
-                            </tr>
-
-                            <tr>
+                                </tr>
+                            
+                                <tr>
                                 <td><strong>4</strong></td>
                                 <td>7</td>
                                 <td>17/02/2026</td>
-                            </tr>
-
-                            <tr>
+                                </tr>
+                            
+                                <tr>
                                 <td><strong>33</strong></td>
                                 <td>6</td>
                                 <td>20/02/2026</td>
-                            </tr>
-
-                            <tr>
+                                </tr>
+                            
+                                <tr>
                                 <td><strong>35</strong></td>
                                 <td>6</td>
                                 <td>20/02/2026</td>
-                            </tr>
-
-                            <tr>
+                                </tr>
+                            
+                                <tr>
                                 <td><strong>10</strong></td>
                                 <td>5</td>
                                 <td>24/02/2026</td>
-                            </tr>
-
-                            <tr>
+                                </tr>
+                            
+                                <tr>
                                 <td><strong>40</strong></td>
                                 <td>5</td>
                                 <td>24/02/2026</td>
-                            </tr>
-
-                            <tr>
+                                </tr>
+                            
+                                <tr>
                                 <td><strong>43</strong></td>
                                 <td>5</td>
                                 <td>24/02/2026</td>
-                            </tr>
-
-                            <tr>
+                                </tr>
+                            
+                                <tr>
                                 <td><strong>47</strong></td>
                                 <td>5</td>
                                 <td>24/02/2026</td>
-                            </tr>
-
-                            <tr>
+                                </tr>
+                            
+                                <tr>
                                 <td><strong>39</strong></td>
                                 <td>4</td>
                                 <td>27/02/2026</td>
-                            </tr>
-
-                            <tr>
+                                </tr>
+                            
+                                <tr>
                                 <td><strong>42</strong></td>
                                 <td>4</td>
                                 <td>27/02/2026</td>
-                            </tr>
-
-                            <tr>
+                                </tr>
+                            
+                                <tr>
                                 <td><strong>6</strong></td>
                                 <td>3</td>
                                 <td>03/03/2026</td>
-                            </tr>
-
-                            <tr>
+                                </tr>
+                            
+                                <tr>
                                 <td><strong>7</strong></td>
                                 <td>3</td>
                                 <td>03/03/2026</td>
-                            </tr>
-
-                            <tr>
+                                </tr>
+                            
+                                <tr>
                                 <td><strong>24</strong></td>
                                 <td>3</td>
                                 <td>03/03/2026</td>
-                            </tr>
-
-                            <tr>
+                                </tr>
+                            
+                                <tr>
                                 <td><strong>34</strong></td>
                                 <td>3</td>
                                 <td>03/03/2026</td>
-                            </tr>
-
-                            <tr>
+                                </tr>
+                            
+                                <tr>
                                 <td><strong>15</strong></td>
                                 <td>2</td>
                                 <td>06/03/2026</td>
-                            </tr>
-
-                            <tr>
+                                </tr>
+                            
+                                <tr>
                                 <td><strong>16</strong></td>
                                 <td>2</td>
                                 <td>06/03/2026</td>
-                            </tr>
-
-                            <tr>
+                                </tr>
+                            
+                                <tr>
                                 <td><strong>19</strong></td>
                                 <td>2</td>
                                 <td>06/03/2026</td>
-                            </tr>
-
-                            <tr>
+                                </tr>
+                            
+                                <tr>
                                 <td><strong>28</strong></td>
                                 <td>2</td>
                                 <td>06/03/2026</td>
-                            </tr>
-
-                            <tr>
+                                </tr>
+                            
+                                <tr>
                                 <td><strong>37</strong></td>
                                 <td>2</td>
                                 <td>06/03/2026</td>
-                            </tr>
-
-                            <tr>
+                                </tr>
+                            
+                                <tr>
                                 <td><strong>12</strong></td>
                                 <td>1</td>
                                 <td>10/03/2026</td>
-                            </tr>
-
-                            <tr>
+                                </tr>
+                            
+                                <tr>
                                 <td><strong>14</strong></td>
                                 <td>1</td>
                                 <td>10/03/2026</td>
-                            </tr>
-
-                            <tr>
+                                </tr>
+                            
+                                <tr>
                                 <td><strong>27</strong></td>
                                 <td>1</td>
                                 <td>10/03/2026</td>
-                            </tr>
-
-                            <tr>
+                                </tr>
+                            
+                                <tr>
                                 <td><strong>44</strong></td>
                                 <td>1</td>
                                 <td>10/03/2026</td>
-                            </tr>
-
-                            <tr>
+                                </tr>
+                            
+                                <tr>
                                 <td><strong>50</strong></td>
                                 <td>1</td>
                                 <td>10/03/2026</td>
-                            </tr>
-
-                            <tr>
+                                </tr>
+                            
+                                <tr>
                                 <td><strong>13</strong></td>
                                 <td>0</td>
                                 <td>13/03/2026</td>
-                            </tr>
-
-                            <tr>
+                                </tr>
+                            
+                                <tr>
                                 <td><strong>17</strong></td>
                                 <td>0</td>
                                 <td>13/03/2026</td>
-                            </tr>
-
-                            <tr>
+                                </tr>
+                            
+                                <tr>
                                 <td><strong>26</strong></td>
                                 <td>0</td>
                                 <td>13/03/2026</td>
-                            </tr>
-
-                            <tr>
+                                </tr>
+                            
+                                <tr>
                                 <td><strong>41</strong></td>
                                 <td>0</td>
                                 <td>13/03/2026</td>
-                            </tr>
-
-                            <tr>
+                                </tr>
+                            
+                                <tr>
                                 <td><strong>48</strong></td>
                                 <td>0</td>
                                 <td>13/03/2026</td>
-                            </tr>
-
+                                </tr>
+                            
                         </tbody>
                     </table>
                 </div>
@@ -1841,93 +1307,86 @@ favicon: /assets/img/favicon-fdj.ico
         <div class="col-12 col-lg-6">
             <div class="card p-2 p-lg-3">
                 <h3 class="h5 mb-3">Étoiles (Top retard)</h3>
-                <input class="form-control mb-2" placeholder="Filtrer (ex : 9)"
-                    oninput="filterTable('delayStars', this.value)" />
+                <input class="form-control mb-2" placeholder="Filtrer (ex : 9)" oninput="filterTable('delayStars', this.value)" />
                 <div class="table-wrap" style="max-height:420px">
-                    <table class="table table-striped table-hover sticky-head" id="delayStars">
-                        <thead>
+                <table class="table table-striped table-hover sticky-head" id="delayStars">
+                    <thead><tr><th>★</th><th>Retard (tirages)</th><th>Dernière date</th></tr></thead>
+                    <tbody>
+                        
                             <tr>
-                                <th>★</th>
-                                <th>Retard (tirages)</th>
-                                <th>Dernière date</th>
+                            <td><strong>2</strong></td>
+                            <td>17</td>
+                            <td>13/01/2026</td>
                             </tr>
-                        </thead>
-                        <tbody>
-
+                        
                             <tr>
-                                <td><strong>2</strong></td>
-                                <td>17</td>
-                                <td>13/01/2026</td>
+                            <td><strong>1</strong></td>
+                            <td>15</td>
+                            <td>20/01/2026</td>
                             </tr>
-
+                        
                             <tr>
-                                <td><strong>1</strong></td>
-                                <td>15</td>
-                                <td>20/01/2026</td>
+                            <td><strong>3</strong></td>
+                            <td>13</td>
+                            <td>27/01/2026</td>
                             </tr>
-
+                        
                             <tr>
-                                <td><strong>3</strong></td>
-                                <td>13</td>
-                                <td>27/01/2026</td>
+                            <td><strong>11</strong></td>
+                            <td>10</td>
+                            <td>06/02/2026</td>
                             </tr>
-
+                        
                             <tr>
-                                <td><strong>11</strong></td>
-                                <td>10</td>
-                                <td>06/02/2026</td>
+                            <td><strong>8</strong></td>
+                            <td>9</td>
+                            <td>10/02/2026</td>
                             </tr>
-
+                        
                             <tr>
-                                <td><strong>8</strong></td>
-                                <td>9</td>
-                                <td>10/02/2026</td>
+                            <td><strong>5</strong></td>
+                            <td>3</td>
+                            <td>03/03/2026</td>
                             </tr>
-
+                        
                             <tr>
-                                <td><strong>5</strong></td>
-                                <td>3</td>
-                                <td>03/03/2026</td>
+                            <td><strong>7</strong></td>
+                            <td>3</td>
+                            <td>03/03/2026</td>
                             </tr>
-
+                        
                             <tr>
-                                <td><strong>7</strong></td>
-                                <td>3</td>
-                                <td>03/03/2026</td>
+                            <td><strong>6</strong></td>
+                            <td>2</td>
+                            <td>06/03/2026</td>
                             </tr>
-
+                        
                             <tr>
-                                <td><strong>6</strong></td>
-                                <td>2</td>
-                                <td>06/03/2026</td>
+                            <td><strong>9</strong></td>
+                            <td>2</td>
+                            <td>06/03/2026</td>
                             </tr>
-
+                        
                             <tr>
-                                <td><strong>9</strong></td>
-                                <td>2</td>
-                                <td>06/03/2026</td>
+                            <td><strong>12</strong></td>
+                            <td>1</td>
+                            <td>10/03/2026</td>
                             </tr>
-
+                        
                             <tr>
-                                <td><strong>12</strong></td>
-                                <td>1</td>
-                                <td>10/03/2026</td>
+                            <td><strong>4</strong></td>
+                            <td>0</td>
+                            <td>13/03/2026</td>
                             </tr>
-
+                        
                             <tr>
-                                <td><strong>4</strong></td>
-                                <td>0</td>
-                                <td>13/03/2026</td>
+                            <td><strong>10</strong></td>
+                            <td>0</td>
+                            <td>13/03/2026</td>
                             </tr>
-
-                            <tr>
-                                <td><strong>10</strong></td>
-                                <td>0</td>
-                                <td>13/03/2026</td>
-                            </tr>
-
-                        </tbody>
-                    </table>
+                        
+                    </tbody>
+                </table>
                 </div>
             </div>
         </div>
@@ -1941,319 +1400,312 @@ favicon: /assets/img/favicon-fdj.ico
         <div class="col-12 col-lg-6">
             <div class="card p-2 p-lg-3">
                 <h3 class="h5 mb-3">Numéros</h3>
-                <input class="form-control mb-2" placeholder="Filtrer (ex : 12)"
-                    oninput="filterTable('gapNumbers', this.value)" />
+                <input class="form-control mb-2" placeholder="Filtrer (ex : 12)" oninput="filterTable('gapNumbers', this.value)" />
                 <div class="table-wrap" style="max-height:420px">
                     <table class="table table-striped table-hover sticky-head" id="gapNumbers">
-                        <thead>
-                            <tr>
-                                <th>Num</th>
-                                <th>Apparitions</th>
-                                <th>Gap moyen (tirages)</th>
-                            </tr>
-                        </thead>
+                        <thead><tr><th>Num</th><th>Apparitions</th><th>Gap moyen (tirages)</th></tr></thead>
                         <tbody>
-
-                            <tr>
+                            
+                                <tr>
                                 <td><strong>44</strong></td>
                                 <td>220</td>
                                 <td>8.78</td>
-                            </tr>
-
-                            <tr>
+                                </tr>
+                            
+                                <tr>
                                 <td><strong>42</strong></td>
                                 <td>219</td>
                                 <td>8.8</td>
-                            </tr>
-
-                            <tr>
+                                </tr>
+                            
+                                <tr>
                                 <td><strong>23</strong></td>
                                 <td>217</td>
                                 <td>8.85</td>
-                            </tr>
-
-                            <tr>
+                                </tr>
+                            
+                                <tr>
                                 <td><strong>17</strong></td>
                                 <td>209</td>
                                 <td>8.95</td>
-                            </tr>
-
-                            <tr>
+                                </tr>
+                            
+                                <tr>
                                 <td><strong>19</strong></td>
                                 <td>215</td>
                                 <td>8.99</td>
-                            </tr>
-
-                            <tr>
+                                </tr>
+                            
+                                <tr>
                                 <td><strong>29</strong></td>
                                 <td>213</td>
                                 <td>9.01</td>
-                            </tr>
-
-                            <tr>
+                                </tr>
+                            
+                                <tr>
                                 <td><strong>21</strong></td>
                                 <td>212</td>
                                 <td>9.02</td>
-                            </tr>
-
-                            <tr>
+                                </tr>
+                            
+                                <tr>
                                 <td><strong>50</strong></td>
                                 <td>209</td>
                                 <td>9.25</td>
-                            </tr>
-
-                            <tr>
+                                </tr>
+                            
+                                <tr>
                                 <td><strong>10</strong></td>
                                 <td>208</td>
                                 <td>9.26</td>
-                            </tr>
-
-                            <tr>
+                                </tr>
+                            
+                                <tr>
                                 <td><strong>25</strong></td>
                                 <td>202</td>
                                 <td>9.31</td>
-                            </tr>
-
-                            <tr>
+                                </tr>
+                            
+                                <tr>
                                 <td><strong>45</strong></td>
                                 <td>201</td>
                                 <td>9.44</td>
-                            </tr>
-
-                            <tr>
+                                </tr>
+                            
+                                <tr>
                                 <td><strong>20</strong></td>
                                 <td>201</td>
                                 <td>9.46</td>
-                            </tr>
-
-                            <tr>
+                                </tr>
+                            
+                                <tr>
                                 <td><strong>37</strong></td>
                                 <td>204</td>
                                 <td>9.47</td>
-                            </tr>
-
-                            <tr>
+                                </tr>
+                            
+                                <tr>
                                 <td><strong>27</strong></td>
                                 <td>203</td>
                                 <td>9.5</td>
-                            </tr>
-
-                            <tr>
+                                </tr>
+                            
+                                <tr>
                                 <td><strong>35</strong></td>
                                 <td>202</td>
                                 <td>9.51</td>
-                            </tr>
-
-                            <tr>
+                                </tr>
+                            
+                                <tr>
                                 <td><strong>26</strong></td>
                                 <td>200</td>
                                 <td>9.57</td>
-                            </tr>
-
-                            <tr>
+                                </tr>
+                            
+                                <tr>
                                 <td><strong>13</strong></td>
                                 <td>200</td>
                                 <td>9.68</td>
-                            </tr>
-
-                            <tr>
+                                </tr>
+                            
+                                <tr>
                                 <td><strong>38</strong></td>
                                 <td>195</td>
                                 <td>9.68</td>
-                            </tr>
-
-                            <tr>
+                                </tr>
+                            
+                                <tr>
                                 <td><strong>15</strong></td>
                                 <td>199</td>
                                 <td>9.7</td>
-                            </tr>
-
-                            <tr>
+                                </tr>
+                            
+                                <tr>
                                 <td><strong>24</strong></td>
                                 <td>199</td>
                                 <td>9.7</td>
-                            </tr>
-
-                            <tr>
+                                </tr>
+                            
+                                <tr>
                                 <td><strong>7</strong></td>
                                 <td>198</td>
                                 <td>9.76</td>
-                            </tr>
-
-                            <tr>
+                                </tr>
+                            
+                                <tr>
                                 <td><strong>14</strong></td>
                                 <td>198</td>
                                 <td>9.77</td>
-                            </tr>
-
-                            <tr>
+                                </tr>
+                            
+                                <tr>
                                 <td><strong>5</strong></td>
                                 <td>195</td>
                                 <td>9.8</td>
-                            </tr>
-
-                            <tr>
+                                </tr>
+                            
+                                <tr>
                                 <td><strong>30</strong></td>
                                 <td>193</td>
                                 <td>9.8</td>
-                            </tr>
-
-                            <tr>
+                                </tr>
+                            
+                                <tr>
                                 <td><strong>49</strong></td>
                                 <td>193</td>
                                 <td>9.84</td>
-                            </tr>
-
-                            <tr>
+                                </tr>
+                            
+                                <tr>
                                 <td><strong>4</strong></td>
                                 <td>195</td>
                                 <td>9.88</td>
-                            </tr>
-
-                            <tr>
+                                </tr>
+                            
+                                <tr>
                                 <td><strong>34</strong></td>
                                 <td>194</td>
                                 <td>9.89</td>
-                            </tr>
-
-                            <tr>
+                                </tr>
+                            
+                                <tr>
                                 <td><strong>48</strong></td>
                                 <td>190</td>
                                 <td>10.03</td>
-                            </tr>
-
-                            <tr>
+                                </tr>
+                            
+                                <tr>
                                 <td><strong>11</strong></td>
                                 <td>190</td>
                                 <td>10.04</td>
-                            </tr>
-
-                            <tr>
+                                </tr>
+                            
+                                <tr>
                                 <td><strong>12</strong></td>
                                 <td>192</td>
                                 <td>10.05</td>
-                            </tr>
-
-                            <tr>
+                                </tr>
+                            
+                                <tr>
                                 <td><strong>3</strong></td>
                                 <td>187</td>
                                 <td>10.08</td>
-                            </tr>
-
-                            <tr>
+                                </tr>
+                            
+                                <tr>
                                 <td><strong>39</strong></td>
                                 <td>191</td>
                                 <td>10.12</td>
-                            </tr>
-
-                            <tr>
+                                </tr>
+                            
+                                <tr>
                                 <td><strong>6</strong></td>
                                 <td>188</td>
                                 <td>10.24</td>
-                            </tr>
-
-                            <tr>
+                                </tr>
+                            
+                                <tr>
                                 <td><strong>16</strong></td>
                                 <td>188</td>
                                 <td>10.29</td>
-                            </tr>
-
-                            <tr>
+                                </tr>
+                            
+                                <tr>
                                 <td><strong>8</strong></td>
                                 <td>183</td>
                                 <td>10.38</td>
-                            </tr>
-
-                            <tr>
+                                </tr>
+                            
+                                <tr>
                                 <td><strong>28</strong></td>
                                 <td>185</td>
                                 <td>10.44</td>
-                            </tr>
-
-                            <tr>
+                                </tr>
+                            
+                                <tr>
                                 <td><strong>1</strong></td>
                                 <td>184</td>
                                 <td>10.45</td>
-                            </tr>
-
-                            <tr>
+                                </tr>
+                            
+                                <tr>
                                 <td><strong>9</strong></td>
                                 <td>183</td>
                                 <td>10.46</td>
-                            </tr>
-
-                            <tr>
+                                </tr>
+                            
+                                <tr>
                                 <td><strong>36</strong></td>
                                 <td>181</td>
                                 <td>10.58</td>
-                            </tr>
-
-                            <tr>
+                                </tr>
+                            
+                                <tr>
                                 <td><strong>31</strong></td>
                                 <td>182</td>
                                 <td>10.59</td>
-                            </tr>
-
-                            <tr>
+                                </tr>
+                            
+                                <tr>
                                 <td><strong>2</strong></td>
                                 <td>178</td>
                                 <td>10.64</td>
-                            </tr>
-
-                            <tr>
+                                </tr>
+                            
+                                <tr>
                                 <td><strong>32</strong></td>
                                 <td>178</td>
                                 <td>10.76</td>
-                            </tr>
-
-                            <tr>
+                                </tr>
+                            
+                                <tr>
                                 <td><strong>43</strong></td>
                                 <td>178</td>
                                 <td>10.82</td>
-                            </tr>
-
-                            <tr>
+                                </tr>
+                            
+                                <tr>
                                 <td><strong>47</strong></td>
                                 <td>178</td>
                                 <td>10.85</td>
-                            </tr>
-
-                            <tr>
+                                </tr>
+                            
+                                <tr>
                                 <td><strong>40</strong></td>
                                 <td>176</td>
                                 <td>10.93</td>
-                            </tr>
-
-                            <tr>
+                                </tr>
+                            
+                                <tr>
                                 <td><strong>41</strong></td>
                                 <td>175</td>
                                 <td>11.07</td>
-                            </tr>
-
-                            <tr>
+                                </tr>
+                            
+                                <tr>
                                 <td><strong>18</strong></td>
                                 <td>172</td>
                                 <td>11.19</td>
-                            </tr>
-
-                            <tr>
+                                </tr>
+                            
+                                <tr>
                                 <td><strong>46</strong></td>
                                 <td>168</td>
                                 <td>11.2</td>
-                            </tr>
-
-                            <tr>
+                                </tr>
+                            
+                                <tr>
                                 <td><strong>33</strong></td>
                                 <td>168</td>
                                 <td>11.49</td>
-                            </tr>
-
-                            <tr>
+                                </tr>
+                            
+                                <tr>
                                 <td><strong>22</strong></td>
                                 <td>151</td>
                                 <td>12.56</td>
-                            </tr>
-
+                                </tr>
+                            
                         </tbody>
                     </table>
                 </div>
@@ -2263,90 +1715,84 @@ favicon: /assets/img/favicon-fdj.ico
         <div class="col-12 col-lg-6">
             <div class="card p-2 p-lg-3">
                 <h3 class="h5 mb-3">Étoiles</h3>
-                <input class="form-control mb-2" placeholder="Filtrer (ex : 3)"
-                    oninput="filterTable('gapStars', this.value)" />
+                <input class="form-control mb-2" placeholder="Filtrer (ex : 3)" oninput="filterTable('gapStars', this.value)" />
                 <div class="table-wrap" style="max-height:420px">
                     <table class="table table-striped table-hover sticky-head" id="gapStars">
-                        <thead>
-                            <tr>
-                                <th>★</th>
-                                <th>Apparitions</th>
-                                <th>Gap moyen (tirages)</th>
-                            </tr>
-                        </thead>
+                        <thead><tr><th>★</th><th>Apparitions</th><th>Gap moyen (tirages)</th></tr></thead>
                         <tbody>
-
-                            <tr>
+                            
+                                <tr>
                                 <td><strong>3</strong></td>
                                 <td>381</td>
                                 <td>5.01</td>
-                            </tr>
-
-                            <tr>
+                                </tr>
+                            
+                                <tr>
                                 <td><strong>2</strong></td>
                                 <td>380</td>
                                 <td>5.04</td>
-                            </tr>
-
-                            <tr>
+                                </tr>
+                            
+                                <tr>
                                 <td><strong>8</strong></td>
                                 <td>366</td>
                                 <td>5.23</td>
-                            </tr>
-
-                            <tr>
+                                </tr>
+                            
+                                <tr>
                                 <td><strong>9</strong></td>
                                 <td>355</td>
                                 <td>5.44</td>
-                            </tr>
-
-                            <tr>
+                                </tr>
+                            
+                                <tr>
                                 <td><strong>6</strong></td>
                                 <td>346</td>
                                 <td>5.55</td>
-                            </tr>
-
-                            <tr>
+                                </tr>
+                            
+                                <tr>
                                 <td><strong>10</strong></td>
                                 <td>276</td>
                                 <td>5.6</td>
-                            </tr>
-
-                            <tr>
+                                </tr>
+                            
+                                <tr>
                                 <td><strong>5</strong></td>
                                 <td>343</td>
                                 <td>5.62</td>
-                            </tr>
-
-                            <tr>
+                                </tr>
+                            
+                                <tr>
                                 <td><strong>7</strong></td>
                                 <td>342</td>
                                 <td>5.64</td>
-                            </tr>
-
-                            <tr>
+                                </tr>
+                            
+                                <tr>
                                 <td><strong>1</strong></td>
                                 <td>331</td>
                                 <td>5.78</td>
-                            </tr>
-
-                            <tr>
+                                </tr>
+                            
+                                <tr>
                                 <td><strong>12</strong></td>
                                 <td>170</td>
                                 <td>5.83</td>
-                            </tr>
-
-                            <tr>
+                                </tr>
+                            
+                                <tr>
                                 <td><strong>11</strong></td>
                                 <td>261</td>
                                 <td>5.91</td>
-                            </tr>
-
-                            <tr>
+                                </tr>
+                            
+                                <tr>
                                 <td><strong>4</strong></td>
                                 <td>305</td>
                                 <td>6.33</td>
-                            </tr>
+                                </tr>
+                            
                         </tbody>
                     </table>
                 </div>
@@ -2368,7 +1814,7 @@ function toggleTableAndButtons(clickedBtn, showId, hideId) {
     const buttons = group.querySelectorAll('.btn');
 
     buttons.forEach(btn => {
-        btn.classList.remove('btn-primary', 'btn-warning', 'btn-secondary', 'text-white', 'active');
+        btn.classList.remove('btn-primary','btn-warning','btn-secondary','text-white','active');
         btn.classList.add('btn-outline-secondary');
     });
 
@@ -2377,8 +1823,8 @@ function toggleTableAndButtons(clickedBtn, showId, hideId) {
 
     if (clickedBtn.textContent.includes('Fréquence')) {
         const isStarsGroup = group.querySelector('.btn-warning') !== null;
-        if (isStarsGroup) clickedBtn.classList.add('btn-warning', 'text-white');
-        else clickedBtn.classList.add('btn-primary');
+    if (isStarsGroup) clickedBtn.classList.add('btn-warning','text-white');
+    else clickedBtn.classList.add('btn-primary');
     } else {
         clickedBtn.classList.add('btn-secondary');
     }
@@ -2390,7 +1836,7 @@ function filterTable(tableId, query) {
     if (!table) return;
 
     const rows = table.querySelectorAll('tbody tr');
-    rows.forEach(tr => {
+        rows.forEach(tr => {
         const text = tr.textContent.toLowerCase();
         tr.style.display = text.includes(q) ? '' : 'none';
     });
@@ -2418,11 +1864,11 @@ new Chart(document.getElementById('chartNumbers'), {
         }]
     },
     options: {
-        responsive: true,
-        plugins: {
-            legend: { display: false },
-            tooltip: { callbacks: { label: (ctx) => ` ${ctx.raw} sorties` } }
-        }
+    responsive: true,
+    plugins: {
+        legend: { display: false },
+        tooltip: { callbacks: { label: (ctx) => ` ${ctx.raw} sorties` } }
+    }
     }
 });
 
@@ -2439,11 +1885,11 @@ new Chart(document.getElementById("chartStars"), {
         }]
     },
     options: {
-        responsive: true,
-        plugins: {
-            legend: { display: false },
-            tooltip: { callbacks: { label: (ctx) => ` ${ctx.raw} sorties` } }
-        }
+    responsive: true,
+    plugins: {
+        legend: { display: false },
+        tooltip: { callbacks: { label: (ctx) => ` ${ctx.raw} sorties` } }
+    }
     }
 });
 
