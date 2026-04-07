@@ -146,7 +146,7 @@ On démarre / redémarre le service :
 
 Lors du lancement de **PortSentry** cette erreur peut apparaitre :
 
-````sh
+```sh
 sudo systemctl start portsentry
 Failed to start portsentry.service: Unit portsentry.service is masked.
 ```
