@@ -74,7 +74,7 @@ On vérifie que le service fonctionne :
 
 `systemctl status fail2ban`
 
-Par défaut, **Fail2ban** utilise les fichiers `/etc/fail2ban/jail.conf` et `/etc/fail2ban/jail.d/defaults-debian.conf` qui contient les réglages globaux et les définitions des prisons (*jails*). Ce fichier **ne doit jamais être modifié** car il serait écrasé lors d'une mise à jour de **Fail2ban**.
+Par défaut, **Fail2ban** utilise les fichiers `/etc/fail2ban/jail.conf` et `/etc/fail2ban/jail.d/defaults-debian.conf` qui contient les réglages globaux et les définitions des prisons (*jails*). Ce fichier **ne doit jamais être modifié** car il serait écrasé lors d’une mise à jour de **Fail2ban**.
 
 Par défaut, fail2ban utilise `nftables-multiport`.
 
@@ -95,7 +95,7 @@ banaction = nftables-multiport
 bantime = 1h
 findtime = 10m
 maxretry = 3
-# On peut remplacer 192.168.1.0/24 par la plage d'IP de votre réseau local, si applicable
+# On peut remplacer 192.168.1.0/24 par la plage d’IP de votre réseau local, si applicable
 ignoreip = 127.0.0.1/8 192.168.1.0/24 ::1
 
 # bannissement progressif
@@ -220,7 +220,7 @@ maxretry = 1
 |--------------|-----------------------------------------------------------------|
 | **enabled**  | on active la prison                                             |
 | **logpath**  | pas de chemin de journal (on ne surveille rien)                 |
-| **filter**   | pas de filtre associé (on ne cherche pas de tentatives d'échec) |
+| **filter**   | pas de filtre associé (on ne cherche pas de tentatives d’échec) |
 | **bantime**  | on va lui donner un temps de bannissement très long, 1 an       |
 | **maxretry** |                                                                 |
 {:.table .table-hover}
@@ -253,7 +253,7 @@ Une fois le service **Fail2ban** redémarré et la prison activée, on va pouvoi
 
 ### Exemple **Fail2ban** pour **nginx**
 
-**Fail2ban** fournit déjà des prison (*jails*) et filtres prêts à l’emploi pour **nginx**, notamment `nginx-http-auth`, `nginx-botsearch`, `nginx-bad-request`, `nginx-forbidden` et `nginx-limit-req`. Le jail `nginx-http-auth` surveille par défaut le log d’erreurs **Nginx**, et `nginx-limit-req` suppose que le module `ngx_http_limit_req_module` est utilisé.
+**Fail2ban** fournit déjà des prisons (*jails*) et filtres prêts à l’emploi pour **nginx**, notamment `nginx-http-auth`, `nginx-botsearch`, `nginx-bad-request`, `nginx-forbidden` et `nginx-limit-req`. La prison `nginx-http-auth` surveille par défaut le log d’erreurs **Nginx**, et `nginx-limit-req` suppose que le module `ngx_http_limit_req_module` est utilisé.
 
 `sudo nano /etc/fail2ban/jail.local`
 
@@ -303,7 +303,7 @@ maxretry = 10
 
 ### Récidive
 
-Le **jail recidive** sert à rebannir plus longtemps les IP qui reviennent régulièrement.
+La **prision recidive** sert à re-bannir plus longtemps les IP qui reviennent régulièrement.
 
 ```sh
 [recidive]
@@ -469,7 +469,7 @@ sudo nft list ruleset
 
 Avantages de cette méthode
 
-- Séparation des tâches : cela vous permet de séparer clairement les bannissements automatiques (basés sur les logs) des bannissements que vous décidez d'appliquer vous-même.
+- Séparation des tâches : cela vous permet de séparer clairement les bannissements automatiques (basés sur les logs) des bannissements que vous décidez d’appliquer vous-même.
 - Politique de temps dédiée : vous pouvez donner à cette prison manuelle une durée de bannissement (`bantime`) très différente des autres (par exemple, 1 an ou même permanent si vous configurez les actions appropriées), sans affecter les autres prisons.
 
 #### Afficher toutes les options disponibles
