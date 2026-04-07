@@ -319,7 +319,7 @@ maxretry = 5
 ### Installation automatique
 
 Un script qui installe automatiquement `nftables`, `fail2ban`, `curl`, active les services, crée une base `nftables`.
-Il crée une config Fail2ban avec `sshd`, `nginx-http-auth`, `nginx-botsearch`, `apache-auth`, `recidive` ;
+Il crée une config Fail2ban avec `sshd`, `nginx-http-auth`, `nginx-botsearch`, `apache-auth`, `recidive` :
 
 ```sh
 #!/usr/bin/env bash
