@@ -597,12 +597,12 @@ En résumé, le module Apache **mod_autoindex** simplifie la gestion des répert
 
 Voici quelques-unes des informations que **mod_status** peut fournir :
 
-- Statut du serveur : Il indique si le serveur est en cours d’exécution ou s’il est arrêté.
-- Nombre de requêtes en cours : Combien de requêtes sont actuellement en cours de traitement par le serveur.
-- Statistiques sur les requêtes : Nombre total de requêtes traitées depuis le démarrage du serveur, ainsi que des statistiques détaillées telles que le nombre de requêtes traitées par seconde.
-- Statistiques sur les processus : Nombre de processus Apache en cours d’exécution, leur état (actif, en attente, etc.) et leur utilisation de la mémoire.
-- Connexions : Informations sur les connexions actives et les connexions en attente.
-- Détails sur les workers : Pour les configurations avec plusieurs workers (travailleurs), **mod_status** peut fournir des détails sur chaque worker, y compris leur état et leur utilisation des ressources.
+- Statut du serveur : indique si le serveur est en cours d’exécution ou s’il est arrêté.
+- Nombre de requêtes en cours : combien de requêtes sont actuellement en cours de traitement par le serveur.
+- Statistiques sur les requêtes : nombre total de requêtes traitées depuis le démarrage du serveur, ainsi que des statistiques détaillées telles que le nombre de requêtes traitées par seconde.
+- Statistiques sur les processus : nombre de processus Apache en cours d’exécution, leur état (actif, en attente, etc.) et leur utilisation de la mémoire.
+- Connexions : informations sur les connexions actives et les connexions en attente.
+- Détails sur les workers : pour les configurations avec plusieurs workers (travailleurs), **mod_status** peut fournir des détails sur chaque worker, y compris leur état et leur utilisation des ressources.
 
 Le module **mod_status** est souvent utilisé pour surveiller et diagnostiquer la performance du serveur Apache, ainsi que pour détecter tout problème éventuel. Il peut être particulièrement utile pour les administrateurs système chargés de gérer et de surveiller un serveur web Apache en temps réel.
 

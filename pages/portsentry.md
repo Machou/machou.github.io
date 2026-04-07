@@ -53,7 +53,7 @@ favicon: /assets/img/favicon.png
 
 #### Configuration
 
-- **Sensibilité** : Les administrateurs peuvent configurer le niveau de sensibilité de **PortSentry** pour définir combien de tentatives de connexion sont nécessaires avant qu’une IP soit bloquée
+- **Sensibilité** : les administrateurs peuvent configurer le niveau de sensibilité de **PortSentry** pour définir combien de tentatives de connexion sont nécessaires avant qu’une IP soit bloquée
 - **Personnalisation des ports** : il est possible de spécifier quels ports doivent être surveillés en fonction des besoins spécifiques de sécurité
 - **Options de journalisation** : il peut être configuré pour enregistrer les tentatives de connexion suspectes dans des fichiers de journal pour une analyse ultérieure
 

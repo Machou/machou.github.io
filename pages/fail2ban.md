@@ -31,10 +31,10 @@ favicon: /assets/img/favicon.png
 
 ### Fonctionnalités principales de Fail2ban
 
-1. **Surveillance des journaux** : Fail2ban surveille les fichiers de journaux de divers services (SSH, FTP, HTTP, etc.) pour détecter des tentatives de connexion échouées répétées
-2. **Bannissement temporaire** : lorsque Fail2ban détecte un nombre prédéfini de tentatives échouées depuis une même IP, il bannit cette IP pour une période définie
-3. **Flexibilité et extensibilité** : Fail2ban est hautement configurable et peut être étendu pour surveiller presque n’importe quel service à travers des fichiers de configuration personnalisés et des filtres regex
-4. **Actions de bannissement** : Fail2ban peut utiliser différentes actions de bannissement, telles que la mise à jour des règles **nftables**, la modification des règles hosts.deny, ou l’envoi de notifications par email
+1. **Surveillance des journaux** : fail2ban surveille les fichiers de journaux de divers services (SSH, FTP, HTTP, etc.) pour détecter des tentatives de connexion échouées répétées
+2. **Bannissement temporaire** : lorsque fail2ban détecte un nombre prédéfini de tentatives échouées depuis une même IP, il bannit cette IP pour une période définie
+3. **Flexibilité et extensibilité** : fail2ban est hautement configurable et peut être étendu pour surveiller presque n’importe quel service à travers des fichiers de configuration personnalisés et des filtres regex
+4. **Actions de bannissement** : fail2ban peut utiliser différentes actions de bannissement, telles que la mise à jour des règles **nftables**, la modification des règles hosts.deny, ou l’envoi de notifications par email
 
 ## Installation de Fail2ban
 
@@ -88,7 +88,7 @@ La méthode standard consiste à créer un fichier de configuration local qui su
 
 On va configurer le fichier `jail.local` et utiliser les paramètres par défaut les plus importants pour définir la politique de bannissement pour toutes les prisons qui seront activées :
 
-```toml
+```sh
 [DEFAULT]
 backend = systemd
 banaction = nftables-multiport
@@ -135,7 +135,7 @@ On modifie le fichier `jail.local` :
 
 On cherche la partie `[sshd]` :
 
-```toml
+```sh
 [sshd]
 enabled = true
 port = ssh
@@ -207,7 +207,7 @@ On ouvre `jail.local` :
 
 On ajoute à la fin du fichier :
 
-```toml
+```sh
 [manual-jail]
 enabled = true
 logpath = /dev/null
@@ -225,7 +225,7 @@ maxretry = 1
 | **maxretry** |                                                                 |
 {:.table .table-hover}
 
-Note : En utilisant `logpath = /dev/null`, on indique à **Fail2ban** de ne lire aucun fichier pour cette prison, ce qui réduit la charge inutile.
+Note : en utilisant `logpath = /dev/null`, on indique à **Fail2ban** de ne lire aucun fichier pour cette prison, ce qui réduit la charge inutile.
 
 On active la prison :
 
@@ -300,6 +300,7 @@ enabled = true
 port = http,https
 logpath = %(nginx_error_log)s
 maxretry = 10
+```
 
 ### Récidive
 
@@ -447,23 +448,23 @@ La commande `fail2ban-client` est l’outil officiel pour piloter le service, et
 sudo nft list ruleset
 ```
 
-#### Afficher les jails actives
+##### Afficher les jails actives
 
 `sudo fail2ban-client status`
 
-#### Afficher une jail précise
+##### Afficher une jail précise
 
 `sudo fail2ban-client status nginx-http-auth`
 
-#### Tester un filtre
+##### Tester un filtre
 
 `sudo fail2ban-regex /var/log/nginx/error.log /etc/fail2ban/filter.d/nginx-http-auth.conf`
 
-#### Bannir une IP
+##### Bannir une IP
 
 `sudo fail2ban-client set sshd banip 195.24.12.52`
 
-#### Débannir une IP
+##### Débannir une IP
 
 `sudo fail2ban-client set sshd unbanip 195.2`.12.52
 
@@ -472,34 +473,34 @@ Avantages de cette méthode
 - Séparation des tâches : cela vous permet de séparer clairement les bannissements automatiques (basés sur les logs) des bannissements que vous décidez d’appliquer vous-même.
 - Politique de temps dédiée : vous pouvez donner à cette prison manuelle une durée de bannissement (`bantime`) très différente des autres (par exemple, 1 an ou même permanent si vous configurez les actions appropriées), sans affecter les autres prisons.
 
-#### Afficher toutes les options disponibles
+##### Afficher toutes les options disponibles
 
 `fail2ban-client -h`
 
-#### Status du service
+##### Status du service
 
 `sudo fail2ban-client status`
 
-#### Status de la prison **sshd**
+##### Status de la prison **sshd**
 
 `sudo fail2ban-client status sshd`
 
-#### Vérifier les IP bannies
+##### Vérifier les IP bannies
 
 `sudo fail2ban-client status`
 
-#### Vérifier les IP bannies pour **ssh**
+##### Vérifier les IP bannies pour **ssh**
 
 `sudo fail2ban-client status sshd`
 
-#### Afficher les logs
+##### Afficher les logs
 
 `sudo journalctl -u fail2ban`
 
-#### Tester regex (très utile)
+##### Tester regex (très utile)
 
 `fail2ban-regex /var/log/auth.log /etc/fail2ban/filter.d/sshd.conf`
 
-#### Protection brute force directement dans nftables
+##### Protection brute force directement dans nftables
 
 `tcp dport 22 ct state new limit rate 10/minute accept`
