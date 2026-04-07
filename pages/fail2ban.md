@@ -17,11 +17,18 @@ favicon: /assets/img/favicon.png
 </nav>
 
 # [Fail2ban](comment-utiliser-fail2ban)
-
 - [Qu’est-ce que Fail2ban ?](#quest-ce-que-fail2ban-)
+- [Fonctionnalités principales de Fail2ban](#fonctionnalités-principales-de-fail2ban)
 - [Installation de Fail2ban](#installation-de-fail2ban)
-- [Configuration de Fail2ban](#configuration-de-fail2ban-pour-les-services-actifs)
-- [Configuration avancée](#configuration-avancée)
+    - [Méthode N°1](#)
+    - [Méthode N°2 : via les sources](#)
+- [Configuration de Fail2ban pour les services actifs](#)
+- [Activer la prison SSH (sshd)](#)
+- [La Prison spéciale](#)
+- [Exemple **Fail2ban** pour **nginx**](#)
+- [Récidive](#récidive)
+- [Installation automatique](#)
+- [Commandes **nftables** et **fail2ban**](#)
 
 ## Qu’est-ce que Fail2ban ?
 
