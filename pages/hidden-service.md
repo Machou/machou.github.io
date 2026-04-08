@@ -70,14 +70,14 @@ favicon: /assets/img/favicon-tor.svg
 
 Dans ce tutoriel, nous tenterons de garder les logiciels à jour avec leurs dernières versions. Voici la liste actuelle :
 
-- [Debian](https://www.debian.org/) — [version 13.2, liste des changements](https://www.debian.org/News/2025/20251115)
-- [Apache2](https://httpd.apache.org/) — [version 2.4.65, liste des changements](https://httpd.apache.org/security/vulnerabilities_24.html#2.4.65)
-- [nginx](https://nginx.org/) — [version 1.26.3, liste des changements](https://nginx.org/en/CHANGES-1.26)
-- [PHP](https://www.php.net/) — [version 8.5.1, liste des changements](https://www.php.net/ChangeLog-8.php#8.5.1)
-- [MariaDB](https://mariadb.org/) — [version 11.8.3, liste des changements](https://mariadb.com/docs/release-notes/community-server/mariadb-11-8-series/mariadb-11.8.3-release-notes)
-- [Tor](https://www.torproject.org/) — [version 0.4.8.21, liste des changements](https://gitlab.torproject.org/tpo/core/tor/-/commits/tor-0.4.8.21)
+- [Debian](https://www.debian.org/) — [version 13.4, liste des changements](https://www.debian.org/News/2026/20260314)
+- [Apache2](https://httpd.apache.org/) — [version 2.4.66, liste des changements](https://httpd.apache.org/security/vulnerabilities_24.html#2.4.66)
+- [nginx](https://nginx.org/) — [version 1.28.3, liste des changements](https://nginx.org/en/CHANGES-1.28)
+- [PHP](https://www.php.net/) — [version 8.5.4, liste des changements](https://www.php.net/ChangeLog-8.php#8.5.4)
+- [MariaDB](https://mariadb.org/) — [version 11.8.6, liste des changements](https://mariadb.com/docs/release-notes/community-server/mariadb-11-8-series/mariadb-11.8.3-release-notes)
+- [Tor](https://www.torproject.org/) — [version 0.4.9.6, liste des changements](https://gitlab.torproject.org/tpo/core/tor/-/tags/tor-0.4.9.6)
 
-*Dernière mise à jour le 4 décembre 2026*
+*Dernière mise à jour le 8 avril 2024*
 
 Nous allons configurer notre serveur, qui sera basé sur Apache2, PHP et SQL. Ce type de serveur est plus communément appelé **LAMP**. LAMP est un acronyme désignant un ensemble de logiciels libres permettant de construire des serveurs de sites web. L’acronyme original se réfère aux logiciels suivants :
 

@@ -17,6 +17,7 @@ favicon: /assets/img/favicon.png
 </nav>
 
 # [Fail2ban](#comment-utiliser-fail2ban)
+
 - [Qu’est-ce que Fail2ban ?](#quest-ce-que-fail2ban-)
 - [Fonctionnalités principales de Fail2ban](#fonctionnalités-principales-de-fail2ban)
 - [Installation de Fail2ban](#installation-de-fail2ban)
@@ -25,10 +26,10 @@ favicon: /assets/img/favicon.png
 - [Configuration de Fail2ban pour les services actifs](#configuration-de-fail2ban-pour-les-services-actifs)
 - [Activer la prison SSH (sshd)](#activer-la-prison-ssh-sshd)
 - [La Prison spéciale](#la-prison-spéciale)
-- [Exemple-**Fail2ban**-pour-**nginx**](#exemple-fail2ban-pour-nginx)
+- [Exemple **Fail2ban** pour **nginx**](#exemple-fail2ban-pour-nginx)
 - [Récidive](#récidive)
 - [Installation automatique](#installation-automatique)
-- [Commandes **nftables** et **fail2ban**](#commandes-nftables**-et-fail2ban)
+- [Commandes **nftables** et **fail2ban**](#commandes-nftables-et-fail2ban)
 
 ## Qu’est-ce que Fail2ban ?
 
@@ -451,63 +452,58 @@ echo "Installation terminée."
 `nft` est l’outil officiel pour inspecter et administrer [nftables](https://manpages.debian.org/trixie/nftables/nft.8.en.html).
 La commande `fail2ban-client` est l’outil officiel pour piloter le service, et `fail2ban-regex` permet de tester les filtres sur des logs avant mise en production.
 
-```sh
-sudo nft list ruleset
-```
+Règles actuelles :
 
-##### Afficher les jails actives
+`sudo nft list ruleset`
+
+Afficher les jails actives :
 
 `sudo fail2ban-client status`
 
-##### Afficher une jail précise
+Afficher une jail précise :
 
 `sudo fail2ban-client status nginx-http-auth`
 
-##### Tester un filtre
+Tester un filtre :
 
 `sudo fail2ban-regex /var/log/nginx/error.log /etc/fail2ban/filter.d/nginx-http-auth.conf`
 
-##### Bannir une IP
+Bannir une IP :
 
 `sudo fail2ban-client set sshd banip 195.24.12.52`
 
-##### Débannir une IP
+Débannir une IP :
 
 `sudo fail2ban-client set sshd unbanip 195.2`.12.52
 
-Avantages de cette méthode
-
-- Séparation des tâches : cela vous permet de séparer clairement les bannissements automatiques (basés sur les logs) des bannissements que vous décidez d’appliquer vous-même.
-- Politique de temps dédiée : vous pouvez donner à cette prison manuelle une durée de bannissement (`bantime`) très différente des autres (par exemple, 1 an ou même permanent si vous configurez les actions appropriées), sans affecter les autres prisons.
-
-##### Afficher toutes les options disponibles
+Afficher toutes les options disponibles :
 
 `fail2ban-client -h`
 
-##### Status du service
+Status du service :
 
 `sudo fail2ban-client status`
 
-##### Status de la prison **sshd**
+Status de la prison **sshd** :
 
 `sudo fail2ban-client status sshd`
 
-##### Vérifier les IP bannies
+Vérifier les IP bannies :
 
 `sudo fail2ban-client status`
 
-##### Vérifier les IP bannies pour **ssh**
+Vérifier les IP bannies pour **ssh** :
 
 `sudo fail2ban-client status sshd`
 
-##### Afficher les logs
+Afficher les logs :
 
 `sudo journalctl -u fail2ban`
 
-##### Tester regex (très utile)
+Tester regex (très utile) :
 
 `fail2ban-regex /var/log/auth.log /etc/fail2ban/filter.d/sshd.conf`
 
-##### Protection brute force directement dans nftables
+Protection brute force directement dans nftables :
 
 `tcp dport 22 ct state new limit rate 10/minute accept`
