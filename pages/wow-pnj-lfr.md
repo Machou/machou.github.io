@@ -77,7 +77,7 @@ w: /assets/img/favicon-wow.svg
 | **Pandarie** > **Val de l’Éternel printemps**   | [Chroniqueur Han <Conteur de l’outil Raids>](https://www.wowhead.com/fr/npc=80633) | `/way #390 83.0 30.6 Chroniqueur Han` |
 {:.table .table-hover .table-wow-pnj}
 
-
+<a href="assets/img/WoW_5_MoP-Large.png" data-fancybox="gallerie"><i class="fa-solid fa-image"></i></a>
 #### [Caveaux Mogu’shan](https://www.wowhead.com/fr/zone=6125)
 
 | -------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
