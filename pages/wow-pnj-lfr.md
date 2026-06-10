@@ -1,26 +1,25 @@
 ---
 layout: defaut
-title: "World of Warcraft : les PNJ pour l’outil Recherche de Raid"
+title: "PNJ LFR WoW : tous les PNJ Recherche de Raid de Mists of Pandaria à The War Within"
 description: "Liste et localisation des différents PNJ pour l’outil Recherche de Raid sur World of Warcraft"
 permalink: /wow-pnj-lfr
 slug: wow-pnj-lfr
 canonical_url: https://machou.github.io/wow-pnj-lfr
-w: /assets/img/favicon-wow.svg
+favicon: /assets/img/favicon-wow.svg
 ---
 
 <nav aria-label="breadcrumb">
-	<ol class="breadcrumb">
-		<li class="breadcrumb-item"><a href="https://machou.github.io/">Accueil</a></li>
-		<li class="breadcrumb-item active" aria-current="page">World of Warcraft : PNJ de l’outil Recherche de Raid</li>
-	</ol>
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item"><a href="https://machou.github.io/">Accueil</a></li>
+    <li class="breadcrumb-item active" aria-current="page">PNJ LFR WoW : tous les PNJ Recherche de Raid de Mists of Pandaria à The War Within</li>
+  </ol>
 </nav>
-
-# [World of Warcraft : PNJ de l’outil Recherche de Raid](#wow-pnj-lfr)
 
 <a href="assets/img/WoW-Large.png" data-fancybox="gallerie"><img src="assets/img/WoW.png" class="d-block w-75 m-auto img-fluid" alt="Logo World of Warcraft" title="Logo World of Warcraft"></a>
 
 ## **Sommaire**
 
+- [FAQ](#faq)
 - [Mist of Pandaria](#mists-of-pandaria)
   - [Caveaux Mogu’shan](#caveaux-mogushan)
   - [Cœur de la peur](#cœur-de-la-peur)
@@ -54,7 +53,52 @@ w: /assets/img/favicon-wow.svg
 - [The War Within](#the-war-within) (**non disponible**)
 - [Midnight](#midnight) (**non disponible**)
 
-## **Liste des guides Mamytwink**
+## FAQ
+
+# [PNJ LFR WoW : tous les PNJ Recherche de Raid de Mists of Pandaria à The War Within](#wow-pnj-lfr)
+
+## PNJ LFR World of Warcraft
+
+<p>Cette page affiche tous les PNJ permettant d’accéder aux anciennes ailes de l’outil Recherche de Raid (<strong>LFR</strong>) dans World of Warcraft.
+Vous trouverez les emplacements, coordonnées et raids disponibles pour chaque extension, de Mists of Pandaria à The War Within.</p>
+
+<div class="mt-5">
+	<h2 class="mb-4">Questions fréquentes</h2>
+
+	<div class="accordion" id="faqLfr">
+		<div class="accordion-item">
+			<h3 class="accordion-header" id="faqMopTop">
+				<button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faqMop" aria-expanded="true" aria-controls="faqMop">Où se trouve le PNJ LFR de Mists of Pandaria ?</button>
+			</h3>
+
+			<div id="faqMop" class="accordion-collapse collapse show" aria-labelledby="faqMopTop" data-bs-parent="#faqLfr">
+				<div class="accordion-body">Le <strong>Chroniqueur Han</strong> se trouve dans le <strong>Val de l'Éternel Printemps</strong>.</div>
+			</div>
+		</div>
+
+		<div class="accordion-item">
+			<h3 class="accordion-header" id="faqLegionTop">
+				<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqLegion" aria-expanded="false" aria-controls="faqLegion">Comment accéder aux raids LFR de Legion ?</button>
+			</h3>
+
+			<div id="faqLegion" class="accordion-collapse collapse" aria-labelledby="faqLegionTop" data-bs-parent="#faqLfr">
+				<div class="accordion-body">L'<strong>Archimage Timear</strong> à <strong>Dalaran</strong> permet d'accéder aux anciennes ailes LFR de Legion.</div>
+			</div>
+		</div>
+
+		<div class="accordion-item">
+			<h3 class="accordion-header" id="faqDragonflightTop">
+				<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqDragonflight" aria-expanded="false" aria-controls="faqDragonflight">Existe-t-il un PNJ LFR pour Dragonflight ?</button>
+			</h3>
+
+			<div id="faqDragonflight" class="accordion-collapse collapse" aria-labelledby="faqDragonflightTop" data-bs-parent="#faqLfr">
+				<div class="accordion-body">Non, Blizzard n'a pas encore ajouté de PNJ permettant d'accéderaux raids LFR de Dragonflight.</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+## **Guides Mamytwink**
 
 - [Site officiel Mamytwink](https://www.mamytwink.com/)
 - [Guide de **Mists of Pandaria**](https://www.mamytwink.com/mists-of-pandaria/world-of-warcraft-mists-of-pandaria)
@@ -68,7 +112,7 @@ w: /assets/img/favicon-wow.svg
 
 ## **Le LFR**
 
-### Mists of Pandaria
+## Mists of Pandaria
 
 <a href="assets/img/WoW_5_MoP-Large.png" data-fancybox="gallerie"><img src="assets/img/WoW_5_MoP.png" class="d-block w-75 m-auto img-fluid" alt="Logo World of Warcraft : Mists of Pandaria" title="Logo World of Warcraft : Mists of Pandaria"></a>
 
@@ -77,27 +121,27 @@ w: /assets/img/favicon-wow.svg
 | **Pandarie** > **Val de l’Éternel printemps**   | [Chroniqueur Han <Conteur de l’outil Raids>](https://www.wowhead.com/fr/npc=80633) | `/way #390 83.0 30.6 Chroniqueur Han` |
 {:.table .table-hover .table-wow-pnj}
 
-#### [Caveaux Mogu’shan](https://www.wowhead.com/fr/zone=6125)
+### [Caveaux Mogu’shan](https://www.wowhead.com/fr/zone=6125)
 
 | -------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | **Gardiens des Mogu’shan** | [La garde de pierre](https://www.wowhead.com/fr/npc=60047) [Feng le Maudit](https://www.wowhead.com/fr/npc=60009) [Gara’jal le Lieur d’esprit](https://www.wowhead.com/fr/npc=60143) |
 | **Le caveau des Mystères** | [Les esprits-rois](https://www.wowhead.com/fr/npc=60708) [Elegon](https://www.wowhead.com/fr/npc=60410) [Volonté de l’empereur](https://www.wowhead.com/fr/npc=60400)                |
 {:.table .table-hover .table-wow}
 
-#### [Cœur de la peur](https://www.wowhead.com/fr/zone=6297)
+### [Cœur de la peur](https://www.wowhead.com/fr/zone=6297)
 
 | ----------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **L’approche de l’effroi**    | [Vizir impérial Zor’lok](https://www.wowhead.com/fr/npc=62980) [Seigneur des lames Ta’yak](https://www.wowhead.com/fr/npc=62543) [Garalon](https://www.wowhead.com/fr/npc=62164)                     |
 | **Le cauchemar de Shek’zeer** | [Seigneur du Vent Mel’jarak](https://www.wowhead.com/fr/npc=62397) [Sculpte-ambre Un’sok](https://www.wowhead.com/fr/npc=62511) [Grande impératrice Shek’zeer](https://www.wowhead.com/fr/npc=62837) |
 {:.table .table-hover .table-wow}
 
-#### [Terrasse Printanière](https://www.wowhead.com/fr/zone=6067)
+### [Terrasse Printanière](https://www.wowhead.com/fr/zone=6067)
 
 | ------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | **Terrasse Printanière** | [Protecteurs de l’Éternel](https://www.wowhead.com/fr/npc=60583/protecteur-kaolan) [Tsulong](https://www.wowhead.com/fr/npc=62442/tsulong) [Lei Shi](https://www.wowhead.com/fr/npc=62983/lei-shi) [Sha de la peur](https://www.wowhead.com/fr/npc=60999/sha-de-la-peur) |
 {:.table .table-hover .table-wow}
 
-#### [Trône du tonnerre](https://www.wowhead.com/fr/zone=6622)
+### [Trône du tonnerre](https://www.wowhead.com/fr/zone=6622)
 
 | ------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | **Le baroud d’honneur des Zandalari** | [Jin’rokh le Briseur](https://www.wowhead.com/fr/npc=69465) [Horridon](https://www.wowhead.com/fr/npc=68476) [Conseil des anciens](https://www.wowhead.com/fr/npc=69134) |
@@ -106,7 +150,7 @@ w: /assets/img/favicon-wow.svg
 | **Cime des Tempêtes**                 | [Qwon de fer](https://www.wowhead.com/fr/npc=68078) [Jumelles empyréennes](https://www.wowhead.com/fr/npc=68905) [Lei Shen](https://www.wowhead.com/fr/npc=68397)        |
 {:.table .table-hover .table-wow}
 
-#### [Siège d’Orgrimmar](https://www.wowhead.com/fr/zone=6738)
+### [Siège d’Orgrimmar](https://www.wowhead.com/fr/zone=6738)
 
 | -------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | **Val de l’Éternelle tristesse** | [Immerseus](https://www.wowhead.com/fr/npc=71543) [Les protecteurs déchus](https://www.wowhead.com/fr/npc=71475) [Norushen](https://www.wowhead.com/fr/npc=153325) [Sha de l’orgueil](https://www.wowhead.com/fr/npc=71734)          |
@@ -117,7 +161,7 @@ w: /assets/img/favicon-wow.svg
 
 ---
 
-### Warlords of Draenor
+## Warlords of Draenor
 
 <a href="assets/img/WoW_6_WoD-Large.png" data-fancybox="gallerie"><img src="assets/img/WoW_6_WoD.png" class="d-block w-75 m-auto img-fluid" alt="Logo World of Warcraft : Warlords of Draenor" title="Logo World of Warcraft : Warlords of Draenor"></a>
 
@@ -127,7 +171,7 @@ w: /assets/img/favicon-wow.svg
 | **Mur-de-Givre**  | <span class="horde">Horde</span> [Voyant Kazal « Exilé ombrelune »](https://www.wowhead.com/fr/npc=94870)         | `/way 41.8 46.8 Voyant Kazal` |
 {:.table .table-hover .table-wow-pnj}
 
-#### [Cognefort](https://www.wowhead.com/fr/zone=6996)
+### [Cognefort](https://www.wowhead.com/fr/zone=6996)
 
 | -------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **La ville fortifiée**     | [Kargath Lamepoing](https://www.wowhead.com/fr/npc=78714) [Le Boucher](https://www.wowhead.com/fr/npc=77404) [Fougerme](https://www.wowhead.com/fr/npc=78491) |
@@ -135,7 +179,7 @@ w: /assets/img/favicon-wow.svg
 | **Chute de l’imperator**   | [Imperator Mar’gok](https://www.wowhead.com/fr/npc=77428)                                                                                                     |
 {:.table .table-hover .table-wow}
 
-#### [Fonderie des Rochenoires](https://www.wowhead.com/fr/zone=6967)
+### [Fonderie des Rochenoires](https://www.wowhead.com/fr/zone=6967)
 
 | ---------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **Forgeresse**               | [Mangeroc](https://www.wowhead.com/fr/npc=77182) [Gruul](https://www.wowhead.com/fr/npc=76877) [Le Haut-fourneau](https://www.wowhead.com/fr/npc=76809)                                |
@@ -144,7 +188,7 @@ w: /assets/img/favicon-wow.svg
 | **Le creuset de Main-Noire** | [Main-Noire](https://www.wowhead.com/fr/npc=77325)                                                                                                                                     |
 {:.table .table-hover .table-wow}
 
-#### [Citadelle des Flammes infernales](https://www.wowhead.com/fr/zone=7545)
+### [Citadelle des Flammes infernales](https://www.wowhead.com/fr/zone=7545)
 
 | ----------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **Brèche infernale**    | [Assaut des Flammes infernales](https://www.wowhead.com/fr/npc=95068) [Saccageur de Fer](https://www.wowhead.com/fr/npc=90284) [Kormrok](https://www.wowhead.com/fr/npc=90776)           |
@@ -156,7 +200,7 @@ w: /assets/img/favicon-wow.svg
 
 ---
 
-### Legion
+## Legion
 
 <a href="assets/img/WoW_7_Legion-Large.png" data-fancybox="gallerie"><img src="assets/img/WoW_7_Legion.png" class="d-block w-75 m-auto img-fluid" alt="Logo World of Warcraft : Legion" title="Logo World of Warcraft : Legion"></a>
 
@@ -165,7 +209,7 @@ w: /assets/img/favicon-wow.svg
 | **Îles Brisées** > **Dalaran** | [Archimage Timear](https://www.wowhead.com/fr/npc=111246) | `/way 63.6 55.6 Archimage Timear` |
 {:.table .table-hover .table-wow-pnj}
 
-#### [Le Cauchemar d’émeraude](https://www.wowhead.com/fr/zone=8026)
+### [Le Cauchemar d’émeraude](https://www.wowhead.com/fr/zone=8026)
 
 | ----------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **Sombranche**          | [Nythendra](https://www.wowhead.com/fr/npc=102672) [Elerethe Ranfarouche](https://www.wowhead.com/fr/npc=106087) [Il’gynoth, le Cœur de la Corruption](https://www.wowhead.com/fr/npc=105393)        |
@@ -173,7 +217,7 @@ w: /assets/img/favicon-wow.svg
 | **Failles d’Aln**       | [Xavius](https://www.wowhead.com/fr/npc=103769)                                                                                                                                                      |
 {:.table .table-hover .table-wow}
 
-#### [Palais Sacrenuit](https://www.wowhead.com/fr/zone=8025)
+### [Palais Sacrenuit](https://www.wowhead.com/fr/zone=8025)
 
 | -------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | **Les Arcqueducs**         | [Skorpyron](https://www.wowhead.com/fr/npc=102263) [Anomalie chronomatique](https://www.wowhead.com/fr/npc=104415) [Trilliax](https://www.wowhead.com/fr/npc=104288)                             |
@@ -182,13 +226,13 @@ w: /assets/img/favicon-wow.svg
 | **L’ascension du Traître** | [Gul’dan](https://www.wowhead.com/fr/npc=105503)                                                                                                                                                 |
 {:.table .table-hover .table-wow}
 
-#### [Le Jugement des Valeureux](https://www.wowhead.com/fr/zone=8440)
+### [Le Jugement des Valeureux](https://www.wowhead.com/fr/zone=8440)
 
 | ----------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------- |
 | **Le Jugement des Valeureux** | [Odyn](https://www.wowhead.com/fr/npc=114263) [Guarm](https://www.wowhead.com/fr/npc=114344) [Helya](https://www.wowhead.com/fr/npc=114537) |
 {:.table .table-hover .table-wow}
 
-#### [Tombe de Sargeras](https://www.wowhead.com/fr/zone=8524)
+### [Tombe de Sargeras](https://www.wowhead.com/fr/zone=8524)
 
 | --------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **Aux portes de l’enfer**   | [Goroth](https://www.wowhead.com/fr/npc=115844) [Harjatan](https://www.wowhead.com/fr/npc=116407) [Maîtresse Sassz’ine](https://www.wowhead.com/fr/npc=115767)                   |
@@ -197,7 +241,7 @@ w: /assets/img/favicon-wow.svg
 | **La chute du Trompeur**    | [Kil’jaeden](https://www.wowhead.com/fr/npc=117269)                                                                                                                              |
 {:.table .table-hover .table-wow}
 
-#### [Antorus, le Trône ardent](https://www.wowhead.com/fr/zone=8638)
+### [Antorus, le Trône ardent](https://www.wowhead.com/fr/zone=8638)
 
 | ------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **La Brèche de Lumière**  | [Brise-monde garothi](https://www.wowhead.com/fr/npc=123371) [Molosses de Sargeras](https://www.wowhead.com/fr/npc=126916) [Haut-commandement antoréen](https://www.wowhead.com/fr/npc=122367)       |
@@ -208,7 +252,7 @@ w: /assets/img/favicon-wow.svg
 
 ---
 
-### Battle for Azeroth
+## Battle for Azeroth
 
 <a href="assets/img/WoW_8_BfA-Large.png" data-fancybox="gallerie"><img src="assets/img/WoW_8_BfA.png" class="d-block w-75 m-auto img-fluid" alt="Logo World of Warcraft : Battle for Azeroth" title="Logo World of Warcraft : Battle for Azeroth"></a>
 
@@ -218,86 +262,86 @@ w: /assets/img/favicon-wow.svg
 | **Le Grand Sceau** | <span class="horde">Horde</span> [Eppu « Gardien des histoires »](https://www.wowhead.com/fr/npc=177208)         | `/way 69.8 32.6 Eppu` |
 {:.table .table-hover .table-wow-pnj}
 
-#### [Uldir](https://www.wowhead.com/fr/zone=9389)
+### [Uldir](https://www.wowhead.com/fr/zone=9389)
 
 | ------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Salles de confinement** | [Taloc](https://www.wowhead.com/fr/npc=137119) [D.A.M.E.](https://www.wowhead.com/fr/npc=140853) [Zek'voz](https://www.wowhead.com/fr/npc=134445)     |
+| **Salles de confinement** | [Taloc](https://www.wowhead.com/fr/npc=137119) [D.A.M.E.](https://www.wowhead.com/fr/npc=140853) [Zek’voz](https://www.wowhead.com/fr/npc=134445)     |
 | **Descente Cramoisie**    | [Dévoreur fétide](https://www.wowhead.com/fr/npc=133298) [Vectis](https://www.wowhead.com/fr/npc=134442) [Zul](https://www.wowhead.com/fr/npc=138967) |
-| **Cœur de la Corruption** | [Mythrax le Disloqueur](https://www.wowhead.com/fr/npc=136383) [G'huun](https://www.wowhead.com/fr/npc=163405)                                        |
+| **Cœur de la Corruption** | [Mythrax le Disloqueur](https://www.wowhead.com/fr/npc=136383) [G’huun](https://www.wowhead.com/fr/npc=163405)                                        |
 {:.table .table-hover .table-wow}
 
-#### [Bataille de Dazar’alor](https://www.wowhead.com/fr/zone=10076)
+### [Bataille de Dazar’alor](https://www.wowhead.com/fr/zone=10076)
 
 | ------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Siège de Dazar'alor**        | [Championne de la Lumière](https://www.wowhead.com/fr/npc=144680) [Maîtres du jadefeu](https://www.wowhead.com/fr/npc=146099) [Grong le Revenant](https://www.wowhead.com/fr/npc=144638)           |
+| **Siège de Dazar’alor**        | [Championne de la Lumière](https://www.wowhead.com/fr/npc=144680) [Maîtres du jadefeu](https://www.wowhead.com/fr/npc=146099) [Grong le Revenant](https://www.wowhead.com/fr/npc=144638)           |
 | **La chute de l’empire**       | [Opulence](https://www.wowhead.com/fr/npc=145261) [Conseil des Élus](https://www.wowhead.com/fr/npc=144747) [Roi Rastakhan](https://www.wowhead.com/fr/npc=145616)                                 |
 | **La puissance de l’Alliance** | [Grand Bricoleur Mekkanivelle](https://www.wowhead.com/fr/npc=144838) [Rempart tempétueux](https://www.wowhead.com/fr/npc=146256) [Dame Jaina Portvaillant](https://www.wowhead.com/fr/npc=149684) |
 {:.table .table-hover .table-wow}
 
-#### [Creuset des Tempêtes](https://www.wowhead.com/fr/zone=10057)
+### [Creuset des Tempêtes](https://www.wowhead.com/fr/zone=10057)
 
 | ------------------------ | --------------------------------------------------------------------------------------------------------- |
-| **Creuset des Tempêtes** | [Zaxasj l'Orateur](https://www.wowhead.com/fr/npc=146497) [Uu'nat](https://www.wowhead.com/fr/npc=145371) |
+| **Creuset des Tempêtes** | [Zaxasj l’Orateur](https://www.wowhead.com/fr/npc=146497) [Uu’nat](https://www.wowhead.com/fr/npc=145371) |
 {:.table .table-hover .table-wow}
 
-#### [Palais Éternel](https://www.wowhead.com/fr/zone=10425)
+### [Palais Éternel](https://www.wowhead.com/fr/zone=10425)
 
 | ------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| **La grande réception**         | [Commandant abyssal Sivara](https://www.wowhead.com/fr/npc=155144) [Béhémoth des flots noirs](https://www.wowhead.com/fr/npc=154986) [Radiance d'Azshara](https://www.wowhead.com/fr/npc=152364) |
+| **La grande réception**         | [Commandant abyssal Sivara](https://www.wowhead.com/fr/npc=155144) [Béhémoth des flots noirs](https://www.wowhead.com/fr/npc=154986) [Radiance d’Azshara](https://www.wowhead.com/fr/npc=152364) |
 | **Les profondeurs des fidèles** | [Dame Corsandre](https://www.wowhead.com/fr/npc=153142) [Orgozoa](https://www.wowhead.com/fr/npc=152128) [Cour de la reine](https://www.wowhead.com/fr/npc=152853)                               |
-| **Le cercle des astres**        | [Za'qul](https://www.wowhead.com/fr/npc=150859) [Reine Azshara](https://www.wowhead.com/fr/npc=155126)                                                                                           |
+| **Le cercle des astres**        | [Za’qul](https://www.wowhead.com/fr/npc=150859) [Reine Azshara](https://www.wowhead.com/fr/npc=155126)                                                                                           |
 {:.table .table-hover .table-wow}
 
-#### [Ny’alotha, la cité en éveil](https://www.wowhead.com/fr/zone=10522)
+### [Ny’alotha, la cité en éveil](https://www.wowhead.com/fr/zone=10522)
 
 | ------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **Vision de la Destinée** | [Irion](https://www.wowhead.com/fr/npc=156818) [Maut](https://www.wowhead.com/fr/npc=156523) [Prophète Skitra](https://www.wowhead.com/fr/npc=161901)                                                                               |
 | **Salles de la Dévotion** | [Sombre inquisitrice Xanesh](https://www.wowhead.com/fr/npc=156575) [Vexiona](https://www.wowhead.com/fr/npc=157354) [Conscience collective](https://www.wowhead.com/fr/npc=157254) [Ra Den](https://www.wowhead.com/fr/npc=156866) |
-| **Don de chair**          | [Shad'har l'Insatiable](https://www.wowhead.com/fr/npc=157231) [Drest'agath](https://www.wowhead.com/fr/npc=157602) [Il'gynoth](https://www.wowhead.com/fr/npc=158328)                                                              |
-| **Le Rêve éveillé**       | [Carapace de N’Zoth](https://www.wowhead.com/fr/npc=157439) [N'Zoth le Corrupteur](https://www.wowhead.com/fr/npc=158041)                                                                                                           |
+| **Don de chair**          | [Shad’har l’Insatiable](https://www.wowhead.com/fr/npc=157231) [Drest’agath](https://www.wowhead.com/fr/npc=157602) [Il’gynoth](https://www.wowhead.com/fr/npc=158328)                                                              |
+| **Le Rêve éveillé**       | [Carapace de N’Zoth](https://www.wowhead.com/fr/npc=157439) [N’Zoth le Corrupteur](https://www.wowhead.com/fr/npc=158041)                                                                                                           |
 {:.table .table-hover .table-wow}
 
 ---
 
-### Shadowlands
+## Shadowlands
 
 <a href="assets/img/WoW_9_SL-Large.png" data-fancybox="gallerie"><img src="assets/img/WoW_9_SL.png" class="d-block w-75 m-auto img-fluid" alt="Logo World of Warcraft : Shadowlands" title="Logo World of Warcraft : Shadowlands"></a>
 
 | Zone                      | PnJ                                                                        | Point de passage          |
 | ------------------------- | -------------------------------------------------------------------------- | ------------------------- |
-| Ombreterre > **Oribos**   | [Ta'elfar <Commerçant d'histoires>](https://www.wowhead.com/fr/npc=205959) | `/way 42.4 72.2 Ta'elfar` |
+| Ombreterre > **Oribos**   | [Ta’elfar <Commerçant d’histoires>](https://www.wowhead.com/fr/npc=205959) | `/way 42.4 72.2 Ta’elfar` |
 {:.table .table-hover .table-wow-pnj}
 
-#### [Château Nathria](https://www.wowhead.com/fr/zone=13224)
+### [Château Nathria](https://www.wowhead.com/fr/zone=13224)
 
 | ----------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **Caveaux Drainants**         | [Altimor le Veneur](https://www.wowhead.com/fr/npc=165066) [Destructeur affamé](https://www.wowhead.com/fr/npc=164261) [Dame Inerva Sombreveine](https://www.wowhead.com/fr/npc=167517) |
-| **Reliquaire de l'opulence**  | [Artificier Xy'mox](https://www.wowhead.com/fr/npc=166644) [Salut du roi-soleil](https://www.wowhead.com/fr/npc=165759) [Le conseil du Sang](https://www.wowhead.com/fr/npc=166971)     |
+| **Reliquaire de l’opulence**  | [Artificier Xy’mox](https://www.wowhead.com/fr/npc=166644) [Salut du roi-soleil](https://www.wowhead.com/fr/npc=165759) [Le conseil du Sang](https://www.wowhead.com/fr/npc=166971)     |
 | **Sang de la pierre**         | [Hurlaile](https://www.wowhead.com/fr/npc=172145) [Fangepoing](https://www.wowhead.com/fr/npc=174733) [Généraux de la Légion de pierre](https://www.wowhead.com/fr/npc=165318)          |
-| **Audience avec l'arrogance** | [Sire Denathrius](https://www.wowhead.com/fr/npc=168938)                                                                                                                                |
+| **Audience avec l’arrogance** | [Sire Denathrius](https://www.wowhead.com/fr/npc=168938)                                                                                                                                |
 {:.table .table-hover .table-wow}
 
-#### [Sanctum de Domination](https://www.wowhead.com/fr/zone=13561)
+### [Sanctum de Domination](https://www.wowhead.com/fr/zone=13561)
 
 | ---------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | **L’avant-garde du Geôlier** | [Le Naphtrémens](https://www.wowhead.com/fr/npc=152253) [L’œil du Geôlier](https://www.wowhead.com/fr/npc=180018) [Les Neuf](https://www.wowhead.com/fr/npc=178738)                        |
-| **La bastille Noire**        | [Vestige de Ner'zhul](https://www.wowhead.com/fr/npc=175729) [Etripeur d'âme Dormazain](https://www.wowhead.com/fr/npc=175727) [Mal-ferrant Raznal](https://www.wowhead.com/fr/npc=176523) |
-| **Les entraves du destin**   | [Gardien des Fondateurs](https://www.wowhead.com/fr/npc=175731) [Scribe du destin Roh-Kalo](https://www.wowhead.com/fr/npc=179390) [Kel'Thuzad](https://www.wowhead.com/fr/npc=175559)     |
+| **La bastille Noire**        | [Vestige de Ner’zhul](https://www.wowhead.com/fr/npc=175729) [Etripeur d’âme Dormazain](https://www.wowhead.com/fr/npc=175727) [Mal-ferrant Raznal](https://www.wowhead.com/fr/npc=176523) |
+| **Les entraves du destin**   | [Gardien des Fondateurs](https://www.wowhead.com/fr/npc=175731) [Scribe du destin Roh-Kalo](https://www.wowhead.com/fr/npc=179390) [Kel’Thuzad](https://www.wowhead.com/fr/npc=175559)     |
 | **Le châtiment**             | [Sylvanas Coursevent](https://www.wowhead.com/fr/npc=175732)                                                                                                                               |
 {:.table .table-hover .table-wow}
 
-#### [Sépulcre des Fondateurs](https://www.wowhead.com/fr/zone=13742)
+### [Sépulcre des Fondateurs](https://www.wowhead.com/fr/zone=13742)
 
 | ---------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | **Plaines Éphémères**        | [Gardien vigilant](https://www.wowhead.com/fr/npc=180773) [Skolex, l’Insatiable vorace](https://www.wowhead.com/fr/npc=183937) [Artificier Xy’mox](https://www.wowhead.com/fr/npc=183501) [Halondrus le Récupérateur](https://www.wowhead.com/fr/npc=184915) |
 | **Assise de la Création**    | [Dausegne, l’Oracle déchu](https://www.wowhead.com/fr/npc=181224) [Panthéon des prototypes](https://www.wowhead.com/fr/npc=181549) [Lihuvim, architecte principal](https://www.wowhead.com/fr/npc=182169)                                                    |
-| **Emprise de la domination** | [Anduin Wrynn](https://www.wowhead.com/fr/npc=181954) [Seigneurs de l'effroi](https://www.wowhead.com/fr/npc=181398) [Rygelon](https://www.wowhead.com/fr/npc=182777)                                                                                        |
+| **Emprise de la domination** | [Anduin Wrynn](https://www.wowhead.com/fr/npc=181954) [Seigneurs de l’effroi](https://www.wowhead.com/fr/npc=181398) [Rygelon](https://www.wowhead.com/fr/npc=182777)                                                                                        |
 | **Le grand dessein**         | [Le Geôlier](https://www.wowhead.com/fr/npc=180990)                                                                                                                                                                                                          |
 {:.table .table-hover .table-wow}
 
 ---
 
-### Dragonflight
+## Dragonflight
 
 <a href="assets/img/WoW_10_DF-Large.png" data-fancybox="gallerie"><img src="assets/img/WoW_10_DF.png" class="d-block w-75 m-auto img-fluid" alt="Logo World of Warcraft : Dragonflight" title="Logo World of Warcraft : Dragonflight"></a>
 
@@ -306,7 +350,7 @@ w: /assets/img/favicon-wow.svg
 | Îles aux Dragons > **Valdrakken** | Loute Irède | `/way 42.4 72.2 Loute Irède` |
 {:.table .table-hover .table-wow-pnj}
 
-#### [Caveau des Incarnations](https://www.wowhead.com/fr/zone=14030)
+### [Caveau des Incarnations](https://www.wowhead.com/fr/zone=14030)
 
 | ------------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **Rempart primordial**         | [Eranog](https://www.wowhead.com/fr/npc=184972) [Dathéa transcendée](https://www.wowhead.com/fr/npc=189813) [Le Conseil primordial](https://www.wowhead.com/fr/npc=187771)  |
@@ -314,7 +358,7 @@ w: /assets/img/favicon-wow.svg
 | **Fureur de l’orage**          | [Garde-couvée Diurna](https://www.wowhead.com/fr/npc=190245) [Raszageth la Mange-tempêtes](https://www.wowhead.com/fr/npc=189492)                                           |
 {:.table .table-hover .table-wow}
 
-#### [Aberrus, le creuset de l’Ombre](https://www.wowhead.com/fr/zone=14663)
+### [Aberrus, le creuset de l’Ombre](https://www.wowhead.com/fr/zone=14663)
 
 | ------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **Les rebuts**            | [Kazzara, née des enfers](https://www.wowhead.com/fr/npc=201261) [La chambre d’amalgamation](https://www.wowhead.com/fr/npc=201934) [Les expériences oubliées](https://www.wowhead.com/fr/npc=200912) |
@@ -323,7 +367,7 @@ w: /assets/img/favicon-wow.svg
 | **Au bord du Vide**       | [Squammandant Sarkareth](https://www.wowhead.com/fr/npc=201754)                                                                                                                                       |
 {:.table .table-hover .table-wow}
 
-#### [Amirdrassil, l’Espoir du Rêve](https://www.wowhead.com/fr/zone=14643)
+### [Amirdrassil, l’Espoir du Rêve](https://www.wowhead.com/fr/zone=14643)
 
 | ---------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | **Sillage de l’Incarnation** | [Racine-Noueuse](https://www.wowhead.com/fr/npc=209333) [Igira la Cruelle](https://www.wowhead.com/fr/npc=200926) [Fumeron](https://www.wowhead.com/fr/npc=200927) |
@@ -334,7 +378,7 @@ w: /assets/img/favicon-wow.svg
 
 ---
 
-### The War Within
+## The War Within
 
 <a href="assets/img/WoW_11_TWW-Large.png" data-fancybox="gallerie"><img src="assets/img/WoW_11_TWW.png" class="d-block w-75 m-auto img-fluid" alt="Logo World of Warcraft : The War Within" title="Logo World of Warcraft : The War Within"></a>
 
@@ -342,7 +386,7 @@ w: /assets/img/favicon-wow.svg
 
 ---
 
-### Midnight
+## Midnight
 
 <a href="assets/img/WoW_12_MN-Large.png" data-fancybox="gallerie"><img src="assets/img/WoW_12_MN.png" class="d-block w-75 m-auto img-fluid" alt="Logo World of Warcraft : The War Within" title="Logo World of Warcraft : The War Within"></a>
 
@@ -351,5 +395,5 @@ w: /assets/img/favicon-wow.svg
 ---
 
 <p class="text-center">
-	<a href="assets/img/logo-horde.png" data-fancybox="gallerie"><img src="assets/img/logo-horde.png" class="d-block w-75 m-auto img-fluid" alt="Logo Horde" title="Logo Horde"></a>
+  <a href="assets/img/logo-horde.png" data-fancybox="gallerie"><img src="assets/img/logo-horde.png" class="d-block w-75 m-auto img-fluid" alt="Logo Horde" title="Logo Horde"></a>
 </p>
