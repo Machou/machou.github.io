@@ -1,6 +1,6 @@
 ---
 layout: defaut
-title: "PNJ LFR WoW : tous les PNJ Recherche de Raid de Mists of Pandaria à The War Within"
+title: "Liste des PNJ LFR : tous les PNJ Recherche de Raid de Mists of Pandaria à The War Within"
 description: "Liste et localisation des différents PNJ pour l’outil Recherche de Raid sur World of Warcraft"
 permalink: /wow-pnj-lfr
 slug: wow-pnj-lfr
@@ -11,7 +11,7 @@ favicon: /assets/img/favicon-wow.svg
 <nav aria-label="breadcrumb">
   <ol class="breadcrumb">
     <li class="breadcrumb-item"><a href="https://machou.github.io/">Accueil</a></li>
-    <li class="breadcrumb-item active" aria-current="page">PNJ LFR WoW : tous les PNJ Recherche de Raid de Mists of Pandaria à The War Within</li>
+    <li class="breadcrumb-item active" aria-current="page">Liste des PNJ LFR : tous les PNJ Recherche de Raid de Mists of Pandaria à The War Within</li>
   </ol>
 </nav>
 
@@ -53,23 +53,21 @@ favicon: /assets/img/favicon-wow.svg
 - [The War Within](#the-war-within) (**non disponible**)
 - [Midnight](#midnight) (**non disponible**)
 
-## FAQ
-
-# [PNJ LFR WoW : tous les PNJ Recherche de Raid de Mists of Pandaria à The War Within](#wow-pnj-lfr)
-
-## PNJ LFR World of Warcraft
+# [Liste des PNJ LFR : tous les PNJ Recherche de Raid de Mists of Pandaria à The War Within](#wow-pnj-lfr)
 
 <p>Cette page affiche tous les PNJ permettant d’accéder aux anciennes ailes de l’outil Recherche de Raid (<strong>LFR</strong>) dans World of Warcraft.
 Vous trouverez les emplacements, coordonnées et raids disponibles pour chaque extension, de Mists of Pandaria à The War Within.</p>
+
+## FAQ : les questions fréquentes
 
 <div class="mt-5">
 	<h2 class="mb-4">Questions fréquentes</h2>
 
 	<div class="accordion" id="faqLfr">
 		<div class="accordion-item">
-			<h3 class="accordion-header" id="faqMopTop">
+			<div class="accordion-header" id="faqMopTop">
 				<button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faqMop" aria-expanded="true" aria-controls="faqMop">Où se trouve le PNJ LFR de Mists of Pandaria ?</button>
-			</h3>
+			</div>
 
 			<div id="faqMop" class="accordion-collapse collapse show" aria-labelledby="faqMopTop" data-bs-parent="#faqLfr">
 				<div class="accordion-body">Le <strong>Chroniqueur Han</strong> se trouve dans le <strong>Val de l'Éternel Printemps</strong>.</div>
@@ -77,9 +75,9 @@ Vous trouverez les emplacements, coordonnées et raids disponibles pour chaque e
 		</div>
 
 		<div class="accordion-item">
-			<h3 class="accordion-header" id="faqLegionTop">
+			<div class="accordion-header" id="faqLegionTop">
 				<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqLegion" aria-expanded="false" aria-controls="faqLegion">Comment accéder aux raids LFR de Legion ?</button>
-			</h3>
+			</div>
 
 			<div id="faqLegion" class="accordion-collapse collapse" aria-labelledby="faqLegionTop" data-bs-parent="#faqLfr">
 				<div class="accordion-body">L'<strong>Archimage Timear</strong> à <strong>Dalaran</strong> permet d'accéder aux anciennes ailes LFR de Legion.</div>
@@ -87,9 +85,9 @@ Vous trouverez les emplacements, coordonnées et raids disponibles pour chaque e
 		</div>
 
 		<div class="accordion-item">
-			<h3 class="accordion-header" id="faqDragonflightTop">
+			<div class="accordion-header" id="faqDragonflightTop">
 				<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqDragonflight" aria-expanded="false" aria-controls="faqDragonflight">Existe-t-il un PNJ LFR pour Dragonflight ?</button>
-			</h3>
+			</div>
 
 			<div id="faqDragonflight" class="accordion-collapse collapse" aria-labelledby="faqDragonflightTop" data-bs-parent="#faqLfr">
 				<div class="accordion-body">Non, Blizzard n'a pas encore ajouté de PNJ permettant d'accéderaux raids LFR de Dragonflight.</div>
