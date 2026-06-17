@@ -1,6 +1,6 @@
 ---
 layout: defaut
-title: "PNJ du LFR de WoW : tous les PNJ Recherche de Raid de Mists of Pandaria à The War Within"
+title: "PNJ du LFR de World of Warcraft : tous les PNJ Recherche de Raid de Mists of Pandaria à The War Within"
 description: "Liste et localisation des différents PNJ pour l’outil Recherche de Raid sur World of Warcraft"
 permalink: /wow-pnj-lfr
 slug: wow-pnj-lfr
@@ -9,10 +9,10 @@ favicon: /assets/img/favicon-wow.svg
 ---
 
 <nav aria-label="breadcrumb">
-  <ol class="breadcrumb">
+<ol class="breadcrumb">
     <li class="breadcrumb-item"><a href="https://machou.github.io/">Accueil</a></li>
     <li class="breadcrumb-item active" aria-current="page">PNJ du LFR de WoW</li>
-  </ol>
+</ol>
 </nav>
 
 <a href="assets/img/WoW-Large.png" data-fancybox="gallerie"><img src="assets/img/WoW.png" class="d-block w-75 m-auto img-fluid" alt="Logo World of Warcraft" title="Logo World of Warcraft"></a>
@@ -21,35 +21,35 @@ favicon: /assets/img/favicon-wow.svg
 
 - [FAQ : les questions fréquentes](#faq-les-questions-fréquentes)
 - [Mist of Pandaria](#mists-of-pandaria)
-  - [Caveaux Mogu’shan](#caveaux-mogushan)
-  - [Cœur de la peur](#cœur-de-la-peur)
-  - [Terrasse Printanière](#terrasse-printanière)
-  - [Trône du tonnerre](#trône-du-tonnerre)
-  - [Siège d’Orgrimmar](#siège-dorgrimmar)
+- [Caveaux Mogu’shan](#caveaux-mogushan)
+- [Cœur de la peur](#cœur-de-la-peur)
+- [Terrasse Printanière](#terrasse-printanière)
+- [Trône du tonnerre](#trône-du-tonnerre)
+- [Siège d’Orgrimmar](#siège-dorgrimmar)
 - [Warlords of Draenor](#warlords-of-draenor)
-  - [Cognefort](#cognefort)
-  - [Fonderie des Rochenoires](#fonderie-des-rochenoires)
-  - [Citadelle des Flammes infernales](#citadelle-des-flammes-infernales)
+- [Cognefort](#cognefort)
+- [Fonderie des Rochenoires](#fonderie-des-rochenoires)
+- [Citadelle des Flammes infernales](#citadelle-des-flammes-infernales)
 - [Legion](#legion)
-  - [Le Cauchemar d’émeraude](#le-cauchemar-démeraude)
-  - [Le Jugement des Valeureux](#le-jugement-des-valeureux)
-  - [Palais Sacrenuit](#palais-sacrenuit)
-  - [Tombe de Sargeras](#tombe-de-sargeras)
-  - [Antorus, le Trône ardent](#antorus-le-trône-ardent)
+- [Le Cauchemar d’émeraude](#le-cauchemar-démeraude)
+- [Le Jugement des Valeureux](#le-jugement-des-valeureux)
+- [Palais Sacrenuit](#palais-sacrenuit)
+- [Tombe de Sargeras](#tombe-de-sargeras)
+- [Antorus, le Trône ardent](#antorus-le-trône-ardent)
 - [Battle for Azeroth](#battle-for-azeroth)
-  - [Uldir](#uldir)
-  - [Bataille de Dazar’alor](#bataille-de-dazaralor)
-  - [Creuset des Tempêtes](#creuset-des-tempêtes)
-  - [Palais Éternel](#palais-éternel)
-  - [Ny’alotha, la cité en éveil](#nyalotha-la-cité-en-éveil)
+- [Uldir](#uldir)
+- [Bataille de Dazar’alor](#bataille-de-dazaralor)
+- [Creuset des Tempêtes](#creuset-des-tempêtes)
+- [Palais Éternel](#palais-éternel)
+- [Ny’alotha, la cité en éveil](#nyalotha-la-cité-en-éveil)
 - [Shadowlands](#shadowlands)
-  - [Château Nathria](#château-nathria)
-  - [Sanctum de Domination](#sanctum-de-domination)
-  - [Sépulcre des Fondateurs](#sépulcre-des-fondateurs)
+- [Château Nathria](#château-nathria)
+- [Sanctum de Domination](#sanctum-de-domination)
+- [Sépulcre des Fondateurs](#sépulcre-des-fondateurs)
 - [Dragonflight](#dragonflight)
-  - [Caveau des Incarnations](#caveau-des-incarnations)
-  - [Aberrus, le creuset de l’Ombre](#aberrus-le-creuset-de-lombre)
-  - [Amirdrassil, l’Espoir du Rêve](#amirdrassil-lespoir-du-rêve)
+- [Caveau des Incarnations](#caveau-des-incarnations)
+- [Aberrus, le creuset de l’Ombre](#aberrus-le-creuset-de-lombre)
+- [Amirdrassil, l’Espoir du Rêve](#amirdrassil-lespoir-du-rêve)
 - [The War Within](#the-war-within) (**non disponible**)
 - [Midnight](#midnight) (**non disponible**)
 
@@ -62,39 +62,37 @@ favicon: /assets/img/favicon-wow.svg
 ## FAQ : les questions fréquentes
 
 <div class="mt-5">
-	<h2 class="mb-4">Questions fréquentes</h2>
+<div class="accordion" id="faqLfr">
+        <div class="accordion-item">
+            <div class="accordion-header" id="faqMopTop">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faqMop" aria-expanded="true" aria-controls="faqMop">Où se trouve le PNJ LFR de Mists of Pandaria ?</button>
+            </div>
 
-	<div class="accordion" id="faqLfr">
-		<div class="accordion-item">
-			<div class="accordion-header" id="faqMopTop">
-				<button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faqMop" aria-expanded="true" aria-controls="faqMop">Où se trouve le PNJ LFR de Mists of Pandaria ?</button>
-			</div>
+            <div id="faqMop" class="accordion-collapse collapse show" aria-labelledby="faqMopTop" data-bs-parent="#faqLfr">
+                <div class="accordion-body">Le <strong>Chroniqueur Han</strong> se trouve dans le <strong>Val de l'Éternel Printemps</strong>.</div>
+            </div>
+        </div>
 
-			<div id="faqMop" class="accordion-collapse collapse show" aria-labelledby="faqMopTop" data-bs-parent="#faqLfr">
-				<div class="accordion-body">Le <strong>Chroniqueur Han</strong> se trouve dans le <strong>Val de l'Éternel Printemps</strong>.</div>
-			</div>
-		</div>
+        <div class="accordion-item">
+            <div class="accordion-header" id="faqLegionTop">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqLegion" aria-expanded="false" aria-controls="faqLegion">Comment accéder aux raids LFR de Legion ?</button>
+            </div>
 
-		<div class="accordion-item">
-			<div class="accordion-header" id="faqLegionTop">
-				<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqLegion" aria-expanded="false" aria-controls="faqLegion">Comment accéder aux raids LFR de Legion ?</button>
-			</div>
+            <div id="faqLegion" class="accordion-collapse collapse" aria-labelledby="faqLegionTop" data-bs-parent="#faqLfr">
+                <div class="accordion-body">L'<strong>Archimage Timear</strong> à <strong>Dalaran</strong> permet d'accéder aux anciennes ailes LFR de Legion.</div>
+            </div>
+        </div>
 
-			<div id="faqLegion" class="accordion-collapse collapse" aria-labelledby="faqLegionTop" data-bs-parent="#faqLfr">
-				<div class="accordion-body">L'<strong>Archimage Timear</strong> à <strong>Dalaran</strong> permet d'accéder aux anciennes ailes LFR de Legion.</div>
-			</div>
-		</div>
+        <div class="accordion-item">  
+            <div class="accordion-header" id="faqDragonflightTop">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqDragonflight" aria-expanded="false" aria-controls="faqDragonflight">Existe-t-il un PNJ LFR pour Dragonflight ?</button>
+            </div>
 
-		<div class="accordion-item">  
-			<div class="accordion-header" id="faqDragonflightTop">
-				<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqDragonflight" aria-expanded="false" aria-controls="faqDragonflight">Existe-t-il un PNJ LFR pour Dragonflight ?</button>
-			</div>
-
-			<div id="faqDragonflight" class="accordion-collapse collapse" aria-labelledby="faqDragonflightTop" data-bs-parent="#faqLfr">
-				<div class="accordion-body">Non, Blizzard n'a pas encore ajouté de PNJ permettant d'accéderaux raids LFR de Dragonflight.</div>
-			</div>
-		</div>
-	</div>
+            <div id="faqDragonflight" class="accordion-collapse collapse" aria-labelledby="faqDragonflightTop" data-bs-parent="#faqLfr">
+                <div class="accordion-body">Non, Blizzard n'a pas encore ajouté de PNJ permettant d'accéderaux raids LFR de Dragonflight.</div>
+            </div>
+        </div>
+    </div>
 </div>
 
 ## **Guides Mamytwink**
@@ -370,7 +368,7 @@ favicon: /assets/img/favicon-wow.svg
 
 | ---------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | **Sillage de l’Incarnation** | [Racine-Noueuse](https://www.wowhead.com/fr/npc=209333) [Igira la Cruelle](https://www.wowhead.com/fr/npc=200926) [Fumeron](https://www.wowhead.com/fr/npc=200927) |
-| **Incursion en fusion**      | [Volcoross](https://www.wowhead.com/fr/npc=208478) [Larodar, gardien de la flamme](https://www.wowhead.com/fr/npc=208445)                                           |
+| **Incursion en fusion**      | [Volcoross](https://www.wowhead.com/fr/npc=208478) [Larodar, gardien de la flamme](https://www.wowhead.com/fr/npc=208445)                                          |
 | **La trame viride**          | [Conseil des rêves](https://www.wowhead.com/fr/npc=208363) [Nymue, la trame du cercle](https://www.wowhead.com/fr/npc=206172)                                      |
 | **Le destin d’Amirdrassil**  | [Tindral Vifsage, prophète de flamme](https://www.wowhead.com/fr/npc=209090) [Fyrakka le Flamboyant](https://www.wowhead.com/fr/npc=204931)                        |
 {:.table .table-hover .table-wow}
@@ -394,5 +392,5 @@ favicon: /assets/img/favicon-wow.svg
 ---
 
 <p class="text-center">
-  <a href="assets/img/logo-horde.png" data-fancybox="gallerie"><img src="assets/img/logo-horde.png" class="d-block w-75 m-auto img-fluid" alt="Logo Horde" title="Logo Horde"></a>
+<a href="assets/img/logo-horde.png" data-fancybox="gallerie"><img src="assets/img/logo-horde.png" class="d-block w-75 m-auto img-fluid" alt="Logo Horde" title="Logo Horde"></a>
 </p>
