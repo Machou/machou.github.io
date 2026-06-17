@@ -1,6 +1,6 @@
 ---
 layout: defaut
-title: "Liste des PNJ LFR : tous les PNJ Recherche de Raid de Mists of Pandaria à The War Within"
+title: "PNJ du LFR de WoW : tous les PNJ Recherche de Raid de Mists of Pandaria à The War Within"
 description: "Liste et localisation des différents PNJ pour l’outil Recherche de Raid sur World of Warcraft"
 permalink: /wow-pnj-lfr
 slug: wow-pnj-lfr
@@ -11,7 +11,7 @@ favicon: /assets/img/favicon-wow.svg
 <nav aria-label="breadcrumb">
   <ol class="breadcrumb">
     <li class="breadcrumb-item"><a href="https://machou.github.io/">Accueil</a></li>
-    <li class="breadcrumb-item active" aria-current="page">Liste des PNJ LFR : tous les PNJ Recherche de Raid de Mists of Pandaria à The War Within</li>
+    <li class="breadcrumb-item active" aria-current="page">PNJ du LFR de WoW</li>
   </ol>
 </nav>
 
@@ -19,7 +19,7 @@ favicon: /assets/img/favicon-wow.svg
 
 ## **Sommaire**
 
-- [FAQ](#faq)
+- [FAQ : les questions fréquentes](#faq-les-questions-fréquentes)
 - [Mist of Pandaria](#mists-of-pandaria)
   - [Caveaux Mogu’shan](#caveaux-mogushan)
   - [Cœur de la peur](#cœur-de-la-peur)
@@ -53,10 +53,11 @@ favicon: /assets/img/favicon-wow.svg
 - [The War Within](#the-war-within) (**non disponible**)
 - [Midnight](#midnight) (**non disponible**)
 
-# [Liste des PNJ LFR : tous les PNJ Recherche de Raid de Mists of Pandaria à The War Within](#wow-pnj-lfr)
+# [PNJ du LFR de WoW](#wow-pnj-lfr)
 
-<p>Cette page affiche tous les PNJ permettant d’accéder aux anciennes ailes de l’outil Recherche de Raid (<strong>LFR</strong>) dans World of Warcraft.
-Vous trouverez les emplacements, coordonnées et raids disponibles pour chaque extension, de Mists of Pandaria à The War Within.</p>
+<p>Cette page affiche tous les PNJ permettant d’accéder aux anciennes ailes de l’outil Recherche de Raid (<strong>LFR</strong>) dans World of Warcraft.</p>
+
+<p>Vous trouverez les emplacements, coordonnées et raids disponibles pour chaque extension, de Mists of Pandaria à The War Within.</p>
 
 ## FAQ : les questions fréquentes
 
@@ -84,7 +85,7 @@ Vous trouverez les emplacements, coordonnées et raids disponibles pour chaque e
 			</div>
 		</div>
 
-		<div class="accordion-item">
+		<div class="accordion-item">  
 			<div class="accordion-header" id="faqDragonflightTop">
 				<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqDragonflight" aria-expanded="false" aria-controls="faqDragonflight">Existe-t-il un PNJ LFR pour Dragonflight ?</button>
 			</div>
