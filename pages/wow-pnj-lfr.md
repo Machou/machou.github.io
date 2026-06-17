@@ -21,35 +21,35 @@ favicon: /assets/img/favicon-wow.svg
 
 - [FAQ : les questions fréquentes](#faq-les-questions-fréquentes)
 - [Mist of Pandaria](#mists-of-pandaria)
-- [Caveaux Mogu’shan](#caveaux-mogushan)
-- [Cœur de la peur](#cœur-de-la-peur)
-- [Terrasse Printanière](#terrasse-printanière)
-- [Trône du tonnerre](#trône-du-tonnerre)
-- [Siège d’Orgrimmar](#siège-dorgrimmar)
+  - [Caveaux Mogu’shan](#caveaux-mogushan)
+  - [Cœur de la peur](#cœur-de-la-peur)
+  - [Terrasse Printanière](#terrasse-printanière)
+  - [Trône du tonnerre](#trône-du-tonnerre)
+  - [Siège d’Orgrimmar](#siège-dorgrimmar)
 - [Warlords of Draenor](#warlords-of-draenor)
-- [Cognefort](#cognefort)
-- [Fonderie des Rochenoires](#fonderie-des-rochenoires)
-- [Citadelle des Flammes infernales](#citadelle-des-flammes-infernales)
+  - [Cognefort](#cognefort)
+  - [Fonderie des Rochenoires](#fonderie-des-rochenoires)
+  - [Citadelle des Flammes infernales](#citadelle-des-flammes-infernales)
 - [Legion](#legion)
-- [Le Cauchemar d’émeraude](#le-cauchemar-démeraude)
-- [Le Jugement des Valeureux](#le-jugement-des-valeureux)
-- [Palais Sacrenuit](#palais-sacrenuit)
-- [Tombe de Sargeras](#tombe-de-sargeras)
-- [Antorus, le Trône ardent](#antorus-le-trône-ardent)
+  - [Le Cauchemar d’émeraude](#le-cauchemar-démeraude)
+  - [Le Jugement des Valeureux](#le-jugement-des-valeureux)
+  - [Palais Sacrenuit](#palais-sacrenuit)
+  - [Tombe de Sargeras](#tombe-de-sargeras)
+  - [Antorus, le Trône ardent](#antorus-le-trône-ardent)
 - [Battle for Azeroth](#battle-for-azeroth)
-- [Uldir](#uldir)
-- [Bataille de Dazar’alor](#bataille-de-dazaralor)
-- [Creuset des Tempêtes](#creuset-des-tempêtes)
-- [Palais Éternel](#palais-éternel)
-- [Ny’alotha, la cité en éveil](#nyalotha-la-cité-en-éveil)
+  - [Uldir](#uldir)
+  - [Bataille de Dazar’alor](#bataille-de-dazaralor)
+  - [Creuset des Tempêtes](#creuset-des-tempêtes)
+  - [Palais Éternel](#palais-éternel)
+  - [Ny’alotha, la cité en éveil](#nyalotha-la-cité-en-éveil)
 - [Shadowlands](#shadowlands)
-- [Château Nathria](#château-nathria)
-- [Sanctum de Domination](#sanctum-de-domination)
-- [Sépulcre des Fondateurs](#sépulcre-des-fondateurs)
+  - [Château Nathria](#château-nathria)
+  - [Sanctum de Domination](#sanctum-de-domination)
+  - [Sépulcre des Fondateurs](#sépulcre-des-fondateurs)
 - [Dragonflight](#dragonflight)
-- [Caveau des Incarnations](#caveau-des-incarnations)
-- [Aberrus, le creuset de l’Ombre](#aberrus-le-creuset-de-lombre)
-- [Amirdrassil, l’Espoir du Rêve](#amirdrassil-lespoir-du-rêve)
+  - [Caveau des Incarnations](#caveau-des-incarnations)
+  - [Aberrus, le creuset de l’Ombre](#aberrus-le-creuset-de-lombre)
+  - [Amirdrassil, l’Espoir du Rêve](#amirdrassil-lespoir-du-rêve)
 - [The War Within](#the-war-within) (**non disponible**)
 - [Midnight](#midnight) (**non disponible**)
 
@@ -301,6 +301,7 @@ favicon: /assets/img/favicon-wow.svg
 ---
 
 ## Shadowlands
+{.text-center}
 
 <a href="assets/img/WoW_9_SL-Large.png" data-fancybox="gallerie"><img src="assets/img/WoW_9_SL.png" class="d-block w-75 m-auto img-fluid" alt="Logo World of Warcraft : Shadowlands" title="Logo World of Warcraft : Shadowlands"></a>
 
@@ -360,7 +361,7 @@ favicon: /assets/img/favicon-wow.svg
 | ------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **Les rebuts**            | [Kazzara, née des enfers](https://www.wowhead.com/fr/npc=201261) [La chambre d’amalgamation](https://www.wowhead.com/fr/npc=201934) [Les expériences oubliées](https://www.wowhead.com/fr/npc=200912) |
 | **Fureur des Géants**     | [Assaut des Zaqalis](https://www.wowhead.com/fr/npc=199659) [Rashok, l’Ancien](https://www.wowhead.com/fr/npc=201320) [Zskarn, l’Intendant vigilant](https://www.wowhead.com/fr/npc=202637)           |
-| **L’ombre de Neltharion** | [Magmorax](https://www.wowhead.com/fr/npc=201579) [Écho de Neltharion](https://www.wowhead.com/fr/npc=201668)                                                                                          |
+| **L’ombre de Neltharion** | [Magmorax](https://www.wowhead.com/fr/npc=201579) [Écho de Neltharion](https://www.wowhead.com/fr/npc=201668)                                                                                         |
 | **Au bord du Vide**       | [Squammandant Sarkareth](https://www.wowhead.com/fr/npc=201754)                                                                                                                                       |
 {:.table .table-hover .table-wow}
 
@@ -392,5 +393,5 @@ favicon: /assets/img/favicon-wow.svg
 ---
 
 <p class="text-center">
-<a href="assets/img/logo-horde.png" data-fancybox="gallerie"><img src="assets/img/logo-horde.png" class="d-block w-75 m-auto img-fluid" alt="Logo Horde" title="Logo Horde"></a>
+    <a href="assets/img/logo-horde.png" data-fancybox="gallerie"><img src="assets/img/logo-horde.png" class="d-block w-75 m-auto img-fluid" alt="Logo Horde" title="Logo Horde"></a>
 </p>
