@@ -21,6 +21,7 @@ favicon: /assets/img/favicon-wow.svg
 
 - [PNJ du LFR de WoW](#pnj-du-lfr-de-wow)
 - [FAQ : les questions fréquentes](#faq--les-questions-fréquentes)
+- [Guides Mamytwink](#guides-mamytwink)
 - [Mist of Pandaria](#mists-of-pandaria)
   - [Caveaux Mogu’shan](#caveaux-mogushan)
   - [Cœur de la peur](#cœur-de-la-peur)
