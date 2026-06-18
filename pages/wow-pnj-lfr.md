@@ -17,7 +17,7 @@ favicon: /assets/img/favicon-wow.svg
 
 <a href="assets/img/WoW-Large.png" data-fancybox="gallerie"><img src="assets/img/WoW.png" class="d-block w-75 m-auto img-fluid" alt="Logo World of Warcraft" title="Logo World of Warcraft"></a>
 
-## **Sommaire**
+## Sommaire
 
 - [PNJ du LFR de WoW](#pnj-du-lfr-de-wow)
 - [FAQ : les questions fréquentes](#faq--les-questions-fréquentes)
@@ -97,7 +97,7 @@ favicon: /assets/img/favicon-wow.svg
     </div>
 </div>
 
-## **Guides Mamytwink**
+## Guides Mamytwink
 
 - [Site officiel Mamytwink](https://www.mamytwink.com/)
 - [Guide de **Mists of Pandaria**](https://www.mamytwink.com/mists-of-pandaria/world-of-warcraft-mists-of-pandaria)
@@ -109,7 +109,7 @@ favicon: /assets/img/favicon-wow.svg
 - [Guide de **The War Within**](https://www.mamytwink.com/guides/the-war-within-toutes-les-informations-sur-lextension-de-wow)
 - [Guide de **Midnight**](https://www.mamytwink.com/guides/the-midnight-toutes-les-informations-sur-lextension-de-wow)
 
-## **Le LFR**
+## Le LFR
 
 ## Mists of Pandaria
 
