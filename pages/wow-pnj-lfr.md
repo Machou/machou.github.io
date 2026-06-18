@@ -62,10 +62,10 @@ favicon: /assets/img/favicon-wow.svg
 ## FAQ : les questions fréquentes
 
 <div class="mt-5">
-<div class="accordion" id="faqLfr">
+    <div class="accordion" id="faqLfr">
         <div class="accordion-item">
             <div class="accordion-header" id="faqMopTop">
-                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faqMop" aria-expanded="true" aria-controls="faqMop">Où se trouve le PNJ LFR de Mists of Pandaria ?</button>
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faqMop" aria-expanded="false" aria-controls="faqMop">Où se trouve le PNJ LFR de Mists of Pandaria ?</button>
             </div>
 
             <div id="faqMop" class="accordion-collapse collapse show" aria-labelledby="faqMopTop" data-bs-parent="#faqLfr">
