@@ -65,7 +65,7 @@ favicon: /assets/img/favicon-wow.svg
     <div class="accordion" id="faqLfr">
         <div class="accordion-item">
             <div class="accordion-header" id="faqMopTop">
-                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faqMop" aria-expanded="false" aria-controls="faqMop">Où se trouve le PNJ LFR de Mists of Pandaria ?</button>
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqMop" aria-expanded="false" aria-controls="faqMop">Où se trouve le PNJ LFR de Mists of Pandaria ?</button>
             </div>
 
             <div id="faqMop" class="accordion-collapse collapse" aria-labelledby="faqMopTop" data-bs-parent="#faqLfr">
