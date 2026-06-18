@@ -19,7 +19,7 @@ favicon: /assets/img/favicon-wow.svg
 
 ## **Sommaire**
 
-- [PNJ du LFR de WoW](#wow-pnj-lfr)
+- [PNJ du LFR de WoW](#pnj-du-lfr-de-wow)
 - [FAQ : les questions fréquentes](#faq--les-questions-fréquentes)
 - [Mist of Pandaria](#mists-of-pandaria)
   - [Caveaux Mogu’shan](#caveaux-mogushan)
