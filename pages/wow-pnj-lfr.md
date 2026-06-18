@@ -19,7 +19,8 @@ favicon: /assets/img/favicon-wow.svg
 
 ## **Sommaire**
 
-- [FAQ : les questions fréquentes](#faq-les-questions-fréquentes)
+- [PNJ du LFR de WoW](#wow-pnj-lfr)
+- [FAQ : les questions fréquentes](#faq--les-questions-fréquentes)
 - [Mist of Pandaria](#mists-of-pandaria)
   - [Caveaux Mogu’shan](#caveaux-mogushan)
   - [Cœur de la peur](#cœur-de-la-peur)
@@ -53,7 +54,7 @@ favicon: /assets/img/favicon-wow.svg
 - [The War Within](#the-war-within) (**non disponible**)
 - [Midnight](#midnight) (**non disponible**)
 
-# [PNJ du LFR de WoW](#wow-pnj-lfr)
+## PNJ du LFR de WoW
 
 <p>Cette page affiche tous les PNJ permettant d’accéder aux anciennes ailes de l’outil Recherche de Raid (<strong>LFR</strong>) dans World of Warcraft.</p>
 
