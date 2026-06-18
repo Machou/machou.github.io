@@ -68,7 +68,7 @@ favicon: /assets/img/favicon-wow.svg
                 <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faqMop" aria-expanded="false" aria-controls="faqMop">Où se trouve le PNJ LFR de Mists of Pandaria ?</button>
             </div>
 
-            <div id="faqMop" class="accordion-collapse collapse show" aria-labelledby="faqMopTop" data-bs-parent="#faqLfr">
+            <div id="faqMop" class="accordion-collapse collapse" aria-labelledby="faqMopTop" data-bs-parent="#faqLfr">
                 <div class="accordion-body">Le <strong>Chroniqueur Han</strong> se trouve dans le <strong>Val de l'Éternel Printemps</strong>.</div>
             </div>
         </div>
