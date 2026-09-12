@@ -40,7 +40,7 @@ favicon: /assets/img/favicon.png
 
 ## Liens Statistiques
 
-* [GitHub Readme Stats](https://github.com/anuraghazra/github-readme-stats)
+* [GitHub Stats Extended](https://github.com/stats-organization/github-stats-extended)
 * [GitHub Profile Trophy](https://github.com/ryo-ma/github-profile-trophy)
 * [GitHub Repository Card for every web site](https://gh-card.dev/)
 * [GitHub Metrics](https://github.com/lowlighter/metrics)
@@ -48,11 +48,11 @@ favicon: /assets/img/favicon.png
 
 ## Mes Statistiques
 
-**Statistiques GitHub**<br><br>[![](https://trophygithubreadmelang.cybee.dpdns.org/api?username=Machou&locale=fr&show_icons=cobalt)](https://github.com/anuraghazra/github-readme-stats)
+**Stats GitHub**<br><br>[![Machou's GitHub Stats](https://github-stats-extended.vercel.app/api/?username=Machou&show_icons=true&theme=dracula&rank_icon=github&include_all_commits=true&custom_title=Anurag%27s+Stats&disable_animations=true&number_format=long&show=prs_merged_percentage,prs_reviewed)](https://github.com/stats-organization/github-stats-extended)
 
 ---
 
-**Langages les plus utilisés dans les dépôts de Machou**<br><br>[![Top Languages Used](https://trophygithubreadmelang.cybee.dpdns.org/api/top-langs/?username=Machou&locale=fr&theme=dracula)](https://github.com/anuraghazra/github-readme-stats)
+**Langages les plus utilisés**<br><br>[![Machou's Top Languages Used]( https://github-stats-extended.vercel.app/api/top-langs/?username=Machou&locale=fr&theme=dracula)](https://github.com/stats-organization/github-stats-extended)
 
 ---
 
