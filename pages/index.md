@@ -48,11 +48,11 @@ favicon: /assets/img/favicon.png
 
 ## Mes Statistiques
 
-**Statistiques GitHub**<br><br>[![](https://github-readme-stats.vercel.app/api?username=Machou&locale=fr&show_icons=cobalt)](https://github.com/anuraghazra/github-readme-stats)
+**Statistiques GitHub**<br><br>[![](https://trophygithubreadmelang.cybee.dpdns.org/api?username=Machou&locale=fr&show_icons=cobalt)](https://github.com/anuraghazra/github-readme-stats)
 
 ---
 
-**Langages les plus utilisés dans les dépôts de Machou**<br><br>[![Top Languages Used](https://github-readme-stats.vercel.app/api/top-langs/?username=Machou&locale=fr&theme=dracula)](https://github.com/anuraghazra/github-readme-stats)
+**Langages les plus utilisés dans les dépôts de Machou**<br><br>[![Top Languages Used](https://trophygithubreadmelang.cybee.dpdns.org/api/top-langs/?username=Machou&locale=fr&theme=dracula)](https://github.com/anuraghazra/github-readme-stats)
 
 ---
 
